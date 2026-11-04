@@ -208,12 +208,12 @@ function proof(K, t, tl, S) {
     ctx.restore();
   }
   ctx.restore();
-  const dp = charBase('defne', { x: 210, y: 1960, s: 250, expr: 'mutlu', armR: { sh: 150, el: -10 }, armL: { sh: 20, el: 10 }, head: { tilt: -4, look: [0.4, -0.6] } });
+  const dp = charBase('defne', { x: 210, y: 2060, s: 250, expr: 'mutlu', armR: { sh: 150, el: -10 }, armL: { sh: 20, el: 10 }, head: { tilt: -4, look: [0.4, -0.6] } });
   dp.talk = talkAt(tl, 'defne', t);
   drawChar(ctx, 'defne', dp, t);
   const hu = ease.enter(seg(t, tm.evet, 0.4));
-  drawChar(ctx, 'hikmet', charBase('hikmet', { x: 880, y: 1970, s: 235, expr: hu > 0.5 ? 'saskin' : 'notr', head: { tilt: 6, look: [-0.6, -0.6] }, armL: { sh: lerp(20, 150, hu), el: lerp(-30, 10, hu) }, armR: { sh: lerp(20, 150, hu), el: lerp(-30, 10, hu) } }), t);
-  caption(K, captionAt(tl, t), { y: 1300, head: null });
+  drawChar(ctx, 'hikmet', charBase('hikmet', { x: 880, y: 2070, s: 235, expr: hu > 0.5 ? 'saskin' : 'notr', head: { tilt: 6, look: [-0.6, -0.6] }, armL: { sh: lerp(20, 150, hu), el: lerp(-30, 10, hu) }, armR: { sh: lerp(20, 150, hu), el: lerp(-30, 10, hu) } }), t);
+  caption(K, captionAt(tl, t), { y: 1290, head: null });
 }
 
 // tek panel (yerel uzay, merkez 0,0; 960×520): üç büyük baş, iki ok; 'which' yeşil yanacak ok (1: Necmi→Kerem, 2: Kerem→Hikmet)

@@ -106,8 +106,9 @@ export function draw(K, t, ep, tl, S) {
   // masa: sağ kenarı x=660
   desk(K, 300, 1300, 420, { h: 200 });
   const edge = 720, len = 260, fh = 44, y0 = 1300 - fh;
-  if (!happy && t >= tm.stack - 0.1) folder(K, edge + len / 2, y0, len, fh, COL[0]);   // yarısı dışarıda
-  if (happy) { // mutlu sahne: kanıttaki 4'lü yığın masada
+  const after = t >= tm.happy;   // kanıttan sonra masada 4'lü yığın kalır (süreklilik)
+  if (!after) folder(K, edge + len / 2, y0, len, fh, COL[0]);   // yarısı dışarıda (kare 0'dan itibaren)
+  if (after) { // mutlu sahne: kanıttaki 4'lü yığın masada
     const off = [len / 8, len / 8 + len / 6, len / 8 + len / 6 + len / 4, len / 8 + len / 6 + len / 4 + len / 2];
     for (let k = 0; k < 4; k++) folder(K, edge + off[k], y0 - k * fh, len, fh, COL[3 - k]);
   } else if (t >= tm.two - 0.04) {
@@ -153,7 +154,7 @@ function proof(K, t, tl, S) {
   const right = k => edge + st[3] + (k >= 1 ? st[2] : 0) + (k >= 2 ? st[1] : 0) + (k >= 3 ? st[0] : 0);
   // vuruşta boşluğa yaklaş: kenar ile en üst klasörün sol ucu arası
   const zu = ease.state(seg(t, tm.air - 0.4, 1.6)), fx = edge + 10, fy = yT - 3.5 * fh;
-  ctx.save(); ctx.translate(lerp(fx, 380, zu), lerp(fy, 760, zu)); ctx.scale(1 + 0.6 * zu, 1 + 0.6 * zu); ctx.translate(-fx, -fy);
+  ctx.save(); ctx.translate(lerp(fx, 380, zu), lerp(fy, 760, zu)); ctx.scale(1 + 1.0 * zu, 1 + 1.0 * zu); ctx.translate(-fx, -fy);
   for (let k = 0; k < 4; k++) folder(K, right(k), yT - (k + 1) * fh, Lb, fh, COL[3 - k]);
   const lab = [[tm.c1, 3, '1/2'], [tm.c2, 2, '1/4'], [tm.c3, 1, '1/6'], [tm.c4, 0, '1/8']];
   lab.forEach(([a, k, s]) => { if (t < a - 0.04) return; const v = spring(t - (a - 0.04), UI[0], UI[1]); ctx.save(); ctx.translate(right(k) - 110, yT - (k + 0.5) * fh + 15); ctx.scale(v, v); text(s, 0, 0, 44, PAL.paper, 900); ctx.restore(); });
@@ -168,11 +169,11 @@ function proof(K, t, tl, S) {
   if (t >= tm.air - 0.04) { const v = spring(t - (tm.air - 0.04), UI[0], UI[1]); ctx.save(); ctx.translate(540, 360); ctx.scale(v, v); rect(-300, -60, 600, 120, PAL.green, LW, 30); text('TAMAMEN HAVADA', 0, 20, 58, PAL.paper, 900); ctx.restore(); }
   if (t >= tm.sum - 0.04) {
     const v = spring(t - (tm.sum - 0.04), UI[0], UI[1]);
-    ctx.save(); ctx.translate(540, 1240); ctx.scale(v, v); rect(-440, -52, 880, 104, INK, 0, 52); text('1/2 + 1/4 + 1/6 + 1/8 = 1,04 klasör', 0, 18, 46, PAL.paper, 900); ctx.restore();
+    ctx.save(); ctx.translate(540, 1170); ctx.scale(v, v); rect(-440, -52, 880, 104, INK, 0, 52); text('1/2 + 1/4 + 1/6 + 1/8 = 1,04 klasör', 0, 18, 46, PAL.paper, 900); ctx.restore();
   }
-  const dp = charBase('defne', { x: 210, y: 1980, s: 245, expr: 'mutlu', armR: { sh: 150, el: -10 }, armL: { sh: 20, el: 10 }, head: { tilt: -4, look: [0.4, -0.6] } });
+  const dp = charBase('defne', { x: 210, y: 2080, s: 245, expr: 'mutlu', armR: { sh: 150, el: -10 }, armL: { sh: 20, el: 10 }, head: { tilt: -4, look: [0.4, -0.6] } });
   dp.talk = talkAt(tl, 'defne', t); drawChar(ctx, 'defne', dp, t);
   const hu = ease.enter(seg(t, tm.air, 0.4));
-  drawChar(ctx, 'hikmet', charBase('hikmet', { x: 880, y: 1990, s: 235, expr: hu > 0.5 ? 'saskin' : 'notr', head: { tilt: 6, look: [-0.6, -0.6] }, armL: { sh: lerp(20, 150, hu), el: lerp(-30, 10, hu) }, armR: { sh: lerp(20, 150, hu), el: lerp(-30, 10, hu) } }), t);
-  caption(K, captionAt(tl, t), { y: 1330, head: null });
+  drawChar(ctx, 'hikmet', charBase('hikmet', { x: 880, y: 2090, s: 235, expr: hu > 0.5 ? 'saskin' : 'notr', head: { tilt: 6, look: [-0.6, -0.6] }, armL: { sh: lerp(20, 150, hu), el: lerp(-30, 10, hu) }, armR: { sh: lerp(20, 150, hu), el: lerp(-30, 10, hu) } }), t);
+  caption(K, captionAt(tl, t), { y: 1290, head: null });
 }

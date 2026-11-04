@@ -13,9 +13,8 @@
   "#ofis"
  ],
  "card": [
-  "Sırtında kırmızı ya da mavi kart.",
-  "Kendininkini göremezsin, konuşma yok.",
-  "En az biriniz doğru yazmalı. Plan?"
+  "Sırtındaki rengi göremezsin.",
+  "En az biriniz bilmeli. Plan?"
  ],
  "caption": "Zeka sorusu: Hikmet Bey ile Defne'nin sırtına kırmızı ya da mavi kart yapıştırılacak. Herkes yalnız ötekinin kartını görüyor, konuşmak yasak. İkisi aynı anda kendi rengini yazacak; en az biri doğru yazarsa kazanıyorlar. Önceden plan yapabilirler. Garanti bir plan var mı?\n\nCevap videonun sonunda.",
  "voice": {
@@ -101,7 +100,7 @@
     "id": "n1",
     "who": "necmi",
     "gap": 5.6,
-    "text": "Ben hanımla hep böyle anlaşırım: o \"aynı\" der, ben \"farklı\" derim. Hangisi olursa olsun, birimiz haklı çıkar!",
+    "text": "Ben hanımla hep böyle anlaşırım: hanım \"aynı\" der, ben \"farklı\" derim. Hangisi olursa olsun, birimiz haklı çıkar!",
     "tts": "Ben hanımla hep böyle anlaşırım. Hanım, aynı der. Ben, farklı derim. Hangisi olursa olsun, birimiz haklı çıkar!"
    },
    {
@@ -122,8 +121,8 @@
     "id": "d5",
     "who": "defne",
     "gap": 0.4,
-    "text": "Siz bende gördüğünüzün tersini yazarsınız: \"farklı\". Renkler ya aynıdır ya farklı. Birimiz mutlaka doğru!",
-    "tts": "Siz bende gördüğünüzün tersini yazarsınız. Farklı. Renkler ya aynıdır ya farklı. Birimiz mutlaka doğru!"
+    "text": "Siz bende gördüğünüzün tersini yazarsınız; yani \"farklı\"ya oynarsınız. Renkler ya aynıdır ya farklı. Birimiz mutlaka doğru!",
+    "tts": "Siz bende gördüğünüzün tersini yazarsınız. Yani farklıya oynarsınız. Renkler ya aynıdır ya farklı. Birimiz mutlaka doğru!"
    },
    {
     "id": "h4",
@@ -165,11 +164,11 @@
   ],
   [
    "pop",
-   "d5:3"
+   "d5:6"
   ],
   [
    "ding",
-   "d5:13"
+   "d5:15"
   ],
   [
    "womp",

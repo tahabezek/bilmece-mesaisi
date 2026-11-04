@@ -17,7 +17,7 @@ export function build(ep, tl) {
     think0: T('h3>'), da: T('da'), d2: T('d2'), hd: T('hd'), n0: T('n0'), hn: T('hn'), hc: T('hc'),
     clue: T('n1'), cd: T(ep.countdown), ayni: T('n1:6'), farkli: T('n1:9'), hakli: T('n1:14'),
     buldum: T('d3'), proof: T('d3>') + 0.05,
-    dcol: T('d4:0'), dfill: T('d4:7'), hcol: T('d5:0'), hfill: T('d5:5'), rows: T('d5:6'), win: T('d5:11'),
+    dcol: T('d4:0'), dfill: T('d4:7'), hcol: T('d5:0'), hfill: T('d5:6'), rows: T('d5:8'), win: T('d5:13'),
     happy: T('h4') - 0.15, cta: T('d6') - 0.2, end: T('d6>') + 0.1,
   };
   const cam = [
@@ -112,7 +112,7 @@ export function draw(K, t, ep, tl, S) {
   if (t >= tm.clue - 0.3 && t < tm.buldum) Object.assign(np, { expr: 'mutlu', head: { tilt: 4, look: [-0.8, 0.1] }, armR: { sh: 25, el: -160 } });
   np.talk = talkAt(tl, 'necmi', t);
   const n = t >= tm.cta ? null : drawChar(ctx, 'necmi', np, t);
-  const cu = t >= tm.cards ? spring(t - tm.cards, UI[0], UI[1]) : 0;
+  const cu = 1 + 0.25 * Math.exp(-Math.pow((t - tm.cards - 0.2) / 0.22, 2));   // kartlar kare 0'dan sırtta; söylendiği an vurgu
   // kartlar karakterin arkasında: Hikmet KIRMIZI, Defne MAVİ (izleyici görür)
   if (t < tm.cta) backCard(K, X.hikmet, 1500, 250, RED, -1, cu);
   backCard(K, X.defne, 1520, 245, BLUE, 1, cu);
@@ -159,19 +159,19 @@ function proof(K, t, tl, S) {
   const z = 1 + 0.014 * u; ctx.save(); ctx.translate(0, -7 * u); ctx.translate(540, 900); ctx.scale(z, z); ctx.translate(-540, -900);
   room(K, { floorY: 1500, window: false, t });
   ctx.fillStyle = 'rgba(31,36,33,0.6)'; ctx.fillRect(-100, -100, 1280, 2120);
-  const C = [RED, BLUE], cx = [150, 310, 600, 880], hy = 380;
-  rect(40, hy - 50, 1000, 620, PAL.cream, LW, 26);
-  text("Defne'nin", cx[0], hy - 18, 28, '#6B6355', 900); text('kartı', cx[0], hy + 14, 28, '#6B6355', 900); text("Hikmet'in", cx[1], hy - 18, 28, '#6B6355', 900); text('kartı', cx[1], hy + 14, 28, '#6B6355', 900);
-  if (t >= tm.dcol - 0.04) text('Defne yazar', cx[2], hy, 32, INK, 900);
-  if (t >= tm.hcol - 0.04) text('Hikmet yazar', cx[3], hy, 32, INK, 900);
+  const C = [RED, BLUE], cx = [280, 420, 610, 800], hy = 380;
+  rect(90, hy - 60, 840, 630, PAL.cream, LW, 26);
+  text('Defne', cx[0], hy - 16, 28, '#6B6355', 900); text('kartı', cx[0], hy + 16, 28, '#6B6355', 900); text('Hikmet', cx[1], hy - 16, 28, '#6B6355', 900); text('kartı', cx[1], hy + 16, 28, '#6B6355', 900);
+  if (t >= tm.dcol - 0.04) { text('Defne', cx[2] + 40, hy - 16, 30, INK, 900); text('yazar', cx[2] + 40, hy + 16, 30, INK, 900); }
+  if (t >= tm.hcol - 0.04) { text('Hikmet', cx[3] + 40, hy - 16, 30, INK, 900); text('yazar', cx[3] + 40, hy + 16, 30, INK, 900); }
   const R = [[0, 0], [0, 1], [1, 0], [1, 1]];   // [Defne, Hikmet] renk indeksleri
   R.forEach(([dc, hc], i) => {
     const y = hy + 90 + i * 120, same = dc === hc, hi = t >= tm.rows - 0.04 + i * 0.12;
-    if (hi) { ctx.save(); ctx.globalAlpha = 0.18; ctx.fillStyle = same ? PAL.teal : PAL.mustard; ctx.fillRect(56, y - 52, 968, 104); ctx.restore(); }
+    if (hi) { ctx.save(); ctx.globalAlpha = 0.18; ctx.fillStyle = same ? PAL.teal : PAL.mustard; ctx.fillRect(104, y - 52, 812, 104); ctx.restore(); }
     chip(K, cx[0], y, C[dc]); chip(K, cx[1], y, C[hc]);
     if (t >= tm.dfill - 0.04 + i * 0.1) { chip(K, cx[2] - 40, y, C[hc]); check(K, cx[2] + 50, y, hc === dc, spring(t - (tm.dfill + i * 0.1), UI[0], UI[1])); }
     if (t >= tm.hfill - 0.04 + i * 0.1) { chip(K, cx[3] - 40, y, C[1 - dc]); check(K, cx[3] + 50, y, 1 - dc === hc, spring(t - (tm.hfill + i * 0.1), UI[0], UI[1])); }
-    if (hi) text(same ? 'aynı' : 'farklı', 480, y + 52, 24, same ? PAL.teal : '#A87A1E', 900);
+    if (hi) text(same ? 'AYNI' : 'FARKLI', 165, y + 13, 34, same ? PAL.teal : '#A87A1E', 900);
   });
   if (t >= tm.win - 0.04) {
     const v = spring(t - (tm.win - 0.04), 420, 26);
@@ -179,9 +179,9 @@ function proof(K, t, tl, S) {
     rect(-330, -66, 660, 132, PAL.green, LW * 1.2, 22); text('HER SATIRDA BİR ✓', 0, 22, 58, PAL.paper, 900); ctx.restore();
   }
   ctx.restore();
-  const dp = charBase('defne', { x: 210, y: 1960, s: 250, expr: 'mutlu', armR: { sh: 150, el: -10 }, armL: { sh: 20, el: 10 }, head: { tilt: -4, look: [0.4, -0.6] } });
+  const dp = charBase('defne', { x: 210, y: 2060, s: 250, expr: 'mutlu', armR: { sh: 150, el: -10 }, armL: { sh: 20, el: 10 }, head: { tilt: -4, look: [0.4, -0.6] } });
   dp.talk = talkAt(tl, 'defne', t); drawChar(ctx, 'defne', dp, t);
   const hu = ease.enter(seg(t, tm.win, 0.4));
-  drawChar(ctx, 'hikmet', charBase('hikmet', { x: 880, y: 1970, s: 235, expr: hu > 0.5 ? 'saskin' : 'notr', head: { tilt: 6, look: [-0.6, -0.6] }, armL: { sh: lerp(20, 150, hu), el: lerp(-30, 10, hu) }, armR: { sh: lerp(20, 150, hu), el: lerp(-30, 10, hu) } }), t);
-  caption(K, captionAt(tl, t), { y: 1300, head: null });
+  drawChar(ctx, 'hikmet', charBase('hikmet', { x: 880, y: 2070, s: 235, expr: hu > 0.5 ? 'saskin' : 'notr', head: { tilt: 6, look: [-0.6, -0.6] }, armL: { sh: lerp(20, 150, hu), el: lerp(-30, 10, hu) }, armR: { sh: lerp(20, 150, hu), el: lerp(-30, 10, hu) } }), t);
+  caption(K, captionAt(tl, t), { y: 1290, head: null });
 }

@@ -695,10 +695,10 @@
   "dur": 4.178
  },
  "d5": {
-  "key": "32f1b246ac8c",
-  "trimmed": "32f1b246ac8c",
-  "wkey": "32f1b246ac8c",
-  "heard": "Siz bende gördüğünüzün tersini yazarsınız, farklı, renkler ya aynıdır ya farklı, birimiz mutlaka doğru.",
+  "key": "fb7c170ff70b",
+  "trimmed": "fb7c170ff70b",
+  "wkey": "fb7c170ff70b",
+  "heard": "Siz bende gördüğünüzün tersini yazarsınız yani farklıya oynarsınız renkler ya aynıdır ya farklı birimiz mutlaka doğru.",
   "words": [
    {
     "w": "Siz",
@@ -723,55 +723,65 @@
    {
     "w": "yazarsınız.",
     "t0": 1.6,
-    "t1": 2.28
+    "t1": 2.3
    },
    {
-    "w": "Farklı.",
-    "t0": 2.52,
-    "t1": 2.82
+    "w": "Yani",
+    "t0": 2.3,
+    "t1": 2.76
+   },
+   {
+    "w": "farklıya",
+    "t0": 2.76,
+    "t1": 3.36
+   },
+   {
+    "w": "oynarsınız.",
+    "t0": 3.36,
+    "t1": 4.08
    },
    {
     "w": "Renkler",
-    "t0": 3.24,
-    "t1": 3.68
+    "t0": 4.08,
+    "t1": 4.76
    },
    {
     "w": "ya",
-    "t0": 3.68,
-    "t1": 3.82
+    "t0": 4.76,
+    "t1": 4.9
    },
    {
     "w": "aynıdır",
-    "t0": 3.82,
-    "t1": 4.26
+    "t0": 4.9,
+    "t1": 5.34
    },
    {
     "w": "ya",
-    "t0": 4.26,
-    "t1": 4.4
+    "t0": 5.34,
+    "t1": 5.48
    },
    {
     "w": "farklı.",
-    "t0": 4.4,
-    "t1": 4.74
+    "t0": 5.48,
+    "t1": 5.82
    },
    {
     "w": "Birimiz",
-    "t0": 5.1,
-    "t1": 5.44
+    "t0": 5.82,
+    "t1": 6.52
    },
    {
     "w": "mutlaka",
-    "t0": 5.44,
-    "t1": 5.94
+    "t0": 6.52,
+    "t1": 7.02
    },
    {
     "w": "doğru!",
-    "t0": 5.94,
-    "t1": 6.2
+    "t0": 7.02,
+    "t1": 7.26
    }
   ],
-  "dur": 6.444
+  "dur": 7.514
  },
  "h4": {
   "key": "e73627b411f7",

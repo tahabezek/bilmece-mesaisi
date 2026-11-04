@@ -13,9 +13,8 @@
   "#ofis"
  ],
  "card": [
-  "Torbada iki taş: beyaz izin, siyah iptal.",
-  "Defne gördü: ikisi de siyah!",
-  "Müdürü suçlamadan iznini nasıl alır?"
+  "Torbada iki siyah taş. Beyaz = izin.",
+  "Suçlamadan izni nasıl alırsın?"
  ],
  "caption": "Zeka sorusu: Müdür torbaya iki taş koyuyor: beyazı çekersen iznin onaylı, siyahı çekersen iptal. Ama Defne gördü, iki taş da siyah! Müdürü yalancı çıkaramaz, çekmezse izin yanar. Defne iznini nasıl kurtarır?\n\nCevap videonun sonunda.",
  "voice": {
@@ -52,7 +51,8 @@
     "who": "defne",
     "gap": 0.25,
     "text": "Bir dakika… İkisi de siyah!",
-    "tts": "Bir dakika. İkisi de siyah!"
+    "tts": "Bir dakika. İkisi de siyah!",
+    "ic": true
    },
    {
     "id": "h3",
@@ -65,14 +65,16 @@
     "who": "defne",
     "gap": 0.45,
     "text": "Hile var ama müdürümü yalancı çıkaramam. Çeksem siyah gelecek…",
-    "tts": "Hile var ama müdürümü yalancı çıkaramam. Çeksem siyah gelecek."
+    "tts": "Hile var ama müdürümü yalancı çıkaramam. Çeksem siyah gelecek.",
+    "ic": true
    },
    {
     "id": "d2",
     "who": "defne",
     "gap": 0.4,
     "text": "Doğruyu söylesem kovulurum. Çekmesem izin yanar…",
-    "tts": "Doğruyu söylesem kovulurum. Çekmesem izin yanar."
+    "tts": "Doğruyu söylesem kovulurum. Çekmesem izin yanar.",
+    "ic": true
    },
    {
     "id": "n0",

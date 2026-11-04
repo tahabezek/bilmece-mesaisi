@@ -149,15 +149,18 @@ export function caption(K, cap, { y, head, maxW = 820, size = 48 }) {
   ctx.globalAlpha = out;
   ctx.translate(cx, y + (up ? 0 : h)); ctx.scale(0.7 + 0.3 * inU, 0.7 + 0.3 * inU); ctx.translate(-cx, -(y + (up ? 0 : h)));
   const x = cx - w / 2;
-  // kuyruk
+  // kuyruk (iç seste düşünce balonu: iki daire)
   if (head) {
     const tx = Math.min(Math.max(head[0], x + 70), x + w - 70), by = up ? y + 4 : y + h - 4;
     const tipY = up ? Math.max(head[1] + 150, y - 120) : Math.min(head[1] - 150, y + h + 120), tipX = tx + (head[0] - tx) * 0.8;
-    ctx.beginPath(); ctx.moveTo(tx - 26, by); ctx.lineTo(tipX, tipY); ctx.lineTo(tx + 26, by); ctx.closePath();
-    ctx.fillStyle = '#FFFFFF'; ctx.fill(); ctx.lineWidth = LW; ctx.strokeStyle = INK; ctx.lineJoin = 'round'; ctx.stroke();
+    if (l.ic) { for (const [k, r] of [[0.35, 16], [0.75, 10]]) { ctx.beginPath(); ctx.arc(lerp(tx, tipX, k), lerp(by, tipY, k), r, 0, Math.PI * 2); ctx.fillStyle = '#FFFFFF'; ctx.fill(); ctx.lineWidth = LW * 0.8; ctx.strokeStyle = INK; ctx.stroke(); } }
+    else { ctx.beginPath(); ctx.moveTo(tx - 26, by); ctx.lineTo(tipX, tipY); ctx.lineTo(tx + 26, by); ctx.closePath();
+      ctx.fillStyle = '#FFFFFF'; ctx.fill(); ctx.lineWidth = LW; ctx.strokeStyle = INK; ctx.lineJoin = 'round'; ctx.stroke(); }
   }
   ctx.beginPath(); ctx.roundRect(x + 8, y + 10, w, h, 32); ctx.fillStyle = INK; ctx.fill();
-  ctx.beginPath(); ctx.roundRect(x, y, w, h, 32); ctx.fillStyle = '#FFFFFF'; ctx.fill(); ctx.lineWidth = LW; ctx.strokeStyle = INK; ctx.stroke();
+  ctx.beginPath(); ctx.roundRect(x, y, w, h, 32); ctx.fillStyle = '#FFFFFF'; ctx.fill(); ctx.lineWidth = LW; ctx.strokeStyle = INK;
+  if (l.ic) ctx.setLineDash([16, 10]); ctx.stroke(); ctx.setLineDash([]);
+  if (l.ic) { ctx.font = '900 30px Rubik'; const pw = ctx.measureText('içinden').width + 36; ctx.beginPath(); ctx.roundRect(x + 24, y - 24, pw, 44, 22); ctx.fillStyle = INK; ctx.fill(); K.text('içinden', x + 24 + pw / 2, y + 8, 30, PAL.paper, 900); }
   // konuşanın renk şeridi
   ctx.beginPath(); ctx.roundRect(x + 18, y + 18, 12, h - 36, 6); ctx.fillStyle = WHO_COL[l.who] || INK; ctx.fill();
   lines.forEach((s, i) => K.text(s, cx + 10, y + 23 + size * 0.86 + i * lh, size, INK, 700));
@@ -255,7 +258,7 @@ export function countdown(K, t, t1, { top = 540 } = {}) {
   const t0 = t1 - 5;
   if (t < t0 - 0.3 || t >= t1 + 0.35) return;
   const { ctx } = K, inU = spring(t - (t0 - 0.25), UI[0], UI[1]), out = 1 - ease.exit(seg(t, t1, 0.3));
-  const left = Math.max(0, t1 - t), n = Math.ceil(left - 1e-6), since = 1 - (left % 1 || 1);
+  const left = Math.max(0, t1 - t), n = Math.min(5, Math.ceil(left - 1e-6)), since = 1 - (left % 1 || 1);
   const pulse = 1 + 0.16 * (1 - ease.enter(clamp01(since / 0.35)));
   const hot = n <= 3, x = 540, y = 990, r = 190;
   // perde: bilmece kartının altı kararır (kart okunur kalır), karakterler arkada düşünmeye devam eder

@@ -169,14 +169,14 @@ function proof(K, t, tl, S) {
   if (t >= tm.white - 0.04) {
     const v = spring(t - (tm.white - 0.04), UI[0], UI[1]);
     ctx.save(); ctx.translate(540, 1130); ctx.scale(v, v);
-    rect(-400, -80, 800, 160, PAL.green, LW, 30); stone(K, -310, 0, 40, false);
-    text('ÇEKİLEN BEYAZ SAYILIR', 40, 18, 50, PAL.paper, 900);
+    rect(-420, -80, 840, 160, PAL.green, LW, 30); stone(K, -350, 0, 36, false);
+    text('ÇEKİLEN BEYAZ SAYILIR', 50, 18, 50, PAL.paper, 900);
     ctx.restore();
   }
   ctx.restore();
-  const dp = charBase('defne', { x: 210, y: 1960, s: 250, expr: 'mutlu', armR: { sh: 150, el: -10 }, armL: { sh: 20, el: 10 }, head: { tilt: -4, look: [0.4, -0.6] } });
+  const dp = charBase('defne', { x: 210, y: 2060, s: 250, expr: 'mutlu', armR: { sh: 150, el: -10 }, armL: { sh: 20, el: 10 }, head: { tilt: -4, look: [0.4, -0.6] } });
   dp.talk = talkAt(tl, 'defne', t); drawChar(ctx, 'defne', dp, t);
   const hu = ease.enter(seg(t, tm.white, 0.4));
-  drawChar(ctx, 'hikmet', charBase('hikmet', { x: 880, y: 1970, s: 235, expr: hu > 0.5 ? 'saskin' : 'notr', head: { tilt: 6, look: [-0.6, -0.6] }, armL: { sh: lerp(20, 70, hu), el: lerp(-30, 40, hu) }, armR: { sh: lerp(20, 70, hu), el: lerp(-30, 40, hu) } }), t);
-  caption(K, captionAt(tl, t), { y: 1300, head: null });
+  drawChar(ctx, 'hikmet', charBase('hikmet', { x: 880, y: 2070, s: 235, expr: hu > 0.5 ? 'saskin' : 'notr', head: { tilt: 6, look: [-0.6, -0.6] }, armL: { sh: lerp(20, 70, hu), el: lerp(-30, 40, hu) }, armR: { sh: lerp(20, 70, hu), el: lerp(-30, 40, hu) } }), t);
+  caption(K, captionAt(tl, t), { y: 1290, head: null });
 }

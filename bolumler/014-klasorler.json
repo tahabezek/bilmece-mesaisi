@@ -13,9 +13,8 @@
   "#ofis"
  ],
  "card": [
-  "Klasörleri masanın kenarına diz:",
-  "her katta bir tane, yapıştırmak yok.",
-  "En üstteki tamamen dışarıda durur mu?"
+  "Klasörleri kenara üst üste diz.",
+  "En üstteki boşlukta durur mu?"
  ],
  "caption": "Zeka sorusu: Aynı klasörleri masanın kenarına üst üste diziyorsun. Her katta tek klasör, yapıştırmak yok. En üstteki klasör tamamen masanın dışında, boşlukta durabilir mi?\n\nÇoğu kişi \"düşer\" diyor. Cevap videonun sonunda.",
  "voice": {

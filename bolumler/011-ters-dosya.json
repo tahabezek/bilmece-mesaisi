@@ -14,7 +14,7 @@
  ],
  "card": [
   "Karanlıkta 20 dosya, 5'i ters.",
-  "Dokunarak anlaşılmıyor.",
+  "Görmeden çevirebilirsin.",
   "İki yığına ayır: tersler eşit olsun."
  ],
  "caption": "Zeka sorusu: Elektrikler kesik, zifiri karanlık. Masada 20 dosya var, 5'i ters ama hangileri bilinmiyor; dokunarak da anlaşılmıyor. Dosyaları istediğin kadar çevirebilirsin. İki yığına ayır ki ikisinde de ters dosya sayısı eşit olsun.\n\nGörmeden mümkün mü? Cevap videonun sonunda.",
@@ -26,7 +26,7 @@
     "id": "h1",
     "who": "hikmet",
     "gap": 0.4,
-    "text": "Defneciğim, göremediğin bir şeyi eşit ikiye ayıracaksın."
+    "text": "Defneciğim, göremediğin bir şeyi eşitleyeceksin."
    },
    {
     "id": "d1",
@@ -51,7 +51,7 @@
     "id": "h2c",
     "who": "hikmet",
     "gap": 0.35,
-    "text": "İki yığına ayır. İki yığında da ters dosya sayısı eşit olsun."
+    "text": "İki yığına ayır; büyüklükleri önemli değil. İki yığında da ters dosya sayısı eşit olsun."
    },
    {
     "id": "h3",
@@ -70,8 +70,8 @@
     "id": "d2",
     "who": "defne",
     "gap": 0.4,
-    "text": "Ona on mu ayırsam? Şansa kalır; birinde iki ters, öbüründe üç olabilir.",
-    "tts": "Ona on mu ayırsam? Şansa kalır. Birinde iki ters, öbüründe üç olabilir."
+    "text": "Onar onar mı ayırsam? Şansa kalır; birinde iki ters, öbüründe üç olabilir.",
+    "tts": "Onar onar mı ayırsam? Şansa kalır. Birinde iki ters, öbüründe üç olabilir."
    },
    {
     "id": "n0",
@@ -126,7 +126,7 @@
     "id": "h5",
     "who": "hikmet",
     "gap": 1.1,
-    "text": "Necmi, ışıkları açmayın. Yüzümü görmesin."
+    "text": "Necmi, ışıkları açma. Yüzümü görmesin."
    },
    {
     "id": "d6",

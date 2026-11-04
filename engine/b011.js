@@ -42,9 +42,9 @@ export function build(ep, tl) {
   ];
   const think = { brow: 0.02, browTilt: 0.3, eye: 0.55, pupil: 1, curve: -0.05, open: 0, w: 0.85 };
   const think2 = { brow: 0.05, browTilt: 0.25, eye: 0.9, pupil: 1, curve: -0.1, open: 0, w: 0.8 };
-  const hikBase = charBase('hikmet', { x: 190, y: 1500, s: 250, expr: 'mutlu', head: { tilt: -4, look: [0.7, 0.1] }, armL: { sh: 20, el: -60 }, armR: { sh: 20, el: -60 } });
+  const hikBase = charBase('hikmet', { x: 190, y: 1500, s: 250, expr: 'mutlu', head: { tilt: -4, look: [0.7, 0.1] }, armL: { sh: 20, el: -60 }, armR: { sh: 80, el: 20 } });
   const hik = [
-    [L.h1.t0 + 0.2, { armR: { sh: 140, el: 10 } }, 0.35, ease.enter],
+    [L.h1.t0 + 1.2, { armR: { sh: 140, el: 10 } }, 0.35, ease.enter],
     [tm.files - 0.2, { armR: { sh: 70, el: 20 }, head: { tilt: 6, look: [0.9, 0.3] } }, 0.35, ease.enter],
     [L.h2c.t0, { armR: { sh: 150, el: -20 }, head: { tilt: -4, look: [0.7, 0] } }, 0.3, ease.enter],
     [tm.think0 + 0.3, { armR: { sh: 20, el: -60 } }],
@@ -116,6 +116,14 @@ export function draw(K, t, ep, tl, S) {
   // karanlık: loş mavi örtü + kenar kararması
   ctx.save(); ctx.fillStyle = 'rgba(10,22,34,0.42)'; ctx.fillRect(0, 0, 1080, 1920);
   const g = ctx.createRadialGradient(540, 1100, 300, 540, 1100, 1100); g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(1, 'rgba(6,12,20,0.55)'); ctx.fillStyle = g; ctx.fillRect(0, 0, 1080, 1920); ctx.restore();
+  // ay ışığı: masadaki tek bir ters dosya seçilir (kanca; 'hangisi ters?')
+  if (!happy && t < tm.buldum) {
+    ctx.save(); applyCam(ctx, cam);
+    const lx = 420 + 4 * 58, ly = 1290;
+    ctx.save(); ctx.globalAlpha = 0.16; ctx.beginPath(); ctx.moveTo(lx - 30, 300); ctx.lineTo(lx + 120, 300); ctx.lineTo(lx + 50, ly + 30); ctx.lineTo(lx - 50, ly + 30); ctx.closePath(); ctx.fillStyle = '#DDEBFF'; ctx.fill(); ctx.restore();
+    file(K, lx, ly, 44, true, 0, 1);
+    ctx.restore();
+  }
 
   const heads = { hikmet: h?.head, defne: d?.head, necmi: n?.head };
   if (t >= tm.happy) { const cap = captionAt(tl, t), hd = heads[cap?.line.who]; return caption(K, cap, { y: 300, head: hd && toScreen(cam, hd) }); }
@@ -131,7 +139,7 @@ export function draw(K, t, ep, tl, S) {
     const fl = ease.state(seg(t, tm.gflip, 0.5));
     if (t >= tm.g5 - 0.04) ups0.forEach((up, i) => { const x = -240 + i * 120, upNow = fl < 0.5 ? up : !up; const k = 1 - 0.6 * Math.sin(Math.PI * fl); ctx.save(); ctx.translate(x, -10); ctx.scale(1, k); glass(K, 0, 0, 1, upNow); ctx.restore(); });
     const nUp = fl < 0.5 ? 2 : 3;
-    K.text(`dik: ${nUp}   ters: ${5 - nUp}`, 0, 110, 40, INK, 900);
+    if (t >= tm.g5 - 0.04) K.text(`dik: ${nUp}   ters: ${5 - nUp}`, 0, 110, 40, INK, 900);
     if (t >= tm.gswap - 0.04) { const v = spring(t - (tm.gswap - 0.04), UI[0], UI[1]); ctx.save(); ctx.translate(0, -118); ctx.scale(v, v); K.rect(-210, -36, 420, 72, PAL.coral, LW * 0.8, 36); K.text('SAYILAR YER DEĞİŞTİ', 0, 13, 32, PAL.paper, 900); ctx.restore(); }
     ctx.restore();
   }
@@ -178,14 +186,14 @@ function proof(K, t, tl, S) {
   if (showR) pill(860, 800, `ters: ${R1.length}`, eq);
   if (t >= tm.eq2 - 0.04) {
     const v = spring(t - (tm.eq2 - 0.04), 420, 26);
-    ctx.save(); ctx.translate(540, 1210); ctx.rotate(-0.05); ctx.scale(1.6 - 0.6 * v, 1.6 - 0.6 * v); ctx.globalAlpha = clamp01(v * 2);
+    ctx.save(); ctx.translate(540, 1170); ctx.rotate(-0.05); ctx.scale(1.6 - 0.6 * v, 1.6 - 0.6 * v); ctx.globalAlpha = clamp01(v * 2);
     rect(-260, -66, 520, 132, PAL.green, LW * 1.2, 22); text('HEP EŞİT', 0, 24, 70, PAL.paper, 900); ctx.restore();
   }
   ctx.restore();
-  const dp = charBase('defne', { x: 210, y: 1960, s: 250, expr: 'mutlu', armR: { sh: 150, el: -10 }, armL: { sh: 20, el: 10 }, head: { tilt: -4, look: [0.4, -0.6] } });
+  const dp = charBase('defne', { x: 210, y: 2060, s: 250, expr: 'mutlu', armR: { sh: 150, el: -10 }, armL: { sh: 20, el: 10 }, head: { tilt: -4, look: [0.4, -0.6] } });
   dp.talk = talkAt(tl, 'defne', t); drawChar(ctx, 'defne', dp, t);
-  const hp = charBase('hikmet', { x: 880, y: 1970, s: 235, expr: t >= tm.eq2 ? 'saskin' : 'notr', head: { tilt: 6, look: [-0.6, -0.6] }, armL: { sh: 20, el: -60 }, armR: { sh: 20, el: -60 } });
+  const hp = charBase('hikmet', { x: 880, y: 2070, s: 235, expr: t >= tm.eq2 ? 'saskin' : 'notr', head: { tilt: 6, look: [-0.6, -0.6] }, armL: { sh: 20, el: -60 }, armR: { sh: 20, el: -60 } });
   if (t >= tm.s2 - 0.3 && t < tm.s2 + 1.2) hp.armR = { sh: 150, el: -10 };
   hp.talk = talkAt(tl, 'hikmet', t); drawChar(ctx, 'hikmet', hp, t);
-  caption(K, captionAt(tl, t), { y: 1300, head: null });
+  caption(K, captionAt(tl, t), { y: 1290, head: null });
 }

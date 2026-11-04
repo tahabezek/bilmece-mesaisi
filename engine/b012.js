@@ -122,7 +122,7 @@ export function draw(K, t, ep, tl, S) {
   const heads = { hikmet: h?.head, defne: d?.head, necmi: n?.head };
   if (t >= tm.happy) { const cap = captionAt(tl, t), hd = heads[cap?.line.who]; return caption(K, cap, { y: 300, head: hd && toScreen(cam, hd) }); }
   const cardH = riddleCard(K, 70, 300, 940, ep.card, ep.num, { size: 54 }), top = 300 + cardH;
-  triesCol(K, t, [{ s: '99 kg?', t0: tm.d2, strike: tm.hd + 0.1 }, { s: '98 kg?', t0: at(tl, 'd2:4'), strike: tm.hd + 0.1 }], { x: 540, y: 1150, gap: 84, size: 56, fadeAt: tm.n0 - 0.2 });
+  triesCol(K, t, [{ s: '99 kg?', t0: tm.d2, strike: tm.hd + 0.1 }, { s: '98 kg?', t0: tm.d2 + 1.45, strike: tm.hd + 0.1 }], { x: 540, y: 1150, gap: 84, size: 56, fadeAt: tm.n0 - 0.2 });
   countdown(K, t, tm.cd, { top: top + 20 });
   // ipucu: hamam tartısı 82 → 80, damlalar, "su gider, kuru kalır"
   if (t >= tm.clue - 0.1 && t < tm.buldum) {
@@ -132,7 +132,7 @@ export function draw(K, t, ep, tl, S) {
     const kg = t < tm.sc + 0.2 ? 82 : Math.round(lerp(82, 80, clamp01((t - tm.sc - 0.2) / 0.8)));
     K.rect(-300, -90, 260, 150, '#C9CEC4', LW, 16); K.rect(-260, -66, 180, 70, '#2F3A36', LW * 0.6, 8); K.text(`${kg} kg`, -170, -18, 42, '#9BE07A', 900);
     if (t >= tm.drop - 0.04) for (let i = 0; i < 3; i++) { const v = clamp01((t - tm.drop - i * 0.15) / 0.5); if (v <= 0) continue; ctx.save(); ctx.globalAlpha = 1 - v * 0.6; ctx.translate(40 + i * 70, -60 + v * 90); ctx.beginPath(); ctx.moveTo(0, -24); ctx.quadraticCurveTo(18, 0, 0, 14); ctx.quadraticCurveTo(-18, 0, 0, -24); K.fs('#7FC4E8', LW * 0.6); ctx.restore(); }
-    if (t >= tm.same - 0.04) { const v = spring(t - (tm.same - 0.04), UI[0], UI[1]); ctx.save(); ctx.translate(0, 110); ctx.scale(v, v); K.rect(-270, -38, 540, 76, PAL.coral, LW * 0.8, 38); K.text('SU GİDER, KURU KALIR', 0, 14, 36, PAL.paper, 900); ctx.restore(); }
+    if (t >= tm.same - 0.04) { const v = spring(t - (tm.same - 0.04), UI[0], UI[1]); ctx.save(); ctx.translate(0, 110); ctx.scale(v, v); K.rect(-270, -38, 540, 76, PAL.coral, LW * 0.8, 38); K.text('SU GİTTİ, NECMİ AYNI', 0, 14, 36, PAL.paper, 900); ctx.restore(); }
     ctx.restore();
   }
   const cap = captionAt(tl, t), hd = heads[cap?.line.who];
@@ -166,9 +166,9 @@ function proof(K, t, tl, S) {
     rect(-240, -76, 480, 152, PAL.coral, LW * 1.2, 24); text('50 KİLO', 0, 28, 84, PAL.paper, 900); ctx.restore();
   }
   ctx.restore();
-  const dp = charBase('defne', { x: 210, y: 1960, s: 250, expr: 'mutlu', armR: { sh: 150, el: -10 }, armL: { sh: 20, el: 10 }, head: { tilt: -4, look: [0.4, -0.6] } });
+  const dp = charBase('defne', { x: 210, y: 2060, s: 250, expr: 'mutlu', armR: { sh: 150, el: -10 }, armL: { sh: 20, el: 10 }, head: { tilt: -4, look: [0.4, -0.6] } });
   dp.talk = talkAt(tl, 'defne', t); drawChar(ctx, 'defne', dp, t);
   const hu = ease.enter(seg(t, tm.fifty, 0.4));
-  drawChar(ctx, 'hikmet', charBase('hikmet', { x: 880, y: 1970, s: 235, expr: hu > 0.5 ? 'saskin' : 'notr', head: { tilt: 6, look: [-0.6, -0.6] }, armL: { sh: lerp(20, 150, hu), el: lerp(-30, 10, hu) }, armR: { sh: lerp(20, 150, hu), el: lerp(-30, 10, hu) } }), t);
-  caption(K, captionAt(tl, t), { y: 1300, head: null });
+  drawChar(ctx, 'hikmet', charBase('hikmet', { x: 880, y: 2070, s: 235, expr: hu > 0.5 ? 'saskin' : 'notr', head: { tilt: 6, look: [-0.6, -0.6] }, armL: { sh: lerp(20, 150, hu), el: lerp(-30, 10, hu) }, armR: { sh: lerp(20, 150, hu), el: lerp(-30, 10, hu) } }), t);
+  caption(K, captionAt(tl, t), { y: 1290, head: null });
 }
