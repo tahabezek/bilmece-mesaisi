@@ -3,11 +3,12 @@
     "2026-11-04T18:00Z": {
       "episode": "016-tuz",
       "media": "v/016-tuz.mp4",
-      "status": "scheduled",
+      "status": "failed",
       "at": "2026-11-04T17:47:47Z",
       "postId": "6aeb6fc2b60af5ca167b5588",
       "dueAt": "2026-11-04T18:00:00.000Z",
-      "note": "elle planlandı (25 dk kuralı)"
+      "note": "elle planlandı (25 dk kuralı)",
+      "error": "Buffer: media hatası (dosya planlamadan sonra aynı adla değişti)"
     },
     "2026-11-05T09:30Z": {
       "episode": "003-istanbul",
@@ -32,6 +33,15 @@
       "at": "2026-11-04T17:53:20.923Z",
       "postId": "6aeb71a2491f63648cede5bd",
       "dueAt": "2026-11-06T09:30:00.000Z"
+    },
+    "2026-11-04T18:55Z": {
+      "episode": "016-tuz",
+      "media": "v/016-tuz-ad03bc30.mp4",
+      "status": "scheduled",
+      "at": "2026-11-04T18:44:24.463Z",
+      "postId": "6aeb7d3b7631b8ab98bfe5ec",
+      "dueAt": "2026-11-04T18:55:00.000Z",
+      "note": "elle (--simdi)"
     }
   }
 }

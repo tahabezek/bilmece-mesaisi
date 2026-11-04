@@ -13,6 +13,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
+import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { gql, channelHealth, postsBetween, createReel, createShort } from './buffer.mjs';
 
@@ -61,7 +62,10 @@ function nextEpisode(ledger, taken) {
   const used = usedEpisodes(ledger);
   return episodes().find(e => !used.has(e.id) && !taken.has(e.id) && fs.existsSync(video(e)));
 }
-const mediaName = ep => `v/${ep.id}.mp4`;
+// her video sürümünün kendi adı olur (içerik özeti): planlanmış bir gönderinin dosyası asla değişmez.
+// (2026-11-04: aynı adla yeniden yükleme, Buffer'da 'media' hatasıyla gönderiyi düşürdü.)
+const _h = new Map();
+const mediaName = ep => { const f = video(ep); if (!_h.has(f)) _h.set(f, createHash('sha1').update(fs.readFileSync(f)).digest('hex').slice(0, 8)); return `v/${ep.id}-${_h.get(f)}.mp4`; };
 const postText = ep => [ep.caption, (ep.hashtags || []).join(' ')].filter(Boolean).join('\n\n');
 
 // ——— medya: 'media' dalına yetim commit, eski dosyalar budanır (git plumbing; çalışma ağacına dokunmaz) ———
@@ -143,7 +147,21 @@ async function status() {
   }, null, 2));
 }
 
+// --simdi <id> <ISO>: tek bölümü verilen anda (ya da 10 dk sonra) planla; medya yayına alınır, ledger'a işlenir.
+async function simdi(id, iso) {
+  const ep = episodes().find(e => e.id === id) || JSON.parse(fs.readFileSync(path.join(root, 'bolumler', id + '.json'), 'utf8'));
+  const due = iso ? new Date(iso) : new Date(Math.ceil((Date.now() + 10 * 60e3) / 60e3) * 60e3);
+  const ledger = loadLedger(), rel = mediaName(ep), mp4 = video(ep), url = cfg.mediaBaseUrl + rel, k = slotKey(due);
+  ledger.slots[k] = { episode: ep.id, media: rel, status: 'media', at: new Date().toISOString() }; saveLedger(ledger);
+  publishMedia(ledger, [[rel, mp4]]);
+  if (!(await waitLive(url, fs.statSync(mp4).size))) throw new Error('medya yayına çıkmadı: ' + url);
+  const post = await createReel({ channelId: cfg.channelId, text: postText(ep), videoUrl: url, dueAtISO: due.toISOString(), thumbnailOffsetMs: Math.round((ep.coverAt ?? 0) * 1000), shareToFeed: cfg.shareToFeed });
+  Object.assign(ledger.slots[k], { status: 'scheduled', postId: post.id, dueAt: post.dueAt, note: 'elle (--simdi)' }); saveLedger(ledger);
+  log(`✅ ${k} → ${ep.id} (${url})`);
+}
+
 async function main() {
+  if (args.has('--simdi')) { const a = process.argv.slice(process.argv.indexOf('--simdi') + 1); return simdi(a[0], a[1]); }
   if (args.has('--hazirla')) return prepare();
   if (args.has('--kanallar')) return channels();
   if (args.has('--status')) return status();
