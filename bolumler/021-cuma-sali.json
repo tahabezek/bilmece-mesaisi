@@ -38,8 +38,8 @@
     "id": "h2a",
     "who": "hikmet",
     "gap": 0.3,
-    "text": "Haftada öyle. Ama orada Cuma her zaman Salı'dan önce.",
-    "tts": "Haftada öyle. Ama orada Cuma her zaman Salıdan önce."
+    "text": "Hangi takvimde, hangi ülkede olursan ol. Orada Cuma her zaman Salı'dan önce.",
+    "tts": "Hangi takvimde, hangi ülkede olursan ol. Orada Cuma her zaman Salıdan önce."
    },
    {
     "id": "h2b",
@@ -65,14 +65,13 @@
     "id": "d2",
     "who": "defne",
     "gap": 0.3,
-    "text": "Başka bir ülkede hafta Cuma'dan mı başlıyor?",
-    "tts": "Başka bir ülkede hafta Cumadan mı başlıyor?"
+    "text": "Cuma günü işler daha çabuk biter, ondan mı?"
    },
    {
     "id": "hd",
     "who": "hikmet",
     "gap": 0.45,
-    "text": "Hayır! Takvimle hiç ilgisi yok."
+    "text": "Hayır! Günlerin sırasıyla hiç ilgisi yok."
    },
    {
     "id": "n0",

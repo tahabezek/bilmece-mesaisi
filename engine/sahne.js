@@ -272,7 +272,7 @@ export function countdown(K, t, t1, { top = 540 } = {}) {
   ctx.fillStyle = hot ? PAL.coral : PAL.mustard; ctx.fill();
   K.circ(0, 0, r * 0.66, PAL.paper, LW * 0.8);
   ctx.save(); ctx.scale(pulse, pulse); K.text(String(Math.max(n, 0)), 0, 56, 160, hot ? PAL.red : INK, 900); ctx.restore();
-  K.text('Cevap geliyor…', 0, r + 80, 52, PAL.paper, 800);
+  K.text('İpucu geliyor…', 0, r + 80, 52, PAL.paper, 800);
   ctx.restore();
 }
 

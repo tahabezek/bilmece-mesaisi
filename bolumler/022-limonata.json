@@ -13,9 +13,8 @@
   "#ofis"
  ],
  "card": [
-  "Aynı limonata, aynı buz.",
-  "Hızlı içen bir şey olmadı,",
-  "yavaş içenin midesi bozuldu. Neden?"
+  "Hızlı içen iyi, yavaş içen hasta.",
+  "Aynı limonata. Neden?"
  ],
  "caption": "Zeka sorusu: Hikmet Bey ile Kerem aynı sürahiden, aynı buzlu limonatayı içti. Kerem bir dikişte içti, hiçbir şey olmadı. Hikmet Bey yavaş yavaş içti, midesi bozuldu. Bardaklar temiz, limonata temiz. Neden?\n\nZengin Kız Fakir Oğlan'dan uyarlandı. Cevap videonun sonunda.",
  "voice": {
@@ -77,8 +76,8 @@
     "id": "hd",
     "who": "hikmet",
     "gap": 0.45,
-    "text": "Hayır! Kerem'in midesi kuş gibi.",
-    "tts": "Hayır! Keremin midesi kuş gibi."
+    "text": "Hayır! Kerem'in midesi çok hassastır.",
+    "tts": "Hayır! Keremin midesi çok hassastır."
    },
    {
     "id": "n0",
@@ -110,13 +109,13 @@
     "id": "d4",
     "who": "defne",
     "gap": 0.4,
-    "text": "Buzlar bozuk suyla yapılmıştı. Kerem bir dikişte içti, buzlar erimeden bardak bitti."
+    "text": "Buzun suyu temiz değildi. Kerem bir dikişte içti, buzlar erimeden bardak bitti."
    },
    {
     "id": "d5",
     "who": "defne",
     "gap": 0.45,
-    "text": "Siz yavaş içtiniz, buzlar bardağınızda eridi. Bozuk su sizin limonatanıza karıştı!"
+    "text": "Siz yavaş içtiniz, buzlar bardağınızda eridi. O su sizin limonatanıza karıştı!"
    },
    {
     "id": "h4",

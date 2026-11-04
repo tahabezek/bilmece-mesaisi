@@ -26,7 +26,7 @@ export function draw(K, t, ep, tl, S) {
     clue: (K, t) => {
       K.text('NECMİ\'NİN REHBERİ', 0, -108, 30, '#6B6355', 900);
       pop(K, t, tm.book, v => { K.ctx.scale(v, v); K.rect(-150, -80, 300, 190, '#FFFFFF', LW, 12);
-        ['Ahmet', 'Bekir', 'Hasan', 'Mehmet', 'Zeki'].forEach((n, i) => { const hi = (i === 0 && t >= tm.top) || (i === 4 && t >= tm.bottom); if (hi) K.rect(-140, -70 + i * 36, 280, 32, PAL.mustard, 0, 6); K.text(n, -120, -45 + i * 36, 26, INK, 800, 'left'); }); });
+        ['Ahmet', 'Bekir', 'Mehmet', 'Zeki'].forEach((n, i) => { const hi = (i === 0 && t >= tm.top) || (i === 3 && t >= tm.bottom); if (hi) K.rect(-140, -72 + i * 46, 280, 42, PAL.mustard, 0, 6); K.text(n, -120, -40 + i * 46, 36, INK, 900, 'left'); }); });
       pop(K, t, tm.az, v => { K.ctx.translate(250, 0); K.ctx.scale(v, v); pill(K, 0, 0, 'A → Z', PAL.coral, PAL.paper, 40); });
     },
     proof: (K, t) => {
@@ -40,8 +40,8 @@ export function draw(K, t, ep, tl, S) {
       // sözlük sayfası
       pop(K, t, tm.dict, v => { ctx.translate(540, 900); ctx.scale(v, v);
         K.rect(-380, -150, 760, 300, '#FBF6EC', LW, 14); K.line(0, -140, 0, 140, 3, '#C9BFA9'); K.text('SÖZLÜK', -190, -105, 30, '#6B6355', 900);
-        [['cam', 0], ['cuma', 1], ['çay', 0], ['dolap', 0]].forEach(([w, hi], i) => { if (hi) K.rect(-360, -78 + i * 50, 340, 44, PAL.mustard, 0, 6); K.text(w, -340, -46 + i * 50, 32, INK, hi ? 900 : 700, 'left'); });
-        [['raf', 0], ['saat', 0], ['salı', 1], ['şeker', 0]].forEach(([w, hi], i) => { if (hi) K.rect(20, -78 + i * 50, 340, 44, PAL.mustard, 0, 6); K.text(w, 40, -46 + i * 50, 32, INK, hi ? 900 : 700, 'left'); });
+        [['cam', 0], ['cuma', 1], ['çay', 0], ['dolap', 0]].forEach(([w, hi], i) => { if (hi) K.rect(-360, -80 + i * 56, 340, 50, PAL.mustard, 0, 6); K.text(w, -340, -42 + i * 56, 42, INK, hi ? 900 : 700, 'left'); });
+        [['raf', 0], ['saat', 0], ['salı', 1], ['şeker', 0]].forEach(([w, hi], i) => { if (hi) K.rect(20, -80 + i * 56, 340, 50, PAL.mustard, 0, 6); K.text(w, 40, -42 + i * 56, 42, INK, hi ? 900 : 700, 'left'); });
       });
       stamp(K, t, tm.win, 540, 1150, 'SÖZLÜKTE: CUMA → SALI', PAL.green, 54);
     },

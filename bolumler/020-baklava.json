@@ -13,9 +13,8 @@
   "#ofis"
  ],
  "card": [
-  "Baklavayı tek kişi yedi.",
-  "Üç şüpheliden yalnız biri doğru söylüyor.",
-  "Kim yedi?"
+  "Yalnız biri doğru söylüyor.",
+  "Baklavayı kim yedi?"
  ],
  "caption": "Zeka sorusu: Hikmet Bey'in baklavasını tek kişi yedi. Necmi \"Kerem yedi\" diyor, Kerem \"Ben yemedim\" diyor, Defne \"Necmi yemedi\" diyor. Üçünden yalnız biri doğru söylüyor. Baklavayı kim yedi?\n\nCevap videonun sonunda.",
  "voice": {
@@ -95,8 +94,8 @@
     "id": "n1",
     "who": "necmi",
     "gap": 5.6,
-    "text": "Ben tavlada her zarı tek tek denerim: bu olur mu, şu olur mu… Hangisi tutarsa onu oynarım!",
-    "tts": "Ben tavlada her zarı tek tek denerim. Bu olur mu, şu olur mu. Hangisi tutarsa onu oynarım!"
+    "text": "Arşivin üç anahtarı var, kapıyı yalnız biri açar. Ben tek tek denerim: hangisi uyuyorsa odur!",
+    "tts": "Arşivin üç anahtarı var, kapıyı yalnız biri açar. Ben tek tek denerim. Hangisi uyuyorsa odur!"
    },
    {
     "id": "d3",

@@ -35,8 +35,8 @@ export function draw(K, t, ep, tl, S) {
     screen: (K, t, S, top) => {
       if (t > tm.think0 + 0.5 || t < tm.fast - 0.1) return;
       const out = 1 - ease.exit(seg(t, tm.think0, 0.4));
-      pop(K, t, tm.fast, v => { K.ctx.translate(640, top + 110); K.ctx.scale(v * out, v * out); pill(K, 0, 0, 'Kerem: hızlı → iyi', PAL.teal, PAL.paper, 40); });
-      pop(K, t, tm.slow, v => { K.ctx.translate(640, top + 210); K.ctx.scale(v * out, v * out); pill(K, 0, 0, 'Hikmet: yavaş → hasta', PAL.coral, PAL.paper, 40); });
+      pop(K, t, tm.fast, v => { K.ctx.translate(540, 960); K.ctx.scale(v * out, v * out); pill(K, 0, 0, 'Kerem: hızlı → iyi', PAL.teal, PAL.paper, 40); });
+      pop(K, t, tm.slow, v => { K.ctx.translate(540, 1060); K.ctx.scale(v * out, v * out); pill(K, 0, 0, 'Hikmet: yavaş → hasta', PAL.coral, PAL.paper, 40); });
     },
     tries: [{ s: 'Mide mi sağlam?', t0: tm.d2, strike: tm.hd + 0.1 }],
     clue: (K, t) => {
@@ -49,7 +49,7 @@ export function draw(K, t, ep, tl, S) {
       const { ctx } = K;
       const kd = ease.state(seg(t, tm.kStart, Math.max(0.6, tm.kEnd - tm.kStart)));
       const hm = ease.state(seg(t, tm.hMelt, 1.4)), mix = ease.state(seg(t, tm.hMix, 1.6)), hd = 0.25 * ease.state(seg(t, tm.hMelt, 3));
-      pop(K, t, tm.bad, v => { ctx.translate(540, 360); ctx.scale(v, v); pill(K, 0, 0, 'Buzlar bozuk suyla yapılmış', INK, PAL.paper, 40); });
+      pop(K, t, tm.bad, v => { ctx.translate(540, 360); ctx.scale(v, v); pill(K, 0, 0, 'Buzun suyu temiz değildi', INK, PAL.paper, 40); });
       // Kerem: bir dikişte (buz erimeden boşalır)
       glass(K, 300, 760, 1.6, 0.85 * (1 - kd), 1, 0, 1);
       pill(K, 300, 1010, 'KEREM: bir dikişte', PAL.teal, PAL.paper, 38);

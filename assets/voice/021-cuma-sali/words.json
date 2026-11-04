@@ -103,58 +103,73 @@
   "dur": 2.638
  },
  "h2a": {
-  "key": "571204ac5c78",
-  "trimmed": "571204ac5c78",
-  "wkey": "571204ac5c78",
-  "heard": "Haftada öyle. Ama orada cuma her zaman salıdan önce.",
+  "key": "add001ae815a",
+  "trimmed": "add001ae815a",
+  "wkey": "add001ae815a",
+  "heard": "Hangi takvimde, hangi ülkede olursan ol. Orada cuma her zaman salıdan önce.",
   "words": [
    {
-    "w": "Haftada",
+    "w": "Hangi",
     "t0": 0.0,
-    "t1": 0.5
+    "t1": 0.44
    },
    {
-    "w": "öyle.",
-    "t0": 0.5,
-    "t1": 0.78
+    "w": "takvimde,",
+    "t0": 0.44,
+    "t1": 0.98
    },
    {
-    "w": "Ama",
-    "t0": 0.78,
-    "t1": 1.46
+    "w": "hangi",
+    "t0": 1.2,
+    "t1": 1.54
    },
    {
-    "w": "orada",
-    "t0": 1.46,
-    "t1": 1.78
+    "w": "ülkede",
+    "t0": 1.54,
+    "t1": 1.86
+   },
+   {
+    "w": "olursan",
+    "t0": 1.86,
+    "t1": 2.36
+   },
+   {
+    "w": "ol.",
+    "t0": 2.36,
+    "t1": 2.86
+   },
+   {
+    "w": "Orada",
+    "t0": 2.86,
+    "t1": 3.22
    },
    {
     "w": "Cuma",
-    "t0": 1.78,
-    "t1": 2.1
+    "t0": 3.22,
+    "t1": 3.46
    },
    {
     "w": "her",
-    "t0": 2.1,
-    "t1": 2.42
+    "t0": 3.46,
+    "t1": 3.8
    },
    {
     "w": "zaman",
-    "t0": 2.42,
-    "t1": 2.76
+    "t0": 3.8,
+    "t1": 4.12
    },
    {
     "w": "Salıdan",
-    "t0": 2.76,
-    "t1": 3.26
+    "t0": 4.12,
+    "t1": 4.62
    },
    {
     "w": "önce.",
-    "t0": 3.26,
-    "t1": 3.5
+    "t0": 4.62,
+    "t1": 4.86
    }
   ],
-  "dur": 3.718
+  "dur": 5.088
  },
  "h2b": {
   "key": "f78749beadb5",
@@ -269,54 +284,59 @@
   "dur": 2.888
  },
  "d2": {
-  "key": "df5e2822531a",
-  "trimmed": "df5e2822531a",
-  "wkey": "df5e2822531a",
-  "heard": "Başka bir ülkede hafta cumadan mı başlıyor?",
+  "key": "ca445e8e2a06",
+  "trimmed": "ca445e8e2a06",
+  "wkey": "ca445e8e2a06",
+  "heard": "Cuma günü işler daha çabuk biter, ondan mı?",
   "words": [
    {
-    "w": "Başka",
+    "w": "Cuma",
     "t0": 0.0,
-    "t1": 0.36
+    "t1": 0.28
    },
    {
-    "w": "bir",
-    "t0": 0.36,
-    "t1": 0.44
+    "w": "günü",
+    "t0": 0.28,
+    "t1": 0.56
    },
    {
-    "w": "ülkede",
-    "t0": 0.44,
-    "t1": 0.76
+    "w": "işler",
+    "t0": 0.56,
+    "t1": 0.86
    },
    {
-    "w": "hafta",
-    "t0": 0.76,
-    "t1": 1.12
+    "w": "daha",
+    "t0": 0.86,
+    "t1": 1.06
    },
    {
-    "w": "Cumadan",
-    "t0": 1.12,
-    "t1": 1.46
+    "w": "çabuk",
+    "t0": 1.06,
+    "t1": 1.38
    },
    {
-    "w": "mı",
-    "t0": 1.46,
-    "t1": 1.62
+    "w": "biter,",
+    "t0": 1.38,
+    "t1": 1.76
    },
    {
-    "w": "başlıyor?",
-    "t0": 1.62,
-    "t1": 2.06
+    "w": "ondan",
+    "t0": 1.94,
+    "t1": 2.12
+   },
+   {
+    "w": "mı?",
+    "t0": 2.12,
+    "t1": 2.4
    }
   ],
-  "dur": 2.23
+  "dur": 2.5
  },
  "hd": {
-  "key": "0c4f651b1bf5",
-  "trimmed": "0c4f651b1bf5",
-  "wkey": "0c4f651b1bf5",
-  "heard": "Hayır, takvimle hiç ilgisi yok.",
+  "key": "88ab22d60dd8",
+  "trimmed": "88ab22d60dd8",
+  "wkey": "88ab22d60dd8",
+  "heard": "Hayır, günlerin sırasıyla hiç ilgisi yok.",
   "words": [
    {
     "w": "Hayır!",
@@ -324,27 +344,32 @@
     "t1": 0.28
    },
    {
-    "w": "Takvimle",
-    "t0": 0.74,
-    "t1": 1.28
+    "w": "Günlerin",
+    "t0": 0.68,
+    "t1": 1.22
+   },
+   {
+    "w": "sırasıyla",
+    "t0": 1.22,
+    "t1": 1.86
    },
    {
     "w": "hiç",
-    "t0": 1.28,
-    "t1": 1.46
+    "t0": 1.86,
+    "t1": 2.06
    },
    {
     "w": "ilgisi",
-    "t0": 1.46,
-    "t1": 1.9
+    "t0": 2.06,
+    "t1": 2.5
    },
    {
     "w": "yok.",
-    "t0": 1.9,
-    "t1": 2.1
+    "t0": 2.5,
+    "t1": 2.7
    }
   ],
-  "dur": 2.288
+  "dur": 2.878
  },
  "n0": {
   "key": "8140d0dfee95",
