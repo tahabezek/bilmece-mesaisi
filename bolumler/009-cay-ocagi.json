@@ -1,0 +1,199 @@
+{
+ "id": "009-cay-ocagi",
+ "num": 9,
+ "bpm": 120,
+ "slug": "cay-ocagi",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#ofis"
+ ],
+ "card": [
+  "Doğru söylersen arşive,",
+  "yanlış söylersen çay ocağına.",
+  "Hangi cümle seni kurtarır?"
+ ],
+ "caption": "Zeka sorusu: Müdür diyor ki \"Bir cümle söyle. Doğruysa seni arşive, yanlışsa çay ocağına göndereceğim.\" Ve sözünden asla dönmüyor. Öyle bir cümle kur ki seni hiçbir yere gönderemesin.\n\nCevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Defneciğim, bu ay üçüncü gecikmen bu."
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.25,
+    "text": "Yollar çok kalabalıktı Müdür Bey, yemin ederim."
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Şimdi bir cümle söyleyeceksin. Doğruysa seni arşive gönderirim."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.35,
+    "text": "Yanlışsa çay ocağına. Ve ben sözümden asla dönmem."
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Beni çaresiz bırakan bir cümle bulursan masan senin."
+   },
+   {
+    "id": "da",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Doğru da bir yere çıkıyor, yanlış da. Demek ki cümle ne doğru ne yanlış olabilmeli…",
+    "tts": "Doğru da bir yere çıkıyor, yanlış da. Demek ki cümle ne doğru ne yanlış olabilmeli."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.3,
+    "text": "Bugün hava güzel."
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Doğru! Arşive gidiyorsun."
+   },
+   {
+    "id": "d2b",
+    "who": "defne",
+    "gap": 0.3,
+    "text": "Ben müdürüm."
+   },
+   {
+    "id": "hd2",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Yanlış! Çay ocağına."
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.4,
+    "text": "Hiç konuşma kızım, sus. Susana kural işlemez."
+   },
+   {
+    "id": "hc",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Mesai bitiyor Defneciğim. Çay ocağı seni bekliyor."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Bulmacada bir cümle var: \"Bu cümle yanlıştır.\" Doğruysa yanlış, yanlışsa doğru. Kafam yandı!",
+    "tts": "Bulmacada bir cümle var. Bu cümle yanlıştır. Doğruysa yanlış, yanlışsa doğru. Kafam yandı!"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Buldum!",
+    "snap": true
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Cümlem şu: \"Beni çay ocağına göndereceksiniz.\"",
+    "tts": "Cümlem şu. Beni çay ocağına göndereceksiniz."
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Çay ocağına gönderirsem…",
+    "tts": "Çay ocağına gönderirsem."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.3,
+    "text": "O zaman cümlem doğru çıkar. Doğruysa arşive göndermeniz lazım."
+   },
+   {
+    "id": "h5",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Arşive gönderirsem…",
+    "tts": "Peki, arşive gönderirsem."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "O zaman cümlem yanlış olur. Yanlışsa, çay ocağına!"
+   },
+   {
+    "id": "h6",
+    "who": "hikmet",
+    "gap": 1.1,
+    "text": "Ne arşive ne çay ocağına… Geç yerine.",
+    "tts": "Ne arşive, ne çay ocağına. Geç yerine."
+   },
+   {
+    "id": "d7",
+    "who": "defne",
+    "gap": 0.55,
+    "text": "Bunu tartışmayı hiç kaybetmeyen arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d7>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "buzz",
+   "hd:0"
+  ],
+  [
+   "buzz",
+   "hd2:0"
+  ],
+  [
+   "swish",
+   "h4:1"
+  ],
+  [
+   "swish",
+   "h5:2"
+  ],
+  [
+   "stamp",
+   "d6>+0.05"
+  ],
+  [
+   "womp",
+   "d6>+0.15"
+  ]
+ ]
+}

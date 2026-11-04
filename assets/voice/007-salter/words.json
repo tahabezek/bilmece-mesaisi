@@ -1,0 +1,806 @@
+{
+ "h1": {
+  "key": "aaced9294a1a",
+  "trimmed": "aaced9294a1a",
+  "wkey": "aaced9294a1a",
+  "heard": "Defnecim 3 şalter, tek ampul, tek giriş.",
+  "words": [
+   {
+    "w": "Defneciğim,",
+    "t0": 0.0,
+    "t1": 0.72
+   },
+   {
+    "w": "üç",
+    "t0": 0.72,
+    "t1": 1.02
+   },
+   {
+    "w": "şalter,",
+    "t0": 1.02,
+    "t1": 1.58
+   },
+   {
+    "w": "tek",
+    "t0": 1.58,
+    "t1": 1.96
+   },
+   {
+    "w": "ampul,",
+    "t0": 1.96,
+    "t1": 2.4
+   },
+   {
+    "w": "tek",
+    "t0": 2.4,
+    "t1": 2.68
+   },
+   {
+    "w": "giriş!",
+    "t0": 2.68,
+    "t1": 3.1
+   }
+  ],
+  "dur": 3.2
+ },
+ "d1": {
+  "key": "a83998fceea7",
+  "trimmed": "a83998fceea7",
+  "wkey": "a83998fceea7",
+  "heard": "Yine mi bilmece müdür bey?",
+  "words": [
+   {
+    "w": "Yine",
+    "t0": 0.0,
+    "t1": 0.3
+   },
+   {
+    "w": "mi",
+    "t0": 0.3,
+    "t1": 0.48
+   },
+   {
+    "w": "bilmece",
+    "t0": 0.48,
+    "t1": 0.96
+   },
+   {
+    "w": "Müdür",
+    "t0": 0.96,
+    "t1": 1.32
+   },
+   {
+    "w": "Bey?",
+    "t0": 1.32,
+    "t1": 1.48
+   }
+  ],
+  "dur": 1.65
+ },
+ "h2a": {
+  "key": "f67b819fd71e",
+  "trimmed": "f67b819fd71e",
+  "wkey": "f67b819fd71e",
+  "heard": "Arşiv 'e ampul taktırdım. Benim kadar eski. Kapının dışında 3 şalter var. Biri onu yakıyor.",
+  "words": [
+   {
+    "w": "Arşive",
+    "t0": 0.0,
+    "t1": 0.44
+   },
+   {
+    "w": "ampul",
+    "t0": 0.56,
+    "t1": 0.92
+   },
+   {
+    "w": "taktırdım,",
+    "t0": 0.92,
+    "t1": 1.56
+   },
+   {
+    "w": "benim",
+    "t0": 1.8,
+    "t1": 1.96
+   },
+   {
+    "w": "kadar",
+    "t0": 1.96,
+    "t1": 2.24
+   },
+   {
+    "w": "eski.",
+    "t0": 2.24,
+    "t1": 2.7
+   },
+   {
+    "w": "Kapının",
+    "t0": 2.94,
+    "t1": 3.36
+   },
+   {
+    "w": "dışında",
+    "t0": 3.36,
+    "t1": 3.8
+   },
+   {
+    "w": "üç",
+    "t0": 3.8,
+    "t1": 4.02
+   },
+   {
+    "w": "şalter",
+    "t0": 4.02,
+    "t1": 4.4
+   },
+   {
+    "w": "var,",
+    "t0": 4.4,
+    "t1": 4.98
+   },
+   {
+    "w": "biri",
+    "t0": 4.98,
+    "t1": 5.26
+   },
+   {
+    "w": "onu",
+    "t0": 5.26,
+    "t1": 5.34
+   },
+   {
+    "w": "yakıyor.",
+    "t0": 5.34,
+    "t1": 5.72
+   }
+  ],
+  "dur": 5.898
+ },
+ "h2b": {
+  "key": "aa56cd857328",
+  "trimmed": "aa56cd857328",
+  "wkey": "aa56cd857328",
+  "heard": "Kıpı kapalı olunca içerisi görünmez. İçeri sadece bir kez girebilirsin. Hangi şalter?",
+  "words": [
+   {
+    "w": "Kapı",
+    "t0": 0.0,
+    "t1": 0.3
+   },
+   {
+    "w": "kapalı",
+    "t0": 0.3,
+    "t1": 0.64
+   },
+   {
+    "w": "olunca",
+    "t0": 0.64,
+    "t1": 0.96
+   },
+   {
+    "w": "içerisi",
+    "t0": 0.96,
+    "t1": 1.42
+   },
+   {
+    "w": "görünmez.",
+    "t0": 1.42,
+    "t1": 1.86
+   },
+   {
+    "w": "İçeri",
+    "t0": 2.22,
+    "t1": 2.62
+   },
+   {
+    "w": "sadece",
+    "t0": 2.62,
+    "t1": 3.02
+   },
+   {
+    "w": "bir",
+    "t0": 3.02,
+    "t1": 3.32
+   },
+   {
+    "w": "kez",
+    "t0": 3.32,
+    "t1": 3.62
+   },
+   {
+    "w": "girebilirsin.",
+    "t0": 3.62,
+    "t1": 4.2
+   },
+   {
+    "w": "Hangi",
+    "t0": 4.52,
+    "t1": 4.96
+   },
+   {
+    "w": "şalter?",
+    "t0": 4.96,
+    "t1": 5.3
+   }
+  ],
+  "dur": 5.556
+ },
+ "h3": {
+  "key": "99aee80fe159",
+  "trimmed": "99aee80fe159",
+  "wkey": "99aee80fe159",
+  "heard": "Bilemezsen, arşivdeki bütün dosyaları sen düzenlersin.",
+  "words": [
+   {
+    "w": "Bilemezsen",
+    "t0": 0.0,
+    "t1": 0.68
+   },
+   {
+    "w": "arşivdeki",
+    "t0": 0.78,
+    "t1": 1.3
+   },
+   {
+    "w": "bütün",
+    "t0": 1.3,
+    "t1": 1.5
+   },
+   {
+    "w": "dosyaları",
+    "t0": 1.5,
+    "t1": 2.12
+   },
+   {
+    "w": "sen",
+    "t0": 2.12,
+    "t1": 2.3
+   },
+   {
+    "w": "düzenlersin.",
+    "t0": 2.3,
+    "t1": 3.04
+   }
+  ],
+  "dur": 3.19
+ },
+ "da": {
+  "key": "deb52ec03353",
+  "trimmed": "deb52ec03353",
+  "wkey": "deb52ec03353",
+  "heard": "Birini açıp girsem yanıyorsa tamam ama yanmıyorsa geriye iki şalter kalıyor.",
+  "words": [
+   {
+    "w": "Birini",
+    "t0": 0.0,
+    "t1": 0.32
+   },
+   {
+    "w": "açıp",
+    "t0": 0.32,
+    "t1": 0.62
+   },
+   {
+    "w": "girsem,",
+    "t0": 0.62,
+    "t1": 0.98
+   },
+   {
+    "w": "yanıyorsa",
+    "t0": 0.98,
+    "t1": 1.68
+   },
+   {
+    "w": "tamam.",
+    "t0": 1.68,
+    "t1": 1.94
+   },
+   {
+    "w": "Ama",
+    "t0": 1.94,
+    "t1": 2.5
+   },
+   {
+    "w": "yanmıyorsa",
+    "t0": 2.5,
+    "t1": 3.08
+   },
+   {
+    "w": "geriye",
+    "t0": 3.08,
+    "t1": 3.42
+   },
+   {
+    "w": "iki",
+    "t0": 3.42,
+    "t1": 3.6
+   },
+   {
+    "w": "şalter",
+    "t0": 3.6,
+    "t1": 3.9
+   },
+   {
+    "w": "kalıyor.",
+    "t0": 3.9,
+    "t1": 4.36
+   }
+  ],
+  "dur": 4.538
+ },
+ "d2": {
+  "key": "20ba0d54ebf4",
+  "trimmed": "20ba0d54ebf4",
+  "wkey": "20ba0d54ebf4",
+  "heard": "İkisini açsam, yine iki ihtimal, bir ampulün iki hali var, şalterse üç tane.",
+  "words": [
+   {
+    "w": "İkisini",
+    "t0": 0.0,
+    "t1": 0.38
+   },
+   {
+    "w": "açsam?",
+    "t0": 0.38,
+    "t1": 0.88
+   },
+   {
+    "w": "Yine",
+    "t0": 1.26,
+    "t1": 1.4
+   },
+   {
+    "w": "iki",
+    "t0": 1.4,
+    "t1": 1.72
+   },
+   {
+    "w": "ihtimal.",
+    "t0": 1.72,
+    "t1": 2.26
+   },
+   {
+    "w": "Bir",
+    "t0": 2.26,
+    "t1": 2.68
+   },
+   {
+    "w": "ampulün",
+    "t0": 2.68,
+    "t1": 3.1
+   },
+   {
+    "w": "iki",
+    "t0": 3.1,
+    "t1": 3.3
+   },
+   {
+    "w": "hâli",
+    "t0": 3.3,
+    "t1": 3.64
+   },
+   {
+    "w": "var,",
+    "t0": 3.64,
+    "t1": 4.06
+   },
+   {
+    "w": "şalterse",
+    "t0": 4.06,
+    "t1": 4.62
+   },
+   {
+    "w": "üç",
+    "t0": 4.62,
+    "t1": 4.8
+   },
+   {
+    "w": "tane.",
+    "t0": 4.8,
+    "t1": 5.1
+   }
+  ],
+  "dur": 5.306
+ },
+ "n0": {
+  "key": "692b0a1c37eb",
+  "trimmed": "692b0a1c37eb",
+  "wkey": "692b0a1c37eb",
+  "heard": "Ben olsam üçünü birden açarım.",
+  "words": [
+   {
+    "w": "Ben",
+    "t0": 0.0,
+    "t1": 0.26
+   },
+   {
+    "w": "olsam",
+    "t0": 0.26,
+    "t1": 0.68
+   },
+   {
+    "w": "üçünü",
+    "t0": 0.68,
+    "t1": 1.04
+   },
+   {
+    "w": "birden",
+    "t0": 1.04,
+    "t1": 1.48
+   },
+   {
+    "w": "açarım.",
+    "t0": 1.48,
+    "t1": 1.78
+   }
+  ],
+  "dur": 2.0
+ },
+ "hn": {
+  "key": "7086ea5304be",
+  "trimmed": "7086ea5304be",
+  "wkey": "7086ea5304be",
+  "heard": "Sonra Necmi. Hangisi yaktı?",
+  "words": [
+   {
+    "w": "Sonra",
+    "t0": 0.0,
+    "t1": 0.44
+   },
+   {
+    "w": "Necmi?",
+    "t0": 0.44,
+    "t1": 0.96
+   },
+   {
+    "w": "Hangisi",
+    "t0": 1.3,
+    "t1": 1.78
+   },
+   {
+    "w": "yaktı?",
+    "t0": 1.78,
+    "t1": 2.2
+   }
+  ],
+  "dur": 2.318
+ },
+ "hc": {
+  "key": "93a3172cd82f",
+  "trimmed": "93a3172cd82f",
+  "wkey": "93a3172cd82f",
+  "heard": "Saat ilerliyor Defneciğim. Dosyalar seni bekliyor.",
+  "words": [
+   {
+    "w": "Saat",
+    "t0": 0.0,
+    "t1": 0.46
+   },
+   {
+    "w": "ilerliyor",
+    "t0": 0.46,
+    "t1": 0.94
+   },
+   {
+    "w": "Defneciğim.",
+    "t0": 0.94,
+    "t1": 1.52
+   },
+   {
+    "w": "Dosyalar",
+    "t0": 1.8,
+    "t1": 2.6
+   },
+   {
+    "w": "seni",
+    "t0": 2.6,
+    "t1": 2.78
+   },
+   {
+    "w": "bekliyor.",
+    "t0": 2.78,
+    "t1": 3.24
+   }
+  ],
+  "dur": 3.468
+ },
+ "n1": {
+  "key": "1ea36b3b7dda",
+  "trimmed": "1ea36b3b7dda",
+  "wkey": "1ea36b3b7dda",
+  "heard": "Kışın arşivde ellerimi o ampulde ısıtırdım, kapattıktan sonra bile sıcacık kalırdı.",
+  "words": [
+   {
+    "w": "Kışın",
+    "t0": 0.0,
+    "t1": 0.42
+   },
+   {
+    "w": "arşivde",
+    "t0": 0.42,
+    "t1": 0.96
+   },
+   {
+    "w": "ellerimi",
+    "t0": 0.96,
+    "t1": 1.52
+   },
+   {
+    "w": "o",
+    "t0": 1.52,
+    "t1": 1.74
+   },
+   {
+    "w": "ampulde",
+    "t0": 1.74,
+    "t1": 2.2
+   },
+   {
+    "w": "ısıtırdım.",
+    "t0": 2.2,
+    "t1": 2.8
+   },
+   {
+    "w": "Kapattıktan",
+    "t0": 3.1,
+    "t1": 3.98
+   },
+   {
+    "w": "sonra",
+    "t0": 3.98,
+    "t1": 4.26
+   },
+   {
+    "w": "bile",
+    "t0": 4.26,
+    "t1": 4.64
+   },
+   {
+    "w": "sıcacık",
+    "t0": 4.64,
+    "t1": 5.2
+   },
+   {
+    "w": "kalırdı!",
+    "t0": 5.2,
+    "t1": 5.66
+   }
+  ],
+  "dur": 5.798
+ },
+ "d3": {
+  "key": "f8c85a8507dd",
+  "trimmed": "f8c85a8507dd",
+  "wkey": "f8c85a8507dd",
+  "heard": "Buldum. Sıcaklık.",
+  "words": [
+   {
+    "w": "Buldum!",
+    "t0": 0.0,
+    "t1": 0.46
+   },
+   {
+    "w": "Sıcaklık!",
+    "t0": 0.76,
+    "t1": 1.24
+   }
+  ],
+  "dur": 1.328
+ },
+ "d4": {
+  "key": "ec88b0d34558",
+  "trimmed": "ec88b0d34558",
+  "wkey": "ec88b0d34558",
+  "heard": "Birinci şalteri 10 dakika açık tutarım, sonra kapatırım. İkinciyi açar, içeri girelim.",
+  "words": [
+   {
+    "w": "Birinci",
+    "t0": 0.0,
+    "t1": 0.34
+   },
+   {
+    "w": "şalteri",
+    "t0": 0.34,
+    "t1": 0.84
+   },
+   {
+    "w": "on",
+    "t0": 0.84,
+    "t1": 1.02
+   },
+   {
+    "w": "dakika",
+    "t0": 1.02,
+    "t1": 1.18
+   },
+   {
+    "w": "açık",
+    "t0": 1.18,
+    "t1": 1.56
+   },
+   {
+    "w": "tutarım,",
+    "t0": 1.56,
+    "t1": 1.92
+   },
+   {
+    "w": "sonra",
+    "t0": 2.18,
+    "t1": 2.34
+   },
+   {
+    "w": "kapatırım.",
+    "t0": 2.34,
+    "t1": 2.88
+   },
+   {
+    "w": "İkinciyi",
+    "t0": 3.16,
+    "t1": 3.68
+   },
+   {
+    "w": "açar,",
+    "t0": 3.68,
+    "t1": 4.0
+   },
+   {
+    "w": "içeri",
+    "t0": 4.14,
+    "t1": 4.42
+   },
+   {
+    "w": "girerim.",
+    "t0": 4.42,
+    "t1": 4.72
+   }
+  ],
+  "dur": 4.878
+ },
+ "d5": {
+  "key": "2d20b02a897b",
+  "trimmed": "2d20b02a897b",
+  "wkey": "2d20b02a897b",
+  "heard": "Ambul yanıyorsa ikinci, sönük ama sıcaksa birinci, sönük ve soğuksa üçüncü.",
+  "words": [
+   {
+    "w": "Ampul",
+    "t0": 0.0,
+    "t1": 0.36
+   },
+   {
+    "w": "yanıyorsa",
+    "t0": 0.36,
+    "t1": 0.92
+   },
+   {
+    "w": "ikinci.",
+    "t0": 0.92,
+    "t1": 1.38
+   },
+   {
+    "w": "Sönük",
+    "t0": 1.58,
+    "t1": 2.02
+   },
+   {
+    "w": "ama",
+    "t0": 2.02,
+    "t1": 2.2
+   },
+   {
+    "w": "sıcaksa",
+    "t0": 2.2,
+    "t1": 2.72
+   },
+   {
+    "w": "birinci.",
+    "t0": 2.72,
+    "t1": 3.08
+   },
+   {
+    "w": "Sönük",
+    "t0": 3.38,
+    "t1": 3.74
+   },
+   {
+    "w": "ve",
+    "t0": 3.74,
+    "t1": 3.86
+   },
+   {
+    "w": "soğuksa",
+    "t0": 3.86,
+    "t1": 4.3
+   },
+   {
+    "w": "üçüncü!",
+    "t0": 4.3,
+    "t1": 4.74
+   }
+  ],
+  "dur": 4.836
+ },
+ "h4": {
+  "key": "b805f578669c",
+  "trimmed": "b805f578669c",
+  "wkey": "b805f578669c",
+  "heard": "Necmi, bundan sonra ampule dokunmak yasak.",
+  "words": [
+   {
+    "w": "Necmi,",
+    "t0": 0.0,
+    "t1": 0.54
+   },
+   {
+    "w": "bundan",
+    "t0": 0.7,
+    "t1": 1.06
+   },
+   {
+    "w": "sonra",
+    "t0": 1.06,
+    "t1": 1.38
+   },
+   {
+    "w": "ampule",
+    "t0": 1.38,
+    "t1": 1.88
+   },
+   {
+    "w": "dokunmak",
+    "t0": 1.88,
+    "t1": 2.36
+   },
+   {
+    "w": "yasak!",
+    "t0": 2.36,
+    "t1": 2.82
+   }
+  ],
+  "dur": 2.88
+ },
+ "d6": {
+  "key": "9e5ffc55e6b9",
+  "trimmed": "9e5ffc55e6b9",
+  "wkey": "9e5ffc55e6b9",
+  "heard": "Bunu her şeyi gözüyle çözen arkadaşına gönder.",
+  "words": [
+   {
+    "w": "Bunu",
+    "t0": 0.0,
+    "t1": 0.2
+   },
+   {
+    "w": "her",
+    "t0": 0.2,
+    "t1": 0.44
+   },
+   {
+    "w": "şeyi",
+    "t0": 0.44,
+    "t1": 0.66
+   },
+   {
+    "w": "gözüyle",
+    "t0": 0.66,
+    "t1": 1.12
+   },
+   {
+    "w": "çözen",
+    "t0": 1.12,
+    "t1": 1.44
+   },
+   {
+    "w": "arkadaşına",
+    "t0": 1.44,
+    "t1": 2.0
+   },
+   {
+    "w": "gönder.",
+    "t0": 2.0,
+    "t1": 2.34
+   }
+  ],
+  "dur": 2.51
+ }
+}

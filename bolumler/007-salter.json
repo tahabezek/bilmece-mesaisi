@@ -1,0 +1,170 @@
+{
+ "id": "007-salter",
+ "num": 7,
+ "bpm": 120,
+ "slug": "salter",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#ofis"
+ ],
+ "card": [
+  "Dışarıda 3 şalter, arşivde 1 eski ampul.",
+  "İçeri yalnız bir kez girebilirsin.",
+  "Ampulü hangi şalter yakıyor?"
+ ],
+ "caption": "Zeka sorusu: Arşivin kapısı kapalı, içerisi görünmüyor. Kapının dışında 3 şalter var, biri içerideki eski tip ampulü yakıyor. Arşive yalnızca bir kez girebilirsin. Hangi şalter olduğunu nasıl bulursun?\n\nCevap videonun sonunda. Gözünle bulamazsın.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Defneciğim, üç şalter, tek ampul, tek giriş!"
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.25,
+    "text": "Yine mi bilmece Müdür Bey?",
+    "rate": "-8%"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Arşive ampul taktırdım, benim kadar eski. Kapının dışında üç şalter var, biri onu yakıyor."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.35,
+    "text": "Kapı kapalı olunca içerisi görünmez. İçeri sadece bir kez girebilirsin. Hangi şalter?"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Bilemezsen arşivdeki bütün dosyaları sen düzenlersin."
+   },
+   {
+    "id": "da",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Birini açıp girsem, yanıyorsa tamam. Ama yanmıyorsa geriye iki şalter kalıyor…",
+    "tts": "Birini açıp girsem, yanıyorsa tamam. Ama yanmıyorsa geriye iki şalter kalıyor."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "İkisini açsam? Yine iki ihtimal. Bir ampulün iki hâli var, şalterse üç tane…",
+    "tts": "İkisini açsam? Yine iki ihtimal. Bir ampulün iki hâli var, şalterse üç tane."
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.5,
+    "text": "Ben olsam üçünü birden açarım."
+   },
+   {
+    "id": "hn",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Sonra Necmi? Hangisi yaktı?"
+   },
+   {
+    "id": "hc",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Saat ilerliyor Defneciğim. Dosyalar seni bekliyor."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Kışın arşivde ellerimi o ampulde ısıtırdım. Kapattıktan sonra bile sıcacık kalırdı!"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Buldum! Sıcaklık!",
+    "snap": true
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "Birinci şalteri on dakika açık tutarım, sonra kapatırım. İkinciyi açar, içeri girerim."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Ampul yanıyorsa ikinci. Sönük ama sıcaksa birinci. Sönük ve soğuksa üçüncü!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1.1,
+    "text": "Necmi, bundan sonra ampule dokunmak yasak!"
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.55,
+    "text": "Bunu her şeyi gözüyle çözen arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "knock",
+   "h2a:9"
+  ],
+  [
+   "knock",
+   "d4:1"
+  ],
+  [
+   "knock",
+   "d4:9"
+  ],
+  [
+   "ding",
+   "d5:1"
+  ],
+  [
+   "pop",
+   "d5:6"
+  ],
+  [
+   "pop",
+   "d5:10"
+  ],
+  [
+   "womp",
+   "d5>+0.15"
+  ]
+ ]
+}

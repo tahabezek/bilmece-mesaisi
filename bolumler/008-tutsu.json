@@ -1,0 +1,176 @@
+{
+ "id": "008-tutsu",
+ "num": 8,
+ "bpm": 120,
+ "slug": "tutsu",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#ofis"
+ ],
+ "card": [
+  "Her tütsü tam 1 saatte biter",
+  "ama düzensiz yanar. Saat yok.",
+  "İki tütsüyle 45 dakikayı ölç."
+ ],
+ "caption": "Zeka sorusu: Elinde iki tütsü var. Her biri tam 1 saatte yanıp bitiyor ama düzensiz yanıyor, yani yarısı yarım saatte bitmeyebilir. Saat yok, kesmek yok. Tam 45 dakikayı nasıl ölçersin?\n\nCevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Defneciğim, saat olmadan kırk beş dakikayı ölçebilir misin?"
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.25,
+    "text": "Saat olmadan mı Müdür Bey?"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Toplantı başlıyor. Duvar saati bozuk, telefonlar toplandı. Elimizde sadece Necmi'nin iki tütsüsü var."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.35,
+    "text": "Her biri tam bir saatte yanıp bitiyor ama düzensiz yanıyor. Kırk beş dakikayı nasıl ölçersin?"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Bilirsen toplantıdan erken çıkarsın."
+   },
+   {
+    "id": "da",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Düzensiz yanıyorsa yarısı yarım saat demek değil. Ortadan bölüp ölçemem…",
+    "tts": "Düzensiz yanıyorsa yarısı yarım saat demek değil. Ortadan bölüp ölçemem."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "Biri bitince öbürünü yaksam iki saat eder. Fazla…",
+    "tts": "Biri bitince öbürünü yaksam iki saat eder. Fazla."
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.5,
+    "text": "Bence ikisini birden yakalım, oda güzel koksun."
+   },
+   {
+    "id": "hn",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Toplantıyı koku mu ölçecek Necmi?"
+   },
+   {
+    "id": "hc",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Herkes toplandı Defneciğim. Hâlâ bekliyorum."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Bu tütsüyü iki ucundan yaktım, yarım saatte bitti. Kokusu da iki kat oldu!"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Buldum! İki uç!",
+    "snap": true
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "Birinci tütsüyü iki ucundan, ikincisini tek ucundan yakarım. Birincisi yarım saatte biter."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "O an ikincinin öbür ucunu da yakarım. Kalan yarım saatlik kısım on beş dakikada biter."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Otuz artı on beş: kırk beş dakika!",
+    "tts": "Otuz artı on beş. Kırk beş dakika!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1.1,
+    "text": "Toplantı bitti mi? Ben daha konuya girmedim ki."
+   },
+   {
+    "id": "d7",
+    "who": "defne",
+    "gap": 0.55,
+    "text": "Bunu toplantıları hiç bitmeyen arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d7>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "swish",
+   "d4:2"
+  ],
+  [
+   "swish",
+   "d4:5"
+  ],
+  [
+   "ding",
+   "d4:11"
+  ],
+  [
+   "swish",
+   "d5:4"
+  ],
+  [
+   "ding",
+   "d5:14"
+  ],
+  [
+   "stamp",
+   "d6:4"
+  ],
+  [
+   "womp",
+   "d6>+0.15"
+  ]
+ ]
+}
