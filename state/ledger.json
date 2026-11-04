@@ -1,40 +1,36 @@
 {
   "slots": {
     "2026-11-04T18:00Z": {
-      "episode": "010-bakis",
-      "media": "v/010-bakis.mp4",
-      "status": "skipped",
-      "at": "2026-11-04T14:21:36.260Z",
-      "postId": "6aeb3fa61dd5b1fe45e4a056",
-      "dueAt": "2026-11-04T18:00:00.000Z",
-      "note": "2026-11-04: ses yenileniyor ve #1 tuz bilmecesi oluyor; gönderi geri çekildi"
+      "episode": "016-tuz",
+      "media": "v/016-tuz.mp4",
+      "status": "scheduled",
+      "at": "2026-11-04T15:41:10.986Z",
+      "postId": "6aeb524b9d8a6ed55f403d4e",
+      "dueAt": "2026-11-04T18:00:00.000Z"
     },
     "2026-11-05T09:30Z": {
       "episode": "003-istanbul",
       "media": "v/003-istanbul.mp4",
-      "status": "skipped",
-      "at": "2026-11-04T14:21:36.260Z",
-      "postId": "6aeb3fa74a32c52d4d264ca8",
-      "dueAt": "2026-11-05T09:30:00.000Z",
-      "note": "2026-11-04: ses yenileniyor ve #1 tuz bilmecesi oluyor; gönderi geri çekildi"
+      "status": "scheduled",
+      "at": "2026-11-04T15:41:10.986Z",
+      "postId": "6aeb524d56af285c16126336",
+      "dueAt": "2026-11-05T09:30:00.000Z"
     },
     "2026-11-05T18:00Z": {
-      "episode": "011-ters-dosya",
-      "media": "v/011-ters-dosya.mp4",
-      "status": "skipped",
-      "at": "2026-11-04T14:21:36.260Z",
-      "postId": "6aeb3fa9bf0b72949669dc35",
-      "dueAt": "2026-11-05T18:00:00.000Z",
-      "note": "2026-11-04: ses yenileniyor ve #1 tuz bilmecesi oluyor; gönderi geri çekildi"
+      "episode": "010-bakis",
+      "media": "v/010-bakis.mp4",
+      "status": "scheduled",
+      "at": "2026-11-04T15:41:10.986Z",
+      "postId": "6aeb524fbbb6023e6d660362",
+      "dueAt": "2026-11-05T18:00:00.000Z"
     },
     "2026-11-06T09:30Z": {
-      "episode": "002-iskur",
-      "media": "v/002-iskur.mp4",
-      "status": "skipped",
-      "at": "2026-11-04T14:21:36.260Z",
-      "postId": "6aeb3fabbef027e187d07661",
-      "dueAt": "2026-11-06T09:30:00.000Z",
-      "note": "2026-11-04: ses yenileniyor ve #1 tuz bilmecesi oluyor; gönderi geri çekildi"
+      "episode": "011-ters-dosya",
+      "media": "v/011-ters-dosya.mp4",
+      "status": "scheduled",
+      "at": "2026-11-04T15:41:10.986Z",
+      "postId": "6aeb52519d8a6ed55f404032",
+      "dueAt": "2026-11-06T09:30:00.000Z"
     }
   }
 }
