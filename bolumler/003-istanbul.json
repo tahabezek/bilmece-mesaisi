@@ -1,0 +1,164 @@
+{
+ "id": "003-istanbul",
+ "num": 3,
+ "card": [
+  "Yunanistan ile Bulgaristan",
+  "arasında ne var?"
+ ],
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Defneciğim, coğrafyan iyi midir?",
+    "tts": "Defne'ciğim, coğrafyan iyi midir?"
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.25,
+    "text": "Fena değildir Müdür Bey."
+   },
+   {
+    "id": "h2",
+    "who": "hikmet",
+    "gap": 0.35,
+    "text": "Yunanistan ile Bulgaristan'ın tam arasında ne var?"
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "Sınır."
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.15,
+    "text": "Yanlış."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.3,
+    "text": "Meriç Nehri?"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 0.15,
+    "text": "Hayır, o da yanlış."
+   },
+   {
+    "id": "h5",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Bilirsen sana bir hafta izin veririm."
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.5,
+    "text": "Edirne mi? Yok yok, Edirne bizim."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 0.8,
+    "text": "Bu makine boşluk koymuyor ya!"
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "Buldum! İstanbul!",
+    "snap": true
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Yan yana yazınca tam ortalarında İstanbul var."
+   },
+   {
+    "id": "h6",
+    "who": "hikmet",
+    "gap": 1.1,
+    "text": "Bir hafta… Ben ne yaptım…"
+   },
+   {
+    "id": "d7",
+    "who": "defne",
+    "gap": 0.55,
+    "text": "Bunu İstanbullu bir arkadaşına gönder, kendi şehrini bulabilecek mi?"
+   }
+  ]
+ },
+ "bpm": 120,
+ "music": {
+  "think": [
+   "h5>",
+   "d5"
+  ],
+  "riser": [
+   "n1",
+   "d5"
+  ],
+  "hit": "d5",
+  "end": "d7>"
+ },
+ "sfx": [
+  [
+   "swish",
+   "@0.3"
+  ],
+  [
+   "pop",
+   "h2:0"
+  ],
+  [
+   "pop",
+   "h2:2"
+  ],
+  [
+   "buzz",
+   "h3"
+  ],
+  [
+   "buzz",
+   "h4:3"
+  ],
+  [
+   "pop",
+   "h5:3"
+  ],
+  [
+   "zip",
+   [
+    "n1-0.72",
+    "n1-0.06"
+   ]
+  ],
+  [
+   "swish",
+   "d6:0"
+  ],
+  [
+   "womp",
+   "d6>+0.15"
+  ]
+ ],
+ "slug": "istanbul",
+ "caption": "Zeka sorusu: Yunanistan ile Bulgaristan'ın tam arasında ne var? İpucu: sınır da değil, Meriç de değil.\n\nHikmet Bey bir hafta izni ortaya koydu. Cevap videonun sonunda.",
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#ofis"
+ ],
+ "coverAt": 0
+}

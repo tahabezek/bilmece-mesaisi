@@ -1,0 +1,127 @@
+{
+ "id": "002-iskur",
+ "num": 2,
+ "card": [
+  "Bu tabelayı asamayacak",
+  "tek kurum?"
+ ],
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.5,
+    "text": "Defneciğim, bu tabelayı görüyor musun?",
+    "tts": "Defne'ciğim, bu tabelayı görüyor musun?"
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.25,
+    "text": "Görüyorum Müdür Bey. Zaten girmiyorum."
+   },
+   {
+    "id": "h2",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Türkiye'de bu tabelayı kapısına asamayacak tek bir kurum var. Hangisi?"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Bilemezsen cumartesi mesaiye gelirsin."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.5,
+    "text": "Hastane? Asabilir. Banka? O da asabilir…"
+   },
+   {
+    "id": "g1",
+    "who": "genc",
+    "gap": 0.9,
+    "text": "Kusura bakmayın, iş arıyorum. Kapıda “işi olmayan giremez” yazıyor ama ben tam da işim olmadığı için geldim.",
+    "tts": "Kusura bakmayın, iş arıyorum. Kapıda işi olmayan giremez yazıyor, ama ben tam da işim olmadığı için geldim."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "Buldum! İŞKUR!",
+    "tts": "Buldum! İşkur!",
+    "snap": true
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "Oraya gelen herkesin işi yok. Tabelayı asarsa kimse giremez!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1.1,
+    "text": "Cumartesi ben gelirim o zaman…"
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.55,
+    "text": "Bunu ofisteki en bilmiş arkadaşına gönder."
+   }
+  ]
+ },
+ "bpm": 120,
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "g1:9",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d5>"
+ },
+ "sfx": [
+  [
+   "knock",
+   "@0.03"
+  ],
+  [
+   "knock",
+   "@0.27"
+  ],
+  [
+   "swish",
+   "d4:0"
+  ],
+  [
+   "stamp",
+   "d4:5"
+  ],
+  [
+   "womp",
+   "d4>+0.15"
+  ],
+  [
+   "ding",
+   "g1-0.9"
+  ]
+ ],
+ "slug": "iskur",
+ "caption": "Zeka sorusu: \"İşi olmayan giremez\" tabelasını kapısına asamayacak tek kurum hangisi?\n\nHikmet Bey kapısına tabelayı çaktı, bahis cumartesi mesaisi. Cevap videonun sonunda.",
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#ofis"
+ ],
+ "coverAt": 0
+}

@@ -1,0 +1,162 @@
+{
+ "id": "005-a-harfi",
+ "num": 5,
+ "bpm": 120,
+ "card": [
+  "Dakikanın içinde iki,",
+  "saniyenin içinde bir,",
+  "yılın içinde hiç yok. Nedir?"
+ ],
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Defneciğim, bir saniye gel.",
+    "tts": "Defne'ciğim, bir saniye gel."
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.25,
+    "text": "Bir saniye mi, bir dakika mı Müdür Bey?",
+    "rate": "+0%"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Tam onu soracaktım."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Bir dakikanın içinde iki tane var."
+   },
+   {
+    "id": "h2c",
+    "who": "hikmet",
+    "gap": 0.25,
+    "text": "Bir saniyenin içinde bir tane var."
+   },
+   {
+    "id": "h2d",
+    "who": "hikmet",
+    "gap": 0.25,
+    "text": "Bir yılın içinde hiç yok. Nedir?"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Bilirsen bir ay boyunca çaylar benden."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.5,
+    "text": "Yelkovan mı? Akrep mi? Yok, onlar yılın içinde de var."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 0.7,
+    "text": "Bulmacada altı harfli zaman birimi: dakika. Tam oturdu!",
+    "tts": "Bulmacada altı harfli zaman birimi. Dakika. Tam oturdu!"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Buldum! A harfi!",
+    "snap": true
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Dakika kelimesinde iki a harfi var, saniye kelimesinde bir tane, yıl kelimesinde hiç yok."
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1.1,
+    "text": "Bir ay çay… Necmi, sen niye bardak uzatıyorsun?",
+    "tts": "Bir ay çay. Necmi, sen niye bardak uzatıyorsun?"
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.55,
+    "text": "Bunu saatine bakarak düşünen arkadaşına gönder."
+   }
+  ]
+ },
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d5>"
+ },
+ "sfx": [
+  [
+   "pop",
+   "h2b:3"
+  ],
+  [
+   "pop",
+   "h2c:3"
+  ],
+  [
+   "pop",
+   "h2d:3"
+  ],
+  [
+   "buzz",
+   "d2:6"
+  ],
+  [
+   "zip",
+   [
+    "n1:5-0.5",
+    "n1:5"
+   ]
+  ],
+  [
+   "pop",
+   "d4:3"
+  ],
+  [
+   "pop",
+   "d4:8"
+  ],
+  [
+   "pop",
+   "d4:12"
+  ],
+  [
+   "womp",
+   "d4>+0.15"
+  ]
+ ],
+ "slug": "a-harfi",
+ "caption": "Zeka sorusu: Dakikanın içinde iki tane var, saniyenin içinde bir tane var, yılın içinde hiç yok. Nedir?\n\nBilirsen bir ay çaylar Hikmet Bey'den. Cevap videonun sonunda.",
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#ofis"
+ ],
+ "coverAt": 0
+}

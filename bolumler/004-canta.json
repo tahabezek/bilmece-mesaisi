@@ -1,0 +1,190 @@
+{
+ "id": "004-canta",
+ "num": 4,
+ "bpm": 120,
+ "card": [
+  "5'e al 6'ya sat, 7'ye al 8'e sat,",
+  "9'a al 10'a sat. Kâr kaç lira?"
+ ],
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Defneciğim, çanta işine girdim.",
+    "tts": "Defne'ciğim, çanta işine girdim."
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.25,
+    "text": "Hayırdır Müdür Bey?"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Beşe aldım, altıya sattım."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.25,
+    "text": "Yediye geri aldım, sekize sattım."
+   },
+   {
+    "id": "h2c",
+    "who": "hikmet",
+    "gap": 0.25,
+    "text": "Dokuza aldım, ona sattım."
+   },
+   {
+    "id": "h2d",
+    "who": "hikmet",
+    "gap": 0.35,
+    "text": "Başta cebimdekine göre şimdi cebimde kaç lira fazla var?"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Bilirsen bu çanta senin."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.5,
+    "text": "Altıya sattı, yediye geri aldı… Bir lira kaybetti. O zaman bir lira kâr mı?",
+    "tts": "Altıya sattı, yediye geri aldı. Bir lira kaybetti. O zaman bir lira kâr mı?"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Bravo! Bir lira! Ben de öyle buldum."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 0.6,
+    "text": "Hikmet Bey, kasa öyle demiyor. Her alış, her satış ayrı satıra yazılır."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Buldum! Üç lira!",
+    "snap": true
+   },
+   {
+    "id": "d4a",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Eksi beş, artı altı: bir."
+   },
+   {
+    "id": "d4b",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Eksi yedi, artı sekiz: bir daha."
+   },
+   {
+    "id": "d4c",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Eksi dokuz, artı on: üç!"
+   },
+   {
+    "id": "h5",
+    "who": "hikmet",
+    "gap": 1.1,
+    "text": "Ben kendi bilmecemi de mi bilemedim?"
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.55,
+    "text": "Bunu bir lira diyen arkadaşına gönder."
+   }
+  ]
+ },
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d5>"
+ },
+ "sfx": [
+  [
+   "pop",
+   "h2a:0"
+  ],
+  [
+   "pop",
+   "h2a:2"
+  ],
+  [
+   "pop",
+   "h2b:0"
+  ],
+  [
+   "pop",
+   "h2b:3"
+  ],
+  [
+   "pop",
+   "h2c:0"
+  ],
+  [
+   "pop",
+   "h2c:2"
+  ],
+  [
+   "pop",
+   "d4a:0"
+  ],
+  [
+   "pop",
+   "d4a:2"
+  ],
+  [
+   "pop",
+   "d4b:0"
+  ],
+  [
+   "pop",
+   "d4b:2"
+  ],
+  [
+   "pop",
+   "d4c:0"
+  ],
+  [
+   "pop",
+   "d4c:2"
+  ],
+  [
+   "womp",
+   "d4c>+0.15"
+  ]
+ ],
+ "slug": "canta",
+ "caption": "Zeka sorusu: Çantayı 5'e aldı 6'ya sattı, 7'ye geri aldı 8'e sattı, 9'a aldı 10'a sattı. Başta cebindekine göre şimdi kaç lira fazlası var?\n\nÇoğu kişi 1 diyor. Hikmet Bey de öyle sanıyordu. Doğrusu videonun sonunda.",
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#ofis"
+ ],
+ "coverAt": 0
+}

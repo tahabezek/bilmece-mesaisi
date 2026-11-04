@@ -1,0 +1,155 @@
+{
+ "id": "006-yas",
+ "num": 6,
+ "bpm": 120,
+ "card": [
+  "Ali Er 10, Ayşe Ak 12,",
+  "Mustafa Kaya 22 yaşında.",
+  "Hikmet Kalaycıoğlu kaç yaşında?"
+ ],
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Defneciğim, bugün doğum günüm!",
+    "tts": "Defne'ciğim, bugün doğum günüm!"
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.25,
+    "text": "İyi ki doğdunuz Müdür Bey! Kaç yaşına girdiniz?"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Bilmeceyle söyleyeyim."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Ali Er on yaşında, Ayşe Ak on iki, Mustafa Kaya yirmi iki."
+   },
+   {
+    "id": "h2c",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Hikmet Kalaycıoğlu kaç yaşında?"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Bilirsen ilk dilim senin."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.5,
+    "text": "Elli beş mi? Altmış mı?"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 0.2,
+    "text": "Ne altmışı Defne!"
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 0.6,
+    "text": "Hikmet Bey, tebrik kartına adınızı yazıyorum, kutular yetmedi. On yedi harf!"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Buldum! Otuz dört!",
+    "snap": true
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Yaş, ismin harf sayısının iki katı. Hikmet Kalaycıoğlu on yedi harf: otuz dört!"
+   },
+   {
+    "id": "h5",
+    "who": "hikmet",
+    "gap": 1.0,
+    "text": "Otuz dört mü? Bu bilmeceyi kaybetmek bile güzelmiş."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.55,
+    "text": "Bunu yaşını söylemeyen arkadaşına gönder."
+   }
+  ]
+ },
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d5>"
+ },
+ "sfx": [
+  [
+   "horn",
+   "@0.05"
+  ],
+  [
+   "pop",
+   "h2b:0"
+  ],
+  [
+   "pop",
+   "h2b:4"
+  ],
+  [
+   "pop",
+   "h2b:8"
+  ],
+  [
+   "drop",
+   "h4:2"
+  ],
+  [
+   "zip",
+   [
+    "n1:4",
+    "n1:6"
+   ]
+  ],
+  [
+   "pop",
+   "d4:9"
+  ],
+  [
+   "ding",
+   "d4>+0.2"
+  ]
+ ],
+ "slug": "yas",
+ "caption": "Zeka sorusu: Ali Er 10, Ayşe Ak 12, Mustafa Kaya 22 yaşında. Hikmet Kalaycıoğlu kaç yaşında?\n\nBugün Hikmet Bey'in doğum günü, yaşını bilmeceyle söylüyor. Cevap videonun sonunda.",
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#ofis"
+ ],
+ "coverAt": 0
+}

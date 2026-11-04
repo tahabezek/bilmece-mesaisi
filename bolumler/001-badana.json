@@ -1,0 +1,167 @@
+{
+ "id": "001-badana",
+ "num": 1,
+ "card": [
+  "Yazılınca bir iş,",
+  "bir harfi gidince bir şehir"
+ ],
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Günaydın Defneciğim.",
+    "tts": "Günaydın Defne'ciğim."
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.25,
+    "text": "Müdür Bey, yine mi bilmece?"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Öyle bir kelime söyle ki, yazılınca bir iş olsun."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Baştaki harfi silince bir şehir."
+   },
+   {
+    "id": "h2c",
+    "who": "hikmet",
+    "gap": 0.25,
+    "text": "Bir harf daha silince bir hayvan."
+   },
+   {
+    "id": "h2d",
+    "who": "hikmet",
+    "gap": 0.25,
+    "text": "Bir harf daha silince, candan bir can kalsın."
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Bilirsen bugün erken çıkarsın."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.5,
+    "text": "Kasap? Asap… Öyle şehir yok. Terzi? Erzi… Hiç yok."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 0.7,
+    "text": "Hikmet Bey, hafta sonu odanıza badana yaptırıyorum."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Buldum! Badana!",
+    "snap": true
+   },
+   {
+    "id": "d4a",
+    "who": "defne",
+    "gap": 0.5,
+    "text": "Bir harf gitti, Adana."
+   },
+   {
+    "id": "d4b",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Bir harf daha gitti, dana."
+   },
+   {
+    "id": "d4c",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Bir harf daha gitti, ana!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1.1,
+    "text": "Ben bunu üç günde bulamamıştım…"
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.55,
+    "text": "Bunu bilmece seven birine gönder. Bakalım kaç saniyede bulacak."
+   }
+  ]
+ },
+ "bpm": 120,
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d5>"
+ },
+ "sfx": [
+  [
+   "pop",
+   "h2a:7"
+  ],
+  [
+   "pop",
+   "h2b:4"
+  ],
+  [
+   "pop",
+   "h2c:5"
+  ],
+  [
+   "pop",
+   "h2d:6"
+  ],
+  [
+   "swish",
+   "n1:5"
+  ],
+  [
+   "drop",
+   "d4a:3"
+  ],
+  [
+   "drop",
+   "d4b:4"
+  ],
+  [
+   "drop",
+   "d4c:4"
+  ],
+  [
+   "womp",
+   "d4c>+0.15"
+  ]
+ ],
+ "slug": "badana",
+ "caption": "Zeka sorusu: Yazılınca bir iş, baştaki harfi gidince bir şehir, bir harf daha gidince bir hayvan, bir harf daha gidince candan bir can. Bu kelime ne?\n\nHikmet Bey erken çıkışı ortaya koydu. Defne bulabilecek mi? Cevap videonun sonunda.",
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#ofis"
+ ],
+ "coverAt": 0
+}

@@ -1,0 +1,33 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="fonts/fonts.css">
+<style>html,body{margin:0;background:#F2EBDD}</style></head><body><canvas id="c" width="2400" height="1500"></canvas>
+<script type="module">
+// Poz kâğıdı: önden ve yandan görünüş, 6 ifade, yürüme döngüsünün 8 karesi. ?c=hikmet|defne|necmi
+import { CARDS, EXPR, EXPR_NAMES, drawCharacter, basePose, walkPose } from './cast.js';
+const key = new URLSearchParams(location.search).get('c') || 'defne', card = CARDS[key];
+await document.fonts.load('800 40px Rubik', 'ÇĞİıŞşÖöÜü'); await document.fonts.load('500 26px Rubik', 'ÇĞİıŞşÖöÜü');
+const c = document.getElementById('c'), ctx = c.getContext('2d');
+ctx.fillStyle = '#F2EBDD'; ctx.fillRect(0, 0, c.width, c.height);
+const label = (s, x, y, size = 26, w = 500) => { ctx.font = `${w} ${size}px Rubik`; ctx.fillStyle = '#5E584C'; ctx.fillText(s, x, y); };
+ctx.font = '800 44px Rubik'; ctx.fillStyle = '#1F2421'; ctx.fillText(`${card.name} · poz kâğıdı`, 40, 64);
+label(`${card.role} · baş = 1 birim · özellikler: ${card.features.join(', ')}`, 40, 104);
+// önden + yandan (büyük)
+const big = 150;
+drawCharacter(ctx, card, { ...basePose(card, 'front'), x: 260, y: 900, s: big }, 1);
+drawCharacter(ctx, card, { ...basePose(card, 'side'), x: 640, y: 900, s: big, facing: 1 }, 1);
+label('önden', 210, 950); label('yandan', 590, 950);
+// 6 ifade (baş + omuz, yakın)
+const names = Object.keys(EXPR);
+names.forEach((e, i) => {
+  const x = 1000 + (i % 3) * 460, y = 520 + Math.floor(i / 3) * 430;
+  ctx.save(); ctx.beginPath(); ctx.roundRect(x - 200, y - 330, 400, 380, 24); ctx.fillStyle = '#FBF7EE'; ctx.fill(); ctx.clip();
+  drawCharacter(ctx, card, { ...basePose(card, 'front'), x, y: y + 330, s: 230, expr: e, blink: 0 }, 1);
+  ctx.restore(); label(EXPR_NAMES[e], x - 190, y + 85);
+});
+// yürüme döngüsü 8 kare
+label('yürüme döngüsü · 8 kare (faz 0 → 7/8)', 40, 1050);
+for (let k = 0; k < 8; k++) {
+  drawCharacter(ctx, card, { ...walkPose(card, k / 8, basePose(card, 'side')), x: 140 + k * 290, y: 1420, s: 105, blink: 0 }, 1);
+  label(`${k}/8`, 120 + k * 290, 1470, 22);
+}
+window.__ready = true;
+</script></body></html>

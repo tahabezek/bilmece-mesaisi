@@ -1,0 +1,19 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="fonts/fonts.css">
+<style>html,body{margin:0;background:#2E5B5E}</style></head><body><canvas id="c" width="1080" height="1080"></canvas>
+<script type="module">
+// Profil fotoğrafı (1080×1080; Instagram daireye kırpar → önemli her şey merkezdeki 900 px çemberde)
+import { kit, PAL, LW } from './office.js';
+import { charBase, drawChar } from './sahne.js';
+await document.fonts.load('900 60px Rubik', 'ÇĞİıŞşÖöÜü'); await document.fonts.ready;
+const cv = document.getElementById('c'), ctx = cv.getContext('2d'), K = kit(ctx);
+ctx.fillStyle = PAL.mustard; ctx.fillRect(0, 0, 1080, 1080);
+ctx.beginPath(); ctx.arc(540, 540, 470, 0, Math.PI * 2); ctx.fillStyle = PAL.wall; ctx.fill();
+// arka planda soru işareti
+K.text('?', 540, 520, 560, '#24494C', 900);
+ctx.save(); ctx.beginPath(); ctx.arc(540, 540, 470, 0, Math.PI * 2); ctx.clip();
+drawChar(ctx, 'hikmet', charBase('hikmet', { x: 760, y: 1270, s: 320, expr: 'mutlu', lean: -10, head: { tilt: -12, look: [-0.7, 0.2] }, armL: { sh: 20, el: -60 }, armR: { sh: 20, el: -60 } }), 0.4);
+drawChar(ctx, 'defne', charBase('defne', { x: 370, y: 1330, s: 330, expr: 'mutlu', head: { tilt: 8, look: [0.3, -0.1] }, armR: { sh: 25, el: -60 }, armL: { sh: 25, el: -60 }, blink: 0 }), 0.4);
+ctx.restore();
+ctx.beginPath(); ctx.arc(540, 540, 470, 0, Math.PI * 2); ctx.lineWidth = LW * 2; ctx.strokeStyle = '#1F2421'; ctx.stroke();
+window.__ready = true;
+</script></body></html>

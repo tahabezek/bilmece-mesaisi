@@ -1,0 +1,141 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="fonts/fonts.css">
+<style>html,body{margin:0;background:#2E5B5E}</style></head><body><canvas id="c" width="1080" height="1920"></canvas>
+<script type="module">
+// Stil kareleri: her bölümün kilit anları, sabit kare. ?f=1..6
+import { CARDS, drawCharacter, basePose, drawProp, INK } from './cast.js';
+import { PAL, LW, kit, room, windowIst, clock, calendar, desk, monitor, cabinet, plant, door, sign, globe, riddleCard, bubble, counter, teaGlass } from './office.js';
+
+const f = +(new URLSearchParams(location.search).get('f') || 1);
+await document.fonts.load('900 60px Rubik', 'ÇĞİıŞşÖöÜü'); await document.fonts.load('800 60px Rubik', 'ÇĞİıŞşÖöÜü'); await document.fonts.load('700 40px Rubik', 'ÇĞİıŞşÖöÜü');
+const cv = document.getElementById('c'), ctx = cv.getContext('2d');
+const K = kit(ctx), { rect, text, line, poly, circ, ell, up } = K;
+const T = 3.0;
+
+// karakter: o = { x, y, s, view, facing, expr, head, armL, armR, ... }; dünya koordinatında el konumlarını döndürür
+function ch(key, o) {
+  const c = CARDS[key], p = basePose(c, o.view || 'front');
+  for (const k of Object.keys(o)) p[k] = typeof o[k] === 'object' && o[k] && !Array.isArray(o[k]) ? { ...p[k], ...o[k] } : o[k];
+  const sk = drawCharacter(ctx, c, p, T);
+  const fx = (p.view === 'side' ? p.facing : 1) * p.s;
+  const w = q => [p.x + q[0] * fx, p.y + q[1] * p.s];
+  return { handL: w(sk.handL), handR: w(sk.handR), head: w(sk.head) };
+}
+
+function office({ win = true } = {}) {
+  room(K, { floorY: 1500, t: T });
+  if (win) windowIst(K, 96, 640, 300, 250, T);
+  clock(K, 930, 720, 70, 9, 2, T);
+}
+
+function frame1() {   // Bölüm 1 · kare 0 = kapak: Defne masada, Hikmet Bey sessizce omzunun üstünden eğilmiş
+  room(K, { floorY: 1500 });
+  windowIst(K, 640, 660, 300, 250, T);
+  calendar(K, 110, 680, 160);
+  ch('hikmet', { x: 735, y: 1500, s: 270, expr: 'mutlu', lean: -14, head: { tilt: -14, look: [-0.8, 0.4] }, armL: { sh: 28, el: -60 }, armR: { sh: 10, el: 0 } });
+  ch('defne', { x: 400, y: 1590, s: 290, expr: 'saskin', head: { tilt: 10, look: [0.9, -0.5] }, armL: { sh: 25, el: -150 }, armR: { sh: 25, el: -150 }, blink: 0 });
+  desk(K, 40, 1340, 1000);
+  monitor(K, 165, 1120, 230);
+  teaGlass(ctx, 880, 1342, 260, LW / 260);
+  riddleCard(K, 70, 300, 940, ['Yazılınca bir iş,', 'bir harfi gidince bir şehir…'], 1, { size: 58 });
+}
+
+function frame2() {   // Bölüm 1 · düşünme: harfler başında döner, sayaç akar; arkada Necmi Abi çekmecesinde
+  room(K, { floorY: 1500 });
+  cabinet(K, 60, 960, 290, 540, 0.6);
+  ch('necmi', { x: 300, y: 1500, s: 190, view: 'side', facing: -1, expr: 'yorgun', armR: { sh: 70, el: 30 }, lean: 10 });
+  ch('defne', { x: 640, y: 1590, s: 290, expr: { brow: 0.05, browTilt: 0.25, eye: 0.9, pupil: 1, curve: -0.1, open: 0, w: 0.8 }, head: { tilt: -10, look: [-0.4, -0.9] }, armR: { sh: 18, el: -168 }, armL: { sh: 22, el: -120 }, blink: 0 });
+  desk(K, 330, 1340, 730);
+  // denenen kelimeler: yay boyunca, kafanın üstünde; elenenler çizili
+  const tries = [['KASAP', 380, 700, 1], ['ASAP?', 560, 640, 0.75], ['TERZİ', 740, 700, 1], ['ERZİ?', 860, 790, 0.75]];
+  for (const [s, x, y, k] of tries) {
+    ctx.globalAlpha = k; text(s, x, y, 56, PAL.paper, 900);
+    if (s.endsWith('?')) line(x - 90, y - 20, x + 90, y - 20, 8, PAL.coral);
+    ctx.globalAlpha = 1;
+  }
+  counter(K, 850, 1210, 88, 0.6, '3');
+  riddleCard(K, 70, 300, 940, ['Yazılınca bir iş,', 'bir harfi gidince bir şehir…'], 1, { size: 58 });
+}
+
+function frame3() {   // Bölüm 1 · aha: BADANA → ADANA → DANA → ANA merdiveni
+  room(K, { floorY: 1500 });
+  ctx.fillStyle = 'rgba(31,36,33,0.35)'; ctx.fillRect(0, 0, 1080, 1920);
+  const rows = ['BADANA', 'ADANA', 'DANA', 'ANA'], cw = 100, y0 = 440;
+  rows.forEach((wd, i) => {
+    const y = y0 + i * 190, x0 = 470 - (6 * cw) / 2 + i * cw;
+    rect(x0 - 24, y - 112, wd.length * cw + 48, 150, PAL.paper, LW, 20);
+    [...wd].forEach((ch2, j) => text(ch2, x0 + j * cw + cw / 2, y, 120, INK, 900));
+    if (i > 0) { // düşen harf
+      const fx = x0 - cw / 2 - 30, fy = y - 40;
+      ctx.save(); ctx.translate(fx, fy); ctx.rotate(-0.5); ctx.globalAlpha = 0.85;
+      text(rows[i - 1][0], 0, 0, 96, PAL.coral, 900); ctx.restore();
+    }
+  });
+  // ikonlar: rulo, harita iğnesi, dana, kalp
+  const ix = 850;
+  { const y = y0 - 40; rect(ix - 50, y - 50, 100, 46, PAL.mustard, LW, 12); line(ix, y - 4, ix, y + 40, 8); rect(ix - 10, y + 40, 20, 50, PAL.woodDark, LW * 0.8, 6); }
+  { const y = y0 + 190 - 40; circ(ix, y - 20, 34, PAL.red); circ(ix, y - 20, 12, PAL.paper, LW * 0.6); poly([[ix - 26, y], [ix + 26, y], [ix, y + 54]], PAL.red); }
+  { const y = y0 + 380 - 40; ell(ix, y, 50, 42, '#F1EDE2'); ell(ix - 18, y - 6, 14, 18, '#5A3A2A', 0); ell(ix, y + 22, 30, 18, '#E6A99A', LW * 0.7); circ(ix - 14, y - 8, 6, INK, 0); circ(ix + 14, y - 8, 6, INK, 0); poly([[ix - 46, y - 30], [ix - 70, y - 50], [ix - 40, y - 46]], '#F1EDE2', LW * 0.8); poly([[ix + 46, y - 30], [ix + 70, y - 50], [ix + 40, y - 46]], '#F1EDE2', LW * 0.8); }
+  { const y = y0 + 570 - 50; ctx.beginPath(); ctx.moveTo(ix, y + 40); ctx.bezierCurveTo(ix - 70, y - 10, ix - 30, y - 60, ix, y - 22); ctx.bezierCurveTo(ix + 30, y - 60, ix + 70, y - 10, ix, y + 40); K.fs(PAL.coral); }
+  ch('defne', { x: 300, y: 1880, s: 260, expr: 'mutlu', armR: { sh: 160, el: -10 }, armL: { sh: 20, el: 10 }, head: { tilt: 6 } });
+  ch('hikmet', { x: 800, y: 1900, s: 240, expr: 'saskin', head: { tilt: -8, look: [-0.5, -0.5] }, armL: { sh: 20, el: 120 }, armR: { sh: 20, el: 120 } });
+}
+
+function frame4() {   // Bölüm 2 · kapak: Hikmet Bey kapısına tabela çakıyor, Defne dosyayla donmuş
+  room(K, { floorY: 1500 });
+  door(K, 400, 700, 400, 800, 'MÜDÜR');
+  plant(K, 990, 1500, 0.9, T);
+  const h = ch('hikmet', { x: 800, y: 1620, s: 240, view: 'side', facing: -1, expr: 'mutlu', armR: { sh: 125, el: 25 }, armL: { sh: 60, el: 60 } });
+  sign(K, 500, 930, 340, 150, ['İŞİ OLMAYAN', 'GİREMEZ'], { rot: -0.05, fill: PAL.red, color: PAL.paper, nail: false });
+  // çekiç (sağ elde, tabelanın köşesine iner)
+  ctx.save(); ctx.translate(h.handR[0], h.handR[1]); ctx.rotate(0.45); rect(-9, -90, 18, 104, PAL.woodDark, LW, 6); rect(-46, -128, 92, 40, '#5A615E', LW, 6); ctx.restore();
+  ch('defne', { x: 200, y: 1640, s: 250, expr: 'saskin', head: { tilt: 6, look: [0.8, -0.3] }, armR: { sh: 40, el: 70 }, props: { R: 'folder' }, blink: 0 });
+  riddleCard(K, 70, 300, 940, ['Bu tabelayı', 'asamayacak tek kurum?'], 2, { size: 60 });
+}
+
+function frame5() {   // Bölüm 2 · aha: "İŞİ OLMAYAN" yazısı İŞKUR'un kapısına uçar, GİREMEZ → BUYURSUN
+  ctx.fillStyle = '#E9C99C'; ctx.fillRect(0, 0, 1080, 1920);
+  // bina
+  rect(120, 620, 840, 900, '#E2D6BC'); rect(120, 560, 840, 90, PAL.teal);
+  text('İŞKUR', 540, 632, 78, PAL.paper, 900);
+  for (const wx of [180, 400, 740]) rect(wx, 720, 160, 200, '#9FC3C0', LW, 6);
+  rect(400, 1060, 280, 460, '#8C6A44');
+  ctx.fillStyle = PAL.floor; ctx.fillRect(0, 1520, 1080, 400); line(0, 1520, 1080, 1520, LW);
+  sign(K, 540, 1000, 360, 160, ['İŞİ OLMAYAN', 'BUYURSUN'], { rot: 0.03, fill: PAL.green, color: PAL.paper, nail: false });
+  // silinip düşen GİREMEZ
+  ctx.save(); ctx.translate(820, 960); ctx.rotate(0.35); ctx.globalAlpha = 0.85; rect(-130, -50, 260, 70, PAL.red, LW, 10); text('GİREMEZ', 0, 4, 46, PAL.paper, 900); line(-120, -14, 120, -14, 8, INK); ctx.restore();
+  ch('defne', { x: 250, y: 1840, s: 260, expr: 'mutlu', armR: { sh: 120, el: -20 }, head: { tilt: 8, look: [0.6, 0] } });
+  bubble(K, 330, 1180, 680, ['Oraya gelen herkesin', 'işi yok!'], [420, 1420], { size: 50 });
+  riddleCard(K, 70, 300, 940, ['Bu tabelayı', 'asamayacak tek kurum?'], 2, { size: 60 });
+}
+
+function frame6() {   // Bölüm 3 · aha: etiket makinesi şeridinde İSTANBUL yanar
+  room(K, { floorY: 1500 });
+  clock(K, 900, 1000, 64, 9, 20, T);
+  globe(K, 880, 1290, 80, 0.3);
+  ch('hikmet', { x: 840, y: 1720, s: 210, expr: 'korku', head: { tilt: 6, look: [-0.7, 0.2] }, armL: { sh: 20, el: -150 }, armR: { sh: 20, el: -150 } });
+  const n = ch('necmi', { x: 210, y: 1720, s: 220, expr: 'saskin', armR: { sh: 55, el: -60 }, armL: { sh: 20, el: -20 } });
+  // etiket makinesi ve elden çıkan şerit
+  ctx.save(); ctx.translate(n.handR[0] + 20, n.handR[1] - 20); rect(-55, -42, 120, 84, PAL.coral, LW, 14); rect(-34, -26, 66, 30, '#CFE3D8', LW * 0.6, 4); ctx.restore();
+  ch('defne', { x: 540, y: 1760, s: 270, expr: 'mutlu', armR: { sh: 150, el: -10 }, armL: { sh: 30, el: 20 }, head: { tilt: -4, look: [0, -0.6] } });
+  // şerit: bitişik basılmış iki ülke adı; ortadaki İSTANBUL yanar (harf aralıkları ölçülür)
+  const parts = [['YUNAN', 0], ['İSTANBUL', 1], ['GARİSTAN', 0]], fsz = 64, y = 740;
+  ctx.font = `900 ${fsz}px Rubik`;
+  const ws = parts.map(([s]) => ctx.measureText(s).width), total = ws.reduce((a, b) => a + b, 0);
+  ctx.save(); ctx.translate(540, y); ctx.rotate(-0.05);
+  rect(-total / 2 - 26, -62, total + 52, 100, '#F2F0E8', LW, 6);
+  let x = -total / 2;
+  parts.forEach(([s, hi], i) => {
+    if (hi) rect(x - 6, -54, ws[i] + 12, 84, PAL.coral, 0, 8);
+    ctx.globalAlpha = hi ? 1 : 0.4; text(s, x, 10, fsz, hi ? PAL.paper : INK, 900, 'left'); ctx.globalAlpha = 1;
+    x += ws[i];
+  });
+  ctx.restore();
+  bubble(K, 160, 880, 600, ['Buldum! İstanbul!'], [520, 1040], { size: 54 });
+  riddleCard(K, 70, 300, 940, ['Yunanistan ile Bulgaristan', 'arasında ne var?'], 3, { size: 58 });
+}
+
+[frame1, frame2, frame3, frame4, frame5, frame6][f - 1]();
+// güvenli alan kılavuzu (?guide=1)
+if (new URLSearchParams(location.search).get('guide')) { ctx.strokeStyle = 'rgba(255,0,80,0.8)'; ctx.lineWidth = 3; ctx.setLineDash([12, 10]); ctx.strokeRect(90, 280, 830, 1140); }
+window.__ready = true;
+</script></body></html>

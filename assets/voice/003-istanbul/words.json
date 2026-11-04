@@ -1,0 +1,443 @@
+{
+ "h1": {
+  "key": "466a4af74c45",
+  "trimmed": "466a4af74c45",
+  "wkey": "466a4af74c45",
+  "heard": "Defnecim, coğrafyan iyi midir?",
+  "words": [
+   {
+    "w": "Defne'ciğim,",
+    "t0": 0.0,
+    "t1": 0.7
+   },
+   {
+    "w": "coğrafyan",
+    "t0": 0.9,
+    "t1": 1.48
+   },
+   {
+    "w": "iyi",
+    "t0": 1.48,
+    "t1": 1.66
+   },
+   {
+    "w": "midir?",
+    "t0": 1.66,
+    "t1": 2.0
+   }
+  ],
+  "dur": 2.11
+ },
+ "d1": {
+  "key": "2ec5fb154435",
+  "trimmed": "2ec5fb154435",
+  "wkey": "2ec5fb154435",
+  "heard": "Fena değildir müdür bey.",
+  "words": [
+   {
+    "w": "Fena",
+    "t0": 0.0,
+    "t1": 0.3
+   },
+   {
+    "w": "değildir",
+    "t0": 0.3,
+    "t1": 0.8
+   },
+   {
+    "w": "Müdür",
+    "t0": 0.8,
+    "t1": 1.08
+   },
+   {
+    "w": "Bey.",
+    "t0": 1.08,
+    "t1": 1.22
+   }
+  ],
+  "dur": 1.38
+ },
+ "h2": {
+  "key": "e9eaf668bd39",
+  "trimmed": "e9eaf668bd39",
+  "wkey": "e9eaf668bd39",
+  "heard": "Yunanistan ile Bulgaristanın tam arasında ne var?",
+  "words": [
+   {
+    "w": "Yunanistan",
+    "t0": 0.0,
+    "t1": 0.64
+   },
+   {
+    "w": "ile",
+    "t0": 0.64,
+    "t1": 0.86
+   },
+   {
+    "w": "Bulgaristan'ın",
+    "t0": 0.86,
+    "t1": 1.7
+   },
+   {
+    "w": "tam",
+    "t0": 1.7,
+    "t1": 1.88
+   },
+   {
+    "w": "arasında",
+    "t0": 1.88,
+    "t1": 2.24
+   },
+   {
+    "w": "ne",
+    "t0": 2.24,
+    "t1": 2.43
+   },
+   {
+    "w": "var?",
+    "t0": 2.43,
+    "t1": 2.62
+   }
+  ],
+  "dur": 2.81
+ },
+ "d2": {
+  "key": "567c15ba34ab",
+  "trimmed": "567c15ba34ab",
+  "wkey": "567c15ba34ab",
+  "heard": "Sınır.",
+  "words": [
+   {
+    "w": "Sınır.",
+    "t0": 0.0,
+    "t1": 0.42
+   }
+  ],
+  "dur": 0.54
+ },
+ "h3": {
+  "key": "bfb85ff208a0",
+  "trimmed": "bfb85ff208a0",
+  "wkey": "bfb85ff208a0",
+  "heard": "Yanlış.",
+  "words": [
+   {
+    "w": "Yanlış.",
+    "t0": 0.0,
+    "t1": 0.58
+   }
+  ],
+  "dur": 0.74
+ },
+ "d3": {
+  "key": "41701f9fae26",
+  "trimmed": "41701f9fae26",
+  "wkey": "41701f9fae26",
+  "heard": "Meriç Nehri",
+  "words": [
+   {
+    "w": "Meriç",
+    "t0": 0.0,
+    "t1": 0.38
+   },
+   {
+    "w": "Nehri?",
+    "t0": 0.38,
+    "t1": 0.7
+   }
+  ],
+  "dur": 0.82
+ },
+ "h4": {
+  "key": "72ed48b1697a",
+  "trimmed": "72ed48b1697a",
+  "wkey": "72ed48b1697a",
+  "heard": "Hayır, o da yanlış.",
+  "words": [
+   {
+    "w": "Hayır,",
+    "t0": 0.0,
+    "t1": 0.26
+   },
+   {
+    "w": "o",
+    "t0": 0.26,
+    "t1": 0.49
+   },
+   {
+    "w": "da",
+    "t0": 0.49,
+    "t1": 0.72
+   },
+   {
+    "w": "yanlış.",
+    "t0": 0.72,
+    "t1": 0.98
+   }
+  ],
+  "dur": 1.31
+ },
+ "h5": {
+  "key": "2d7b875f016d",
+  "trimmed": "2d7b875f016d",
+  "wkey": "2d7b875f016d",
+  "heard": "Bilirsen sana bir hafta izin veririm.",
+  "words": [
+   {
+    "w": "Bilirsen",
+    "t0": 0.0,
+    "t1": 0.56
+   },
+   {
+    "w": "sana",
+    "t0": 0.56,
+    "t1": 0.82
+   },
+   {
+    "w": "bir",
+    "t0": 0.82,
+    "t1": 1.02
+   },
+   {
+    "w": "hafta",
+    "t0": 1.02,
+    "t1": 1.42
+   },
+   {
+    "w": "izin",
+    "t0": 1.42,
+    "t1": 1.64
+   },
+   {
+    "w": "veririm.",
+    "t0": 1.64,
+    "t1": 1.96
+   }
+  ],
+  "dur": 2.14
+ },
+ "d4": {
+  "key": "ec24aa359365",
+  "trimmed": "ec24aa359365",
+  "wkey": "ec24aa359365",
+  "heard": "Edirne mi? Yok yok, edirne bizim.",
+  "words": [
+   {
+    "w": "Edirne",
+    "t0": 0.0,
+    "t1": 0.4
+   },
+   {
+    "w": "mi?",
+    "t0": 0.4,
+    "t1": 0.767
+   },
+   {
+    "w": "Yok",
+    "t0": 0.767,
+    "t1": 1.133
+   },
+   {
+    "w": "yok,",
+    "t0": 1.133,
+    "t1": 1.5
+   },
+   {
+    "w": "Edirne",
+    "t0": 1.5,
+    "t1": 1.84
+   },
+   {
+    "w": "bizim.",
+    "t0": 1.84,
+    "t1": 1.96
+   }
+  ],
+  "dur": 2.248
+ },
+ "n1": {
+  "key": "c4f357d7e320",
+  "trimmed": "c4f357d7e320",
+  "wkey": "c4f357d7e320",
+  "heard": "Bu makine boşluk koymuyor ya.",
+  "words": [
+   {
+    "w": "Bu",
+    "t0": 0.0,
+    "t1": 0.26
+   },
+   {
+    "w": "makine",
+    "t0": 0.26,
+    "t1": 0.7
+   },
+   {
+    "w": "boşluk",
+    "t0": 0.7,
+    "t1": 1.16
+   },
+   {
+    "w": "koymuyor",
+    "t0": 1.16,
+    "t1": 1.7
+   },
+   {
+    "w": "ya!",
+    "t0": 1.7,
+    "t1": 1.92
+   }
+  ],
+  "dur": 2.091
+ },
+ "d5": {
+  "key": "0570514ed0ae",
+  "trimmed": "0570514ed0ae",
+  "wkey": "0570514ed0ae",
+  "heard": "Buldum İstanbul",
+  "words": [
+   {
+    "w": "Buldum!",
+    "t0": 0.0,
+    "t1": 0.46
+   },
+   {
+    "w": "İstanbul!",
+    "t0": 0.46,
+    "t1": 0.98
+   }
+  ],
+  "dur": 1.428
+ },
+ "d6": {
+  "key": "7c65d2f3bcf6",
+  "trimmed": "7c65d2f3bcf6",
+  "wkey": "7c65d2f3bcf6",
+  "heard": "Yan yana yazınca tam ortalarında İstanbul var.",
+  "words": [
+   {
+    "w": "Yan",
+    "t0": 0.0,
+    "t1": 0.2
+   },
+   {
+    "w": "yana",
+    "t0": 0.2,
+    "t1": 0.48
+   },
+   {
+    "w": "yazınca",
+    "t0": 0.48,
+    "t1": 0.92
+   },
+   {
+    "w": "tam",
+    "t0": 0.92,
+    "t1": 1.12
+   },
+   {
+    "w": "ortalarında",
+    "t0": 1.12,
+    "t1": 1.7
+   },
+   {
+    "w": "İstanbul",
+    "t0": 1.7,
+    "t1": 2.08
+   },
+   {
+    "w": "var.",
+    "t0": 2.08,
+    "t1": 2.42
+   }
+  ],
+  "dur": 2.56
+ },
+ "h6": {
+  "key": "971a31b34171",
+  "trimmed": "971a31b34171",
+  "wkey": "971a31b34171",
+  "heard": "Bir hafta. Ben ne yaptım?",
+  "words": [
+   {
+    "w": "Bir",
+    "t0": 0.0,
+    "t1": 0.2
+   },
+   {
+    "w": "hafta…",
+    "t0": 0.2,
+    "t1": 0.76
+   },
+   {
+    "w": "Ben",
+    "t0": 0.76,
+    "t1": 1.1
+   },
+   {
+    "w": "ne",
+    "t0": 1.1,
+    "t1": 1.44
+   },
+   {
+    "w": "yaptım…",
+    "t0": 1.44,
+    "t1": 1.84
+   }
+  ],
+  "dur": 1.998
+ },
+ "d7": {
+  "key": "6673317b116f",
+  "trimmed": "6673317b116f",
+  "wkey": "6673317b116f",
+  "heard": "Bunu İstanbul 'lu bir arkadaşına gönder, kendi şehrini bulabilecek mi?",
+  "words": [
+   {
+    "w": "Bunu",
+    "t0": 0.0,
+    "t1": 0.2
+   },
+   {
+    "w": "İstanbullu",
+    "t0": 0.2,
+    "t1": 0.56
+   },
+   {
+    "w": "bir",
+    "t0": 0.56,
+    "t1": 0.9
+   },
+   {
+    "w": "arkadaşına",
+    "t0": 0.9,
+    "t1": 1.44
+   },
+   {
+    "w": "gönder,",
+    "t0": 1.44,
+    "t1": 1.82
+   },
+   {
+    "w": "kendi",
+    "t0": 2.06,
+    "t1": 2.26
+   },
+   {
+    "w": "şehrini",
+    "t0": 2.26,
+    "t1": 2.66
+   },
+   {
+    "w": "bulabilecek",
+    "t0": 2.66,
+    "t1": 3.12
+   },
+   {
+    "w": "mi?",
+    "t0": 3.12,
+    "t1": 3.28
+   }
+  ],
+  "dur": 3.4
+ }
+}

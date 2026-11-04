@@ -1,0 +1,559 @@
+{
+ "h1": {
+  "key": "5390d6d67768",
+  "trimmed": "5390d6d67768",
+  "wkey": "5390d6d67768",
+  "heard": "Defnecim bir saniye gel.",
+  "words": [
+   {
+    "w": "Defne'ciğim,",
+    "t0": 0.0,
+    "t1": 0.7
+   },
+   {
+    "w": "bir",
+    "t0": 0.7,
+    "t1": 1.0
+   },
+   {
+    "w": "saniye",
+    "t0": 1.0,
+    "t1": 1.56
+   },
+   {
+    "w": "gel.",
+    "t0": 1.56,
+    "t1": 1.7
+   }
+  ],
+  "dur": 1.88
+ },
+ "d1": {
+  "key": "afc5de271cc0",
+  "trimmed": "afc5de271cc0",
+  "wkey": "afc5de271cc0",
+  "heard": "Bir saniye mi? Bir dakika mı Müdür Bey?",
+  "words": [
+   {
+    "w": "Bir",
+    "t0": 0.0,
+    "t1": 0.2
+   },
+   {
+    "w": "saniye",
+    "t0": 0.2,
+    "t1": 0.72
+   },
+   {
+    "w": "mi,",
+    "t0": 0.72,
+    "t1": 0.99
+   },
+   {
+    "w": "bir",
+    "t0": 0.99,
+    "t1": 1.26
+   },
+   {
+    "w": "dakika",
+    "t0": 1.26,
+    "t1": 1.46
+   },
+   {
+    "w": "mı",
+    "t0": 1.46,
+    "t1": 1.82
+   },
+   {
+    "w": "Müdür",
+    "t0": 1.82,
+    "t1": 2.1
+   },
+   {
+    "w": "Bey?",
+    "t0": 2.1,
+    "t1": 2.24
+   }
+  ],
+  "dur": 2.41
+ },
+ "h2a": {
+  "key": "e9d2f4bef8de",
+  "trimmed": "e9d2f4bef8de",
+  "wkey": "e9d2f4bef8de",
+  "heard": "Tam onu soracaktım.",
+  "words": [
+   {
+    "w": "Tam",
+    "t0": 0.0,
+    "t1": 0.147
+   },
+   {
+    "w": "onu",
+    "t0": 0.147,
+    "t1": 0.44
+   },
+   {
+    "w": "soracaktım.",
+    "t0": 0.44,
+    "t1": 1.18
+   }
+  ],
+  "dur": 1.33
+ },
+ "h2b": {
+  "key": "c22a01405a97",
+  "trimmed": "c22a01405a97",
+  "wkey": "c22a01405a97",
+  "heard": "Bir dakikanın içinde iki tane var.",
+  "words": [
+   {
+    "w": "Bir",
+    "t0": 0.0,
+    "t1": 0.24
+   },
+   {
+    "w": "dakikanın",
+    "t0": 0.24,
+    "t1": 0.82
+   },
+   {
+    "w": "içinde",
+    "t0": 0.82,
+    "t1": 1.1
+   },
+   {
+    "w": "iki",
+    "t0": 1.1,
+    "t1": 1.34
+   },
+   {
+    "w": "tane",
+    "t0": 1.34,
+    "t1": 1.62
+   },
+   {
+    "w": "var.",
+    "t0": 1.62,
+    "t1": 1.84
+   }
+  ],
+  "dur": 2.02
+ },
+ "h2c": {
+  "key": "0042eb0bd13b",
+  "trimmed": "0042eb0bd13b",
+  "wkey": "0042eb0bd13b",
+  "heard": "Bir saniyenin içinde bir tane var.",
+  "words": [
+   {
+    "w": "Bir",
+    "t0": 0.0,
+    "t1": 0.28
+   },
+   {
+    "w": "saniyenin",
+    "t0": 0.28,
+    "t1": 0.9
+   },
+   {
+    "w": "içinde",
+    "t0": 0.9,
+    "t1": 1.14
+   },
+   {
+    "w": "bir",
+    "t0": 1.14,
+    "t1": 1.34
+   },
+   {
+    "w": "tane",
+    "t0": 1.34,
+    "t1": 1.62
+   },
+   {
+    "w": "var.",
+    "t0": 1.62,
+    "t1": 1.84
+   }
+  ],
+  "dur": 2.03
+ },
+ "h2d": {
+  "key": "96575afb022b",
+  "trimmed": "96575afb022b",
+  "wkey": "96575afb022b",
+  "heard": "Bir yılın içinde hiç yok. Nedir?",
+  "words": [
+   {
+    "w": "Bir",
+    "t0": 0.0,
+    "t1": 0.3
+   },
+   {
+    "w": "yılın",
+    "t0": 0.3,
+    "t1": 0.64
+   },
+   {
+    "w": "içinde",
+    "t0": 0.64,
+    "t1": 0.92
+   },
+   {
+    "w": "hiç",
+    "t0": 0.92,
+    "t1": 1.29
+   },
+   {
+    "w": "yok.",
+    "t0": 1.29,
+    "t1": 1.66
+   },
+   {
+    "w": "Nedir?",
+    "t0": 1.66,
+    "t1": 2.14
+   }
+  ],
+  "dur": 2.298
+ },
+ "h3": {
+  "key": "3d5d861b8ad3",
+  "trimmed": "3d5d861b8ad3",
+  "wkey": "3d5d861b8ad3",
+  "heard": "Bilirsen bir ay boyunca çaylar benden.",
+  "words": [
+   {
+    "w": "Bilirsen",
+    "t0": 0.0,
+    "t1": 0.54
+   },
+   {
+    "w": "bir",
+    "t0": 0.54,
+    "t1": 0.72
+   },
+   {
+    "w": "ay",
+    "t0": 0.72,
+    "t1": 0.9
+   },
+   {
+    "w": "boyunca",
+    "t0": 0.9,
+    "t1": 1.28
+   },
+   {
+    "w": "çaylar",
+    "t0": 1.28,
+    "t1": 1.66
+   },
+   {
+    "w": "benden.",
+    "t0": 1.66,
+    "t1": 2.06
+   }
+  ],
+  "dur": 2.25
+ },
+ "d2": {
+  "key": "dbc646e069a4",
+  "trimmed": "dbc646e069a4",
+  "wkey": "dbc646e069a4",
+  "heard": "Yel kovan mı? Akrep mi? Yok, onlar yılın içinde de var.",
+  "words": [
+   {
+    "w": "Yelkovan",
+    "t0": 0.24,
+    "t1": 0.54
+   },
+   {
+    "w": "mı?",
+    "t0": 0.54,
+    "t1": 0.98
+   },
+   {
+    "w": "Akrep",
+    "t0": 0.98,
+    "t1": 1.3
+   },
+   {
+    "w": "mi?",
+    "t0": 1.3,
+    "t1": 1.78
+   },
+   {
+    "w": "Yok,",
+    "t0": 1.78,
+    "t1": 2.26
+   },
+   {
+    "w": "onlar",
+    "t0": 2.26,
+    "t1": 2.5
+   },
+   {
+    "w": "yılın",
+    "t0": 2.5,
+    "t1": 2.8
+   },
+   {
+    "w": "içinde",
+    "t0": 2.8,
+    "t1": 3.02
+   },
+   {
+    "w": "de",
+    "t0": 3.02,
+    "t1": 3.21
+   },
+   {
+    "w": "var.",
+    "t0": 3.21,
+    "t1": 3.4
+   }
+  ],
+  "dur": 3.576
+ },
+ "n1": {
+  "key": "1edcfe68ed49",
+  "trimmed": "1edcfe68ed49",
+  "wkey": "1edcfe68ed49",
+  "heard": "Bulmacada altı harfi zaman birimi, dakika, tam oturdu.",
+  "words": [
+   {
+    "w": "Bulmacada",
+    "t0": 0.0,
+    "t1": 0.76
+   },
+   {
+    "w": "altı",
+    "t0": 0.76,
+    "t1": 1.26
+   },
+   {
+    "w": "harfli",
+    "t0": 1.26,
+    "t1": 1.58
+   },
+   {
+    "w": "zaman",
+    "t0": 1.58,
+    "t1": 1.86
+   },
+   {
+    "w": "birimi.",
+    "t0": 1.86,
+    "t1": 2.4
+   },
+   {
+    "w": "Dakika.",
+    "t0": 2.68,
+    "t1": 3.1
+   },
+   {
+    "w": "Tam",
+    "t0": 3.1,
+    "t1": 3.92
+   },
+   {
+    "w": "oturdu!",
+    "t0": 3.92,
+    "t1": 4.48
+   }
+  ],
+  "dur": 4.626
+ },
+ "d3": {
+  "key": "90a1a52b077c",
+  "trimmed": "90a1a52b077c",
+  "wkey": "90a1a52b077c",
+  "heard": "Buldum. A harfi",
+  "words": [
+   {
+    "w": "Buldum!",
+    "t0": 0.0,
+    "t1": 0.48
+   },
+   {
+    "w": "A",
+    "t0": 0.48,
+    "t1": 0.88
+   },
+   {
+    "w": "harfi!",
+    "t0": 0.88,
+    "t1": 1.26
+   }
+  ],
+  "dur": 1.428
+ },
+ "d4": {
+  "key": "fc698626e80a",
+  "trimmed": "fc698626e80a",
+  "wkey": "fc698626e80a",
+  "heard": "Dakika kelimesinde iki ah harfi var, saniye kelimesinde bir tane, yıl kelimesinde hiç yok.",
+  "words": [
+   {
+    "w": "Dakika",
+    "t0": 0.0,
+    "t1": 0.38
+   },
+   {
+    "w": "kelimesinde",
+    "t0": 0.38,
+    "t1": 0.92
+   },
+   {
+    "w": "iki",
+    "t0": 0.92,
+    "t1": 1.24
+   },
+   {
+    "w": "a",
+    "t0": 1.24,
+    "t1": 1.4
+   },
+   {
+    "w": "harfi",
+    "t0": 1.4,
+    "t1": 1.68
+   },
+   {
+    "w": "var,",
+    "t0": 1.68,
+    "t1": 2.12
+   },
+   {
+    "w": "saniye",
+    "t0": 2.12,
+    "t1": 2.52
+   },
+   {
+    "w": "kelimesinde",
+    "t0": 2.52,
+    "t1": 3.02
+   },
+   {
+    "w": "bir",
+    "t0": 3.02,
+    "t1": 3.12
+   },
+   {
+    "w": "tane,",
+    "t0": 3.12,
+    "t1": 3.44
+   },
+   {
+    "w": "yıl",
+    "t0": 3.44,
+    "t1": 3.8
+   },
+   {
+    "w": "kelimesinde",
+    "t0": 3.8,
+    "t1": 4.38
+   },
+   {
+    "w": "hiç",
+    "t0": 4.38,
+    "t1": 4.58
+   },
+   {
+    "w": "yok.",
+    "t0": 4.58,
+    "t1": 4.78
+   }
+  ],
+  "dur": 4.91
+ },
+ "h4": {
+  "key": "a1c0e81881cb",
+  "trimmed": "a1c0e81881cb",
+  "wkey": "a1c0e81881cb",
+  "heard": "1 ay çay. Necmi, sen niye bardak uzatıyorsun?",
+  "words": [
+   {
+    "w": "Bir",
+    "t0": 0.0,
+    "t1": 0.353
+   },
+   {
+    "w": "ay",
+    "t0": 0.353,
+    "t1": 0.707
+   },
+   {
+    "w": "çay.",
+    "t0": 0.707,
+    "t1": 1.06
+   },
+   {
+    "w": "Necmi,",
+    "t0": 1.06,
+    "t1": 1.54
+   },
+   {
+    "w": "sen",
+    "t0": 1.54,
+    "t1": 1.84
+   },
+   {
+    "w": "niye",
+    "t0": 1.84,
+    "t1": 2.08
+   },
+   {
+    "w": "bardak",
+    "t0": 2.08,
+    "t1": 2.5
+   },
+   {
+    "w": "uzatıyorsun?",
+    "t0": 2.5,
+    "t1": 3.0
+   }
+  ],
+  "dur": 3.319
+ },
+ "d5": {
+  "key": "d48bd7ef81c0",
+  "trimmed": "d48bd7ef81c0",
+  "wkey": "d48bd7ef81c0",
+  "heard": "Bunun saatine bakarak düşünen arkadaşına gönder.",
+  "words": [
+   {
+    "w": "Bunu",
+    "t0": 0.0,
+    "t1": 0.2
+   },
+   {
+    "w": "saatine",
+    "t0": 0.2,
+    "t1": 0.64
+   },
+   {
+    "w": "bakarak",
+    "t0": 0.64,
+    "t1": 1.0
+   },
+   {
+    "w": "düşünen",
+    "t0": 1.0,
+    "t1": 1.4
+   },
+   {
+    "w": "arkadaşına",
+    "t0": 1.4,
+    "t1": 1.96
+   },
+   {
+    "w": "gönder.",
+    "t0": 1.96,
+    "t1": 2.32
+   }
+  ],
+  "dur": 2.48
+ }
+}

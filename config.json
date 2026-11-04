@@ -1,0 +1,21 @@
+{
+  "_not": "Yayın ayarları. channelId: Buffer'daki Bilmece Mesaisi Instagram kanalı (node tools/yayin.mjs --kanallar ile bulunur). launchDate günü slotsTR'ye launchExtraSlotTR eklenir (ilk gün 3 Reels).",
+  "organizationId": "6aeada131889a61372619c9d",
+  "channelId": "6aeaf1bae29c69a1715a0e09",
+  "slotsTR": [
+    "12:30",
+    "21:00"
+  ],
+  "launchDate": "",
+  "launchExtraSlotTR": "17:00",
+  "trUtcOffsetHours": 3,
+  "horizonHours": 48,
+  "minLeadMinutes": 25,
+  "slotToleranceMinutes": 10,
+  "mediaBaseUrl": "https://tahabezek.github.io/bilmece-mesaisi/",
+  "mediaBranch": "media",
+  "mediaKeepDays": 4,
+  "shareToFeed": true,
+  "lowBacklogWarnDays": 3,
+  "youtube": null
+}

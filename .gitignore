@@ -1,0 +1,7 @@
+node_modules/
+out/
+_SILINECEK/
+.media/
+.env
+assets/voice/*/mix.wav
+*.tmp.mp3

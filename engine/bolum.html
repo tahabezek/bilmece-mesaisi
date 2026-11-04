@@ -1,0 +1,24 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="fonts/fonts.css">
+<style>html,body{margin:0;background:#2E5B5E}</style></head><body><canvas id="c"></canvas>
+<script type="module">
+// Bölüm oynatıcı: ?id=001-badana&s=0.5&t=12.3 · window.renderFrame(t) kareyi sıfırdan çizer (render sözleşmesi).
+// Zaman çizelgesi tools/ses.mjs'in yazdığı assets/voice/<id>/timeline.json'dan gelir (ses saattir).
+import { kit } from './office.js';
+const q = new URLSearchParams(location.search), id = q.get('id') || '001-badana', S = +(q.get('s') || 1);
+const ep = await (await fetch(`../bolumler/${id}.json`)).json();
+const tl = await (await fetch(`../assets/voice/${id}/timeline.json`)).json();
+tl.L = Object.fromEntries(tl.lines.map(l => [l.id, l]));
+const scene = await import(`./b${String(ep.num).padStart(3, '0')}.js`);
+for (const w of ['900', '800', '700']) await document.fonts.load(`${w} 60px Rubik`, 'ÇĞİıŞşÖöÜü');
+await document.fonts.ready;
+const cv = document.getElementById('c'); cv.width = Math.round(1080 * S); cv.height = Math.round(1920 * S);
+const ctx = cv.getContext('2d'), K = kit(ctx), st = scene.build(ep, tl);
+window.DURATION = tl.duration;
+window.renderFrame = t => {
+  ctx.setTransform(S, 0, 0, S, 0, 0);
+  ctx.fillStyle = '#2E5B5E'; ctx.fillRect(0, 0, 1080, 1920);
+  ctx.save(); scene.draw(K, t, ep, tl, st); ctx.restore();
+};
+window.renderFrame(+(q.get('t') || 0));
+window.__ready = true;
+</script></body></html>
