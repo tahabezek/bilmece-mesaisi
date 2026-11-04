@@ -44,7 +44,7 @@ export async function channelHealth(channelId) {
 // Kanalın belirli zaman aralığındaki gönderileri (zamanlanmış, gönderiliyor, gönderildi, hata)
 export async function postsBetween(organizationId, channelId, startISO, endISO) {
   const d = await gql(`query($in: PostsInput!) { posts(input: $in) { edges { node {
-      id status dueAt sentAt text error { message } } } } }`,
+      id status dueAt sentAt text externalLink error { message } } } } }`,
     { in: { organizationId, filter: { channelIds: [channelId], dueAt: { start: startISO, end: endISO },
       status: ['scheduled', 'sending', 'sent', 'error', 'needs_approval', 'draft'] } } });
   return (d.posts.edges || []).map(e => e.node);

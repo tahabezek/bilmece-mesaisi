@@ -9,6 +9,9 @@ on:
     - cron: '13 6 * * *'
     - cron: '43 11 * * *'
     - cron: '13 17 * * *'
+    # yayından ~20 dk sonra durum kontrolü: düşen gönderi hemen yeniden kurulur (12:30 ve 21:00 TR)
+    - cron: '52 9 * * *'
+    - cron: '22 18 * * *'
   workflow_dispatch:
     inputs:
       dry:

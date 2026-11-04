@@ -148,17 +148,42 @@ async function status() {
 }
 
 // --simdi <id> <ISO>: tek bölümü verilen anda (ya da 10 dk sonra) planla; medya yayına alınır, ledger'a işlenir.
-async function simdi(id, iso) {
+async function simdi(id, iso, ledgerIn) {
   const ep = episodes().find(e => e.id === id) || JSON.parse(fs.readFileSync(path.join(root, 'bolumler', id + '.json'), 'utf8'));
   const due = iso ? new Date(iso) : new Date(Math.ceil((Date.now() + 10 * 60e3) / 60e3) * 60e3);
-  const ledger = loadLedger(), rel = mediaName(ep), mp4 = video(ep), url = cfg.mediaBaseUrl + rel, k = slotKey(due);
+  const ledger = ledgerIn || loadLedger(), rel = mediaName(ep), mp4 = video(ep), url = cfg.mediaBaseUrl + rel, k = slotKey(due);
   ledger.slots[k] = { episode: ep.id, media: rel, status: 'media', at: new Date().toISOString() }; saveLedger(ledger);
   publishMedia(ledger, [[rel, mp4]]);
   if (!(await waitLive(url, fs.statSync(mp4).size))) throw new Error('medya yayına çıkmadı: ' + url);
   const post = await createReel({ channelId: cfg.channelId, text: postText(ep), videoUrl: url, dueAtISO: due.toISOString(), thumbnailOffsetMs: Math.round((ep.coverAt ?? 0) * 1000), shareToFeed: cfg.shareToFeed });
   Object.assign(ledger.slots[k], { status: 'scheduled', postId: post.id, dueAt: post.dueAt, note: 'elle (--simdi)' }); saveLedger(ledger);
   log(`✅ ${k} → ${ep.id} (${url})`);
+  return k;
 }
+
+// Durum eşitleme (cinefia'daki gibi): geçmiş gönderilerin Buffer durumunu deftere işle.
+// Düşen gönderi gündüzse (TR 09:00–23:00) hemen yeniden kurulur; gece ise bölüm stoğa döner. Her düşüş e-posta üretir.
+async function syncStatus(ledger, now) {
+  const posts = await postsBetween(cfg.organizationId, cfg.channelId, new Date(now - 30 * 3600e3).toISOString(), new Date(now.getTime() + 3600e3).toISOString());
+  const byId = new Map(posts.map(p => [p.id, p]));
+  const rescue = [];
+  for (const [k, s] of Object.entries(ledger.slots)) {
+    const p = s.postId && byId.get(s.postId); if (!p) continue;
+    if (p.status === 'sent' && s.status !== 'sent') { Object.assign(s, { status: 'sent', sentAt: p.sentAt, link: p.externalLink || undefined }); log(`yayında ${k} → ${s.episode} ${p.externalLink || ''}`); }
+    if (p.status === 'error' && s.status !== 'failed') {
+      Object.assign(s, { status: 'failed', error: String(p.error?.message || 'Buffer hatası').slice(0, 300) });
+      summary.push(`❌ ${k} ${s.episode} düştü: ${s.error}`);
+      rescue.push(s.episode);
+    }
+  }
+  const hTR = (now.getUTCHours() + 3) % 24 + now.getUTCMinutes() / 60;
+  for (const id of rescue) {
+    if (hTR < 9 || hTR > 23) { summary.push(`ℹ️ ${id} gece düştü; stoğa döndü, sıradaki boş yuvaya girer.`); continue; }
+    try { const k = await simdi(id, null, ledger); summary.push(`🔁 ${id} yeniden kuruldu: ${k}`); }
+    catch (e) { summary.push(`❌ ${id} yeniden kurulamadı: ${e.message}`); }
+  }
+}
+
 
 async function main() {
   if (args.has('--simdi')) { const a = process.argv.slice(process.argv.indexOf('--simdi') + 1); return simdi(a[0], a[1]); }
@@ -171,6 +196,7 @@ async function main() {
 
   const now = new Date();
   const ledger = loadLedger();
+  if (!DRY) await syncStatus(ledger, now);
   if (!DRY) {
     const ch = await channelHealth(cfg.channelId);
     if (ch.isDisconnected || ch.isLocked) throw new Error(`Buffer kanalı kullanılamıyor: ${JSON.stringify(ch)}`);
