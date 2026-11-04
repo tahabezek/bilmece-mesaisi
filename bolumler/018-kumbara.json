@@ -1,0 +1,178 @@
+{
+ "id": "018-kumbara",
+ "num": 18,
+ "sira": 15,
+ "bpm": 120,
+ "slug": "on-iki-yilda-uc-lira",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#ofis"
+ ],
+ "card": [
+  "Her doğum gününde kumbaraya 1 lira.",
+  "12 yaşında açtı: içinde 3 lira! Nasıl?"
+ ],
+ "caption": "Zeka sorusu: Hikmet Bey'in yeğeni her doğum gününde kumbarasına 1 lira atıyor. 12 yaşına girdiği gün kumbarayı açıyor: içinden sadece 3 lira çıkıyor. Kimse para almamış, kumbara da sağlam. Nasıl?\n\nCevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Defneciğim, on iki yıl biriktirdik, kumbaradan üç lira çıktı!"
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.25,
+    "text": "Üç lira mı? Hayırdır Müdür Bey?"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Kardeşimin oğlu her doğum gününde kumbarasına bir lira atar. Bir kere bile atlamaz."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "On iki yaşına girdiği gün kumbarayı açtık. Sadece üç lira çıktı."
+   },
+   {
+    "id": "h2c",
+    "who": "hikmet",
+    "gap": 0.35,
+    "text": "Kimse para almadı, kumbara da sapasağlam. Nasıl oldu?"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Bilirsen doğum günü pastası senin."
+   },
+   {
+    "id": "da",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "On iki yılda on iki lira olmalıydı. Ama üç…",
+    "tts": "On iki yılda on iki lira olmalıydı. Ama üç."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.3,
+    "text": "Kumbarada delik mi var? Yoksa birisi mi aldı?"
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Delik yok, kimse dokunmadı."
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.3,
+    "text": "Bence çocuk da sizin gibi, parayı atmayı unutuyor."
+   },
+   {
+    "id": "hn",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Bir kere bile atlamadı dedim Necmi!"
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Benim bir arkadaşım var; elli iki yaşında ama ömründe on üç kere doğum günü pastası kesti!"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Buldum! Doğum günü yirmi dokuz Şubat!",
+    "snap": true
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "Çocuk yirmi dokuz Şubat'ta doğmuş. O gün takvimde ancak dört yılda bir var.",
+    "tts": "Çocuk yirmi dokuz Şubatta doğmuş. O gün takvimde ancak dört yılda bir var."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "On iki yılda sadece üç doğum günü geldi: üç lira!",
+    "tts": "On iki yılda sadece üç doğum günü geldi. Üç lira!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1.1,
+    "text": "Üç pasta, on iki yaş… Bu çocuğa haksızlık olmuş.",
+    "tts": "Üç pasta, on iki yaş. Bu çocuğa haksızlık olmuş."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.55,
+    "text": "Bunu Şubat'ta doğan arkadaşına gönder.",
+    "tts": "Bunu Şubatta doğan arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "knock",
+   "h2b:8"
+  ],
+  [
+   "buzz",
+   "hd:0"
+  ],
+  [
+   "pop",
+   "d5:3"
+  ],
+  [
+   "pop",
+   "d5:4"
+  ],
+  [
+   "pop",
+   "d5:5"
+  ],
+  [
+   "ding",
+   "d5>-0.1"
+  ],
+  [
+   "womp",
+   "d5>+0.15"
+  ]
+ ]
+}

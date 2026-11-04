@@ -1,0 +1,175 @@
+{
+ "id": "019-araba-yarisi",
+ "num": 19,
+ "sira": 16,
+ "bpm": 120,
+ "slug": "son-gelen-kazanir",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#ofis"
+ ],
+ "card": [
+  "Arabası son gelen kazanır.",
+  "İkisi de yolda durdu. Hikmet tek cümle",
+  "söyledi, ikisi de bastı. Ne dedi?"
+ ],
+ "caption": "Zeka sorusu: Hikmet Bey, Necmi ile Kerem'e dedi ki: \"Arabası bitişe en son gelen, şirket arabasını kazanır.\" İkisi de yolda durdu, kimse kıpırdamadı. Hikmet Bey tek bir cümle söyledi; ikisi de son hızla bitişe bastı. Ne dedi?\n\nCevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Defneciğim, tek cümleyle iki tembeli koşturdum!"
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.25,
+    "text": "Kimi koşturdunuz Müdür Bey?"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Evet. Dedim ki: arabası bitişe en son gelen, şirket arabasını kazanır."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "İkisi de yolda durdu. Kimse kıpırdamıyor, yarış bitmiyor."
+   },
+   {
+    "id": "h2c",
+    "who": "hikmet",
+    "gap": 0.35,
+    "text": "Ben tek bir cümle söyledim, ikisi de son hızla bitişe bastı. Ne dedim?"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Bilirsen şirket arabası bir hafta senin."
+   },
+   {
+    "id": "da",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Son gelen kazanıyorsa kimse hızlanmaz… Ama siz hızlandırdınız.",
+    "tts": "Son gelen kazanıyorsa kimse hızlanmaz. Ama siz hızlandırdınız."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.3,
+    "text": "Yoksa kuralı mı değiştirdiniz? İlk geleni mi ödüllendirdiniz?"
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Hayır, kural aynı kaldı. Arabası son gelen kazanır."
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.3,
+    "text": "Ben hâlâ yolda bekliyorum bu arada."
+   },
+   {
+    "id": "hn",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Sen bekle Necmi, sen bekle."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Ben torunlarıma dedim ki: kimin kalemi kırılırsa o kazanır. Hemen kalemleri değiştirip birbirininkini kırmaya başladılar!"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Buldum! Arabaları değiştirin!",
+    "snap": true
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "Necmi Abi, Kerem'in arabasına binerse, kendi arabasının son gelmesi için Kerem'in arabasını hızla bitişe sürer.",
+    "tts": "Necmi Abi, Keremin arabasına binerse, kendi arabasının son gelmesi için Keremin arabasını hızla bitişe sürer."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Kerem de aynısını yapar. İkisi de rakibin arabasıyla gaza basar!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1.1,
+    "text": "Aynı kural, başka araba. İkisi de koştu."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.55,
+    "text": "Bunu yarışta hep son gelen arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "buzz",
+   "hd:0"
+  ],
+  [
+   "swish",
+   "d4:3"
+  ],
+  [
+   "zip",
+   [
+    "d4>-1.2",
+    "d4>-0.2"
+   ]
+  ],
+  [
+   "swish",
+   "d5:6"
+  ],
+  [
+   "ding",
+   "d5>-0.1"
+  ],
+  [
+   "womp",
+   "d5>+0.15"
+  ]
+ ]
+}

@@ -1,0 +1,184 @@
+{
+ "id": "017-balik",
+ "num": 17,
+ "sira": 14,
+ "bpm": 120,
+ "slug": "kac-balik",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#ofis"
+ ],
+ "card": [
+  "İkisi hariç hepsi lüfer, ikisi hariç",
+  "hepsi istavrit, ikisi hariç hepsi hamsi.",
+  "Kaç balık?"
+ ],
+ "caption": "Zeka sorusu: Hikmet Bey yalnız lüfer, istavrit ve hamsi tuttu. İkisi hariç hepsi lüfer, ikisi hariç hepsi istavrit, ikisi hariç hepsi hamsi. Kaç balık tuttu?\n\nİlk akla gelen cevap genelde yanlış. Cevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Defneciğim, pazar günü balığa çıktım, bak ne tuttum."
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.25,
+    "text": "Ne tuttunuz Müdür Bey?"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Sadece lüfer, istavrit ve hamsi. Başka balık yok."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "İkisi hariç hepsi lüfer. İkisi hariç hepsi istavrit. İkisi hariç hepsi hamsi."
+   },
+   {
+    "id": "h2c",
+    "who": "hikmet",
+    "gap": 0.35,
+    "text": "Kaç balık tuttum?"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Bilirsen akşam balık benden."
+   },
+   {
+    "id": "da",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Her türden \"ikisi hariç\" diyor… Demek ki her türden ikişer tane var!",
+    "tts": "Her türden, ikisi hariç diyor. Demek ki her türden ikişer tane var!"
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.3,
+    "text": "İki lüfer, iki istavrit, iki hamsi. Altı balık!"
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Hayır! Altı balık olsa, dört tanesi lüfer olurdu!"
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.3,
+    "text": "Bence hiç balık tutmadınız, pazardan aldınız."
+   },
+   {
+    "id": "hn",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Necmi! Oltayla tuttum."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Ben de pazardan bir elma, bir armut, bir ayva aldım. Hangisini sayarsan say, ikisi hariç hepsi o!"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Buldum! Üç balık!",
+    "snap": true
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "Bir lüfer, bir istavrit, bir hamsi. Lüferden başka iki balık var: ikisi hariç hepsi lüfer."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "İstavrit için de, hamsi için de aynısı. Üç balıkta üçü de doğru!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1.1,
+    "text": "Üç balıkla bu kadar övündüm ha…",
+    "tts": "Üç balıkla bu kadar övündüm ha."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.55,
+    "text": "Bunu balıkçı arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "pop",
+   "h2b:3"
+  ],
+  [
+   "pop",
+   "h2b:7"
+  ],
+  [
+   "pop",
+   "h2b:11"
+  ],
+  [
+   "buzz",
+   "hd:0"
+  ],
+  [
+   "pop",
+   "d4:1"
+  ],
+  [
+   "pop",
+   "d4:3"
+  ],
+  [
+   "pop",
+   "d4:5"
+  ],
+  [
+   "ding",
+   "d5:11"
+  ],
+  [
+   "womp",
+   "d5>+0.15"
+  ]
+ ]
+}
