@@ -1,0 +1,179 @@
+{
+ "id": "014-klasorler",
+ "num": 14,
+ "sira": 11,
+ "bpm": 120,
+ "slug": "havada-duran-klasor",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#ofis"
+ ],
+ "card": [
+  "Klasörleri masanın kenarına diz:",
+  "her katta bir tane, yapıştırmak yok.",
+  "En üstteki tamamen dışarıda durur mu?"
+ ],
+ "caption": "Zeka sorusu: Aynı klasörleri masanın kenarına üst üste diziyorsun. Her katta tek klasör, yapıştırmak yok. En üstteki klasör tamamen masanın dışında, boşlukta durabilir mi?\n\nÇoğu kişi \"düşer\" diyor. Cevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Defneciğim, havada duran bir klasör gördün mü hiç?"
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.25,
+    "text": "Havada mı Müdür Bey?",
+    "rate": "-8%"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Aynı klasörleri masanın kenarına üst üste diziyorsun. Her katta bir klasör, yapıştırmak yok."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.35,
+    "text": "En üstteki tamamen masanın dışında durabilir mi?"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Durursa bu hafta her gün erken çıkarsın."
+   },
+   {
+    "id": "da",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Bir klasör yarısından fazla taşarsa düşer. O zaman en fazla yarısı taşar…",
+    "tts": "Bir klasör yarısından fazla taşarsa düşer. O zaman en fazla yarısı taşar."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.3,
+    "text": "İkincisini de yarım kaydırsam?"
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Düştü işte! Necmi, topla şunları."
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.3,
+    "text": "Bence yapıştıralım, kimse görmez."
+   },
+   {
+    "id": "hn",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Yapıştırmak yok dedim Necmi!"
+   },
+   {
+    "id": "hc",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Hâlâ bekliyorum Defneciğim."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Dün torunum kitaplardan merdiven yaptı. Bana dedi ki: Dede, en üstten başla! Önce en üsttekini dengeledi, sonra altına bir tane daha.",
+    "tts": "Dün torunum kitaplardan merdiven yaptı. Bana dedi ki, dede, en üstten başla! Önce en üsttekini dengeledi, sonra altına bir tane daha."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Buldum! Yukarıdan aşağı!",
+    "snap": true
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "En üstteki yarım taşar. Bir alttakini dörtte bir, sonrakini altıda bir, en alttakini sekizde bir kaydırırım."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Hepsi toplanınca bir klasör boyunu geçer. En üstteki tamamen havada!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1.1,
+    "text": "Havada… Necmi, sakın nefes alma.",
+    "tts": "Havada. Necmi, sakın nefes alma."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.55,
+    "text": "Bunu “düşer” diyecek arkadaşına gönder.",
+    "tts": "Bunu, düşer diyecek arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "drop",
+   "hd:0"
+  ],
+  [
+   "pop",
+   "d4:2"
+  ],
+  [
+   "pop",
+   "d4:6"
+  ],
+  [
+   "pop",
+   "d4:9"
+  ],
+  [
+   "pop",
+   "d4:13"
+  ],
+  [
+   "ding",
+   "d5:9"
+  ],
+  [
+   "womp",
+   "d5>+0.15"
+  ]
+ ]
+}

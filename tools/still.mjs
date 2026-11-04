@@ -21,6 +21,7 @@ export function staticServer() {
     const p = path.join(root, decodeURIComponent(new URL(req.url, 'http://x').pathname));
     if (!p.startsWith(root) || !fs.existsSync(p) || fs.statSync(p).isDirectory()) { res.statusCode = 404; return res.end(); }
     res.setHeader('Content-Type', types[path.extname(p)] || 'application/octet-stream');
+    res.setHeader('Cache-Control', 'no-store');   // düzenlenen sahne dosyası her render'da taze okunsun
     fs.createReadStream(p).pipe(res);
   });
   return new Promise(r => srv.listen(0, '127.0.0.1', () => r(srv)));

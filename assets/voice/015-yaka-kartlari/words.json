@@ -1,0 +1,859 @@
+{
+ "h1": {
+  "key": "e525a652dfd2",
+  "trimmed": "e525a652dfd2",
+  "wkey": "e525a652dfd2",
+  "heard": "Defnecim, genel müdürlük ikimizi sınıyor.",
+  "words": [
+   {
+    "w": "Defneciğim,",
+    "t0": 0.0,
+    "t1": 0.68
+   },
+   {
+    "w": "genel",
+    "t0": 0.82,
+    "t1": 1.2
+   },
+   {
+    "w": "müdürlük",
+    "t0": 1.2,
+    "t1": 1.62
+   },
+   {
+    "w": "ikimizi",
+    "t0": 1.62,
+    "t1": 2.0
+   },
+   {
+    "w": "sınıyor.",
+    "t0": 2.0,
+    "t1": 2.4
+   }
+  ],
+  "dur": 2.58
+ },
+ "d1": {
+  "key": "9c64b3b8c221",
+  "trimmed": "9c64b3b8c221",
+  "wkey": "9c64b3b8c221",
+  "heard": "Nasıl bir sınav müdür bey?",
+  "words": [
+   {
+    "w": "Nasıl",
+    "t0": 0.0,
+    "t1": 0.26
+   },
+   {
+    "w": "bir",
+    "t0": 0.26,
+    "t1": 0.56
+   },
+   {
+    "w": "sınav",
+    "t0": 0.56,
+    "t1": 1.04
+   },
+   {
+    "w": "Müdür",
+    "t0": 1.04,
+    "t1": 1.34
+   },
+   {
+    "w": "Bey?",
+    "t0": 1.34,
+    "t1": 1.48
+   }
+  ],
+  "dur": 1.67
+ },
+ "h2a": {
+  "key": "3fe0d26a30b6",
+  "trimmed": "3fe0d26a30b6",
+  "wkey": "3fe0d26a30b6",
+  "heard": "Sırtımıza kırmızı ya da mavi kart yapıştıracaklar. Ben seninkini görürüm, sen benimkini.",
+  "words": [
+   {
+    "w": "Sırtımıza",
+    "t0": 0.0,
+    "t1": 0.7
+   },
+   {
+    "w": "kırmızı",
+    "t0": 0.7,
+    "t1": 1.18
+   },
+   {
+    "w": "ya",
+    "t0": 1.18,
+    "t1": 1.29
+   },
+   {
+    "w": "da",
+    "t0": 1.29,
+    "t1": 1.4
+   },
+   {
+    "w": "mavi",
+    "t0": 1.4,
+    "t1": 1.72
+   },
+   {
+    "w": "kart",
+    "t0": 1.72,
+    "t1": 1.96
+   },
+   {
+    "w": "yapıştıracaklar.",
+    "t0": 1.96,
+    "t1": 2.84
+   },
+   {
+    "w": "Ben",
+    "t0": 2.84,
+    "t1": 3.44
+   },
+   {
+    "w": "seninkini",
+    "t0": 3.44,
+    "t1": 3.98
+   },
+   {
+    "w": "görürüm,",
+    "t0": 3.98,
+    "t1": 4.42
+   },
+   {
+    "w": "sen",
+    "t0": 4.42,
+    "t1": 4.76
+   },
+   {
+    "w": "benimkini.",
+    "t0": 4.76,
+    "t1": 5.3
+   }
+  ],
+  "dur": 5.468
+ },
+ "h2b": {
+  "key": "b592d6421fb5",
+  "trimmed": "b592d6421fb5",
+  "wkey": "b592d6421fb5",
+  "heard": "Kendi kartımızı göremeyiz, konuşmak da yok. Kimiz aynı anda kendi rengimizi yazacağız.",
+  "words": [
+   {
+    "w": "Kendi",
+    "t0": 0.0,
+    "t1": 0.34
+   },
+   {
+    "w": "kartımızı",
+    "t0": 0.34,
+    "t1": 0.86
+   },
+   {
+    "w": "göremeyiz,",
+    "t0": 0.86,
+    "t1": 1.5
+   },
+   {
+    "w": "konuşmak",
+    "t0": 1.62,
+    "t1": 2.12
+   },
+   {
+    "w": "da",
+    "t0": 2.12,
+    "t1": 2.38
+   },
+   {
+    "w": "yok.",
+    "t0": 2.38,
+    "t1": 2.64
+   },
+   {
+    "w": "İkimiz",
+    "t0": 2.64,
+    "t1": 3.08
+   },
+   {
+    "w": "aynı",
+    "t0": 3.08,
+    "t1": 3.3
+   },
+   {
+    "w": "anda",
+    "t0": 3.3,
+    "t1": 3.6
+   },
+   {
+    "w": "kendi",
+    "t0": 3.6,
+    "t1": 3.86
+   },
+   {
+    "w": "rengimizi",
+    "t0": 3.86,
+    "t1": 4.4
+   },
+   {
+    "w": "yazacağız.",
+    "t0": 4.4,
+    "t1": 4.86
+   }
+  ],
+  "dur": 5.148
+ },
+ "h2c": {
+  "key": "296b2b089269",
+  "trimmed": "296b2b089269",
+  "wkey": "296b2b089269",
+  "heard": "En az birimiz doğru yazarsa geçiyoruz. Önceden plan yapabiliriz.",
+  "words": [
+   {
+    "w": "En",
+    "t0": 0.0,
+    "t1": 0.2
+   },
+   {
+    "w": "az",
+    "t0": 0.2,
+    "t1": 0.4
+   },
+   {
+    "w": "birimiz",
+    "t0": 0.4,
+    "t1": 0.76
+   },
+   {
+    "w": "doğru",
+    "t0": 0.76,
+    "t1": 1.0
+   },
+   {
+    "w": "yazarsa",
+    "t0": 1.0,
+    "t1": 1.52
+   },
+   {
+    "w": "geçiyoruz.",
+    "t0": 1.52,
+    "t1": 2.0
+   },
+   {
+    "w": "Önceden",
+    "t0": 2.5,
+    "t1": 3.02
+   },
+   {
+    "w": "plan",
+    "t0": 3.02,
+    "t1": 3.22
+   },
+   {
+    "w": "yapabiliriz.",
+    "t0": 3.22,
+    "t1": 4.0
+   }
+  ],
+  "dur": 4.128
+ },
+ "h3": {
+  "key": "18fd7a3d5352",
+  "trimmed": "18fd7a3d5352",
+  "wkey": "18fd7a3d5352",
+  "heard": "Şansa bırakırsak derfi uçar.",
+  "words": [
+   {
+    "w": "Şansa",
+    "t0": 0.0,
+    "t1": 0.42
+   },
+   {
+    "w": "bırakırsak",
+    "t0": 0.42,
+    "t1": 1.16
+   },
+   {
+    "w": "terfi",
+    "t0": 1.16,
+    "t1": 1.52
+   },
+   {
+    "w": "uçar.",
+    "t0": 1.52,
+    "t1": 1.82
+   }
+  ],
+  "dur": 2.01
+ },
+ "da": {
+  "key": "ac30f24d78b2",
+  "trimmed": "ac30f24d78b2",
+  "wkey": "ac30f24d78b2",
+  "heard": "Kendi rengimi hiç göremeyeceğim. Tek bilgim sizin kartınız.",
+  "words": [
+   {
+    "w": "Kendi",
+    "t0": 0.0,
+    "t1": 0.3
+   },
+   {
+    "w": "rengimi",
+    "t0": 0.3,
+    "t1": 0.72
+   },
+   {
+    "w": "hiç",
+    "t0": 0.72,
+    "t1": 0.88
+   },
+   {
+    "w": "göremeyeceğim.",
+    "t0": 0.88,
+    "t1": 1.5
+   },
+   {
+    "w": "Tek",
+    "t0": 1.5,
+    "t1": 2.02
+   },
+   {
+    "w": "bilgim,",
+    "t0": 2.02,
+    "t1": 2.48
+   },
+   {
+    "w": "sizin",
+    "t0": 2.48,
+    "t1": 2.72
+   },
+   {
+    "w": "kartınız.",
+    "t0": 2.72,
+    "t1": 3.28
+   }
+  ],
+  "dur": 3.488
+ },
+ "d2": {
+  "key": "809ba5bd676d",
+  "trimmed": "809ba5bd676d",
+  "wkey": "809ba5bd676d",
+  "heard": "İkimiz de kırmızı yazsak 4te 3 tutar.",
+  "words": [
+   {
+    "w": "İkimiz",
+    "t0": 0.0,
+    "t1": 0.38
+   },
+   {
+    "w": "de",
+    "t0": 0.38,
+    "t1": 0.54
+   },
+   {
+    "w": "kırmızı",
+    "t0": 0.54,
+    "t1": 0.94
+   },
+   {
+    "w": "yazsak?",
+    "t0": 0.94,
+    "t1": 1.42
+   },
+   {
+    "w": "Dörtte",
+    "t0": 1.42,
+    "t1": 1.98
+   },
+   {
+    "w": "üç",
+    "t0": 1.98,
+    "t1": 2.26
+   },
+   {
+    "w": "tutar.",
+    "t0": 2.26,
+    "t1": 2.66
+   }
+  ],
+  "dur": 2.768
+ },
+ "hd": {
+  "key": "d2918e14ec97",
+  "trimmed": "d2918e14ec97",
+  "wkey": "d2918e14ec97",
+  "heard": "4 -3 yetmez. Garanti istiyorum.",
+  "words": [
+   {
+    "w": "Dörtte",
+    "t0": 0.0,
+    "t1": 0.493
+   },
+   {
+    "w": "üç",
+    "t0": 0.493,
+    "t1": 0.74
+   },
+   {
+    "w": "yetmez!",
+    "t0": 0.74,
+    "t1": 1.2
+   },
+   {
+    "w": "Garanti",
+    "t0": 1.52,
+    "t1": 1.98
+   },
+   {
+    "w": "istiyorum.",
+    "t0": 1.98,
+    "t1": 2.36
+   }
+  ],
+  "dur": 2.668
+ },
+ "n0": {
+  "key": "d29dfa1de908",
+  "trimmed": "d29dfa1de908",
+  "wkey": "d29dfa1de908",
+  "heard": "Ben olsam iki rengi birden yazarım.",
+  "words": [
+   {
+    "w": "Ben",
+    "t0": 0.0,
+    "t1": 0.24
+   },
+   {
+    "w": "olsam",
+    "t0": 0.24,
+    "t1": 0.72
+   },
+   {
+    "w": "iki",
+    "t0": 0.72,
+    "t1": 1.02
+   },
+   {
+    "w": "rengi",
+    "t0": 1.02,
+    "t1": 1.42
+   },
+   {
+    "w": "birden",
+    "t0": 1.42,
+    "t1": 1.84
+   },
+   {
+    "w": "yazarım.",
+    "t0": 1.84,
+    "t1": 2.24
+   }
+  ],
+  "dur": 2.44
+ },
+ "hn": {
+  "key": "42c17cbdac8d",
+  "trimmed": "42c17cbdac8d",
+  "wkey": "42c17cbdac8d",
+  "heard": "Tek renk necmi tek.",
+  "words": [
+   {
+    "w": "Tek",
+    "t0": 0.0,
+    "t1": 0.2
+   },
+   {
+    "w": "renk",
+    "t0": 0.2,
+    "t1": 0.58
+   },
+   {
+    "w": "Necmi,",
+    "t0": 0.58,
+    "t1": 0.98
+   },
+   {
+    "w": "tek!",
+    "t0": 0.98,
+    "t1": 1.24
+   }
+  ],
+  "dur": 1.45
+ },
+ "hc": {
+  "key": "d5a5586ed565",
+  "trimmed": "d5a5586ed565",
+  "wkey": "d5a5586ed565",
+  "heard": "Kartlar geliyor Defnecim.",
+  "words": [
+   {
+    "w": "Kartlar",
+    "t0": 0.0,
+    "t1": 0.5
+   },
+   {
+    "w": "geliyor",
+    "t0": 0.5,
+    "t1": 0.76
+   },
+   {
+    "w": "Defneciğim.",
+    "t0": 0.76,
+    "t1": 1.46
+   }
+  ],
+  "dur": 1.57
+ },
+ "n1": {
+  "key": "0c3fb0ff33d7",
+  "trimmed": "0c3fb0ff33d7",
+  "wkey": "0c3fb0ff33d7",
+  "heard": "Ben hanımla hep böyle anlaşırım, hanım aynı der, ben farklı derim. Hangisi olursa olsun, birimiz haklı çıkar.",
+  "words": [
+   {
+    "w": "Ben",
+    "t0": 0.0,
+    "t1": 0.32
+   },
+   {
+    "w": "hanımla",
+    "t0": 0.32,
+    "t1": 0.86
+   },
+   {
+    "w": "hep",
+    "t0": 0.86,
+    "t1": 1.12
+   },
+   {
+    "w": "böyle",
+    "t0": 1.12,
+    "t1": 1.42
+   },
+   {
+    "w": "anlaşırım.",
+    "t0": 1.42,
+    "t1": 2.08
+   },
+   {
+    "w": "Hanım,",
+    "t0": 2.36,
+    "t1": 2.84
+   },
+   {
+    "w": "aynı",
+    "t0": 2.84,
+    "t1": 3.2
+   },
+   {
+    "w": "der.",
+    "t0": 3.2,
+    "t1": 3.68
+   },
+   {
+    "w": "Ben,",
+    "t0": 3.68,
+    "t1": 4.16
+   },
+   {
+    "w": "farklı",
+    "t0": 4.16,
+    "t1": 4.6
+   },
+   {
+    "w": "derim.",
+    "t0": 4.6,
+    "t1": 5.06
+   },
+   {
+    "w": "Hangisi",
+    "t0": 5.38,
+    "t1": 5.88
+   },
+   {
+    "w": "olursa",
+    "t0": 5.88,
+    "t1": 6.4
+   },
+   {
+    "w": "olsun,",
+    "t0": 6.4,
+    "t1": 6.72
+   },
+   {
+    "w": "birimiz",
+    "t0": 7.04,
+    "t1": 7.5
+   },
+   {
+    "w": "haklı",
+    "t0": 7.5,
+    "t1": 7.96
+   },
+   {
+    "w": "çıkar!",
+    "t0": 7.96,
+    "t1": 8.18
+   }
+  ],
+  "dur": 8.474
+ },
+ "d3": {
+  "key": "796b17e09909",
+  "trimmed": "796b17e09909",
+  "wkey": "796b17e09909",
+  "heard": "Buldum biri aynı biri farklı.",
+  "words": [
+   {
+    "w": "Buldum!",
+    "t0": 0.0,
+    "t1": 0.48
+   },
+   {
+    "w": "Biri",
+    "t0": 0.48,
+    "t1": 0.92
+   },
+   {
+    "w": "aynı,",
+    "t0": 0.92,
+    "t1": 1.26
+   },
+   {
+    "w": "biri",
+    "t0": 1.26,
+    "t1": 1.64
+   },
+   {
+    "w": "farklı!",
+    "t0": 1.64,
+    "t1": 1.88
+   }
+  ],
+  "dur": 2.178
+ },
+ "d4": {
+  "key": "5b4b74466dc3",
+  "trimmed": "5b4b74466dc3",
+  "wkey": "5b4b74466dc3",
+  "heard": "Ben sizde gördüğüm rengi yazarım, yani renklerimizin aynı olduğuna oynarım.",
+  "words": [
+   {
+    "w": "Ben",
+    "t0": 0.0,
+    "t1": 0.22
+   },
+   {
+    "w": "sizde",
+    "t0": 0.22,
+    "t1": 0.6
+   },
+   {
+    "w": "gördüğüm",
+    "t0": 0.6,
+    "t1": 1.06
+   },
+   {
+    "w": "rengi",
+    "t0": 1.06,
+    "t1": 1.4
+   },
+   {
+    "w": "yazarım.",
+    "t0": 1.4,
+    "t1": 1.76
+   },
+   {
+    "w": "Yani",
+    "t0": 2.1,
+    "t1": 2.3
+   },
+   {
+    "w": "renklerimizin",
+    "t0": 2.3,
+    "t1": 3.06
+   },
+   {
+    "w": "aynı",
+    "t0": 3.06,
+    "t1": 3.3
+   },
+   {
+    "w": "olduğuna",
+    "t0": 3.3,
+    "t1": 3.72
+   },
+   {
+    "w": "oynarım.",
+    "t0": 3.72,
+    "t1": 4.02
+   }
+  ],
+  "dur": 4.178
+ },
+ "d5": {
+  "key": "32f1b246ac8c",
+  "trimmed": "32f1b246ac8c",
+  "wkey": "32f1b246ac8c",
+  "heard": "Siz bende gördüğünüzün tersini yazarsınız, farklı, renkler ya aynıdır ya farklı, birimiz mutlaka doğru.",
+  "words": [
+   {
+    "w": "Siz",
+    "t0": 0.0,
+    "t1": 0.2
+   },
+   {
+    "w": "bende",
+    "t0": 0.2,
+    "t1": 0.56
+   },
+   {
+    "w": "gördüğünüzün",
+    "t0": 0.56,
+    "t1": 1.16
+   },
+   {
+    "w": "tersini",
+    "t0": 1.16,
+    "t1": 1.6
+   },
+   {
+    "w": "yazarsınız.",
+    "t0": 1.6,
+    "t1": 2.28
+   },
+   {
+    "w": "Farklı.",
+    "t0": 2.52,
+    "t1": 2.82
+   },
+   {
+    "w": "Renkler",
+    "t0": 3.24,
+    "t1": 3.68
+   },
+   {
+    "w": "ya",
+    "t0": 3.68,
+    "t1": 3.82
+   },
+   {
+    "w": "aynıdır",
+    "t0": 3.82,
+    "t1": 4.26
+   },
+   {
+    "w": "ya",
+    "t0": 4.26,
+    "t1": 4.4
+   },
+   {
+    "w": "farklı.",
+    "t0": 4.4,
+    "t1": 4.74
+   },
+   {
+    "w": "Birimiz",
+    "t0": 5.1,
+    "t1": 5.44
+   },
+   {
+    "w": "mutlaka",
+    "t0": 5.44,
+    "t1": 5.94
+   },
+   {
+    "w": "doğru!",
+    "t0": 5.94,
+    "t1": 6.2
+   }
+  ],
+  "dur": 6.444
+ },
+ "h4": {
+  "key": "e73627b411f7",
+  "trimmed": "e73627b411f7",
+  "wkey": "e73627b411f7",
+  "heard": "Senin sırtına bakıp kendimi bulacağım ha. Tamam, plan senin.",
+  "words": [
+   {
+    "w": "Senin",
+    "t0": 0.0,
+    "t1": 0.32
+   },
+   {
+    "w": "sırtına",
+    "t0": 0.32,
+    "t1": 0.84
+   },
+   {
+    "w": "bakıp",
+    "t0": 0.84,
+    "t1": 1.18
+   },
+   {
+    "w": "kendimi",
+    "t0": 1.18,
+    "t1": 1.58
+   },
+   {
+    "w": "bulacağım",
+    "t0": 1.58,
+    "t1": 2.0
+   },
+   {
+    "w": "ha.",
+    "t0": 2.0,
+    "t1": 2.44
+   },
+   {
+    "w": "Tamam,",
+    "t0": 2.44,
+    "t1": 2.78
+   },
+   {
+    "w": "plan",
+    "t0": 3.12,
+    "t1": 3.32
+   },
+   {
+    "w": "senin.",
+    "t0": 3.32,
+    "t1": 3.64
+   }
+  ],
+  "dur": 3.868
+ },
+ "d6": {
+  "key": "05db2b0f98cb",
+  "trimmed": "05db2b0f98cb",
+  "wkey": "05db2b0f98cb",
+  "heard": "Bunu takım arkadaşına gönder.",
+  "words": [
+   {
+    "w": "Bunu",
+    "t0": 0.0,
+    "t1": 0.24
+   },
+   {
+    "w": "takım",
+    "t0": 0.24,
+    "t1": 0.54
+   },
+   {
+    "w": "arkadaşına",
+    "t0": 0.54,
+    "t1": 1.1
+   },
+   {
+    "w": "gönder.",
+    "t0": 1.1,
+    "t1": 1.46
+   }
+  ],
+  "dur": 1.621
+ }
+}

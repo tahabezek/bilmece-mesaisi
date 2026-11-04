@@ -1,0 +1,181 @@
+{
+ "id": "013-izin-kurasi",
+ "num": 13,
+ "sira": 10,
+ "bpm": 120,
+ "slug": "izin-kurasi",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#ofis"
+ ],
+ "card": [
+  "Torbada iki taş: beyaz izin, siyah iptal.",
+  "Defne gördü: ikisi de siyah!",
+  "Müdürü suçlamadan iznini nasıl alır?"
+ ],
+ "caption": "Zeka sorusu: Müdür torbaya iki taş koyuyor: beyazı çekersen iznin onaylı, siyahı çekersen iptal. Ama Defne gördü, iki taş da siyah! Müdürü yalancı çıkaramaz, çekmezse izin yanar. Defne iznini nasıl kurtarır?\n\nCevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Defneciğim, iznin bir taşa bağlı."
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.25,
+    "text": "Nasıl yani Müdür Bey?"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Bu torbaya iki taş koyuyorum: bir beyaz, bir siyah.",
+    "tts": "Bu torbaya iki taş koyuyorum. Bir beyaz, bir siyah."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Beyazı çekersen iznin onaylı. Siyahı çekersen iptal."
+   },
+   {
+    "id": "dsee",
+    "who": "defne",
+    "gap": 0.25,
+    "text": "Bir dakika… İkisi de siyah!",
+    "tts": "Bir dakika. İkisi de siyah!"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Hadi çek bakalım. Çekmezsen izin yok."
+   },
+   {
+    "id": "da",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Hile var ama müdürümü yalancı çıkaramam. Çeksem siyah gelecek…",
+    "tts": "Hile var ama müdürümü yalancı çıkaramam. Çeksem siyah gelecek."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "Doğruyu söylesem kovulurum. Çekmesem izin yanar…",
+    "tts": "Doğruyu söylesem kovulurum. Çekmesem izin yanar."
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.3,
+    "text": "Bence saksıdan beyaz bir çakıl al, cebine koy."
+   },
+   {
+    "id": "hn",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Necmi! Duydum onu."
+   },
+   {
+    "id": "hc",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Torba bekliyor Defneciğim."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "İki kalemimden biri kayboldu: biri kırmızı, biri mavi. Kalana baktım, mavi. Demek ki kaybolan kırmızıymış!",
+    "tts": "İki kalemimden biri kayboldu. Biri kırmızı, biri mavi. Kalana baktım, mavi. Demek ki kaybolan kırmızıymış!"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Buldum! Kalana bakarız!",
+    "snap": true
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "Taşı çekerim, \"Eyvah!\" deyip saksının çakıllarına düşürürüm. Hangisi olduğu artık bilinmez.",
+    "tts": "Taşı çekerim, eyvah deyip saksının çakıllarına düşürürüm. Hangisi olduğu artık bilinmez."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "Torbada kalana bakarız. Kalan siyahsa, benim çektiğim beyazdı!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1.1,
+    "text": "Kalan… siyah. Yani seninki beyaz. İznin onaylı…",
+    "tts": "Kalan. Siyah. Yani seninki beyaz. İznin onaylı."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.55,
+    "text": "Bunu hep hileyle kazanan arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "knock",
+   "h2a:4"
+  ],
+  [
+   "knock",
+   "h2a:7"
+  ],
+  [
+   "buzz",
+   "dsee:3"
+  ],
+  [
+   "drop",
+   "d4:6"
+  ],
+  [
+   "pop",
+   "d5:5"
+  ],
+  [
+   "ding",
+   "d5:7"
+  ],
+  [
+   "womp",
+   "d5>+0.15"
+  ]
+ ]
+}

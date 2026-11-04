@@ -1,0 +1,179 @@
+{
+ "id": "015-yaka-kartlari",
+ "num": 15,
+ "sira": 12,
+ "bpm": 120,
+ "slug": "yaka-kartlari",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#ofis"
+ ],
+ "card": [
+  "Sırtında kırmızı ya da mavi kart.",
+  "Kendininkini göremezsin, konuşma yok.",
+  "En az biriniz doğru yazmalı. Plan?"
+ ],
+ "caption": "Zeka sorusu: Hikmet Bey ile Defne'nin sırtına kırmızı ya da mavi kart yapıştırılacak. Herkes yalnız ötekinin kartını görüyor, konuşmak yasak. İkisi aynı anda kendi rengini yazacak; en az biri doğru yazarsa kazanıyorlar. Önceden plan yapabilirler. Garanti bir plan var mı?\n\nCevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Defneciğim, genel müdürlük ikimizi sınıyor."
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.25,
+    "text": "Nasıl bir sınav Müdür Bey?",
+    "rate": "-6%"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Sırtımıza kırmızı ya da mavi kart yapıştıracaklar. Ben seninkini görürüm, sen benimkini."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Kendi kartımızı göremeyiz, konuşmak da yok. İkimiz aynı anda kendi rengimizi yazacağız."
+   },
+   {
+    "id": "h2c",
+    "who": "hikmet",
+    "gap": 0.35,
+    "text": "En az birimiz doğru yazarsa geçiyoruz. Önceden plan yapabiliriz."
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Şansa bırakırsak terfi uçar."
+   },
+   {
+    "id": "da",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Kendi rengimi hiç göremeyeceğim. Tek bilgim, sizin kartınız…",
+    "tts": "Kendi rengimi hiç göremeyeceğim. Tek bilgim, sizin kartınız."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.3,
+    "text": "İkimiz de kırmızı yazsak? Dörtte üç tutar…",
+    "tts": "İkimiz de kırmızı yazsak? Dörtte üç tutar."
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Dörtte üç yetmez! Garanti istiyorum."
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.3,
+    "text": "Ben olsam iki rengi birden yazarım."
+   },
+   {
+    "id": "hn",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Tek renk Necmi, tek!"
+   },
+   {
+    "id": "hc",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Kartlar geliyor Defneciğim."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Ben hanımla hep böyle anlaşırım: o \"aynı\" der, ben \"farklı\" derim. Hangisi olursa olsun, birimiz haklı çıkar!",
+    "tts": "Ben hanımla hep böyle anlaşırım. Hanım, aynı der. Ben, farklı derim. Hangisi olursa olsun, birimiz haklı çıkar!"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Buldum! Biri \"aynı\", biri \"farklı\"!",
+    "tts": "Buldum! Biri aynı, biri farklı!",
+    "snap": true
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Ben sizde gördüğüm rengi yazarım. Yani renklerimizin aynı olduğuna oynarım."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "Siz bende gördüğünüzün tersini yazarsınız: \"farklı\". Renkler ya aynıdır ya farklı. Birimiz mutlaka doğru!",
+    "tts": "Siz bende gördüğünüzün tersini yazarsınız. Farklı. Renkler ya aynıdır ya farklı. Birimiz mutlaka doğru!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1.1,
+    "text": "Senin sırtına bakıp kendimi bulacağım ha… Tamam, plan senin.",
+    "tts": "Senin sırtına bakıp kendimi bulacağım ha. Tamam, plan senin."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.55,
+    "text": "Bunu takım arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "buzz",
+   "hd:0"
+  ],
+  [
+   "pop",
+   "d4:3"
+  ],
+  [
+   "pop",
+   "d5:3"
+  ],
+  [
+   "ding",
+   "d5:13"
+  ],
+  [
+   "womp",
+   "d5>+0.15"
+  ]
+ ]
+}
