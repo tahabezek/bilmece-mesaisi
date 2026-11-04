@@ -1,0 +1,172 @@
+{
+ "id": "022-limonata",
+ "num": 22,
+ "sira": 19,
+ "bpm": 120,
+ "slug": "buzlu-limonata",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#ofis"
+ ],
+ "card": [
+  "Aynı limonata, aynı buz.",
+  "Hızlı içen bir şey olmadı,",
+  "yavaş içenin midesi bozuldu. Neden?"
+ ],
+ "caption": "Zeka sorusu: Hikmet Bey ile Kerem aynı sürahiden, aynı buzlu limonatayı içti. Kerem bir dikişte içti, hiçbir şey olmadı. Hikmet Bey yavaş yavaş içti, midesi bozuldu. Bardaklar temiz, limonata temiz. Neden?\n\nZengin Kız Fakir Oğlan'dan uyarlandı. Cevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Defneciğim, aynı limonatayı içtik, bir tek benim midem bozuldu!"
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.25,
+    "text": "Nasıl yani Müdür Bey?"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Aynı sürahi, aynı buzlar. Kerem'le ikimizin bardağına da buz koydular.",
+    "tts": "Aynı sürahi, aynı buzlar. Keremle ikimizin bardağına da buz koydular."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Kerem bir dikişte içti, hiçbir şey olmadı. Ben yavaş yavaş içtim, bütün gün hastaydım."
+   },
+   {
+    "id": "h2c",
+    "who": "hikmet",
+    "gap": 0.35,
+    "text": "Bardaklar temiz, limonata temiz. Nasıl oldu?"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Bilirsen yarın limonata benden."
+   },
+   {
+    "id": "da",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Limonata aynı, bardak temiz… Fark sadece içme hızında.",
+    "tts": "Limonata aynı, bardak temiz. Fark sadece içme hızında."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.3,
+    "text": "Kerem'in midesi mi daha sağlam?",
+    "tts": "Keremin midesi mi daha sağlam?"
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Hayır! Kerem'in midesi kuş gibi.",
+    "tts": "Hayır! Keremin midesi kuş gibi."
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.3,
+    "text": "Bence limonata sizi sevmedi Müdür Bey."
+   },
+   {
+    "id": "hn",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Ciddi ol Necmi!"
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Hanım limonatama buz koyunca hep der ki: Hemen iç, buz erirse tadı değişir!",
+    "tts": "Hanım limonatama buz koyunca hep der ki, hemen iç, buz erirse tadı değişir!"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Buldum! Sorun buzdaydı!",
+    "snap": true
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "Buzlar bozuk suyla yapılmıştı. Kerem bir dikişte içti, buzlar erimeden bardak bitti."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Siz yavaş içtiniz, buzlar bardağınızda eridi. Bozuk su sizin limonatanıza karıştı!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1.1,
+    "text": "Buzdolabı Necmi'nin sorumluluğunda değil miydi?",
+    "tts": "Buzdolabı Necminin sorumluluğunda değil miydi?"
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.55,
+    "text": "Bunu limonatayı yavaş içen arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "buzz",
+   "hd:0"
+  ],
+  [
+   "swish",
+   "d4:5"
+  ],
+  [
+   "pop",
+   "d5:4"
+  ],
+  [
+   "ding",
+   "d5:10"
+  ],
+  [
+   "womp",
+   "d5>+0.15"
+  ]
+ ]
+}

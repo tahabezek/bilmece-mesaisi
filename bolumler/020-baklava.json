@@ -1,0 +1,172 @@
+{
+ "id": "020-baklava",
+ "num": 20,
+ "sira": 17,
+ "bpm": 120,
+ "slug": "kayip-baklava",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#ofis"
+ ],
+ "card": [
+  "Baklavayı tek kişi yedi.",
+  "Üç şüpheliden yalnız biri doğru söylüyor.",
+  "Kim yedi?"
+ ],
+ "caption": "Zeka sorusu: Hikmet Bey'in baklavasını tek kişi yedi. Necmi \"Kerem yedi\" diyor, Kerem \"Ben yemedim\" diyor, Defne \"Necmi yemedi\" diyor. Üçünden yalnız biri doğru söylüyor. Baklavayı kim yedi?\n\nCevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Defneciğim, buzdolabındaki baklavam kayboldu!"
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.25,
+    "text": "Kim yemiş Müdür Bey?"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Üç şüphelim var: Necmi, Kerem ve sen. Baklavayı tek kişi yedi.",
+    "tts": "Üç şüphelim var. Necmi, Kerem ve sen. Baklavayı tek kişi yedi."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Necmi, Kerem yedi diyor. Kerem, ben yemedim diyor. Sen de, Necmi yemedi dedin."
+   },
+   {
+    "id": "h2c",
+    "who": "hikmet",
+    "gap": 0.35,
+    "text": "Üçünüzden yalnız biri doğru söylüyor. Baklavayı kim yedi?"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Bulursan baklavanın yenisi senin."
+   },
+   {
+    "id": "da",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Biri doğru, ikisi yalan… Kimin doğru söylediğini bilmeden nereden başlayayım?",
+    "tts": "Biri doğru, ikisi yalan. Kimin doğru söylediğini bilmeden nereden başlayayım?"
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.3,
+    "text": "Kerem yemiştir herhalde. Necmi Abi de öyle diyor."
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Yanlış! O zaman iki kişi doğru söylemiş olur."
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.3,
+    "text": "Ben baklava sevmem ki, şerbetli şeylerden uzak dururum."
+   },
+   {
+    "id": "hn",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Sus Necmi, sıra Defne'de.",
+    "tts": "Sus Necmi, sıra Defnede."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Ben tavlada her zarı tek tek denerim: bu olur mu, şu olur mu… Hangisi tutarsa onu oynarım!",
+    "tts": "Ben tavlada her zarı tek tek denerim. Bu olur mu, şu olur mu. Hangisi tutarsa onu oynarım!"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Buldum! Baklavayı Necmi Abi yedi!",
+    "snap": true
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "Tek tek deneyelim. Kerem yediyse iki doğru çıkar. Ben yediysem yine iki doğru."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Ama Necmi Abi yediyse yalnız Kerem doğru söylüyor. Tek doğru: Necmi Abi yedi!",
+    "tts": "Ama Necmi Abi yediyse yalnız Kerem doğru söylüyor. Tek doğru. Necmi Abi yedi!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1.1,
+    "text": "Necmi… Şerbetli şeylerden uzak duruyordun hani?",
+    "tts": "Necmi. Şerbetli şeylerden uzak duruyordun hani?"
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.55,
+    "text": "Bunu buzdolabından yemek aşıran arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "buzz",
+   "hd:0"
+  ],
+  [
+   "pop",
+   "d4:3"
+  ],
+  [
+   "pop",
+   "d4:9"
+  ],
+  [
+   "ding",
+   "d5:9"
+  ],
+  [
+   "womp",
+   "d5>+0.15"
+  ]
+ ]
+}
