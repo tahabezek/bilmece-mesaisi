@@ -4,32 +4,33 @@
       "episode": "016-tuz",
       "media": "v/016-tuz.mp4",
       "status": "scheduled",
-      "at": "2026-11-04T15:41:10.986Z",
-      "postId": "6aeb524b9d8a6ed55f403d4e",
-      "dueAt": "2026-11-04T18:00:00.000Z"
+      "at": "2026-11-04T17:47:47Z",
+      "postId": "6aeb6fc2b60af5ca167b5588",
+      "dueAt": "2026-11-04T18:00:00.000Z",
+      "note": "elle planlandı (25 dk kuralı)"
     },
     "2026-11-05T09:30Z": {
       "episode": "003-istanbul",
       "media": "v/003-istanbul.mp4",
       "status": "scheduled",
-      "at": "2026-11-04T15:41:10.986Z",
-      "postId": "6aeb524d56af285c16126336",
+      "at": "2026-11-04T17:53:20.923Z",
+      "postId": "6aeb711676b2ba7a5c8f0b99",
       "dueAt": "2026-11-05T09:30:00.000Z"
     },
     "2026-11-05T18:00Z": {
       "episode": "010-bakis",
       "media": "v/010-bakis.mp4",
       "status": "scheduled",
-      "at": "2026-11-04T15:41:10.986Z",
-      "postId": "6aeb524fbbb6023e6d660362",
+      "at": "2026-11-04T17:53:20.923Z",
+      "postId": "6aeb7117a6d053c9c530b8ab",
       "dueAt": "2026-11-05T18:00:00.000Z"
     },
     "2026-11-06T09:30Z": {
       "episode": "011-ters-dosya",
       "media": "v/011-ters-dosya.mp4",
       "status": "scheduled",
-      "at": "2026-11-04T15:41:10.986Z",
-      "postId": "6aeb52519d8a6ed55f404032",
+      "at": "2026-11-04T17:53:20.923Z",
+      "postId": "6aeb71a2491f63648cede5bd",
       "dueAt": "2026-11-06T09:30:00.000Z"
     }
   }
