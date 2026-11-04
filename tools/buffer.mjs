@@ -57,7 +57,8 @@ export async function createReel({ channelId, text, videoUrl, dueAtISO, thumbnai
     { in: {
       channelId, text, schedulingType: 'automatic', mode: 'customScheduled', dueAt: dueAtISO,
       needsApproval: false, source: 'bilmece-mesaisi',
-      assets: [{ video: { url: videoUrl, metadata: thumbnailOffsetMs != null ? { thumbnailOffset: thumbnailOffsetMs } : undefined } }],
+      // thumbnailOffset 0 gönderilirse Instagram 'media' hatası veriyor (2026-11-04, iki kez): 0 ise hiç gönderme, Buffer varsayılanı kullanır
+      assets: [{ video: { url: videoUrl, metadata: thumbnailOffsetMs > 0 ? { thumbnailOffset: thumbnailOffsetMs } : undefined } }],
       metadata: { instagram: { type: 'reel', shouldShareToFeed: shareToFeed } },
     } }, { timeoutMs: 120000 });
   if (d.createPost.message) throw new Error('createPost: ' + d.createPost.message);

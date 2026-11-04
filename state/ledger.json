@@ -12,43 +12,61 @@
     },
     "2026-11-05T09:30Z": {
       "episode": "003-istanbul",
-      "media": "v/003-istanbul.mp4",
+      "media": "v/003-istanbul-cda4b5bf.mp4",
       "status": "scheduled",
-      "at": "2026-11-04T17:53:20.923Z",
-      "postId": "6aeb711676b2ba7a5c8f0b99",
+      "at": "2026-11-04T19:19:23.788Z",
+      "postId": "6aeb8570f67f30658c53db2a",
       "dueAt": "2026-11-05T09:30:00.000Z"
     },
     "2026-11-05T18:00Z": {
       "episode": "010-bakis",
-      "media": "v/010-bakis.mp4",
+      "media": "v/010-bakis-9cf9f85a.mp4",
       "status": "scheduled",
-      "at": "2026-11-04T17:53:20.923Z",
-      "postId": "6aeb7117a6d053c9c530b8ab",
+      "at": "2026-11-04T19:19:23.788Z",
+      "postId": "6aeb85728ee551b5aa773efc",
       "dueAt": "2026-11-05T18:00:00.000Z"
     },
     "2026-11-06T09:30Z": {
       "episode": "011-ters-dosya",
-      "media": "v/011-ters-dosya.mp4",
+      "media": "v/011-ters-dosya-f14e350c.mp4",
       "status": "scheduled",
-      "at": "2026-11-04T17:53:20.923Z",
-      "postId": "6aeb71a2491f63648cede5bd",
+      "at": "2026-11-04T19:19:23.788Z",
+      "postId": "6aeb8574f67f30658c53dcf7",
       "dueAt": "2026-11-06T09:30:00.000Z"
     },
     "2026-11-04T18:55Z": {
       "episode": "016-tuz",
       "media": "v/016-tuz-ad03bc30.mp4",
-      "status": "scheduled",
+      "status": "failed",
       "at": "2026-11-04T18:44:24.463Z",
       "postId": "6aeb7d3b7631b8ab98bfe5ec",
       "dueAt": "2026-11-04T18:55:00.000Z",
-      "note": "elle (--simdi)"
+      "note": "elle (--simdi)",
+      "error": "Buffer media hatası (thumbnailOffset 0)"
+    },
+    "2026-11-04T19:07Z": {
+      "episode": "016-tuz",
+      "media": "v/016-tuz-5a8fde76.mp4",
+      "status": "failed",
+      "at": "2026-11-04T18:56:13.301Z",
+      "error": "durduruldu"
+    },
+    "2026-11-04T19:18Z": {
+      "episode": "016-tuz",
+      "media": "v/016-tuz-5a8fde76.mp4",
+      "status": "sent",
+      "at": "2026-11-04T19:07:00.465Z",
+      "postId": "6aeb828709e5f61702c44f5f",
+      "dueAt": "2026-11-04T19:18:00.000Z",
+      "note": "elle (--simdi)",
+      "link": "https://www.instagram.com/reel/DfVMJOrlOf5/"
     },
     "2026-11-06T18:00Z": {
       "episode": "002-iskur",
       "media": "v/002-iskur-b7981da5.mp4",
       "status": "scheduled",
-      "at": "2026-11-04T18:52:18.234Z",
-      "postId": "6aeb7f037631b8ab98c07e96",
+      "at": "2026-11-04T19:19:23.788Z",
+      "postId": "6aeb85756cbba97f5cbea1d8",
       "dueAt": "2026-11-06T18:00:00.000Z"
     }
   }
