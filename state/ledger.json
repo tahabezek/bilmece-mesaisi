@@ -42,6 +42,14 @@
       "postId": "6aeb7d3b7631b8ab98bfe5ec",
       "dueAt": "2026-11-04T18:55:00.000Z",
       "note": "elle (--simdi)"
+    },
+    "2026-11-06T18:00Z": {
+      "episode": "002-iskur",
+      "media": "v/002-iskur-b7981da5.mp4",
+      "status": "scheduled",
+      "at": "2026-11-04T18:52:18.234Z",
+      "postId": "6aeb7f037631b8ab98c07e96",
+      "dueAt": "2026-11-06T18:00:00.000Z"
     }
   }
 }
