@@ -1,0 +1,181 @@
+{
+ "id": "012-salatalik",
+ "num": 12,
+ "sira": 5,
+ "bpm": 120,
+ "slug": "kuruyan-salatalik",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#ofis"
+ ],
+ "card": [
+  "100 kilo salatalık, %99'u su.",
+  "Kuruyunca %98'i su oldu.",
+  "Şimdi kaç kilo?"
+ ],
+ "caption": "Zeka sorusu: Necmi köyden 100 kilo salatalık getirdi, salatalıkların %99'u su. Bir gün balkonda kalıp kurudular, artık %98'i su. Salatalıklar şimdi kaç kilo?\n\nİlk aklına gelen sayı büyük ihtimalle yanlış. Cevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Defneciğim, sadece yüzde bir su gitti ama tartı bambaşka bir şey söylüyor!"
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.25,
+    "text": "Ne söylüyor Müdür Bey?"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Necmi köyden yüz kilo salatalık getirdi. Salatalıkların yüzde doksan dokuzu su."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Bir gün balkonda kalıp kurudular. Şimdi yüzde doksan sekizi su."
+   },
+   {
+    "id": "h2c",
+    "who": "hikmet",
+    "gap": 0.35,
+    "text": "Salatalıklar şimdi kaç kilo?"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Bilirsen cacık benden."
+   },
+   {
+    "id": "da",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Su yüzde doksan dokuzdan doksan sekize indi. Sadece yüzde bir…",
+    "tts": "Su yüzde doksan dokuzdan doksan sekize indi. Sadece yüzde bir."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.3,
+    "text": "Doksan dokuz kilo mu? Yoksa doksan sekiz mi?"
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "İkisi de yanlış! Tartıya bak."
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.3,
+    "text": "Bence hiç değişmedi. Ben her sabah suladım."
+   },
+   {
+    "id": "hn",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Necmi, salatalık toplanmış, tarlada değil!"
+   },
+   {
+    "id": "hc",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Cacık bekliyor Defneciğim."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Hamamda iki kilo vermişim! Hanım dedi ki: Sen su attın Necmi. Sen aynı sensin, kemiğin aynı.",
+    "tts": "Hamamda iki kilo vermişim! Hanım dedi ki, sen su attın Necmi. Sen aynı sensin, kemiğin aynı."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Buldum! Kuru kısım değişmiyor!",
+    "snap": true
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Yüz kilonun yüzde biri kuru: bir kilo. Salatalık ne kadar kurursa kurusun, o bir kilo aynı kalır.",
+    "tts": "Yüz kilonun yüzde biri kuru. Bir kilo. Salatalık ne kadar kurursa kurusun, o bir kilo aynı kalır."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "Şimdi o bir kilo yüzde iki ediyor. Bir kilo yüzde ikiyse, toplam elli kilo!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1.1,
+    "text": "Elli kilo… Necmi, salatalıkların yarısı uçmuş!",
+    "tts": "Elli kilo. Necmi, salatalıkların yarısı uçmuş!"
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.55,
+    "text": "Bunu “doksan dokuz” diyecek arkadaşına gönder.",
+    "tts": "Bunu, doksan dokuz diyecek arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "buzz",
+   "hd:0"
+  ],
+  [
+   "pop",
+   "d4:5"
+  ],
+  [
+   "swish",
+   "d4:9"
+  ],
+  [
+   "pop",
+   "d5:5"
+  ],
+  [
+   "stamp",
+   "d5:12"
+  ],
+  [
+   "womp",
+   "d5>+0.15"
+  ]
+ ]
+}

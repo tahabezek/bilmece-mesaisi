@@ -1,0 +1,180 @@
+{
+ "id": "011-ters-dosya",
+ "num": 11,
+ "sira": 3,
+ "bpm": 120,
+ "slug": "karanlikta-ters-dosyalar",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#ofis"
+ ],
+ "card": [
+  "Karanlıkta 20 dosya, 5'i ters.",
+  "Dokunarak anlaşılmıyor.",
+  "İki yığına ayır: tersler eşit olsun."
+ ],
+ "caption": "Zeka sorusu: Elektrikler kesik, zifiri karanlık. Masada 20 dosya var, 5'i ters ama hangileri bilinmiyor; dokunarak da anlaşılmıyor. Dosyaları istediğin kadar çevirebilirsin. İki yığına ayır ki ikisinde de ters dosya sayısı eşit olsun.\n\nGörmeden mümkün mü? Cevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Defneciğim, göremediğin bir şeyi eşit ikiye ayıracaksın."
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.25,
+    "text": "Bu karanlıkta mı Müdür Bey?",
+    "rate": "-6%"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Masada yirmi dosya var. Necmi beşini ters koymuş, hangileri bilmiyoruz."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Elle yoklayınca anlaşılmıyor ama istediğin dosyayı çevirebilirsin."
+   },
+   {
+    "id": "h2c",
+    "who": "hikmet",
+    "gap": 0.35,
+    "text": "İki yığına ayır. İki yığında da ters dosya sayısı eşit olsun."
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Yapamazsan bu yirmi dosyayı baştan sen yazarsın."
+   },
+   {
+    "id": "da",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Göremiyorum, dokunarak da anlamıyorum. Hangisinin ters olduğunu hiç bilmeyeceğim…",
+    "tts": "Göremiyorum, dokunarak da anlamıyorum. Hangisinin ters olduğunu hiç bilmeyeceğim."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "Ona on mu ayırsam? Şansa kalır; birinde iki ters, öbüründe üç olabilir.",
+    "tts": "Ona on mu ayırsam? Şansa kalır. Birinde iki ters, öbüründe üç olabilir."
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.3,
+    "text": "Ben fenerimi yakarım, olur biter."
+   },
+   {
+    "id": "hn",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Fener yasak Necmi! Karanlıkta çözecek."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Karanlıkta beş bardak aldım, hepsini ters çevirdim. Dik duranlar ters oldu, ters duranlar dik! Sayılar yer değiştirdi."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Buldum! Beş dosya al, hepsini çevir!",
+    "snap": true
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Rastgele beş dosya alırım. Diyelim içinde iki ters var; öbür grupta üç ters kalır."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Aldığım beşin hepsini çeviririm. İki ters düzelir, üç düz ters olur. İki grupta da üç!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Peki ya içinde dört ters olsaydı?"
+   },
+   {
+    "id": "d5b",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "Öbür grupta bir kalırdı, çevirince benimkinde de bir. Hep eşit!"
+   },
+   {
+    "id": "h5",
+    "who": "hikmet",
+    "gap": 1.1,
+    "text": "Necmi, ışıkları açmayın. Yüzümü görmesin."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.55,
+    "text": "Bunu “görmeden olmaz” diyecek arkadaşına gönder.",
+    "tts": "Bunu, görmeden olmaz diyecek arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "swish",
+   "d4:1"
+  ],
+  [
+   "swish",
+   "d5:2"
+  ],
+  [
+   "ding",
+   "d5:14"
+  ],
+  [
+   "swish",
+   "d5b:4"
+  ],
+  [
+   "stamp",
+   "d5b:8"
+  ],
+  [
+   "womp",
+   "d5b>+0.15"
+  ]
+ ]
+}

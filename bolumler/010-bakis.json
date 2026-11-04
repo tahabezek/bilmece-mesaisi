@@ -1,0 +1,189 @@
+{
+ "id": "010-bakis",
+ "num": 10,
+ "sira": 1,
+ "bpm": 120,
+ "slug": "kim-kime-bakiyor",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#ofis"
+ ],
+ "card": [
+  "Necmi → Kerem → Hikmet Bey",
+  "Necmi evli, Hikmet Bey bekâr.",
+  "Evli biri bekâra bakıyor mu?"
+ ],
+ "caption": "Zeka sorusu: Necmi stajyere bakıyor, stajyer de Hikmet Bey'e bakıyor. Necmi evli, Hikmet Bey bekâr. Stajyerin evli olup olmadığını bilmiyoruz. Evli biri, bekâr birine bakıyor mu?\n\nEvet, hayır, bilinemez? Çoğu kişi bu soruda yanılıyor. Cevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Defneciğim, bu soruda çoğu kişi yanılıyor."
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.25,
+    "text": "Sorun bakalım Müdür Bey."
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Bak: Necmi, stajyer Kerem'e bakıyor. Kerem de bana bakıyor."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Necmi evli, ben bekârım. Kerem evli mi, bilmiyoruz.",
+    "tts": "Necmi evli, ben bekarım. Kerem evli mi, bilmiyoruz."
+   },
+   {
+    "id": "h2c",
+    "who": "hikmet",
+    "gap": 0.35,
+    "text": "Soru şu: evli biri, bekâr birine bakıyor mu?",
+    "tts": "Soru şu. Evli biri, bekar birine bakıyor mu?"
+   },
+   {
+    "id": "g1",
+    "who": "genc",
+    "gap": 0.2,
+    "text": "Aslında ben…",
+    "tts": "Aslında ben."
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Sus Kerem! Bilgi vermek yasak. Bilirsen yarın geç gelebilirsin Defne."
+   },
+   {
+    "id": "da",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Kerem evli mi bilmeden nasıl bileyim? Bilgi eksik…",
+    "tts": "Kerem evli mi bilmeden nasıl bileyim? Bilgi eksik."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.3,
+    "text": "Bence cevap: bilinemez.",
+    "tts": "Bence cevap, bilinemez."
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Yanlış! Çoğu kişi de böyle diyor."
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.4,
+    "text": "Ben evliyim, çocuğa bakıyorum. Herkes birbirine bakıyor yani."
+   },
+   {
+    "id": "hc",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Kerem, kıpırdama! Defne'nin süresi doluyor."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Hanım kızgın mı, hiç bilmem. Kızgınsa çiçek alırım, değilse yine çiçek alırım. İki durumda da çiçekçiye gidiyorum!"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Buldum! İki ihtimal!",
+    "snap": true
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Kerem evliyse: evli Kerem, bekâr size bakıyor. Evet.",
+    "tts": "Kerem evliyse, evli Kerem, bekar size bakıyor. Evet."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "Kerem bekârsa: evli Necmi Abi, bekâr Kerem'e bakıyor. Yine evet!",
+    "tts": "Kerem bekarsa, evli Necmi Abi, bekar Kerem'e bakıyor. Yine evet!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1.1,
+    "text": "Bilmediğin şeyle bildin… Peki, yarın geç gel.",
+    "tts": "Bilmediğin şeyle bildin. Peki, yarın geç gel."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.55,
+    "text": "Bunu “bilinemez” diyecek arkadaşına gönder.",
+    "tts": "Bunu, bilinemez diyecek arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "buzz",
+   "hd:0"
+  ],
+  [
+   "pop",
+   "d4:0"
+  ],
+  [
+   "ding",
+   "d4:7"
+  ],
+  [
+   "pop",
+   "d5:0"
+  ],
+  [
+   "ding",
+   "d5:9"
+  ],
+  [
+   "stamp",
+   "d5>+0.05"
+  ],
+  [
+   "womp",
+   "d5>+0.2"
+  ]
+ ]
+}

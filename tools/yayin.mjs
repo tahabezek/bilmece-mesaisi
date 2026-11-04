@@ -54,7 +54,7 @@ function episodes() {
   return fs.readdirSync(path.join(root, 'bolumler')).filter(f => f.endsWith('.json')).sort()
     .map(f => JSON.parse(fs.readFileSync(path.join(root, 'bolumler', f), 'utf8')))
     .filter(e => !e.disabled && e.caption)
-    .sort((a, b) => a.num - b.num);
+    .sort((a, b) => (a.sira ?? 1000 + a.num) - (b.sira ?? 1000 + b.num));   // yayın sırası (sira) önce; yoksa üretim numarası
 }
 function usedEpisodes(ledger) { return new Set(Object.values(ledger.slots).filter(s => !NOT_USED.has(s.status)).map(s => s.episode)); }
 function nextEpisode(ledger, taken) {
