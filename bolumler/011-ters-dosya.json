@@ -1,7 +1,6 @@
 {
  "id": "011-ters-dosya",
  "num": 11,
- "sira": 3,
  "bpm": 120,
  "slug": "karanlikta-ters-dosyalar",
  "coverAt": 0,
@@ -57,7 +56,7 @@
     "id": "h3",
     "who": "hikmet",
     "gap": 0.4,
-    "text": "Yapamazsan bu yirmi dosyayı baştan sen yazarsın."
+    "text": "Olmazsa bu yirmi dosyayı baştan sen yazarsın."
    },
    {
     "id": "da",
@@ -176,5 +175,6 @@
    "womp",
    "d5b>+0.15"
   ]
- ]
+ ],
+ "sira": 4
 }

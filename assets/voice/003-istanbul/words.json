@@ -1,32 +1,32 @@
 {
  "h1": {
-  "key": "466a4af74c45",
-  "trimmed": "466a4af74c45",
-  "wkey": "466a4af74c45",
-  "heard": "Defnecim, coğrafyan iyi midir?",
+  "key": "9a5cc2555207",
+  "trimmed": "9a5cc2555207",
+  "wkey": "9a5cc2555207",
+  "heard": "Defnecin, coğrafyan iyi midir?",
   "words": [
    {
     "w": "Defne'ciğim,",
     "t0": 0.0,
-    "t1": 0.7
+    "t1": 0.68
    },
    {
     "w": "coğrafyan",
-    "t0": 0.9,
-    "t1": 1.48
+    "t0": 0.92,
+    "t1": 1.62
    },
    {
     "w": "iyi",
-    "t0": 1.48,
-    "t1": 1.66
+    "t0": 1.62,
+    "t1": 1.8
    },
    {
     "w": "midir?",
-    "t0": 1.66,
-    "t1": 2.0
+    "t0": 1.8,
+    "t1": 2.16
    }
   ],
-  "dur": 2.11
+  "dur": 2.27
  },
  "d1": {
   "key": "2ec5fb154435",
@@ -58,10 +58,10 @@
   "dur": 1.38
  },
  "h2": {
-  "key": "e9eaf668bd39",
-  "trimmed": "e9eaf668bd39",
-  "wkey": "e9eaf668bd39",
-  "heard": "Yunanistan ile Bulgaristanın tam arasında ne var?",
+  "key": "191cb94249d0",
+  "trimmed": "191cb94249d0",
+  "wkey": "191cb94249d0",
+  "heard": "Yunanistan ile Bulgaristan 'ın tam arasında ne var?",
   "words": [
    {
     "w": "Yunanistan",
@@ -71,35 +71,35 @@
    {
     "w": "ile",
     "t0": 0.64,
-    "t1": 0.86
+    "t1": 0.9
    },
    {
     "w": "Bulgaristan'ın",
-    "t0": 0.86,
-    "t1": 1.7
+    "t0": 0.9,
+    "t1": 1.58
    },
    {
     "w": "tam",
-    "t0": 1.7,
-    "t1": 1.88
+    "t0": 1.58,
+    "t1": 2.02
    },
    {
     "w": "arasında",
-    "t0": 1.88,
-    "t1": 2.24
+    "t0": 2.02,
+    "t1": 2.4
    },
    {
     "w": "ne",
-    "t0": 2.24,
-    "t1": 2.43
+    "t0": 2.4,
+    "t1": 2.61
    },
    {
     "w": "var?",
-    "t0": 2.43,
-    "t1": 2.62
+    "t0": 2.61,
+    "t1": 2.82
    }
   ],
-  "dur": 2.81
+  "dur": 3.01
  },
  "d2": {
   "key": "567c15ba34ab",
@@ -116,18 +116,18 @@
   "dur": 0.54
  },
  "h3": {
-  "key": "bfb85ff208a0",
-  "trimmed": "bfb85ff208a0",
-  "wkey": "bfb85ff208a0",
+  "key": "3e6590edfc4e",
+  "trimmed": "3e6590edfc4e",
+  "wkey": "3e6590edfc4e",
   "heard": "Yanlış.",
   "words": [
    {
     "w": "Yanlış.",
     "t0": 0.0,
-    "t1": 0.58
+    "t1": 0.6
    }
   ],
-  "dur": 0.74
+  "dur": 0.78
  },
  "d3": {
   "key": "41701f9fae26",
@@ -149,9 +149,9 @@
   "dur": 0.82
  },
  "h4": {
-  "key": "72ed48b1697a",
-  "trimmed": "72ed48b1697a",
-  "wkey": "72ed48b1697a",
+  "key": "8ffd740ffb7b",
+  "trimmed": "8ffd740ffb7b",
+  "wkey": "8ffd740ffb7b",
   "heard": "Hayır, o da yanlış.",
   "words": [
    {
@@ -162,20 +162,20 @@
    {
     "w": "o",
     "t0": 0.26,
-    "t1": 0.49
+    "t1": 0.52
    },
    {
     "w": "da",
-    "t0": 0.49,
-    "t1": 0.72
+    "t0": 0.52,
+    "t1": 0.78
    },
    {
     "w": "yanlış.",
-    "t0": 0.72,
-    "t1": 0.98
+    "t0": 0.78,
+    "t1": 1.06
    }
   ],
-  "dur": 1.31
+  "dur": 1.4
  },
  "n0": {
   "key": "54f28ae7fe54",
@@ -192,9 +192,9 @@
   "dur": 0.83
  },
  "hn": {
-  "key": "f9c7d98d8d8e",
-  "trimmed": "f9c7d98d8d8e",
-  "wkey": "f9c7d98d8d8e",
+  "key": "f541c30f4af0",
+  "trimmed": "f541c30f4af0",
+  "wkey": "f541c30f4af0",
   "heard": "O da yanlış necmi.",
   "words": [
    {
@@ -210,54 +210,54 @@
    {
     "w": "yanlış",
     "t0": 0.28,
-    "t1": 0.62
+    "t1": 0.66
    },
    {
     "w": "Necmi!",
-    "t0": 0.62,
-    "t1": 1.1
+    "t0": 0.66,
+    "t1": 1.18
    }
   ],
-  "dur": 1.24
+  "dur": 1.34
  },
  "h5": {
-  "key": "2d7b875f016d",
-  "trimmed": "2d7b875f016d",
-  "wkey": "2d7b875f016d",
+  "key": "d30fb0639c90",
+  "trimmed": "d30fb0639c90",
+  "wkey": "d30fb0639c90",
   "heard": "Bilirsen sana bir hafta izin veririm.",
   "words": [
    {
     "w": "Bilirsen",
     "t0": 0.0,
-    "t1": 0.56
+    "t1": 0.58
    },
    {
     "w": "sana",
-    "t0": 0.56,
-    "t1": 0.82
+    "t0": 0.58,
+    "t1": 0.88
    },
    {
     "w": "bir",
-    "t0": 0.82,
-    "t1": 1.02
+    "t0": 0.88,
+    "t1": 1.1
    },
    {
     "w": "hafta",
-    "t0": 1.02,
-    "t1": 1.42
+    "t0": 1.1,
+    "t1": 1.52
    },
    {
     "w": "izin",
-    "t0": 1.42,
-    "t1": 1.64
+    "t0": 1.52,
+    "t1": 1.78
    },
    {
     "w": "veririm.",
-    "t0": 1.64,
-    "t1": 1.96
+    "t0": 1.78,
+    "t1": 2.12
    }
   ],
-  "dur": 2.14
+  "dur": 2.3
  },
  "d4": {
   "key": "ec24aa359365",
@@ -358,53 +358,53 @@
   "dur": 4.198
  },
  "hm": {
-  "key": "f6c7e6f01dd2",
-  "trimmed": "f6c7e6f01dd2",
-  "wkey": "f6c7e6f01dd2",
-  "heard": "Mesai bitiyor Defneciğim. Bir haftalık izinde gidiyor.",
+  "key": "4577368a87cb",
+  "trimmed": "4577368a87cb",
+  "wkey": "4577368a87cb",
+  "heard": "Mesai bitiyor Defnecim. Bir haftalık izinde gidiyor.",
   "words": [
    {
     "w": "Mesai",
     "t0": 0.0,
-    "t1": 0.52
+    "t1": 0.56
    },
    {
     "w": "bitiyor",
-    "t0": 0.52,
-    "t1": 0.92
+    "t0": 0.56,
+    "t1": 0.98
    },
    {
     "w": "Defneciğim.",
-    "t0": 0.92,
-    "t1": 1.48
+    "t0": 0.98,
+    "t1": 1.68
    },
    {
     "w": "Bir",
-    "t0": 1.48,
-    "t1": 2.06
+    "t0": 1.68,
+    "t1": 2.18
    },
    {
     "w": "haftalık",
-    "t0": 2.06,
-    "t1": 2.58
+    "t0": 2.18,
+    "t1": 2.74
    },
    {
     "w": "izin",
-    "t0": 2.58,
-    "t1": 2.88
+    "t0": 2.74,
+    "t1": 3.06
    },
    {
     "w": "de",
-    "t0": 2.88,
-    "t1": 2.88
+    "t0": 3.06,
+    "t1": 3.06
    },
    {
     "w": "gidiyor.",
-    "t0": 2.88,
-    "t1": 3.22
+    "t0": 3.06,
+    "t1": 3.42
    }
   ],
-  "dur": 3.408
+  "dur": 3.638
  },
  "n1": {
   "key": "c4f357d7e320",
@@ -504,38 +504,38 @@
   "dur": 2.56
  },
  "h6": {
-  "key": "971a31b34171",
-  "trimmed": "971a31b34171",
-  "wkey": "971a31b34171",
+  "key": "92aad987b5f9",
+  "trimmed": "92aad987b5f9",
+  "wkey": "92aad987b5f9",
   "heard": "Bir hafta. Ben ne yaptım?",
   "words": [
    {
     "w": "Bir",
     "t0": 0.0,
-    "t1": 0.2
+    "t1": 0.22
    },
    {
     "w": "hafta…",
-    "t0": 0.2,
-    "t1": 0.76
+    "t0": 0.22,
+    "t1": 0.82
    },
    {
     "w": "Ben",
-    "t0": 0.76,
-    "t1": 1.1
+    "t0": 0.82,
+    "t1": 1.17
    },
    {
     "w": "ne",
-    "t0": 1.1,
-    "t1": 1.44
+    "t0": 1.17,
+    "t1": 1.52
    },
    {
     "w": "yaptım…",
-    "t0": 1.44,
-    "t1": 1.84
+    "t0": 1.52,
+    "t1": 1.94
    }
   ],
-  "dur": 1.998
+  "dur": 2.118
  },
  "d7": {
   "key": "6673317b116f",

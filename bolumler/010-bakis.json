@@ -1,7 +1,6 @@
 {
  "id": "010-bakis",
  "num": 10,
- "sira": 1,
  "bpm": 120,
  "slug": "kim-kime-bakiyor",
  "coverAt": 0,
@@ -185,5 +184,6 @@
    "womp",
    "d5>+0.2"
   ]
- ]
+ ],
+ "sira": 3
 }

@@ -1,9 +1,9 @@
 {
  "h1": {
-  "key": "e525a652dfd2",
-  "trimmed": "e525a652dfd2",
-  "wkey": "e525a652dfd2",
-  "heard": "Defnecim, genel müdürlük ikimizi sınıyor.",
+  "key": "645f1c07f04d",
+  "trimmed": "645f1c07f04d",
+  "wkey": "645f1c07f04d",
+  "heard": "Defneciğim, genel müdürlük ikimizi sınıyor.",
   "words": [
    {
     "w": "Defneciğim,",
@@ -12,26 +12,26 @@
    },
    {
     "w": "genel",
-    "t0": 0.82,
-    "t1": 1.2
+    "t0": 0.92,
+    "t1": 1.3
    },
    {
     "w": "müdürlük",
-    "t0": 1.2,
-    "t1": 1.62
+    "t0": 1.3,
+    "t1": 1.76
    },
    {
     "w": "ikimizi",
-    "t0": 1.62,
-    "t1": 2.0
+    "t0": 1.76,
+    "t1": 2.16
    },
    {
     "w": "sınıyor.",
-    "t0": 2.0,
-    "t1": 2.4
+    "t0": 2.16,
+    "t1": 2.6
    }
   ],
-  "dur": 2.58
+  "dur": 2.78
  },
  "d1": {
   "key": "9c64b3b8c221",
@@ -68,225 +68,225 @@
   "dur": 1.67
  },
  "h2a": {
-  "key": "3fe0d26a30b6",
-  "trimmed": "3fe0d26a30b6",
-  "wkey": "3fe0d26a30b6",
+  "key": "b6c7b73aa511",
+  "trimmed": "b6c7b73aa511",
+  "wkey": "b6c7b73aa511",
   "heard": "Sırtımıza kırmızı ya da mavi kart yapıştıracaklar. Ben seninkini görürüm, sen benimkini.",
   "words": [
    {
     "w": "Sırtımıza",
     "t0": 0.0,
-    "t1": 0.7
+    "t1": 0.76
    },
    {
     "w": "kırmızı",
-    "t0": 0.7,
-    "t1": 1.18
+    "t0": 0.76,
+    "t1": 1.26
    },
    {
     "w": "ya",
-    "t0": 1.18,
-    "t1": 1.29
+    "t0": 1.26,
+    "t1": 1.39
    },
    {
     "w": "da",
-    "t0": 1.29,
-    "t1": 1.4
+    "t0": 1.39,
+    "t1": 1.52
    },
    {
     "w": "mavi",
-    "t0": 1.4,
-    "t1": 1.72
+    "t0": 1.52,
+    "t1": 1.86
    },
    {
     "w": "kart",
-    "t0": 1.72,
-    "t1": 1.96
+    "t0": 1.86,
+    "t1": 2.1
    },
    {
     "w": "yapıştıracaklar.",
-    "t0": 1.96,
-    "t1": 2.84
+    "t0": 2.1,
+    "t1": 3.06
    },
    {
     "w": "Ben",
-    "t0": 2.84,
-    "t1": 3.44
+    "t0": 3.06,
+    "t1": 3.68
    },
    {
     "w": "seninkini",
-    "t0": 3.44,
-    "t1": 3.98
+    "t0": 3.68,
+    "t1": 4.28
    },
    {
     "w": "görürüm,",
-    "t0": 3.98,
-    "t1": 4.42
+    "t0": 4.28,
+    "t1": 4.74
    },
    {
     "w": "sen",
-    "t0": 4.42,
-    "t1": 4.76
+    "t0": 4.74,
+    "t1": 5.12
    },
    {
     "w": "benimkini.",
-    "t0": 4.76,
-    "t1": 5.3
+    "t0": 5.12,
+    "t1": 5.72
    }
   ],
-  "dur": 5.468
+  "dur": 5.879
  },
  "h2b": {
-  "key": "b592d6421fb5",
-  "trimmed": "b592d6421fb5",
-  "wkey": "b592d6421fb5",
+  "key": "c37343fa3e81",
+  "trimmed": "c37343fa3e81",
+  "wkey": "c37343fa3e81",
   "heard": "Kendi kartımızı göremeyiz, konuşmak da yok. Kimiz aynı anda kendi rengimizi yazacağız.",
   "words": [
    {
     "w": "Kendi",
     "t0": 0.0,
-    "t1": 0.34
+    "t1": 0.36
    },
    {
     "w": "kartımızı",
-    "t0": 0.34,
-    "t1": 0.86
+    "t0": 0.36,
+    "t1": 0.94
    },
    {
     "w": "göremeyiz,",
-    "t0": 0.86,
-    "t1": 1.5
+    "t0": 0.94,
+    "t1": 1.6
    },
    {
     "w": "konuşmak",
-    "t0": 1.62,
-    "t1": 2.12
+    "t0": 1.74,
+    "t1": 2.3
    },
    {
     "w": "da",
-    "t0": 2.12,
-    "t1": 2.38
+    "t0": 2.3,
+    "t1": 2.6
    },
    {
     "w": "yok.",
-    "t0": 2.38,
-    "t1": 2.64
+    "t0": 2.6,
+    "t1": 2.9
    },
    {
     "w": "İkimiz",
-    "t0": 2.64,
-    "t1": 3.08
-   },
-   {
-    "w": "aynı",
-    "t0": 3.08,
+    "t0": 2.9,
     "t1": 3.3
    },
    {
-    "w": "anda",
+    "w": "aynı",
     "t0": 3.3,
-    "t1": 3.6
+    "t1": 3.56
    },
    {
-    "w": "kendi",
-    "t0": 3.6,
+    "w": "anda",
+    "t0": 3.56,
     "t1": 3.86
    },
    {
-    "w": "rengimizi",
+    "w": "kendi",
     "t0": 3.86,
-    "t1": 4.4
+    "t1": 4.18
+   },
+   {
+    "w": "rengimizi",
+    "t0": 4.18,
+    "t1": 4.74
    },
    {
     "w": "yazacağız.",
-    "t0": 4.4,
-    "t1": 4.86
+    "t0": 4.74,
+    "t1": 5.26
    }
   ],
-  "dur": 5.148
+  "dur": 5.548
  },
  "h2c": {
-  "key": "296b2b089269",
-  "trimmed": "296b2b089269",
-  "wkey": "296b2b089269",
+  "key": "a5aa227fc96d",
+  "trimmed": "a5aa227fc96d",
+  "wkey": "a5aa227fc96d",
   "heard": "En az birimiz doğru yazarsa geçiyoruz. Önceden plan yapabiliriz.",
   "words": [
    {
     "w": "En",
     "t0": 0.0,
-    "t1": 0.2
+    "t1": 0.21
    },
    {
     "w": "az",
-    "t0": 0.2,
-    "t1": 0.4
+    "t0": 0.21,
+    "t1": 0.42
    },
    {
     "w": "birimiz",
-    "t0": 0.4,
-    "t1": 0.76
+    "t0": 0.42,
+    "t1": 0.8
    },
    {
     "w": "doğru",
-    "t0": 0.76,
-    "t1": 1.0
+    "t0": 0.8,
+    "t1": 1.06
    },
    {
     "w": "yazarsa",
-    "t0": 1.0,
-    "t1": 1.52
+    "t0": 1.06,
+    "t1": 1.62
    },
    {
     "w": "geçiyoruz.",
-    "t0": 1.52,
-    "t1": 2.0
+    "t0": 1.62,
+    "t1": 2.16
    },
    {
     "w": "Önceden",
-    "t0": 2.5,
-    "t1": 3.02
+    "t0": 2.64,
+    "t1": 3.2
    },
    {
     "w": "plan",
-    "t0": 3.02,
-    "t1": 3.22
+    "t0": 3.2,
+    "t1": 3.44
    },
    {
     "w": "yapabiliriz.",
-    "t0": 3.22,
-    "t1": 4.0
+    "t0": 3.44,
+    "t1": 4.28
    }
   ],
-  "dur": 4.128
+  "dur": 4.408
  },
  "h3": {
-  "key": "18fd7a3d5352",
-  "trimmed": "18fd7a3d5352",
-  "wkey": "18fd7a3d5352",
-  "heard": "Şansa bırakırsak derfi uçar.",
+  "key": "6099fd7daf02",
+  "trimmed": "6099fd7daf02",
+  "wkey": "6099fd7daf02",
+  "heard": "Şansa bırakırsak terfiği uçar.",
   "words": [
    {
     "w": "Şansa",
     "t0": 0.0,
-    "t1": 0.42
+    "t1": 0.46
    },
    {
     "w": "bırakırsak",
-    "t0": 0.42,
-    "t1": 1.16
+    "t0": 0.46,
+    "t1": 1.26
    },
    {
     "w": "terfi",
-    "t0": 1.16,
-    "t1": 1.52
+    "t0": 1.26,
+    "t1": 1.74
    },
    {
     "w": "uçar.",
-    "t0": 1.52,
-    "t1": 1.82
+    "t0": 1.74,
+    "t1": 1.96
    }
   ],
-  "dur": 2.01
+  "dur": 2.16
  },
  "da": {
   "key": "ac30f24d78b2",
@@ -382,10 +382,10 @@
   "dur": 2.768
  },
  "hd": {
-  "key": "d2918e14ec97",
-  "trimmed": "d2918e14ec97",
-  "wkey": "d2918e14ec97",
-  "heard": "4 -3 yetmez. Garanti istiyorum.",
+  "key": "08a7b7d747a2",
+  "trimmed": "08a7b7d747a2",
+  "wkey": "08a7b7d747a2",
+  "heard": "4 -3 etmez, garanti istiyorum.",
   "words": [
    {
     "w": "Dörtte",
@@ -400,20 +400,20 @@
    {
     "w": "yetmez!",
     "t0": 0.74,
-    "t1": 1.2
+    "t1": 1.28
    },
    {
     "w": "Garanti",
-    "t0": 1.52,
-    "t1": 1.98
+    "t0": 1.58,
+    "t1": 2.14
    },
    {
     "w": "istiyorum.",
-    "t0": 1.98,
-    "t1": 2.36
+    "t0": 2.14,
+    "t1": 2.54
    }
   ],
-  "dur": 2.668
+  "dur": 2.828
  },
  "n0": {
   "key": "d29dfa1de908",
@@ -455,57 +455,57 @@
   "dur": 2.44
  },
  "hn": {
-  "key": "42c17cbdac8d",
-  "trimmed": "42c17cbdac8d",
-  "wkey": "42c17cbdac8d",
-  "heard": "Tek renk necmi tek.",
+  "key": "60f3fcc0c9e1",
+  "trimmed": "60f3fcc0c9e1",
+  "wkey": "60f3fcc0c9e1",
+  "heard": "Tek renk Necmi Tek.",
   "words": [
    {
     "w": "Tek",
     "t0": 0.0,
-    "t1": 0.2
+    "t1": 0.18
    },
    {
     "w": "renk",
-    "t0": 0.2,
-    "t1": 0.58
+    "t0": 0.18,
+    "t1": 0.62
    },
    {
     "w": "Necmi,",
-    "t0": 0.58,
-    "t1": 0.98
+    "t0": 0.62,
+    "t1": 1.06
    },
    {
     "w": "tek!",
-    "t0": 0.98,
-    "t1": 1.24
+    "t0": 1.06,
+    "t1": 1.32
    }
   ],
-  "dur": 1.45
+  "dur": 1.55
  },
  "hc": {
-  "key": "d5a5586ed565",
-  "trimmed": "d5a5586ed565",
-  "wkey": "d5a5586ed565",
-  "heard": "Kartlar geliyor Defnecim.",
+  "key": "675c75e93068",
+  "trimmed": "675c75e93068",
+  "wkey": "675c75e93068",
+  "heard": "Kartlar geliyor Defneciğim.",
   "words": [
    {
     "w": "Kartlar",
     "t0": 0.0,
-    "t1": 0.5
+    "t1": 0.54
    },
    {
     "w": "geliyor",
-    "t0": 0.5,
-    "t1": 0.76
+    "t0": 0.54,
+    "t1": 0.82
    },
    {
     "w": "Defneciğim.",
-    "t0": 0.76,
+    "t0": 0.82,
     "t1": 1.46
    }
   ],
-  "dur": 1.57
+  "dur": 1.7
  },
  "n1": {
   "key": "0c3fb0ff33d7",
@@ -784,10 +784,10 @@
   "dur": 7.514
  },
  "h4": {
-  "key": "e73627b411f7",
-  "trimmed": "e73627b411f7",
-  "wkey": "e73627b411f7",
-  "heard": "Senin sırtına bakıp kendimi bulacağım ha. Tamam, plan senin.",
+  "key": "d260c9234426",
+  "trimmed": "d260c9234426",
+  "wkey": "d260c9234426",
+  "heard": "Senin sırtına bakıp kendimi bulacağım ha. Tamam, bilen senin.",
   "words": [
    {
     "w": "Senin",
@@ -797,45 +797,45 @@
    {
     "w": "sırtına",
     "t0": 0.32,
-    "t1": 0.84
+    "t1": 0.9
    },
    {
     "w": "bakıp",
-    "t0": 0.84,
-    "t1": 1.18
+    "t0": 0.9,
+    "t1": 1.28
    },
    {
     "w": "kendimi",
-    "t0": 1.18,
-    "t1": 1.58
+    "t0": 1.28,
+    "t1": 1.7
    },
    {
     "w": "bulacağım",
-    "t0": 1.58,
-    "t1": 2.0
+    "t0": 1.7,
+    "t1": 2.16
    },
    {
     "w": "ha.",
-    "t0": 2.0,
-    "t1": 2.44
+    "t0": 2.16,
+    "t1": 2.68
    },
    {
     "w": "Tamam,",
-    "t0": 2.44,
-    "t1": 2.78
+    "t0": 2.68,
+    "t1": 3.02
    },
    {
     "w": "plan",
-    "t0": 3.12,
-    "t1": 3.32
+    "t0": 3.02,
+    "t1": 3.66
    },
    {
     "w": "senin.",
-    "t0": 3.32,
-    "t1": 3.64
+    "t0": 3.66,
+    "t1": 3.92
    }
   ],
-  "dur": 3.868
+  "dur": 4.178
  },
  "d6": {
   "key": "05db2b0f98cb",

@@ -1,7 +1,6 @@
 {
  "id": "012-salatalik",
  "num": 12,
- "sira": 5,
  "bpm": 120,
  "slug": "kuruyan-salatalik",
  "coverAt": 0,
@@ -177,5 +176,6 @@
    "womp",
    "d5>+0.15"
   ]
- ]
+ ],
+ "sira": 6
 }

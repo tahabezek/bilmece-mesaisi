@@ -179,7 +179,7 @@ const T0 = (tl, e) => at(tl, e);
 // kanıt: A ve B tütsüleri, yanma zamanı sayacı (dakika)
 function proof(K, t, tl, S) {
   const { ctx, rect, text } = K, { tm } = S, u = t - tm.proof;
-  const z = 1 + 0.012 * u; ctx.save(); ctx.translate(0, -8 * u); ctx.translate(540, 900); ctx.scale(z, z); ctx.translate(-540, -900);
+  const z = 1 + 0.022 * u; ctx.save(); ctx.translate(-3 * u, -9 * u); ctx.translate(540, 900); ctx.scale(z, z); ctx.translate(-540, -900);
   room(K, { floorY: 1500, window: false, t });
   ctx.fillStyle = 'rgba(31,36,33,0.55)'; ctx.fillRect(-100, -100, 1280, 2120);
   // A: iki uç → buluşma 0.62'de (düzensiz ama tam 30 dk)

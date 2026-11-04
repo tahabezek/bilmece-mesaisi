@@ -25,7 +25,7 @@
     "id": "h1",
     "who": "hikmet",
     "gap": 0.4,
-    "text": "Defneciğim, bu ay üçüncü gecikmen bu."
+    "text": "Defneciğim, yine geç! Bu ay üçüncü kez!"
    },
    {
     "id": "d1",
@@ -196,5 +196,5 @@
    "d6>+0.15"
   ]
  ],
- "sira": 9
+ "sira": 10
 }

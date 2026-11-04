@@ -1,0 +1,177 @@
+{
+ "id": "016-tuz",
+ "num": 16,
+ "bpm": 120,
+ "slug": "on-iki-avuc-tuz",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#ofis"
+ ],
+ "card": [
+  "Tencereye 5 + 5 + 2 avuç tuz atıldı.",
+  "Pişeni yediler: tuzsuz! Nasıl?"
+ ],
+ "caption": "Zeka sorusu: Çay ocağında tencere kaynıyor. Necmi 5 avuç tuz atıyor, Kerem 5 avuç, Hikmet Bey de pişmesine yakın 2 avuç. Pişeni yiyorlar: tuzsuz! Kimse yalan söylemiyor, tuz da gerçekten tuz. Bu nasıl oldu?\n\nCevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Defneciğim, on iki avuç tuz attık, yine de tuzsuz çıktı!"
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.25,
+    "text": "On iki avuç mu? Nasıl olur Müdür Bey?"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Dün çay ocağında tencere kaynıyordu. Önce Necmi geldi, beş avuç tuz attı."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Sonra Kerem geldi, o da beş avuç attı. Tam inecekken ben de iki avuç attım."
+   },
+   {
+    "id": "h2c",
+    "who": "hikmet",
+    "gap": 0.35,
+    "text": "Sonra oturduk, yedik: tuzsuz! Bu nasıl oldu?",
+    "tts": "Sonra oturduk, yedik. Tuzsuz! Bu nasıl oldu?"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Bilirsen yarın öğle yemeği benden. Tuzu da benden."
+   },
+   {
+    "id": "da",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "On iki avuç tuz, yine de tuzsuz… Tuz mu değildi acaba?",
+    "tts": "On iki avuç tuz, yine de tuzsuz. Tuz mu değildi acaba?"
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.3,
+    "text": "Şeker mi attınız? Su mu çoktu?"
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Hepsi gerçek tuzdu, su da yarım tencere. Kimse yalan söylemiyor."
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.3,
+    "text": "Ben pek tuz sevmem, az atmışımdır galiba."
+   },
+   {
+    "id": "hn",
+    "who": "hikmet",
+    "gap": 0.5,
+    "text": "Beş avuç attın Necmi, saydım!"
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Portakalın kabuğuna şeker serptim, içi yine ekşi! Kabuktan geçmiyor ki."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Buldum! Tencerede yumurta vardı!",
+    "snap": true
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "Tencerede kabuklu yumurta haşlanıyordu. Kabuk sağlamdı; tuz suya karıştı ama içine geçmedi."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Yumurtayı soydunuz, yediniz: tuzsuz! On iki avuç tuzun hepsi suda kaldı.",
+    "tts": "Yumurtayı soydunuz, yediniz. Tuzsuz! On iki avuç tuzun hepsi suda kaldı."
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1.1,
+    "text": "Haşlanmış yumurtaya on iki avuç tuz… Necmi, tuz da bitti.",
+    "tts": "Haşlanmış yumurtaya on iki avuç tuz. Necmi, tuz da bitti."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.55,
+    "text": "Bunu her yemeğe tuz atan arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "pop",
+   "h2a:9"
+  ],
+  [
+   "pop",
+   "h2b:5"
+  ],
+  [
+   "pop",
+   "h2b:13"
+  ],
+  [
+   "buzz",
+   "h2c:2"
+  ],
+  [
+   "pop",
+   "d4:2"
+  ],
+  [
+   "ding",
+   "d5:3"
+  ],
+  [
+   "womp",
+   "d5>+0.15"
+  ]
+ ],
+ "sira": 1
+}

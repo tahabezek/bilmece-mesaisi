@@ -1,7 +1,28 @@
 {
- "_not": "Karakter sesleri (edge-tts) + son işlem. formant: perde ve formant birlikte kaydırılır, süre korunur (<1 iri/bas, >1 genç). vibrato: [Hz, derinlik] yaşlı titremesi.",
- "hikmet": { "name": "tr-TR-AhmetNeural", "rate": "+4%",  "pitch": "-4Hz", "formant": 0.92 },
- "defne":  { "name": "tr-TR-EmelNeural",  "rate": "+12%", "pitch": "+2Hz" },
- "necmi":  { "name": "tr-TR-AhmetNeural", "rate": "-10%", "pitch": "+0Hz", "vibrato": [5.5, 0.07] },
- "genc":   { "name": "tr-TR-AhmetNeural", "rate": "+10%", "pitch": "+6Hz", "formant": 1.12 }
+ "_not": "Karakter sesleri (edge-tts) + son işlem. formant: perde ve formant birlikte kaydırılır, süre korunur (<1 iri/bas, >1 genç). vibrato: [Hz, derinlik] yaşlı titremesi. 2026-11-04: Hikmet formantsız (kullanıcı: robotik); Remy denendi, Türkçe hata %32 → elendi.",
+ "hikmet": {
+  "name": "tr-TR-AhmetNeural",
+  "rate": "-4%",
+  "pitch": "-6Hz"
+ },
+ "defne": {
+  "name": "tr-TR-EmelNeural",
+  "rate": "+12%",
+  "pitch": "+2Hz"
+ },
+ "necmi": {
+  "name": "tr-TR-AhmetNeural",
+  "rate": "-10%",
+  "pitch": "+0Hz",
+  "vibrato": [
+   5.5,
+   0.07
+  ]
+ },
+ "genc": {
+  "name": "tr-TR-AhmetNeural",
+  "rate": "+10%",
+  "pitch": "+6Hz",
+  "formant": 1.12
+ }
 }

@@ -264,3 +264,29 @@ Aynı aile art arda gelmez. Aileler:
 - **Dil:** "Kaç?"
 
 **Önerilen ilk altı:** 2 kim kime bakıyor → 1 karanlık dosyalar → 3 salatalık → 5 izin kurası → 6 klasörler → 7 yaka kartları.
+
+## Dizi (ZKFO) önceliği — kullanıcı kararı, 2026-11-04
+Kullanıcı: "Bu diziyi başta referans alalım." Sıradaki partiler ağırlıkla `research/zkfo_bilmeceleri.md` dosyasındaki 88 bilmeceden seçilir.
+
+**Üretimde:**
+- **#1 Tuz:** 5 + 5 + 2 avuç tuz, pişen yine tuzsuz. Çünkü tencerede kabuklu yumurta haşlanıyordu.
+
+**Sırada:**
+- **Balık:** "İkisi hariç hepsi lüfer / istavrit / hamsi."
+  - Cevap 3.
+  - Şart: "Yalnız bu üç türden tuttum."
+  - Kaynak: tabii TikTok klibi.
+- **Cuma–Salı:** Cuma, Salı'dan nerede önce gelir? Cevap: sözlükte, yani alfabede.
+- **Kumbara:** Her doğum gününde 1 lira atılıyor, 12 yaşında açılıyor, içinden 3 lira çıkıyor.
+  - Cevap: 29 Şubat doğumlu.
+  - Şart: "Yalnız takvimde o gün varsa."
+- **Jokeyler:** "Atı ikinci gelen kazanır" kuralı var. Çözüm: jokeyler atları değiştirir.
+- **Zeytin ve bardak:** Zeytine dokunmadan bardağa koymak. Çözüm: bardağı kapatıp döndürmek. Görsel olarak güçlü.
+- **Buzdaki ilaç:** Aynı içeceği iki kişi içti, birinin midesi bozuldu. Çözüm: zehir buzdaydı; ilk içen buz erimeden içmişti. Ölüm yok; "midesi bozuldu" diye uyarlanacak.
+- **Köprü** (66–67. bölüm): Üç arkadaştan ikisi iner, araba köprüde yıldırım çarpmasıyla yanar. İnenler "Keşke biz de olsaydık" der.
+  - Cevap: Onları indirmek için durmasaydı araba köprüyü yıldırımdan önce geçmiş olacaktı.
+  - Uyarlama: ölüm yok; şoför son anda atlar, araba yanar.
+- **Şelale:** Şelalenin suyunu nasıl durdurursun? Cevap: fotoğrafını çek. Şart: "elinde yalnız telefon var".
+
+**Kullanılmayacak:**
+- **Asansör / anne:** Ölüm teması var. Ayrıca jeneratör ve batarya açığı var.
