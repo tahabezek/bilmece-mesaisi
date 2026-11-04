@@ -179,5 +179,7 @@
   "#ofis"
  ],
  "coverAt": 0,
- "countdown": "n1-0.3"
+ "countdown": "n1-0.3",
+ "disabled": true,
+ "disabledNote": "2026-11-04: harf sayma; kullanıcının zekâ çıtasının altında, kuyruktan çekildi"
 }
