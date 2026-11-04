@@ -1,35 +1,35 @@
 {
   "slots": {
     "2026-11-04T18:00Z": {
-      "episode": "001-badana",
-      "media": "v/001-badana.mp4",
+      "episode": "010-bakis",
+      "media": "v/010-bakis.mp4",
       "status": "scheduled",
-      "at": "2026-11-04T10:52:56.355Z",
-      "postId": "6aeb0eba1d881477a61e6c22",
+      "at": "2026-11-04T13:34:53.665Z",
+      "postId": "6aeb34b1130c3480fb6247bf",
       "dueAt": "2026-11-04T18:00:00.000Z"
     },
     "2026-11-05T09:30Z": {
-      "episode": "002-iskur",
-      "media": "v/002-iskur.mp4",
-      "status": "scheduled",
-      "at": "2026-11-04T10:52:56.355Z",
-      "postId": "6aeb0ebb0eea02ace330445c",
-      "dueAt": "2026-11-05T09:30:00.000Z"
-    },
-    "2026-11-05T18:00Z": {
       "episode": "003-istanbul",
       "media": "v/003-istanbul.mp4",
       "status": "scheduled",
-      "at": "2026-11-04T10:52:56.355Z",
-      "postId": "6aeb0ebc1d881477a61e6c7f",
+      "at": "2026-11-04T13:34:53.665Z",
+      "postId": "6aeb34b342259de68923f57a",
+      "dueAt": "2026-11-05T09:30:00.000Z"
+    },
+    "2026-11-05T18:00Z": {
+      "episode": "011-ters-dosya",
+      "media": "v/011-ters-dosya.mp4",
+      "status": "scheduled",
+      "at": "2026-11-04T13:34:53.665Z",
+      "postId": "6aeb34b4130c3480fb624855",
       "dueAt": "2026-11-05T18:00:00.000Z"
     },
     "2026-11-06T09:30Z": {
-      "episode": "004-canta",
-      "media": "v/004-canta.mp4",
+      "episode": "002-iskur",
+      "media": "v/002-iskur.mp4",
       "status": "scheduled",
-      "at": "2026-11-04T10:52:56.355Z",
-      "postId": "6aeb0ec59e12e98b30a23a5e",
+      "at": "2026-11-04T13:34:53.665Z",
+      "postId": "6aeb34b6130c3480fb6248e9",
       "dueAt": "2026-11-06T09:30:00.000Z"
     }
   }
