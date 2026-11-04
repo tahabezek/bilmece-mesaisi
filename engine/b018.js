@@ -23,6 +23,7 @@ function piggy(K, x, y, open, t) {
 export function draw(K, t, ep, tl, S) {
   const tm = S.tm;
   return KL.draw(K, t, ep, tl, S, {
+    proofDrift: 0.008,
     mid: (K, t) => { K.rect(330, 1320, 600, 40, PAL.woodTop, LW, 8); K.rect(346, 1360, 568, 200, PAL.wood); piggy(K, 600, 1210, ease.state(seg(t, tm.coins - 0.3, 1.2)), t); },
     tries: [{ s: 'Delik mi? Hırsız mı?', t0: tm.d2, strike: tm.hd + 0.1 }],
     clue: (K, t) => {
@@ -36,14 +37,15 @@ export function draw(K, t, ep, tl, S) {
       pop(K, t, tm.cal, v => { ctx.translate(540, 360); ctx.scale(v, v); pill(K, 0, 0, 'doğdu: 29 Şubat 2012', INK, PAL.paper, 40); });
       // 2013–2024 şeridi: yalnız artık yıllarda 29 Şubat var
       for (let i = 0; i < 12; i++) {
-        const y = 2013 + i, leap = y % 4 === 0, x = 150 + (i % 4) * 260, yy = 520 + Math.floor(i / 4) * 210;
+        const y = 2013 + i, leap = y % 4 === 0, x = 210 + (i % 4) * 220, yy = 520 + Math.floor(i / 4) * 210;
         if (t < tm.cal + 0.05 * i) continue;
         const hi = leap && t >= tm.leap;
-        K.rect(x - 110, yy - 70, 220, 160, hi ? PAL.mustard : PAL.cream, LW, 18);
+        K.rect(x - 96, yy - 70, 192, 160, hi ? PAL.mustard : PAL.cream, LW, 18);
         K.text(String(y), x, yy - 22, 40, INK, 900);
-        K.text(leap ? '29 Şubat ✓' : '28 Şubat', x, yy + 30, 28, leap ? PAL.green : '#8A847A', 900);
+        K.text(leap ? '29 Şubat ✓' : '29 Şubat yok', x, yy + 22, 26, leap ? PAL.green : '#8A847A', 900);
+        if (!leap) K.line(x - 70, yy + 13, x + 70, yy + 13, 4, PAL.red);
         const ci = [2016, 2020, 2024].indexOf(y);
-        if (ci >= 0) { const a = [tm.c1, tm.c2, tm.c3][ci]; if (t >= a - 0.3) { const u = clamp01((t - a + 0.3) / 0.3); K.circ(x + 80, yy - 60 + 40 * ease.enter(u), 24, PAL.mustard, LW * 0.8); K.text('1', x + 80, yy - 51 + 40 * ease.enter(u), 24, INK, 900); } }
+        if (ci >= 0) { const a = [tm.c1, tm.c2, tm.c3][ci]; if (t >= a - 0.3) { const u = clamp01((t - a + 0.3) / 0.3); K.circ(x, yy + 10 + 56 * ease.enter(u), 20, PAL.mustard, LW * 0.8); K.text('1', x, yy + 18 + 56 * ease.enter(u), 22, INK, 900); } }
       }
       stamp(K, t, tm.win, 540, 1180, '12 YILDA 3 DOĞUM GÜNÜ', PAL.green, 52);
     },

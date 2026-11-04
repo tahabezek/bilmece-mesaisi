@@ -681,10 +681,10 @@
   "dur": 5.498
  },
  "d5": {
-  "key": "cc762c90d72c",
-  "trimmed": "cc762c90d72c",
-  "wkey": "cc762c90d72c",
-  "heard": "İstaflet içinde, hamsi içinde aynısı, üç balıkta üçü de doğru.",
+  "key": "408e547f662d",
+  "trimmed": "408e547f662d",
+  "wkey": "408e547f662d",
+  "heard": "İstavrit içinde, Hamsi içinde aynısı, 3 cümlenin 3 'ü de doğru.",
   "words": [
    {
     "w": "İstavrit",
@@ -724,30 +724,30 @@
    {
     "w": "Üç",
     "t0": 2.22,
-    "t1": 2.68
+    "t1": 2.64
    },
    {
-    "w": "balıkta",
-    "t0": 2.68,
-    "t1": 3.1
+    "w": "cümlenin",
+    "t0": 2.64,
+    "t1": 3.14
    },
    {
     "w": "üçü",
-    "t0": 3.1,
-    "t1": 3.353
+    "t0": 3.14,
+    "t1": 3.38
    },
    {
     "w": "de",
-    "t0": 3.353,
-    "t1": 3.48
+    "t0": 3.38,
+    "t1": 3.5
    },
    {
     "w": "doğru!",
-    "t0": 3.48,
-    "t1": 3.72
+    "t0": 3.5,
+    "t1": 3.76
    }
   ],
-  "dur": 3.928
+  "dur": 3.948
  },
  "h4": {
   "key": "878705c34c77",

@@ -93,10 +93,10 @@
   "dur": 1.898
  },
  "h2a": {
-  "key": "795086d47b6d",
-  "trimmed": "795086d47b6d",
-  "wkey": "795086d47b6d",
-  "heard": "Kardeşimin olu her doğum gününde kumbarasına 1 lira atar, bir kere bile atlamaz.",
+  "key": "d0d092da357a",
+  "trimmed": "d0d092da357a",
+  "wkey": "d0d092da357a",
+  "heard": "Kardeşimin oğlu her doğum gününde kumbarasına 1 lira atar. Ama yalnızca tam doğduğu tarihte atar.",
   "words": [
    {
     "w": "Kardeşimin",
@@ -106,11 +106,11 @@
    {
     "w": "oğlu",
     "t0": 0.66,
-    "t1": 1.06
+    "t1": 1.04
    },
    {
     "w": "her",
-    "t0": 1.06,
+    "t0": 1.04,
     "t1": 1.26
    },
    {
@@ -136,35 +136,45 @@
    {
     "w": "lira",
     "t0": 2.86,
-    "t1": 3.04
+    "t1": 3.06
    },
    {
     "w": "atar.",
-    "t0": 3.04,
+    "t0": 3.06,
     "t1": 3.5
    },
    {
-    "w": "Bir",
+    "w": "Ama",
     "t0": 3.5,
-    "t1": 4.02
+    "t1": 3.96
    },
    {
-    "w": "kere",
-    "t0": 4.02,
-    "t1": 4.38
+    "w": "yalnızca",
+    "t0": 3.96,
+    "t1": 4.6
    },
    {
-    "w": "bile",
-    "t0": 4.38,
-    "t1": 4.56
+    "w": "tam",
+    "t0": 4.6,
+    "t1": 4.82
    },
    {
-    "w": "atlamaz.",
-    "t0": 4.56,
-    "t1": 5.18
+    "w": "doğduğu",
+    "t0": 4.82,
+    "t1": 5.28
+   },
+   {
+    "w": "tarihte",
+    "t0": 5.28,
+    "t1": 5.72
+   },
+   {
+    "w": "atar.",
+    "t0": 5.72,
+    "t1": 6.1
    }
   ],
-  "dur": 5.308
+  "dur": 6.208
  },
  "h2b": {
   "key": "1f2b27369595",

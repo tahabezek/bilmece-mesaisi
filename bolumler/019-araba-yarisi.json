@@ -14,8 +14,8 @@
  ],
  "card": [
   "Arabası son gelen kazanır.",
-  "İkisi de yolda durdu. Hikmet tek cümle",
-  "söyledi, ikisi de bastı. Ne dedi?"
+  "Tek cümleyle ikisi de gaza bastı.",
+  "Ne dendi?"
  ],
  "caption": "Zeka sorusu: Hikmet Bey, Necmi ile Kerem'e dedi ki: \"Arabası bitişe en son gelen, şirket arabasını kazanır.\" İkisi de yolda durdu, kimse kıpırdamadı. Hikmet Bey tek bir cümle söyledi; ikisi de son hızla bitişe bastı. Ne dedi?\n\nCevap videonun sonunda.",
  "voice": {
@@ -38,7 +38,8 @@
     "id": "h2a",
     "who": "hikmet",
     "gap": 0.3,
-    "text": "Evet. Dedim ki: arabası bitişe en son gelen, şirket arabasını kazanır."
+    "text": "Necmi ile Kerem'i. Dedim ki: arabası bitişe en son gelen, şirket arabasını kazanır.",
+    "tts": "Necmi ile Keremi. Dedim ki, arabası bitişe en son gelen, şirket arabasını kazanır."
    },
    {
     "id": "h2b",
@@ -93,7 +94,8 @@
     "id": "n1",
     "who": "necmi",
     "gap": 5.6,
-    "text": "Ben torunlarıma dedim ki: kimin kalemi kırılırsa o kazanır. Hemen kalemleri değiştirip birbirininkini kırmaya başladılar!"
+    "text": "Ben torunlara dedim ki: tabağı en son biten, dondurmayı kazanır. Kimse yemedi! Sonra birbirlerinin tabağına daldılar, ikisi de silip süpürdü!",
+    "tts": "Ben torunlara dedim ki, tabağı en son biten, dondurmayı kazanır. Kimse yemedi! Sonra birbirlerinin tabağına daldılar, ikisi de silip süpürdü!"
    },
    {
     "id": "d3",
@@ -119,7 +121,7 @@
     "id": "h4",
     "who": "hikmet",
     "gap": 1.1,
-    "text": "Aynı kural, başka araba. İkisi de koştu."
+    "text": "Aynı kural, başka araba. Bu sefer ikisi de koştu."
    },
    {
     "id": "d6",

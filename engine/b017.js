@@ -28,7 +28,7 @@ function bucket(K, x, y, t) {
 export function draw(K, t, ep, tl, S) {
   const tm = S.tm;
   return KL.draw(K, t, ep, tl, S, {
-    cardSize: 50,
+    cardSize: 58,
     mid: (K, t) => { K.rect(330, 1320, 600, 40, PAL.woodTop, LW, 8); K.rect(346, 1360, 568, 200, PAL.wood); bucket(K, 600, 1320, t);
     },
     screen: (K, t, S, top) => {

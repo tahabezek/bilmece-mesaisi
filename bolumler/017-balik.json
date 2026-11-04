@@ -13,9 +13,9 @@
   "#ofis"
  ],
  "card": [
-  "İkisi hariç hepsi lüfer, ikisi hariç",
-  "hepsi istavrit, ikisi hariç hepsi hamsi.",
-  "Kaç balık?"
+  "2 hariç hepsi lüfer.",
+  "2 hariç hepsi istavrit.",
+  "2 hariç hepsi hamsi. Kaç balık?"
  ],
  "caption": "Zeka sorusu: Hikmet Bey yalnız lüfer, istavrit ve hamsi tuttu. İkisi hariç hepsi lüfer, ikisi hariç hepsi istavrit, ikisi hariç hepsi hamsi. Kaç balık tuttu?\n\nİlk akla gelen cevap genelde yanlış. Cevap videonun sonunda.",
  "voice": {
@@ -112,7 +112,7 @@
     "id": "d5",
     "who": "defne",
     "gap": 0.45,
-    "text": "İstavrit için de, hamsi için de aynısı. Üç balıkta üçü de doğru!"
+    "text": "İstavrit için de, hamsi için de aynısı. Üç cümlenin üçü de doğru!"
    },
    {
     "id": "h4",
