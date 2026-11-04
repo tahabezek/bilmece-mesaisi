@@ -54,6 +54,13 @@
     "text": "Bilirsen bu çanta senin."
    },
    {
+    "id": "da",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Üç kere aldı, üç kere sattı. Her satışta bir lira kâr… Ama arada da pahalıya geri aldı.",
+    "tts": "Üç kere aldı, üç kere sattı. Her satışta bir lira kâr. Ama arada da pahalıya geri aldı."
+   },
+   {
     "id": "d2",
     "who": "defne",
     "gap": 0.5,
@@ -67,9 +74,23 @@
     "text": "Bravo! Bir lira! Ben de öyle buldum."
    },
    {
+    "id": "dq",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "Ama içimde bir şüphe var Müdür Bey…",
+    "tts": "Ama içimde bir şüphe var Müdür Bey.",
+    "rate": "-6%"
+   },
+   {
+    "id": "hq",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Şüphe etme Defneciğim. Herkes bir diyor."
+   },
+   {
     "id": "n1",
     "who": "necmi",
-    "gap": 0.6,
+    "gap": 5.6,
     "text": "Hikmet Bey, kasa öyle demiyor. Her alış, her satış ayrı satıra yazılır."
    },
    {
@@ -121,7 +142,8 @@
    "d3"
   ],
   "hit": "d3",
-  "end": "d5>"
+  "end": "d5>",
+  "style": "yumusak"
  },
  "sfx": [
   [
@@ -186,5 +208,6 @@
   "#bulmaca",
   "#ofis"
  ],
- "coverAt": 0
+ "coverAt": 0,
+ "countdown": "n1-0.3"
 }

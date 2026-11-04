@@ -4,7 +4,7 @@ import { ease, seg, spring, clamp01, lerp } from './core.js';
 import { INK, CARDS, teaGlass } from './cast.js';
 import { PAL, LW, room, door, desk, riddleCard } from './office.js';
 import { at } from './zaman.js';
-import { UI, camAt, applyCam, toScreen, poseAt, charBase, drawChar, talkAt, captionAt, caption, endCard, triesCol, thinkCounter } from './sahne.js';
+import { UI, camAt, applyCam, toScreen, poseAt, charBase, drawChar, talkAt, captionAt, caption, endCard, triesCol, countdown, glance } from './sahne.js';
 
 const up = s => s.toLocaleUpperCase('tr-TR');
 
@@ -12,7 +12,7 @@ export function build(ep, tl) {
   const T = e => at(tl, e), L = tl.L;
   const tm = {
     nums: [T('h2b:3'), T('h2c:3'), T('h2d:3')], walk: [L.h2a.t0 - 0.1, L.h2a.t0 + 1.0], offer: T('h3:4'),
-    think0: T('h3>'), clue: T('n1'), tries: [T('d2:0'), T('d2:2')], strike: T('d2:4'),
+    think0: T('h3>'), clue: T('n1'), cd: T(ep.countdown), da: T('da'), nz: T('nz'), hn: T('hn'), tries: [T('d2:0'), T('d2:2')], strike: T('d2:4'),
     type: [T('n1:5') - 0.55, T('n1:5') - 0.02],
     buldum: T('d3'), proof: T('d3:1') - 0.04,
     rows: { dakika: T('d4:0'), iki: T('d4:2'), saniye: T('d4:6'), bir: T('d4:8'), yil: T('d4:10'), hic: T('d4:12') },
@@ -25,6 +25,10 @@ export function build(ep, tl) {
     [L.h2d.t0, 1.17, 800, 995],
     [L.h3.t0, 1.22, 840, 1000],
     [tm.think0 + 0.1, 1.3, 600, 1000],
+    [tm.da, 1.24, 620, 990],
+    [tm.nz - 0.1, 1.12, 400, 1030],
+    [tm.hn - 0.1, 1.0, 560, 1000],
+    [tm.cd - 5, 1.1, 600, 1010],
     [tm.clue - 0.1, 1.35, 200, 1050],
     [tm.type[1], 1.48, 250, 1030],
     [tm.buldum, 1.3, 640, 1010, 'cut'],
@@ -43,6 +47,8 @@ export function build(ep, tl) {
     [tm.nums[2] - 0.1, { armL: { sh: 70, el: 60 }, head: { tilt: 8, look: [-0.8, 0.2] } }, 0.3, ease.enter],
     [tm.offer - 0.1, { armR: { sh: 85, el: 0 }, head: { tilt: 4, look: [-0.9, 0.2] } }, 0.3, ease.enter],
     [tm.think0 + 0.4, { armR: { sh: 10, el: 20 }, armL: { sh: 10, el: 20 }, head: { tilt: -4, look: [-0.7, 0.2] } }],
+    [tm.hn - 0.05, { expr: 'kizgin', head: { tilt: 6, look: [-0.9, 0] } }, 0.15, ease.enter],
+    [tm.hn + 0.9, { expr: 'mutlu', head: { tilt: -4, look: [-0.7, 0.2] } }, 0.4],
     [tm.clue + 0.3, { expr: 'saskin', head: { tilt: 0, look: [-0.9, 0] } }, 0.3],
   ];
   const defBase = charBase('defne', { x: 640, y: 1500, s: 270, expr: 'notr', head: { tilt: 6, look: [0.6, 0.5] }, armR: { sh: 40, el: -70 }, armL: { sh: 20, el: -40 }, props: { R: 'tea' } });
@@ -132,7 +138,7 @@ export function draw(K, t, ep, tl, S) {
     h = drawChar(ctx, 'hikmet', hp, t);
   }
   // Defne tezgâhın arkasında
-  const dp = poseAt(CARDS.defne, S.defBase, S.def, t); dp.talk = talkAt(tl, 'defne', t);
+  const dp = glance(poseAt(CARDS.defne, S.defBase, S.def, t), t, tm.cd); dp.talk = talkAt(tl, 'defne', t);
   const d = defeat ? null : drawChar(ctx, 'defne', dp, t);
   desk(K, 300, 1180, 880, { h: 320 });
   semaver(K, 420, 1180, t);
@@ -161,8 +167,8 @@ export function draw(K, t, ep, tl, S) {
     K.text(w, -24, 12, 36, '#6B6355', 900); K.text(String(2 - i), 82, 22, 64, PAL.coral, 900);
     ctx.restore();
   });
-  triesCol(K, t, [{ s: 'YELKOVAN?', t0: tm.tries[0], strike: tm.strike }, { s: 'AKREP?', t0: tm.tries[1], strike: tm.strike }], { x: 270, y: 760, gap: 100, size: 54, fadeAt: tm.clue - 0.45 });
-  thinkCounter(K, t, tm.clue, { x: 840, y: 700, r: 80 });
+  triesCol(K, t, [{ s: 'YELKOVAN?', t0: tm.tries[0], strike: tm.strike }, { s: 'AKREP?', t0: tm.tries[1], strike: tm.strike }], { x: 270, y: 760, gap: 100, size: 54, fadeAt: tm.nz - 0.2 });
+  countdown(K, t, tm.cd, { top: 300 + cardH + 20 });
   // bulmaca: altı kutu, DAKİKA harf harf yazılır
   if (t >= tm.clue - 0.1 && t < tm.buldum) {
     const u = spring(t - (tm.clue - 0.1), UI[0], UI[1]);

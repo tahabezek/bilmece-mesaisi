@@ -155,6 +155,55 @@
   ],
   "dur": 2.52
  },
+ "da": {
+  "key": "bdb9b679678f",
+  "trimmed": "bdb9b679678f",
+  "wkey": "bdb9b679678f",
+  "heard": "Asamayacak. Yani asarsa, kendi kapısını kendi kapatmış olacak.",
+  "words": [
+   {
+    "w": "Asamayacak.",
+    "t0": 0.0,
+    "t1": 0.68
+   },
+   {
+    "w": "Yani",
+    "t0": 0.98,
+    "t1": 1.2
+   },
+   {
+    "w": "asarsa,",
+    "t0": 1.2,
+    "t1": 1.68
+   },
+   {
+    "w": "kendi",
+    "t0": 1.9,
+    "t1": 2.1
+   },
+   {
+    "w": "kapısını",
+    "t0": 2.1,
+    "t1": 2.52
+   },
+   {
+    "w": "kendi",
+    "t0": 2.52,
+    "t1": 2.72
+   },
+   {
+    "w": "kapatmış",
+    "t0": 2.72,
+    "t1": 3.22
+   },
+   {
+    "w": "olacak.",
+    "t0": 3.22,
+    "t1": 3.48
+   }
+  ],
+  "dur": 3.708
+ },
  "d2": {
   "key": "d18bfb7e52e2",
   "trimmed": "d18bfb7e52e2",
@@ -193,6 +242,128 @@
    }
   ],
   "dur": 3.294
+ },
+ "n0": {
+  "key": "86585c090b97",
+  "trimmed": "86585c090b97",
+  "wkey": "86585c090b97",
+  "heard": "Belediye olmasın. Oraya herkes bir iş için gider.",
+  "words": [
+   {
+    "w": "Belediye",
+    "t0": 0.0,
+    "t1": 0.68
+   },
+   {
+    "w": "olmasın?",
+    "t0": 0.68,
+    "t1": 1.28
+   },
+   {
+    "w": "Oraya",
+    "t0": 1.5,
+    "t1": 1.96
+   },
+   {
+    "w": "herkes",
+    "t0": 1.96,
+    "t1": 2.3
+   },
+   {
+    "w": "bir",
+    "t0": 2.3,
+    "t1": 2.59
+   },
+   {
+    "w": "iş",
+    "t0": 2.59,
+    "t1": 2.88
+   },
+   {
+    "w": "için",
+    "t0": 2.88,
+    "t1": 3.16
+   },
+   {
+    "w": "gider.",
+    "t0": 3.16,
+    "t1": 3.38
+   }
+  ],
+  "dur": 3.648
+ },
+ "dr": {
+  "key": "7f14e048438d",
+  "trimmed": "7f14e048438d",
+  "wkey": "7f14e048438d",
+  "heard": "Belediye'de asabilir Necmi abi.",
+  "words": [
+   {
+    "w": "Belediye",
+    "t0": 0.0,
+    "t1": 0.58
+   },
+   {
+    "w": "de",
+    "t0": 0.58,
+    "t1": 0.58
+   },
+   {
+    "w": "asabilir",
+    "t0": 0.58,
+    "t1": 1.0
+   },
+   {
+    "w": "Necmi",
+    "t0": 1.0,
+    "t1": 1.46
+   },
+   {
+    "w": "Abi.",
+    "t0": 1.46,
+    "t1": 1.68
+   }
+  ],
+  "dur": 1.88
+ },
+ "hc": {
+  "key": "71cc960fb4e6",
+  "trimmed": "71cc960fb4e6",
+  "wkey": "71cc960fb4e6",
+  "heard": "Cumartesi kahvaltıyı ofiste yaparız artık Defneciğim.",
+  "words": [
+   {
+    "w": "Cumartesi",
+    "t0": 0.0,
+    "t1": 0.64
+   },
+   {
+    "w": "kahvaltıyı",
+    "t0": 0.64,
+    "t1": 1.26
+   },
+   {
+    "w": "ofiste",
+    "t0": 1.26,
+    "t1": 1.64
+   },
+   {
+    "w": "yaparız",
+    "t0": 1.64,
+    "t1": 2.1
+   },
+   {
+    "w": "artık",
+    "t0": 2.1,
+    "t1": 2.34
+   },
+   {
+    "w": "Defneciğim.",
+    "t0": 2.34,
+    "t1": 2.88
+   }
+  ],
+  "dur": 3.09
  },
  "g1": {
   "key": "593148283898",

@@ -53,15 +53,34 @@
     "text": "Bilirsen bugün erken çıkarsın."
    },
    {
+    "id": "da1",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Dur, sırayla gidelim. Baştan bir harf gidiyor, yine anlamlı bir kelime kalıyor. Hem de üç kere!"
+   },
+   {
     "id": "d2",
     "who": "defne",
     "gap": 0.5,
     "text": "Kasap? Asap… Öyle şehir yok. Terzi? Erzi… Hiç yok."
    },
    {
+    "id": "hs",
+    "who": "hikmet",
+    "gap": 0.9,
+    "text": "Saat dört oldu Defneciğim. Erken çıkış uçup gidiyor."
+   },
+   {
+    "id": "da2",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "Tersten gideyim o zaman. Önüne bir harf gelince bir iş olan şehir…",
+    "tts": "Tersten gideyim o zaman. Önüne bir harf gelince, bir iş olan şehir."
+   },
+   {
     "id": "n1",
     "who": "necmi",
-    "gap": 0.7,
+    "gap": 5.6,
     "text": "Hikmet Bey, hafta sonu odanıza badana yaptırıyorum."
    },
    {
@@ -114,7 +133,8 @@
    "d3"
   ],
   "hit": "d3",
-  "end": "d5>"
+  "end": "d5>",
+  "style": "yumusak"
  },
  "sfx": [
   [
@@ -163,5 +183,6 @@
   "#bulmaca",
   "#ofis"
  ],
- "coverAt": 0
+ "coverAt": 0,
+ "countdown": "n1-0.3"
 }

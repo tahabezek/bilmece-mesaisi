@@ -4,7 +4,7 @@ import { ease, seg, spring, clamp01, lerp } from './core.js';
 import { INK, CARDS } from './cast.js';
 import { PAL, LW, room, windowIst, calendar, desk, globe, riddleCard, counter } from './office.js';
 import { at } from './zaman.js';
-import { UI, camAt, applyCam, toScreen, poseAt, charBase, drawChar, talkAt, captionAt, caption, endCard } from './sahne.js';
+import { UI, camAt, applyCam, toScreen, poseAt, charBase, drawChar, talkAt, captionAt, caption, endCard, countdown, glance } from './sahne.js';
 
 const STRIP = 'YUNANİSTANBULGARİSTAN';
 
@@ -12,7 +12,7 @@ export function build(ep, tl) {
   const T = e => at(tl, e), L = tl.L;
   const tm = {
     gr: T('h2:0'), bg: T('h2:2'), sinir: T('d2'), x1: T('h3'), meric: T('d3'), x2: T('h4:3'),
-    week: T('h5:3'), think0: T('h5>'), cnt0: T('n1') - 5.8, cnt1: T('n1') - 0.8, edirne: T('d4:0'), yok: T('d4:2'),
+    week: T('h5:3'), think0: T('h5>'), cd: T(ep.countdown), n0: T('n0'), hn: T('hn'), hm: T('hm'), da: T('da'), edirne: T('d4:0'), yok: T('d4:2'),
     necmi: T('n1') - 0.8, zip: [T('n1') - 0.72, T('n1') - 0.06], grumble: T('n1:2'),
     buldum: T('d5'), strip: T('d5:1') - 0.04, brA: T('d6:0'), brB: T('d6:1'), ist: T('d6:5'),
     defeat: T('d6>') + 0.1, cta: T('d7') - 0.2, end: T('d7>') + 0.1,
@@ -22,8 +22,12 @@ export function build(ep, tl) {
     [0.5, 1.05, 600, 1000],
     [tm.gr - 0.15, 1.8, 330, 790, 'cut'],   // ara plan: yalnız harita
     [tm.sinir - 0.1, 1.3, 380, 960, 'cut'],
+    [tm.n0 - 0.05, 1.4, -510, 1150, 'cut'],
+    [tm.hn - 0.05, 1.3, 380, 960, 'cut'],
     [L.h5.t0 - 0.1, 1.3, 960, 960],
     [tm.think0 + 0.2, 1.3, 380, 960],
+    [tm.hm - 0.1, 1.28, 930, 980],
+    [tm.cd - 5, 1.1, 480, 980],
     [tm.necmi, 1.4, -510, 1150, 'cut'],
     [tm.buldum - 0.05, 1.3, 330, 1060, 'cut'],
     [tm.strip, 1, 540, 960, 'cut'],
@@ -122,7 +126,7 @@ export function draw(K, t, ep, tl, S) {
     x1: pop(tm.x1), x2: pop(tm.x2), edirne: pop(tm.edirne),
   });
   // takvim: "bir hafta"da gelecek haftanın yedi günü sırayla yeşil
-  const marks = {}; for (let d = 9; d <= 15; d++) if (t >= tm.week - 0.04 + (d - 9) * 0.07) marks[d] = PAL.green;
+  const marks = {}; for (let d = 9; d <= 15; d++) if (t >= tm.week - 0.04 + (d - 9) * 0.07 && !(t >= tm.hm + 0.6 + (15 - d) * 0.12 && t < tm.strip)) marks[d] = PAL.green;   // "izin de gidiyor": günler sondan silinir
   calendar(K, 1040, 640, 180, 'KASIM', marks);
   // Necmi Abi'nin masası (solda, ayrı çekim)
   necmi(K, t, tl, S);
@@ -131,7 +135,7 @@ export function draw(K, t, ep, tl, S) {
   const h = t >= tm.cta || (t >= tm.gr - 0.15 && t < tm.sinir - 0.1) ? null : drawChar(ctx, 'hikmet', hp, t);
   desk(K, 560, 1340, 560);
   globe(K, 1000, 1230, 70, 0.3 + 1.6 * ease.enter(seg(t, 0.15, 2.4)) + 0.02 * t);
-  const dp = poseAt(CARDS.defne, S.defBase, S.def, t); dp.talk = talkAt(tl, 'defne', t);
+  const dp = glance(poseAt(CARDS.defne, S.defBase, S.def, t), t, tm.cd); dp.talk = talkAt(tl, 'defne', t);
   const insert = t >= tm.gr - 0.15 && t < tm.sinir - 0.1;   // harita ara planında karakter yok
   const d = (t >= tm.defeat && t < tm.cta) || insert ? null : drawChar(ctx, 'defne', dp, t);
   ctx.restore();
@@ -141,11 +145,8 @@ export function draw(K, t, ep, tl, S) {
     const hd = t >= tm.cta ? d.head : h.head;
     return caption(K, captionAt(tl, t), { y: t >= tm.cta ? 300 : 1240, head: toScreen(cam, hd) });
   }
-  riddleCard(K, 70, 300, 940, ep.card, ep.num, { size: 58 });
-  if (t >= tm.cnt0 - 0.2 && t < tm.cnt1 + 0.6) {
-    const u = spring(t - (tm.cnt0 - 0.2), UI[0], UI[1]), out = 1 - ease.exit(seg(t, tm.cnt1 + 0.25, 0.3)), left = Math.max(0, tm.cnt1 - t);
-    ctx.save(); ctx.translate(860, 1110); ctx.scale(u * out, u * out); counter(K, 0, 0, 92, left / 5, String(Math.ceil(left - 1e-6))); ctx.restore();
-  }
+  const cardH = riddleCard(K, 70, 300, 940, ep.card, ep.num, { size: 58 });
+  countdown(K, t, tm.cd, { top: 300 + cardH + 20 });
   const cap = captionAt(tl, t), who = cap?.line.who;
   const nh = S._necmiHead;
   const head = who === 'hikmet' ? h?.head : who === 'defne' ? d?.head : who === 'necmi' ? nh : null;
@@ -155,7 +156,8 @@ export function draw(K, t, ep, tl, S) {
 // Necmi Abi: masasında etiket makinesi; şerit boşluksuz basılır
 function necmi(K, t, tl, S) {
   const { ctx } = K, { tm } = S;
-  if (t < tm.necmi - 0.5 || t >= tm.buldum - 0.06) { S._necmiHead = null; return; }
+  const early = t >= tm.n0 - 0.1 && t < tm.hn + 0.1;   // "Kapıkule?" kesmesi
+  if (!early && (t < tm.necmi - 0.5 || t >= tm.buldum - 0.06)) { S._necmiHead = null; return; }
   const ang = ease.enter(seg(t, tm.grumble - 0.1, 0.3));
   const p = charBase('necmi', { x: -510, y: 1500, s: 230, expr: ang > 0.5 ? 'kizgin' : 'notr', head: { tilt: lerp(-6, 8, ang), look: [0.5, 0.5 - ang] }, armR: { sh: 30, el: -120 }, armL: { sh: 30, el: -120 } });
   p.talk = talkAt(tl, 'necmi', t);

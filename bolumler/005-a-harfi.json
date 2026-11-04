@@ -62,9 +62,28 @@
     "text": "Yelkovan mı? Akrep mi? Yok, onlar yılın içinde de var."
    },
    {
+    "id": "da",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Dakikada varsa saatte de var, günde de var. Yılda hiç olmaması imkânsız. Demek ki bu zamanla ilgili değil…",
+    "tts": "Dakikada varsa saatte de var, günde de var. Yılda hiç olmaması imkânsız. Demek ki bu, zamanla ilgili değil."
+   },
+   {
+    "id": "nz",
+    "who": "necmi",
+    "gap": 0.5,
+    "text": "Maaş artışı olmasın? Yılın içinde hiç yok."
+   },
+   {
+    "id": "hn",
+    "who": "hikmet",
+    "gap": 0.2,
+    "text": "Necmi!"
+   },
+   {
     "id": "n1",
     "who": "necmi",
-    "gap": 0.7,
+    "gap": 5.6,
     "text": "Bulmacada altı harfli zaman birimi: dakika. Tam oturdu!",
     "tts": "Bulmacada altı harfli zaman birimi. Dakika. Tam oturdu!"
    },
@@ -106,7 +125,8 @@
    "d3"
   ],
   "hit": "d3",
-  "end": "d5>"
+  "end": "d5>",
+  "style": "yumusak"
  },
  "sfx": [
   [
@@ -158,5 +178,6 @@
   "#bulmaca",
   "#ofis"
  ],
- "coverAt": 0
+ "coverAt": 0,
+ "countdown": "n1-0.3"
 }

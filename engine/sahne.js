@@ -248,3 +248,38 @@ export function thinkCounter(K, t, cnt1, { x = 860, y = 1110, r = 92 } = {}) {
   counter(K, 0, 0, r, left / 5, String(Math.ceil(left - 1e-6)));
   ctx.restore();
 }
+
+// "SEN DE DÜŞÜN" geri sayımı (izleyicinin payı): t1 sayacın sıfırlandığı an (ipucundan hemen önce), 5 sn.
+// Büyük, ekranın ortasında; her saniye sayı vurgulanır, son 3 saniye halka mercan. Konuşma yok, ses tarafında saat tıkırtısı.
+export function countdown(K, t, t1, { top = 540 } = {}) {
+  const t0 = t1 - 5;
+  if (t < t0 - 0.3 || t >= t1 + 0.35) return;
+  const { ctx } = K, inU = spring(t - (t0 - 0.25), UI[0], UI[1]), out = 1 - ease.exit(seg(t, t1, 0.3));
+  const left = Math.max(0, t1 - t), n = Math.ceil(left - 1e-6), since = 1 - (left % 1 || 1);
+  const pulse = 1 + 0.16 * (1 - ease.enter(clamp01(since / 0.35)));
+  const hot = n <= 3, x = 540, y = 990, r = 190;
+  // perde: bilmece kartının altı kararır (kart okunur kalır), karakterler arkada düşünmeye devam eder
+  ctx.save(); ctx.globalAlpha = 0.5 * clamp01((t - t0 + 0.3) / 0.3) * out; ctx.fillStyle = INK; ctx.fillRect(0, top, 1080, 1920 - top); ctx.restore();
+  ctx.save(); ctx.translate(x, y); ctx.scale(inU * out, inU * out);
+  ctx.font = '900 70px Rubik'; const bw = ctx.measureText('SEN DE DÜŞÜN!').width + 80;
+  K.rect(-bw / 2 + 8, -r - 140 + 10, bw, 100, INK, 0, 50); K.rect(-bw / 2, -r - 140, bw, 100, PAL.mustard, LW, 50);
+  K.text('SEN DE DÜŞÜN!', 0, -r - 66, 70, INK, 900);
+  K.circ(10, 12, r, INK, 0); K.circ(0, 0, r, PAL.paper, LW);
+  ctx.beginPath(); ctx.moveTo(0, 0); ctx.arc(0, 0, r - 18, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * (left / 5)); ctx.closePath();
+  ctx.fillStyle = hot ? PAL.coral : PAL.mustard; ctx.fill();
+  K.circ(0, 0, r * 0.66, PAL.paper, LW * 0.8);
+  ctx.save(); ctx.scale(pulse, pulse); K.text(String(Math.max(n, 0)), 0, 56, 160, hot ? PAL.red : INK, 900); ctx.restore();
+  K.text('Cevap geliyor…', 0, r + 80, 52, PAL.paper, 800);
+  ctx.restore();
+}
+
+// Sayaç sırasında düşünen bakış: her saniye başka yöne (durağanlık olmasın); p = poz (yerinde değişir)
+export function glance(p, t, t1) {
+  const t0 = t1 - 5;
+  if (t < t0 || t >= t1) return p;
+  const L = [[-0.7, -0.8], [0.6, -0.85], [0, -0.95], [-0.5, -0.4], [0.55, -0.6], [0, -0.3]];
+  const k = Math.min(4, Math.floor(t - t0)), u = ease.state(clamp01((t - t0 - k) / 0.3));
+  const a = L[k], b = L[k + 1];
+  p.head = { ...p.head, look: [lerp(a[0], b[0], u), lerp(a[1], b[1], u)], tilt: (p.head?.tilt || 0) + 6 * Math.sin((t - t0) * 1.3) };
+  return p;
+}

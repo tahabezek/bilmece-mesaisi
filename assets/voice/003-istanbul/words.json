@@ -177,6 +177,49 @@
   ],
   "dur": 1.31
  },
+ "n0": {
+  "key": "54f28ae7fe54",
+  "trimmed": "54f28ae7fe54",
+  "wkey": "54f28ae7fe54",
+  "heard": "Kapı kule.",
+  "words": [
+   {
+    "w": "Kapıkule?",
+    "t0": 0.0,
+    "t1": 0.6
+   }
+  ],
+  "dur": 0.83
+ },
+ "hn": {
+  "key": "f9c7d98d8d8e",
+  "trimmed": "f9c7d98d8d8e",
+  "wkey": "f9c7d98d8d8e",
+  "heard": "O da yanlış necmi.",
+  "words": [
+   {
+    "w": "O",
+    "t0": 0.0,
+    "t1": 0.14
+   },
+   {
+    "w": "da",
+    "t0": 0.14,
+    "t1": 0.28
+   },
+   {
+    "w": "yanlış",
+    "t0": 0.28,
+    "t1": 0.62
+   },
+   {
+    "w": "Necmi!",
+    "t0": 0.62,
+    "t1": 1.1
+   }
+  ],
+  "dur": 1.24
+ },
  "h5": {
   "key": "2d7b875f016d",
   "trimmed": "2d7b875f016d",
@@ -254,6 +297,114 @@
    }
   ],
   "dur": 2.248
+ },
+ "da": {
+  "key": "04c5c72159c1",
+  "trimmed": "04c5c72159c1",
+  "wkey": "04c5c72159c1",
+  "heard": "Haritada her şeyi denedik. Tam arasında derken haritayı kastetmiyor olabilir.",
+  "words": [
+   {
+    "w": "Haritada",
+    "t0": 0.0,
+    "t1": 0.42
+   },
+   {
+    "w": "her",
+    "t0": 0.42,
+    "t1": 0.66
+   },
+   {
+    "w": "şeyi",
+    "t0": 0.66,
+    "t1": 0.88
+   },
+   {
+    "w": "denedik.",
+    "t0": 0.88,
+    "t1": 1.44
+   },
+   {
+    "w": "Tam",
+    "t0": 1.44,
+    "t1": 1.74
+   },
+   {
+    "w": "arasında",
+    "t0": 1.74,
+    "t1": 2.1
+   },
+   {
+    "w": "derken,",
+    "t0": 2.1,
+    "t1": 2.58
+   },
+   {
+    "w": "haritayı",
+    "t0": 2.58,
+    "t1": 3.1
+   },
+   {
+    "w": "kastetmiyor",
+    "t0": 3.1,
+    "t1": 3.62
+   },
+   {
+    "w": "olabilir.",
+    "t0": 3.62,
+    "t1": 3.92
+   }
+  ],
+  "dur": 4.198
+ },
+ "hm": {
+  "key": "f6c7e6f01dd2",
+  "trimmed": "f6c7e6f01dd2",
+  "wkey": "f6c7e6f01dd2",
+  "heard": "Mesai bitiyor Defneciğim. Bir haftalık izinde gidiyor.",
+  "words": [
+   {
+    "w": "Mesai",
+    "t0": 0.0,
+    "t1": 0.52
+   },
+   {
+    "w": "bitiyor",
+    "t0": 0.52,
+    "t1": 0.92
+   },
+   {
+    "w": "Defneciğim.",
+    "t0": 0.92,
+    "t1": 1.48
+   },
+   {
+    "w": "Bir",
+    "t0": 1.48,
+    "t1": 2.06
+   },
+   {
+    "w": "haftalık",
+    "t0": 2.06,
+    "t1": 2.58
+   },
+   {
+    "w": "izin",
+    "t0": 2.58,
+    "t1": 2.88
+   },
+   {
+    "w": "de",
+    "t0": 2.88,
+    "t1": 2.88
+   },
+   {
+    "w": "gidiyor.",
+    "t0": 2.88,
+    "t1": 3.22
+   }
+  ],
+  "dur": 3.408
  },
  "n1": {
   "key": "c4f357d7e320",

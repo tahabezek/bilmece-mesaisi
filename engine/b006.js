@@ -4,7 +4,7 @@ import { ease, seg, spring, clamp01, lerp } from './core.js';
 import { INK, CARDS } from './cast.js';
 import { PAL, LW, room, desk, riddleCard, clock } from './office.js';
 import { at } from './zaman.js';
-import { UI, camAt, applyCam, toScreen, poseAt, charBase, drawChar, talkAt, captionAt, caption, endCard, triesCol, thinkCounter } from './sahne.js';
+import { UI, camAt, applyCam, toScreen, poseAt, charBase, drawChar, talkAt, captionAt, caption, endCard, triesCol, countdown, glance } from './sahne.js';
 
 const NAME = ['HİKMET', 'KALAYCIOĞLU'];
 const EX = [['ALİ ER', 5, 10], ['AYŞE AK', 6, 12], ['MUSTAFA KAYA', 11, 22]];
@@ -13,7 +13,7 @@ export function build(ep, tl) {
   const T = e => at(tl, e), L = tl.L;
   const tm = {
     clap: L.d1.t0, chips: [T('h2b:0'), T('h2b:4'), T('h2b:8')], me: T('h2c:0'), slice: T('h3:1'),
-    think0: T('h3>'), clue: T('n1'), tries: [T('d2:0'), T('d2:3')], angry: T('h4'), hatOff: T('h4:2'),
+    think0: T('h3>'), clue: T('n1'), cd: T(ep.countdown), hb: T('hb'), da: T('da'), tries: [T('d2:0'), T('d2:3')], angry: T('h4'), hatOff: T('h4:2'),
     write: [T('n1:4'), T('n1:7')], seventeen: T('n1:8'),
     buldum: T('d3'), proof: T('d3:1') - 0.04,
     harf: T('d4:2'), iki: T('d4:4'), hikmet: T('d4:6'), onyedi: T('d4:8'), otuzdort: T('d4:11'),
@@ -25,6 +25,8 @@ export function build(ep, tl) {
     [L.h2a.t0, 1.12, 520, 900],
     [tm.think0 + 0.1, 1.3, 260, 1060],
     [tm.angry - 0.05, 1.32, 520, 1000],
+    [tm.da - 0.1, 1.3, 260, 1060],
+    [tm.cd - 5, 1.1, 420, 1000],
     [tm.clue - 0.1, 1.35, 1000, 1060],
     [tm.write[0], 1.42, 1010, 1050],
     [tm.seventeen, 1.5, 1030, 1040],
@@ -51,6 +53,7 @@ export function build(ep, tl) {
     [L.h2a.t0 + 0.2, { expr: 'notr', head: { tilt: -2, look: [0.7, -0.5] } }],
     [tm.think0 + 0.1, { expr: { brow: 0.02, browTilt: 0.3, eye: 0.55, pupil: 1, curve: -0.05, open: 0, w: 0.85 }, head: { tilt: -8, look: [0.9, -0.2] }, armR: { sh: 18, el: -168 } }],
     [tm.angry, { expr: 'saskin', blink: 0, head: { tilt: 6, look: [0.9, -0.1] }, armR: { sh: 20, el: -60 } }, 0.2, ease.enter],
+    [tm.da, { blink: null, expr: { brow: 0.05, browTilt: 0.25, eye: 0.9, pupil: 1, curve: -0.1, open: 0, w: 0.8 }, head: { tilt: -8, look: [0.6, -0.8] }, armR: { sh: 18, el: -168 } }, 0.35],
     [tm.clue + 0.3, { blink: null, expr: 'notr', head: { tilt: -4, look: [0.9, 0] } }, 0.4],
     [tm.seventeen, { expr: 'saskin', blink: 0 }, 0.2],
     [tm.buldum - 0.05, { y: 1430, blink: null, expr: 'mutlu', head: { tilt: 6, look: [0, -0.3] }, armR: { sh: 165, el: -10 }, armL: { sh: 165, el: -10 } }, 0.25, ease.enter],
@@ -133,7 +136,7 @@ export function draw(K, t, ep, tl, S) {
     hat(K, h.head[0] + crook * 40, h.head[1] - 0.5 * hp.s, (hp.head.tilt || 0) * Math.PI / 180 * 0.6 + crook, hp.s);
   }
   // Defne
-  const dp = poseAt(CARDS.defne, S.defBase, S.def, t); dp.talk = talkAt(tl, 'defne', t);
+  const dp = glance(poseAt(CARDS.defne, S.defBase, S.def, t), t, tm.cd); dp.talk = talkAt(tl, 'defne', t);
   const ca = t - tm.clap;
   if (ca >= 0 && ca < 1.4) { const k = Math.abs(Math.sin(ca * Math.PI * 3.2)); dp.armR = { sh: 30 + 25 * k, el: -150 }; dp.armL = { sh: 30 + 25 * k, el: -150 }; }
   const d = happy ? null : drawChar(ctx, 'defne', dp, t);
@@ -157,8 +160,8 @@ export function draw(K, t, ep, tl, S) {
     K.text(nm, 0, -12, 28, '#6B6355', 900); K.text(String(age), 0, 44, 52, PAL.coral, 900);
     ctx.restore();
   });
-  triesCol(K, t, [{ s: '55?', t0: tm.tries[0], strike: tm.angry + 0.15 }, { s: '60?', t0: tm.tries[1], strike: tm.angry + 0.15 }], { x: 340, y: 625, gap: 78, size: 58, fadeAt: tm.clue - 0.45 });
-  thinkCounter(K, t, tm.clue, { x: 150, y: 640, r: 72 });
+  triesCol(K, t, [{ s: '55?', t0: tm.tries[0], strike: tm.angry + 0.15 }, { s: '60?', t0: tm.tries[1], strike: tm.angry + 0.15 }], { x: 340, y: 625, gap: 78, size: 58, fadeAt: tm.da - 0.2 });
+  countdown(K, t, tm.cd, { top: 300 + cardH + 20 });
   // tebrik kartı: AD SOYAD kutuları yetmez
   if (t >= tm.clue - 0.1 && t < tm.buldum) {
     const u = spring(t - (tm.clue - 0.1), UI[0], UI[1]);

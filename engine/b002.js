@@ -4,12 +4,12 @@ import { ease, seg, spring, clamp01, lerp } from './core.js';
 import { INK, CARDS } from './cast.js';
 import { PAL, LW, room, calendar, door, sign, riddleCard, counter, plant } from './office.js';
 import { at } from './zaman.js';
-import { UI, BIG, camAt, applyCam, toScreen, poseAt, charBase, drawChar, talkAt, captionAt, caption, endCard } from './sahne.js';
+import { UI, BIG, camAt, applyCam, toScreen, poseAt, charBase, drawChar, talkAt, captionAt, caption, endCard, countdown, glance } from './sahne.js';
 
 export function build(ep, tl) {
   const T = e => at(tl, e), L = tl.L;
   const tm = {
-    hits: [0.03, 0.27], hammerDown: T('h2'), sat: T('h3:1'), think0: T('h3>'), cnt0: T('g1') - 5.9, cnt1: T('g1') - 0.9,
+    hits: [0.03, 0.27], hammerDown: T('h2'), sat: T('h3:1'), think0: T('h3>'), cd: T(ep.countdown), n0: T('n0'), hc: T('hc'),
     panels: [T('d2:0'), T('d2:2')], checks: [T('d2:1'), T('d2:5')],
     lift: T('g1') - 0.9, genc0: T('g1') - 0.5, genc1: T('g1') + 0.25, point: T('g1:5'), shrug: T('g1:10'), aha: T('g1:13'),
     buldum: T('d3'), iskur: T('d4') - 0.05, slam: T('d4:5'), kimse: T('d4:7'),
@@ -23,6 +23,9 @@ export function build(ep, tl) {
     [T('h2:9'), 1.1, 640, 1020],
     [tm.sat - 0.25, 1.6, 330, 820],
     [tm.think0 + 0.1, 1.3, 270, 1230],
+    [tm.n0 - 0.4, 1.02, 250, 1060],
+    [tm.hc - 0.1, 1.15, 700, 1000],
+    [tm.cd - 5, 1.06, 450, 1040],
     [tm.lift, 1.0, 790, 1000],
     [tm.point, 1.18, 840, 980],
     [tm.buldum, 1.28, 230, 1150, 'cut'],
@@ -53,6 +56,8 @@ export function build(ep, tl) {
     [tm.think0 + 0.1, { blink: null, expr: { brow: 0.05, browTilt: 0.25, eye: 0.9, pupil: 1, curve: -0.1, open: 0, w: 0.8 }, head: { tilt: -10, look: [0.5, -0.9] }, armL: { sh: 18, el: -168 } }],
     [tm.checks[0], { head: { tilt: 8, look: [0.6, -0.7] } }, 0.4],
     [tm.checks[1], { expr: 'yorgun', head: { tilt: -6, look: [0.3, 0.3] }, armL: { sh: 12, el: -10 } }, 0.5],
+    [tm.n0, { expr: 'notr', head: { tilt: 4, look: [-0.9, 0] }, armL: { sh: 12, el: -10 } }, 0.3],
+    [tm.hc, { head: { tilt: -4, look: [0.9, -0.1] } }, 0.3],
     [tm.lift + 0.2, { expr: 'notr', head: { tilt: 0, look: [0.9, 0] } }, 0.3],
     [tm.aha, { expr: 'saskin', head: { tilt: -6, look: [0.9, -0.2] }, blink: 0 }, 0.25, ease.enter],
     [tm.buldum - 0.05, { y: 1530, blink: null, expr: 'mutlu', head: { tilt: 6, look: [0, -0.3] }, armR: { sh: 165, el: -10 }, armL: { sh: 165, el: -10 }, props: {} }, 0.25, ease.enter],
@@ -161,18 +166,27 @@ export function draw(K, t, ep, tl, S) {
     ctx.save(); ctx.translate(h.handL[0], h.handL[1]); ctx.rotate(t < 0.55 ? 0.45 : -0.9); K.rect(-9, -90, 18, 104, PAL.woodDark, LW, 6); K.rect(-46, -128, 92, 40, '#5A615E', LW, 6); ctx.restore();
   }
   if (off >= 0.5 && h) sign(K, sx, sy, 340, 150, ['İŞİ OLMAYAN', 'GİREMEZ'], { rot: srot, fill: PAL.red, color: PAL.paper, nail: false });
+  // Necmi Abi: "Belediye olmasın?" için soldan dosyasıyla gelir
+  let nc = null;
+  if (t >= tm.n0 - 1.1 && t < tm.buldum) {
+    const u = ease.state(seg(t, tm.n0 - 1.1, 1.0));
+    const np = charBase('necmi', { x: lerp(-420, -110, u), y: 1600, s: 235, view: 'side', facing: 1, expr: 'notr', head: { tilt: -4, look: [0.6, 0] }, props: { R: 'folder' }, armR: { sh: 30, el: 60 } });
+    if (u > 0 && u < 1) { const a = (np.x + 420) / 110 * Math.PI * 2; np.legL = { hip: Math.sin(a) * 18, knee: 6 + Math.max(0, Math.sin(a + 1.7)) * 28 }; np.legR = { hip: Math.sin(a + Math.PI) * 18, knee: 6 + Math.max(0, Math.sin(a + Math.PI + 1.7)) * 28 }; }
+    np.talk = talkAt(tl, 'necmi', t);
+    nc = drawChar(ctx, 'necmi', np, t);
+  }
   // Defne
-  const dp = poseAt(CARDS.defne, S.defBase, S.def, t); dp.talk = talkAt(tl, 'defne', t);
+  const dp = glance(poseAt(CARDS.defne, S.defBase, S.def, t), t, tm.cd); dp.talk = talkAt(tl, 'defne', t);
   const offL = toScreen(cam, [dp.x, dp.y])[0] < -60 * cam.zoom;
   const d = (t >= tm.defeat && t < tm.cta) || offL ? null : drawChar(ctx, 'defne', dp, t);
   ctx.restore();
 
   // ── ekran katmanı ──
   if (t >= tm.defeat) return caption(K, captionAt(tl, t), { y: 300, head: toScreen(cam, t >= tm.cta ? d.head : h.head) });
-  riddleCard(K, 70, 300, 940, ep.card, ep.num, { size: 60 });
+  const cardH = riddleCard(K, 70, 300, 940, ep.card, ep.num, { size: 60 });
   // hayal balonları: hastane, banka; "asabilir"de yeşil tik
-  if (t >= tm.panels[0] - 0.1 && t < tm.lift + 0.4) {
-    const out = 1 - ease.exit(seg(t, tm.lift, 0.3));
+  if (t >= tm.panels[0] - 0.1 && t < tm.n0 + 0.2) {
+    const out = 1 - ease.exit(seg(t, tm.n0 - 0.2, 0.3));
     ['hastane', 'banka'].forEach((k, i) => {
       const a = tm.panels[i] - 0.04; if (t < a) return;
       thought(K, k, 790, 690 + i * 260, spring(t - a, UI[0], UI[1]) * out, spring(t - (tm.checks[i] - 0.04), UI[0], UI[1]));
@@ -180,12 +194,9 @@ export function draw(K, t, ep, tl, S) {
     // düşünce kabarcıkları balondan Defne'ye
     if (d) { const hd = toScreen(cam, d.head); for (let j = 0; j < 3; j++) { const u = clamp01((t - tm.panels[0] - j * 0.08) / 0.2) * out; if (u > 0) K.circ(lerp(hd[0] + 120, 660, j / 3), lerp(hd[1] - 120, 740, j / 3), (10 + j * 6) * u, '#FFFFFF', LW * 0.6); } }
   }
-  if (t >= tm.cnt0 - 0.2 && t < tm.cnt1 + 0.6) {
-    const u = spring(t - (tm.cnt0 - 0.2), UI[0], UI[1]), out = 1 - ease.exit(seg(t, tm.cnt1 + 0.25, 0.3)), left = Math.max(0, tm.cnt1 - t);
-    ctx.save(); ctx.translate(190, 1110); ctx.scale(u * out, u * out); counter(K, 0, 0, 92, left / 5, String(Math.ceil(left - 1e-6))); ctx.restore();
-  }
+  countdown(K, t, tm.cd, { top: 300 + cardH + 20 });
   const cap = captionAt(tl, t), who = cap?.line.who;
-  const head = who === 'hikmet' ? h?.head : who === 'defne' ? d?.head : who === 'genc' ? g?.head : null;
+  const head = who === 'hikmet' ? h?.head : who === 'defne' ? d?.head : who === 'genc' ? g?.head : who === 'necmi' ? nc?.head : null;
   caption(K, cap, { y: 1240, head: head && toScreen(cam, head) });
 }
 

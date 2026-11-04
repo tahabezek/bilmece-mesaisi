@@ -35,15 +35,40 @@
     "text": "Bilemezsen cumartesi mesaiye gelirsin."
    },
    {
+    "id": "da",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Asamayacak… Yani asarsa kendi kapısını kendi kapatmış olacak.",
+    "tts": "Asamayacak. Yani asarsa, kendi kapısını kendi kapatmış olacak."
+   },
+   {
     "id": "d2",
     "who": "defne",
     "gap": 0.5,
     "text": "Hastane? Asabilir. Banka? O da asabilir…"
    },
    {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.6,
+    "text": "Belediye olmasın? Oraya herkes bir iş için gider."
+   },
+   {
+    "id": "dr",
+    "who": "defne",
+    "gap": 0.3,
+    "text": "Belediye de asabilir Necmi Abi."
+   },
+   {
+    "id": "hc",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Cumartesi kahvaltıyı ofiste yaparız artık Defneciğim."
+   },
+   {
     "id": "g1",
     "who": "genc",
-    "gap": 0.9,
+    "gap": 5.6,
     "text": "Kusura bakmayın, iş arıyorum. Kapıda “işi olmayan giremez” yazıyor ama ben tam da işim olmadığı için geldim.",
     "tts": "Kusura bakmayın, iş arıyorum. Kapıda işi olmayan giremez yazıyor, ama ben tam da işim olmadığı için geldim."
    },
@@ -86,7 +111,8 @@
    "d3"
   ],
   "hit": "d3",
-  "end": "d5>"
+  "end": "d5>",
+  "style": "yumusak"
  },
  "sfx": [
   [
@@ -123,5 +149,6 @@
   "#bulmaca",
   "#ofis"
  ],
- "coverAt": 0
+ "coverAt": 0,
+ "countdown": "g1-0.3"
 }

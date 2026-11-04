@@ -70,6 +70,14 @@ function pad(a, b, notes) {   // hafif akortsuz sinüs akoru, alçak geçiren s�
     lp += al * (v - lp); addM(n, lp * e * 0.05, lp * e * 0.047);
   }
 }
+function keys(t0, midi, amp, len = 2) {   // yumuşak elektrik piyano: sinüs + oktav, yavaş sönüm, hafif tremolo
+  const f = NOTE(midi), n0 = Math.round(t0 * SR), L = Math.round(len * SR);
+  for (let n = 0; n < L; n++) {
+    const t = n / SR, env = Math.min(1, t / 0.02) * Math.exp(-t * 1.1) * Math.min(1, (L - n) / (0.25 * SR));
+    const v = (Math.sin(2 * Math.PI * f * t) + 0.22 * Math.sin(4 * Math.PI * f * t) * Math.exp(-t * 3)) * env * amp * (1 + 0.07 * Math.sin(2 * Math.PI * 4.5 * t));
+    addM(n0 + n, v * 0.96, v);
+  }
+}
 function tick(t0, f, amp) { for (let n = 0; n < 0.05 * SR; n++) { const t = n / SR; addM(Math.round(t0 * SR) + n, (Math.sin(2 * Math.PI * f * t) * Math.exp(-t * 110) + noise() * Math.exp(-t * 400) * 0.6) * amp); } }
 
 // Re majör: D – Bm – G – A. Bas yürüyüşü ve marimba figürü akor başına.
@@ -84,7 +92,22 @@ const [th0, th1] = span('think'), endT = mus.end ? T(mus.end) : D - 2;
 const inThink = t => t >= th0 && t < th1;
 // son akor: konuşma bittikten sonraki ilk ölçü başına oturur ve sona kadar çınlar
 const lastBar = Math.ceil((endT + 0.05) / bar) * bar;
-for (let b = 0; b * beat < D; b++) {
+// üslup: 'marimba' (ilk sürüm), 'yumusak' (davulsuz klavye yatağı), 'yok' (yalnız ortam sesi). MUZIK ortam değişkeni geçersiz kılar.
+const STYLE = process.env.MUZIK || mus.style || 'marimba';
+if (STYLE === 'yumusak') {
+  for (let b = 0; b * bar < D; b++) {
+    const t = b * bar, c = CH[b % 4];
+    if (t >= lastBar) break;
+    const after = mus.hit && t >= T(mus.hit);
+    for (const m of [c.bass[0] + 24, c.bass[2] + 24, c.bass[1] + 24]) keys(t, m, after ? 0.045 : 0.038, bar + 0.4);
+    keys(t + bar / 2, c.bass[1] + 36, 0.019, bar / 2 + 0.3);
+    keys(t, c.bass[0], 0.095, bar);   // derin bas
+  }
+} else if (STYLE === 'yok') {
+  let a = 0, b2 = 0;   // ofis ortam sesi: çok kısık, kahverengi gürültü
+  for (let n = 0; n < N; n++) { a += 0.02 * (noise() - a); b2 += 0.05 * (a - b2); addM(n, b2 * 0.05, b2 * 0.048); }
+}
+for (let b = 0; STYLE === 'marimba' && b * beat < D; b++) {
   const t = b * beat, c = CH[Math.floor(b / 4) % 4], k = b % 4;
   if (t >= lastBar) break;
   if (inThink(t)) {   // düşünme: yumuşak akor yatağı (müzik hiç susmasın) + bas 1. ve 3. vuruşta + saat tik-tak
@@ -105,7 +128,10 @@ for (let b = 0; b * beat < D; b++) {
   }
 }
 // kapanış: Re majör akoru (marimba tremolo + bas)
-if (lastBar < D) {
+if (lastBar < D && STYLE === 'yumusak') {
+  for (const m of [62, 66, 69, 74]) keys(lastBar, m, 0.03, D - lastBar);
+  keys(lastBar, 38, 0.07, D - lastBar);
+} else if (lastBar < D && STYLE === 'marimba') {
   pluck(lastBar, 38, 0.38, D - lastBar); pluck(lastBar, 26, 0.3, D - lastBar);
   for (let t = lastBar, i = 0; t < D - 0.3; t += 1 / 14, i++) marimba(t, [74, 78, 81, 86][i % 4], 0.045 * Math.max(0.2, 1 - (t - lastBar) / (D - lastBar)), (i % 2 ? 0.3 : -0.3));
 }
@@ -139,6 +165,13 @@ const FX = {
 for (const [k, e] of ep.sfx || []) {
   if (Array.isArray(e)) FX[k](e.map(T)); else FX[k](T(e));
 }
+if (ep.countdown) {
+  const c1 = T(ep.countdown);
+  for (let k = 5; k >= 1; k--) {
+    const t0 = c1 - k, f = k <= 3 ? 2700 : 2000, amp = k <= 3 ? 0.3 : 0.24;
+    for (let n = 0; n < 0.07 * SR; n++) { const t = n / SR; addF(Math.round(t0 * SR) + n, (Math.sin(2 * Math.PI * f * t) * Math.exp(-t * 70) + noise() * Math.exp(-t * 350) * 0.5) * amp); }
+  }
+}
 // tek riser: ipucu repliği boyunca yükselir, "Buldum!"un üstünde biter
 if (mus.riser) {
   const [a, b] = span('riser'); let lp = 0, ph = 0; const n0 = Math.round(a * SR), n1 = Math.round(b * SR);
@@ -148,7 +181,8 @@ if (mus.riser) {
 if (mus.hit) {
   const t0 = T(mus.hit), n0 = Math.round((t0 - pre) * SR); let ph = 0, lp = 0;
   for (let n = 0; n < 1.6 * SR; n++) { const t = n / SR, f = 36 + 60 * Math.exp(-t * 7); ph += 2 * Math.PI * f / SR; lp += 0.5 * (noise() - lp); addF(n0 + n, (Math.sin(ph) * Math.exp(-t * 3) * 0.55 + (noise() - lp) * Math.exp(-t * 3.2) * 0.12)); }
-  for (const m of [62, 66, 69, 74]) marimba(t0 - pre, m + 12, 0.08);
+  if (STYLE === 'marimba') for (const m of [62, 66, 69, 74]) marimba(t0 - pre, m + 12, 0.08);
+  else for (const m of [62, 66, 69, 74]) keys(t0 - pre, m + 12, 0.05, 1.6);
 }
 
 // ── miks: müzik konuşmanın altında yaklaşık −10 dB kısılır (yan zincir), efektler sabit ──
@@ -158,7 +192,7 @@ const fadeOut = Math.round(0.35 * SR);
 let sv = 1e-12, sm = 1e-12, ns = 0;
 for (let i = 0; i < N; i++) {
   const x = Math.abs(VO[i]); env += (x > env ? att : rel) * (x - env);
-  const duck = 0.75 * (1 - 0.68 * Math.min(1, env * 7)), tail = Math.min(1, (N - i) / fadeOut);
+  const duck = STYLE === 'marimba' ? 0.75 * (1 - 0.68 * Math.min(1, env * 7)) : 0.7 * (1 - 0.8 * Math.min(1, env * 7)), tail = Math.min(1, (N - i) / fadeOut);
   L[i] = (VO[i] + Ml[i] * duck + Fl[i]) * tail; R[i] = (VO[i] + Mr[i] * duck + Fr[i]) * tail;
   if (env > 0.05) { sv += VO[i] * VO[i]; sm += (Ml[i] * duck) ** 2; ns++; }
 }
@@ -176,7 +210,7 @@ const IN = ['-v', 'info', '-f', 'f32le', '-ar', String(SR), '-ac', '2', '-i', '-
 const m0 = loud(IN, raw);
 const gain = -14 - m0.I;
 fs.mkdirSync('out', { recursive: true });
-const outFile = path.join('out', `ses_${ep.id}.mp3`), wavFile = path.join(vdir, 'mix.wav');
+const outFile = path.join('out', process.env.MUZIK ? `ses_${ep.id}_${process.env.MUZIK}.mp3` : `ses_${ep.id}.mp3`), wavFile = path.join(vdir, 'mix.wav');
 const chain = `volume=${gain.toFixed(2)}dB,alimiter=limit=0.82:attack=2:release=60:level=false,alimiter=limit=0.84:attack=1:release=40:level=false`;
 let r = spawnSync(ffmpegPath, ['-v', 'error', '-f', 'f32le', '-ar', String(SR), '-ac', '2', '-i', '-', '-af', chain, '-y', wavFile], { input: raw, maxBuffer: 1 << 28 });
 if (r.status) throw new Error(r.stderr.toString());

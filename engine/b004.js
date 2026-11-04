@@ -4,7 +4,7 @@ import { ease, seg, spring, clamp01, lerp } from './core.js';
 import { INK, CARDS } from './cast.js';
 import { PAL, LW, room, windowIst, desk, monitor, riddleCard, clock } from './office.js';
 import { at } from './zaman.js';
-import { UI, camAt, applyCam, toScreen, poseAt, charBase, drawChar, talkAt, captionAt, caption, endCard, triesCol, thinkCounter } from './sahne.js';
+import { UI, camAt, applyCam, toScreen, poseAt, charBase, drawChar, talkAt, captionAt, caption, endCard, triesCol, countdown, glance } from './sahne.js';
 
 const BAGS = ['#B5523B', '#2F7F7A', '#D19A2E', '#7E5A9A', '#5E9A4E'];
 const ROWS = [['AL', -5], ['SAT', 6], ['AL', -7], ['SAT', 8], ['AL', -9], ['SAT', 10]];
@@ -13,7 +13,7 @@ export function build(ep, tl) {
   const T = e => at(tl, e), L = tl.L;
   const tm = {
     chips: [[T('h2a:0'), T('h2a:2')], [T('h2b:0'), T('h2b:3')], [T('h2c:0'), T('h2c:2')]],
-    wallet: T('h2d:4'), offer: T('h3:2'), think0: T('h3>'), clue: T('n1'),
+    wallet: T('h2d:4'), offer: T('h3:2'), think0: T('h3>'), clue: T('n1'), cd: T(ep.countdown), dq: T('dq'), hq: T('hq'),
     tries: [T('d2:2'), T('d2:10')], bravo: T('h4'), ledgerTap: T('n1:5'),
     buldum: T('d3'), proof: T('d3:2') + 0.25,
     rows: [T('d4a:0'), T('d4a:2'), T('d4b:0'), T('d4b:2'), T('d4c:0'), T('d4c:2')], total: T('d4c:4'),
@@ -25,7 +25,11 @@ export function build(ep, tl) {
     [L.h2a.t0, 1.15, 560, 990],
     [L.h2d.t0, 1.22, 520, 975],
     [tm.think0 + 0.1, 1.25, 760, 1080],
+    [L.d2.t0, 1.18, 740, 1060],
     [tm.bravo, 1.22, 520, 1000],
+    [tm.dq, 1.25, 760, 1080],
+    [tm.hq, 1.22, 520, 1000],
+    [tm.cd - 5, 1.08, 600, 1020],
     [tm.clue - 0.1, 1.35, 230, 1060],
     [tm.buldum, 1.3, 760, 1080, 'cut'],
     [tm.proof, 1, 540, 960, 'cut'],
@@ -103,7 +107,7 @@ export function draw(K, t, ep, tl, S) {
   windowIst(K, 330, 620, 260, 220, t);
   const n = necmiDesk(K, t, tl, S);
   // Defne (masasında)
-  const dp = poseAt(CARDS.defne, S.defBase, S.def, t); dp.talk = talkAt(tl, 'defne', t);
+  const dp = glance(poseAt(CARDS.defne, S.defBase, S.def, t), t, tm.cd); dp.talk = talkAt(tl, 'defne', t);
   const hideD = t >= tm.defeat && t < tm.cta;
   const d = hideD ? null : drawChar(ctx, 'defne', dp, t);
   desk(K, 560, 1340, 560);
@@ -140,7 +144,7 @@ export function draw(K, t, ep, tl, S) {
   });
   // Defne'nin yanlış hesabı
   triesCol(K, t, [{ s: '+1 −1 +1 −1 +1', t0: tm.tries[0] }, { s: '= 1 KÂR?', t0: tm.tries[1] }], { x: 500, y: 600, gap: 74, size: 52, fadeAt: tm.bravo - 0.1 });
-  thinkCounter(K, t, tm.bravo, { x: 850, y: 620, r: 72 });
+  countdown(K, t, tm.cd, { top: 300 + cardH + 20 });
   const cap = captionAt(tl, t), who = cap?.line.who;
   const head = who === 'hikmet' ? h?.head : who === 'defne' ? d?.head : who === 'necmi' ? n.head : null;
   caption(K, cap, { y: 1250, head: head && toScreen(cam, head) });

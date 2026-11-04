@@ -53,6 +53,18 @@
     "text": "Hayır, o da yanlış."
    },
    {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.4,
+    "text": "Kapıkule?"
+   },
+   {
+    "id": "hn",
+    "who": "hikmet",
+    "gap": 0.2,
+    "text": "O da yanlış Necmi!"
+   },
+   {
     "id": "h5",
     "who": "hikmet",
     "gap": 0.4,
@@ -65,9 +77,22 @@
     "text": "Edirne mi? Yok yok, Edirne bizim."
    },
    {
+    "id": "da",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Haritada her şeyi denedik. \"Tam arasında\" derken haritayı kastetmiyor olabilir…",
+    "tts": "Haritada her şeyi denedik. Tam arasında derken, haritayı kastetmiyor olabilir."
+   },
+   {
+    "id": "hm",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Mesai bitiyor Defneciğim. Bir haftalık izin de gidiyor."
+   },
+   {
     "id": "n1",
     "who": "necmi",
-    "gap": 0.8,
+    "gap": 5.6,
     "text": "Bu makine boşluk koymuyor ya!"
    },
    {
@@ -108,7 +133,8 @@
    "d5"
   ],
   "hit": "d5",
-  "end": "d7>"
+  "end": "d7>",
+  "style": "yumusak"
  },
  "sfx": [
   [
@@ -149,6 +175,10 @@
   [
    "womp",
    "d6>+0.15"
+  ],
+  [
+   "buzz",
+   "hn:3"
   ]
  ],
  "slug": "istanbul",
@@ -160,5 +190,6 @@
   "#bulmaca",
   "#ofis"
  ],
- "coverAt": 0
+ "coverAt": 0,
+ "countdown": "n1-0.85"
 }

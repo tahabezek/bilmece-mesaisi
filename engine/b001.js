@@ -4,14 +4,14 @@ import { ease, seg, spring, clamp01, lerp } from './core.js';
 import { INK } from './cast.js';
 import { PAL, LW, room, windowIst, clock, desk, monitor, riddleCard, counter, teaGlass } from './office.js';
 import { at } from './zaman.js';
-import { UI, BIG, camAt, applyCam, toScreen, poseAt, charBase, drawChar, talkAt, captionAt, caption, icon, brush, endCard } from './sahne.js';
+import { UI, BIG, camAt, applyCam, toScreen, poseAt, charBase, drawChar, talkAt, captionAt, caption, icon, brush, endCard, countdown, glance } from './sahne.js';
 import { CARDS } from './cast.js';
 
 export function build(ep, tl) {
   const T = e => at(tl, e), L = tl.L;
   const tm = {
     icons: [T('h2a:7'), T('h2b:4'), T('h2c:5'), T('h2d:6')],
-    clock: T('h3:3'), think0: T('h3>'), cnt0: T('d2'), cnt1: T('d2') + 5,
+    clock: T('hs') - 0.9, think0: T('h3>'), cd: T(ep.countdown), hs: T('hs'), da2: T('da2'),
     tries: [T('d2:0'), T('d2:1'), T('d2:5'), T('d2:6')], strike: [T('d2:4'), T('d2:8')],
     necmiIn: T('n1') - 0.5, necmiStop: T('n1') + 0.9, brushUp: T('n1:5'),
     buldum: T('d3'), ladder: T('d3:1') - 0.04,
@@ -27,6 +27,10 @@ export function build(ep, tl) {
     [L.h2c.t0, 1.12, 610, 945],
     [L.h3.t0 - 0.1, 1.0, 520, 960],
     [tm.think0 + 0.2, 1.3, 350, 1060],
+    [L.d2.t0, 1.22, 380, 1040],
+    [tm.hs - 0.95, 1.0, 500, 960],
+    [tm.da2, 1.28, 360, 1060],
+    [tm.cd - 5, 1.1, 430, 1010],
     [tm.necmiIn, 1.02, 370, 1030],
     [tm.buldum, 1.22, 470, 1040, 'cut'],
     [tm.ladder, 1, 540, 960, 'cut'],
@@ -63,6 +67,8 @@ export function build(ep, tl) {
     [tm.think0 + 0.1, { expr: { brow: 0.05, browTilt: 0.25, eye: 0.9, pupil: 1, curve: -0.1, open: 0, w: 0.8 }, head: { tilt: -10, look: [-0.4, -0.9] }, armR: { sh: 18, el: -168 }, armL: { sh: 22, el: -120 } }],
     [tm.strike[0], { head: { tilt: 8, look: [0.4, -0.9] } }, 0.5],
     [tm.strike[1], { expr: 'yorgun', head: { tilt: -4, look: [0, 0.4] }, armR: { sh: 25, el: -150 }, armL: { sh: 25, el: -150 } }, 0.5],
+    [tm.hs - 0.9, { expr: 'saskin', head: { tilt: -6, look: [-0.9, -0.6] } }, 0.3],
+    [tm.da2, { expr: { brow: 0.05, browTilt: 0.25, eye: 0.9, pupil: 1, curve: -0.1, open: 0, w: 0.8 }, head: { tilt: -10, look: [-0.4, -0.9] }, armR: { sh: 18, el: -168 }, armL: { sh: 22, el: -120 } }],
     [tm.necmiIn + 0.5, { expr: 'notr', head: { tilt: -6, look: [-0.9, 0] }, armR: { sh: 20, el: -60 }, armL: { sh: 20, el: -60 } }],
     [tm.brushUp, { expr: 'saskin', head: { tilt: -2, look: [-0.9, -0.2] } }, 0.2],
     [tm.buldum - 0.05, { y: DF.y - 120, expr: 'mutlu', head: { tilt: 6, look: [0, -0.3] }, armR: { sh: 165, el: -10 }, armL: { sh: 165, el: -10 } }, 0.25, ease.enter],
@@ -103,7 +109,7 @@ export function draw(K, t, ep, tl, S) {
   windowIst(K, 640, 660, 300, 250, t);
   // saat: "erken çıkarsın"da akrep yelkovan 17:00'ye koşar
   const cu = ease.state(seg(t, tm.clock - 0.1, 0.9));
-  clock(K, 190, 770, 74, 9 + cu * 8, 5 - cu * 5, t);
+  clock(K, 190, 770, 74, 12 + cu * 4, 0, t);   // zaman geçiyor: öğlen → dört
 
   // Necmi Abi: soldan yürüyerek girer, "badana"da fırçayı kaldırır
   let nec = null;
@@ -112,7 +118,7 @@ export function draw(K, t, ep, tl, S) {
   const hp = poseAt(CARDS.hikmet, S.hikBase, S.hik, t); hp.talk = talkAt(tl, 'hikmet', t);
   const h = t >= tm.cta ? null : drawChar(ctx, 'hikmet', hp, t);
   // Defne
-  const dp = poseAt(CARDS.defne, S.defBase, S.def, t); dp.talk = talkAt(tl, 'defne', t);
+  const dp = glance(poseAt(CARDS.defne, S.defBase, S.def, t), t, tm.cd); dp.talk = talkAt(tl, 'defne', t);
   if (t >= tm.cta - 0.2) { dp.head = { ...dp.head, look: [0, 0] }; }
   const d = t >= tm.defeat && t < tm.cta ? null : drawChar(ctx, 'defne', dp, t);
   desk(K, 40, 1340, 1000);
@@ -122,8 +128,8 @@ export function draw(K, t, ep, tl, S) {
 
   // ── ekran katmanı ──
   // düşünme: denenen kelimeler Defne'nin solunda alt alta belirir, elenenlerin üstü çizilir
-  if (t >= tm.tries[0] && t < tm.necmiIn + 0.6) {
-    const names = ['KASAP', 'ASAP?', 'TERZİ', 'ERZİ?'], fade = 1 - clamp01((t - tm.necmiIn) / 0.4);
+  if (t >= tm.tries[0] && t < tm.hs + 0.4) {
+    const names = ['KASAP', 'ASAP?', 'TERZİ', 'ERZİ?'], fade = 1 - clamp01((t - tm.hs + 0.6) / 0.4);
     names.forEach((s, i) => {
       const a = tm.tries[i] - 0.04; if (t < a) return;
       const u = spring(t - a, UI[0], UI[1]);
@@ -148,14 +154,7 @@ export function draw(K, t, ep, tl, S) {
     ctx.restore();
     if (i < 3) { ctx.globalAlpha = clamp01((t - a) / 0.2) * iconOut; K.text('›', x + 110, y + 18, 60, PAL.paper, 900); ctx.globalAlpha = 1; }
   });
-  // sayaç: 5 sn
-  if (t >= tm.cnt0 - 0.2 && t < tm.cnt1 + 0.6) {
-    const u = spring(t - (tm.cnt0 - 0.2), UI[0], UI[1]), out = 1 - ease.exit(seg(t, tm.cnt1 + 0.25, 0.3));
-    const left = Math.max(0, tm.cnt1 - t);
-    ctx.save(); ctx.translate(860, 1120); ctx.scale(u * out, u * out);
-    counter(K, 0, 0, 92, left / 5, String(Math.ceil(left - 1e-6)));
-    ctx.restore();
-  }
+  countdown(K, t, tm.cd, { top: 300 + cardH + 20 });
   // konuşma balonu
   const cap = captionAt(tl, t), who = cap?.line.who;
   const head = who === 'hikmet' ? h?.head : who === 'defne' ? d?.head : who === 'necmi' && nec ? nec.head : null;
