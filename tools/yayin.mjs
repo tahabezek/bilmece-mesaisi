@@ -148,6 +148,7 @@ async function main() {
   if (args.has('--kanallar')) return channels();
   if (args.has('--status')) return status();
   if (process.env.BILMECE_PAUSED === 'true') { log('BILMECE_PAUSED=true → hiçbir şey yapılmadı'); return; }
+  if (cfg.paused) { log(`config.json paused: ${cfg.paused} → hiçbir şey yapılmadı`); return; }
   if (!DRY && (!cfg.channelId || !cfg.organizationId || !cfg.mediaBaseUrl)) throw new Error('config.json eksik: organizationId, channelId, mediaBaseUrl');
 
   const now = new Date();
