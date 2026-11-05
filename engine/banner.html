@@ -1,0 +1,23 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="fonts/fonts.css">
+<style>html,body{margin:0;background:#2E5B5E}</style></head><body><canvas id="c" width="2560" height="1440"></canvas>
+<script type="module">
+// YouTube kanal kapağı (2560×1440). Güvenli alan ortada 1546×423: yazı ve karakterler orada.
+import { kit, PAL, room, clock, plant } from './office.js';
+import { drawChar, charBase } from './sahne.js';
+for (const w of ['900', '800']) await document.fonts.load(`${w} 60px Rubik`, 'ÇĞİıŞşÖöÜü');
+const cv = document.getElementById('c'), ctx = cv.getContext('2d'), K = kit(ctx);
+ctx.save(); ctx.translate(0, -560); ctx.scale(1, 1);
+room(K, { x0: 0, x1: 2560, floorY: 1700, t: 0, window: false });
+ctx.restore();
+// orta şerit
+const cx = 1280, cy = 720;
+drawChar(ctx, 'hikmet', charBase('hikmet', { x: 640, y: 1010, s: 150, expr: 'mutlu', head: { tilt: -4, look: [0.6, 0] }, armR: { sh: 140, el: 10 } }), 0);
+drawChar(ctx, 'defne', charBase('defne', { x: 1900, y: 1015, s: 148, expr: 'mutlu', head: { tilt: 6, look: [-0.6, 0] }, armL: { sh: 150, el: -10 } }), 0);
+drawChar(ctx, 'necmi', charBase('necmi', { x: 2080, y: 1015, s: 135, expr: 'notr', head: { tilt: 6, look: [-0.7, 0] } }), 0);
+K.rect(cx - 470, cy - 150, 960, 300, '#1F2421', 0, 34);
+K.rect(cx - 480, cy - 160, 960, 300, PAL.paper, 8, 34);
+K.rect(cx - 210, cy - 196, 420, 76, PAL.mustard, 8, 38); K.text(K.up('Bilmece Mesaisi'), cx, cy - 144, 44, '#1F2421', 900);
+K.text('Her gün yeni bilmece', cx, cy - 20, 70, '#1F2421', 900);
+K.text('12:30 ve 21:00', cx, cy + 80, 56, PAL.coral, 900);
+window.__ready = true;
+</script></body></html>
