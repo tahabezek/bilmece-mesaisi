@@ -17,5 +17,11 @@
   "mediaKeepDays": 4,
   "shareToFeed": true,
   "lowBacklogWarnDays": 3,
-  "youtube": null
+  "youtube": {
+    "channelId": "6aec6401e29c69a1716dce3e",
+    "categoryId": "24",
+    "privacy": "public",
+    "madeForKids": false,
+    "notifySubscribers": true
+  }
 }

@@ -167,6 +167,15 @@ async function syncStatus(ledger, now) {
   const posts = await postsBetween(cfg.organizationId, cfg.channelId, new Date(now - 30 * 3600e3).toISOString(), new Date(now.getTime() + 3600e3).toISOString());
   const byId = new Map(posts.map(p => [p.id, p]));
   const rescue = [];
+  if (cfg.youtube?.channelId) {   // YouTube kopyaları: düşen Short e-posta üretir (yeniden kurulmaz; Instagram asıl kanal)
+    const yt = await postsBetween(cfg.organizationId, cfg.youtube.channelId, new Date(now - 30 * 3600e3).toISOString(), new Date(now.getTime() + 3600e3).toISOString());
+    const ytById = new Map(yt.map(p => [p.id, p]));
+    for (const [k, s] of Object.entries(ledger.slots)) {
+      const p = s.yt?.postId && ytById.get(s.yt.postId); if (!p) continue;
+      if (p.status === 'sent' && s.yt.status !== 'sent') Object.assign(s.yt, { status: 'sent', link: p.externalLink || undefined });
+      if (p.status === 'error' && s.yt.status !== 'failed') { Object.assign(s.yt, { status: 'failed', error: String(p.error?.message || '').slice(0, 300) }); summary.push(`❌ ${k} YouTube ${s.episode} düştü: ${s.yt.error}`); }
+    }
+  }
   for (const [k, s] of Object.entries(ledger.slots)) {
     const p = s.postId && byId.get(s.postId); if (!p) continue;
     if (p.status === 'sent' && s.status !== 'sent') { Object.assign(s, { status: 'sent', sentAt: p.sentAt, link: p.externalLink || undefined }); log(`yayında ${k} → ${s.episode} ${p.externalLink || ''}`); }
@@ -250,6 +259,9 @@ async function main() {
   return finish(ledger);
 }
 
+// YouTube başlığı: bilmece kartının kendisi (kısa, soru biçiminde) + kanal adı
+const ytTitle = ep => (ep.card || []).join(' ').replace(/\s+/g, ' ').trim().slice(0, 80) + ' | Bilmece Mesaisi';
+
 // ——— isteğe bağlı YouTube Shorts: planlanmış her Reels aynı dakikada (config.youtube doluysa) ———
 async function youtube(ledger, now) {
   if (!cfg.youtube?.channelId) return;
@@ -260,7 +272,7 @@ async function youtube(ledger, now) {
     const due = new Date(slot.dueAt), ep = episodes().find(e => e.id === slot.episode);
     if (!ep || (due - now) / 60e3 < cfg.minLeadMinutes || yt.some(p => p.dueAt && Math.abs(new Date(p.dueAt) - due) <= tol)) continue;
     try {
-      const post = await createShort({ cfgYt: cfg.youtube, title: ep.caption.split('\n')[0].replace(/^Zeka sorusu:\s*/, ''), text: postText(ep), videoUrl: cfg.mediaBaseUrl + slot.media, dueAtISO: due.toISOString() });
+      const post = await createShort({ cfgYt: cfg.youtube, title: ytTitle(ep), text: postText(ep), videoUrl: cfg.mediaBaseUrl + slot.media, dueAtISO: due.toISOString() });
       slot.yt = { postId: post.id, status: 'scheduled', dueAt: post.dueAt };
       summary.push(`✅ ${k} youtube → ${ep.id}`);
     } catch (e) { slot.yt = { status: 'failed', error: String(e.message).slice(0, 300) }; summary.push(`⚠️ ${k} youtube: ${e.message}`); }

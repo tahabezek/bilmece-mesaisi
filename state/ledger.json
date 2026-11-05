@@ -13,10 +13,18 @@
     "2026-11-05T09:30Z": {
       "episode": "003-istanbul",
       "media": "v/003-istanbul-cda4b5bf.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-04T19:19:23.788Z",
       "postId": "6aeb8570f67f30658c53db2a",
-      "dueAt": "2026-11-05T09:30:00.000Z"
+      "dueAt": "2026-11-05T09:30:00.000Z",
+      "sentAt": "2026-11-05T09:31:44.266Z",
+      "link": "https://www.instagram.com/reel/DfWttyWCo7B/",
+      "yt": {
+        "postId": "6aec64763d11ecc9426fcde7",
+        "status": "scheduled",
+        "dueAt": "2026-11-05T15:30:00.000Z",
+        "note": "sonradan YouTube kopyası"
+      }
     },
     "2026-11-05T18:00Z": {
       "episode": "010-bakis",
@@ -24,7 +32,12 @@
       "status": "scheduled",
       "at": "2026-11-04T19:19:23.788Z",
       "postId": "6aeb85728ee551b5aa773efc",
-      "dueAt": "2026-11-05T18:00:00.000Z"
+      "dueAt": "2026-11-05T18:00:00.000Z",
+      "yt": {
+        "postId": "6aec6461b79fec805d22ae67",
+        "status": "scheduled",
+        "dueAt": "2026-11-05T18:00:00.000Z"
+      }
     },
     "2026-11-06T09:30Z": {
       "episode": "011-ters-dosya",
@@ -32,7 +45,12 @@
       "status": "scheduled",
       "at": "2026-11-04T19:19:23.788Z",
       "postId": "6aeb8574f67f30658c53dcf7",
-      "dueAt": "2026-11-06T09:30:00.000Z"
+      "dueAt": "2026-11-06T09:30:00.000Z",
+      "yt": {
+        "postId": "6aec64613d11ecc9426fc8b5",
+        "status": "scheduled",
+        "dueAt": "2026-11-06T09:30:00.000Z"
+      }
     },
     "2026-11-04T18:55Z": {
       "episode": "016-tuz",
@@ -59,7 +77,13 @@
       "postId": "6aeb828709e5f61702c44f5f",
       "dueAt": "2026-11-04T19:18:00.000Z",
       "note": "elle (--simdi)",
-      "link": "https://www.instagram.com/reel/DfVMJOrlOf5/"
+      "link": "https://www.instagram.com/reel/DfVMJOrlOf5/",
+      "yt": {
+        "postId": "6aec64753d11ecc9426fcd6e",
+        "status": "scheduled",
+        "dueAt": "2026-11-05T12:30:00.000Z",
+        "note": "sonradan YouTube kopyası"
+      }
     },
     "2026-11-06T18:00Z": {
       "episode": "002-iskur",
@@ -67,7 +91,25 @@
       "status": "scheduled",
       "at": "2026-11-04T19:19:23.788Z",
       "postId": "6aeb85756cbba97f5cbea1d8",
-      "dueAt": "2026-11-06T18:00:00.000Z"
+      "dueAt": "2026-11-06T18:00:00.000Z",
+      "yt": {
+        "postId": "6aec6462e08f8251dfaaa7d1",
+        "status": "scheduled",
+        "dueAt": "2026-11-06T18:00:00.000Z"
+      }
+    },
+    "2026-11-07T09:30Z": {
+      "episode": "012-salatalik",
+      "media": "v/012-salatalik-44f15873.mp4",
+      "status": "scheduled",
+      "at": "2026-11-05T11:10:17.039Z",
+      "postId": "6aec644cb79fec805d22a5be",
+      "dueAt": "2026-11-07T09:30:00.000Z",
+      "yt": {
+        "postId": "6aec6462b79fec805d22aec4",
+        "status": "scheduled",
+        "dueAt": "2026-11-07T09:30:00.000Z"
+      }
     }
   }
 }
