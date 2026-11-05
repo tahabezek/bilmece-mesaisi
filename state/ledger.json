@@ -21,9 +21,10 @@
       "link": "https://www.instagram.com/reel/DfWttyWCo7B/",
       "yt": {
         "postId": "6aec64763d11ecc9426fcde7",
-        "status": "scheduled",
+        "status": "sent",
         "dueAt": "2026-11-05T15:30:00.000Z",
-        "note": "sonradan YouTube kopyası"
+        "note": "sonradan YouTube kopyası",
+        "link": "https://www.youtube.com/watch?v=9FZlpnpd6pE"
       }
     },
     "2026-11-05T18:00Z": {
