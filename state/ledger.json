@@ -80,9 +80,10 @@
       "link": "https://www.instagram.com/reel/DfVMJOrlOf5/",
       "yt": {
         "postId": "6aec64753d11ecc9426fcd6e",
-        "status": "scheduled",
+        "status": "sent",
         "dueAt": "2026-11-05T12:30:00.000Z",
-        "note": "sonradan YouTube kopyası"
+        "note": "sonradan YouTube kopyası",
+        "link": "https://www.youtube.com/watch?v=72ZvYIX5FMc"
       }
     },
     "2026-11-06T18:00Z": {
