@@ -30,15 +30,18 @@
     "2026-11-05T18:00Z": {
       "episode": "010-bakis",
       "media": "v/010-bakis-9cf9f85a.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-04T19:19:23.788Z",
       "postId": "6aeb85728ee551b5aa773efc",
       "dueAt": "2026-11-05T18:00:00.000Z",
       "yt": {
         "postId": "6aec6461b79fec805d22ae67",
-        "status": "scheduled",
-        "dueAt": "2026-11-05T18:00:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-05T18:00:00.000Z",
+        "link": "https://www.youtube.com/watch?v=UFAEj94PJRQ"
+      },
+      "sentAt": "2026-11-05T18:06:14.109Z",
+      "link": "https://www.instagram.com/reel/DfXohv2AYcl/"
     },
     "2026-11-06T09:30Z": {
       "episode": "011-ters-dosya",
@@ -111,6 +114,19 @@
         "postId": "6aec6462b79fec805d22aec4",
         "status": "scheduled",
         "dueAt": "2026-11-07T09:30:00.000Z"
+      }
+    },
+    "2026-11-07T18:00Z": {
+      "episode": "007-salter",
+      "media": "v/007-salter-d786e924.mp4",
+      "status": "scheduled",
+      "at": "2026-11-05T18:58:03.716Z",
+      "postId": "6aecd20ca3dc12fb8013ee19",
+      "dueAt": "2026-11-07T18:00:00.000Z",
+      "yt": {
+        "postId": "6aecd20d4070500dc302ab17",
+        "status": "scheduled",
+        "dueAt": "2026-11-07T18:00:00.000Z"
       }
     }
   }
