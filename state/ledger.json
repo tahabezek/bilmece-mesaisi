@@ -46,15 +46,18 @@
     "2026-11-06T09:30Z": {
       "episode": "011-ters-dosya",
       "media": "v/011-ters-dosya-f14e350c.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-04T19:19:23.788Z",
       "postId": "6aeb8574f67f30658c53dcf7",
       "dueAt": "2026-11-06T09:30:00.000Z",
       "yt": {
         "postId": "6aec64613d11ecc9426fc8b5",
-        "status": "scheduled",
-        "dueAt": "2026-11-06T09:30:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-06T09:30:00.000Z",
+        "link": "https://www.youtube.com/watch?v=abFIBDnRQAY"
+      },
+      "sentAt": "2026-11-06T09:31:34.666Z",
+      "link": "https://www.instagram.com/reel/DfZSh3zDdoM/"
     },
     "2026-11-04T18:55Z": {
       "episode": "016-tuz",
@@ -127,6 +130,19 @@
         "postId": "6aecd20d4070500dc302ab17",
         "status": "scheduled",
         "dueAt": "2026-11-07T18:00:00.000Z"
+      }
+    },
+    "2026-11-08T09:30Z": {
+      "episode": "004-canta",
+      "media": "v/004-canta-ef187c4f.mp4",
+      "status": "scheduled",
+      "at": "2026-11-06T14:12:08.793Z",
+      "postId": "6aede1e4e45c1855cb44b75c",
+      "dueAt": "2026-11-08T09:30:00.000Z",
+      "yt": {
+        "postId": "6aede1e5730edf821ad5c59a",
+        "status": "scheduled",
+        "dueAt": "2026-11-08T09:30:00.000Z"
       }
     }
   }
