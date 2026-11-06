@@ -151,9 +151,15 @@
     "2026-11-08T18:00Z": {
       "episode": "008-tutsu",
       "media": "v/008-tutsu-7709828d.mp4",
-      "status": "failed",
-      "at": "2026-11-06T18:26:35.119Z",
-      "error": "medya yayına çıkmadı"
+      "status": "scheduled",
+      "at": "2026-11-06T22:04:08.047Z",
+      "postId": "6aee4f0a004e4879a719f6c5",
+      "dueAt": "2026-11-08T18:00:00.000Z",
+      "yt": {
+        "postId": "6aee4f0ba7751de7c9ae09a4",
+        "status": "scheduled",
+        "dueAt": "2026-11-08T18:00:00.000Z"
+      }
     }
   }
 }
