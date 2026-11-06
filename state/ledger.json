@@ -96,15 +96,18 @@
     "2026-11-06T18:00Z": {
       "episode": "002-iskur",
       "media": "v/002-iskur-b7981da5.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-04T19:19:23.788Z",
       "postId": "6aeb85756cbba97f5cbea1d8",
       "dueAt": "2026-11-06T18:00:00.000Z",
       "yt": {
         "postId": "6aec6462e08f8251dfaaa7d1",
-        "status": "scheduled",
-        "dueAt": "2026-11-06T18:00:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-06T18:00:00.000Z",
+        "link": "https://www.youtube.com/watch?v=C50G06-0frE"
+      },
+      "sentAt": "2026-11-06T18:04:48.386Z",
+      "link": "https://www.instagram.com/reel/DfaNO5OiLYo/"
     },
     "2026-11-07T09:30Z": {
       "episode": "012-salatalik",
@@ -144,6 +147,13 @@
         "status": "scheduled",
         "dueAt": "2026-11-08T09:30:00.000Z"
       }
+    },
+    "2026-11-08T18:00Z": {
+      "episode": "008-tutsu",
+      "media": "v/008-tutsu-7709828d.mp4",
+      "status": "failed",
+      "at": "2026-11-06T18:26:35.119Z",
+      "error": "medya yayına çıkmadı"
     }
   }
 }
