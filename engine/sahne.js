@@ -201,14 +201,41 @@ export function brush(K, x, y, a, k = 1) {
   ctx.restore();
 }
 
+// Kapanış jingle'ı (timeline.json'daki outro): bolum.html setOutro ile verir; takip kartı sözleri kelime kelime yakar.
+let OUTRO = null;
+export const setOutro = o => { OUTRO = o || null; };
+function karaoke(K, t) {
+  const { ctx } = K, o = OUTRO, L = o.lines, rel = t - o.t0;
+  if (rel < -0.25) return;
+  const pair = rel >= L[2].t0 - 0.35 ? 1 : 0, show = [L[pair * 2], L[pair * 2 + 1]];
+  const a = spring(rel - (pair ? L[2].t0 - 0.35 : -0.25), UI[0], UI[1]);
+  ctx.save(); ctx.translate(540, 1255); ctx.scale(0.9 + 0.1 * a, 0.9 + 0.1 * a); ctx.globalAlpha = Math.min(1, a * 1.4);
+  K.rect(-450, -125, 910, 250, INK, 0, 30); K.rect(-460, -135, 910, 250, PAL.paper, LW, 30);
+  const size = 70; ctx.font = `900 ${size}px Rubik`;
+  show.forEach((ln, i) => {
+    const sp = ctx.measureText(' ').width, ws = ln.words.map(w => ctx.measureText(w.w).width);
+    let x = -(ws.reduce((s, v) => s + v, 0) + sp * (ws.length - 1)) / 2;
+    const y = -22 + i * 100;
+    ln.words.forEach((w, j) => {
+      const on = rel >= w.t0 - 0.04, cur = on && rel < w.t1;
+      ctx.save(); ctx.globalAlpha *= on ? 1 : 0.28;
+      K.text(w.w, x, y, size, cur ? PAL.coral : INK, 900, 'left'); ctx.restore();
+      x += ws[j] + sp;
+    });
+  });
+  ctx.restore();
+}
+
 // Takip kartı (her bölümün sonu): Hikmet Bey kapı pervazının arkasından bakar. u = kartın başından beri geçen süre.
 export function endCard(K, t, u) {
   const { ctx } = K;
   ctx.fillStyle = PAL.wall; ctx.fillRect(0, 0, 1080, 1920);
-  ctx.save(); const z = 1 + 0.025 * u; ctx.translate(540, 960); ctx.scale(z, z); ctx.translate(-540, -960);   // sürekli yavaş yaklaşma: kart hiç donmaz
+  ctx.save(); const z = OUTRO ? 1 + 0.08 * (1 - Math.exp(-u / 3)) : 1 + 0.025 * u; ctx.translate(540, 960); ctx.scale(z, z); ctx.translate(-540, -960);   // sürekli yavaş yaklaşma: kart hiç donmaz
   room(K, { floorY: 1500, t });
   // Hikmet Bey sağdaki kapı pervazının arkasından kafasını uzatır
-  const peek = ease.enter(seg(u, 0.5, 0.6));
+  // jingle varsa Hikmet Bey tam "Hikmet" kelimesinde kapıdan uzanır
+  const hw = OUTRO && OUTRO.lines[0].words.find(w => w.w.startsWith('Hikmet'));
+  const peek = hw ? ease.enter(seg(t, OUTRO.t0 + hw.t0 - 0.35, 0.6)) : ease.enter(seg(u, 0.5, 0.6));
   K.rect(760, 520, 340, 1000, '#1C3638', 0);   // kapı boşluğu
   ctx.save(); ctx.beginPath(); ctx.rect(800, 0, 400, 1920); ctx.clip();
   drawChar(ctx, 'hikmet', charBase('hikmet', { x: lerp(1260, 1030, peek), y: 1560, s: 300, expr: 'mutlu', lean: -24, head: { tilt: -22, look: [-0.9, 0.1] }, armL: { sh: 70, el: -60 } }), t);
@@ -222,6 +249,7 @@ export function endCard(K, t, u) {
   K.rect(-190, 70, 370, 76, PAL.coral, LW, 38); K.text('Takip et', -5, 124, 48, PAL.paper, 800);
   ctx.restore();
   ctx.restore();
+  if (OUTRO) karaoke(K, t);
 }
 
 // Denenen tahminler (ekran uzayı): sol sütunda alt alta belirir, elenenin üstü çizilir.

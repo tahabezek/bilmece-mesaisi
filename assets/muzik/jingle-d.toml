@@ -1,0 +1,39 @@
+project_root = "C:/tmp/ACE-Step-1.5"
+config_path = "acestep-v15-turbo"
+device = "auto"
+save_dir = "C:/tmp/ace-out/j4/D-tezahurat-1907"
+audio_format = "wav"
+task_type = "text2music"
+thinking = true
+backend = "pt"
+lm_model_path = "acestep-5Hz-lm-1.7B"
+batch_size = 1
+use_random_seed = false
+seed = 1907
+inference_steps = 8
+shift = 3.0
+bpm = 120
+keyscale = "D Major"
+timesignature = "4"
+vocal_language = "tr"
+duration = 26
+caption = "Extremely catchy stadium chant pop for a Turkish office comedy show: stomping beat, big handclaps, brass hits, a crowd of office friends shouting the hook together like a football chant, a young woman leads each line clearly in Turkish. Simple repeated melody, everyone sings along, funny and energetic."
+lyrics = """[Chorus]
+Bil bakalım, bil bakalım,
+Hikmet Bey'in sorusu var!
+Bulamazsan eve gitmek yok,
+Bil bakalım, bil bakalım!
+
+[Chorus]
+Bil bakalım, bil bakalım,
+Hikmet Bey'in sorusu var!
+Bulamazsan eve gitmek yok,
+Bil bakalım, bil bakalım!
+"""
+use_cot_metas = false
+use_cot_caption = false
+use_cot_language = false
+use_cot_lyrics = false
+use_format = false
+offload_to_cpu = true
+offload_dit_to_cpu = true

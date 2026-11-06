@@ -14,8 +14,17 @@ const SR = 48000;
 const ep = JSON.parse(fs.readFileSync(process.argv[2], 'utf8'));
 const vdir = path.join('assets', 'voice', ep.id);
 const tl = timeline(ep, JSON.parse(fs.readFileSync(path.join(vdir, 'words.json'), 'utf8')));
-const D = tl.duration, N = Math.ceil(D * SR), beat = tl.beat, bar = beat * 4;
 const T = e => at(tl, e), mus = ep.music || {};
+// kapanış jingle'ı (ep.outro = assets/muzik/jingle.json ya da OUTRO ortam değişkeni): müzik yatağının son akoru yerine,
+// CTA'dan sonraki ilk ölçü başında çalar; takip kartı jingle bitene kadar uzar, sözler kartta kelime kelime yanar.
+const OUTRO_FILE = process.env.OUTRO || ep.outro;
+const OUT = OUTRO_FILE ? JSON.parse(fs.readFileSync(OUTRO_FILE, 'utf8')) : null;
+if (OUT) {
+  const bar0 = tl.beat * 4, e0 = mus.end ? T(mus.end) : tl.duration - 2;
+  OUT.endT = e0; OUT.t0 = Math.ceil((e0 + 0.05) / bar0) * bar0;
+  tl.duration = Math.round((OUT.t0 + OUT.len + 0.2) * 1000) / 1000;
+}
+const D = tl.duration, N = Math.ceil(D * SR), beat = tl.beat, bar = beat * 4;
 
 function decode(file) {
   const r = spawnSync(ffmpegPath, ['-v', 'error', '-i', file, '-f', 'f32le', '-ac', '1', '-ar', String(SR), '-'], { maxBuffer: 1 << 28 });
@@ -88,7 +97,7 @@ const CH = [
   { bass: [33, 40, 37, 40], mel: [76, 73, 69, 73, 76, 79, 78, 76] },   // A
 ];
 const span = k => (mus[k] ? [T(mus[k][0]), T(mus[k][1])] : [-1, -1]);
-const [th0, th1] = span('think'), endT = mus.end ? T(mus.end) : D - 2;
+const [th0, th1] = span('think'), endT = mus.end ? T(mus.end) : OUT ? OUT.endT : D - 2;
 const inThink = t => t >= th0 && t < th1;
 // son akor: konuşma bittikten sonraki ilk ölçü başına oturur ve sona kadar çınlar
 const lastBar = Math.ceil((endT + 0.05) / bar) * bar;
@@ -128,7 +137,16 @@ for (let b = 0; STYLE === 'marimba' && b * beat < D; b++) {
   }
 }
 // kapanış: Re majör akoru (marimba tremolo + bas)
-if (lastBar < D && STYLE === 'yumusak') {
+if (OUT) {   // yatak jingle başlarken 0,15 sn'de susar; jingle efekt kanalına (kısılmaz) konuşmayla aynı tepe seviyesinde
+  const n0 = Math.round(OUT.t0 * SR), f = Math.round(0.15 * SR);
+  for (let n = n0 - f; n < N; n++) if (n >= 0) { const g = Math.max(0, (n0 - n) / f); Ml[n] *= g; Mr[n] *= g; }
+  const r = spawnSync(ffmpegPath, ['-v', 'error', '-i', OUT.file, '-f', 'f32le', '-ac', '2', '-ar', String(SR), '-'], { maxBuffer: 1 << 28 });
+  if (r.status) throw new Error('ffmpeg çözme: ' + OUT.file);
+  const J = new Float32Array(r.stdout.buffer.slice(r.stdout.byteOffset, r.stdout.byteOffset + r.stdout.length));
+  let pk = 1e-9; for (const v of J) pk = Math.max(pk, Math.abs(v));
+  const g = (Number(process.env.OUTRO_GAIN) || 1.0) / pk;
+  for (let i = 0; i < J.length / 2; i++) addF(n0 + i, J[2 * i] * g, J[2 * i + 1] * g);
+} else if (lastBar < D && STYLE === 'yumusak') {
   for (const m of [62, 66, 69, 74]) keys(lastBar, m, 0.03, D - lastBar);
   keys(lastBar, 38, 0.07, D - lastBar);
 } else if (lastBar < D && STYLE === 'marimba') {
@@ -218,7 +236,7 @@ r = spawnSync(ffmpegPath, ['-v', 'error', '-i', wavFile, '-c:a', 'libmp3lame', '
 if (r.status) throw new Error(r.stderr.toString());
 const m1 = loud(['-v', 'info', '-i', outFile]);
 
-fs.writeFileSync(path.join(vdir, 'timeline.json'), JSON.stringify({ id: ep.id, duration: D, beat, lines: tl.lines.map(({ id, who, text, t0, t1, words }) => ({ id, who, text, t0, t1, words })) }, null, 1));
+fs.writeFileSync(path.join(vdir, 'timeline.json'), JSON.stringify({ id: ep.id, duration: D, beat, ...(OUT ? { outro: { t0: OUT.t0, lines: OUT.lines } } : {}), lines: tl.lines.map(({ id, who, text, t0, t1, words }) => ({ id, who, text, t0, t1, words })) }, null, 1));
 // kontrol: konuşma hızı (≤ 3,5 kelime/sn), en uzun konuşmasız ara
 const rate = tl.lines.map(l => [l.id, l.words.length / (l.t1 - l.t0)]).filter(([, v]) => v > 3.5);
 let gapMax = 0; tl.lines.forEach((l, i) => i && (gapMax = Math.max(gapMax, l.t0 - tl.lines[i - 1].t1)));
