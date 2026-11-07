@@ -128,15 +128,18 @@
     "2026-11-07T18:00Z": {
       "episode": "007-salter",
       "media": "v/007-salter-d786e924.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-05T18:58:03.716Z",
       "postId": "6aecd20ca3dc12fb8013ee19",
       "dueAt": "2026-11-07T18:00:00.000Z",
       "yt": {
         "postId": "6aecd20d4070500dc302ab17",
-        "status": "scheduled",
-        "dueAt": "2026-11-07T18:00:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-07T18:00:00.000Z",
+        "link": "https://www.youtube.com/watch?v=TBT0V3PFNIU"
+      },
+      "sentAt": "2026-11-07T18:04:09.135Z",
+      "link": "https://www.instagram.com/reel/Dfcx6OqkgIm/"
     },
     "2026-11-08T09:30Z": {
       "episode": "004-canta",
@@ -175,6 +178,19 @@
         "postId": "6aef1fbc004e4879a7578e74",
         "status": "scheduled",
         "dueAt": "2026-11-09T09:30:00.000Z"
+      }
+    },
+    "2026-11-09T18:00Z": {
+      "episode": "013-izin-kurasi",
+      "media": "v/013-izin-kurasi-6960314e.mp4",
+      "status": "scheduled",
+      "at": "2026-11-07T20:50:58.637Z",
+      "postId": "6aef8f73229bf05daf72f071",
+      "dueAt": "2026-11-09T18:00:00.000Z",
+      "yt": {
+        "postId": "6aef8f749214322f6815f465",
+        "status": "scheduled",
+        "dueAt": "2026-11-09T18:00:00.000Z"
       }
     }
   }
