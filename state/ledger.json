@@ -112,15 +112,18 @@
     "2026-11-07T09:30Z": {
       "episode": "012-salatalik",
       "media": "v/012-salatalik-44f15873.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-05T11:10:17.039Z",
       "postId": "6aec644cb79fec805d22a5be",
       "dueAt": "2026-11-07T09:30:00.000Z",
       "yt": {
         "postId": "6aec6462b79fec805d22aec4",
-        "status": "scheduled",
-        "dueAt": "2026-11-07T09:30:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-07T09:30:00.000Z",
+        "link": "https://www.youtube.com/watch?v=pJRzhCj9M00"
+      },
+      "sentAt": "2026-11-07T09:31:17.837Z",
+      "link": "https://www.instagram.com/reel/Dfb3R9jmKzD/"
     },
     "2026-11-07T18:00Z": {
       "episode": "007-salter",
@@ -159,6 +162,19 @@
         "postId": "6aee4f0ba7751de7c9ae09a4",
         "status": "scheduled",
         "dueAt": "2026-11-08T18:00:00.000Z"
+      }
+    },
+    "2026-11-09T09:30Z": {
+      "episode": "009-cay-ocagi",
+      "media": "v/009-cay-ocagi-0176e9ca.mp4",
+      "status": "scheduled",
+      "at": "2026-11-07T12:54:33.682Z",
+      "postId": "6aef1fbbd6bbae6fa1894218",
+      "dueAt": "2026-11-09T09:30:00.000Z",
+      "yt": {
+        "postId": "6aef1fbc004e4879a7578e74",
+        "status": "scheduled",
+        "dueAt": "2026-11-09T09:30:00.000Z"
       }
     }
   }
