@@ -144,15 +144,18 @@
     "2026-11-08T09:30Z": {
       "episode": "004-canta",
       "media": "v/004-canta-ef187c4f.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-06T14:12:08.793Z",
       "postId": "6aede1e4e45c1855cb44b75c",
       "dueAt": "2026-11-08T09:30:00.000Z",
       "yt": {
         "postId": "6aede1e5730edf821ad5c59a",
-        "status": "scheduled",
-        "dueAt": "2026-11-08T09:30:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-08T09:30:00.000Z",
+        "link": "https://www.youtube.com/watch?v=ha6MZVeWA48"
+      },
+      "sentAt": "2026-11-08T09:31:30.308Z",
+      "link": "https://www.instagram.com/reel/DfecDbRlGrl/"
     },
     "2026-11-08T18:00Z": {
       "episode": "008-tutsu",
@@ -191,6 +194,19 @@
         "postId": "6aef8f749214322f6815f465",
         "status": "scheduled",
         "dueAt": "2026-11-09T18:00:00.000Z"
+      }
+    },
+    "2026-11-10T09:30Z": {
+      "episode": "014-klasorler",
+      "media": "v/014-klasorler-3362a375.mp4",
+      "status": "scheduled",
+      "at": "2026-11-08T13:17:46.243Z",
+      "postId": "6af076bb9214322f68558411",
+      "dueAt": "2026-11-10T09:30:00.000Z",
+      "yt": {
+        "postId": "6af076bc229bf05dafb3042d",
+        "status": "scheduled",
+        "dueAt": "2026-11-10T09:30:00.000Z"
       }
     }
   }
