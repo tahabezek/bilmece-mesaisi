@@ -192,15 +192,18 @@
     "2026-11-09T18:00Z": {
       "episode": "013-izin-kurasi",
       "media": "v/013-izin-kurasi-6960314e.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-07T20:50:58.637Z",
       "postId": "6aef8f73229bf05daf72f071",
       "dueAt": "2026-11-09T18:00:00.000Z",
       "yt": {
         "postId": "6aef8f749214322f6815f465",
-        "status": "scheduled",
-        "dueAt": "2026-11-09T18:00:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-09T18:00:00.000Z",
+        "link": "https://www.youtube.com/shorts/6FOG0j8WiXY"
+      },
+      "sentAt": "2026-11-09T18:04:42.716Z",
+      "link": "https://www.instagram.com/reel/Dfh7nEYlUVT/"
     },
     "2026-11-10T09:30Z": {
       "episode": "014-klasorler",
@@ -239,6 +242,19 @@
         "postId": "6af1f0f00b813b465063ef3f",
         "status": "scheduled",
         "dueAt": "2026-11-11T09:30:00.000Z"
+      }
+    },
+    "2026-11-11T18:00Z": {
+      "episode": "018-kumbara",
+      "media": "v/018-kumbara-282e728c.mp4",
+      "status": "scheduled",
+      "at": "2026-11-09T20:12:35.445Z",
+      "postId": "6af229660606df2887a2fa4f",
+      "dueAt": "2026-11-11T18:00:00.000Z",
+      "yt": {
+        "postId": "6af22966398ae91929aca0da",
+        "status": "scheduled",
+        "dueAt": "2026-11-11T18:00:00.000Z"
       }
     }
   }
