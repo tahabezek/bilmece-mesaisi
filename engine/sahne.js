@@ -282,7 +282,9 @@ export function thinkCounter(K, t, cnt1, { x = 860, y = 1110, r = 92 } = {}) {
 
 // "SEN DE DÜŞÜN" geri sayımı (izleyicinin payı): t1 sayacın sıfırlandığı an (ipucundan hemen önce), 5 sn.
 // Büyük, ekranın ortasında; her saniye sayı vurgulanır, son 3 saniye halka mercan. Konuşma yok, ses tarafında saat tıkırtısı.
-export function countdown(K, t, t1, { top = 540 } = {}) {
+// share: soruyu alıp düşünmek için çıkan izleyiciye paylaşım çağrısı. 2026-11-10 analizi: ortalama izleyici sorunun
+// hemen ardından (~25. sn) çıkıyor, sondaki çağrıyı görmüyor. Sayacın 1. saniyesinde belirir.
+export function countdown(K, t, t1, { top = 540, share = null } = {}) {
   const t0 = t1 - 5;
   if (t < t0 - 0.3 || t >= t1 + 0.35) return;
   const { ctx } = K, inU = spring(t - (t0 - 0.25), UI[0], UI[1]), out = 1 - ease.exit(seg(t, t1, 0.3));
@@ -301,6 +303,12 @@ export function countdown(K, t, t1, { top = 540 } = {}) {
   K.circ(0, 0, r * 0.66, PAL.paper, LW * 0.8);
   ctx.save(); ctx.scale(pulse, pulse); K.text(String(Math.max(n, 0)), 0, 56, 160, hot ? PAL.red : INK, 900); ctx.restore();
   K.text('İpucu geliyor…', 0, r + 80, 52, PAL.paper, 800);
+  if (share && t >= t0 + 0.9) {
+    const v = spring(t - (t0 + 0.9), UI[0], UI[1]); ctx.save(); ctx.translate(0, r + 200); ctx.scale(0.7 + 0.3 * v, 0.7 + 0.3 * v); ctx.globalAlpha = clamp01(v * 1.6);
+    ctx.font = '900 46px Rubik'; const sw = ctx.measureText(share).width + 70;
+    K.rect(-sw / 2 + 8, -48 + 10, sw, 96, INK, 0, 48); K.rect(-sw / 2, -48, sw, 96, PAL.coral, LW, 48); K.text(share, 0, 16, 46, PAL.paper, 900);
+    ctx.restore();
+  }
   ctx.restore();
 }
 

@@ -139,7 +139,7 @@ for (const e of EPS) {
     id: e.id, num: e.num, sira: old.sira ?? e.sira, bpm: 120, slug: e.slug, coverAt: 0, hashtags: TAGS,
     card: e.card, caption: e.caption,
     voice: { tight: 0.28, tail: 2.4, lines: e.lines },
-    countdown: 'n1-0.3', music: MUSIC, sfx: e.sfx,
+    countdown: 'n1-0.3', cdShare: 'Bunu bir arkadaşına sor!', music: MUSIC, sfx: e.sfx,
     ...(old.disabled ? { disabled: old.disabled } : {}),
   };
   fs.writeFileSync(f, JSON.stringify(out, null, 1) + '\n');

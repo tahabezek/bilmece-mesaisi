@@ -115,7 +115,7 @@ export function draw(K, t, ep, tl, S, h) {
   const cardH = riddleCard(K, 70, 300, 940, ep.card, ep.num, { size: h.cardSize ?? 54 }), top = 300 + cardH;
   h.screen?.(K, t, S, top);
   if (h.tries) triesCol(K, t, h.tries, { x: 540, y: top + 80, gap: 84, size: 50, fadeAt: tm.hd + 1.4 });
-  countdown(K, t, tm.cd, { top: top + 20 });
+  countdown(K, t, tm.cd, { top: top + 20, share: ep.cdShare });
   if (t >= tm.clue - 0.1 && t < tm.buldum) {
     const u = spring(t - (tm.clue - 0.1), UI[0], UI[1]);
     ctx.save(); ctx.translate(540, top + 200); ctx.scale(u, u);
