@@ -14,9 +14,13 @@ export const THINK2 = { brow: 0.05, browTilt: 0.25, eye: 0.9, pupil: 1, curve: -
 export function build(ep, tl, o = {}) {
   const T = e => at(tl, e), L = tl.L, has = id => !!L[id];
   const last = tl.lines[tl.lines.length - 1].id;
+  // Kısa kalıp (v3, 2026-11-10): d1, da, n0, hn isteğe bağlı. Olmayan satırın anı NONE olur; o ana bağlı
+  // kamera ve poz anahtarları atılır, karşılaştırmalar (t >= NONE) hiç tutmaz.
+  const NONE = 1e9;
   const tm = {
-    think0: T('h3>'), da: T('da'), d2: T('d2'), hd: has('hd') ? T('hd') : T('d2>') + 0.3, n0: T('n0'), hn: T('hn'),
-    hc: has('hc') ? T('hc') : T('hn>') + 0.3, clue: T('n1'), cd: T(ep.countdown),
+    think0: T('h3>'), da: has('da') ? T('da') : NONE, d2: T('d2'), hd: has('hd') ? T('hd') : T('d2>') + 0.3,
+    n0: has('n0') ? T('n0') : NONE, hn: has('hn') ? T('hn') : NONE,
+    hc: has('hc') ? T('hc') : has('hn') ? T('hn>') + 0.3 : NONE, clue: T('n1'), cd: T(ep.countdown),
     buldum: T('d3'), proof: T('d3>') + 0.05,
     happy: T('h4') - 0.15, cta: T(last) - 0.2, end: T(last + '>') + 0.1,
     ...(o.extra ? o.extra(T, L) : {}),
@@ -25,7 +29,7 @@ export function build(ep, tl, o = {}) {
   const cam = [
     [0, 1.14, 520, 1060, 'cut'],
     [0.6, 1.18, 560, 1070],
-    [L.d1.t0 - 0.05, 1.28, 840, 1060],
+    ...(has('d1') ? [[L.d1.t0 - 0.05, 1.28, 840, 1060]] : []),
     [L.h2a.t0 - 0.05, 1.3, f[0], f[1]],
     ...(has('h2b') ? [[L.h2b.t0 - 0.05, 1.22, 400, 1050]] : []),
     ...(has('h2c') ? [[L.h2c.t0 - 0.05, 1.2, 560, 1060]] : []),
@@ -45,7 +49,7 @@ export function build(ep, tl, o = {}) {
     [tm.happy + 1.8, 1.45, 420, 1080],
     [tm.cta, 1.6, 840, 1100, 'cut'],
     [tm.end, 1, 540, 960, 'cut'],
-  ].sort((a, b) => a[0] - b[0]);
+  ].filter(k => k[0] < NONE / 2).sort((a, b) => a[0] - b[0]);
   const hikBase = charBase('hikmet', { x: o.hikX ?? 190, y: 1500, s: 250, expr: 'mutlu', head: { tilt: -4, look: [0.7, 0.1] }, armL: { sh: 20, el: -60 }, armR: { sh: 80, el: 20 } });
   const hik = [
     [L.h1.t0 + 1.2, { armR: { sh: 140, el: 10 } }, 0.35, ease.enter],
@@ -58,14 +62,14 @@ export function build(ep, tl, o = {}) {
     [tm.hc - 0.05, { expr: 'mutlu', armR: { sh: 25, el: -160 }, armL: { sh: 20, el: -60 } }, 0.3],
     [tm.clue + 0.3, { expr: 'notr', armR: { sh: 20, el: -60 }, head: { tilt: 4, look: [0.9, 0.1] } }, 0.4],
     [tm.buldum, { expr: 'saskin', head: { tilt: -6, look: [0.9, 0] } }, 0.25],
-  ].sort((a, b) => a[0] - b[0]);
+  ].filter(k => k[0] < NONE / 2).sort((a, b) => a[0] - b[0]);
   const defBase = charBase('defne', { x: o.defX ?? 880, y: 1520, s: 245, expr: 'saskin', head: { tilt: -4, look: [-0.7, 0.1] }, armR: { sh: 20, el: -60 }, armL: { sh: 12, el: -10 } });
   const def = [
     [L.h2a.t0, { expr: 'notr', head: { tilt: 2, look: [-0.6, 0.5] } }, 0.35],
     [tm.think0 + 0.1, { expr: THINK, head: { tilt: -8, look: [-0.6, -0.4] }, armR: { sh: 18, el: -168 } }],
     [tm.d2, { expr: 'mutlu', armL: { sh: 95, el: 10 }, armR: { sh: 20, el: -60 }, head: { tilt: 4, look: [-0.9, 0] } }, 0.3, ease.enter],
     [tm.hd + 0.2, { expr: 'saskin', blink: 0, armL: { sh: 12, el: -10 } }, 0.2],
-    [tm.n0 + 0.6, { blink: null, expr: THINK2, head: { tilt: 8, look: [-0.4, -0.8] }, armR: { sh: 18, el: -168 } }, 0.35],
+    [(tm.n0 < NONE / 2 ? tm.n0 : has('hd') ? T('hd>') : T('d2>')) + 0.6, { blink: null, expr: THINK2, head: { tilt: 8, look: [-0.4, -0.8] }, armR: { sh: 18, el: -168 } }, 0.35],
     [tm.clue + 0.3, { expr: 'notr', head: { tilt: -4, look: [0.9, 0.1] }, armR: { sh: 20, el: -60 } }, 0.4],
     [tm.buldum - 0.05, { y: 1430, blink: null, expr: 'mutlu', head: { tilt: 6, look: [0, -0.3] }, armR: { sh: 165, el: -10 }, armL: { sh: 165, el: -10 } }, 0.25, ease.enter],
     [tm.happy, { y: 1520, expr: 'mutlu', head: { tilt: 8, look: [-0.8, -0.1] }, armR: { sh: 25, el: -160 }, armL: { sh: 12, el: -10 } }, 0.01],
@@ -138,8 +142,19 @@ function proofFrame(K, t, tl, S, h) {
   caption(K, captionAt(tl, t), { y: 1290, head: null });
 }
 
+// Tek satırlık bilgi yuvası (kısa kalıp): kartın hemen altında yalnız en son bilgi görünür; yüzlere binmez.
+// items: [[t, metin, dolgu?, yazı rengi?]] · out: 0..1 çıkış çarpanı
+export function slot(K, t, items, y, out = 1, size = 44) {
+  let cur = null; for (const it of items) if (t >= it[0] - 0.04) cur = it;
+  if (!cur || out <= 0) return;
+  const v = spring(t - (cur[0] - 0.04), 320, 30), { ctx } = K;
+  ctx.save(); ctx.translate(540, y); ctx.scale((0.7 + 0.3 * v) * out, (0.7 + 0.3 * v) * out); ctx.globalAlpha = clamp01(v * 1.6) * out;
+  pill(K, 0, 0, cur[1], cur[2] ?? INK, cur[3] ?? PAL.paper, size);
+  ctx.restore();
+}
+
 // küçük yardımcılar
-export const pop = (K, t, a, fn) => { if (t < a - 0.04) return; const v = spring(t - (a - 0.04), UI[0], UI[1]); K.ctx.save(); fn(v); K.ctx.restore(); };
+export const pop =(K, t, a, fn) => { if (t < a - 0.04) return; const v = spring(t - (a - 0.04), UI[0], UI[1]); K.ctx.save(); fn(v); K.ctx.restore(); };
 export function pill(K, x, y, label, fill, col = PAL.paper, size = 40) {
   const { ctx } = K; ctx.font = `900 ${size}px Rubik`; const w = ctx.measureText(label).width + size * 1.2;
   K.rect(x - w / 2, y - size * 0.95, w, size * 1.9, fill, LW * 0.8, size * 0.95); K.text(label, x, y + size * 0.35, size, col, 900);

@@ -1,0 +1,147 @@
+{
+ "id": "025-kayip-lira",
+ "num": 25,
+ "sira": 22,
+ "bpm": 120,
+ "slug": "kayip-on-lira",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#ofis"
+ ],
+ "card": [
+  "Herkes 90 ödedi: 270. Kuryede 20.",
+  "290 eder. Kayıp 10 lira nerede?"
+ ],
+ "caption": "Zeka sorusu: Üç kişi 300 liralık yemek söyledi, herkes 100 verdi. Restoran 50 lira geri yolladı. Kurye 20'sini aldı, 30'unu herkese 10'ar dağıttı. Herkes 90 ödedi: 270. Kuryedeki 20 ile 290. Kayıp 10 lira nerede?\n\nZengin Kız Fakir Oğlan'ın bilmecelerinden. Cevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Defneciğim, on lira kayıp! Hesap tutmuyor."
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Yemek üç yüz liraydı, üçümüz yüzer verdik. Restoran indirim yapıp elli lira geri yolladı."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Kerem yirmisini aldı, bize onar lira dağıttı."
+   },
+   {
+    "id": "h2c",
+    "who": "hikmet",
+    "gap": 0.35,
+    "text": "Herkes doksan ödedi, iki yüz yetmiş. Kerem'deki yirmiyle iki yüz doksan. On lira nerede?",
+    "tts": "Herkes doksan ödedi, iki yüz yetmiş. Keremdeki yirmiyle iki yüz doksan. On lira nerede?"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Bulursan on lira senin."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Parayı Kerem mi sakladı?"
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Hayır! Kerem'de sadece yirmi var.",
+    "tts": "Hayır! Keremde sadece yirmi var."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Hanım kızdı: Çayı hem harcamaya hem kasaya yazmışsın, iki kere saymışsın!"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Buldum! Kayıp para yok!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "Kerem'in yirmisi o iki yüz yetmişin içinde zaten. İki yüz elli restorana, yirmi Kerem'e.",
+    "tts": "Keremin yirmisi o iki yüz yetmişin içinde zaten. İki yüz elli restorana, yirmi Kereme."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Yirmiyi bir daha eklemek, onu iki kere saymak. Doğrusu: iki yüz yetmiş artı otuz, üç yüz!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1.1,
+    "text": "Kerem! O yirmiyi geri getir!"
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.55,
+    "text": "Bunu hesabı hep yanlış bölen arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "buzz",
+   "hd:0"
+  ],
+  [
+   "swish",
+   "d4:0"
+  ],
+  [
+   "pop",
+   "d4:8"
+  ],
+  [
+   "pop",
+   "d4:12"
+  ],
+  [
+   "ding",
+   "d5:14"
+  ],
+  [
+   "womp",
+   "d5>+0.15"
+  ]
+ ]
+}

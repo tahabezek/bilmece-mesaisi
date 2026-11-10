@@ -1,0 +1,134 @@
+{
+ "id": "028-cita",
+ "num": 28,
+ "sira": 25,
+ "bpm": 120,
+ "slug": "cita-ve-kargo",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#ofis"
+ ],
+ "card": [
+  "Hiçbir kenar 1 metreyi geçemez.",
+  "1,5 metrelik çıta nasıl gider?"
+ ],
+ "caption": "Zeka sorusu: Kargo kuralına göre paketin hiçbir kenarı 1 metreyi geçemez. 1,5 metrelik ince bir çıtayı kırmadan, kesmeden, bükmeden nasıl gönderirsin?\n\nZengin Kız Fakir Oğlan'ın bilmecelerinden. Cevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Defneciğim, bu bir buçuk metrelik ince çıtayı kargolayacağız."
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Kargo kuralı: paketin hiçbir kenarı bir metreyi geçemez."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Çıtayı kırmak, kesmek, bükmek yok. Nasıl göndereceğiz?"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Bilirsen bu hafta erken çıkarsın."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.6,
+    "text": "Bir metrelik kutunun kapağına çapraz yatırırız!"
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Olmaz! Kapağın çaprazı bir metre kırk bir. Yetmez!"
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Şemsiyem dolaba ne düz sığdı ne çapraz. Köşeden köşeye yatırdım, sığdı!"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Buldum! Köşeden köşeye!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "Bir metrelik küp kutu alırız. Çıtayı alt köşeden karşı üst köşeye yatırırız."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "O köşegen bir metre yetmiş üç. Çıta rahat sığar!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1.1,
+    "text": "Necmi, şemsiyeni dolaptan çıkar. Yağmur başladı."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.55,
+    "text": "Bunu bavulu hiç kapanmayan arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "buzz",
+   "hd:0"
+  ],
+  [
+   "swish",
+   "d4:0"
+  ],
+  [
+   "pop",
+   "d4:8"
+  ],
+  [
+   "ding",
+   "d5:7"
+  ],
+  [
+   "womp",
+   "d5>+0.15"
+  ]
+ ]
+}

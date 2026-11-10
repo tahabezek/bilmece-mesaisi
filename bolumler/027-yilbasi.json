@@ -1,0 +1,151 @@
+{
+ "id": "027-yilbasi",
+ "num": 27,
+ "sira": 24,
+ "bpm": 120,
+ "slug": "evvelsi-gun-25-yasindaydim",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#ofis"
+ ],
+ "card": [
+  "Evvelsi gün 25 yaşındaydım,",
+  "seneye 28 olacağım. Nasıl?"
+ ],
+ "caption": "Zeka sorusu: Kerem diyor ki: \"Evvelsi gün 25 yaşındaydım, seneye 28 olacağım.\" Kerem yalan söylemiyor, \"seneye\" de gelecek yıl demek. Bu nasıl olur?\n\nZengin Kız Fakir Oğlan'ın bilmecelerinden. Cevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Defneciğim, Kerem dedi ki: Evvelsi gün yirmi beş yaşındaydım, seneye yirmi sekiz olacağım."
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.25,
+    "text": "Nasıl yani? Bir yılda üç yaş mı büyüyecek?"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Kerem yalan söylemiyor, kimliğine baktım."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Seneye dediği de gelecek yıl. Bu nasıl olur?"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Bilirsen doğum gününde pasta benden."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.6,
+    "text": "Kerem yaşını yanlış mı sayıyor?"
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Hayır! Kerem çok iyi sayar."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Benim oğlan otuz bir Aralık doğumlu. Pastasını keser, ertesi sabah yeni yıl!"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Buldum! Kerem bunu bir Ocak'ta söyledi!",
+    "tts": "Buldum! Kerem bunu bir Ocakta söyledi!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "Doğum günü otuz bir Aralık. Otuz Aralık'ta yirmi beş yaşındaydı, otuz bir Aralık'ta yirmi altı oldu.",
+    "tts": "Doğum günü otuz bir Aralık. Otuz Aralıkta yirmi beş yaşındaydı, otuz bir Aralıkta yirmi altı oldu."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Bu yılın sonunda yirmi yedi olacak, seneye de yirmi sekiz!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1.1,
+    "text": "Kerem'e söyleyin, pastası benden.",
+    "tts": "Kereme söyleyin, pastası benden."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.55,
+    "text": "Bunu yaşını hep yanlış söyleyen arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "buzz",
+   "hd:0"
+  ],
+  [
+   "swish",
+   "d4:0"
+  ],
+  [
+   "pop",
+   "d4:5"
+  ],
+  [
+   "pop",
+   "d4:10"
+  ],
+  [
+   "pop",
+   "d5:3"
+  ],
+  [
+   "ding",
+   "d5:8"
+  ],
+  [
+   "womp",
+   "d5>+0.15"
+  ]
+ ]
+}

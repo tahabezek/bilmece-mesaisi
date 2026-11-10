@@ -1,0 +1,139 @@
+{
+ "id": "024-uc-gun",
+ "num": 24,
+ "sira": 21,
+ "bpm": 120,
+ "slug": "art-arda-uc-gun",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#ofis"
+ ],
+ "card": [
+  "Salı, Perşembe, Cumartesi yasak.",
+  "Art arda üç gün say."
+ ],
+ "caption": "Zeka sorusu: Art arda üç gün say. Ama Salı, Perşembe ve Cumartesi demek yasak. Haftanın hangi üç gününü seçsen biri yasak çıkıyor. Nasıl sayarsın?\n\nZengin Kız Fakir Oğlan'ın bilmecelerinden. Cevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Defneciğim, bana art arda üç gün söyle."
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.25,
+    "text": "Çarşamba, Perşembe, Cuma!"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Olmaz! Salı, Perşembe ve Cumartesi demek yasak."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Bu üçünü söylemeden art arda üç gün sayacaksın."
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Bilirsen yarın öğleden sonra izinlisin."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.6,
+    "text": "O zaman Pazar, Pazartesi, Çarşamba!"
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Hayır! Pazartesiden sonra Salı gelir. Haftadaki her üçlüde bir yasak gün var."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Müdür Bey, ben işi asla yarına bırakmam. Dün yapamadıysam bugün yaparım!"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Buldum! Dün, bugün, yarın!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "Üçü de gün, üçü de art arda. Hiçbiri yasak değil!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1.1,
+    "text": "Yarın izinlisin… Ama bugün daha bitmedi.",
+    "tts": "Yarın izinlisin. Ama bugün daha bitmedi."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.55,
+    "text": "Bunu her işi yarına bırakan arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "buzz",
+   "hd:0"
+  ],
+  [
+   "pop",
+   "d3:1"
+  ],
+  [
+   "pop",
+   "d3:2"
+  ],
+  [
+   "pop",
+   "d3:3"
+  ],
+  [
+   "ding",
+   "d4:8"
+  ],
+  [
+   "womp",
+   "d4>+0.15"
+  ]
+ ]
+}

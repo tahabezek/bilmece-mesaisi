@@ -1,0 +1,135 @@
+{
+ "id": "026-armut",
+ "num": 26,
+ "sira": 23,
+ "bpm": 120,
+ "slug": "sisedeki-armut",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#ofis"
+ ],
+ "card": [
+  "Şişenin ağzı dar, armut kocaman.",
+  "Armut şişeye nasıl girdi?"
+ ],
+ "caption": "Zeka sorusu: Ağzı dar bir şişenin içinde koca bir armut var. Şişe kesilmemiş, yapıştırılmamış. Armut bütün, ezik bile değil. Armut şişeye nasıl girdi?\n\nZengin Kız Fakir Oğlan'ın bilmecelerinden. Cevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Defneciğim, Necmi'nin şişesinde koskoca bir armut var!",
+    "tts": "Defneciğim, Necminin şişesinde koskoca bir armut var!"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Şişenin ağzı dar, armut kocaman. Şişe kesilmemiş, yapıştırılmamış."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Armut da bütün, ne kesik ne ezik. Bu armut şişeye nasıl girdi?"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Bilirsen bu hafta çay benden."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.6,
+    "text": "Armudu ısıtıp yumuşattılar mı?"
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Hayır! Armut hiç ezilmemiş."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Hanım kabağı kutunun içinde büyüttü. Kabak kutunun şeklini aldı: kare kabak!"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Buldum! Armut şişede büyüdü!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "Armut daha minicikken dalına şişe geçirdiler."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Armut şişenin içinde büyüdü. Sonra dalından kestiler!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1.1,
+    "text": "Necmi, o kare kabağı da getir, görelim."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.55,
+    "text": "Bunu her şeyi zorla sığdırmaya çalışan arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "buzz",
+   "hd:0"
+  ],
+  [
+   "swish",
+   "d4:0"
+  ],
+  [
+   "pop",
+   "d4:4"
+  ],
+  [
+   "ding",
+   "d5:6"
+  ],
+  [
+   "womp",
+   "d5>+0.15"
+  ]
+ ]
+}
