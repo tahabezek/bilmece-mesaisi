@@ -1,0 +1,257 @@
+{
+ "id": "028f-cita-fable",
+ "num": 128,
+ "sira": 25,
+ "bpm": 120,
+ "slug": "cita-ve-kargo-fable",
+ "disabled": "Karşılaştırma sürümü (028 ile aynı bilmece, Fable 5.2 yönetimi). Yayın kuyruğuna girmez.",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#ofis"
+ ],
+ "card": [
+  "Kutu: her kenar en çok 1 m.",
+  "Çıta: 1,5 m. Nasıl sığar?"
+ ],
+ "caption": "Zeka sorusu: Kargo kuralına göre kutunun hiçbir kenarı 1 metreyi geçemez. 1,5 metrelik ince bir çıtayı kırmadan, kesmeden, bükmeden bu kutuya nasıl sığdırırsın?\n\nZengin Kız Fakir Oğlan'ın bilmecelerinden. Cevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.25,
+    "text": "Bir buçuk metrelik çıta, bir metrelik kutuya sığar mı?"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Kargo kuralı: kutunun hiçbir kenarı bir metreyi geçemez."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Çıtayı kırmak, kesmek, bükmek yok."
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.35,
+    "text": "Bilirsen bugün erken çıkarsın."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Kolay! Çapraz koyarım."
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Olmaz! Kapağın çaprazı bir metre kırk bir. Yine taşıyor."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Benim şemsiye de dolaptan uzun. Ama bakın, içine sığdı!"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.3,
+    "text": "Buldum! Köşeden köşeye!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.3,
+    "text": "Bir ucunu alt köşeye koyup öbür ucunu karşıdaki üst köşeye doğru uzatırız."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Bu köşegen bir metre yetmiş üç. Çıta rahat sığar!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 0.85,
+    "text": "Erken çıkabilirsin. Ama kutuyu kargoya sen götür."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 1,
+    "text": "Bunu taşınırken hep seni çağıran arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "knock",
+   "@0.31"
+  ],
+  [
+   "knock",
+   "h1:4+0.3"
+  ],
+  [
+   "pop",
+   "h1:7"
+  ],
+  [
+   "pop",
+   "h2a:2"
+  ],
+  [
+   "pop",
+   "h2a:4"
+  ],
+  [
+   "pop",
+   "h2b:1"
+  ],
+  [
+   "pop",
+   "h2b:2"
+  ],
+  [
+   "pop",
+   "h2b:3"
+  ],
+  [
+   "knock",
+   "h2b:4"
+  ],
+  [
+   "pop",
+   "h3:2"
+  ],
+  [
+   "swish",
+   "d2:1+0.3"
+  ],
+  [
+   "knock",
+   "d2:1+0.7"
+  ],
+  [
+   "buzz",
+   "hd:0"
+  ],
+  [
+   "pop",
+   "hd:3"
+  ],
+  [
+   "pop",
+   "hd:5"
+  ],
+  [
+   "swish",
+   "n1-4.4"
+  ],
+  [
+   "swish",
+   "n1-2.95"
+  ],
+  [
+   "knock",
+   "n1-2.6"
+  ],
+  [
+   "swish",
+   "n1-1.5"
+  ],
+  [
+   "swish",
+   "n1:5+0.2"
+  ],
+  [
+   "knock",
+   "n1:5+0.5"
+  ],
+  [
+   "knock",
+   "d4:4"
+  ],
+  [
+   "swish",
+   "d4:6"
+  ],
+  [
+   "pop",
+   "d4:9"
+  ],
+  [
+   "pop",
+   "d5:6"
+  ],
+  [
+   "swish",
+   "d5>+0.05"
+  ],
+  [
+   "zip",
+   [
+    "d5>+0.36",
+    "d5>+0.58"
+   ]
+  ],
+  [
+   "stamp",
+   "d5>+0.63"
+  ],
+  [
+   "womp",
+   "h4:6"
+  ],
+  [
+   "zip",
+   [
+    "h4>+0.2",
+    "h4>+0.58"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "h4>+0.63",
+    "h4>+0.99"
+   ]
+  ],
+  [
+   "swish",
+   "d5+0.45"
+  ],
+  [
+   "ding",
+   "d5:3"
+  ]
+ ]
+}

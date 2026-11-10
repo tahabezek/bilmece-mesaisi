@@ -1,342 +1,190 @@
 {
  "h1": {
-  "key": "c7933a17b4a7",
-  "trimmed": "c7933a17b4a7",
-  "wkey": "c7933a17b4a7",
-  "heard": "Defneciğim, buzdolabındaki baklavam kayboldu.",
+  "key": "f332212e70d9",
+  "trimmed": "f332212e70d9",
+  "wkey": "f332212e70d9",
+  "heard": "Son baklavamı için izlen bir yemiş.",
   "words": [
    {
-    "w": "Defneciğim,",
+    "w": "Son",
     "t0": 0.0,
-    "t1": 0.68
+    "t1": 0.32
    },
    {
-    "w": "buzdolabındaki",
-    "t0": 0.92,
-    "t1": 1.68
-   },
-   {
-    "w": "baklavam",
-    "t0": 1.68,
-    "t1": 2.32
-   },
-   {
-    "w": "kayboldu!",
-    "t0": 2.32,
-    "t1": 2.96
-   }
-  ],
-  "dur": 3.05
- },
- "d1": {
-  "key": "25a207e22c29",
-  "trimmed": "25a207e22c29",
-  "wkey": "25a207e22c29",
-  "heard": "Kim yemiş müdür bey?",
-  "words": [
-   {
-    "w": "Kim",
-    "t0": 0.0,
-    "t1": 0.2
-   },
-   {
-    "w": "yemiş",
-    "t0": 0.2,
-    "t1": 0.54
-   },
-   {
-    "w": "Müdür",
-    "t0": 0.54,
-    "t1": 0.84
-   },
-   {
-    "w": "Bey?",
-    "t0": 0.84,
+    "w": "baklavamı",
+    "t0": 0.32,
     "t1": 0.96
-   }
-  ],
-  "dur": 1.13
- },
- "h2a": {
-  "key": "089cc4ad0abd",
-  "trimmed": "089cc4ad0abd",
-  "wkey": "089cc4ad0abd",
-  "heard": "3 şüphelim var. Necmi Kerem Ve Sen, baklavayı tek kişi yedi.",
-  "words": [
-   {
-    "w": "Üç",
-    "t0": 0.0,
-    "t1": 0.2
    },
    {
-    "w": "şüphelim",
-    "t0": 0.2,
-    "t1": 0.68
-   },
-   {
-    "w": "var.",
-    "t0": 0.68,
-    "t1": 1.22
-   },
-   {
-    "w": "Necmi,",
-    "t0": 1.22,
-    "t1": 1.78
-   },
-   {
-    "w": "Kerem",
-    "t0": 1.78,
-    "t1": 2.3
-   },
-   {
-    "w": "ve",
-    "t0": 2.3,
-    "t1": 2.67
-   },
-   {
-    "w": "sen.",
-    "t0": 2.67,
-    "t1": 3.04
-   },
-   {
-    "w": "Baklavayı",
-    "t0": 3.04,
-    "t1": 3.68
-   },
-   {
-    "w": "tek",
-    "t0": 3.68,
-    "t1": 3.9
-   },
-   {
-    "w": "kişi",
-    "t0": 3.9,
-    "t1": 4.22
-   },
-   {
-    "w": "yedi.",
-    "t0": 4.22,
-    "t1": 4.46
-   }
-  ],
-  "dur": 4.626
- },
- "h2b": {
-  "key": "4c4a56d571cd",
-  "trimmed": "4c4a56d571cd",
-  "wkey": "4c4a56d571cd",
-  "heard": "Necmi Kerem yedi diyor. Kerem ben yemedim diyor. Sen de Necmi yemedi dedin.",
-  "words": [
-   {
-    "w": "Necmi,",
-    "t0": 0.0,
-    "t1": 0.5
-   },
-   {
-    "w": "Kerem",
-    "t0": 0.5,
-    "t1": 1.0
-   },
-   {
-    "w": "yedi",
-    "t0": 1.0,
-    "t1": 1.3
-   },
-   {
-    "w": "diyor.",
-    "t0": 1.3,
-    "t1": 1.54
-   },
-   {
-    "w": "Kerem,",
-    "t0": 1.98,
-    "t1": 2.32
-   },
-   {
-    "w": "ben",
-    "t0": 2.32,
-    "t1": 2.7
-   },
-   {
-    "w": "yemedim",
-    "t0": 2.7,
-    "t1": 3.18
-   },
-   {
-    "w": "diyor.",
-    "t0": 3.18,
-    "t1": 3.38
-   },
-   {
-    "w": "Sen",
-    "t0": 3.38,
-    "t1": 3.89
-   },
-   {
-    "w": "de,",
-    "t0": 3.89,
-    "t1": 4.4
-   },
-   {
-    "w": "Necmi",
-    "t0": 4.4,
-    "t1": 4.98
-   },
-   {
-    "w": "yemedi",
-    "t0": 4.98,
-    "t1": 5.34
-   },
-   {
-    "w": "dedin.",
-    "t0": 5.34,
-    "t1": 5.64
-   }
-  ],
-  "dur": 5.766
- },
- "h2c": {
-  "key": "6fc04438a35c",
-  "trimmed": "6fc04438a35c",
-  "wkey": "6fc04438a35c",
-  "heard": "3 'ünüzden yalnız biri doğru söylüyor. Baklavayı kim yedi?",
-  "words": [
-   {
-    "w": "Üçünüzden",
-    "t0": 0.0,
-    "t1": 0.64
-   },
-   {
-    "w": "yalnız",
-    "t0": 0.64,
-    "t1": 1.04
+    "w": "içinizden",
+    "t0": 0.96,
+    "t1": 1.507
    },
    {
     "w": "biri",
-    "t0": 1.04,
-    "t1": 1.3
+    "t0": 1.507,
+    "t1": 1.78
    },
    {
-    "w": "doğru",
-    "t0": 1.3,
-    "t1": 1.56
+    "w": "yemiş!",
+    "t0": 1.78,
+    "t1": 2.18
+   }
+  ],
+  "dur": 2.29
+ },
+ "h2a": {
+  "key": "26b817f3f481",
+  "trimmed": "26b817f3f481",
+  "wkey": "26b817f3f481",
+  "heard": "Necmi Kerem yedi diyor. Kerem ben yemedim diyor. Defne Necmi yemedi diyor.",
+  "words": [
+   {
+    "w": "Necmi",
+    "t0": 0.0,
+    "t1": 0.48
    },
    {
-    "w": "söylüyor.",
-    "t0": 1.56,
-    "t1": 2.14
+    "w": "Kerem",
+    "t0": 0.48,
+    "t1": 0.82
    },
    {
-    "w": "Baklavayı",
-    "t0": 2.62,
-    "t1": 3.14
+    "w": "yedi",
+    "t0": 0.82,
+    "t1": 1.14
    },
    {
-    "w": "kim",
-    "t0": 3.14,
-    "t1": 3.36
+    "w": "diyor.",
+    "t0": 1.14,
+    "t1": 1.38
+   },
+   {
+    "w": "Kerem",
+    "t0": 1.74,
+    "t1": 2.12
+   },
+   {
+    "w": "Ben",
+    "t0": 2.12,
+    "t1": 2.32
+   },
+   {
+    "w": "yemedim",
+    "t0": 2.32,
+    "t1": 2.8
+   },
+   {
+    "w": "diyor.",
+    "t0": 2.8,
+    "t1": 3.0
+   },
+   {
+    "w": "Defne",
+    "t0": 3.44,
+    "t1": 3.84
+   },
+   {
+    "w": "Necmi",
+    "t0": 3.84,
+    "t1": 4.24
+   },
+   {
+    "w": "yemedi",
+    "t0": 4.24,
+    "t1": 4.6
+   },
+   {
+    "w": "diyor.",
+    "t0": 4.6,
+    "t1": 4.76
+   }
+  ],
+  "dur": 5.017
+ },
+ "h2b": {
+  "key": "f937c61fc765",
+  "trimmed": "f937c61fc765",
+  "wkey": "f937c61fc765",
+  "heard": "Bu üç sözden yalnız biri doğru. Kim yedi?",
+  "words": [
+   {
+    "w": "Bu",
+    "t0": 0.0,
+    "t1": 0.21
+   },
+   {
+    "w": "üç",
+    "t0": 0.21,
+    "t1": 0.42
+   },
+   {
+    "w": "sözden",
+    "t0": 0.42,
+    "t1": 0.88
+   },
+   {
+    "w": "yalnız",
+    "t0": 0.88,
+    "t1": 1.28
+   },
+   {
+    "w": "biri",
+    "t0": 1.28,
+    "t1": 1.52
+   },
+   {
+    "w": "doğru.",
+    "t0": 1.52,
+    "t1": 1.84
+   },
+   {
+    "w": "Kim",
+    "t0": 1.84,
+    "t1": 2.42
    },
    {
     "w": "yedi?",
-    "t0": 3.36,
-    "t1": 3.62
+    "t0": 2.42,
+    "t1": 2.74
    }
   ],
-  "dur": 3.818
+  "dur": 2.988
  },
  "h3": {
-  "key": "2cc3c8c61d3a",
-  "trimmed": "2cc3c8c61d3a",
-  "wkey": "2cc3c8c61d3a",
-  "heard": "Bulursam baklavanın yenisi senin.",
+  "key": "9a9c8f82377d",
+  "trimmed": "9a9c8f82377d",
+  "wkey": "9a9c8f82377d",
+  "heard": "Bulursan yeni tepsi senin.",
   "words": [
    {
     "w": "Bulursan",
     "t0": 0.0,
-    "t1": 0.58
+    "t1": 0.6
    },
    {
-    "w": "baklavanın",
-    "t0": 0.58,
-    "t1": 1.22
+    "w": "yeni",
+    "t0": 0.6,
+    "t1": 0.84
    },
    {
-    "w": "yenisi",
-    "t0": 1.22,
-    "t1": 1.6
+    "w": "tepsi",
+    "t0": 0.84,
+    "t1": 1.28
    },
    {
     "w": "senin.",
-    "t0": 1.6,
-    "t1": 1.84
+    "t0": 1.28,
+    "t1": 1.46
    }
   ],
-  "dur": 2.091
- },
- "da": {
-  "key": "78a3a977bcec",
-  "trimmed": "78a3a977bcec",
-  "wkey": "78a3a977bcec",
-  "heard": "Biri doğru ikisi yalan kimin doğru söylediğini bilmeden nereden başlayayım.",
-  "words": [
-   {
-    "w": "Biri",
-    "t0": 0.0,
-    "t1": 0.3
-   },
-   {
-    "w": "doğru,",
-    "t0": 0.3,
-    "t1": 0.48
-   },
-   {
-    "w": "ikisi",
-    "t0": 0.48,
-    "t1": 1.04
-   },
-   {
-    "w": "yalan.",
-    "t0": 1.04,
-    "t1": 1.36
-   },
-   {
-    "w": "Kimin",
-    "t0": 1.36,
-    "t1": 1.9
-   },
-   {
-    "w": "doğru",
-    "t0": 1.9,
-    "t1": 2.14
-   },
-   {
-    "w": "söylediğini",
-    "t0": 2.14,
-    "t1": 2.74
-   },
-   {
-    "w": "bilmeden",
-    "t0": 2.74,
-    "t1": 3.16
-   },
-   {
-    "w": "nereden",
-    "t0": 3.16,
-    "t1": 3.6
-   },
-   {
-    "w": "başlayayım?",
-    "t0": 3.6,
-    "t1": 4.08
-   }
-  ],
-  "dur": 4.228
+  "dur": 1.73
  },
  "d2": {
-  "key": "04851720ad56",
-  "trimmed": "04851720ad56",
-  "wkey": "04851720ad56",
-  "heard": "Kerem yemiştir herhalde, Necmi abi de öyle diyor.",
+  "key": "31c70533340e",
+  "trimmed": "31c70533340e",
+  "wkey": "31c70533340e",
+  "heard": "Kerem yemiştir. Necmi abi de öyle diyor.",
   "words": [
    {
     "w": "Kerem",
@@ -344,253 +192,120 @@
     "t1": 0.32
    },
    {
-    "w": "yemiştir",
+    "w": "yemiştir.",
     "t0": 0.32,
-    "t1": 0.76
-   },
-   {
-    "w": "herhalde.",
-    "t0": 0.76,
-    "t1": 1.38
+    "t1": 0.8
    },
    {
     "w": "Necmi",
-    "t0": 1.64,
-    "t1": 2.06
+    "t0": 1.04,
+    "t1": 1.5
    },
    {
     "w": "Abi",
-    "t0": 2.06,
-    "t1": 2.34
+    "t0": 1.5,
+    "t1": 1.78
    },
    {
     "w": "de",
-    "t0": 2.34,
-    "t1": 2.48
+    "t0": 1.78,
+    "t1": 1.92
    },
    {
     "w": "öyle",
-    "t0": 2.48,
-    "t1": 2.7
+    "t0": 1.92,
+    "t1": 2.14
    },
    {
     "w": "diyor.",
-    "t0": 2.7,
-    "t1": 2.94
+    "t0": 2.14,
+    "t1": 2.38
    }
   ],
-  "dur": 3.168
+  "dur": 2.598
  },
  "hd": {
-  "key": "ad072b43c539",
-  "trimmed": "ad072b43c539",
-  "wkey": "ad072b43c539",
-  "heard": "Yanlış. O zaman iki kişi doğru söylemiş olur.",
+  "key": "e6ecbe71a43b",
+  "trimmed": "e6ecbe71a43b",
+  "wkey": "e6ecbe71a43b",
+  "heard": "Olmaz. O zaman iki söz doğru çıkar.",
   "words": [
    {
-    "w": "Yanlış!",
+    "w": "Olmaz!",
     "t0": 0.0,
-    "t1": 0.68
+    "t1": 0.46
    },
    {
     "w": "O",
-    "t0": 0.68,
-    "t1": 1.14
+    "t0": 0.46,
+    "t1": 1.02
    },
    {
     "w": "zaman",
-    "t0": 1.14,
-    "t1": 1.48
+    "t0": 1.02,
+    "t1": 1.34
    },
    {
     "w": "iki",
-    "t0": 1.48,
-    "t1": 1.8
+    "t0": 1.34,
+    "t1": 1.753
    },
    {
-    "w": "kişi",
-    "t0": 1.8,
-    "t1": 2.08
+    "w": "söz",
+    "t0": 1.753,
+    "t1": 1.96
    },
    {
     "w": "doğru",
-    "t0": 2.08,
+    "t0": 1.96,
+    "t1": 2.16
+   },
+   {
+    "w": "çıkar.",
+    "t0": 2.16,
+    "t1": 2.5
+   }
+  ],
+  "dur": 2.808
+ },
+ "n1": {
+  "key": "b66506f337e4",
+  "trimmed": "b66506f337e4",
+  "wkey": "b66506f337e4",
+  "heard": "Benim arşivde işim vardı. Ben kaçayım.",
+  "words": [
+   {
+    "w": "Benim",
+    "t0": 0.0,
+    "t1": 0.34
+   },
+   {
+    "w": "arşivde",
+    "t0": 0.34,
+    "t1": 0.94
+   },
+   {
+    "w": "işim",
+    "t0": 0.94,
+    "t1": 1.3
+   },
+   {
+    "w": "vardı.",
+    "t0": 1.3,
+    "t1": 1.62
+   },
+   {
+    "w": "Ben",
+    "t0": 1.62,
     "t1": 2.32
    },
    {
-    "w": "söylemiş",
+    "w": "kaçayım.",
     "t0": 2.32,
-    "t1": 2.94
-   },
-   {
-    "w": "olur.",
-    "t0": 2.94,
-    "t1": 3.12
-   }
-  ],
-  "dur": 3.348
- },
- "n0": {
-  "key": "efd16d8b547f",
-  "trimmed": "efd16d8b547f",
-  "wkey": "efd16d8b547f",
-  "heard": "Ben baklava sevmem ki şerbetli şeylerden uzak dururum.",
-  "words": [
-   {
-    "w": "Ben",
-    "t0": 0.0,
-    "t1": 0.3
-   },
-   {
-    "w": "baklava",
-    "t0": 0.3,
-    "t1": 0.86
-   },
-   {
-    "w": "sevmem",
-    "t0": 0.86,
-    "t1": 1.34
-   },
-   {
-    "w": "ki,",
-    "t0": 1.34,
-    "t1": 1.64
-   },
-   {
-    "w": "şerbetli",
-    "t0": 1.64,
-    "t1": 2.46
-   },
-   {
-    "w": "şeylerden",
-    "t0": 2.46,
-    "t1": 3.06
-   },
-   {
-    "w": "uzak",
-    "t0": 3.06,
-    "t1": 3.48
-   },
-   {
-    "w": "dururum.",
-    "t0": 3.48,
-    "t1": 3.86
-   }
-  ],
-  "dur": 3.97
- },
- "hn": {
-  "key": "294e95b697b2",
-  "trimmed": "294e95b697b2",
-  "wkey": "294e95b697b2",
-  "heard": "Sus Necmi Sıra Defne'de",
-  "words": [
-   {
-    "w": "Sus",
-    "t0": 0.0,
-    "t1": 0.32
-   },
-   {
-    "w": "Necmi,",
-    "t0": 0.32,
-    "t1": 0.88
-   },
-   {
-    "w": "sıra",
-    "t0": 0.88,
-    "t1": 1.34
-   },
-   {
-    "w": "Defnede.",
-    "t0": 1.34,
-    "t1": 1.86
-   }
-  ],
-  "dur": 1.96
- },
- "n1": {
-  "key": "271c74c3576b",
-  "trimmed": "271c74c3576b",
-  "wkey": "271c74c3576b",
-  "heard": "Arşiv 'in 3 anahtarı var, kapıyı yalnız bir açar. Ben tek tek denerim. Hangisi uyuyorsa odur.",
-  "words": [
-   {
-    "w": "Arşivin",
-    "t0": 0.0,
-    "t1": 0.48
-   },
-   {
-    "w": "üç",
-    "t0": 0.48,
-    "t1": 0.86
-   },
-   {
-    "w": "anahtarı",
-    "t0": 0.86,
-    "t1": 1.44
-   },
-   {
-    "w": "var,",
-    "t0": 1.44,
-    "t1": 1.94
-   },
-   {
-    "w": "kapıyı",
-    "t0": 1.94,
-    "t1": 2.38
-   },
-   {
-    "w": "yalnız",
-    "t0": 2.38,
     "t1": 2.78
-   },
-   {
-    "w": "biri",
-    "t0": 2.78,
-    "t1": 3.0
-   },
-   {
-    "w": "açar.",
-    "t0": 3.0,
-    "t1": 3.48
-   },
-   {
-    "w": "Ben",
-    "t0": 3.48,
-    "t1": 3.833
-   },
-   {
-    "w": "tek",
-    "t0": 3.833,
-    "t1": 4.187
-   },
-   {
-    "w": "tek",
-    "t0": 4.187,
-    "t1": 4.54
-   },
-   {
-    "w": "denerim.",
-    "t0": 4.54,
-    "t1": 5.06
-   },
-   {
-    "w": "Hangisi",
-    "t0": 5.4,
-    "t1": 5.94
-   },
-   {
-    "w": "uyuyorsa",
-    "t0": 5.94,
-    "t1": 6.58
-   },
-   {
-    "w": "odur!",
-    "t0": 6.58,
-    "t1": 7.02
    }
   ],
-  "dur": 7.076
+  "dur": 2.988
  },
  "d3": {
   "key": "734db7595b29",
@@ -627,229 +342,164 @@
   "dur": 2.278
  },
  "d4": {
-  "key": "9d9e2e49bd36",
-  "trimmed": "9d9e2e49bd36",
-  "wkey": "9d9e2e49bd36",
-  "heard": "Tek tek deneyelim. Kerem yediğise iki doğru çıkar. Ben yediysem yine iki doğru.",
+  "key": "ebd3d84aadf2",
+  "trimmed": "ebd3d84aadf2",
+  "wkey": "ebd3d84aadf2",
+  "heard": "Necmi abi yediği ise, yalnız Kerem 'in sözü doğru kalıyor.",
   "words": [
-   {
-    "w": "Tek",
-    "t0": 0.0,
-    "t1": 0.21
-   },
-   {
-    "w": "tek",
-    "t0": 0.21,
-    "t1": 0.42
-   },
-   {
-    "w": "deneyelim.",
-    "t0": 0.42,
-    "t1": 0.86
-   },
-   {
-    "w": "Kerem",
-    "t0": 1.06,
-    "t1": 1.46
-   },
-   {
-    "w": "yediyse",
-    "t0": 1.46,
-    "t1": 1.94
-   },
-   {
-    "w": "iki",
-    "t0": 1.94,
-    "t1": 2.16
-   },
-   {
-    "w": "doğru",
-    "t0": 2.16,
-    "t1": 2.42
-   },
-   {
-    "w": "çıkar.",
-    "t0": 2.42,
-    "t1": 2.68
-   },
-   {
-    "w": "Ben",
-    "t0": 2.68,
-    "t1": 3.3
-   },
-   {
-    "w": "yediysem",
-    "t0": 3.3,
-    "t1": 3.78
-   },
-   {
-    "w": "yine",
-    "t0": 3.78,
-    "t1": 4.04
-   },
-   {
-    "w": "iki",
-    "t0": 4.04,
-    "t1": 4.28
-   },
-   {
-    "w": "doğru.",
-    "t0": 4.28,
-    "t1": 4.56
-   }
-  ],
-  "dur": 4.746
- },
- "d5": {
-  "key": "90e67804c74b",
-  "trimmed": "90e67804c74b",
-  "wkey": "90e67804c74b",
-  "heard": "Ama necmi abi yedi ise yalnız kerem doğru söylüyor tek doğru necmi abi yedi.",
-  "words": [
-   {
-    "w": "Ama",
-    "t0": 0.0,
-    "t1": 0.16
-   },
    {
     "w": "Necmi",
-    "t0": 0.16,
-    "t1": 0.54
+    "t0": 0.0,
+    "t1": 0.38
    },
    {
     "w": "Abi",
-    "t0": 0.54,
-    "t1": 0.78
+    "t0": 0.38,
+    "t1": 0.748
    },
    {
     "w": "yediyse",
-    "t0": 0.78,
-    "t1": 1.06
+    "t0": 0.748,
+    "t1": 1.3
    },
    {
     "w": "yalnız",
-    "t0": 1.28,
-    "t1": 1.76
+    "t0": 1.3,
+    "t1": 1.58
    },
    {
-    "w": "Kerem",
-    "t0": 1.76,
-    "t1": 2.1
+    "w": "Keremin",
+    "t0": 1.58,
+    "t1": 1.88
    },
    {
-    "w": "doğru",
-    "t0": 2.1,
+    "w": "sözü",
+    "t0": 1.98,
     "t1": 2.28
    },
    {
-    "w": "söylüyor.",
+    "w": "doğru",
     "t0": 2.28,
-    "t1": 2.88
+    "t1": 2.44
    },
    {
-    "w": "Tek",
-    "t0": 2.88,
-    "t1": 3.3
-   },
-   {
-    "w": "doğru.",
-    "t0": 3.3,
-    "t1": 3.7
-   },
-   {
-    "w": "Necmi",
-    "t0": 3.7,
-    "t1": 4.44
-   },
-   {
-    "w": "Abi",
-    "t0": 4.44,
-    "t1": 4.68
-   },
-   {
-    "w": "yedi!",
-    "t0": 4.68,
-    "t1": 5.02
+    "w": "kalıyor!",
+    "t0": 2.44,
+    "t1": 2.82
    }
   ],
-  "dur": 5.126
+  "dur": 2.98
  },
- "h4": {
-  "key": "1335d8dd078d",
-  "trimmed": "1335d8dd078d",
-  "wkey": "1335d8dd078d",
-  "heard": "Necmi, şerbetli şeylerden uzak duruyordun hani.",
+ "d5": {
+  "key": "d34db2705ba0",
+  "trimmed": "d34db2705ba0",
+  "wkey": "d34db2705ba0",
+  "heard": "Ben de yanılmışım. Yemez sanıyordum.",
   "words": [
    {
-    "w": "Necmi.",
+    "w": "Ben",
+    "t0": 0.0,
+    "t1": 0.17
+   },
+   {
+    "w": "de",
+    "t0": 0.17,
+    "t1": 0.34
+   },
+   {
+    "w": "yanılmışım.",
+    "t0": 0.34,
+    "t1": 1.0
+   },
+   {
+    "w": "Yemez",
+    "t0": 1.2,
+    "t1": 1.64
+   },
+   {
+    "w": "sanıyordum!",
+    "t0": 1.64,
+    "t1": 2.06
+   }
+  ],
+  "dur": 2.268
+ },
+ "h4": {
+  "key": "8adcbcb36289",
+  "trimmed": "8adcbcb36289",
+  "wkey": "8adcbcb36289",
+  "heard": "Necmi, o kalemi nerede görsem tanırım.",
+  "words": [
+   {
+    "w": "Necmi!",
     "t0": 0.0,
     "t1": 0.58
    },
    {
-    "w": "Şerbetli",
-    "t0": 0.88,
-    "t1": 1.56
+    "w": "O",
+    "t0": 0.58,
+    "t1": 1.06
    },
    {
-    "w": "şeylerden",
-    "t0": 1.56,
-    "t1": 2.18
+    "w": "kalemi",
+    "t0": 1.06,
+    "t1": 1.42
    },
    {
-    "w": "uzak",
-    "t0": 2.18,
-    "t1": 2.62
+    "w": "nerede",
+    "t0": 1.42,
+    "t1": 1.66
    },
    {
-    "w": "duruyordun",
-    "t0": 2.62,
-    "t1": 3.18
+    "w": "görsem",
+    "t0": 1.66,
+    "t1": 2.28
    },
    {
-    "w": "hani?",
-    "t0": 3.18,
-    "t1": 3.38
+    "w": "tanırım.",
+    "t0": 2.28,
+    "t1": 2.68
    }
   ],
-  "dur": 3.608
+  "dur": 2.878
  },
  "d6": {
-  "key": "e5dbc76a9530",
-  "trimmed": "e5dbc76a9530",
-  "wkey": "e5dbc76a9530",
-  "heard": "Bunu buzdolabından yemek aşıran arkadaşına gönder.",
+  "key": "fcdfbd5dd190",
+  "trimmed": "fcdfbd5dd190",
+  "wkey": "fcdfbd5dd190",
+  "heard": "Bunu dolaptan yemek aşıran arkadaşına gönder.",
   "words": [
    {
     "w": "Bunu",
     "t0": 0.0,
-    "t1": 0.2
+    "t1": 0.18
    },
    {
-    "w": "buzdolabından",
-    "t0": 0.2,
-    "t1": 0.86
+    "w": "dolaptan",
+    "t0": 0.18,
+    "t1": 0.68
    },
    {
     "w": "yemek",
-    "t0": 0.86,
-    "t1": 1.12
+    "t0": 0.68,
+    "t1": 0.86
    },
    {
     "w": "aşıran",
-    "t0": 1.12,
-    "t1": 1.54
+    "t0": 0.86,
+    "t1": 1.3
    },
    {
     "w": "arkadaşına",
-    "t0": 1.54,
-    "t1": 2.1
+    "t0": 1.3,
+    "t1": 1.86
    },
    {
     "w": "gönder.",
-    "t0": 2.1,
-    "t1": 2.44
+    "t0": 1.86,
+    "t1": 2.2
    }
   ],
-  "dur": 2.61
+  "dur": 2.37
  }
 }

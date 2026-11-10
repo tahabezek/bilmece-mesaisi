@@ -1,7 +1,7 @@
 {
  "id": "020-baklava",
  "num": 20,
- "sira": 17,
+ "sira": 23,
  "bpm": 120,
  "slug": "kayip-baklava",
  "coverAt": 0,
@@ -13,7 +13,7 @@
   "#ofis"
  ],
  "card": [
-  "Yalnız biri doğru söylüyor.",
+  "Üç sözden yalnız biri doğru.",
   "Baklavayı kim yedi?"
  ],
  "caption": "Zeka sorusu: Hikmet Bey'in baklavasını tek kişi yedi. Necmi \"Kerem yedi\" diyor, Kerem \"Ben yemedim\" diyor, Defne \"Necmi yemedi\" diyor. Üçünden yalnız biri doğru söylüyor. Baklavayı kim yedi?\n\nCevap videonun sonunda.",
@@ -25,110 +25,75 @@
     "id": "h1",
     "who": "hikmet",
     "gap": 0.4,
-    "text": "Defneciğim, buzdolabındaki baklavam kayboldu!"
-   },
-   {
-    "id": "d1",
-    "who": "defne",
-    "gap": 0.25,
-    "text": "Kim yemiş Müdür Bey?"
+    "text": "Son baklavamı içinizden biri yemiş!"
    },
    {
     "id": "h2a",
     "who": "hikmet",
     "gap": 0.3,
-    "text": "Üç şüphelim var: Necmi, Kerem ve sen. Baklavayı tek kişi yedi.",
-    "tts": "Üç şüphelim var. Necmi, Kerem ve sen. Baklavayı tek kişi yedi."
+    "text": "Necmi 'Kerem yedi' diyor. Kerem 'Ben yemedim' diyor. Defne 'Necmi yemedi' diyor.",
+    "tts": "Necmi Kerem yedi diyor. Kerem Ben yemedim diyor. Defne Necmi yemedi diyor."
    },
    {
     "id": "h2b",
     "who": "hikmet",
     "gap": 0.3,
-    "text": "Necmi, Kerem yedi diyor. Kerem, ben yemedim diyor. Sen de, Necmi yemedi dedin."
-   },
-   {
-    "id": "h2c",
-    "who": "hikmet",
-    "gap": 0.35,
-    "text": "Üçünüzden yalnız biri doğru söylüyor. Baklavayı kim yedi?"
+    "text": "Bu üç sözden yalnız biri doğru. Kim yedi?"
    },
    {
     "id": "h3",
     "who": "hikmet",
     "gap": 0.4,
-    "text": "Bulursan baklavanın yenisi senin."
-   },
-   {
-    "id": "da",
-    "who": "defne",
-    "gap": 0.45,
-    "text": "Biri doğru, ikisi yalan… Kimin doğru söylediğini bilmeden nereden başlayayım?",
-    "tts": "Biri doğru, ikisi yalan. Kimin doğru söylediğini bilmeden nereden başlayayım?"
+    "text": "Bulursan yeni tepsi senin."
    },
    {
     "id": "d2",
     "who": "defne",
-    "gap": 0.3,
-    "text": "Kerem yemiştir herhalde. Necmi Abi de öyle diyor."
+    "gap": 0.6,
+    "text": "Kerem yemiştir. Necmi Abi de öyle diyor."
    },
    {
     "id": "hd",
     "who": "hikmet",
     "gap": 0.45,
-    "text": "Yanlış! O zaman iki kişi doğru söylemiş olur."
-   },
-   {
-    "id": "n0",
-    "who": "necmi",
-    "gap": 0.3,
-    "text": "Ben baklava sevmem ki, şerbetli şeylerden uzak dururum."
-   },
-   {
-    "id": "hn",
-    "who": "hikmet",
-    "gap": 0.45,
-    "text": "Sus Necmi, sıra Defne'de.",
-    "tts": "Sus Necmi, sıra Defnede."
+    "text": "Olmaz! O zaman iki söz doğru çıkar."
    },
    {
     "id": "n1",
     "who": "necmi",
     "gap": 5.6,
-    "text": "Arşivin üç anahtarı var, kapıyı yalnız biri açar. Ben tek tek denerim: hangisi uyuyorsa odur!",
-    "tts": "Arşivin üç anahtarı var, kapıyı yalnız biri açar. Ben tek tek denerim. Hangisi uyuyorsa odur!"
+    "text": "Benim arşivde işim vardı. Ben kaçayım."
    },
    {
     "id": "d3",
     "who": "defne",
     "gap": 0.35,
-    "text": "Buldum! Baklavayı Necmi Abi yedi!",
-    "snap": true
+    "text": "Buldum! Baklavayı Necmi Abi yedi!"
    },
    {
     "id": "d4",
     "who": "defne",
     "gap": 0.4,
-    "text": "Tek tek deneyelim. Kerem yediyse iki doğru çıkar. Ben yediysem yine iki doğru."
+    "text": "Necmi Abi yediyse yalnız Kerem'in sözü doğru kalıyor!",
+    "tts": "Necmi Abi yediyse yalnız Keremin sözü doğru kalıyor!"
    },
    {
     "id": "d5",
     "who": "defne",
     "gap": 0.45,
-    "text": "Ama Necmi Abi yediyse yalnız Kerem doğru söylüyor. Tek doğru: Necmi Abi yedi!",
-    "tts": "Ama Necmi Abi yediyse yalnız Kerem doğru söylüyor. Tek doğru. Necmi Abi yedi!"
+    "text": "Ben de yanılmışım. Yemez sanıyordum!"
    },
    {
     "id": "h4",
     "who": "hikmet",
     "gap": 1.1,
-    "text": "Necmi… Şerbetli şeylerden uzak duruyordun hani?",
-    "tts": "Necmi. Şerbetli şeylerden uzak duruyordun hani?"
+    "text": "Necmi! O kalemi nerede görsem tanırım."
    },
    {
     "id": "d6",
     "who": "defne",
     "gap": 0.55,
-    "text": "Bunu buzdolabından yemek aşıran arkadaşına gönder."
+    "text": "Bunu dolaptan yemek aşıran arkadaşına gönder."
    }
   ]
  },
@@ -150,23 +115,9 @@
   [
    "buzz",
    "hd:0"
-  ],
-  [
-   "pop",
-   "d4:3"
-  ],
-  [
-   "pop",
-   "d4:9"
-  ],
-  [
-   "ding",
-   "d5:9"
-  ],
-  [
-   "womp",
-   "d5>+0.15"
   ]
  ],
- "disabled": "yeniden yapılıyor: çok sahneli hikâye (Fable), onaydan sonra açılacak"
+ "disabled": "yeniden yapılıyor: çok sahneli hikâye (Fable), onaydan sonra açılacak",
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true
 }

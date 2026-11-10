@@ -1,170 +1,141 @@
 {
  "h1": {
-  "key": "8714e7b6a32c",
-  "trimmed": "8714e7b6a32c",
-  "wkey": "8714e7b6a32c",
-  "heard": "Defneciğim, bana artar da üç gün söyle.",
+  "key": "e7043d4f9661",
+  "trimmed": "e7043d4f9661",
+  "wkey": "e7043d4f9661",
+  "heard": "Artar'da 3 gün say, amasalı, perşembe, cumartesi yasak.",
   "words": [
    {
-    "w": "Defneciğim,",
+    "w": "Art",
     "t0": 0.0,
-    "t1": 0.64
-   },
-   {
-    "w": "bana",
-    "t0": 0.88,
-    "t1": 1.18
-   },
-   {
-    "w": "art",
-    "t0": 1.18,
-    "t1": 1.384
+    "t1": 0.232
    },
    {
     "w": "arda",
-    "t0": 1.384,
-    "t1": 1.792
+    "t0": 0.232,
+    "t1": 0.698
    },
    {
     "w": "üç",
-    "t0": 1.792,
-    "t1": 1.996
+    "t0": 0.698,
+    "t1": 0.93
    },
    {
     "w": "gün",
-    "t0": 1.996,
-    "t1": 2.2
+    "t0": 0.93,
+    "t1": 1.162
    },
    {
-    "w": "söyle.",
-    "t0": 2.2,
-    "t1": 2.46
-   }
-  ],
-  "dur": 2.76
- },
- "d1": {
-  "key": "aa7088526c87",
-  "trimmed": "aa7088526c87",
-  "wkey": "aa7088526c87",
-  "heard": "Çarşamba, Perşembe, Juma",
-  "words": [
-   {
-    "w": "Çarşamba,",
-    "t0": 0.0,
-    "t1": 0.54
+    "w": "say.",
+    "t0": 1.162,
+    "t1": 1.395
    },
    {
-    "w": "Perşembe,",
-    "t0": 0.72,
-    "t1": 1.26
-   },
-   {
-    "w": "Cuma!",
-    "t0": 1.42,
-    "t1": 1.7
-   }
-  ],
-  "dur": 1.86
- },
- "h2a": {
-  "key": "3280b1f5a5f9",
-  "trimmed": "3280b1f5a5f9",
-  "wkey": "3280b1f5a5f9",
-  "heard": "Olmaz, salı, perşembe ve cumartesi demek yasak.",
-  "words": [
-   {
-    "w": "Olmaz!",
-    "t0": 0.0,
-    "t1": 0.48
+    "w": "Ama",
+    "t0": 1.395,
+    "t1": 1.86
    },
    {
     "w": "Salı,",
-    "t0": 0.84,
-    "t1": 1.42
+    "t0": 1.86,
+    "t1": 2.44
    },
    {
-    "w": "Perşembe",
-    "t0": 1.5,
-    "t1": 2.12
-   },
-   {
-    "w": "ve",
-    "t0": 2.12,
-    "t1": 2.24
+    "w": "Perşembe,",
+    "t0": 2.62,
+    "t1": 3.38
    },
    {
     "w": "Cumartesi",
-    "t0": 2.24,
-    "t1": 2.88
+    "t0": 3.56,
+    "t1": 4.2
    },
    {
-    "w": "demek",
-    "t0": 2.88,
-    "t1": 3.1
-   },
-   {
-    "w": "yasak.",
-    "t0": 3.1,
-    "t1": 3.64
+    "w": "yasak!",
+    "t0": 4.2,
+    "t1": 4.64
    }
   ],
-  "dur": 3.748
+  "dur": 4.738
  },
- "h2b": {
-  "key": "6c237975062b",
-  "trimmed": "6c237975062b",
-  "wkey": "6c237975062b",
-  "heard": "Bu üçünü söylemeden artar da üç gün sayacaksın.",
+ "h2a": {
+  "key": "44f5ee1fcb81",
+  "trimmed": "44f5ee1fcb81",
+  "wkey": "44f5ee1fcb81",
+  "heard": "Bu üç adı ağzını almak yok.",
   "words": [
    {
     "w": "Bu",
     "t0": 0.0,
-    "t1": 0.22
-   },
-   {
-    "w": "üçünü",
-    "t0": 0.22,
-    "t1": 0.54
-   },
-   {
-    "w": "söylemeden",
-    "t0": 0.54,
-    "t1": 1.18
-   },
-   {
-    "w": "art",
-    "t0": 1.18,
-    "t1": 1.392
-   },
-   {
-    "w": "arda",
-    "t0": 1.392,
-    "t1": 1.816
+    "t1": 0.145
    },
    {
     "w": "üç",
-    "t0": 1.816,
-    "t1": 2.028
+    "t0": 0.145,
+    "t1": 0.29
    },
    {
-    "w": "gün",
-    "t0": 2.028,
-    "t1": 2.24
+    "w": "adı",
+    "t0": 0.29,
+    "t1": 0.58
    },
    {
-    "w": "sayacaksın.",
-    "t0": 2.24,
-    "t1": 2.84
+    "w": "ağzına",
+    "t0": 0.58,
+    "t1": 0.92
+   },
+   {
+    "w": "almak",
+    "t0": 0.92,
+    "t1": 1.32
+   },
+   {
+    "w": "yok.",
+    "t0": 1.32,
+    "t1": 1.5
    }
   ],
-  "dur": 3.13
+  "dur": 1.67
+ },
+ "h2b": {
+  "key": "1a58558e2d4a",
+  "trimmed": "1a58558e2d4a",
+  "wkey": "1a58558e2d4a",
+  "heard": "günler de artar da olacak.",
+  "words": [
+   {
+    "w": "Günler",
+    "t0": 0.0,
+    "t1": 0.4
+   },
+   {
+    "w": "de",
+    "t0": 0.4,
+    "t1": 0.59
+   },
+   {
+    "w": "art",
+    "t0": 0.59,
+    "t1": 0.78
+   },
+   {
+    "w": "arda",
+    "t0": 0.78,
+    "t1": 1.16
+   },
+   {
+    "w": "olacak.",
+    "t0": 1.16,
+    "t1": 1.4
+   }
+  ],
+  "dur": 1.7
  },
  "h3": {
-  "key": "ee18b6267e3e",
-  "trimmed": "ee18b6267e3e",
-  "wkey": "ee18b6267e3e",
-  "heard": "Bilirsen yarın öleden sonra izin misin?",
+  "key": "85d826cf4a2f",
+  "trimmed": "85d826cf4a2f",
+  "wkey": "85d826cf4a2f",
+  "heard": "Bilirsen yarın izin misin?",
   "words": [
    {
     "w": "Bilirsen",
@@ -174,134 +145,84 @@
    {
     "w": "yarın",
     "t0": 0.58,
-    "t1": 0.98
-   },
-   {
-    "w": "öğleden",
-    "t0": 0.98,
-    "t1": 1.44
-   },
-   {
-    "w": "sonra",
-    "t0": 1.44,
-    "t1": 1.68
+    "t1": 0.94
    },
    {
     "w": "izinlisin.",
-    "t0": 1.68,
-    "t1": 2.26
+    "t0": 0.94,
+    "t1": 1.36
    }
   ],
-  "dur": 2.51
+  "dur": 1.67
  },
  "d2": {
-  "key": "a391bf46d903",
-  "trimmed": "a391bf46d903",
-  "wkey": "a391bf46d903",
-  "heard": "O zaman pazar, pazartesi, Çarşamba.",
+  "key": "e564071bbfa9",
+  "trimmed": "e564071bbfa9",
+  "wkey": "e564071bbfa9",
+  "heard": "Kolay, Pazartesi, Çarşamba, Cuma",
   "words": [
    {
-    "w": "O",
+    "w": "Kolay!",
     "t0": 0.0,
-    "t1": 0.12
-   },
-   {
-    "w": "zaman",
-    "t0": 0.12,
-    "t1": 0.32
-   },
-   {
-    "w": "Pazar,",
-    "t0": 0.32,
-    "t1": 0.72
+    "t1": 0.4
    },
    {
     "w": "Pazartesi,",
-    "t0": 0.86,
-    "t1": 1.46
+    "t0": 0.64,
+    "t1": 1.22
    },
    {
-    "w": "Çarşamba!",
-    "t0": 1.64,
-    "t1": 2.12
+    "w": "Çarşamba,",
+    "t0": 1.38,
+    "t1": 1.88
+   },
+   {
+    "w": "Cuma!",
+    "t0": 2.1,
+    "t1": 2.36
    }
   ],
-  "dur": 2.33
+  "dur": 2.538
  },
  "hd": {
-  "key": "2b26342f8bc5",
-  "trimmed": "2b26342f8bc5",
-  "wkey": "2b26342f8bc5",
-  "heard": "Hayır, pazartesi'den sonra salı gelir, haftadaki herüçlüde bir yasak gün var.",
+  "key": "9ab6edfea7f1",
+  "trimmed": "9ab6edfea7f1",
+  "wkey": "9ab6edfea7f1",
+  "heard": "Olmaz. Arada atlanan günler var.",
   "words": [
    {
-    "w": "Hayır!",
+    "w": "Olmaz!",
     "t0": 0.0,
-    "t1": 0.3
+    "t1": 0.48
    },
    {
-    "w": "Pazartesiden",
-    "t0": 0.74,
-    "t1": 1.58
+    "w": "Arada",
+    "t0": 0.76,
+    "t1": 1.18
    },
    {
-    "w": "sonra",
-    "t0": 1.58,
-    "t1": 1.94
+    "w": "atlanan",
+    "t0": 1.18,
+    "t1": 1.74
    },
    {
-    "w": "Salı",
-    "t0": 1.94,
-    "t1": 2.32
-   },
-   {
-    "w": "gelir.",
-    "t0": 2.32,
-    "t1": 2.52
-   },
-   {
-    "w": "Haftadaki",
-    "t0": 2.86,
-    "t1": 3.5
-   },
-   {
-    "w": "her",
-    "t0": 3.5,
-    "t1": 3.5
-   },
-   {
-    "w": "üçlüde",
-    "t0": 3.5,
-    "t1": 4.22
-   },
-   {
-    "w": "bir",
-    "t0": 4.22,
-    "t1": 4.36
-   },
-   {
-    "w": "yasak",
-    "t0": 4.36,
-    "t1": 4.8
-   },
-   {
-    "w": "gün",
-    "t0": 4.8,
-    "t1": 4.98
+    "w": "günler",
+    "t0": 1.74,
+    "t1": 2.16
    },
    {
     "w": "var.",
-    "t0": 4.98,
-    "t1": 5.16
+    "t0": 2.16,
+    "t1": 2.34
    }
   ],
-  "dur": 5.316
+  "dur": 2.518
  },
  "n1": {
-  "key": "4258d1eed4b5",
-  "trimmed": "4258d1eed4b5",
-  "wkey": "4258d1eed4b5",
-  "heard": "Müdür Bey, ben işi asla yarına bırakmam. Dün yapamadıysam bugün yaparım.",
+  "key": "c40868c8b445",
+  "trimmed": "c40868c8b445",
+  "wkey": "c40868c8b445",
+  "heard": "Müdür bey taklim dünde kalmış. Yaprağını koparayım.",
   "words": [
    {
     "w": "Müdür",
@@ -311,55 +232,35 @@
    {
     "w": "Bey,",
     "t0": 0.44,
-    "t1": 0.655
+    "t1": 0.66
    },
    {
-    "w": "ben",
-    "t0": 0.655,
-    "t1": 0.87
+    "w": "takvim",
+    "t0": 0.66,
+    "t1": 1.28
    },
    {
-    "w": "işi",
-    "t0": 0.87,
-    "t1": 1.3
+    "w": "dünde",
+    "t0": 1.28,
+    "t1": 1.58
    },
    {
-    "w": "asla",
-    "t0": 1.3,
-    "t1": 1.76
+    "w": "kalmış.",
+    "t0": 1.58,
+    "t1": 2.18
    },
    {
-    "w": "yarına",
-    "t0": 1.76,
-    "t1": 2.12
+    "w": "Yaprağını",
+    "t0": 2.42,
+    "t1": 3.12
    },
    {
-    "w": "bırakmam.",
-    "t0": 2.12,
-    "t1": 2.66
-   },
-   {
-    "w": "Dün",
-    "t0": 2.66,
-    "t1": 3.34
-   },
-   {
-    "w": "yapamadıysam",
-    "t0": 3.34,
-    "t1": 4.2
-   },
-   {
-    "w": "bugün",
-    "t0": 4.2,
-    "t1": 4.44
-   },
-   {
-    "w": "yaparım!",
-    "t0": 4.44,
-    "t1": 4.96
+    "w": "koparayım.",
+    "t0": 3.12,
+    "t1": 3.68
    }
   ],
-  "dur": 5.158
+  "dur": 3.898
  },
  "d3": {
   "key": "528d9b99a24d",
@@ -391,68 +292,63 @@
   "dur": 2.028
  },
  "d4": {
-  "key": "7c08963d8104",
-  "trimmed": "7c08963d8104",
-  "wkey": "7c08963d8104",
-  "heard": "3 'ü de gün, 3 'ü de artarda. Hiçbiri yasak değil.",
+  "key": "fc9291ca4c31",
+  "trimmed": "fc9291ca4c31",
+  "wkey": "fc9291ca4c31",
+  "heard": "Üçüde art arda gün, yasak adların hiçbirini söylemedim.",
   "words": [
    {
     "w": "Üçü",
     "t0": 0.0,
-    "t1": 0.265
+    "t1": 0.33
    },
    {
     "w": "de",
-    "t0": 0.265,
-    "t1": 0.398
-   },
-   {
-    "w": "gün,",
-    "t0": 0.398,
-    "t1": 0.53
-   },
-   {
-    "w": "üçü",
-    "t0": 0.53,
-    "t1": 0.795
-   },
-   {
-    "w": "de",
-    "t0": 0.795,
-    "t1": 0.928
+    "t0": 0.33,
+    "t1": 0.495
    },
    {
     "w": "art",
-    "t0": 0.928,
-    "t1": 1.06
+    "t0": 0.495,
+    "t1": 0.66
    },
    {
-    "w": "arda.",
-    "t0": 1.06,
-    "t1": 1.62
+    "w": "arda",
+    "t0": 0.66,
+    "t1": 1.02
    },
    {
-    "w": "Hiçbiri",
-    "t0": 2.04,
-    "t1": 2.4
+    "w": "gün.",
+    "t0": 1.02,
+    "t1": 1.44
    },
    {
-    "w": "yasak",
-    "t0": 2.4,
-    "t1": 2.76
+    "w": "Yasak",
+    "t0": 1.44,
+    "t1": 1.88
    },
    {
-    "w": "değil!",
-    "t0": 2.76,
-    "t1": 2.92
+    "w": "adların",
+    "t0": 1.88,
+    "t1": 2.18
+   },
+   {
+    "w": "hiçbirini",
+    "t0": 2.18,
+    "t1": 2.74
+   },
+   {
+    "w": "söylemedim!",
+    "t0": 2.74,
+    "t1": 3.2
    }
   ],
-  "dur": 3.078
+  "dur": 3.378
  },
  "h4": {
-  "key": "efbc84c428c1",
-  "trimmed": "efbc84c428c1",
-  "wkey": "efbc84c428c1",
+  "key": "44c5a87e88a4",
+  "trimmed": "44c5a87e88a4",
+  "wkey": "44c5a87e88a4",
   "heard": "Yarın izinlisin. Ama bugün daha bitmedi.",
   "words": [
    {
@@ -473,20 +369,20 @@
    {
     "w": "bugün",
     "t0": 1.56,
-    "t1": 1.9
+    "t1": 1.92
    },
    {
     "w": "daha",
-    "t0": 1.9,
-    "t1": 2.2
+    "t0": 1.92,
+    "t1": 2.24
    },
    {
-    "w": "bitmedi.",
-    "t0": 2.2,
-    "t1": 2.64
+    "w": "bitmedi!",
+    "t0": 2.24,
+    "t1": 2.72
    }
   ],
-  "dur": 2.858
+  "dur": 2.918
  },
  "d6": {
   "key": "90b7ada45599",

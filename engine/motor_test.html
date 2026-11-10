@@ -1,0 +1,530 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="fonts/fonts.css">
+<style>html,body{margin:0;background:#F2EBDD}</style></head><body><canvas id="c"></canvas>
+<script type="module">
+// Motor testi: engine/hikaye.js ve engine/mekan.js'in her ortak parçasının t'ye bağlı küçük gösterimi.
+//   ?p=<parça>&t=<sn>[&s=0.5][&guide=1]   tek parça, tam kare (1080×1920); window.renderFrame(t) kareyi sıfırdan çizer
+//   ?kagit=motor[&demo=a-b][&sutun=2][&k=0.44]   motor kâğıdı: her parça için 4 an
+//   ?kagit=poz[&satir=a-b][&k=0.6]               poz kâğıdı: Hikmet, Defne, Necmi, Kerem × pozlar
+//   ?serit=<parça>&t0=0.9&t1=1.9[&n=12][&k=0.3]  ardışık kare şeridi: "el, dokunduğu şeye değiyor mu?", dirsek atlıyor mu?
+// Parçalar: kesme, yon, yuruyus, atlama, geri, sivi, alev, erime, buyume, isik, verme, tasima, pankart, sayma, kerem, etiket, bolum
+// "bolum" tam bir bölüm iskeletidir (build + draw'ın en küçük hâli): yeni bölüm dosyası ondan başlanarak yazılabilir.
+// Buradaki DEMO girişleri aynı zamanda kullanım örneğidir: bölüm dosyasında aynı çağrılar kullanılır.
+import * as H from './hikaye.js';
+import * as M from './mekan.js';
+const { PAL, INK, LW, ease, seg, lerp, clamp01, kisi, oyna, POZ, IFADE } = H;
+const q = new URLSearchParams(location.search);
+for (const w of ['900', '800', '700', '500']) await document.fonts.load(`${w} 60px Rubik`, 'ÇĞİıŞşÖöÜü');
+await document.fonts.ready;
+const cv = document.getElementById('c'), ctx = cv.getContext('2d'), K = H.kit(ctx);
+const CAY = M.MEKAN.cayOcagi, KADRO = ['hikmet', 'defne', 'necmi', 'genc'], AD = { hikmet: 'Hikmet', defne: 'Defne', necmi: 'Necmi', genc: 'Kerem (genc)' };
+
+// ——— örnek mekân (en küçük kalıp): pencereli oda. durum = { saat, gunes, ay } ———
+M.mekanEkle('demoOda', {
+  gen: [0, 1500], capa: { masa: [860, 1290], pencere: [390, 960], saat: [900, 800] }, kadraj: { genis: [0.96, 750, 1222], masa: [1.15, 760, 1150] },
+  dongu: ['martı', 'saniye kolu'],
+  arka(K, t, { isik, durum }) {
+    M.oda(K, { x0: -400, x1: 1900, isik });
+    M.pencere(K, 180, 700, 420, 520, { isik, t, gunes: durum.gunes, ay: durum.ay });
+    M.duvarSaati(K, 900, 800, 70, durum.saat ?? 10.25, t);
+  },
+});
+
+// ——— gösterimlerde kullanılan basit nesneler (bölüm nesneleri bölüm dosyasında yazılır; bunlar yalnız örnek) ———
+function tepsi(K, [x, y], rot = 0, w = 230) { const { ctx } = K; ctx.save(); ctx.translate(x, y); ctx.rotate(rot); K.rect(-w / 2, -13, w, 28, PAL.mustard, LW, 14); K.rect(-w / 2 + 22, -24, w - 44, 13, '#E9C46A', LW * 0.6, 6); ctx.restore(); }
+function koli(K, x, y, w = 150, h = 110) { K.rect(x - w / 2, y - h, w, h, '#C99A5B', LW, 6); K.rect(x - 20, y - h, 40, h * 0.3, '#EFE3C8', LW * 0.6); K.line(x - w / 2 + 14, y - 22, x - w / 2 + 60, y - 22, 6, '#8C6A3A'); }
+function kupa(K, x, y, k = 1, col = PAL.coral) { const { ctx } = K; ctx.beginPath(); ctx.arc(x + 30 * k, y - 32 * k, 17 * k, -Math.PI / 2, Math.PI / 2); ctx.lineWidth = 15 * k; ctx.strokeStyle = INK; ctx.stroke(); ctx.lineWidth = 6 * k; ctx.strokeStyle = col; ctx.stroke(); K.rect(x - 30 * k, y - 66 * k, 60 * k, 66 * k, col, LW, 9 * k); }
+function tabure(K, x, y, w = 200) { K.rect(x - w / 2 + 18, y + 20, 16, 1500 - y - 20, PAL.wood, LW, 5); K.rect(x + w / 2 - 34, y + 20, 16, 1500 - y - 20, PAL.wood, LW, 5); K.rect(x - w / 2, y, w, 26, PAL.woodTop, LW, 8); }
+function bardak(K, x, y, w, h, o) {   // (x, y) taban ortası; içi sivi() ile dolar, cam çizgisi en son
+  const { ctx } = K, yol = c => { c.moveTo(x - w / 2, y - h); c.lineTo(x + w / 2, y - h); c.lineTo(x + w * 0.4, y); c.lineTo(x - w * 0.4, y); c.closePath(); };
+  ctx.beginPath(); yol(ctx); ctx.fillStyle = 'rgba(244,237,224,0.28)'; ctx.fill();
+  H.sivi(K, yol, [x - w / 2, y - h, w, h], o);
+  ctx.beginPath(); yol(ctx); K.fs(null, LW); K.line(x - w * 0.3, y - h * 0.82, x - w * 0.27, y - h * 0.3, 5, 'rgba(255,255,255,0.7)');
+}
+function surahi(K, x, y, rot, seviye, renk) {   // (x, y) ağzın ucu (dönme merkezi); gövde sola doğru
+  const { ctx } = K, yol = c => { c.moveTo(-170, -10); c.lineTo(-14, -10); c.lineTo(0, 0); c.lineTo(-22, 26); c.lineTo(-30, 250); c.lineTo(-156, 250); c.closePath(); };
+  ctx.save(); ctx.translate(x, y); ctx.rotate(rot);
+  ctx.beginPath(); ctx.arc(-170, 110, 62, Math.PI * 0.5, Math.PI * 1.5); ctx.lineWidth = 26; ctx.strokeStyle = INK; ctx.stroke(); ctx.lineWidth = 12; ctx.strokeStyle = '#DCEBEA'; ctx.stroke();
+  ctx.beginPath(); yol(ctx); ctx.fillStyle = 'rgba(244,237,224,0.3)'; ctx.fill();
+  H.sivi(K, yol, [-170, -10, 170, 260], { seviye, renk, egim: rot });
+  ctx.beginPath(); yol(ctx); K.fs(null, LW); ctx.restore();
+}
+const yaziAlt = (s, x, y, size = 30, col = '#5E584C', w = 500) => { ctx.font = `${w} ${size}px Rubik`; ctx.fillStyle = col; ctx.textAlign = 'left'; ctx.fillText(s, x, y); };
+
+// ═══════════════════════════ GÖSTERİMLER ═══════════════════════════
+// Her biri: { ad, baslik, anlar: [[t, not]…], y0 (kırpmanın üst kenarı), kam(t) → { zoom, cx, cy }, dunya(K, t, B), ekran?(K, t, B) }
+const DEMO = {};
+
+// 1 · Sahne listesi + sert kesme + nesne taşıma: tepsi kesmenin iki yanında ekranda aynı yerde durur
+DEMO.kesme = (() => {
+  const tK = 1.5, pA = [1010, 1232], pB = [M.capa(CAY, 'tezgah')[0], M.capa(CAY, 'tezgah')[1] - 10];
+  const a = { id: 'gunduz', t0: 0, cam: [[0, ...M.kadraj(CAY, 'genis')]], isik: 'gunduz' };
+  const camK = H.sahneler([a]).cam(tK - 1 / 30);                                    // kesmeden önceki son karenin kamerası
+  const film = H.sahneler([a, { id: 'gece', t0: tK, cam: [[tK, ...H.esle(camK, pA, pB, 1.08)], [tK + 0.5, ...M.kadraj(CAY, 'tezgah')]], isik: 'gece' }]);
+  const fark = H.esFark(camK, pA, film.cam(tK), pB);
+  return {
+    baslik: `Sahne listesi · sert kesme · nesne taşıma (esle → ekran farkı ${fark.map(v => v.toFixed(1)).join(', ')} px)`,
+    anlar: [[0.9, 'A: tepsi Defne’de'], [tK - 1 / 30, 'kesmeden önceki kare'], [tK, 'kesme karesi: tepsi aynı yerde'], [tK + 1.2, 'B: kamera tezgâha oturur']],
+    kam: t => film.cam(t),
+    dunya(K, t) {
+      const sc = film.at(t), o = { isik: M.ISIK[sc.isik] };
+      M.mekanCiz(K, CAY, 'arka', t, o);
+      if (sc.id === 'gunduz') {
+        oyna(K, t, null, 'hikmet', kisi('hikmet', { x: 600, expr: 'kizgin', head: { tilt: 4, look: [0.8, 0.2] }, ...POZ.rahat }));
+        const d = oyna(K, t, null, 'defne', kisi('defne', { x: 1010, expr: 'saskin', head: { tilt: -4, look: [-0.3, 0.6] } }), { L: [[pA[0] - 96, pA[1]]], R: [[pA[0] + 96, pA[1]]] });
+        tepsi(K, pA); d.tut('L'); d.tut('R');
+      } else {
+        tepsi(K, pB);
+        oyna(K, t, null, 'necmi', kisi('necmi', { x: 1330, expr: 'korku', head: { tilt: 5, look: [-0.8, 0.3] }, ...POZ.rahat }));
+      }
+      M.mekanCiz(K, CAY, 'isik', t, o);
+    },
+  };
+})();
+
+// 2 · Yön eşleme: nesne sağdan çıkar, yeni sahneye soldan aynı hızla girer
+DEMO.yon = (() => {
+  const tK = 1.0, v = 1700, yari = 150;
+  const film = H.sahneler([{ id: 'ic', t0: 0, cam: [[0, ...M.kadraj(CAY, 'genis')]] }, { id: 'dis', t0: tK, cam: [[tK, 1, 540, 1222]] }]);
+  const cA = film.cam(tK - 1e-3), cB = film.cam(tK);
+  const araba = (K, x) => { K.rect(x - yari, 1300, yari * 2, 120, PAL.metal, LW, 12); K.rect(x - yari + 20, 1180, yari * 2 - 40, 124, '#C99A5B', LW, 6); K.text(K.up('koli'), x, 1262, 50, INK, 900); for (const dx of [-90, 90]) K.circ(x + dx, 1456, 40, '#3A3F3C', LW); for (const dx of [-90, 90]) K.circ(x + dx, 1456, 12, PAL.metal, 0); };
+  return {
+    baslik: `Yön eşleme (vektör kuralı): sağdan çıkar → soldan girer, ${v} px/sn`,
+    anlar: [[tK - 0.3, 'A: sağa gidiyor'], [tK - 1 / 30, 'kesmeden önceki kare'], [tK + 1 / 30, 'kesmeden sonraki kare'], [tK + 0.3, 'B: aynı hızla sürüyor']],
+    kam: t => film.cam(t),
+    dunya(K, t) {
+      if (film.at(t).id === 'ic') { M.mekanCiz(K, CAY, 'arka', t); araba(K, H.cikis(cA, t, tK, v, yari)); }
+      else { M.acikHava(K, { x0: -800, x1: 2000, zemin: 'kaldirim', t }); araba(K, H.giris(cB, t, tK, v, yari)); }
+    },
+  };
+})();
+
+// 3 · Kesmesiz yürüyüş geçişi: yan yana iki mekân, kamera yürüyeni izler, bölmenin arkasından geçilir
+DEMO.yuruyus = (() => {
+  const D = M.yanYana([[CAY], ['demoOda']]), W = { t0: 0.4, x0: 1320, x1: D.D[1].ox + 760, hiz: 430 }, t1 = W.t0 + (W.x1 - W.x0) / W.hiz;
+  return {
+    baslik: 'Kesmesiz yürüyüş geçişi: yanYana + yuru + kamera takibi (kamKaris)',
+    anlar: [[0.2, 'çıkmadan önce (önden)'], [1.15, 'yürüyor, kamera izliyor'], [W.t0 + (D.gecit(0) - W.x0) / W.hiz + 0.06, 'bölmenin arkasından geçiyor'], [t1 + 0.4, 'vardı (önden)']],
+    kam(t) { const p = H.yuru('defne', t, W); return H.kamKaris({ zoom: 1, cx: W.x0 + 60, cy: 1222 }, { cx: p.x + 60 }, 1); },
+    dunya(K, t) {
+      D.ciz(K, 'arka', t);
+      const yur = t >= W.t0 && t < t1, p = yur ? H.yuru('defne', t, W) : kisi('defne', { x: t < W.t0 ? W.x0 : W.x1, expr: 'notr', head: { tilt: 3, look: [t < W.t0 ? 0.7 : -0.5, 0] } });
+      const kart = [p.x + (yur ? 62 : 86), yur ? 1262 : 1250];   // elindeki kart: yürürken yakın elde
+      const d = oyna(K, t, null, 'defne', p, { R: [kart] });
+      K.rect(kart[0] - 46, kart[1] - 62, 92, 62, PAL.mustard, LW, 8); d.tut('R');
+      D.ciz(K, 'on', t);
+    },
+  };
+})();
+
+// 4 · Zaman atlaması: aynı kadraj; tek u saat ibresini, ışığı, ay-güneş yayını ve mumların erimesini sürer
+DEMO.atlama = {
+  baslik: 'Zaman atlaması (2,2 sn, kadraj sabit): atlama → saatSar → isikSaat → mum',
+  anlar: [[0.3, 'u = 0 · 19:30'], [1.1, 'gece, mumlar kısalıyor'], [1.75, 'şafak'], [2.7, 'u = 1 · 07:30']],
+  kam: () => ({ zoom: 1.08, cx: 700, cy: 1100 }),
+  dunya(K, t) {
+    const u = H.atlama(t, 0.4, 2.2), saat = H.saatSar(19.5, 31.5, u), g = M.isikSaat(saat);
+    M.mekanCiz(K, 'demoOda', 'arka', t, { isik: g.isik, durum: { saat, gunes: g.gunes, ay: g.ay } });
+    H.karart(K, g.isik.k);
+    K.rect(600, 1290, 620, 40, PAL.woodTop, LW, 8); K.rect(630, 1330, 560, 170, PAL.wood);
+    [720, 850, 980, 1110].forEach((x, i) => H.mum(K, x, 1290, 2.3, { h: i === 3 ? 1 : 1 - u, on: i !== 3 && u < 0.97, t, i, guc: i === 3 ? 0 : 1 - 0.5 * seg(u, 0.85, 0.12) }));
+  },
+  ekran(K, t) { H.zamanHapi(K, t, 0.5, 2.4, 'SABAHA KADAR', { x: 330, y: 1250, saat: H.saatSar(19.5, 31.5, H.atlama(t, 0.4, 2.2)) }); },
+};
+
+// 5 · Geri dönüş: saat rozeti 0,4 sn geri sarar → sert kesme → zaman hapı; gece ışığı, buzdolabı şeridi, siluet
+DEMO.geri = (() => {
+  const tK = 1.2, film = H.sahneler([{ id: 'simdi', t0: 0, cam: [[0, ...M.kadraj(CAY, 'genis')]] }, { id: 'dun', t0: tK, cam: [[tK, 1.1, 560, 1190]], kay: [-70, 0] }]);
+  return {
+    baslik: 'Geri dönüş: geriDonus + saatRozet → kesme → zamanHapi; mekân gece, lekele ile siluet',
+    anlar: [[tK - 0.2, 'rozet geri sarıyor'], [tK + 0.26, 'kesmeden 8 kare sonra hap'], [tK + 0.8, 'kapak açılıyor'], [tK + 1.6, 'ışık şeridi + siluet']],
+    kam: t => film.cam(t),
+    dunya(K, t) {
+      const g = H.geriDonus(t, tK), dolap = ease.state(seg(t, tK + 0.5, 0.5)), o = { isik: g.icinde ? M.ISIK.gece : M.ISIK.gunduz, durum: { dolap: g.icinde ? dolap : 0, saat: H.saatSar(10.25, 8.25, g.icinde ? 0 : g.sar) } };
+      M.mekanCiz(K, CAY, 'arka', t, o);
+      if (!g.icinde) {
+        oyna(K, t, null, 'hikmet', kisi('hikmet', { x: 700, expr: 'kizgin', head: { tilt: -4, look: [0.6, -0.4] }, ...POZ.rahat }));
+        oyna(K, t, null, 'necmi', kisi('necmi', { x: 1180, expr: 'korku', head: { tilt: 5, look: [-0.7, -0.3] }, ...POZ.rahat }));
+      }
+      M.mekanCiz(K, CAY, 'isik', t, o);
+      if (g.icinde) H.lekele(K, K2 => oyna(K2, t, null, 'necmi', kisi('necmi', { x: 640, expr: 'mutlu', head: { tilt: -6, look: [-0.8, 0] } }), { sessiz: true, L: [M.capa(CAY, 'dolapRaf'), dolap] }), '#0C1D1F', 1);
+    },
+    ekran(K, t) { H.saatRozet(K, t, tK, { x: 560, y: 1180 }); H.zamanHapi(K, t, tK + 0.2, tK + 2.4, 'DÜN GECE', { y: 600, saat: 23.2 }); },
+  };
+})();
+
+// 6 · Sıvı: seviye, eğim, akış, renk bulutu
+DEMO.sivi = {
+  baslik: 'Sıvı: sivi (seviye, eğim, bulut) + akis',
+  anlar: [[0.75, 'sürahi eğilir, akış başlar'], [1.5, 'seviye yükselir'], [2.75, 'bulut yayılır (u ≈ 0,4)'], [3.9, 'renk karıştı']],
+  kam: () => ({ zoom: 1.1, cx: 560, cy: 1120 }),
+  dunya(K, t) {
+    M.oda(K, { x0: -300, x1: 1500 });
+    K.rect(200, 1320, 760, 40, PAL.woodTop, LW, 8); K.rect(230, 1360, 700, 140, PAL.wood);
+    const dok = ease.state(seg(t, 0.2, 0.5)) - ease.state(seg(t, 1.7, 0.45)), dolu = ease.state(seg(t, 0.75, 1.05)), ak0 = seg(t, 1.72, 0.2), ak1 = seg(t, 0.55, 0.22);
+    const bx = 640, by = 1320, agiz = [lerp(430, bx - 30, dok), lerp(1070, 940, dok)];   // sürahi masada durur, dökerken bardağın üstüne gelir
+    if (ak1 > 0 && ak0 < 1) H.akis(K, agiz, [bx - 4, by - 300 * dolu * 0.82 - 6], 15, '#E8D27A', ak0, ak1);
+    bardak(K, bx, by, 210, 300, { seviye: 0.06 + 0.76 * dolu, renk: '#E8D27A', bulut: { renk: '#7FA05A', u: seg(t, 2.2, 1.5), p: [0.5, 0.3], tohum: 5 } });
+    if (t >= 2.05 && t < 3.6) H.eriyen(K, bx, by - 300 * 0.82 * 0.55, 62, 62, seg(t, 2.2, 1.3), { gol: false });   // eriyen buz bulutun kaynağı
+    surahi(K, agiz[0], agiz[1], 1.25 * dok, 0.62 - 0.3 * dolu, '#E8D27A');
+    bardak(K, 880, by, 150, 210, { seviye: 0.55, renk: '#CFE3DD' });
+  },
+};
+
+// 7 · Alev ve duman: titreme, rüzgârda yatma, sönme + duman teli; buhar ve puf döngüleri
+DEMO.alev = {
+  baslik: 'Alev ve duman: alev / mum (yat, guc) · duman (sönme) · buhar · puf (döngü)',
+  anlar: [[0.3, 'yanıyor'], [0.86, 'rüzgâr: alevler yatar'], [1.25, 'ikisi söndü: duman teli'], [1.9, 'duman dağılır; döngüler sürer']],
+  kam: () => ({ zoom: 1.1, cx: 560, cy: 1120 }),
+  dunya(K, t) {
+    M.oda(K, { x0: -300, x1: 1500 });
+    K.rect(140, 1320, 820, 40, PAL.woodTop, LW, 8); K.rect(170, 1360, 760, 140, PAL.wood);
+    const yat = Math.sin(Math.PI * seg(t, 0.6, 0.5)), son = 1.0;
+    [240, 350, 460, 570].forEach((x, i) => { const soner = i === 1 || i === 2; H.mum(K, x, 1320, 2.6, { on: !soner || t < son, t, i, yat: -yat, duman: soner ? son : null }); });
+    kupa(K, 730, 1320, 1.5, PAL.teal); H.buhar(K, 730, 1205, t, { k: 1.3 });
+    K.rect(840, 1262, 100, 34, '#5D6A61', LW, 10); H.puf(K, 946, 1278, t, { k: 1.1, yon: -0.25 });
+  },
+};
+
+// 8 · Erime: mum (boy → göl) ve eriyen blok (buz)
+DEMO.erime = {
+  baslik: 'Erime: mum({ h }) + eriyen() — tek u ile boy kısalır, göl büyür',
+  anlar: [[0.1, 'u = 0'], [0.9, 'u ≈ 0,35'], [1.5, 'u ≈ 0,7'], [2.3, 'u = 1']],
+  kam: () => ({ zoom: 1.1, cx: 560, cy: 1120 }),
+  dunya(K, t) {
+    M.oda(K, { x0: -300, x1: 1500 });
+    K.rect(140, 1320, 820, 40, PAL.woodTop, LW, 8); K.rect(170, 1360, 760, 140, PAL.wood);
+    const u = H.atlama(t, 0.2, 2.0);
+    [250, 370, 490].forEach((x, i) => H.mum(K, x, 1318, 3, { h: i === 1 ? 1 : 1 - u, on: i !== 1 && u < 0.97, t, i }));
+    H.eriyen(K, 760, 1318, 170, 170, u);
+  },
+};
+
+// 9 · Büyüme: yapraklar sırayla açılır, meyve büyür (tek u); güneş yayı
+DEMO.buyume = {
+  baslik: 'Büyüme: buyume(u, i, n) + yaprak; açık hava iskeleti, güneş yayı',
+  anlar: [[0.1, 'u = 0'], [0.9, 'u ≈ 0,35'], [1.5, 'u ≈ 0,7'], [2.3, 'u = 1']],
+  kam: () => ({ zoom: 1.0, cx: 540, cy: 870 }),
+  dunya(K, t) {
+    const u = H.atlama(t, 0.2, 2.0), { ctx } = K;
+    M.acikHava(K, { x0: -400, x1: 1600, zemin: 'cim', gunes: (0.3 + u * 2.25) % 1, t });
+    ctx.save(); ctx.lineCap = 'round'; for (const [lw, c] of [[40, INK], [26, '#7A5232']]) { ctx.beginPath(); ctx.moveTo(40, 760); ctx.quadraticCurveTo(480, 700, 940, 840); ctx.lineWidth = lw; ctx.strokeStyle = c; ctx.stroke(); } ctx.restore();
+    const dal = v => [40 + 2 * (1 - v) * v * 440 * 2 + v * v * 900, (1 - v) * (1 - v) * 760 + 2 * (1 - v) * v * 700 + v * v * 840];
+    for (let i = 0; i < 9; i++) { const p = dal(0.12 + i * 0.1); H.yaprak(K, p[0], p[1] - 8, 120, (i % 2 ? 0.7 : -0.6) + 0.04 * Math.sin(t * 1.6 + i), i % 2 ? PAL.green : '#4C8240', H.buyume(u, i, 9)); }
+    const m = dal(0.62), r = lerp(14, 112, ease.state(u));
+    K.line(m[0], m[1], m[0], m[1] + 70, 9, '#7A5232'); K.ell(m[0], m[1] + 70 + r, r * 0.82, r, '#C9C05A', LW);
+  },
+};
+
+// 10 · Işık şeridi ve karanlık: gece mekânı, açılan kapıdan düşen düz renkli şerit, lekele ile karartılmış karakter
+DEMO.isik = {
+  baslik: 'Işık şeridi: karart + isikSeridi + zeminIsigi; çapa durumla taşınır (kapı kolu); lekele(a)',
+  anlar: [[0.2, 'kapı kapalı, oda karanlık'], [0.6, 'kapı aralanır'], [1.1, 'şerit zemine düşer'], [1.9, 'buzdolabı da açık']],
+  kam: () => ({ zoom: 0.96, cx: 1080, cy: 1222 }),
+  dunya(K, t) {
+    const durum = { kapi: ease.state(seg(t, 0.3, 0.7)), dolap: ease.state(seg(t, 1.3, 0.5)) }, o = { isik: M.ISIK.gece, durum };
+    M.mekanCiz(K, CAY, 'arka', t, o);
+    oyna(K, t, null, 'defne', kisi('defne', { x: 900, expr: 'saskin', head: { tilt: -4, look: [0.8, 0] } }));
+    const n = oyna(K, t, null, 'necmi', kisi('necmi', { x: 1370, expr: 'korku', head: { tilt: 5, look: [-0.6, 0.1] } }), { R: [M.capa(CAY, 'kapiKolu', 0, durum)] });
+    n.tut('R');
+    M.mekanCiz(K, CAY, 'isik', t, o);
+  },
+};
+
+// 11 · Elden ele verme: iki el nesnede en az 4 kare birlikte durur
+DEMO.verme = (() => {
+  const t0 = 0.5, A = [585, 1195], B = [775, 1215];
+  return {
+    baslik: 'Elden ele verme: elVer → { p, verW, alW }; tutuş noktaları nesnenin iki ucunda',
+    anlar: [[t0 + 0.12, 'Hikmet uzatır'], [t0 + 0.32 + 0.1, 'iki el tepside (≥ 4 kare)'], [t0 + 0.32 + 0.17 + 0.16, 'Hikmet bırakır, Defne çeker'], [t0 + 1.3, 'tepsi Defne’de']],
+    kam: () => ({ zoom: 1.05, cx: 660, cy: 1160 }),
+    dunya(K, t) {
+      M.mekanCiz(K, CAY, 'arka', t);
+      const v = H.elVer(t, t0, A, B), gH = [v.p[0] - 88, v.p[1]], gD = [v.p[0] + 88, v.p[1]], uz = ease.state(seg(t, t0, 0.32)) * (1 - ease.state(seg(t, v.tB, 0.3)));
+      const h = oyna(K, t, null, 'hikmet', kisi('hikmet', { x: 330, lean: 7 * uz, expr: 'kizgin', head: { tilt: 4, look: [0.8, 0.3] }, ...POZ.rahat }), { R: [gH, v.verW] });
+      const d = oyna(K, t, null, 'defne', kisi('defne', { x: 1000, lean: -6 * uz, expr: 'saskin', head: { tilt: -4, look: [-0.7, 0.4] }, ...POZ.dur }), { L: [gD, v.alW] });
+      tepsi(K, v.p, 0.03 * Math.sin(Math.PI * seg(t, v.tB, 0.4)));
+      if (v.verW > 0.5) h.tut('R'); if (v.alW > 0.5) d.tut('L');
+    },
+  };
+})();
+
+// 12 · Tutma, kaldırma, taşıma, bırakma: el nesneye 0,1 sn önce varır; nesne temas karesinde durur
+DEMO.tasima = (() => {
+  const A = [330, 1340], B = [800, 1340], tAl = 1.0, sure = 0.8;
+  return {
+    baslik: 'Tutma · taşıma · bırakma: reach (iki el) + tasi (yay) + iz (gövde) + tut',
+    anlar: [[tAl - 0.06, 'eller kolide, koli durgun'], [tAl + 0.4, 'taşıma: yay 60 px, yüzün altında'], [tAl + sure, 'temas karesi: koli durur'], [tAl + sure + 0.5, 'eller çekilir']],
+    kam: () => ({ zoom: 1.05, cx: 565, cy: 1160 }),
+    dunya(K, t) {
+      M.mekanCiz(K, 'demoOda', 'arka', t);
+      tabure(K, A[0], A[1]); tabure(K, B[0], B[1]);
+      const p = H.tasi(t, tAl, sure, A, B, 60), w = ease.state(seg(t, tAl - 0.38, 0.28)) * (1 - ease.state(seg(t, tAl + sure + 0.1, 0.28)));
+      const x = H.iz([[0, 500], [tAl, 630, sure]], t), lean = H.iz([[0, 0], [tAl - 0.45, -15, 0.3], [tAl + 0.1, 0, 0.3], [tAl + sure - 0.25, 15, 0.3], [tAl + sure + 0.15, 0, 0.35]], t);
+      const d = oyna(K, t, null, 'defne', kisi('defne', { x, lean, expr: w > 0.5 && t < tAl + sure ? IFADE.zorlanma : 'notr', head: { tilt: lean * 0.3, look: [(p[0] - x) / 220, 0.5] }, ...POZ.dur }), { L: [[p[0] - 78, p[1] - 52], w], R: [[p[0] + 78, p[1] - 52], w] });
+      koli(K, p[0], p[1]);
+      if (w > 0.5) { d.tut('L'); d.tut('R'); }
+    },
+  };
+})();
+
+// 13 · Pankart kaldırma–indirme: havadaki pankart doğru söz (yeşil kenar + onay), inen gri
+DEMO.pankart = (() => {
+  const kim = [['genc', 200, ['Ben', 'yemedim'], [[0.5, 1.6]]], ['defne', 490, ['Necmi', 'yemedi'], [[0.5, 1e9]]], ['necmi', 780, ['Kerem', 'yedi'], [[1.75, 1e9]]]];
+  return {
+    baslik: 'Pankart kaldırma–indirme: kaldir(t, aralıklar) → el yüksekliği + pankart({ durum })',
+    anlar: [[0.3, 'göğüs hizası (nötr)'], [0.72, 'ikisi kalkıyor'], [1.3, 'havada: doğru söz'], [2.3, 'biri iner (gri), biri kalkar']],
+    kam: () => ({ zoom: 0.98, cx: 560, cy: 1120 }),
+    dunya(K, t) {
+      M.mekanCiz(K, 'demoOda', 'arka', t);
+      for (const [key, x, satir, ar] of kim) {
+        const u = H.kaldir(t, ar), indi = ar[0][1] < 1e8 ? seg(t, ar[0][1], 0.3) : 0, p = kisi(key, { x, expr: u > 0.5 ? 'mutlu' : 'notr', head: { tilt: 3, look: [0.3, -0.5 * u] } });
+        const e0 = H.elYeri(key, p, 'R', 'asagi'), e1 = H.elYeri(key, p, 'R', 'yukari'), el = [lerp(e0[0], e1[0], u), lerp(e0[1], e1[1], u)];   // el başın YANINA kalkar (yüze binmez)
+        const a = oyna(K, t, null, key, p, { R: [el] });
+        H.pankart(K, el, { satir, w: 262, h: 132, sap: 150, boy: 46, durum: u > 0.02 && !indi ? u : -indi }); a.tut('R');
+      }
+    },
+  };
+})();
+
+// 14 · Sayma: parmak kaldırma (n kesirli) ve dokunarak sayma (tek rakam duraktan durağa atlar)
+DEMO.sayma = (() => {
+  const kupalar = [[610, 1290], [730, 1290], [850, 1290]], dur = kupalar.map(([x, y], i) => [0.6 + i * 0.55, [x - 4, y - 74]]);
+  return {
+    baslik: 'Sayma: parmaklar(n) · dokunYolu + isaret · sayiAtla (tek rakam atlar)',
+    anlar: [[0.78, '1'], [1.33, '2'], [1.88, '3'], [2.5, 'Hikmet: üç parmak']],
+    kam: () => ({ zoom: 1.02, cx: 600, cy: 1130 }),
+    dunya(K, t, B) {
+      M.mekanCiz(K, 'demoOda', 'arka', t);
+      K.rect(520, 1290, 440, 34, PAL.woodTop, LW, 8); K.rect(548, 1324, 384, 176, PAL.wood);
+      const n = seg(t, 0.45, 0.22) + seg(t, 1.0, 0.22) + seg(t, 1.55, 0.22);
+      const h = oyna(K, t, null, 'hikmet', kisi('hikmet', { x: 250, expr: 'mutlu', head: { tilt: -4, look: [0.7, 0.3] }, armL: { sh: 14, el: -40 }, armR: { sh: 128, el: -62 } }));
+      h.parmak('R', n, { toplam: 3 });
+      const hedef = H.dokunYolu(t, [[0, [870, 1150]], ...dur]);
+      const d = oyna(K, t, null, 'defne', kisi('defne', { x: 1010, lean: -9, expr: 'notr', head: { tilt: -6, look: [-0.8, 0.6] }, ...POZ.dur }), { L: [[hedef[0] + 34, hedef[1] - 30]] });
+      kupalar.forEach(([x, y], i) => kupa(K, x, y, 1.1, [PAL.coral, PAL.teal, PAL.mustard][i]));
+      d.isaret('L', hedef);
+      B.say = dur.map(([tt, p], i) => [tt, B.ekr([p[0] - 26, p[1] - 150]), String(i + 1)]);   // rakam elin değil kupanın üstünde durur
+    },
+    ekran(K, t, B) { H.sayiAtla(K, t, B.say, { son: 2.9 }); },
+  };
+})();
+
+// 15 · Kerem'in yerleşimi: boy sırası (kisi + BOY) ve sessiz oyunculuk (onayla, omuzSilk, gösterme)
+DEMO.kerem = {
+  baslik: 'Kerem (genc): kisi("genc") → BOY 232 · onayla · omuzSilk · reach + isaret (gösterme)',
+  anlar: [[0.1, 'yerleşim: boylar'], [0.46, 'onayla: baş aşağıda'], [1.75, 'omuzSilk'], [2.95, 'gösterir: kol düz + parmak']],
+  kam: () => ({ zoom: 0.94, cx: 560, cy: 1150 }),
+  dunya(K, t) {
+    M.mekanCiz(K, 'demoOda', 'arka', t);
+    oyna(K, t, null, 'hikmet', kisi('hikmet', { x: 170, expr: 'notr', head: { tilt: 3, look: [0.8, 0] }, ...POZ.rahat }));
+    oyna(K, t, null, 'defne', kisi('defne', { x: 440, expr: 'mutlu', head: { tilt: -3, look: [0.6, 0] }, ...POZ.dur }));
+    oyna(K, t, null, 'necmi', kisi('necmi', { x: 960, expr: 'notr', head: { tilt: -4, look: [-0.7, 0] }, ...POZ.rahat }));
+    const p = kisi('genc', { x: 700, expr: t > 1.3 && t < 2.3 ? 'saskin' : 'notr', head: { tilt: 0, look: [-0.5, 0] }, ...POZ.dur });
+    H.onayla(p, t, 0.3, 2); H.omuzSilk(p, t, 1.4, 0.6);
+    const hedef = [900, 800], w = ease.state(seg(t, 2.55, 0.3));   // duvar saatini gösterir: hedef uzak → kol dümdüz
+    const k = oyna(K, t, null, 'genc', p, { R: [hedef, w] });
+    if (w > 0.5) k.isaret('R', hedef);
+  },
+};
+
+// 16 · Etiketler ve "Buldum!": tag, mark, ring, dimLine, adimEtiket, zamanHapi, buldumHop + buldumIsin
+DEMO.etiket = (() => {
+  const tB = 0.5;
+  return {
+    baslik: 'Etiketler: tag · mark · ring · dimLine · adimEtiket · zamanHapi · "Buldum!" (64 px sıçrama + 9 ışın)',
+    anlar: [[tB + 0.08, 'sıçrama başlar, ışınlar açılır'], [tB + 0.24, 'tepe (64 px)'], [1.35, 'etiketler yerinde'], [2.3, 'sayaç etiketi 270 → 290 ?']],
+    kam: () => ({ zoom: 1.0, cx: 560, cy: 1150 }),
+    dunya(K, t) {
+      M.mekanCiz(K, 'demoOda', 'arka', t);
+      const hop = H.buldumHop(t, tB), p = kisi('defne', { x: 760, expr: t >= tB - 0.05 ? 'mutlu' : IFADE.dusun, head: { tilt: 6, look: [0, -0.3] }, ...(t >= tB - 0.05 ? POZ.yukari : POZ.dusun) });
+      p.y -= hop;
+      H.buldumIsin(K, t, tB, H.eklem('defne', p, 'head'), { k: p.s / 245 });
+      oyna(K, t, null, 'defne', p);
+      koli(K, 300, 1500, 300, 220);
+      H.dimLine(K, [150, 1240], [450, 1240], ease.enter(seg(t, 0.9, 0.3)), PAL.coral);
+      H.ring(K, [450, 1280], t, 1.1);
+    },
+    ekran(K, t, B) {
+      const hw = H.tag(K, t, 0.95, 9, B.ekr([300, 1180]), '1,5 m', PAL.mustard, INK, 46, [1.6]);
+      H.mark(K, t, 1.15, 9, [B.ekr([300, 1180])[0] + hw + 34, B.ekr([300, 1180])[1]], false);
+      H.adimEtiket(K, t, [[1.2, '90'], [1.5, '180'], [1.8, '270'], [2.1, '290 ?', PAL.coral]], 9, [330, 760], 60);
+      H.zamanHapi(K, t, 0.9, 9, 'YARIM SAAT ÖNCE', { x: 560, y: 640, saat: 9.75 });
+    },
+  };
+})();
+// 17 · Tam bölüm iskeleti: build() ve draw()'ın en küçük hâli. Uydurma bir ses çizelgesiyle (gerçek bölümde tl,
+// assets/voice/<id>/timeline.json'dan gelir) cerceve + sahneler + altyazi + kart + sayaç + geri dönüş birlikte çalışır.
+DEMO.bolum = (() => {
+  const satir = (id, who, t0, t1, text) => { const ws = text.split(' '), d = (t1 - t0) / ws.length; return { id, who, text, t0, t1, words: ws.map((w, i) => ({ w, t0: t0 + i * d, t1: t0 + (i + 1) * d })) }; };
+  const lines = [satir('h1', 'hikmet', 0.3, 2.6, 'Son baklavamı içinizden biri yemiş!'), satir('n1', 'necmi', 8.6, 10.9, 'Benim arşivde işim vardı. Ben kaçayım.'),
+    satir('d3', 'defne', 11.25, 12.9, 'Buldum! Baklavayı Necmi Abi yedi!'), satir('d4', 'defne', 13.3, 16.0, 'Dün gece buzdolabının başında biri vardı.'), satir('h4', 'hikmet', 16.9, 18.6, 'Necmi! O kalemi nerede görsem tanırım.')];
+  const tl = { lines, L: Object.fromEntries(lines.map(l => [l.id, l])), duration: 21.6 };
+  const ep = { num: 20, card: ['Üç sözden yalnız biri doğru.', 'Baklavayı kim yedi?'], countdown: 'n1-0.3', cdShare: 'Bunu bir arkadaşına sor!' };
+  // ——— build(ep, tl): zamanlar kelime çapalarından, kamera sahne listesinden, pozlar anahtar izlerinden ———
+  const T = e => H.at(tl, e);
+  const tm = { vur: 0.3, cd: T(ep.countdown), clue: T('n1'), kol: T('n1:5'), buldum: T('d3'), proof: T('d3>') + 0.05, geri: T('d4') - 0.05, don: T('d4>') + 0.35, kalem: T('h4:2'), end: T('h4>') + 0.6 };
+  const film = H.sahneler([
+    { id: 'ocak', t0: 0, cam: [[0, ...M.kadraj(CAY, 'genis')], [2.9, 1.2, 760, 1180], [tm.cd - 4.6, 0.96, 1060, 1222]] },
+    { id: 'ipucu', t0: tm.clue - 0.02, cam: [[0, ...M.kadraj(CAY, 'kapi')]] },
+    { id: 'buldum', t0: tm.buldum - 0.05, cam: [[0, 1.35, 1080, 1040]] },
+    { id: 'dun', t0: tm.geri, cam: [[0, 1.1, 560, 1190]], kay: [-70, 0], geri: true },      // geri dönüş: kamera sağdan sola kayar
+    { id: 'simdi', t0: tm.don, cam: [[0, 1, 1130, 1180]], kay: [60, 0] },
+    { id: 'son', t0: tm.end, cam: [[0, 1, 540, 960]] },
+  ]);
+  const hikBase = kisi('hikmet', { x: 700, expr: 'kizgin', head: { tilt: -3, look: [0.6, 0.4] }, ...POZ.rahat });
+  const hik = [[tm.vur + 0.2, { head: { tilt: 4, look: [0.8, 0] } }, 0.3], [tm.cd - 5, { ...POZ.dusun, expr: IFADE.dusun }, 0.4], [tm.clue - 0.2, { ...POZ.rahat, expr: 'notr', head: { tilt: 5, look: [0.9, 0.1] } }, 0.3], [tm.don, { expr: 'kizgin', ...POZ.ikaz, head: { tilt: 6, look: [0.9, 0] } }, 0.01]];
+  const defBase = kisi('defne', { x: 1080, expr: 'saskin', head: { tilt: -4, look: [-0.7, 0.2] }, ...POZ.dur });
+  const def = [[tm.cd - 5, { expr: IFADE.dusun, ...POZ.dusun, head: { tilt: -8, look: [-0.5, -0.4] } }, 0.4], [tm.clue - 0.2, { expr: 'notr', ...POZ.dur, head: { tilt: 4, look: [0.9, 0.1] } }, 0.3], [tm.buldum - 0.05, { expr: 'mutlu', ...POZ.yukari, head: { tilt: 6, look: [0, -0.3] } }, 0.25, ease.enter]];
+  const S = { tm, film };
+  // ——— draw(K, t, ep, tl, S): cerceve sırayı kurar; bölüm yalnız dünyayı ve ekran etiketlerini verir ———
+  const tam = (K, t) => H.cerceve(K, t, ep, tl, S, {
+    kuyruksuz: (t, B) => !!B.sc.geri,                                    // geri dönüşte anlatıcı sesi: balon kuyruksuz
+    dunya(K, t, { sc, heads }) {
+      const gece = sc.id === 'dun', durum = { dolap: gece ? ease.state(seg(sc.lt, 0.5, 0.5)) : 0, kapi: 0.55 * ease.state(seg(t, tm.kol, 0.45)), saat: H.saatSar(10.25, 8.25, gece ? 0 : H.geriDonus(t, tm.geri).sar) };
+      const o = { isik: gece ? M.ISIK.gece : M.ISIK.gunduz, durum };
+      M.mekanCiz(K, CAY, 'arka', t, o);
+      if (!gece) {
+        const tp = t < tm.vur ? H.dus(t, 0, tm.vur, [900, 1120], [900, 1183]) : [900, 1183];   // kare 0: tepsi tezgâha iner, temas karesinde durur
+        const h = oyna(K, t, tl, 'hikmet', H.poseAt(H.CARDS.hikmet, hikBase, hik, t), { heads, R: [[tp[0] - 90, tp[1] - 4], 1 - ease.state(seg(t, tm.vur + 0.5, 0.3))] });
+        tepsi(K, tp); if (t < tm.vur + 0.65) h.tut('R');
+        const np = H.yanAdim(kisi('necmi', { x: 1300, expr: t >= tm.clue - 0.3 ? 'korku' : 'notr', head: { tilt: 5, look: [-0.7, 0.1] }, ...POZ.rahat }), t, { t0: tm.cd - 3.6, x0: 1300, x1: 1560, adim: 3 });   // sayaçta sahne durmaz: kapıya yan yan kayar
+        const n = oyna(K, t, tl, 'necmi', np, { heads, R: [M.capa(CAY, 'kapiKolu', 0, durum), ease.state(seg(t, tm.clue - 0.1, 0.3))] });
+        if (t >= tm.clue + 0.05) n.tut('R');
+        const dp = H.glance(H.poseAt(H.CARDS.defne, defBase, def, t), t, tm.cd); dp.y -= H.buldumHop(t, tm.buldum);
+        H.buldumIsin(K, t, tm.buldum, H.eklem('defne', dp, 'head'), { son: tm.proof });
+        oyna(K, t, tl, 'defne', dp, { heads });
+      }
+      M.mekanCiz(K, CAY, 'isik', t, o);
+      if (gece) H.lekele(K, K2 => oyna(K2, t, null, 'necmi', kisi('necmi', { x: 640, expr: 'mutlu', head: { tilt: -6, look: [-0.8, 0] } }), { L: [M.capa(CAY, 'dolapRaf'), durum.dolap] }), '#0C1D1F', 1);
+    },
+    ekran(K, t, { sc, top }) {
+      H.saatRozet(K, t, tm.geri, { y: 420 });
+      if (sc.id === 'dun') H.zamanHapi(K, t, tm.geri + 0.2, tm.don - 0.25, 'DÜN GECE', { y: 420, saat: 23.2 });   // kesmeden 6 kare sonra, ≥ 1,25 sn
+    },
+  });
+  const uyari = film.kontrol();
+  return {
+    baslik: `Tam bölüm iskeleti: cerceve + sahneler (${film.kesmeler.length - 1} sert kesme; kontrol(): ${uyari.length ? uyari.join(' | ') : 'temiz'}) + altyazi`,
+    anlar: [[0.5, 'kart, düzenek, tepsi indi'], [tm.cd - 2.4, 'sayaç: Necmi kapıya kayar'], [tm.buldum + 0.2, '"Buldum!" kesmesi 1,35x'], [tm.geri + 1.5, 'geri dönüş: hap, kuyruksuz balon']],
+    tam,
+  };
+})();
+const SIRA = ['kesme', 'yon', 'yuruyus', 'atlama', 'geri', 'sivi', 'alev', 'erime', 'buyume', 'isik', 'verme', 'tasima', 'pankart', 'sayma', 'kerem', 'etiket', 'bolum'];
+const Y0 = { kesme: 470, yon: 470, yuruyus: 560, isik: 470, geri: 470, kerem: 500, pankart: 380, buyume: 420, etiket: 470, bolum: 200 };   // kırpmanın üst kenarı (varsayılan 560)
+
+// ═══════════════════════════ POZ KÂĞIDI ═══════════════════════════
+// Her satır: [başlık, (K, key, i) → çizer]. Hücre dünyası: zemin 1500, karakter x ≈ 540.
+const POZLAR = [
+  ['Yandan oturma · otur() + oturak() + sandalye()', (K, key) => {
+    const p = H.otur(key, { x: 500, expr: 'notr' }), o = H.oturak(key, p);
+    M.sandalye(K, o.x + 4, o.y); oyna(K, 1, null, key, p);
+  }],
+  ['Yandan oturma, sola dönük, yakın elde kupa (reach yan görünüşte)', (K, key) => {
+    const p = H.otur(key, { x: 610, facing: -1, lean: 7, expr: 'mutlu', head: { tilt: 4 } }), o = H.oturak(key, p), kp = [p.x - 0.72 * p.s, o.y - 0.5 * p.s];
+    M.sandalye(K, o.x - 4, o.y, { yon: -1 });
+    const a = oyna(K, 1, null, key, p, { R: [[kp[0] + 30, kp[1] - 34]] }); kupa(K, kp[0], kp[1], 1, PAL.teal); a.tut('R');
+  }],
+  ['Tutma (önden, tek el): el kupanın kulpunda, bakış nesnede', (K, key) => {
+    const p = kisi(key, { x: 500, expr: 'notr', head: { tilt: 5, look: [0.6, 0.7] }, ...POZ.dur }), sh = H.shoulder(key, p, 'R'), kp = [sh[0] + 0.42 * p.s, sh[1] + 0.62 * p.s];
+    const a = oyna(K, 1, null, key, p, { R: [[kp[0] - 34, kp[1] - 34]] }); kupa(K, kp[0], kp[1], 1.05, PAL.coral); a.tut('R');
+  }],
+  ['Taşıma (önden, iki el): tepsi göğüs altında, iki el iki uçta', (K, key) => {
+    const p = kisi(key, { x: 540, expr: 'notr', head: { tilt: 0, look: [0, 0.6] } }), n = H.eklem(key, p, 'neck'), c = [p.x, n[1] + 0.62 * p.s];
+    const a = oyna(K, 1, null, key, p, { L: [[c[0] - 104, c[1]]], R: [[c[0] + 104, c[1]]] }); tepsi(K, c); a.tut('L'); a.tut('R');
+  }],
+  ['Yürürken taşıma (yandan): yuru() + yakın elde çanta', (K, key) => {
+    const W = { t0: 0, x0: 250, x1: 900 }, p = H.yuru(key, 1.12, W), el = [p.x + 0.16 * p.s, H.eklem(key, p, 'pelvis')[1] + 0.02 * p.s];
+    const a = oyna(K, 1.12, null, key, p, { R: [el] });
+    K.rect(el[0] - 62, el[1] + 16, 124, 92, '#8C6A44', LW, 10); K.line(el[0] - 30, el[1] + 16, el[0], el[1] - 4, 7); K.line(el[0] + 30, el[1] + 16, el[0], el[1] - 4, 7); a.tut('R');
+  }],
+  ['Elden ele verme (iki el nesnede): veren soldaki; alan = sıradaki karakter', (K, key, i) => {
+    const alan = KADRO[(i + 1) % 4], pv = kisi(key, { x: 250, lean: 6, expr: 'notr', head: { tilt: 4, look: [0.8, 0.3] }, ...POZ.rahat }), pa = kisi(alan, { x: 830, lean: -6, expr: 'mutlu', head: { tilt: -4, look: [-0.8, 0.3] }, ...POZ.dur });
+    const sv = H.shoulder(key, pv, 'R'), sa = H.shoulder(alan, pa, 'L'), A = [sv[0] + 0.62 * pv.s, sv[1] + 0.5 * pv.s], B = [sa[0] - 0.62 * pa.s, sa[1] + 0.5 * pa.s];
+    const v = H.elVer(0.42, 0, A, B), a1 = oyna(K, 1, null, key, pv, { R: [[v.p[0] - 88, v.p[1]], v.verW] }), a2 = oyna(K, 1, null, alan, pa, { L: [[v.p[0] + 88, v.p[1]], v.alW] });
+    tepsi(K, v.p); a1.tut('R'); a2.tut('L');
+  }],
+  ['Yürüme · yuru(): kalkış, tam adım, duruş (adım yola kilitli)', (K, key) => {
+    const W = { t0: 0, x0: 170, x1: 900 };
+    for (const t of [0.28, 1.05, 2.02]) oyna(K, t, null, key, H.yuru(key, t, W));
+  }],
+  ['Parmakla sayma · parmaklar(n = 3): el havada, üç parmak', (K, key) => {
+    const a = oyna(K, 1, null, key, kisi(key, { x: 520, expr: 'mutlu', head: { tilt: -4, look: [0.5, -0.3] }, armL: { sh: 14, el: -40 }, armR: { sh: 128, el: -62 } }));
+    a.parmak('R', 3);
+  }],
+  ['Dokunarak sayma · reach + isaret(): parmak ucu nesnede', (K, key) => {
+    const hedef = [300, 1216];
+    K.rect(170, 1290, 300, 30, PAL.woodTop, LW, 8); K.rect(196, 1320, 248, 180, PAL.wood);
+    const a = oyna(K, 1, null, key, kisi(key, { x: 640, lean: -10, expr: 'notr', head: { tilt: -6, look: [-0.8, 0.5] }, ...POZ.dur }), { L: [[hedef[0] + 36, hedef[1] - 28]] });
+    kupa(K, 260, 1290, 1.1, PAL.mustard); kupa(K, 380, 1290, 1.1, PAL.teal); a.isaret('L', hedef);
+  }],
+  ['Omuz silkme · omuzSilk() / POZ.omuz', (K, key) => { oyna(K, 1, null, key, H.omuzSilk(kisi(key, { x: 540, expr: 'saskin', head: { tilt: 0, look: [0, 0] }, ...POZ.dur }), 0.5, 0)); }],
+  ['Baş sallama · onayla(): doruk (head.nod = 1; cast.js eklemesi)', (K, key) => { oyna(K, 1, null, key, H.onayla(kisi(key, { x: 540, expr: 'mutlu', ...POZ.dur }), 0.16, 0)); }],
+  ['Geri geri yürüme · yuru({ geri: true }): yüz sola dönük, sağa doğru geri adım', (K, key) => {
+    const W = { t0: 0, x0: 200, x1: 880, geri: true };
+    for (const t of [0.3, 1.05, 1.9]) oyna(K, t, null, key, H.yuru(key, t, W));
+  }],
+  ['Kaldırılan el · elYeri("yukari") + pankart: el başın yanında, yüz açık', (K, key) => {
+    const p = kisi(key, { x: 470, expr: 'mutlu', head: { tilt: 3, look: [0.3, -0.4] } }), el = H.elYeri(key, p, 'R', 'yukari');
+    const a = oyna(K, 1, null, key, p, { R: [el] });
+    H.pankart(K, el, { satir: ['Ben', 'yemedim'], w: 262, h: 132, sap: 150, boy: 46, durum: 1 }); a.tut('R');
+  }],
+  ['Düşünme · POZ.dusun + IFADE.dusun  |  teslim · POZ.teslim', (K, key, i) => { oyna(K, 1, null, key, kisi(key, i % 2 ? { x: 540, expr: 'saskin', ...POZ.teslim } : { x: 540, expr: IFADE.dusun, head: { tilt: -8, look: [-0.6, -0.4] }, ...POZ.dusun })); }],
+];
+
+// ═══════════════════════════ ÇİZİM ═══════════════════════════
+function kare(d, t, x, y, k, y0 = 560, h = 1080) {   // gösterimi (x, y) hücresine, 1080 × h'lik ekran kırpmasıyla çizer
+  ctx.save(); ctx.translate(x, y); ctx.beginPath(); ctx.rect(0, 0, 1080 * k, h * k); ctx.clip(); ctx.scale(k, k); ctx.translate(0, -y0);
+  ctx.fillStyle = PAL.wall; ctx.fillRect(0, 0, 1080, 1920);
+  if (d.tam) d.tam(K, t);   // tam kareyi kendisi kuran gösterim (cerceve)
+  else {
+    const cam = d.kam(t), B = { cam, ekr: p => H.toScreen(cam, p), heads: {} };
+    ctx.save(); H.applyCam(ctx, cam); d.dunya(K, t, B); ctx.restore();
+    d.ekran?.(K, t, B);
+  }
+  ctx.restore();
+}
+const aralik = (s, n) => { if (!s) return [0, n - 1]; const [a, b = a] = s.split('-').map(Number); return [a, Math.min(n - 1, b)]; };
+const kagit = q.get('kagit');
+if (kagit === 'motor') {
+  const [a, b] = aralik(q.get('demo'), SIRA.length), list = SIRA.slice(a, b + 1), cols = +(q.get('sutun') || 2), k = +(q.get('k') || 0.44), cw = Math.round(1080 * k), gap = 14, bw = 4 * cw + 3 * gap, pad = 40;
+  const rows = Math.ceil(list.length / cols), rh = cw + 118, tamH = Math.round(1300 * k), ek = list.some(ad => DEMO[ad].tam) ? tamH - cw : 0;   // tam kare gösterimi (bolum) 1080 × 1300 kırpılır; son satırda durur
+  cv.width = pad * 2 + cols * bw + (cols - 1) * 60; cv.height = 130 + rows * rh + ek + 20;
+  ctx.fillStyle = '#F2EBDD'; ctx.fillRect(0, 0, cv.width, cv.height);
+  yaziAlt('Motor kâğıdı · engine/hikaye.js + engine/mekan.js', pad, 62, 46, INK, 800);
+  yaziAlt('Her ortak parça için 4 an. Tek parça: engine/motor_test.html?p=<ad>&t=<sn>', pad, 104, 26);
+  list.forEach((ad, i) => {
+    const d = DEMO[ad], x0 = pad + (i % cols) * (bw + 60), y0 = 130 + Math.floor(i / cols) * rh;
+    yaziAlt(`${a + i + 1} · ${ad}`, x0, y0 + 34, 30, INK, 800); yaziAlt(d.baslik, x0 + ctx.measureText(`${a + i + 1} · ${ad}  `).width + 8, y0 + 34, 22);
+    const ch = d.tam ? tamH : cw;
+    d.anlar.forEach(([t, not], j) => { const x = x0 + j * (cw + gap); kare(d, t, x, y0 + 48, k, Y0[ad] ?? 560, d.tam ? 1300 : 1080); ctx.lineWidth = 3; ctx.strokeStyle = INK; ctx.strokeRect(x, y0 + 48, cw, ch); yaziAlt(`t = ${t.toFixed(2)} · ${not}`, x + 2, y0 + 48 + ch + 28, 21); });
+  });
+} else if (q.get('serit')) {
+  const ad = q.get('serit'), d = DEMO[ad], n = +(q.get('n') || 12), t0 = +(q.get('t0') || 0), t1 = +(q.get('t1') || t0 + (n - 1) / 30), k = +(q.get('k') || 0.3), cw = Math.round(1080 * k), per = 6, pad = 24;
+  cv.width = pad * 2 + per * cw + (per - 1) * 8; cv.height = 70 + Math.ceil(n / per) * (cw + 40);
+  ctx.fillStyle = '#F2EBDD'; ctx.fillRect(0, 0, cv.width, cv.height);
+  yaziAlt(`Şerit · ${ad} · ${t0.toFixed(2)}–${t1.toFixed(2)} sn · ${n} kare`, pad, 44, 30, INK, 800);
+  for (let i = 0; i < n; i++) { const t = n > 1 ? lerp(t0, t1, i / (n - 1)) : t0, x = pad + (i % per) * (cw + 8), y = 70 + Math.floor(i / per) * (cw + 40); kare(d, t, x, y, k, Y0[ad] ?? 560); ctx.lineWidth = 2; ctx.strokeStyle = INK; ctx.strokeRect(x, y, cw, cw); yaziAlt(`t = ${t.toFixed(3)}`, x + 2, y + cw + 26, 20); }
+} else if (kagit === 'poz') {
+  const [a, b] = aralik(q.get('satir'), POZLAR.length), list = POZLAR.slice(a, b + 1), k = +(q.get('k') || 0.6), cw = Math.round(1000 * k), ch = Math.round(1000 * k), gap = 16, pad = 40, rh = ch + 64;
+  cv.width = pad * 2 + 4 * cw + 3 * gap; cv.height = 150 + list.length * rh + 10;
+  ctx.fillStyle = '#F2EBDD'; ctx.fillRect(0, 0, cv.width, cv.height);
+  yaziAlt('Poz kâğıdı (v4 hikâye pozları) · Hikmet, Defne, Necmi, Kerem', pad, 62, 46, INK, 800);
+  KADRO.forEach((key, i) => yaziAlt(AD[key], pad + i * (cw + gap) + 4, 124, 30, INK, 800));
+  list.forEach(([baslik, fn], r) => {
+    const y0 = 150 + r * rh; yaziAlt(`${a + r + 1} · ${baslik}`, pad, y0 + 30, 26, INK, 700);
+    KADRO.forEach((key, i) => {
+      const x = pad + i * (cw + gap), y = y0 + 44;
+      ctx.save(); ctx.translate(x, y); ctx.beginPath(); ctx.roundRect(0, 0, cw, ch, 14); ctx.fillStyle = '#FBF7EE'; ctx.fill(); ctx.clip(); ctx.scale(k, k); ctx.translate(-40, -600);
+      ctx.fillStyle = '#E9E0CE'; ctx.fillRect(0, 1500, 1200, 200); K.line(0, 1500, 1200, 1500, 4, '#B9AE98');
+      fn(K, key, i); ctx.restore();
+    });
+  });
+} else {
+  const ad = q.get('p') || 'kesme', d = DEMO[ad], S = +(q.get('s') || 1);
+  cv.width = Math.round(1080 * S); cv.height = Math.round(1920 * S);
+  window.DURATION = d.anlar[d.anlar.length - 1][0] + 0.8;
+  window.renderFrame = t => { ctx.setTransform(S, 0, 0, S, 0, 0); kare(d, t, 0, 0, 1, 0, 1920); if (q.get('guide')) H.guvenliAlan(K); };
+  window.renderFrame(+(q.get('t') || d.anlar[0][0]));
+}
+window.__ready = true;
+</script></body></html>

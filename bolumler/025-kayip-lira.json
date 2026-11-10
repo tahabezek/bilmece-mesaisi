@@ -1,7 +1,7 @@
 {
  "id": "025-kayip-lira",
  "num": 25,
- "sira": 22,
+ "sira": 24,
  "bpm": 120,
  "slug": "kayip-on-lira",
  "coverAt": 0,
@@ -13,7 +13,7 @@
   "#ofis"
  ],
  "card": [
-  "Herkes 90 ödedi: 270. Kuryede 20.",
+  "Herkes 90 ödedi: 270. Kerem'de 20.",
   "290 eder. Kayıp 10 lira nerede?"
  ],
  "caption": "Zeka sorusu: Üç kişi 300 liralık yemek söyledi, herkes 100 verdi. Restoran 50 lira geri yolladı. Kurye 20'sini aldı, 30'unu herkese 10'ar dağıttı. Herkes 90 ödedi: 270. Kuryedeki 20 ile 290. Kayıp 10 lira nerede?\n\nZengin Kız Fakir Oğlan'ın bilmecelerinden. Cevap videonun sonunda.",
@@ -25,51 +25,40 @@
     "id": "h1",
     "who": "hikmet",
     "gap": 0.4,
-    "text": "Defneciğim, on lira kayıp! Hesap tutmuyor."
+    "text": "On lira kayıp! Üçümüz yüzer lira verdik."
    },
    {
     "id": "h2a",
     "who": "hikmet",
     "gap": 0.3,
-    "text": "Yemek üç yüz liraydı, üçümüz yüzer verdik. Restoran indirim yapıp elli lira geri yolladı."
+    "text": "Restoran elli lira geri yolladı. Kerem yirmisini aldı, bize onar lira verdi."
    },
    {
     "id": "h2b",
     "who": "hikmet",
     "gap": 0.3,
-    "text": "Kerem yirmisini aldı, bize onar lira dağıttı."
-   },
-   {
-    "id": "h2c",
-    "who": "hikmet",
-    "gap": 0.35,
     "text": "Herkes doksan ödedi, iki yüz yetmiş. Kerem'deki yirmiyle iki yüz doksan. On lira nerede?",
     "tts": "Herkes doksan ödedi, iki yüz yetmiş. Keremdeki yirmiyle iki yüz doksan. On lira nerede?"
    },
    {
-    "id": "h3",
-    "who": "hikmet",
-    "gap": 0.3,
-    "text": "Bulursan on lira senin."
-   },
-   {
     "id": "d2",
     "who": "defne",
-    "gap": 0.45,
-    "text": "Parayı Kerem mi sakladı?"
+    "gap": 0.6,
+    "text": "Kerem'in ceplerine bakalım!",
+    "tts": "Keremin ceplerine bakalım!"
    },
    {
     "id": "hd",
     "who": "hikmet",
     "gap": 0.45,
-    "text": "Hayır! Kerem'de sadece yirmi var.",
-    "tts": "Hayır! Keremde sadece yirmi var."
+    "text": "Baktım. Cebinde yalnız yirmi lira var."
    },
    {
     "id": "n1",
     "who": "necmi",
     "gap": 5.6,
-    "text": "Hanım kızdı: Çayı hem harcamaya hem kasaya yazmışsın, iki kere saymışsın!"
+    "text": "Dört kişiye beş çay getirmişim. Kerem'i iki kere saymışım!",
+    "tts": "Dört kişiye beş çay getirmişim. Keremi iki kere saymışım!"
    },
    {
     "id": "d3",
@@ -81,14 +70,15 @@
     "id": "d4",
     "who": "defne",
     "gap": 0.4,
-    "text": "Kerem'in yirmisi o iki yüz yetmişin içinde zaten. İki yüz elli restorana, yirmi Kerem'e.",
-    "tts": "Keremin yirmisi o iki yüz yetmişin içinde zaten. İki yüz elli restorana, yirmi Kereme."
+    "text": "Kerem'in yirmisi zaten o iki yüz yetmişin içinde.",
+    "tts": "Keremin yirmisi zaten o iki yüz yetmişin içinde."
    },
    {
     "id": "d5",
     "who": "defne",
     "gap": 0.45,
-    "text": "Yirmiyi bir daha eklemek, onu iki kere saymak. Doğrusu: iki yüz yetmiş artı otuz, üç yüz!"
+    "text": "İki yüz elli restoranda, yirmi Kerem'de, otuz bizde. Hepsi üç yüz!",
+    "tts": "İki yüz elli restoranda, yirmi Keremde, otuz bizde. Hepsi üç yüz!"
    },
    {
     "id": "h4",
@@ -108,7 +98,7 @@
  "cdShare": "Bunu bir arkadaşına sor!",
  "music": {
   "think": [
-   "h3>",
+   "h2b>",
    "d3"
   ],
   "riser": [
@@ -123,27 +113,8 @@
   [
    "buzz",
    "hd:0"
-  ],
-  [
-   "swish",
-   "d4:0"
-  ],
-  [
-   "pop",
-   "d4:8"
-  ],
-  [
-   "pop",
-   "d4:12"
-  ],
-  [
-   "ding",
-   "d5:14"
-  ],
-  [
-   "womp",
-   "d5>+0.15"
   ]
  ],
- "disabled": "yeniden yapılıyor: çok sahneli hikâye (Fable), onaydan sonra açılacak"
+ "disabled": "yeniden yapılıyor: çok sahneli hikâye (Fable), onaydan sonra açılacak",
+ "v4": true
 }

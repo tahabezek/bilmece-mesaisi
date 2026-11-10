@@ -1,743 +1,443 @@
 {
  "h1": {
-  "key": "41d5c90d102b",
-  "trimmed": "41d5c90d102b",
-  "wkey": "41d5c90d102b",
-  "heard": "Defneciğim, aynı limonatayı içtik, bir tek benim midem bozuldu.",
-  "words": [
-   {
-    "w": "Defneciğim,",
-    "t0": 0.0,
-    "t1": 0.68
-   },
-   {
-    "w": "aynı",
-    "t0": 0.98,
-    "t1": 1.18
-   },
-   {
-    "w": "limonatayı",
-    "t0": 1.18,
-    "t1": 1.84
-   },
-   {
-    "w": "içtik,",
-    "t0": 1.84,
-    "t1": 2.28
-   },
-   {
-    "w": "bir",
-    "t0": 2.28,
-    "t1": 2.64
-   },
-   {
-    "w": "tek",
-    "t0": 2.64,
-    "t1": 3.0
-   },
-   {
-    "w": "benim",
-    "t0": 3.0,
-    "t1": 3.28
-   },
-   {
-    "w": "midem",
-    "t0": 3.28,
-    "t1": 3.72
-   },
-   {
-    "w": "bozuldu!",
-    "t0": 3.72,
-    "t1": 4.22
-   }
-  ],
-  "dur": 4.32
- },
- "d1": {
-  "key": "817c2d17016f",
-  "trimmed": "817c2d17016f",
-  "wkey": "817c2d17016f",
-  "heard": "Nasıl yani Müdür Bey?",
-  "words": [
-   {
-    "w": "Nasıl",
-    "t0": 0.0,
-    "t1": 0.24
-   },
-   {
-    "w": "yani",
-    "t0": 0.24,
-    "t1": 0.54
-   },
-   {
-    "w": "Müdür",
-    "t0": 0.54,
-    "t1": 0.96
-   },
-   {
-    "w": "Bey?",
-    "t0": 0.96,
-    "t1": 1.08
-   }
-  ],
-  "dur": 1.23
- },
- "h2a": {
-  "key": "350974adee0f",
-  "trimmed": "350974adee0f",
-  "wkey": "350974adee0f",
-  "heard": "Aynı sürahi, aynı buzlar, keremle ikimizin bardağına da buz koydular.",
+  "key": "30f1dfc6b5ee",
+  "trimmed": "30f1dfc6b5ee",
+  "wkey": "30f1dfc6b5ee",
+  "heard": "Aynı limonatayı içtik. Neden yalnız ben hastayım.",
   "words": [
    {
     "w": "Aynı",
     "t0": 0.0,
-    "t1": 0.36
+    "t1": 0.32
    },
    {
-    "w": "sürahi,",
-    "t0": 0.36,
-    "t1": 0.88
+    "w": "limonatayı",
+    "t0": 0.32,
+    "t1": 0.96
    },
    {
-    "w": "aynı",
-    "t0": 1.14,
-    "t1": 1.36
+    "w": "içtik.",
+    "t0": 0.96,
+    "t1": 1.42
    },
    {
-    "w": "buzlar.",
-    "t0": 1.36,
-    "t1": 1.9
+    "w": "Neden",
+    "t0": 1.64,
+    "t1": 1.94
    },
    {
-    "w": "Keremle",
-    "t0": 2.16,
-    "t1": 2.72
+    "w": "yalnız",
+    "t0": 1.94,
+    "t1": 2.48
    },
    {
-    "w": "ikimizin",
-    "t0": 2.72,
-    "t1": 3.28
+    "w": "ben",
+    "t0": 2.48,
+    "t1": 2.76
    },
    {
-    "w": "bardağına",
-    "t0": 3.28,
-    "t1": 3.8
-   },
-   {
-    "w": "da",
-    "t0": 3.8,
-    "t1": 3.99
-   },
-   {
-    "w": "buz",
-    "t0": 3.99,
-    "t1": 4.18
-   },
-   {
-    "w": "koydular.",
-    "t0": 4.18,
-    "t1": 4.64
+    "w": "hastayım?",
+    "t0": 2.76,
+    "t1": 3.26
    }
   ],
-  "dur": 4.808
+  "dur": 3.448
  },
- "h2b": {
-  "key": "0c09709fbe13",
-  "trimmed": "0c09709fbe13",
-  "wkey": "0c09709fbe13",
-  "heard": "Kerem bir dikişte içti. Hiçbir şey olmadı. Ben yavaş yavaş içtim. Bütün gün hastaydım.",
+ "h2a": {
+  "key": "12c43a0214cb",
+  "trimmed": "12c43a0214cb",
+  "wkey": "12c43a0214cb",
+  "heard": "Sürahi ayniydi, buz ayniydi, bardaklar tertemizdi.",
   "words": [
    {
-    "w": "Kerem",
-    "t0": 0.0,
-    "t1": 0.36
-   },
-   {
-    "w": "bir",
-    "t0": 0.36,
-    "t1": 0.56
-   },
-   {
-    "w": "dikişte",
-    "t0": 0.56,
-    "t1": 1.12
-   },
-   {
-    "w": "içti,",
-    "t0": 1.12,
-    "t1": 1.48
-   },
-   {
-    "w": "hiçbir",
-    "t0": 1.74,
-    "t1": 2.1
-   },
-   {
-    "w": "şey",
-    "t0": 2.1,
-    "t1": 2.34
-   },
-   {
-    "w": "olmadı.",
-    "t0": 2.34,
-    "t1": 2.82
-   },
-   {
-    "w": "Ben",
-    "t0": 2.82,
-    "t1": 3.42
-   },
-   {
-    "w": "yavaş",
-    "t0": 3.42,
-    "t1": 3.78
-   },
-   {
-    "w": "yavaş",
-    "t0": 3.78,
-    "t1": 4.18
-   },
-   {
-    "w": "içtim,",
-    "t0": 4.18,
-    "t1": 4.56
-   },
-   {
-    "w": "bütün",
-    "t0": 4.9,
-    "t1": 5.14
-   },
-   {
-    "w": "gün",
-    "t0": 5.14,
-    "t1": 5.32
-   },
-   {
-    "w": "hastaydım.",
-    "t0": 5.32,
-    "t1": 6.0
-   }
-  ],
-  "dur": 6.138
- },
- "h2c": {
-  "key": "1a0ee2e8633e",
-  "trimmed": "1a0ee2e8633e",
-  "wkey": "1a0ee2e8633e",
-  "heard": "Bardaklar temiz, limonata temiz. Nasıl oldu?",
-  "words": [
-   {
-    "w": "Bardaklar",
-    "t0": 0.0,
-    "t1": 0.74
-   },
-   {
-    "w": "temiz,",
-    "t0": 0.74,
-    "t1": 1.22
-   },
-   {
-    "w": "limonata",
-    "t0": 1.46,
-    "t1": 1.9
-   },
-   {
-    "w": "temiz.",
-    "t0": 1.9,
-    "t1": 2.38
-   },
-   {
-    "w": "Nasıl",
-    "t0": 2.6,
-    "t1": 2.96
-   },
-   {
-    "w": "oldu?",
-    "t0": 2.96,
-    "t1": 3.3
-   }
-  ],
-  "dur": 3.588
- },
- "h3": {
-  "key": "c0673a68f84d",
-  "trimmed": "c0673a68f84d",
-  "wkey": "c0673a68f84d",
-  "heard": "Bilirsen yarın limonata benden.",
-  "words": [
-   {
-    "w": "Bilirsen",
+    "w": "Sürahi",
     "t0": 0.0,
     "t1": 0.58
    },
    {
-    "w": "yarın",
+    "w": "aynıydı,",
     "t0": 0.58,
-    "t1": 0.96
+    "t1": 1.343
    },
    {
-    "w": "limonata",
-    "t0": 0.96,
-    "t1": 1.4
+    "w": "buz",
+    "t0": 1.343,
+    "t1": 1.597
+   },
+   {
+    "w": "aynıydı,",
+    "t0": 1.597,
+    "t1": 2.36
+   },
+   {
+    "w": "bardaklar",
+    "t0": 2.36,
+    "t1": 3.0
+   },
+   {
+    "w": "tertemizdi.",
+    "t0": 3.0,
+    "t1": 3.68
+   }
+  ],
+  "dur": 3.8
+ },
+ "h2b": {
+  "key": "e6de819683f8",
+  "trimmed": "e6de819683f8",
+  "wkey": "e6de819683f8",
+  "heard": "Hemen bir dikişte içti. Ben yudum yudum içtim.",
+  "words": [
+   {
+    "w": "Kerem",
+    "t0": 0.0,
+    "t1": 0.36
+   },
+   {
+    "w": "bir",
+    "t0": 0.36,
+    "t1": 0.54
+   },
+   {
+    "w": "dikişte",
+    "t0": 0.54,
+    "t1": 1.08
+   },
+   {
+    "w": "içti.",
+    "t0": 1.08,
+    "t1": 1.42
+   },
+   {
+    "w": "Ben",
+    "t0": 1.42,
+    "t1": 2.02
+   },
+   {
+    "w": "yudum",
+    "t0": 2.02,
+    "t1": 2.38
+   },
+   {
+    "w": "yudum",
+    "t0": 2.38,
+    "t1": 2.7
+   },
+   {
+    "w": "içtim.",
+    "t0": 2.7,
+    "t1": 3.0
+   }
+  ],
+  "dur": 3.188
+ },
+ "h3": {
+  "key": "1f75275f6422",
+  "trimmed": "1f75275f6422",
+  "wkey": "1f75275f6422",
+  "heard": "Bilirsen yarın öyle yemeği benden.",
+  "words": [
+   {
+    "w": "Bilirsen",
+    "t0": 0.0,
+    "t1": 0.6
+   },
+   {
+    "w": "yarın",
+    "t0": 0.6,
+    "t1": 0.98
+   },
+   {
+    "w": "öğle",
+    "t0": 0.98,
+    "t1": 1.18
+   },
+   {
+    "w": "yemeği",
+    "t0": 1.18,
+    "t1": 1.6
    },
    {
     "w": "benden.",
-    "t0": 1.4,
-    "t1": 1.82
+    "t0": 1.6,
+    "t1": 1.92
    }
   ],
-  "dur": 2.02
+  "dur": 2.15
  },
- "da": {
-  "key": "84e3bfd6cf1b",
-  "trimmed": "84e3bfd6cf1b",
-  "wkey": "84e3bfd6cf1b",
-  "heard": "Limonate aynı, bardak temiz. Fark sadece içme hızında.",
+ "d2": {
+  "key": "7ca2a1de8906",
+  "trimmed": "7ca2a1de8906",
+  "wkey": "7ca2a1de8906",
+  "heard": "Limonata güne işte bozulmuştur.",
   "words": [
    {
     "w": "Limonata",
     "t0": 0.0,
-    "t1": 0.48
-   },
-   {
-    "w": "aynı,",
-    "t0": 0.48,
-    "t1": 0.78
-   },
-   {
-    "w": "bardak",
-    "t0": 1.1,
-    "t1": 1.46
-   },
-   {
-    "w": "temiz.",
-    "t0": 1.46,
-    "t1": 1.84
-   },
-   {
-    "w": "Fark",
-    "t0": 2.04,
-    "t1": 2.32
-   },
-   {
-    "w": "sadece",
-    "t0": 2.32,
-    "t1": 2.6
-   },
-   {
-    "w": "içme",
-    "t0": 2.6,
-    "t1": 3.12
-   },
-   {
-    "w": "hızında.",
-    "t0": 3.12,
-    "t1": 3.48
-   }
-  ],
-  "dur": 3.648
- },
- "d2": {
-  "key": "d39da83b0286",
-  "trimmed": "d39da83b0286",
-  "wkey": "d39da83b0286",
-  "heard": "Kerem 'in midesimi daha sağlam.",
-  "words": [
-   {
-    "w": "Keremin",
-    "t0": 0.0,
-    "t1": 0.26
-   },
-   {
-    "w": "midesi",
-    "t0": 0.4,
-    "t1": 0.92
-   },
-   {
-    "w": "mi",
-    "t0": 0.92,
-    "t1": 0.92
-   },
-   {
-    "w": "daha",
-    "t0": 0.92,
-    "t1": 1.1
-   },
-   {
-    "w": "sağlam?",
-    "t0": 1.1,
-    "t1": 1.5
-   }
-  ],
-  "dur": 1.66
- },
- "hd": {
-  "key": "ad20c96fb534",
-  "trimmed": "ad20c96fb534",
-  "wkey": "ad20c96fb534",
-  "heard": "Hayır, Kerem 'in midesi çok hassastır.",
-  "words": [
-   {
-    "w": "Hayır!",
-    "t0": 0.0,
-    "t1": 0.28
-   },
-   {
-    "w": "Keremin",
-    "t0": 0.62,
-    "t1": 1.04
-   },
-   {
-    "w": "midesi",
-    "t0": 1.18,
-    "t1": 1.66
-   },
-   {
-    "w": "çok",
-    "t0": 1.66,
-    "t1": 1.88
-   },
-   {
-    "w": "hassastır.",
-    "t0": 1.88,
-    "t1": 2.58
-   }
-  ],
-  "dur": 2.718
- },
- "n0": {
-  "key": "5a6212cbcc26",
-  "trimmed": "5a6212cbcc26",
-  "wkey": "5a6212cbcc26",
-  "heard": "Bence limonata sizi sevmedi Müdür Bey.",
-  "words": [
-   {
-    "w": "Bence",
-    "t0": 0.0,
-    "t1": 0.44
-   },
-   {
-    "w": "limonata",
-    "t0": 0.44,
-    "t1": 0.98
-   },
-   {
-    "w": "sizi",
-    "t0": 0.98,
-    "t1": 1.2
-   },
-   {
-    "w": "sevmedi",
-    "t0": 1.2,
-    "t1": 1.82
-   },
-   {
-    "w": "Müdür",
-    "t0": 1.82,
-    "t1": 2.22
-   },
-   {
-    "w": "Bey.",
-    "t0": 2.22,
-    "t1": 2.38
-   }
-  ],
-  "dur": 2.59
- },
- "hn": {
-  "key": "c4fcc8380391",
-  "trimmed": "c4fcc8380391",
-  "wkey": "c4fcc8380391",
-  "heard": "Ciddi ol Necmi",
-  "words": [
-   {
-    "w": "Ciddi",
-    "t0": 0.0,
     "t1": 0.46
    },
    {
-    "w": "ol",
+    "w": "güneşte",
     "t0": 0.46,
-    "t1": 0.68
+    "t1": 0.7
    },
    {
-    "w": "Necmi!",
-    "t0": 0.68,
-    "t1": 1.14
+    "w": "bozulmuştur!",
+    "t0": 0.86,
+    "t1": 1.52
    }
   ],
-  "dur": 1.29
+  "dur": 1.64
  },
- "n1": {
-  "key": "ea57e33dd5cd",
-  "trimmed": "ea57e33dd5cd",
-  "wkey": "ea57e33dd5cd",
-  "heard": "Hanım limonatama buz koyunca hep der ki, hemen iç, buzerirse tadı değişir.",
+ "hd": {
+  "key": "d873d71844b0",
+  "trimmed": "d873d71844b0",
+  "wkey": "d873d71844b0",
+  "heard": "Olmaz, gölgedeydik. Limonata sonuna kadar buz gibiydi.",
   "words": [
    {
-    "w": "Hanım",
-    "t0": 0.0,
-    "t1": 0.26
-   },
-   {
-    "w": "limonatama",
-    "t0": 0.26,
-    "t1": 1.02
-   },
-   {
-    "w": "buz",
-    "t0": 1.02,
-    "t1": 1.3
-   },
-   {
-    "w": "koyunca",
-    "t0": 1.3,
-    "t1": 1.8
-   },
-   {
-    "w": "hep",
-    "t0": 1.8,
-    "t1": 2.133
-   },
-   {
-    "w": "der",
-    "t0": 2.133,
-    "t1": 2.467
-   },
-   {
-    "w": "ki,",
-    "t0": 2.467,
-    "t1": 2.8
-   },
-   {
-    "w": "hemen",
-    "t0": 2.8,
-    "t1": 3.04
-   },
-   {
-    "w": "iç,",
-    "t0": 3.04,
-    "t1": 3.34
-   },
-   {
-    "w": "buz",
-    "t0": 3.34,
-    "t1": 3.64
-   },
-   {
-    "w": "erirse",
-    "t0": 3.64,
-    "t1": 4.28
-   },
-   {
-    "w": "tadı",
-    "t0": 4.28,
-    "t1": 4.62
-   },
-   {
-    "w": "değişir!",
-    "t0": 4.62,
-    "t1": 5.12
-   }
-  ],
-  "dur": 5.22
- },
- "d3": {
-  "key": "ced430d6d5f1",
-  "trimmed": "ced430d6d5f1",
-  "wkey": "ced430d6d5f1",
-  "heard": "Buldum. Sorun buzdaydı.",
-  "words": [
-   {
-    "w": "Buldum!",
+    "w": "Olmaz!",
     "t0": 0.0,
     "t1": 0.5
    },
    {
-    "w": "Sorun",
-    "t0": 0.74,
-    "t1": 1.08
+    "w": "Gölgedeydik.",
+    "t0": 0.84,
+    "t1": 1.8
    },
    {
-    "w": "buzdaydı!",
-    "t0": 1.08,
-    "t1": 1.6
+    "w": "Limonata",
+    "t0": 2.0,
+    "t1": 2.56
+   },
+   {
+    "w": "sonuna",
+    "t0": 2.56,
+    "t1": 2.94
+   },
+   {
+    "w": "kadar",
+    "t0": 2.94,
+    "t1": 3.18
+   },
+   {
+    "w": "buz",
+    "t0": 3.18,
+    "t1": 3.56
+   },
+   {
+    "w": "gibiydi.",
+    "t0": 3.56,
+    "t1": 3.94
    }
   ],
-  "dur": 1.748
+  "dur": 4.086
  },
- "d4": {
-  "key": "e47a451acd20",
-  "trimmed": "e47a451acd20",
-  "wkey": "e47a451acd20",
-  "heard": "Buzun suyu temiz değildi. Kerem bir dikişte içti, buzlar erimeden bardak bitti.",
+ "n1": {
+  "key": "8a1ba8abb86b",
+  "trimmed": "8a1ba8abb86b",
+  "wkey": "8a1ba8abb86b",
+  "heard": "Kerem 'in bardağını da alayım. Buzları daha erimemiş bile.",
   "words": [
    {
-    "w": "Buzun",
+    "w": "Keremin",
     "t0": 0.0,
     "t1": 0.32
    },
    {
-    "w": "suyu",
-    "t0": 0.32,
-    "t1": 0.64
+    "w": "bardağını",
+    "t0": 0.46,
+    "t1": 1.04
    },
    {
-    "w": "temiz",
-    "t0": 0.64,
-    "t1": 0.94
+    "w": "da",
+    "t0": 1.04,
+    "t1": 1.26
    },
    {
-    "w": "değildi.",
-    "t0": 0.94,
-    "t1": 1.42
+    "w": "alayım.",
+    "t0": 1.26,
+    "t1": 1.54
    },
    {
-    "w": "Kerem",
-    "t0": 1.56,
-    "t1": 1.9
+    "w": "Buzları",
+    "t0": 1.94,
+    "t1": 2.46
    },
    {
-    "w": "bir",
-    "t0": 1.9,
-    "t1": 2.04
+    "w": "daha",
+    "t0": 2.46,
+    "t1": 2.7
    },
    {
-    "w": "dikişte",
-    "t0": 2.04,
-    "t1": 2.48
-   },
-   {
-    "w": "içti,",
-    "t0": 2.48,
-    "t1": 2.78
-   },
-   {
-    "w": "buzlar",
-    "t0": 3.04,
+    "w": "erimemiş",
+    "t0": 2.7,
     "t1": 3.36
    },
    {
-    "w": "erimeden",
+    "w": "bile.",
     "t0": 3.36,
-    "t1": 3.7
-   },
-   {
-    "w": "bardak",
-    "t0": 3.7,
-    "t1": 4.12
-   },
-   {
-    "w": "bitti.",
-    "t0": 4.12,
-    "t1": 4.4
+    "t1": 3.52
    }
   ],
-  "dur": 4.548
+  "dur": 3.748
  },
- "d5": {
-  "key": "856b32f93460",
-  "trimmed": "856b32f93460",
-  "wkey": "856b32f93460",
-  "heard": "Siz yavaş içtiniz, buzlar bardağınızda eridi. Osu sizin limonatanıza karıştı.",
+ "d3": {
+  "key": "2e98ecf359ed",
+  "trimmed": "2e98ecf359ed",
+  "wkey": "2e98ecf359ed",
+  "heard": "Buldum. Sorun buzda.",
   "words": [
    {
-    "w": "Siz",
+    "w": "Buldum!",
     "t0": 0.0,
-    "t1": 0.2
+    "t1": 0.46
    },
    {
-    "w": "yavaş",
-    "t0": 0.2,
-    "t1": 0.54
+    "w": "Sorun",
+    "t0": 0.72,
+    "t1": 1.06
    },
    {
-    "w": "içtiniz,",
-    "t0": 0.54,
-    "t1": 0.98
+    "w": "buzda!",
+    "t0": 1.06,
+    "t1": 1.42
+   }
+  ],
+  "dur": 1.568
+ },
+ "d4": {
+  "key": "98d861b9cbaa",
+  "trimmed": "98d861b9cbaa",
+  "wkey": "98d861b9cbaa",
+  "heard": "Bozuk olan buzdu. Kerem buzlar erimeden bardağı bitirdi.",
+  "words": [
+   {
+    "w": "Bozuk",
+    "t0": 0.0,
+    "t1": 0.3
+   },
+   {
+    "w": "olan",
+    "t0": 0.3,
+    "t1": 0.5
+   },
+   {
+    "w": "buzdu.",
+    "t0": 0.5,
+    "t1": 0.92
+   },
+   {
+    "w": "Kerem,",
+    "t0": 1.12,
+    "t1": 1.54
    },
    {
     "w": "buzlar",
-    "t0": 1.24,
-    "t1": 1.56
+    "t0": 1.54,
+    "t1": 2.04
    },
    {
-    "w": "bardağınızda",
-    "t0": 1.56,
-    "t1": 2.2
+    "w": "erimeden",
+    "t0": 2.04,
+    "t1": 2.4
    },
    {
-    "w": "eridi.",
-    "t0": 2.2,
-    "t1": 2.52
-   },
-   {
-    "w": "O",
-    "t0": 2.52,
+    "w": "bardağı",
+    "t0": 2.4,
     "t1": 2.82
    },
    {
-    "w": "su",
+    "w": "bitirdi.",
     "t0": 2.82,
-    "t1": 3.12
+    "t1": 3.14
+   }
+  ],
+  "dur": 3.319
+ },
+ "d5": {
+  "key": "13156e5f9e1d",
+  "trimmed": "13156e5f9e1d",
+  "wkey": "13156e5f9e1d",
+  "heard": "Sizin buzlarınız eriyip limon ateye karıştı.",
+  "words": [
+   {
+    "w": "Sizin",
+    "t0": 0.0,
+    "t1": 0.32
    },
    {
-    "w": "sizin",
-    "t0": 3.12,
-    "t1": 3.34
+    "w": "buzlarınız",
+    "t0": 0.32,
+    "t1": 0.8
    },
    {
-    "w": "limonatanıza",
-    "t0": 3.34,
-    "t1": 4.08
+    "w": "eriyip",
+    "t0": 0.8,
+    "t1": 1.16
+   },
+   {
+    "w": "limonataya",
+    "t0": 1.16,
+    "t1": 1.64
    },
    {
     "w": "karıştı!",
-    "t0": 4.08,
-    "t1": 4.52
+    "t0": 1.64,
+    "t1": 2.04
    }
   ],
-  "dur": 4.628
+  "dur": 2.14
  },
  "h4": {
-  "key": "fd4dae4538ac",
-  "trimmed": "fd4dae4538ac",
-  "wkey": "fd4dae4538ac",
-  "heard": "buzdolabı necminin sorumluluğunda değil miydi?",
+  "key": "6b716e6097ac",
+  "trimmed": "6b716e6097ac",
+  "wkey": "6b716e6097ac",
+  "heard": "Necmi, bu buzlar yine akvaryum suyundan mı?",
   "words": [
    {
-    "w": "Buzdolabı",
+    "w": "Necmi!",
     "t0": 0.0,
-    "t1": 0.68
+    "t1": 0.58
    },
    {
-    "w": "Necminin",
-    "t0": 0.68,
-    "t1": 1.2
+    "w": "Bu",
+    "t0": 0.58,
+    "t1": 1.08
    },
    {
-    "w": "sorumluluğunda",
-    "t0": 1.2,
-    "t1": 1.92
+    "w": "buzlar",
+    "t0": 1.08,
+    "t1": 1.56
    },
    {
-    "w": "değil",
-    "t0": 1.92,
-    "t1": 2.2
+    "w": "yine",
+    "t0": 1.56,
+    "t1": 1.76
    },
    {
-    "w": "miydi?",
-    "t0": 2.2,
-    "t1": 2.58
+    "w": "akvaryum",
+    "t0": 1.76,
+    "t1": 2.42
+   },
+   {
+    "w": "suyundan",
+    "t0": 2.42,
+    "t1": 2.94
+   },
+   {
+    "w": "mı?",
+    "t0": 2.94,
+    "t1": 3.06
    }
   ],
-  "dur": 2.75
+  "dur": 3.218
  },
  "d6": {
-  "key": "e0d65ef1b679",
-  "trimmed": "e0d65ef1b679",
-  "wkey": "e0d65ef1b679",
-  "heard": "Bunu limonatayı yavaş içen arkadaşına gönder.",
+  "key": "98020a5d4692",
+  "trimmed": "98020a5d4692",
+  "wkey": "98020a5d4692",
+  "heard": "Bunu içeceğini saatlerce bitiremeyen arkadaşına gönder.",
   "words": [
    {
     "w": "Bunu",
@@ -745,31 +445,31 @@
     "t1": 0.2
    },
    {
-    "w": "limonatayı",
+    "w": "içeceğini",
     "t0": 0.2,
-    "t1": 0.78
+    "t1": 0.68
    },
    {
-    "w": "yavaş",
-    "t0": 0.78,
-    "t1": 1.06
+    "w": "saatlerce",
+    "t0": 0.68,
+    "t1": 1.24
    },
    {
-    "w": "içen",
-    "t0": 1.06,
-    "t1": 1.32
+    "w": "bitiremeyen",
+    "t0": 1.24,
+    "t1": 1.78
    },
    {
     "w": "arkadaşına",
-    "t0": 1.32,
-    "t1": 1.86
+    "t0": 1.78,
+    "t1": 2.3
    },
    {
     "w": "gönder.",
-    "t0": 1.86,
-    "t1": 2.22
+    "t0": 2.3,
+    "t1": 2.64
    }
   ],
-  "dur": 2.36
+  "dur": 2.8
  }
 }

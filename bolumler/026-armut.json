@@ -1,7 +1,7 @@
 {
  "id": "026-armut",
  "num": 26,
- "sira": 23,
+ "sira": 18,
  "bpm": 120,
  "slug": "sisedeki-armut",
  "coverAt": 0,
@@ -25,74 +25,74 @@
     "id": "h1",
     "who": "hikmet",
     "gap": 0.4,
-    "text": "Defneciğim, Necmi'nin şişesinde koskoca bir armut var!",
-    "tts": "Defneciğim, Necminin şişesinde koskoca bir armut var!"
+    "text": "Bu koca armut bu şişeye nasıl girdi?"
    },
    {
     "id": "h2a",
     "who": "hikmet",
     "gap": 0.3,
-    "text": "Şişenin ağzı dar, armut kocaman. Şişe kesilmemiş, yapıştırılmamış."
+    "text": "Şişe ne kesildi ne yapıştırıldı."
    },
    {
     "id": "h2b",
     "who": "hikmet",
     "gap": 0.3,
-    "text": "Armut da bütün, ne kesik ne ezik. Bu armut şişeye nasıl girdi?"
+    "text": "Armut da bütün. Üstünde tek çizik yok."
    },
    {
     "id": "h3",
     "who": "hikmet",
     "gap": 0.4,
-    "text": "Bilirsen bu hafta çay benden."
+    "text": "Bilirsen armut senin."
    },
    {
     "id": "d2",
     "who": "defne",
     "gap": 0.6,
-    "text": "Armudu ısıtıp yumuşattılar mı?"
+    "text": "İtip içine sıkıştırmışlardır!"
    },
    {
     "id": "hd",
     "who": "hikmet",
     "gap": 0.45,
-    "text": "Hayır! Armut hiç ezilmemiş."
+    "text": "Olmaz! O zaman armut ezilirdi."
    },
    {
     "id": "n1",
     "who": "necmi",
     "gap": 5.6,
-    "text": "Hanım kabağı kutunun içinde büyüttü. Kabak kutunun şeklini aldı: kare kabak!"
+    "text": "Benim yüzük de parmağımdan çıkmıyor. Gençken takmıştım, sonra parmağım kalınlaştı!"
    },
    {
     "id": "d3",
     "who": "defne",
     "gap": 0.35,
-    "text": "Buldum! Armut şişede büyüdü!"
+    "text": "Buldum! Armut şişenin içinde büyüdü!"
    },
    {
     "id": "d4",
     "who": "defne",
     "gap": 0.4,
-    "text": "Armut daha minicikken dalına şişe geçirdiler."
+    "text": "Armut daha minicikken dalına şişe geçirilmiş."
    },
    {
     "id": "d5",
     "who": "defne",
     "gap": 0.45,
-    "text": "Armut şişenin içinde büyüdü. Sonra dalından kestiler!"
+    "text": "Armut şişenin içinde büyümüş. Sonra dalından kesilmiş!"
    },
    {
     "id": "h4",
     "who": "hikmet",
     "gap": 1.1,
-    "text": "Necmi, o kare kabağı da getir, görelim."
+    "text": "Armut senin Defneciğim. Çıkarabilirsen afiyet olsun!"
    },
    {
     "id": "d6",
     "who": "defne",
     "gap": 0.55,
-    "text": "Bunu her şeyi zorla sığdırmaya çalışan arkadaşına gönder."
+    "text": "Bunu 'armut piş, ağzıma düş' diyen arkadaşına gönder.",
+    "tts": "Bunu armut piş, ağzıma düş diyen arkadaşına gönder."
    }
   ]
  },
@@ -115,23 +115,8 @@
   [
    "buzz",
    "hd:0"
-  ],
-  [
-   "swish",
-   "d4:0"
-  ],
-  [
-   "pop",
-   "d4:4"
-  ],
-  [
-   "ding",
-   "d5:6"
-  ],
-  [
-   "womp",
-   "d5>+0.15"
   ]
  ],
- "disabled": "yeniden yapılıyor: çok sahneli hikâye (Fable), onaydan sonra açılacak"
+ "disabled": "yeniden yapılıyor: çok sahneli hikâye (Fable), onaydan sonra açılacak",
+ "v4": true
 }

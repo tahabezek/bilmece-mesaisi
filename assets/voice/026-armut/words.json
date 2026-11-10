@@ -1,365 +1,315 @@
 {
  "h1": {
-  "key": "3d838955b45e",
-  "trimmed": "3d838955b45e",
-  "wkey": "3d838955b45e",
-  "heard": "Defnecim, necminin şişesinde koskoca bir armut var.",
+  "key": "9b154b10c577",
+  "trimmed": "9b154b10c577",
+  "wkey": "9b154b10c577",
+  "heard": "Bu koca Armut bu şişeye nasıl girdi?",
   "words": [
-   {
-    "w": "Defneciğim,",
-    "t0": 0.0,
-    "t1": 0.74
-   },
-   {
-    "w": "Necminin",
-    "t0": 0.94,
-    "t1": 1.46
-   },
-   {
-    "w": "şişesinde",
-    "t0": 1.46,
-    "t1": 2.06
-   },
-   {
-    "w": "koskoca",
-    "t0": 2.06,
-    "t1": 2.62
-   },
-   {
-    "w": "bir",
-    "t0": 2.62,
-    "t1": 2.76
-   },
-   {
-    "w": "armut",
-    "t0": 2.76,
-    "t1": 3.14
-   },
-   {
-    "w": "var!",
-    "t0": 3.14,
-    "t1": 3.32
-   }
-  ],
-  "dur": 3.48
- },
- "h2a": {
-  "key": "f8b962d81d27",
-  "trimmed": "f8b962d81d27",
-  "wkey": "f8b962d81d27",
-  "heard": "Şişenin ağzıdar, armut kocaman. Şişe kesilmemiş yapıştırılmamış.",
-  "words": [
-   {
-    "w": "Şişenin",
-    "t0": 0.0,
-    "t1": 0.5
-   },
-   {
-    "w": "ağzı",
-    "t0": 0.5,
-    "t1": 1.16
-   },
-   {
-    "w": "dar,",
-    "t0": 1.16,
-    "t1": 1.32
-   },
-   {
-    "w": "armut",
-    "t0": 1.32,
-    "t1": 1.7
-   },
-   {
-    "w": "kocaman.",
-    "t0": 1.7,
-    "t1": 2.2
-   },
-   {
-    "w": "Şişe",
-    "t0": 2.58,
-    "t1": 2.88
-   },
-   {
-    "w": "kesilmemiş,",
-    "t0": 2.88,
-    "t1": 3.68
-   },
-   {
-    "w": "yapıştırılmamış.",
-    "t0": 3.68,
-    "t1": 4.84
-   }
-  ],
-  "dur": 4.948
- },
- "h2b": {
-  "key": "084be534843d",
-  "trimmed": "084be534843d",
-  "wkey": "084be534843d",
-  "heard": "Armut da bütün ne kesik ne ezik, bu Armut şişeye nasıl girdi?",
-  "words": [
-   {
-    "w": "Armut",
-    "t0": 0.0,
-    "t1": 0.44
-   },
-   {
-    "w": "da",
-    "t0": 0.44,
-    "t1": 0.58
-   },
-   {
-    "w": "bütün,",
-    "t0": 0.58,
-    "t1": 0.84
-   },
-   {
-    "w": "ne",
-    "t0": 0.84,
-    "t1": 1.3
-   },
-   {
-    "w": "kesik",
-    "t0": 1.3,
-    "t1": 1.7
-   },
-   {
-    "w": "ne",
-    "t0": 1.7,
-    "t1": 1.86
-   },
-   {
-    "w": "ezik.",
-    "t0": 1.86,
-    "t1": 2.22
-   },
    {
     "w": "Bu",
-    "t0": 2.22,
-    "t1": 2.58
+    "t0": 0.0,
+    "t1": 0.18
+   },
+   {
+    "w": "koca",
+    "t0": 0.18,
+    "t1": 0.52
    },
    {
     "w": "armut",
-    "t0": 2.58,
-    "t1": 2.98
-   },
-   {
-    "w": "şişeye",
-    "t0": 2.98,
-    "t1": 3.38
-   },
-   {
-    "w": "nasıl",
-    "t0": 3.38,
-    "t1": 3.7
-   },
-   {
-    "w": "girdi?",
-    "t0": 3.7,
-    "t1": 4.12
-   }
-  ],
-  "dur": 4.328
- },
- "h3": {
-  "key": "3484c9f6df0d",
-  "trimmed": "3484c9f6df0d",
-  "wkey": "3484c9f6df0d",
-  "heard": "Bilirsen bu hafta çay benden.",
-  "words": [
-   {
-    "w": "Bilirsen",
-    "t0": 0.0,
-    "t1": 0.58
+    "t0": 0.52,
+    "t1": 0.9
    },
    {
     "w": "bu",
-    "t0": 0.58,
-    "t1": 0.78
+    "t0": 0.9,
+    "t1": 1.04
    },
    {
-    "w": "hafta",
-    "t0": 0.78,
-    "t1": 1.2
+    "w": "şişeye",
+    "t0": 1.04,
+    "t1": 1.46
    },
    {
-    "w": "çay",
-    "t0": 1.2,
-    "t1": 1.44
+    "w": "nasıl",
+    "t0": 1.46,
+    "t1": 1.7
    },
    {
-    "w": "benden.",
-    "t0": 1.44,
-    "t1": 1.82
+    "w": "girdi?",
+    "t0": 1.7,
+    "t1": 2.14
    }
   ],
-  "dur": 2.01
+  "dur": 2.34
  },
- "d2": {
-  "key": "2f576d31d749",
-  "trimmed": "2f576d31d749",
-  "wkey": "2f576d31d749",
-  "heard": "Armodu ısıtıp yumuşattılar mı?",
+ "h2a": {
+  "key": "a5e36fba7398",
+  "trimmed": "a5e36fba7398",
+  "wkey": "a5e36fba7398",
+  "heard": "şişe ne kesildiğine yapıştırıldı.",
   "words": [
    {
-    "w": "Armudu",
+    "w": "Şişe",
+    "t0": 0.0,
+    "t1": 0.38
+   },
+   {
+    "w": "ne",
+    "t0": 0.38,
+    "t1": 0.52
+   },
+   {
+    "w": "kesildi",
+    "t0": 0.52,
+    "t1": 1.16
+   },
+   {
+    "w": "ne",
+    "t0": 1.16,
+    "t1": 1.16
+   },
+   {
+    "w": "yapıştırıldı.",
+    "t0": 1.16,
+    "t1": 1.76
+   }
+  ],
+  "dur": 1.99
+ },
+ "h2b": {
+  "key": "df8a15d9ac85",
+  "trimmed": "df8a15d9ac85",
+  "wkey": "df8a15d9ac85",
+  "heard": "Armut da bütün. Üstünde tek çizik yok.",
+  "words": [
+   {
+    "w": "Armut",
     "t0": 0.0,
     "t1": 0.42
    },
    {
-    "w": "ısıtıp",
+    "w": "da",
     "t0": 0.42,
-    "t1": 0.76
+    "t1": 0.54
    },
    {
-    "w": "yumuşattılar",
-    "t0": 0.76,
-    "t1": 1.32
+    "w": "bütün.",
+    "t0": 0.54,
+    "t1": 0.78
    },
    {
-    "w": "mı?",
-    "t0": 1.32,
-    "t1": 1.5
+    "w": "Üstünde",
+    "t0": 1.24,
+    "t1": 1.68
+   },
+   {
+    "w": "tek",
+    "t0": 1.68,
+    "t1": 1.92
+   },
+   {
+    "w": "çizik",
+    "t0": 1.92,
+    "t1": 2.36
+   },
+   {
+    "w": "yok.",
+    "t0": 2.36,
+    "t1": 2.52
    }
   ],
-  "dur": 1.63
+  "dur": 2.698
  },
- "hd": {
-  "key": "a16dae268415",
-  "trimmed": "a16dae268415",
-  "wkey": "a16dae268415",
-  "heard": "Hayır, Armut hiç ezilmemiş.",
+ "h3": {
+  "key": "97e70c1f7d33",
+  "trimmed": "97e70c1f7d33",
+  "wkey": "97e70c1f7d33",
+  "heard": "Bilirsen Armut senin.",
   "words": [
    {
-    "w": "Hayır!",
+    "w": "Bilirsen",
     "t0": 0.0,
-    "t1": 0.3
+    "t1": 0.56
    },
    {
-    "w": "Armut",
-    "t0": 0.76,
-    "t1": 1.12
+    "w": "armut",
+    "t0": 0.56,
+    "t1": 0.98
    },
    {
-    "w": "hiç",
-    "t0": 1.12,
+    "w": "senin.",
+    "t0": 0.98,
+    "t1": 1.18
+   }
+  ],
+  "dur": 1.43
+ },
+ "d2": {
+  "key": "aed3632203e4",
+  "trimmed": "aed3632203e4",
+  "wkey": "aed3632203e4",
+  "heard": "İtip içine sıkıştırmışlardır.",
+  "words": [
+   {
+    "w": "İtip",
+    "t0": 0.0,
+    "t1": 0.28
+   },
+   {
+    "w": "içine",
+    "t0": 0.28,
+    "t1": 0.56
+   },
+   {
+    "w": "sıkıştırmışlardır!",
+    "t0": 0.56,
+    "t1": 1.58
+   }
+  ],
+  "dur": 1.67
+ },
+ "hd": {
+  "key": "24f08681efe6",
+  "trimmed": "24f08681efe6",
+  "wkey": "24f08681efe6",
+  "heard": "Olmaz, o zaman armut ezilirdi.",
+  "words": [
+   {
+    "w": "Olmaz!",
+    "t0": 0.0,
+    "t1": 0.48
+   },
+   {
+    "w": "O",
+    "t0": 0.48,
+    "t1": 1.02
+   },
+   {
+    "w": "zaman",
+    "t0": 1.02,
     "t1": 1.3
    },
    {
-    "w": "ezilmemiş.",
+    "w": "armut",
     "t0": 1.3,
-    "t1": 2.0
+    "t1": 1.74
+   },
+   {
+    "w": "ezilirdi.",
+    "t0": 1.74,
+    "t1": 2.18
    }
   ],
-  "dur": 2.108
+  "dur": 2.398
  },
  "n1": {
-  "key": "2b8fbb253f30",
-  "trimmed": "2b8fbb253f30",
-  "wkey": "2b8fbb253f30",
-  "heard": "Hanım kabağı kutunun içinde büyüttü. Kabak kutunun şeklini aldı, kare kabak.",
+  "key": "66db51dc87fd",
+  "trimmed": "66db51dc87fd",
+  "wkey": "66db51dc87fd",
+  "heard": "Benim yüzük de parmağımdan çıkmıyor. Gençken takmıştım, sonra parmağım kalınlaştı.",
   "words": [
    {
-    "w": "Hanım",
+    "w": "Benim",
     "t0": 0.0,
-    "t1": 0.24
+    "t1": 0.38
    },
    {
-    "w": "kabağı",
-    "t0": 0.24,
-    "t1": 0.8
+    "w": "yüzük",
+    "t0": 0.38,
+    "t1": 0.84
    },
    {
-    "w": "kutunun",
-    "t0": 0.8,
-    "t1": 1.2
+    "w": "de",
+    "t0": 0.84,
+    "t1": 0.98
    },
    {
-    "w": "içinde",
-    "t0": 1.2,
-    "t1": 1.44
+    "w": "parmağımdan",
+    "t0": 0.98,
+    "t1": 1.64
    },
    {
-    "w": "büyüttü.",
-    "t0": 1.44,
-    "t1": 2.18
+    "w": "çıkmıyor.",
+    "t0": 1.64,
+    "t1": 2.28
    },
    {
-    "w": "Kabak",
-    "t0": 2.4,
-    "t1": 2.84
+    "w": "Gençken",
+    "t0": 2.62,
+    "t1": 3.24
    },
    {
-    "w": "kutunun",
-    "t0": 2.84,
-    "t1": 3.28
+    "w": "takmıştım,",
+    "t0": 3.24,
+    "t1": 3.96
    },
    {
-    "w": "şeklini",
-    "t0": 3.28,
-    "t1": 3.8
+    "w": "sonra",
+    "t0": 4.28,
+    "t1": 4.52
    },
    {
-    "w": "aldı:",
-    "t0": 3.8,
-    "t1": 4.24
+    "w": "parmağım",
+    "t0": 4.52,
+    "t1": 5.18
    },
    {
-    "w": "kare",
-    "t0": 4.42,
-    "t1": 4.7
-   },
-   {
-    "w": "kabak!",
-    "t0": 4.7,
-    "t1": 5.2
+    "w": "kalınlaştı!",
+    "t0": 5.18,
+    "t1": 5.96
    }
   ],
-  "dur": 5.228
+  "dur": 6.108
  },
  "d3": {
-  "key": "aede35b65854",
-  "trimmed": "aede35b65854",
-  "wkey": "aede35b65854",
-  "heard": "Buldum, Armut şişede büyüdü.",
+  "key": "1204cba49c2c",
+  "trimmed": "1204cba49c2c",
+  "wkey": "1204cba49c2c",
+  "heard": "Buldum, armut şişenin içinde büyüdü.",
   "words": [
    {
     "w": "Buldum!",
     "t0": 0.0,
-    "t1": 0.46
+    "t1": 0.48
    },
    {
     "w": "Armut",
-    "t0": 0.74,
+    "t0": 0.78,
     "t1": 1.06
    },
    {
-    "w": "şişede",
+    "w": "şişenin",
     "t0": 1.06,
-    "t1": 1.4
+    "t1": 1.38
+   },
+   {
+    "w": "içinde",
+    "t0": 1.38,
+    "t1": 1.58
    },
    {
     "w": "büyüdü!",
-    "t0": 1.4,
-    "t1": 1.78
+    "t0": 1.58,
+    "t1": 2.12
    }
   ],
-  "dur": 1.858
+  "dur": 2.208
  },
  "d4": {
-  "key": "f110d8096f62",
-  "trimmed": "f110d8096f62",
-  "wkey": "f110d8096f62",
-  "heard": "Armut daha minicikken dalıma şişe geçirdiler.",
+  "key": "7593719ae49a",
+  "trimmed": "7593719ae49a",
+  "wkey": "7593719ae49a",
+  "heard": "Armut daha minicikken dalıma şişe geçirilmiş.",
   "words": [
    {
     "w": "Armut",
     "t0": 0.0,
-    "t1": 0.32
+    "t1": 0.36
    },
    {
     "w": "daha",
-    "t0": 0.32,
+    "t0": 0.36,
     "t1": 0.52
    },
    {
@@ -378,27 +328,27 @@
     "t1": 1.7
    },
    {
-    "w": "geçirdiler.",
+    "w": "geçirilmiş.",
     "t0": 1.7,
-    "t1": 2.18
+    "t1": 2.2
    }
   ],
-  "dur": 2.34
+  "dur": 2.38
  },
  "d5": {
-  "key": "d577240470c8",
-  "trimmed": "d577240470c8",
-  "wkey": "d577240470c8",
-  "heard": "Armut şişenin içinde büyüdü, sonra dalından kestiler.",
+  "key": "4182bb152161",
+  "trimmed": "4182bb152161",
+  "wkey": "4182bb152161",
+  "heard": "Armut şişenin içinde büyümüş, sonra dalından kesilmiş.",
   "words": [
    {
     "w": "Armut",
     "t0": 0.0,
-    "t1": 0.34
+    "t1": 0.36
    },
    {
     "w": "şişenin",
-    "t0": 0.34,
+    "t0": 0.36,
     "t1": 0.66
    },
    {
@@ -407,119 +357,114 @@
     "t1": 0.88
    },
    {
-    "w": "büyüdü.",
+    "w": "büyümüş.",
     "t0": 0.88,
-    "t1": 1.66
+    "t1": 1.46
    },
    {
     "w": "Sonra",
     "t0": 1.66,
-    "t1": 1.98
+    "t1": 2.0
    },
    {
     "w": "dalından",
-    "t0": 1.98,
+    "t0": 2.0,
     "t1": 2.44
    },
    {
-    "w": "kestiler!",
+    "w": "kesilmiş!",
     "t0": 2.44,
     "t1": 2.98
    }
   ],
-  "dur": 3.158
+  "dur": 3.118
  },
  "h4": {
-  "key": "05c394a3e129",
-  "trimmed": "05c394a3e129",
-  "wkey": "05c394a3e129",
-  "heard": "Neçmi o kare kabağı da getir, görelim.",
+  "key": "f6d7b27454ea",
+  "trimmed": "f6d7b27454ea",
+  "wkey": "f6d7b27454ea",
+  "heard": "Armut senin defnecim. Çıkarabilirsen afiyet olsun.",
   "words": [
    {
-    "w": "Necmi,",
+    "w": "Armut",
     "t0": 0.0,
-    "t1": 0.5
+    "t1": 0.4
    },
    {
-    "w": "o",
-    "t0": 0.5,
-    "t1": 0.8
+    "w": "senin",
+    "t0": 0.4,
+    "t1": 0.62
    },
    {
-    "w": "kare",
-    "t0": 0.8,
-    "t1": 1.06
+    "w": "Defneciğim.",
+    "t0": 0.62,
+    "t1": 1.34
    },
    {
-    "w": "kabağı",
-    "t0": 1.06,
-    "t1": 1.48
+    "w": "Çıkarabilirsen",
+    "t0": 1.82,
+    "t1": 2.5
    },
    {
-    "w": "da",
-    "t0": 1.48,
-    "t1": 1.54
+    "w": "afiyet",
+    "t0": 2.5,
+    "t1": 2.98
    },
    {
-    "w": "getir,",
-    "t0": 1.54,
-    "t1": 1.82
-   },
-   {
-    "w": "görelim.",
-    "t0": 2.12,
-    "t1": 2.52
+    "w": "olsun!",
+    "t0": 2.98,
+    "t1": 3.26
    }
   ],
-  "dur": 2.69
+  "dur": 3.568
  },
  "d6": {
-  "key": "cc01e5814180",
-  "trimmed": "cc01e5814180",
-  "wkey": "cc01e5814180",
-  "heard": "Bunu her şeyi zorla sığdırmaya çalışan arkadaşına gönder.",
+  "key": "c6e210a24c87",
+  "trimmed": "c6e210a24c87",
+  "wkey": "c6e210a24c87",
+  "heard": "Bunu Armut piş, ağzıma düş diyen arkadaşına gönder.",
   "words": [
    {
     "w": "Bunu",
     "t0": 0.0,
-    "t1": 0.22
+    "t1": 0.2
    },
    {
-    "w": "her",
-    "t0": 0.22,
-    "t1": 0.44
+    "w": "armut",
+    "t0": 0.2,
+    "t1": 0.54
    },
    {
-    "w": "şeyi",
-    "t0": 0.44,
-    "t1": 0.66
+    "w": "piş,",
+    "t0": 0.54,
+    "t1": 0.98
    },
    {
-    "w": "zorla",
-    "t0": 0.66,
-    "t1": 1.04
+    "w": "ağzıma",
+    "t0": 0.98,
+    "t1": 1.32
    },
    {
-    "w": "sığdırmaya",
-    "t0": 1.04,
-    "t1": 1.5
+    "w": "düş",
+    "t0": 1.32,
+    "t1": 1.48
    },
    {
-    "w": "çalışan",
-    "t0": 1.5,
-    "t1": 1.92
+    "w": "diyen",
+    "t0": 1.48,
+    "t1": 1.78
    },
    {
     "w": "arkadaşına",
-    "t0": 1.92,
-    "t1": 2.48
+    "t0": 1.78,
+    "t1": 2.3
    },
    {
     "w": "gönder.",
-    "t0": 2.48,
-    "t1": 2.84
+    "t0": 2.3,
+    "t1": 2.64
    }
   ],
-  "dur": 3.0
+  "dur": 2.8
  }
 }

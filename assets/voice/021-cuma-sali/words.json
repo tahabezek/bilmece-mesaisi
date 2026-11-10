@@ -1,175 +1,81 @@
 {
  "h1": {
-  "key": "f75b843d981c",
-  "trimmed": "f75b843d981c",
-  "wkey": "f75b843d981c",
-  "heard": "Defneciğim öyle bir yer var ki cuma salıdan önce gelir.",
+  "key": "3dd9dc7cef78",
+  "trimmed": "3dd9dc7cef78",
+  "wkey": "3dd9dc7cef78",
+  "heard": "Bir yerde cuma salıdan önce gelir.",
   "words": [
    {
-    "w": "Defneciğim,",
+    "w": "Bir",
     "t0": 0.0,
+    "t1": 0.3
+   },
+   {
+    "w": "yerde",
+    "t0": 0.3,
     "t1": 0.66
    },
    {
-    "w": "öyle",
-    "t0": 0.66,
-    "t1": 1.08
-   },
-   {
-    "w": "bir",
-    "t0": 1.08,
-    "t1": 1.32
-   },
-   {
-    "w": "yer",
-    "t0": 1.32,
-    "t1": 1.56
-   },
-   {
-    "w": "var",
-    "t0": 1.56,
-    "t1": 1.8
-   },
-   {
-    "w": "ki",
-    "t0": 1.8,
-    "t1": 2.04
-   },
-   {
     "w": "Cuma,",
-    "t0": 2.04,
-    "t1": 2.28
+    "t0": 0.66,
+    "t1": 1.02
    },
    {
     "w": "Salıdan",
-    "t0": 2.28,
-    "t1": 3.0
-   },
-   {
-    "w": "önce",
-    "t0": 3.0,
-    "t1": 3.22
-   },
-   {
-    "w": "gelir.",
-    "t0": 3.22,
-    "t1": 3.48
-   }
-  ],
-  "dur": 3.73
- },
- "d1": {
-  "key": "accede831981",
-  "trimmed": "accede831981",
-  "wkey": "accede831981",
-  "heard": "Nasıl yani, haftada salı önce gelir ama.",
-  "words": [
-   {
-    "w": "Nasıl",
-    "t0": 0.0,
-    "t1": 0.24
-   },
-   {
-    "w": "yani?",
-    "t0": 0.24,
-    "t1": 0.7
-   },
-   {
-    "w": "Haftada",
-    "t0": 1.04,
-    "t1": 1.46
-   },
-   {
-    "w": "Salı",
-    "t0": 1.46,
+    "t0": 1.02,
     "t1": 1.76
    },
    {
     "w": "önce",
     "t0": 1.76,
-    "t1": 1.94
+    "t1": 2.0
    },
    {
-    "w": "gelir",
-    "t0": 1.94,
-    "t1": 2.2
-   },
-   {
-    "w": "ama.",
-    "t0": 2.2,
-    "t1": 2.44
+    "w": "gelir!",
+    "t0": 2.0,
+    "t1": 2.28
    }
   ],
-  "dur": 2.638
+  "dur": 2.51
  },
  "h2a": {
-  "key": "add001ae815a",
-  "trimmed": "add001ae815a",
-  "wkey": "add001ae815a",
-  "heard": "Hangi takvimde, hangi ülkede olursan ol. Orada cuma her zaman salıdan önce.",
+  "key": "f30187e80d75",
+  "trimmed": "f30187e80d75",
+  "wkey": "f30187e80d75",
+  "heard": "Üstelik bu her hafta böyle olur.",
   "words": [
    {
-    "w": "Hangi",
+    "w": "Üstelik",
     "t0": 0.0,
-    "t1": 0.44
+    "t1": 0.54
    },
    {
-    "w": "takvimde,",
-    "t0": 0.44,
-    "t1": 0.98
-   },
-   {
-    "w": "hangi",
-    "t0": 1.2,
-    "t1": 1.54
-   },
-   {
-    "w": "ülkede",
-    "t0": 1.54,
-    "t1": 1.86
-   },
-   {
-    "w": "olursan",
-    "t0": 1.86,
-    "t1": 2.36
-   },
-   {
-    "w": "ol.",
-    "t0": 2.36,
-    "t1": 2.86
-   },
-   {
-    "w": "Orada",
-    "t0": 2.86,
-    "t1": 3.22
-   },
-   {
-    "w": "Cuma",
-    "t0": 3.22,
-    "t1": 3.46
+    "w": "bu",
+    "t0": 0.54,
+    "t1": 0.72
    },
    {
     "w": "her",
-    "t0": 3.46,
-    "t1": 3.8
+    "t0": 0.72,
+    "t1": 0.9
    },
    {
-    "w": "zaman",
-    "t0": 3.8,
-    "t1": 4.12
+    "w": "hafta",
+    "t0": 0.9,
+    "t1": 1.36
    },
    {
-    "w": "Salıdan",
-    "t0": 4.12,
-    "t1": 4.62
+    "w": "böyle",
+    "t0": 1.36,
+    "t1": 1.5
    },
    {
-    "w": "önce.",
-    "t0": 4.62,
-    "t1": 4.86
+    "w": "olur.",
+    "t0": 1.5,
+    "t1": 1.82
    }
   ],
-  "dur": 5.088
+  "dur": 2.0
  },
  "h2b": {
   "key": "f78749beadb5",
@@ -239,319 +145,132 @@
   ],
   "dur": 2.32
  },
- "da": {
-  "key": "be20e7c9d891",
-  "trimmed": "be20e7c9d891",
-  "wkey": "be20e7c9d891",
-  "heard": "Günler sıralı. Takvimde Cuma hep sonra geliyor.",
-  "words": [
-   {
-    "w": "Günler",
-    "t0": 0.0,
-    "t1": 0.38
-   },
-   {
-    "w": "sıralı.",
-    "t0": 0.38,
-    "t1": 1.0
-   },
-   {
-    "w": "Takvimde",
-    "t0": 1.0,
-    "t1": 1.56
-   },
-   {
-    "w": "Cuma",
-    "t0": 1.56,
-    "t1": 1.86
-   },
-   {
-    "w": "hep",
-    "t0": 1.86,
-    "t1": 2.04
-   },
-   {
-    "w": "sonra",
-    "t0": 2.04,
-    "t1": 2.32
-   },
-   {
-    "w": "geliyor.",
-    "t0": 2.32,
-    "t1": 2.6
-   }
-  ],
-  "dur": 2.888
- },
  "d2": {
-  "key": "ca445e8e2a06",
-  "trimmed": "ca445e8e2a06",
-  "wkey": "ca445e8e2a06",
-  "heard": "Cuma günü işler daha çabuk biter, ondan mı?",
+  "key": "f2ef58d2b982",
+  "trimmed": "f2ef58d2b982",
+  "wkey": "f2ef58d2b982",
+  "heard": "Japonya'da, orada gün erken başlar.",
   "words": [
    {
-    "w": "Cuma",
+    "w": "Japonyada!",
     "t0": 0.0,
-    "t1": 0.28
+    "t1": 0.84
    },
    {
-    "w": "günü",
-    "t0": 0.28,
-    "t1": 0.56
-   },
-   {
-    "w": "işler",
-    "t0": 0.56,
-    "t1": 0.86
-   },
-   {
-    "w": "daha",
-    "t0": 0.86,
-    "t1": 1.06
-   },
-   {
-    "w": "çabuk",
-    "t0": 1.06,
-    "t1": 1.38
-   },
-   {
-    "w": "biter,",
-    "t0": 1.38,
-    "t1": 1.76
-   },
-   {
-    "w": "ondan",
-    "t0": 1.94,
-    "t1": 2.12
-   },
-   {
-    "w": "mı?",
-    "t0": 2.12,
-    "t1": 2.4
-   }
-  ],
-  "dur": 2.5
- },
- "hd": {
-  "key": "88ab22d60dd8",
-  "trimmed": "88ab22d60dd8",
-  "wkey": "88ab22d60dd8",
-  "heard": "Hayır, günlerin sırasıyla hiç ilgisi yok.",
-  "words": [
-   {
-    "w": "Hayır!",
-    "t0": 0.0,
-    "t1": 0.28
-   },
-   {
-    "w": "Günlerin",
-    "t0": 0.68,
-    "t1": 1.22
-   },
-   {
-    "w": "sırasıyla",
-    "t0": 1.22,
-    "t1": 1.86
-   },
-   {
-    "w": "hiç",
-    "t0": 1.86,
-    "t1": 2.06
-   },
-   {
-    "w": "ilgisi",
-    "t0": 2.06,
-    "t1": 2.5
-   },
-   {
-    "w": "yok.",
-    "t0": 2.5,
-    "t1": 2.7
-   }
-  ],
-  "dur": 2.878
- },
- "n0": {
-  "key": "8140d0dfee95",
-  "trimmed": "8140d0dfee95",
-  "wkey": "8140d0dfee95",
-  "heard": "Bence maaş gününde, cuma maaş yatar, salıya bir şey kalmaz.",
-  "words": [
-   {
-    "w": "Bence",
-    "t0": 0.0,
-    "t1": 0.46
-   },
-   {
-    "w": "maaş",
-    "t0": 0.46,
-    "t1": 0.8
-   },
-   {
-    "w": "gününde.",
-    "t0": 0.8,
+    "w": "Orada",
+    "t0": 0.98,
     "t1": 1.28
    },
    {
-    "w": "Cuma",
-    "t0": 1.54,
-    "t1": 1.82
+    "w": "gün",
+    "t0": 1.28,
+    "t1": 1.42
    },
    {
-    "w": "maaş",
-    "t0": 1.82,
-    "t1": 2.28
+    "w": "erken",
+    "t0": 1.42,
+    "t1": 1.8
    },
    {
-    "w": "yatar,",
-    "t0": 2.28,
-    "t1": 2.66
-   },
-   {
-    "w": "Salıya",
-    "t0": 2.88,
-    "t1": 3.38
-   },
-   {
-    "w": "bir",
-    "t0": 3.38,
-    "t1": 3.58
-   },
-   {
-    "w": "şey",
-    "t0": 3.58,
-    "t1": 3.78
-   },
-   {
-    "w": "kalmaz.",
-    "t0": 3.78,
-    "t1": 4.32
+    "w": "başlar.",
+    "t0": 1.8,
+    "t1": 2.2
    }
   ],
-  "dur": 4.528
+  "dur": 2.358
  },
- "hn": {
-  "key": "c080214e045b",
-  "trimmed": "c080214e045b",
-  "wkey": "c080214e045b",
-  "heard": "Necmi, maaş bilmecesi değil bu.",
+ "hd": {
+  "key": "f575c64df32c",
+  "trimmed": "f575c64df32c",
+  "wkey": "f575c64df32c",
+  "heard": "Olmaz. Orada da önce salı gelir.",
   "words": [
    {
-    "w": "Necmi,",
+    "w": "Olmaz!",
     "t0": 0.0,
-    "t1": 0.54
+    "t1": 0.48
    },
    {
-    "w": "maaş",
-    "t0": 0.7,
-    "t1": 1.08
+    "w": "Orada",
+    "t0": 0.76,
+    "t1": 1.22
    },
    {
-    "w": "bilmecesi",
-    "t0": 1.08,
-    "t1": 1.72
-   },
-   {
-    "w": "değil",
-    "t0": 1.72,
-    "t1": 1.9
-   },
-   {
-    "w": "bu!",
-    "t0": 1.9,
-    "t1": 2.14
-   }
-  ],
-  "dur": 2.31
- },
- "n1": {
-  "key": "d111011a0ed0",
-  "trimmed": "d111011a0ed0",
-  "wkey": "d111011a0ed0",
-  "heard": "Telefon rehberimde Ahmet hep en üstte, Zeki hep en altta. Kim kimi önce aradıysa fark etmez.",
-  "words": [
-   {
-    "w": "Telefon",
-    "t0": 0.0,
-    "t1": 0.54
-   },
-   {
-    "w": "rehberimde",
-    "t0": 0.54,
-    "t1": 1.26
-   },
-   {
-    "w": "Ahmet",
-    "t0": 1.26,
-    "t1": 1.78
-   },
-   {
-    "w": "hep",
-    "t0": 1.78,
-    "t1": 1.95
-   },
-   {
-    "w": "en",
-    "t0": 1.95,
-    "t1": 2.12
-   },
-   {
-    "w": "üstte,",
-    "t0": 2.12,
-    "t1": 2.56
-   },
-   {
-    "w": "Zeki",
-    "t0": 2.86,
-    "t1": 3.16
-   },
-   {
-    "w": "hep",
-    "t0": 3.16,
-    "t1": 3.37
-   },
-   {
-    "w": "en",
-    "t0": 3.37,
-    "t1": 3.58
-   },
-   {
-    "w": "altta.",
-    "t0": 3.58,
-    "t1": 4.0
-   },
-   {
-    "w": "Kim",
-    "t0": 4.0,
-    "t1": 4.56
-   },
-   {
-    "w": "kimi",
-    "t0": 4.56,
-    "t1": 4.92
+    "w": "da",
+    "t0": 1.22,
+    "t1": 1.36
    },
    {
     "w": "önce",
-    "t0": 4.92,
-    "t1": 5.2
+    "t0": 1.36,
+    "t1": 1.6
    },
    {
-    "w": "aradıysa",
-    "t0": 5.2,
-    "t1": 5.94
+    "w": "Salı",
+    "t0": 1.6,
+    "t1": 2.04
    },
    {
-    "w": "fark",
-    "t0": 5.94,
-    "t1": 6.14
-   },
-   {
-    "w": "etmez!",
-    "t0": 6.14,
-    "t1": 6.66
+    "w": "gelir.",
+    "t0": 2.04,
+    "t1": 2.22
    }
   ],
-  "dur": 6.868
+  "dur": 2.468
+ },
+ "n1": {
+  "key": "b35577353d96",
+  "trimmed": "b35577353d96",
+  "wkey": "b35577353d96",
+  "heard": "Husura bakmayın müdür bey. Arşivde defne sizden önce gelir.",
+  "words": [
+   {
+    "w": "Kusura",
+    "t0": 0.0,
+    "t1": 0.42
+   },
+   {
+    "w": "bakmayın",
+    "t0": 0.42,
+    "t1": 0.92
+   },
+   {
+    "w": "Müdür",
+    "t0": 0.92,
+    "t1": 1.36
+   },
+   {
+    "w": "Bey.",
+    "t0": 1.36,
+    "t1": 1.9
+   },
+   {
+    "w": "Arşivde",
+    "t0": 1.9,
+    "t1": 2.5
+   },
+   {
+    "w": "Defne",
+    "t0": 2.5,
+    "t1": 2.88
+   },
+   {
+    "w": "sizden",
+    "t0": 2.88,
+    "t1": 3.28
+   },
+   {
+    "w": "önce",
+    "t0": 3.28,
+    "t1": 3.54
+   },
+   {
+    "w": "gelir.",
+    "t0": 3.54,
+    "t1": 3.8
+   }
+  ],
+  "dur": 4.058
  },
  "d3": {
   "key": "8bb96463e700",
@@ -573,224 +292,150 @@
   "dur": 1.468
  },
  "d4": {
-  "key": "823ef7d00fe1",
-  "trimmed": "823ef7d00fe1",
-  "wkey": "823ef7d00fe1",
-  "heard": "Sözlükte kelimeler alfabeye göre dizilir. C harfi, S harfi 'nden önce gelir.",
+  "key": "4f473920b10a",
+  "trimmed": "4f473920b10a",
+  "wkey": "4f473920b10a",
+  "heard": "Sözlükte kelimeler harf sırasıyla dizilir. Cuma salıdan yüzlerce sayfa önce gelir.",
   "words": [
    {
     "w": "Sözlükte",
     "t0": 0.0,
-    "t1": 0.52
+    "t1": 0.5
    },
    {
     "w": "kelimeler",
-    "t0": 0.52,
-    "t1": 0.92
+    "t0": 0.5,
+    "t1": 0.94
    },
    {
-    "w": "alfabeye",
-    "t0": 0.92,
-    "t1": 1.42
-   },
-   {
-    "w": "göre",
-    "t0": 1.42,
-    "t1": 1.56
-   },
-   {
-    "w": "dizilir.",
-    "t0": 1.56,
-    "t1": 2.06
-   },
-   {
-    "w": "Ce",
-    "t0": 2.06,
-    "t1": 2.44
-   },
-   {
-    "w": "harfi,",
-    "t0": 2.44,
-    "t1": 2.8
-   },
-   {
-    "w": "se",
-    "t0": 2.8,
-    "t1": 3.0
-   },
-   {
-    "w": "harfinden",
-    "t0": 3.0,
-    "t1": 3.6
-   },
-   {
-    "w": "önce",
-    "t0": 3.6,
-    "t1": 3.78
-   },
-   {
-    "w": "gelir.",
-    "t0": 3.78,
-    "t1": 4.0
-   }
-  ],
-  "dur": 4.228
- },
- "d5": {
-  "key": "4c452d98a9d1",
-  "trimmed": "4c452d98a9d1",
-  "wkey": "4c452d98a9d1",
-  "heard": "Cuma c ile salıse ile başlıyor. Sözlükte Cuma hep salıdan önce.",
-  "words": [
-   {
-    "w": "Cuma",
-    "t0": 0.0,
-    "t1": 0.3
-   },
-   {
-    "w": "ce",
-    "t0": 0.3,
-    "t1": 0.42
-   },
-   {
-    "w": "ile,",
-    "t0": 0.42,
-    "t1": 0.66
-   },
-   {
-    "w": "Salı",
-    "t0": 0.66,
-    "t1": 1.18
-   },
-   {
-    "w": "se",
-    "t0": 1.18,
+    "w": "harf",
+    "t0": 0.94,
     "t1": 1.22
    },
    {
-    "w": "ile",
+    "w": "sırasıyla",
     "t0": 1.22,
-    "t1": 1.3
+    "t1": 1.62
    },
    {
-    "w": "başlıyor.",
-    "t0": 1.3,
-    "t1": 1.86
+    "w": "dizilir.",
+    "t0": 1.62,
+    "t1": 2.18
    },
    {
-    "w": "Sözlükte",
-    "t0": 2.16,
+    "w": "Cuma,",
+    "t0": 2.34,
     "t1": 2.64
    },
    {
-    "w": "Cuma",
+    "w": "Salıdan",
     "t0": 2.64,
-    "t1": 2.98
-   },
-   {
-    "w": "hep",
-    "t0": 2.98,
     "t1": 3.14
    },
    {
-    "w": "Salıdan",
+    "w": "yüzlerce",
     "t0": 3.14,
-    "t1": 3.56
+    "t1": 3.7
    },
    {
-    "w": "önce!",
-    "t0": 3.56,
-    "t1": 3.78
+    "w": "sayfa",
+    "t0": 3.7,
+    "t1": 4.06
+   },
+   {
+    "w": "önce",
+    "t0": 4.06,
+    "t1": 4.24
+   },
+   {
+    "w": "gelir!",
+    "t0": 4.24,
+    "t1": 4.46
    }
   ],
-  "dur": 4.008
+  "dur": 4.678
  },
  "h4": {
-  "key": "8cc72c27ff18",
-  "trimmed": "8cc72c27ff18",
-  "wkey": "8cc72c27ff18",
-  "heard": "Bu cuma erken çıkış. Söz verdim, tutarım.",
+  "key": "978fccd78a25",
+  "trimmed": "978fccd78a25",
+  "wkey": "978fccd78a25",
+  "heard": "Demek sözlükte de defne benden önce geliyor.",
   "words": [
    {
-    "w": "Bu",
+    "w": "Demek",
     "t0": 0.0,
-    "t1": 0.2
+    "t1": 0.4
    },
    {
-    "w": "Cuma",
-    "t0": 0.2,
-    "t1": 0.42
+    "w": "sözlükte",
+    "t0": 0.4,
+    "t1": 0.98
    },
    {
-    "w": "erken",
-    "t0": 0.42,
-    "t1": 0.96
+    "w": "de",
+    "t0": 0.98,
+    "t1": 1.1
    },
    {
-    "w": "çıkış.",
-    "t0": 0.96,
-    "t1": 1.4
+    "w": "Defne",
+    "t0": 1.1,
+    "t1": 1.5
    },
    {
-    "w": "Söz",
-    "t0": 1.4,
-    "t1": 2.1
+    "w": "benden",
+    "t0": 1.5,
+    "t1": 1.84
    },
    {
-    "w": "verdim,",
-    "t0": 2.1,
-    "t1": 2.56
+    "w": "önce",
+    "t0": 1.84,
+    "t1": 2.08
    },
    {
-    "w": "tutarım.",
-    "t0": 2.68,
-    "t1": 3.06
+    "w": "geliyor.",
+    "t0": 2.08,
+    "t1": 2.34
    }
   ],
-  "dur": 3.268
+  "dur": 2.63
  },
  "d6": {
-  "key": "dc78656d50f9",
-  "trimmed": "dc78656d50f9",
-  "wkey": "dc78656d50f9",
-  "heard": "Bunu hafta sonunu iple çeken arkadaşına gönder.",
+  "key": "1279c25dafe0",
+  "trimmed": "1279c25dafe0",
+  "wkey": "1279c25dafe0",
+  "heard": "Bunu Cuma 'yı iple çeken arkadaşına gönder.",
   "words": [
    {
     "w": "Bunu",
     "t0": 0.0,
-    "t1": 0.2
+    "t1": 0.18
    },
    {
-    "w": "hafta",
-    "t0": 0.2,
-    "t1": 0.58
-   },
-   {
-    "w": "sonunu",
-    "t0": 0.58,
-    "t1": 0.86
+    "w": "Cumayı",
+    "t0": 0.18,
+    "t1": 0.52
    },
    {
     "w": "iple",
-    "t0": 0.86,
-    "t1": 1.12
+    "t0": 0.68,
+    "t1": 0.88
    },
    {
     "w": "çeken",
-    "t0": 1.12,
-    "t1": 1.42
+    "t0": 0.88,
+    "t1": 1.18
    },
    {
     "w": "arkadaşına",
-    "t0": 1.42,
-    "t1": 1.96
+    "t0": 1.18,
+    "t1": 1.72
    },
    {
     "w": "gönder.",
-    "t0": 1.96,
-    "t1": 2.3
+    "t0": 1.72,
+    "t1": 2.06
    }
   ],
-  "dur": 2.47
+  "dur": 2.22
  }
 }

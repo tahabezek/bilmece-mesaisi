@@ -13,8 +13,8 @@
   "#ofis"
  ],
  "card": [
-  "Pastada 10 mum yanıyordu, 4'ü söndü.",
-  "Sabah kaç mum kaldı?"
+  "10 mum yanıyordu, 4'ü söndü.",
+  "Sabah pastada kaç mum kalır?"
  ],
  "caption": "Zeka sorusu: Doğum günü pastasında 10 mum yanıyordu. Rüzgârda 4'ü söndü, kimse yeniden yakmadı. Pasta sabaha kadar masada kaldı. Sabah pastada kaç mum vardı?\n\nZengin Kız Fakir Oğlan'ın bilmecelerinden. Cevap videonun sonunda.",
  "voice": {
@@ -25,37 +25,31 @@
     "id": "h1",
     "who": "hikmet",
     "gap": 0.4,
-    "text": "Defneciğim, doğum günü pastama on mum yaktık."
-   },
-   {
-    "id": "d1",
-    "who": "defne",
-    "gap": 0.25,
-    "text": "İyi ki doğdunuz Müdür Bey!"
+    "text": "On mumdan dördünü rüzgâr söndürdü!"
    },
    {
     "id": "h2a",
     "who": "hikmet",
     "gap": 0.3,
-    "text": "Rüzgâr esti, mumların dördü söndü. Kimse yeniden yakmadı."
+    "text": "Kimse yeniden yakmayacak. Sabaha kadar pastaya dokunmak yok."
    },
    {
     "id": "h2b",
     "who": "hikmet",
     "gap": 0.3,
-    "text": "Sabaha kadar kimse pastaya dokunmadı. Sabah kaç mum vardı?"
+    "text": "Sabah bu pastada kaç mum olur?"
    },
    {
     "id": "h3",
     "who": "hikmet",
     "gap": 0.4,
-    "text": "Bilirsen kalan pasta senin."
+    "text": "Bilirsen ilk dilim senin."
    },
    {
     "id": "d2",
     "who": "defne",
     "gap": 0.6,
-    "text": "Kolay! On eksi dört, altı mum!"
+    "text": "Kolay! On eksi dört, altı eder!"
    },
    {
     "id": "hd",
@@ -67,7 +61,7 @@
     "id": "n1",
     "who": "necmi",
     "gap": 5.6,
-    "text": "Hanım akşam mum yaktı. Sabah baktım, şamdanda mum yok, bir avuç erimiş mum var!"
+    "text": "Dün gece elektrik kesildi. Koca mumdan sabaha bu kaldı!"
    },
    {
     "id": "d3",
@@ -79,25 +73,25 @@
     "id": "d4",
     "who": "defne",
     "gap": 0.4,
-    "text": "Yanan altı mum gece boyunca eriyip bitti."
+    "text": "Yanan altı mum sabaha kadar eriyip biter."
    },
    {
     "id": "d5",
     "who": "defne",
     "gap": 0.45,
-    "text": "Sönen dört mum sabaha kaldı!"
+    "text": "Geriye sönen dört mum kalır!"
    },
    {
     "id": "h4",
     "who": "hikmet",
     "gap": 1.1,
-    "text": "Kalan pasta senin. Biraz mum tadı var ama."
+    "text": "İlk dilim senin. Ama biraz mumlu."
    },
    {
     "id": "d6",
     "who": "defne",
     "gap": 0.55,
-    "text": "Bunu doğum günü mumunu üfleyemeyen arkadaşına gönder."
+    "text": "Bunu mumları tek nefeste söndüremeyen arkadaşına gönder."
    }
   ]
  },
@@ -120,23 +114,8 @@
   [
    "buzz",
    "hd:0"
-  ],
-  [
-   "swish",
-   "d4:0"
-  ],
-  [
-   "pop",
-   "d5:1"
-  ],
-  [
-   "ding",
-   "d5:3"
-  ],
-  [
-   "womp",
-   "d5>+0.15"
   ]
  ],
- "disabled": "yeniden yapılıyor: çok sahneli hikâye (Fable), onaydan sonra açılacak"
+ "disabled": "yeniden yapılıyor: çok sahneli hikâye (Fable), onaydan sonra açılacak",
+ "v4": true
 }

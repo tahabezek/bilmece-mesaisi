@@ -14,10 +14,9 @@
  ],
  "card": [
   "Arabası son gelen kazanır.",
-  "Tek cümleyle ikisi de gaza bastı.",
-  "Ne dendi?"
+  "Hangi cümle ikisini de koşturur?"
  ],
- "caption": "Zeka sorusu: Hikmet Bey, Necmi ile Kerem'e dedi ki: \"Arabası bitişe en son gelen, şirket arabasını kazanır.\" İkisi de yolda durdu, kimse kıpırdamadı. Hikmet Bey tek bir cümle söyledi; ikisi de son hızla bitişe bastı. Ne dedi?\n\nCevap videonun sonunda.",
+ "caption": "Zeka sorusu: Hikmet Bey otoparkta bir yarış başlatıyor: arabası bitişe en son gelen kazanacak. Necmi de Kerem de kendi arabasında, ikisi de çizgiden kıpırdamıyor. Kuralı bozmadan, tek cümleyle ikisini de nasıl yarıştırırsın?\n\nDefne'nin ilk tahmini tutmadı. Seninki tutar mı?\n\nZengin Kız Fakir Oğlan'ın bilmecelerinden. Cevap videonun sonunda.",
  "voice": {
   "tight": 0.28,
   "tail": 2.4,
@@ -26,108 +25,74 @@
     "id": "h1",
     "who": "hikmet",
     "gap": 0.4,
-    "text": "Defneciğim, tek cümleyle iki tembeli koşturdum!"
-   },
-   {
-    "id": "d1",
-    "who": "defne",
-    "gap": 0.25,
-    "text": "Kimi koşturdunuz Müdür Bey?"
+    "text": "Bu yarışta arabası son gelen kazanır!"
    },
    {
     "id": "h2a",
     "who": "hikmet",
     "gap": 0.3,
-    "text": "Necmi ile Kerem'i. Dedim ki: arabası bitişe en son gelen, şirket arabasını kazanır.",
-    "tts": "Necmi ile Keremi. Dedim ki, arabası bitişe en son gelen, şirket arabasını kazanır."
+    "text": "Necmi de Kerem de kendi arabasında. İkisi de kıpırdamıyor."
    },
    {
     "id": "h2b",
     "who": "hikmet",
     "gap": 0.3,
-    "text": "İkisi de yolda durdu. Kimse kıpırdamıyor, yarış bitmiyor."
-   },
-   {
-    "id": "h2c",
-    "who": "hikmet",
-    "gap": 0.35,
-    "text": "Ben tek bir cümle söyledim, ikisi de son hızla bitişe bastı. Ne dedim?"
+    "text": "Kuralı bozmadan, tek cümleyle ikisini de yarıştır."
    },
    {
     "id": "h3",
     "who": "hikmet",
     "gap": 0.4,
-    "text": "Bilirsen şirket arabası bir hafta senin."
-   },
-   {
-    "id": "da",
-    "who": "defne",
-    "gap": 0.45,
-    "text": "Son gelen kazanıyorsa kimse hızlanmaz… Ama siz hızlandırdınız.",
-    "tts": "Son gelen kazanıyorsa kimse hızlanmaz. Ama siz hızlandırdınız."
+    "text": "Bilirsen kupa senin."
    },
    {
     "id": "d2",
     "who": "defne",
-    "gap": 0.3,
-    "text": "Yoksa kuralı mı değiştirdiniz? İlk geleni mi ödüllendirdiniz?"
+    "gap": 0.6,
+    "text": "Kolay! İlk gelen kazansın!"
    },
    {
     "id": "hd",
     "who": "hikmet",
     "gap": 0.45,
-    "text": "Hayır, kural aynı kaldı. Arabası son gelen kazanır."
-   },
-   {
-    "id": "n0",
-    "who": "necmi",
-    "gap": 0.3,
-    "text": "Ben hâlâ yolda bekliyorum bu arada."
-   },
-   {
-    "id": "hn",
-    "who": "hikmet",
-    "gap": 0.45,
-    "text": "Sen bekle Necmi, sen bekle."
+    "text": "Olmaz! Kural aynı kalacak."
    },
    {
     "id": "n1",
     "who": "necmi",
     "gap": 5.6,
-    "text": "Ben torunlara dedim ki: tabağı en son biten, dondurmayı kazanır. Kimse yemedi! Sonra birbirlerinin tabağına daldılar, ikisi de silip süpürdü!",
-    "tts": "Ben torunlara dedim ki, tabağı en son biten, dondurmayı kazanır. Kimse yemedi! Sonra birbirlerinin tabağına daldılar, ikisi de silip süpürdü!"
+    "text": "Kusura bakma Kerem! Dalgınlıkla senin arabana biniyordum."
    },
    {
     "id": "d3",
     "who": "defne",
     "gap": 0.35,
-    "text": "Buldum! Arabaları değiştirin!",
-    "snap": true
+    "text": "Buldum! Arabaları değiştirin!"
    },
    {
     "id": "d4",
     "who": "defne",
     "gap": 0.4,
-    "text": "Necmi Abi, Kerem'in arabasına binerse, kendi arabasının son gelmesi için Kerem'in arabasını hızla bitişe sürer.",
-    "tts": "Necmi Abi, Keremin arabasına binerse, kendi arabasının son gelmesi için Keremin arabasını hızla bitişe sürer."
+    "text": "Artık herkes rakibinin arabasını sürüyor."
    },
    {
     "id": "d5",
     "who": "defne",
     "gap": 0.45,
-    "text": "Kerem de aynısını yapar. İkisi de rakibin arabasıyla gaza basar!"
+    "text": "Kendi arabası geride kalsın diye gaza basıyor!"
    },
    {
     "id": "h4",
     "who": "hikmet",
     "gap": 1.1,
-    "text": "Aynı kural, başka araba. Bu sefer ikisi de koştu."
+    "text": "Necmi'yi ilk kez bu kadar hızlı gördüm.",
+    "tts": "Necmiyi ilk kez bu kadar hızlı gördüm."
    },
    {
     "id": "d6",
     "who": "defne",
     "gap": 0.55,
-    "text": "Bunu yarışta hep son gelen arkadaşına gönder."
+    "text": "Bunu her yere en son gelen arkadaşına gönder."
    }
   ]
  },
@@ -147,32 +112,131 @@
  },
  "sfx": [
   [
+   "pop",
+   "h2a"
+  ],
+  [
+   "pop",
+   "h2a:2"
+  ],
+  [
+   "zip",
+   [
+    "h2a:6+0.06",
+    "h2a:6+0.36"
+   ]
+  ],
+  [
+   "knock",
+   "h2b+0.03"
+  ],
+  [
+   "swish",
+   "h2b+0.24"
+  ],
+  [
+   "pop",
+   "h2b:2"
+  ],
+  [
+   "pop",
+   "h3:1"
+  ],
+  [
+   "swish",
+   "d2-0.02"
+  ],
+  [
+   "zip",
+   [
+    "d2:2+0.05",
+    "d2:3+0.3"
+   ]
+  ],
+  [
    "buzz",
    "hd:0"
   ],
   [
    "swish",
-   "d4:3"
+   "hd:1+0.4"
+  ],
+  [
+   "swish",
+   "n1-4.48"
+  ],
+  [
+   "knock",
+   "n1-4.12"
+  ],
+  [
+   "swish",
+   "n1-3.38"
+  ],
+  [
+   "swish",
+   "n1-2.28"
+  ],
+  [
+   "knock",
+   "n1:1+0.22"
+  ],
+  [
+   "pop",
+   "n1:4"
+  ],
+  [
+   "swish",
+   "d3>+0.24"
+  ],
+  [
+   "knock",
+   "d3>+2.02"
+  ],
+  [
+   "knock",
+   "d3>+2.97"
+  ],
+  [
+   "pop",
+   "d5:1"
   ],
   [
    "zip",
    [
-    "d4>-1.2",
-    "d4>-0.2"
+    "d5:5-0.3",
+    "d5:5+0.4"
    ]
   ],
   [
+   "pop",
+   "d5:5+0.1"
+  ],
+  [
    "swish",
-   "d5:6"
+   "d5:5+0.5"
+  ],
+  [
+   "swish",
+   "d5:5+0.74"
   ],
   [
    "ding",
-   "d5>-0.1"
+   "d5:5+0.87"
+  ],
+  [
+   "knock",
+   "h4+1.64"
   ],
   [
    "womp",
-   "d5>+0.15"
+   "h4:5"
+  ],
+  [
+   "pop",
+   "d6-0.1"
   ]
  ],
- "disabled": "yeniden yapılıyor: çok sahneli hikâye (Fable), onaydan sonra açılacak"
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true
 }

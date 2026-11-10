@@ -163,11 +163,12 @@ export function skeleton(card, pose) {
   const shY = neck[1] + 0.1;
   const shL = [neck[0] - shOff, shY], shR = [neck[0] + shOff, shY];
   const armVec = (A, mirror) => {
+    const ku = A.k || 1;   // kol kısalması (isteğe bağlı, v4): izleyiciye doğru uzanan kol kısa görünür; verilmezse 1
     if (side) {
-      const u = rot(c.arm.upper, A.sh + lean), l = rot(c.arm.lower, A.sh + A.el + lean);
+      const u = rot(c.arm.upper * ku, A.sh + lean), l = rot(c.arm.lower * ku, A.sh + A.el + lean);
       return { el: u, hand: [u[0] + l[0], u[1] + l[1]] };
     }
-    const u = rot(c.arm.upper, mirror * A.sh), l = rot(c.arm.lower, mirror * (A.sh + A.el));
+    const u = rot(c.arm.upper * ku, mirror * A.sh), l = rot(c.arm.lower * ku, mirror * (A.sh + A.el));
     return { el: u, hand: [u[0] + l[0], u[1] + l[1]] };
   };
   const al = armVec(pose.armL, -1), ar = armVec(pose.armR, 1);
@@ -492,14 +493,19 @@ function headFront(ctx, c, pose, [hx, hy], lw, t) {
   fillStroke(ctx, c.skin, lw);
   // ön saç
   hairFront(ctx, c, w, h, lw);
+  // baş sallama (isteğe bağlı, v4): pose.head.nod 0..1 → yüz hatları aşağı kayar; verilmezse hiçbir şey değişmez
+  const ny = (pose.head.nod || 0) * 0.055;
+  if (ny) ctx.translate(0, ny);
   eyesFront(ctx, c, ex, 0, 0, look, blink, lw);
   // burun
   ctx.beginPath(); ctx.moveTo(0.012, 0.1); ctx.quadraticCurveTo(0.05, 0.18, 0, 0.2); ctx.lineWidth = lw * 0.7; ctx.strokeStyle = INK; ctx.stroke();
   // yanak
   if (ex.curve > 0.4) for (const s of [-1, 1]) blob(ctx, s * w * 0.62, 0.2, 0.07, 0.04, 'rgba(214,96,80,0.35)', 0);
   mouthAt(ctx, c, ex, 0, 0.32, pose.talk || 0, lw);
+  if (ny) ctx.translate(0, -ny);   // şakak ve küpe başla birlikte durur
   if (f.includes('greyTemples')) for (const s of [-1, 1]) blob(ctx, s * w * 0.86, -h * 0.3, 0.045, 0.085, '#B9B4AE', 0, s * -0.3);
   if (f.includes('earrings')) for (const s of [-1, 1]) { ctx.beginPath(); ctx.arc(s * w * 1.0, h * 0.42, 0.06, 0, Math.PI * 2); ctx.lineWidth = lw * 1.1; ctx.strokeStyle = '#D8A93A'; ctx.stroke(); }
+  if (ny) ctx.translate(0, ny);
   if (f.includes('mustacheCurl')) mustacheCurl(ctx, 0, 0.25, 0.15, 0.05, c, lw);
   if (f.includes('mustacheThick')) mustache(ctx, 0, 0.25, 0.17, 0.07, c, lw);
   if (f.includes('mustacheThin')) mustache(ctx, 0, 0.255, 0.13, 0.035, c, lw);

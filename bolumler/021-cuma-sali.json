@@ -1,7 +1,7 @@
 {
  "id": "021-cuma-sali",
  "num": 21,
- "sira": 18,
+ "sira": 17,
  "bpm": 120,
  "slug": "cuma-salidan-once",
  "coverAt": 0,
@@ -13,10 +13,10 @@
   "#ofis"
  ],
  "card": [
-  "Cuma, Salı'dan nerede",
-  "önce gelir?"
+  "Cuma, Salı'dan önce gelir.",
+  "Ama nerede?"
  ],
- "caption": "Zeka sorusu: Haftada Salı hep Cuma'dan önce gelir. Ama öyle bir yer var ki orada Cuma hep Salı'dan önce gelir. Neresi?\n\nZengin Kız Fakir Oğlan'ın unutulmaz bilmecelerinden. Cevap videonun sonunda.",
+ "caption": "Zeka sorusu: Bir yerde Cuma, Salı'dan önce gelir. Üstelik bu her hafta böyle olur. Cuma nerede Salı'dan önce gelir?\n\nDefne cevabı önce dünya küresinde aradı ama Japonya'da bile önce Salı geliyor. Sence neresi?\n\nZengin Kız Fakir Oğlan'ın unutulmaz bilmecelerinden. Cevap videonun sonunda.",
  "voice": {
   "tight": 0.28,
   "tail": 2.4,
@@ -25,26 +25,19 @@
     "id": "h1",
     "who": "hikmet",
     "gap": 0.4,
-    "text": "Defneciğim, öyle bir yer var ki Cuma, Salı'dan önce gelir.",
-    "tts": "Defneciğim, öyle bir yer var ki Cuma, Salıdan önce gelir."
-   },
-   {
-    "id": "d1",
-    "who": "defne",
-    "gap": 0.25,
-    "text": "Nasıl yani? Haftada Salı önce gelir ama."
+    "text": "Bir yerde Cuma, Salı'dan önce gelir!",
+    "tts": "Bir yerde Cuma, Salıdan önce gelir!"
    },
    {
     "id": "h2a",
     "who": "hikmet",
     "gap": 0.3,
-    "text": "Hangi takvimde, hangi ülkede olursan ol. Orada Cuma her zaman Salı'dan önce.",
-    "tts": "Hangi takvimde, hangi ülkede olursan ol. Orada Cuma her zaman Salıdan önce."
+    "text": "Üstelik bu her hafta böyle olur."
    },
    {
     "id": "h2b",
     "who": "hikmet",
-    "gap": 0.35,
+    "gap": 0.3,
     "text": "Cuma nerede Salı'dan önce gelir?",
     "tts": "Cuma nerede Salıdan önce gelir?"
    },
@@ -55,76 +48,49 @@
     "text": "Bilirsen bu Cuma erken çıkarsın."
    },
    {
-    "id": "da",
-    "who": "defne",
-    "gap": 0.45,
-    "text": "Günler sıralı… Takvimde Cuma hep sonra geliyor.",
-    "tts": "Günler sıralı. Takvimde Cuma hep sonra geliyor."
-   },
-   {
     "id": "d2",
     "who": "defne",
-    "gap": 0.3,
-    "text": "Cuma günü işler daha çabuk biter, ondan mı?"
+    "gap": 0.6,
+    "text": "Japonya'da! Orada gün erken başlar.",
+    "tts": "Japonyada! Orada gün erken başlar."
    },
    {
     "id": "hd",
     "who": "hikmet",
     "gap": 0.45,
-    "text": "Hayır! Günlerin sırasıyla hiç ilgisi yok."
-   },
-   {
-    "id": "n0",
-    "who": "necmi",
-    "gap": 0.3,
-    "text": "Bence maaş gününde. Cuma maaş yatar, Salı'ya bir şey kalmaz.",
-    "tts": "Bence maaş gününde. Cuma maaş yatar, Salıya bir şey kalmaz."
-   },
-   {
-    "id": "hn",
-    "who": "hikmet",
-    "gap": 0.45,
-    "text": "Necmi, maaş bilmecesi değil bu!"
+    "text": "Olmaz! Orada da önce Salı gelir."
    },
    {
     "id": "n1",
     "who": "necmi",
     "gap": 5.6,
-    "text": "Telefon rehberimde Ahmet hep en üstte, Zeki hep en altta. Kim kimi önce aradıysa fark etmez!"
+    "text": "Kusura bakmayın Müdür Bey. Arşivde Defne sizden önce gelir."
    },
    {
     "id": "d3",
     "who": "defne",
     "gap": 0.35,
-    "text": "Buldum! Sözlükte!",
-    "snap": true
+    "text": "Buldum! Sözlükte!"
    },
    {
     "id": "d4",
     "who": "defne",
     "gap": 0.4,
-    "text": "Sözlükte kelimeler alfabeye göre dizilir. C harfi, S harfinden önce gelir.",
-    "tts": "Sözlükte kelimeler alfabeye göre dizilir. Ce harfi, se harfinden önce gelir."
-   },
-   {
-    "id": "d5",
-    "who": "defne",
-    "gap": 0.45,
-    "text": "Cuma C ile, Salı S ile başlıyor. Sözlükte Cuma hep Salı'dan önce!",
-    "tts": "Cuma ce ile, Salı se ile başlıyor. Sözlükte Cuma hep Salıdan önce!"
+    "text": "Sözlükte kelimeler harf sırasıyla dizilir. Cuma, Salı'dan yüzlerce sayfa önce gelir!",
+    "tts": "Sözlükte kelimeler harf sırasıyla dizilir. Cuma, Salıdan yüzlerce sayfa önce gelir!"
    },
    {
     "id": "h4",
     "who": "hikmet",
     "gap": 1.1,
-    "text": "Bu Cuma erken çıkış… Söz verdim, tutarım.",
-    "tts": "Bu Cuma erken çıkış. Söz verdim, tutarım."
+    "text": "Demek sözlükte de Defne benden önce geliyor."
    },
    {
     "id": "d6",
     "who": "defne",
     "gap": 0.55,
-    "text": "Bunu hafta sonunu iple çeken arkadaşına gönder."
+    "text": "Bunu Cuma'yı iple çeken arkadaşına gönder.",
+    "tts": "Bunu Cumayı iple çeken arkadaşına gönder."
    }
   ]
  },
@@ -144,25 +110,98 @@
  },
  "sfx": [
   [
+   "knock",
+   "@0.3"
+  ],
+  [
+   "zip",
+   [
+    "h2a:1",
+    "h2a:5"
+   ]
+  ],
+  [
+   "knock",
+   "h2b:2"
+  ],
+  [
+   "knock",
+   "h2b:3"
+  ],
+  [
+   "swish",
+   "h3:2"
+  ],
+  [
+   "swish",
+   "d2+0.1"
+  ],
+  [
+   "pop",
+   "d2:2"
+  ],
+  [
    "buzz",
    "hd:0"
   ],
   [
    "pop",
-   "d4:6"
+   "n1:5+0.12"
   ],
   [
    "pop",
-   "d4:8"
+   "n1:7+0.12"
+  ],
+  [
+   "stamp",
+   "d4"
+  ],
+  [
+   "swish",
+   "d4:1"
+  ],
+  [
+   "pop",
+   "d4:5"
+  ],
+  [
+   "zip",
+   [
+    "d4:6+0.04",
+    "d4:9-0.33"
+   ]
+  ],
+  [
+   "pop",
+   "d4:9"
+  ],
+  [
+   "knock",
+   "d4>+0.32"
   ],
   [
    "ding",
-   "d5:10"
+   "d4>+0.38"
   ],
   [
-   "womp",
-   "d5>+0.15"
+   "zip",
+   [
+    "h4:1+0.12",
+    "h4:3-0.1"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "h4:4-0.05",
+    "h4:5-0.08"
+   ]
+  ],
+  [
+   "knock",
+   "h4>+0.4"
   ]
  ],
- "disabled": "yeniden yapılıyor: çok sahneli hikâye (Fable), onaydan sonra açılacak"
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true
 }

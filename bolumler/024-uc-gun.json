@@ -1,7 +1,7 @@
 {
  "id": "024-uc-gun",
  "num": 24,
- "sira": 21,
+ "sira": 19,
  "bpm": 120,
  "slug": "art-arda-uc-gun",
  "coverAt": 0,
@@ -25,49 +25,43 @@
     "id": "h1",
     "who": "hikmet",
     "gap": 0.4,
-    "text": "Defneciğim, bana art arda üç gün söyle."
-   },
-   {
-    "id": "d1",
-    "who": "defne",
-    "gap": 0.25,
-    "text": "Çarşamba, Perşembe, Cuma!"
+    "text": "Art arda üç gün say. Ama Salı, Perşembe, Cumartesi yasak!"
    },
    {
     "id": "h2a",
     "who": "hikmet",
     "gap": 0.3,
-    "text": "Olmaz! Salı, Perşembe ve Cumartesi demek yasak."
+    "text": "Bu üç adı ağzına almak yok."
    },
    {
     "id": "h2b",
     "who": "hikmet",
     "gap": 0.3,
-    "text": "Bu üçünü söylemeden art arda üç gün sayacaksın."
+    "text": "Günler de art arda olacak."
    },
    {
     "id": "h3",
     "who": "hikmet",
     "gap": 0.4,
-    "text": "Bilirsen yarın öğleden sonra izinlisin."
+    "text": "Bilirsen yarın izinlisin."
    },
    {
     "id": "d2",
     "who": "defne",
     "gap": 0.6,
-    "text": "O zaman Pazar, Pazartesi, Çarşamba!"
+    "text": "Kolay! Pazartesi, Çarşamba, Cuma!"
    },
    {
     "id": "hd",
     "who": "hikmet",
     "gap": 0.45,
-    "text": "Hayır! Pazartesiden sonra Salı gelir. Haftadaki her üçlüde bir yasak gün var."
+    "text": "Olmaz! Arada atlanan günler var."
    },
    {
     "id": "n1",
     "who": "necmi",
     "gap": 5.6,
-    "text": "Müdür Bey, ben işi asla yarına bırakmam. Dün yapamadıysam bugün yaparım!"
+    "text": "Müdür Bey, takvim dünde kalmış. Yaprağını koparayım."
    },
    {
     "id": "d3",
@@ -79,14 +73,13 @@
     "id": "d4",
     "who": "defne",
     "gap": 0.4,
-    "text": "Üçü de gün, üçü de art arda. Hiçbiri yasak değil!"
+    "text": "Üçü de art arda gün. Yasak adların hiçbirini söylemedim!"
    },
    {
     "id": "h4",
     "who": "hikmet",
     "gap": 1.1,
-    "text": "Yarın izinlisin… Ama bugün daha bitmedi.",
-    "tts": "Yarın izinlisin. Ama bugün daha bitmedi."
+    "text": "Yarın izinlisin. Ama bugün daha bitmedi!"
    },
    {
     "id": "d6",
@@ -115,27 +108,8 @@
   [
    "buzz",
    "hd:0"
-  ],
-  [
-   "pop",
-   "d3:1"
-  ],
-  [
-   "pop",
-   "d3:2"
-  ],
-  [
-   "pop",
-   "d3:3"
-  ],
-  [
-   "ding",
-   "d4:8"
-  ],
-  [
-   "womp",
-   "d4>+0.15"
   ]
  ],
- "disabled": "yeniden yapılıyor: çok sahneli hikâye (Fable), onaydan sonra açılacak"
+ "disabled": "yeniden yapılıyor: çok sahneli hikâye (Fable), onaydan sonra açılacak",
+ "v4": true
 }
