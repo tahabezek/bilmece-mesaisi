@@ -208,15 +208,18 @@
     "2026-11-10T09:30Z": {
       "episode": "014-klasorler",
       "media": "v/014-klasorler-3362a375.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-08T13:17:46.243Z",
       "postId": "6af076bb9214322f68558411",
       "dueAt": "2026-11-10T09:30:00.000Z",
       "yt": {
         "postId": "6af076bc229bf05dafb3042d",
-        "status": "scheduled",
-        "dueAt": "2026-11-10T09:30:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-10T09:30:00.000Z",
+        "link": "https://www.youtube.com/shorts/na0kzDdb1ZY"
+      },
+      "sentAt": "2026-11-10T09:31:29.205Z",
+      "link": "https://www.instagram.com/reel/Dfjlq3BlPnO/"
     },
     "2026-11-10T18:00Z": {
       "episode": "015-yaka-kartlari",
