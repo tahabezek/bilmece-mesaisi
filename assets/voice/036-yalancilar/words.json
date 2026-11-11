@@ -1,0 +1,535 @@
+{
+ "h1": {
+  "key": "854a3d8ce5a2",
+  "trimmed": "854a3d8ce5a2",
+  "wkey": "854a3d8ce5a2",
+  "heard": "Dün akşam yemeğinde yedi kişiydik, herkes yanındakini yalancılıkla suçladı.",
+  "words": [
+   {
+    "w": "Dün",
+    "t0": 0.0,
+    "t1": 0.24
+   },
+   {
+    "w": "akşam",
+    "t0": 0.24,
+    "t1": 0.68
+   },
+   {
+    "w": "yemeğinde",
+    "t0": 0.68,
+    "t1": 1.18
+   },
+   {
+    "w": "yedi",
+    "t0": 1.18,
+    "t1": 1.42
+   },
+   {
+    "w": "kişiydik,",
+    "t0": 1.42,
+    "t1": 2.18
+   },
+   {
+    "w": "herkes",
+    "t0": 2.24,
+    "t1": 2.6
+   },
+   {
+    "w": "yanındakini",
+    "t0": 2.6,
+    "t1": 3.34
+   },
+   {
+    "w": "yalancılıkla",
+    "t0": 3.34,
+    "t1": 4.08
+   },
+   {
+    "w": "suçladı!",
+    "t0": 4.08,
+    "t1": 4.48
+   }
+  ],
+  "dur": 4.69
+ },
+ "h2a": {
+  "key": "be84487af7f6",
+  "trimmed": "be84487af7f6",
+  "wkey": "be84487af7f6",
+  "heard": "Bu ofiste herkes ya hep doğru söyler, ya hep yalan.",
+  "words": [
+   {
+    "w": "Bu",
+    "t0": 0.0,
+    "t1": 0.18
+   },
+   {
+    "w": "ofiste",
+    "t0": 0.18,
+    "t1": 0.58
+   },
+   {
+    "w": "herkes",
+    "t0": 0.58,
+    "t1": 1.04
+   },
+   {
+    "w": "ya",
+    "t0": 1.04,
+    "t1": 1.29
+   },
+   {
+    "w": "hep",
+    "t0": 1.29,
+    "t1": 1.54
+   },
+   {
+    "w": "doğru",
+    "t0": 1.54,
+    "t1": 1.74
+   },
+   {
+    "w": "söyler,",
+    "t0": 1.74,
+    "t1": 2.34
+   },
+   {
+    "w": "ya",
+    "t0": 2.34,
+    "t1": 2.63
+   },
+   {
+    "w": "hep",
+    "t0": 2.63,
+    "t1": 2.92
+   },
+   {
+    "w": "yalan.",
+    "t0": 2.92,
+    "t1": 3.18
+   }
+  ],
+  "dur": 3.38
+ },
+ "h2b": {
+  "key": "9ce003f54222",
+  "trimmed": "9ce003f54222",
+  "wkey": "9ce003f54222",
+  "heard": "Herkes aynı şeyi dedi, solumdaki yalancı.",
+  "words": [
+   {
+    "w": "Herkes",
+    "t0": 0.0,
+    "t1": 0.46
+   },
+   {
+    "w": "aynı",
+    "t0": 0.46,
+    "t1": 0.78
+   },
+   {
+    "w": "şeyi",
+    "t0": 0.78,
+    "t1": 1.06
+   },
+   {
+    "w": "dedi:",
+    "t0": 1.06,
+    "t1": 1.34
+   },
+   {
+    "w": "Solumdaki",
+    "t0": 1.6,
+    "t1": 2.18
+   },
+   {
+    "w": "yalancı.",
+    "t0": 2.18,
+    "t1": 2.74
+   }
+  ],
+  "dur": 2.85
+ },
+ "h2c": {
+  "key": "9e868ab817c2",
+  "trimmed": "9e868ab817c2",
+  "wkey": "9e868ab817c2",
+  "heard": "Bu hikayede bir yanlış var, nedir?",
+  "words": [
+   {
+    "w": "Bu",
+    "t0": 0.0,
+    "t1": 0.2
+   },
+   {
+    "w": "hikâyede",
+    "t0": 0.2,
+    "t1": 0.82
+   },
+   {
+    "w": "bir",
+    "t0": 0.82,
+    "t1": 0.98
+   },
+   {
+    "w": "yanlış",
+    "t0": 0.98,
+    "t1": 1.34
+   },
+   {
+    "w": "var,",
+    "t0": 1.34,
+    "t1": 1.94
+   },
+   {
+    "w": "nedir?",
+    "t0": 1.94,
+    "t1": 2.36
+   }
+  ],
+  "dur": 2.47
+ },
+ "d2": {
+  "key": "b7d31d81b5c7",
+  "trimmed": "b7d31d81b5c7",
+  "wkey": "b7d31d81b5c7",
+  "heard": "4 'nüz doğrucu, 3 'nüz yalancı.",
+  "words": [
+   {
+    "w": "Dördünüz",
+    "t0": 0.0,
+    "t1": 0.5
+   },
+   {
+    "w": "doğrucu,",
+    "t0": 0.5,
+    "t1": 0.9
+   },
+   {
+    "w": "üçünüz",
+    "t0": 0.9,
+    "t1": 1.4
+   },
+   {
+    "w": "yalancı!",
+    "t0": 1.4,
+    "t1": 1.86
+   }
+  ],
+  "dur": 1.93
+ },
+ "hd": {
+  "key": "dd94d374a21b",
+  "trimmed": "dd94d374a21b",
+  "wkey": "dd94d374a21b",
+  "heard": "Ama iki doğru cüyan yana olamaz.",
+  "words": [
+   {
+    "w": "Ama",
+    "t0": 0.0,
+    "t1": 0.23
+   },
+   {
+    "w": "iki",
+    "t0": 0.23,
+    "t1": 0.46
+   },
+   {
+    "w": "doğrucu",
+    "t0": 0.46,
+    "t1": 0.76
+   },
+   {
+    "w": "yan",
+    "t0": 0.76,
+    "t1": 1.2
+   },
+   {
+    "w": "yana",
+    "t0": 1.2,
+    "t1": 1.5
+   },
+   {
+    "w": "olamaz!",
+    "t0": 1.5,
+    "t1": 1.84
+   }
+  ],
+  "dur": 2.07
+ },
+ "n1": {
+  "key": "d5050aea4500",
+  "trimmed": "d5050aea4500",
+  "wkey": "d5050aea4500",
+  "heard": "Bir çay, bir su diye dizdim. Son bardak yine çay kaldı.",
+  "words": [
+   {
+    "w": "Bir",
+    "t0": 0.0,
+    "t1": 0.32
+   },
+   {
+    "w": "çay,",
+    "t0": 0.32,
+    "t1": 0.64
+   },
+   {
+    "w": "bir",
+    "t0": 0.64,
+    "t1": 0.96
+   },
+   {
+    "w": "su",
+    "t0": 0.96,
+    "t1": 1.28
+   },
+   {
+    "w": "diye",
+    "t0": 1.28,
+    "t1": 1.52
+   },
+   {
+    "w": "dizdim.",
+    "t0": 1.52,
+    "t1": 1.96
+   },
+   {
+    "w": "Son",
+    "t0": 1.96,
+    "t1": 2.6
+   },
+   {
+    "w": "bardak",
+    "t0": 2.6,
+    "t1": 3.22
+   },
+   {
+    "w": "yine",
+    "t0": 3.22,
+    "t1": 3.4
+   },
+   {
+    "w": "çay",
+    "t0": 3.4,
+    "t1": 3.8
+   },
+   {
+    "w": "kaldı!",
+    "t0": 3.8,
+    "t1": 4.24
+   }
+  ],
+  "dur": 4.338
+ },
+ "d3": {
+  "key": "b3b2cfebf680",
+  "trimmed": "b3b2cfebf680",
+  "wkey": "b3b2cfebf680",
+  "heard": "Buldum, 7 kişi değildiniz.",
+  "words": [
+   {
+    "w": "Buldum!",
+    "t0": 0.0,
+    "t1": 0.46
+   },
+   {
+    "w": "Yedi",
+    "t0": 0.46,
+    "t1": 0.92
+   },
+   {
+    "w": "kişi",
+    "t0": 0.92,
+    "t1": 1.18
+   },
+   {
+    "w": "değildiniz!",
+    "t0": 1.18,
+    "t1": 1.7
+   }
+  ],
+  "dur": 1.878
+ },
+ "d4": {
+  "key": "248de7d0e676",
+  "trimmed": "248de7d0e676",
+  "wkey": "248de7d0e676",
+  "heard": "Doğrucunun solu yalancı yalancının solu doğrucu sırayla oturmak zorundasınız.",
+  "words": [
+   {
+    "w": "Doğrucunun",
+    "t0": 0.0,
+    "t1": 0.46
+   },
+   {
+    "w": "solu",
+    "t0": 0.46,
+    "t1": 0.78
+   },
+   {
+    "w": "yalancı,",
+    "t0": 0.78,
+    "t1": 1.24
+   },
+   {
+    "w": "yalancının",
+    "t0": 1.24,
+    "t1": 1.86
+   },
+   {
+    "w": "solu",
+    "t0": 1.86,
+    "t1": 2.16
+   },
+   {
+    "w": "doğrucu.",
+    "t0": 2.16,
+    "t1": 2.7
+   },
+   {
+    "w": "Sırayla",
+    "t0": 2.7,
+    "t1": 3.3
+   },
+   {
+    "w": "oturmak",
+    "t0": 3.3,
+    "t1": 3.7
+   },
+   {
+    "w": "zorundasınız.",
+    "t0": 3.7,
+    "t1": 4.32
+   }
+  ],
+  "dur": 4.498
+ },
+ "d5": {
+  "key": "55eb6214e835",
+  "trimmed": "55eb6214e835",
+  "wkey": "55eb6214e835",
+  "heard": "Sırayla dizilen bir masa çift kişiyle kapanır, biri sayılmamış.",
+  "words": [
+   {
+    "w": "Sırayla",
+    "t0": 0.0,
+    "t1": 0.44
+   },
+   {
+    "w": "dizilen",
+    "t0": 0.44,
+    "t1": 0.78
+   },
+   {
+    "w": "bir",
+    "t0": 0.78,
+    "t1": 0.94
+   },
+   {
+    "w": "masa",
+    "t0": 0.94,
+    "t1": 1.18
+   },
+   {
+    "w": "çift",
+    "t0": 1.18,
+    "t1": 1.46
+   },
+   {
+    "w": "kişiyle",
+    "t0": 1.46,
+    "t1": 1.82
+   },
+   {
+    "w": "kapanır.",
+    "t0": 1.82,
+    "t1": 2.26
+   },
+   {
+    "w": "Biri",
+    "t0": 2.44,
+    "t1": 2.68
+   },
+   {
+    "w": "sayılmamış!",
+    "t0": 2.68,
+    "t1": 3.3
+   }
+  ],
+  "dur": 3.398
+ },
+ "h4": {
+  "key": "4232eed2dedc",
+  "trimmed": "4232eed2dedc",
+  "wkey": "4232eed2dedc",
+  "heard": "Kerem, sen hangisisin?",
+  "words": [
+   {
+    "w": "Kerem!",
+    "t0": 0.0,
+    "t1": 0.4
+   },
+   {
+    "w": "Sen",
+    "t0": 0.4,
+    "t1": 1.06
+   },
+   {
+    "w": "hangisisin?",
+    "t0": 1.06,
+    "t1": 1.78
+   }
+  ],
+  "dur": 1.968
+ },
+ "d6": {
+  "key": "11d61dd98d96",
+  "trimmed": "11d61dd98d96",
+  "wkey": "11d61dd98d96",
+  "heard": "Bunu hep ben doğru söylüyorum diyen arkadaşına gönder.",
+  "words": [
+   {
+    "w": "Bunu",
+    "t0": 0.0,
+    "t1": 0.22
+   },
+   {
+    "w": "hep",
+    "t0": 0.22,
+    "t1": 0.45
+   },
+   {
+    "w": "ben",
+    "t0": 0.45,
+    "t1": 0.68
+   },
+   {
+    "w": "doğru",
+    "t0": 0.68,
+    "t1": 0.9
+   },
+   {
+    "w": "söylüyorum",
+    "t0": 0.9,
+    "t1": 1.44
+   },
+   {
+    "w": "diyen",
+    "t0": 1.44,
+    "t1": 1.74
+   },
+   {
+    "w": "arkadaşına",
+    "t0": 1.74,
+    "t1": 2.26
+   },
+   {
+    "w": "gönder.",
+    "t0": 2.26,
+    "t1": 2.62
+   }
+  ],
+  "dur": 2.79
+ }
+}

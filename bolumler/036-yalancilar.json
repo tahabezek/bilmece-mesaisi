@@ -1,0 +1,288 @@
+{
+ "id": "036-yalancilar",
+ "num": 36,
+ "sira": 24,
+ "bpm": 120,
+ "slug": "yemekteki-yalancilar",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#mantık"
+ ],
+ "card": [
+  "Herkes: \"Solumdaki yalancı.\"",
+  "Masada 7 kişi. Yanlış olan ne?"
+ ],
+ "caption": "Zeka sorusu: Yuvarlak bir masada oturan herkes ya her zaman doğru ya her zaman yalan söylüyor. Masadaki herkes aynı cümleyi kuruyor: \"Solumdaki kişi yalancı.\" Hikmet Bey masada 7 kişi olduğunu söylüyor. Bu hikâyede bir yanlış var. Ne?\n\nKimin yalancı olduğunu bulmaya çalışma, gerek yok. Cevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Dün akşam yemeğinde yedi kişiydik, herkes yanındakini yalancılıkla suçladı!"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Bu ofiste herkes ya hep doğru söyler, ya hep yalan."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Herkes aynı şeyi dedi: \"Solumdaki yalancı.\"",
+    "tts": "Herkes aynı şeyi dedi: Solumdaki yalancı."
+   },
+   {
+    "id": "h2c",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Bu hikâyede bir yanlış var, nedir?"
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.5,
+    "text": "Dördünüz doğrucu, üçünüz yalancı!"
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Ama iki doğrucu yan yana olamaz!"
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Bir çay, bir su diye dizdim. Son bardak yine çay kaldı!"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.32,
+    "text": "Buldum! Yedi kişi değildiniz!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Doğrucunun solu yalancı, yalancının solu doğrucu. Sırayla oturmak zorundasınız."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Sırayla dizilen bir masa çift kişiyle kapanır. Biri sayılmamış!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1,
+    "text": "Kerem! Sen hangisisin?"
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu hep \"ben doğru söylüyorum\" diyen arkadaşına gönder.",
+    "tts": "Bunu hep ben doğru söylüyorum diyen arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h2c>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "knock",
+   "@0.3"
+  ],
+  [
+   "knock",
+   "h2a:1+0.03"
+  ],
+  [
+   "pop",
+   "h2a:5-0.1"
+  ],
+  [
+   "pop",
+   "h2a:9-0.1"
+  ],
+  [
+   "swish",
+   "h2b:4-0.1"
+  ],
+  [
+   "knock",
+   "@15.20"
+  ],
+  [
+   "knock",
+   "@15.60"
+  ],
+  [
+   "knock",
+   "@15.99"
+  ],
+  [
+   "knock",
+   "@16.39"
+  ],
+  [
+   "knock",
+   "@16.79"
+  ],
+  [
+   "knock",
+   "@17.18"
+  ],
+  [
+   "knock",
+   "@17.58"
+  ],
+  [
+   "buzz",
+   "hd:5-0.12"
+  ],
+  [
+   "knock",
+   "@20.12"
+  ],
+  [
+   "buzz",
+   "@20.55"
+  ],
+  [
+   "knock",
+   "@24.99"
+  ],
+  [
+   "knock",
+   "@25.44"
+  ],
+  [
+   "knock",
+   "@25.89"
+  ],
+  [
+   "knock",
+   "@26.34"
+  ],
+  [
+   "knock",
+   "@26.79"
+  ],
+  [
+   "knock",
+   "@27.24"
+  ],
+  [
+   "buzz",
+   "n1:8-0.02"
+  ],
+  [
+   "pop",
+   "d4-0.06"
+  ],
+  [
+   "pop",
+   "d4:2-0.1"
+  ],
+  [
+   "pop",
+   "d4:3-0.06"
+  ],
+  [
+   "pop",
+   "d4:5-0.1"
+  ],
+  [
+   "pop",
+   "d4:6-0.06"
+  ],
+  [
+   "pop",
+   "d4:6+0.19"
+  ],
+  [
+   "pop",
+   "d4:6+0.44"
+  ],
+  [
+   "pop",
+   "d4:7-0.11"
+  ],
+  [
+   "knock",
+   "d4:7+0.06"
+  ],
+  [
+   "buzz",
+   "d4:8+0.12"
+  ],
+  [
+   "swish",
+   "d5-0.04"
+  ],
+  [
+   "pop",
+   "d5+0.16"
+  ],
+  [
+   "zip",
+   [
+    "d5:3-0.12",
+    "d5:4+0.1"
+   ]
+  ],
+  [
+   "knock",
+   "d5:5-0.05"
+  ],
+  [
+   "knock",
+   "d5:6-0.15"
+  ],
+  [
+   "zip",
+   [
+    "d5:6+0.1",
+    "d5:6+0.6"
+   ]
+  ],
+  [
+   "ding",
+   "d5:7-0.1"
+  ],
+  [
+   "swish",
+   "h4:2-0.45"
+  ],
+  [
+   "pop",
+   "d6"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true
+}
