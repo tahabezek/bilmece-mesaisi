@@ -1,0 +1,230 @@
+{
+ "id": "035-kasar",
+ "num": 35,
+ "sira": 23,
+ "bpm": 120,
+ "slug": "kasar-kalibi",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#kahvaltı"
+ ],
+ "card": [
+  "27 küp için 6 kesim. Parçaları dizip",
+  "daha az kesimle olur mu?"
+ ],
+ "caption": "Zeka sorusu: Küp biçiminde bir kaşar kalıbı 27 eşit küçük küpe bölünecek. Düz kesimle bu iş 6 kesimde biter. Parçaları her kesimden sonra istediğin gibi üst üste dizebilirsen, 6'dan az kesimle yapabilir misin?\n\nİlk akla gelen cevap çoğu zaman yanlış. Cevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Necmi, bu kaşardan yirmi yedi küp çıkacak. Altı kesim lazım!"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Ama her kesimden sonra parçaları istediğin gibi dizebilirsin."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Altıdan az kesimle olur mu?"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Bilirsen ilk küp senin."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.5,
+    "text": "Olur! Dilimleri yan yana dizerim, dört kesim yeter."
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Dört kesim oldu ama şu küp hâlâ yapışık!"
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Ortadaki lokumun altı yüzü de pudralı. Hepsi kesilmiş."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.32,
+    "text": "Buldum! Olmaz, altı şart!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Ortadaki küpün altı yüzü de içeride, hepsini bıçak açmalı."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Düz bir kesim ona tek yüz açar. Altı yüz, altı kesim!"
+   },
+   {
+    "id": "h4",
+    "who": "necmi",
+    "gap": 1,
+    "text": "En çok emek bunda, Müdür Bey. Buyurun."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu kahvaltıyı hazırlayan arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "knock",
+   "@0.3"
+  ],
+  [
+   "swish",
+   "h2a:2-0.2"
+  ],
+  [
+   "pop",
+   "h2a:5+0.05"
+  ],
+  [
+   "swish",
+   "h2b:1-0.1"
+  ],
+  [
+   "pop",
+   "h3:1"
+  ],
+  [
+   "swish",
+   "h3:3-0.25"
+  ],
+  [
+   "swish",
+   "d2:1-0.12"
+  ],
+  [
+   "pop",
+   "d2:4"
+  ],
+  [
+   "zip",
+   [
+    "d2:6-0.18",
+    "d2:6+0.2"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "d2:7+0.12",
+    "d2:7+0.5"
+   ]
+  ],
+  [
+   "pop",
+   "hd:2"
+  ],
+  [
+   "buzz",
+   "hd:7-0.04"
+  ],
+  [
+   "pop",
+   "n1-1.55"
+  ],
+  [
+   "pop",
+   "n1:1"
+  ],
+  [
+   "swish",
+   "n1:2"
+  ],
+  [
+   "pop",
+   "d3:2-0.1"
+  ],
+  [
+   "swish",
+   "d4-0.04"
+  ],
+  [
+   "knock",
+   "d4:6"
+  ],
+  [
+   "knock",
+   "d4:8"
+  ],
+  [
+   "knock",
+   "d5:0"
+  ],
+  [
+   "knock",
+   "d5:4"
+  ],
+  [
+   "knock",
+   "d5:7"
+  ],
+  [
+   "knock",
+   "d5:10"
+  ],
+  [
+   "ding",
+   "d5:10+0.14"
+  ],
+  [
+   "swish",
+   "h4:1-0.1"
+  ],
+  [
+   "pop",
+   "h4:1+0.45"
+  ],
+  [
+   "pop",
+   "d6"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true
+}
