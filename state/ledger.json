@@ -240,15 +240,18 @@
     "2026-11-11T09:30Z": {
       "episode": "017-balik",
       "media": "v/017-balik-fd7eac4a.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-09T16:09:11.765Z",
       "postId": "6af1f0f008578dcbeb63c9ef",
       "dueAt": "2026-11-11T09:30:00.000Z",
       "yt": {
         "postId": "6af1f0f00b813b465063ef3f",
-        "status": "scheduled",
-        "dueAt": "2026-11-11T09:30:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-11T09:30:00.000Z",
+        "link": "https://www.youtube.com/shorts/cdRRC15Y1rU"
+      },
+      "sentAt": "2026-11-11T09:31:29.269Z",
+      "link": "https://www.instagram.com/reel/DfmKeMDlFDx/"
     },
     "2026-11-11T18:00Z": {
       "episode": "018-kumbara",
