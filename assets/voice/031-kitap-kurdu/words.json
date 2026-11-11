@@ -1,0 +1,546 @@
+{
+ "h1": {
+  "key": "391af19e9321",
+  "trimmed": "391af19e9321",
+  "wkey": "391af19e9321",
+  "heard": "Bu güve iki cildi bir santimde geçti.",
+  "words": [
+   {
+    "w": "Bu",
+    "t0": 0.0,
+    "t1": 0.22
+   },
+   {
+    "w": "güve",
+    "t0": 0.22,
+    "t1": 0.54
+   },
+   {
+    "w": "iki",
+    "t0": 0.54,
+    "t1": 0.78
+   },
+   {
+    "w": "cildi",
+    "t0": 0.78,
+    "t1": 1.16
+   },
+   {
+    "w": "bir",
+    "t0": 1.16,
+    "t1": 1.28
+   },
+   {
+    "w": "santimde",
+    "t0": 1.28,
+    "t1": 1.9
+   },
+   {
+    "w": "geçti!",
+    "t0": 1.9,
+    "t1": 2.28
+   }
+  ],
+  "dur": 2.41
+ },
+ "h2a": {
+  "key": "b1faac7e11bc",
+  "trimmed": "b1faac7e11bc",
+  "wkey": "b1faac7e11bc",
+  "heard": "Birinci cildin ilk sayfasından girdi, ikinci cildin son sayfasından çıktı.",
+  "words": [
+   {
+    "w": "Birinci",
+    "t0": 0.0,
+    "t1": 0.54
+   },
+   {
+    "w": "cildin",
+    "t0": 0.54,
+    "t1": 0.9
+   },
+   {
+    "w": "ilk",
+    "t0": 0.9,
+    "t1": 1.1
+   },
+   {
+    "w": "sayfasından",
+    "t0": 1.1,
+    "t1": 1.9
+   },
+   {
+    "w": "girdi,",
+    "t0": 1.9,
+    "t1": 2.3
+   },
+   {
+    "w": "ikinci",
+    "t0": 2.6,
+    "t1": 2.98
+   },
+   {
+    "w": "cildin",
+    "t0": 2.98,
+    "t1": 3.36
+   },
+   {
+    "w": "son",
+    "t0": 3.36,
+    "t1": 3.54
+   },
+   {
+    "w": "sayfasından",
+    "t0": 3.54,
+    "t1": 4.32
+   },
+   {
+    "w": "çıktı.",
+    "t0": 4.32,
+    "t1": 4.6
+   }
+  ],
+  "dur": 4.91
+ },
+ "h2b": {
+  "key": "4db2f3c80dd7",
+  "trimmed": "4db2f3c80dd7",
+  "wkey": "4db2f3c80dd7",
+  "heard": "Sayfalar 4 santim, her kapak yarım santim. Bu nasıl olur?",
+  "words": [
+   {
+    "w": "Sayfalar",
+    "t0": 0.0,
+    "t1": 0.68
+   },
+   {
+    "w": "dört",
+    "t0": 0.68,
+    "t1": 0.98
+   },
+   {
+    "w": "santim,",
+    "t0": 0.98,
+    "t1": 1.64
+   },
+   {
+    "w": "her",
+    "t0": 1.64,
+    "t1": 1.88
+   },
+   {
+    "w": "kapak",
+    "t0": 1.88,
+    "t1": 2.3
+   },
+   {
+    "w": "yarım",
+    "t0": 2.3,
+    "t1": 2.6
+   },
+   {
+    "w": "santim.",
+    "t0": 2.6,
+    "t1": 3.16
+   },
+   {
+    "w": "Bu",
+    "t0": 3.16,
+    "t1": 3.6
+   },
+   {
+    "w": "nasıl",
+    "t0": 3.6,
+    "t1": 3.86
+   },
+   {
+    "w": "olur?",
+    "t0": 3.86,
+    "t1": 4.18
+   }
+  ],
+  "dur": 4.368
+ },
+ "d2": {
+  "key": "74955b8bf2dd",
+  "trimmed": "74955b8bf2dd",
+  "wkey": "74955b8bf2dd",
+  "heard": "9 santim eder, sayfalar 4, kapaklar 1, sayfalar yine 4.",
+  "words": [
+   {
+    "w": "Dokuz",
+    "t0": 0.0,
+    "t1": 0.2
+   },
+   {
+    "w": "santim",
+    "t0": 0.2,
+    "t1": 0.7
+   },
+   {
+    "w": "eder!",
+    "t0": 0.7,
+    "t1": 0.84
+   },
+   {
+    "w": "Sayfalar",
+    "t0": 1.18,
+    "t1": 1.64
+   },
+   {
+    "w": "dört,",
+    "t0": 1.64,
+    "t1": 2.06
+   },
+   {
+    "w": "kapaklar",
+    "t0": 2.06,
+    "t1": 2.48
+   },
+   {
+    "w": "bir,",
+    "t0": 2.48,
+    "t1": 2.78
+   },
+   {
+    "w": "sayfalar",
+    "t0": 2.78,
+    "t1": 3.18
+   },
+   {
+    "w": "yine",
+    "t0": 3.18,
+    "t1": 3.36
+   },
+   {
+    "w": "dört.",
+    "t0": 3.36,
+    "t1": 3.62
+   }
+  ],
+  "dur": 3.798
+ },
+ "hd": {
+  "key": "70eb97a91e34",
+  "trimmed": "70eb97a91e34",
+  "wkey": "70eb97a91e34",
+  "heard": "Öçme. İşte ilk sayfa, işte delik. Gerisi tertemiz.",
+  "words": [
+   {
+    "w": "Ölçme!",
+    "t0": 0.0,
+    "t1": 0.5
+   },
+   {
+    "w": "İşte",
+    "t0": 0.84,
+    "t1": 1.12
+   },
+   {
+    "w": "ilk",
+    "t0": 1.12,
+    "t1": 1.44
+   },
+   {
+    "w": "sayfa,",
+    "t0": 1.44,
+    "t1": 2.0
+   },
+   {
+    "w": "işte",
+    "t0": 2.22,
+    "t1": 2.46
+   },
+   {
+    "w": "delik.",
+    "t0": 2.46,
+    "t1": 2.9
+   },
+   {
+    "w": "Gerisi",
+    "t0": 3.04,
+    "t1": 3.52
+   },
+   {
+    "w": "tertemiz.",
+    "t0": 3.52,
+    "t1": 4.18
+   }
+  ],
+  "dur": 4.276
+ },
+ "n1": {
+  "key": "a870e09f52a3",
+  "trimmed": "a870e09f52a3",
+  "wkey": "a870e09f52a3",
+  "heard": "Kitabı rafasırtı dışarıda koyarım, kapağı komşusuna bakar.",
+  "words": [
+   {
+    "w": "Kitabı",
+    "t0": 0.0,
+    "t1": 0.48
+   },
+   {
+    "w": "rafa",
+    "t0": 0.48,
+    "t1": 0.8
+   },
+   {
+    "w": "sırtı",
+    "t0": 0.8,
+    "t1": 1.12
+   },
+   {
+    "w": "dışarıda",
+    "t0": 1.12,
+    "t1": 1.64
+   },
+   {
+    "w": "koyarım.",
+    "t0": 1.64,
+    "t1": 2.06
+   },
+   {
+    "w": "Kapağı",
+    "t0": 2.4,
+    "t1": 2.88
+   },
+   {
+    "w": "komşusuna",
+    "t0": 2.88,
+    "t1": 3.54
+   },
+   {
+    "w": "bakar.",
+    "t0": 3.54,
+    "t1": 3.96
+   }
+  ],
+  "dur": 4.088
+ },
+ "d3": {
+  "key": "6017830fff93",
+  "trimmed": "6017830fff93",
+  "wkey": "6017830fff93",
+  "heard": "Buldum. İlk sayfa sağda.",
+  "words": [
+   {
+    "w": "Buldum!",
+    "t0": 0.0,
+    "t1": 0.48
+   },
+   {
+    "w": "İlk",
+    "t0": 0.48,
+    "t1": 0.98
+   },
+   {
+    "w": "sayfa",
+    "t0": 0.98,
+    "t1": 1.32
+   },
+   {
+    "w": "sağda!",
+    "t0": 1.32,
+    "t1": 1.68
+   }
+  ],
+  "dur": 1.848
+ },
+ "d4": {
+  "key": "e7cb95591a3c",
+  "trimmed": "e7cb95591a3c",
+  "wkey": "e7cb95591a3c",
+  "heard": "Rafta birinci cildin ilk sayfası sağdadır. İkinci cildin son sayfası soldadır.",
+  "words": [
+   {
+    "w": "Rafta",
+    "t0": 0.0,
+    "t1": 0.32
+   },
+   {
+    "w": "birinci",
+    "t0": 0.32,
+    "t1": 0.72
+   },
+   {
+    "w": "cildin",
+    "t0": 0.72,
+    "t1": 1.1
+   },
+   {
+    "w": "ilk",
+    "t0": 1.1,
+    "t1": 1.28
+   },
+   {
+    "w": "sayfası",
+    "t0": 1.28,
+    "t1": 1.78
+   },
+   {
+    "w": "sağdadır.",
+    "t0": 1.78,
+    "t1": 2.3
+   },
+   {
+    "w": "İkinci",
+    "t0": 2.54,
+    "t1": 2.92
+   },
+   {
+    "w": "cildin",
+    "t0": 2.92,
+    "t1": 3.3
+   },
+   {
+    "w": "son",
+    "t0": 3.3,
+    "t1": 3.46
+   },
+   {
+    "w": "sayfası",
+    "t0": 3.46,
+    "t1": 4.0
+   },
+   {
+    "w": "soldadır.",
+    "t0": 4.0,
+    "t1": 4.46
+   }
+  ],
+  "dur": 4.528
+ },
+ "d5": {
+  "key": "454e58760ec9",
+  "trimmed": "454e58760ec9",
+  "wkey": "454e58760ec9",
+  "heard": "Güve yalnızca iki kapağı deldi. Yarım artı yarım bir santim.",
+  "words": [
+   {
+    "w": "Güve",
+    "t0": 0.0,
+    "t1": 0.28
+   },
+   {
+    "w": "yalnızca",
+    "t0": 0.28,
+    "t1": 0.8
+   },
+   {
+    "w": "iki",
+    "t0": 0.8,
+    "t1": 1.0
+   },
+   {
+    "w": "kapağı",
+    "t0": 1.0,
+    "t1": 1.44
+   },
+   {
+    "w": "deldi.",
+    "t0": 1.44,
+    "t1": 1.78
+   },
+   {
+    "w": "Yarım",
+    "t0": 2.04,
+    "t1": 2.3
+   },
+   {
+    "w": "artı",
+    "t0": 2.3,
+    "t1": 2.66
+   },
+   {
+    "w": "yarım",
+    "t0": 2.66,
+    "t1": 2.9
+   },
+   {
+    "w": "bir",
+    "t0": 2.9,
+    "t1": 3.0
+   },
+   {
+    "w": "santim!",
+    "t0": 3.0,
+    "t1": 3.44
+   }
+  ],
+  "dur": 3.558
+ },
+ "h4": {
+  "key": "67b8253d63c2",
+  "trimmed": "67b8253d63c2",
+  "wkey": "67b8253d63c2",
+  "heard": "Bu güve kestirmeyi benden iyi biliyor.",
+  "words": [
+   {
+    "w": "Bu",
+    "t0": 0.0,
+    "t1": 0.2
+   },
+   {
+    "w": "güve",
+    "t0": 0.2,
+    "t1": 0.46
+   },
+   {
+    "w": "kestirmeyi",
+    "t0": 0.46,
+    "t1": 1.12
+   },
+   {
+    "w": "benden",
+    "t0": 1.12,
+    "t1": 1.5
+   },
+   {
+    "w": "iyi",
+    "t0": 1.5,
+    "t1": 1.66
+   },
+   {
+    "w": "biliyor.",
+    "t0": 1.66,
+    "t1": 1.9
+   }
+  ],
+  "dur": 2.22
+ },
+ "d6": {
+  "key": "f4bc8b7df688",
+  "trimmed": "f4bc8b7df688",
+  "wkey": "f4bc8b7df688",
+  "heard": "Bunu kitap kurdu arkadaşına gönder.",
+  "words": [
+   {
+    "w": "Bunu",
+    "t0": 0.0,
+    "t1": 0.18
+   },
+   {
+    "w": "kitap",
+    "t0": 0.18,
+    "t1": 0.56
+   },
+   {
+    "w": "kurdu",
+    "t0": 0.56,
+    "t1": 0.82
+   },
+   {
+    "w": "arkadaşına",
+    "t0": 0.82,
+    "t1": 1.4
+   },
+   {
+    "w": "gönder.",
+    "t0": 1.4,
+    "t1": 1.74
+   }
+  ],
+  "dur": 1.9
+ }
+}

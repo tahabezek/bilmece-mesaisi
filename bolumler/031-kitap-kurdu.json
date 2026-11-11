@@ -1,0 +1,109 @@
+{
+ "id": "031-kitap-kurdu",
+ "num": 31,
+ "sira": 18,
+ "bpm": 120,
+ "slug": "kitap-kurdu",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#kitap"
+ ],
+ "card": [
+  "Güve iki cildi 1 cm'de geçti.",
+  "Sayfalar 4 cm. Bu nasıl olur?"
+ ],
+ "caption": "Zeka sorusu: Rafta yan yana iki cilt duruyor: sırtları bize dönük, birinci cilt solda. Her cildin sayfaları 4 cm, her kapağı yarım cm. Bir güve birinci cildin ilk sayfasından ikinci cildin son sayfasına kadar düz delip geçti ama yalnızca 1 cm yol aldı. Nasıl?\n\nÇoğu kişi 9 cm diye hesaplıyor. Cevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Bu güve iki cildi bir santimde geçti!"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Birinci cildin ilk sayfasından girdi, ikinci cildin son sayfasından çıktı."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Sayfalar dört santim, her kapak yarım santim. Bu nasıl olur?"
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.5,
+    "text": "Dokuz santim eder! Sayfalar dört, kapaklar bir, sayfalar yine dört."
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Ölçme! İşte ilk sayfa, işte delik. Gerisi tertemiz."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Kitabı rafa sırtı dışarıda koyarım. Kapağı komşusuna bakar."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.32,
+    "text": "Buldum! İlk sayfa sağda!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Rafta birinci cildin ilk sayfası sağdadır. İkinci cildin son sayfası soldadır."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Güve yalnızca iki kapağı deldi. Yarım artı yarım bir santim!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 0.9,
+    "text": "Bu güve kestirmeyi benden iyi biliyor."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.6,
+    "text": "Bunu kitap kurdu arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h2b>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true
+}
