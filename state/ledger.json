@@ -270,18 +270,17 @@
       "link": "https://www.instagram.com/reel/DfnFWsIFLGi/"
     },
     "2026-11-12T09:30Z": {
-      "episode": "019-araba-yarisi",
-      "media": "v/019-araba-yarisi-a4ab25a5.mp4",
-      "status": "skipped",
-      "at": "2026-11-10T18:50:38.365Z",
-      "postId": "6af367c0736c651a4305304a",
+      "episode": "028f-cita-fable",
+      "media": "v/028f-cita-fable-1392cf15.mp4",
+      "status": "scheduled",
+      "at": "2026-11-11T19:14:11.917Z",
+      "postId": "6af4bebaf0d62ba60e2d33e6",
       "dueAt": "2026-11-12T09:30:00.000Z",
       "yt": {
-        "postId": "6af367c257fc125cf87e81bc",
-        "status": "skipped",
+        "postId": "6af4bebba77244ffce8f2b4c",
+        "status": "scheduled",
         "dueAt": "2026-11-12T09:30:00.000Z"
-      },
-      "note": "2026-11-11 elle silindi: bilinen klasik, kuyruktan çekildi"
+      }
     },
     "2026-11-12T18:00Z": {
       "episode": "021-cuma-sali",
