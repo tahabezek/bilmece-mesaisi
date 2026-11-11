@@ -269,19 +269,6 @@
       "sentAt": "2026-11-11T18:07:10.710Z",
       "link": "https://www.instagram.com/reel/DfnFWsIFLGi/"
     },
-    "2026-11-12T09:30Z": {
-      "episode": "028f-cita-fable",
-      "media": "v/028f-cita-fable-1392cf15.mp4",
-      "status": "scheduled",
-      "at": "2026-11-11T19:14:11.917Z",
-      "postId": "6af4bebaf0d62ba60e2d33e6",
-      "dueAt": "2026-11-12T09:30:00.000Z",
-      "yt": {
-        "postId": "6af4bebba77244ffce8f2b4c",
-        "status": "scheduled",
-        "dueAt": "2026-11-12T09:30:00.000Z"
-      }
-    },
     "2026-11-12T18:00Z": {
       "episode": "021-cuma-sali",
       "media": "v/021-cuma-sali-4731499c.mp4",
@@ -295,6 +282,33 @@
         "dueAt": "2026-11-12T18:00:00.000Z"
       },
       "note": "2026-11-11 elle silindi: bilinen klasik, kuyruktan çekildi"
+    },
+    "2026-11-12T09:30Z#eski": {
+      "episode": "028f-cita-fable",
+      "media": "v/028f-cita-fable-1392cf15.mp4",
+      "status": "skipped",
+      "at": "2026-11-11T19:14:11.917Z",
+      "postId": "6af4bebaf0d62ba60e2d33e6",
+      "dueAt": "2026-11-12T09:30:00.000Z",
+      "yt": {
+        "postId": "6af4bebba77244ffce8f2b4c",
+        "status": "scheduled",
+        "dueAt": "2026-11-12T09:30:00.000Z"
+      },
+      "note": "rozet #25 yanlıştı, #16 ile yeniden render edildi; gönderi silindi"
+    },
+    "2026-11-12T09:30Z": {
+      "episode": "028f-cita-fable",
+      "media": "v/028f-cita-fable-34170cb7.mp4",
+      "status": "scheduled",
+      "at": "2026-11-11T19:21:33.073Z",
+      "postId": "6af4c0770e1aab0352b2a853",
+      "dueAt": "2026-11-12T09:30:00.000Z",
+      "yt": {
+        "postId": "6af4c0770113073f857202a9",
+        "status": "scheduled",
+        "dueAt": "2026-11-12T09:30:00.000Z"
+      }
     }
   }
 }
