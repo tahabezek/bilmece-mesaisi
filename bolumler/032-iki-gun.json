@@ -1,0 +1,216 @@
+{
+ "id": "032-iki-gun",
+ "num": 32,
+ "sira": 22,
+ "bpm": 120,
+ "slug": "kerem-iki-gun",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#mantık"
+ ],
+ "card": [
+  "Dün 9'dan 5'e çıktı, bugün indi.",
+  "Aynı saatte aynı yerden geçti mi?"
+ ],
+ "caption": "Zeka sorusu: Kerem bir gün sabah 9'da yokuşu çıkmaya başladı, yolda istediği kadar oyalandı, akşam 5'te depoya vardı. Ertesi gün sabah 9'da aynı yoldan indi, akşam 5'te vardı. Yolda iki gün de aynı saatte geçtiği bir nokta kesin var mı?\n\nCevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Kerem yokuşun bir noktasından iki gün de aynı saatte geçti!"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Dün dokuzda ofisten çıktı, keyfince oyalandı, beşte depoya vardı."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Bugün dokuzda aynı yoldan indi, beşte ofise vardı. Neden eminim?"
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.5,
+    "text": "Bence şans eseri, hızına bağlı!"
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Ne hızla yürürse yürüsün, o yer kesin var."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Geçen hafta ben inerken bekçi çıkıyordu. Yolda burun buruna geldik!"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.32,
+    "text": "Buldum! İki günü üst üste koyalım!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Dünkü Kerem çıksın, bugünkü Kerem aynı anda insin. Mutlaka karşılaşırlar!"
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Karşılaştıkları yerden iki gün de aynı saatte geçti."
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 0.9,
+    "text": "Keşke işe de bu kadar dakik gelse."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.6,
+    "text": "Bunu yokuşta oturan arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h2b>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "pop",
+   "@0.24"
+  ],
+  [
+   "knock",
+   "h1:3-0.03"
+  ],
+  [
+   "pop",
+   "h2a+1.0"
+  ],
+  [
+   "swish",
+   "h2a:8+0.3"
+  ],
+  [
+   "knock",
+   "h2b+0.84"
+  ],
+  [
+   "pop",
+   "h2b:8+0.22"
+  ],
+  [
+   "zip",
+   [
+    "d2+0.12",
+    "d2+0.55"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "d2+0.88",
+    "d2+1.2"
+   ]
+  ],
+  [
+   "buzz",
+   "d2:4-0.04"
+  ],
+  [
+   "zip",
+   [
+    "hd+0.3",
+    "hd+0.6"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "hd+0.96",
+    "hd+1.26"
+   ]
+  ],
+  [
+   "knock",
+   "hd:6-0.05"
+  ],
+  [
+   "zip",
+   [
+    "n1-4.55",
+    "n1-3.95"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "n1-3.15",
+    "n1-2.45"
+   ]
+  ],
+  [
+   "swish",
+   "n1:2-0.5"
+  ],
+  [
+   "knock",
+   "n1:8-0.02"
+  ],
+  [
+   "pop",
+   "d4:1+1.05"
+  ],
+  [
+   "knock",
+   "d4:1+0.92"
+  ],
+  [
+   "pop",
+   "d4:9+0.08"
+  ],
+  [
+   "ding",
+   "d5-0.06"
+  ],
+  [
+   "pop",
+   "d5:1-0.06"
+  ],
+  [
+   "womp",
+   "h4:5+0.3"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true
+}
