@@ -1,0 +1,259 @@
+{
+ "id": "034-cay-sut",
+ "num": 34,
+ "sira": 21,
+ "bpm": 120,
+ "slug": "cay-ile-sut",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#çay"
+ ],
+ "card": [
+  "Bir kaşık süt çaya, bir kaşık geri.",
+  "Çayda süt mü çok, sütte çay mı?"
+ ],
+ "caption": "Zeka sorusu: Bir bardak çay ve aynı miktarda bir bardak süt var. Sütten bir kaşık alıp çaya koyuyor, iyice karıştırıyorsun. Sonra bu karışımdan bir kaşık alıp süte geri koyuyorsun. Şimdi çaydaki süt mü fazla, sütteki çay mı?\n\nİnsanlar bu soruda ikiye bölünüyor. Cevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Bu soru yüzünden Necmi'yle üç gündür küsüz!",
+    "tts": "Bu soru yüzünden Necmiyle üç gündür küsüz!"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Bir bardak çay, bir bardak süt. Sütten bir kaşık çaya koydum."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Sonra karışımdan bir kaşık süte geri koydum."
+   },
+   {
+    "id": "h2c",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Çaydaki süt mü fazla, sütteki çay mı?"
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.5,
+    "text": "Çaydaki süt! Geri giden kaşıkta çay azdı."
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Bence sütteki çay fazla!"
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Bakın, iki bardak da ilk hâli kadar dolu."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.32,
+    "text": "Buldum! İkisi eşit!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Süt bardağından ne kadar süt eksildiyse, yerine o kadar çay geldi."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Eksilen süt de çayın içinde. İkisi tıpatıp eşit!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1,
+    "text": "Barıştık Necmi. İkimiz de yanılmışız."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu çay mı süt mü diye tartışan arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h2c>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "knock",
+   "@0.3"
+  ],
+  [
+   "swish",
+   "h1:3-0.1"
+  ],
+  [
+   "swish",
+   "h1:6+0.4"
+  ],
+  [
+   "pop",
+   "h2a:6+0.15"
+  ],
+  [
+   "swish",
+   "h2a:10-0.6"
+  ],
+  [
+   "pop",
+   "h2a:10+0.05"
+  ],
+  [
+   "zip",
+   [
+    "h2a:10+0.55",
+    "h2b:1+0.1"
+   ]
+  ],
+  [
+   "swish",
+   "h2b:5-0.6"
+  ],
+  [
+   "pop",
+   "h2b:5+0.05"
+  ],
+  [
+   "pop",
+   "h2c:1"
+  ],
+  [
+   "pop",
+   "h2c:4"
+  ],
+  [
+   "pop",
+   "d2+0.3"
+  ],
+  [
+   "swish",
+   "d2:2-0.3"
+  ],
+  [
+   "swish",
+   "hd-0.1"
+  ],
+  [
+   "knock",
+   "hd>-0.15"
+  ],
+  [
+   "pop",
+   "n1-4.4"
+  ],
+  [
+   "swish",
+   "n1-1.08"
+  ],
+  [
+   "pop",
+   "n1:4"
+  ],
+  [
+   "pop",
+   "n1:7"
+  ],
+  [
+   "knock",
+   "d3:2+0.24"
+  ],
+  [
+   "swish",
+   "d3:2+0.6"
+  ],
+  [
+   "knock",
+   "d4:1+0.02"
+  ],
+  [
+   "zip",
+   [
+    "d4:1+0.12",
+    "d4:3-0.2"
+   ]
+  ],
+  [
+   "knock",
+   "d4:3+0.1"
+  ],
+  [
+   "swish",
+   "d4:3+0.45"
+  ],
+  [
+   "knock",
+   "d4:6"
+  ],
+  [
+   "pop",
+   "d4:7"
+  ],
+  [
+   "pop",
+   "d4:9"
+  ],
+  [
+   "pop",
+   "d5:1"
+  ],
+  [
+   "pop",
+   "d5:5"
+  ],
+  [
+   "ding",
+   "d5:7"
+  ],
+  [
+   "swish",
+   "h4+0.05"
+  ],
+  [
+   "pop",
+   "h4+0.25"
+  ],
+  [
+   "pop",
+   "d6"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true
+}

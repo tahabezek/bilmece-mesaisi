@@ -291,7 +291,8 @@ export function altyazi(K, tl, t, cam, heads = {}, { split = {}, y = 1255, kuyru
   const cut = cap && split[cap.line.id];   // ikinci parça kendi ilk kelimesinin ölçülmüş anında gelir
   if (cut) {
     const w = cap.line.words, tx = cap.line.text.split(' '), tc = w[cut].t0 - 0.04;
-    cap = t < tc ? { ...cap, text: tx.slice(0, cut).join(' ') + '…', left: tc - t } : { ...cap, text: '…' + tx.slice(cut).join(' '), age: t - tc };
+    const ilk = tx.slice(0, cut).join(' '), uc = /[.,;:!?]$/.test(ilk) ? '' : '…';   // (12 Kas) noktalamadan sonra "…" yok: "süt.…" çıkıyordu
+    cap = t < tc ? { ...cap, text: ilk + uc, left: tc - t } : { ...cap, text: uc + tx.slice(cut).join(' '), age: t - tc };
   }
   let hd = cap && heads[cap.line.who] && toScreen(cam, heads[cap.line.who]);
   if (hd) hd = hd[1] < -200 || hd[1] > 1250 ? null : [Math.min(1300, Math.max(-220, hd[0])), hd[1]];   // konuşan kadraj dışındaysa kuyruk ona doğru yatar
