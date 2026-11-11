@@ -256,15 +256,18 @@
     "2026-11-11T18:00Z": {
       "episode": "018-kumbara",
       "media": "v/018-kumbara-282e728c.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-09T20:12:35.445Z",
       "postId": "6af229660606df2887a2fa4f",
       "dueAt": "2026-11-11T18:00:00.000Z",
       "yt": {
         "postId": "6af22966398ae91929aca0da",
-        "status": "scheduled",
-        "dueAt": "2026-11-11T18:00:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-11T18:00:00.000Z",
+        "link": "https://www.youtube.com/shorts/KGJqug9zYmw"
+      },
+      "sentAt": "2026-11-11T18:07:10.710Z",
+      "link": "https://www.instagram.com/reel/DfnFWsIFLGi/"
     },
     "2026-11-12T09:30Z": {
       "episode": "019-araba-yarisi",
