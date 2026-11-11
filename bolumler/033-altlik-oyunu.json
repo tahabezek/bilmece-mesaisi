@@ -1,0 +1,296 @@
+{
+ "id": "033-altlik-oyunu",
+ "num": 33,
+ "sira": 20,
+ "bpm": 120,
+ "slug": "altlik-oyunu",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#strateji"
+ ],
+ "card": [
+  "Sırayla altlık konur, binmek yok.",
+  "Yer bulamayan kaybeder. Defne ilk."
+ ],
+ "caption": "Zeka sorusu: Yuvarlak bir masaya iki kişi sırayla aynı boy altlıklar koyuyor. Altlıklar üst üste binemez, masadan taşamaz. Altlığını koyacak yer bulamayan kaybediyor. İlk başlayan her seferinde kazanabilir mi? Nasıl?\n\nÇay ocağında, kafede, evde masada hemen denenir. Cevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Defne, bu masada beni kimse yenemez!"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Sırayla altlık koyacağız. Üst üste binmek, masadan taşmak yok."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Altlığını koyacak yer bulamayan kaybeder. İlk hamle senin."
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Sen kazanırsan çaylar benden."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.5,
+    "text": "Kenarlardan başlarım, size yer kalmaz!"
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Yine boşluk buldum. Son yer benim!"
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Ben sofrayı ortadan kurarım. Sağına ne koyarsam soluna da aynısını koyarım."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.32,
+    "text": "Buldum! İlk altlık tam ortaya gider!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Sonra siz nereye koyarsanız, ben ortanın tam karşısına koyarım."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Siz yer buldukça benim de yerim olur. Son yer benim!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1,
+    "text": "Çaylar benden. Ama altlıkları sen topluyorsun."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu masada hep kazanan arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "knock",
+   "@0.3"
+  ],
+  [
+   "pop",
+   "h1:2"
+  ],
+  [
+   "pop",
+   "h1:4"
+  ],
+  [
+   "pop",
+   "h2a:1+0.05"
+  ],
+  [
+   "buzz",
+   "h2a:4"
+  ],
+  [
+   "swish",
+   "h2a:6-0.15"
+  ],
+  [
+   "buzz",
+   "h2a:7"
+  ],
+  [
+   "swish",
+   "h2b+0.1"
+  ],
+  [
+   "pop",
+   "h2b:2"
+  ],
+  [
+   "swish",
+   "h2b:4"
+  ],
+  [
+   "zip",
+   [
+    "h2b:5",
+    "h2b:7"
+   ]
+  ],
+  [
+   "pop",
+   "h2b:7+0.1"
+  ],
+  [
+   "knock",
+   "d2+0.2"
+  ],
+  [
+   "knock",
+   "d2:1+0.15"
+  ],
+  [
+   "knock",
+   "d2:2"
+  ],
+  [
+   "knock",
+   "d2:4+0.15"
+  ],
+  [
+   "knock",
+   "hd-0.35"
+  ],
+  [
+   "knock",
+   "hd:1"
+  ],
+  [
+   "knock",
+   "hd:2+0.15"
+  ],
+  [
+   "knock",
+   "hd:5"
+  ],
+  [
+   "buzz",
+   "hd:5+0.3"
+  ],
+  [
+   "buzz",
+   "hd:5+0.75"
+  ],
+  [
+   "knock",
+   "n1:2+0.25"
+  ],
+  [
+   "pop",
+   "n1:6"
+  ],
+  [
+   "pop",
+   "n1:7+0.15"
+  ],
+  [
+   "knock",
+   "n1:10"
+  ],
+  [
+   "pop",
+   "d3:4"
+  ],
+  [
+   "knock",
+   "d4:3-0.06"
+  ],
+  [
+   "zip",
+   [
+    "d4:5",
+    "d4:7"
+   ]
+  ],
+  [
+   "knock",
+   "d4:8"
+  ],
+  [
+   "knock",
+   "d5:1"
+  ],
+  [
+   "zip",
+   [
+    "d5:1+0.05",
+    "d5:2+0.05"
+   ]
+  ],
+  [
+   "knock",
+   "d5:2+0.25"
+  ],
+  [
+   "knock",
+   "d5:3+0.15"
+  ],
+  [
+   "zip",
+   [
+    "d5:3+0.2",
+    "d5:5"
+   ]
+  ],
+  [
+   "knock",
+   "d5:7"
+  ],
+  [
+   "ding",
+   "d5:7+0.05"
+  ],
+  [
+   "buzz",
+   "d5:7+0.52"
+  ],
+  [
+   "womp",
+   "d5:7+1.75"
+  ],
+  [
+   "swish",
+   "h4:5+0.05"
+  ],
+  [
+   "pop",
+   "h4:5+0.6"
+  ],
+  [
+   "pop",
+   "d6"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true
+}

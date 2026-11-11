@@ -23,7 +23,7 @@ async function page() {
   const p = await browser.newPage();
   await p.setViewport({ width: W, height: H, deviceScaleFactor: 1 });
   p.on('pageerror', e => console.error('sayfa hatası:', e.message));
-  await p.goto(url); await p.waitForFunction('window.__ready === true', { timeout: 60000 });
+  await p.goto(url); await p.waitForFunction('window.__ready === true', { timeout: 60000, polling: 250 });   // (12 Kas) rAF yoklaması arka sekmede takılıyordu
   return p;
 }
 const grab = (p, t, type) => p.evaluate((t, type) => { window.renderFrame(t); return document.getElementById('c').toDataURL(type, 0.93).split(',')[1]; }, t, type);
