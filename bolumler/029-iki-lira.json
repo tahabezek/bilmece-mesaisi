@@ -1,0 +1,215 @@
+{
+ "id": "029-iki-lira",
+ "num": 29,
+ "sira": 17,
+ "bpm": 120,
+ "slug": "iki-bir-lira",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#matematik"
+ ],
+ "card": [
+  "1 lira, öbürünün çevresinde döner.",
+  "Kendi etrafında kaç tur atar?"
+ ],
+ "caption": "Zeka sorusu: İki aynı 1 lira var. Biri sabit duruyor, öbürü kaymadan onun çevresinde bir tur yuvarlanıyor. Kendi etrafında kaç tur döner?\n\n1982'de ABD'deki üniversite sınavında bunun benzeri bir soruda, soruyu hazırlayanlar bile yanıldı. Cebindeki iki bozuk parayla hemen deneyebilirsin.\n\nCevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Böyle bir soruda sınavı hazırlayanlar bile yanıldı!"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Bu lira sabit. Öbürü kaymadan çevresinde bir tur dolaşacak."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Kendi etrafında kaç tur atar?"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Bilirsen bu lira senin."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.6,
+    "text": "Bir tur! Bakın, düz yolda tam bir tur."
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Düz yolda doğru. Ama bu yol düz değil, yuvarlak."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Masanın çevresinde bir tur attım, kendi etrafımda da döndüm."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Buldum! İki tur!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "Yuvarlanırken bir tur döner."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.3,
+    "text": "Çevresinde dolaştığı için bir tur daha döner!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1.0,
+    "text": "Al bakalım. Bu lira iki tur attı, yorulmuştur."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.8,
+    "text": "Bunu cebinde bozuk para olan arkadaşına gönder, denesin!"
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "knock",
+   "@0.3"
+  ],
+  [
+   "pop",
+   "h2a:2"
+  ],
+  [
+   "pop",
+   "h2a:3"
+  ],
+  [
+   "zip",
+   [
+    "h2a:5-0.05",
+    "h2a:8+0.5"
+   ]
+  ],
+  [
+   "pop",
+   "h2b:2"
+  ],
+  [
+   "knock",
+   "h3:1+0.05"
+  ],
+  [
+   "knock",
+   "h3:2+0.05"
+  ],
+  [
+   "swish",
+   "d2-0.05"
+  ],
+  [
+   "zip",
+   [
+    "d2:3-0.08",
+    "d2:7+0.14"
+   ]
+  ],
+  [
+   "pop",
+   "d2:7+0.14"
+  ],
+  [
+   "pop",
+   "hd:2"
+  ],
+  [
+   "swish",
+   "hd:3+0.3"
+  ],
+  [
+   "swish",
+   "hd:7"
+  ],
+  [
+   "zip",
+   [
+    "hd:8",
+    "hd:8+0.46"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "d4",
+    "d4>+0.05"
+   ]
+  ],
+  [
+   "pop",
+   "d4>+0.07"
+  ],
+  [
+   "zip",
+   [
+    "d5+0.1",
+    "d5:6+0.3"
+   ]
+  ],
+  [
+   "ding",
+   "d5:6+0.32"
+  ],
+  [
+   "swish",
+   "h4+0.2"
+  ],
+  [
+   "womp",
+   "h4:7"
+  ],
+  [
+   "pop",
+   "d6"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true
+}
