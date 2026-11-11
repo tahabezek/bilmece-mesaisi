@@ -203,5 +203,7 @@
   ]
  ],
  "cdShare": "Bunu bir arkadaşına sor!",
- "v4": true
+ "v4": true,
+ "disabled": "2026-11-11 ELENDİ",
+ "disabledNote": "2026-11-11 ELENDİ: kolay ve klasik (sözlükte Cuma). Buffer gönderisi silindi. Kullanıcı: bilinen bilmeceler kötü izlenim yaratıyor."
 }

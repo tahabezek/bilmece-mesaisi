@@ -238,5 +238,7 @@
   ]
  ],
  "cdShare": "Bunu bir arkadaşına sor!",
- "v4": true
+ "v4": true,
+ "disabled": "2026-11-11 ELENDİ",
+ "disabledNote": "2026-11-11 ELENDİ: bilinen klasik (at yarışı bilmecesi). Buffer gönderisi silindi. Kullanıcı: bilinen bilmeceler kötü izlenim yaratıyor."
 }

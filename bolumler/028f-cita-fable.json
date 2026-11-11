@@ -1,10 +1,9 @@
 {
  "id": "028f-cita-fable",
  "num": 128,
- "sira": 25,
+ "sira": 26,
  "bpm": 120,
  "slug": "cita-ve-kargo-fable",
- "disabled": "Karşılaştırma sürümü (028 ile aynı bilmece, Fable 5.2 yönetimi). Yayın kuyruğuna girmez.",
  "coverAt": 0,
  "hashtags": [
   "#bilmece",
