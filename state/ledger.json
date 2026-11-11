@@ -270,18 +270,17 @@
       "link": "https://www.instagram.com/reel/DfnFWsIFLGi/"
     },
     "2026-11-12T18:00Z": {
-      "episode": "021-cuma-sali",
-      "media": "v/021-cuma-sali-4731499c.mp4",
-      "status": "skipped",
-      "at": "2026-11-10T18:50:38.365Z",
-      "postId": "6af367c101635447f9962343",
+      "episode": "029-iki-lira",
+      "media": "v/029-iki-lira-08983091.mp4",
+      "status": "scheduled",
+      "at": "2026-11-11T19:46:40.103Z",
+      "postId": "6af4c664cf36c484ae9368cd",
       "dueAt": "2026-11-12T18:00:00.000Z",
       "yt": {
-        "postId": "6af367c257fc125cf87e81f6",
-        "status": "skipped",
+        "postId": "6af4c6652f8776bfa37a0d63",
+        "status": "scheduled",
         "dueAt": "2026-11-12T18:00:00.000Z"
-      },
-      "note": "2026-11-11 elle silindi: bilinen klasik, kuyruktan çekildi"
+      }
     },
     "2026-11-12T09:30Z#eski": {
       "episode": "028f-cita-fable",
