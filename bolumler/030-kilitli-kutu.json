@@ -1,0 +1,207 @@
+{
+ "id": "030-kilitli-kutu",
+ "num": 30,
+ "sira": 19,
+ "bpm": 120,
+ "slug": "kilitli-kutu",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#bulmaca",
+  "#mantık"
+ ],
+ "card": [
+  "Kerem açık kutuyu karıştırır.",
+  "Liste Necmi'ye nasıl gider?"
+ ],
+ "caption": "Zeka sorusu: Zam listesi kutuyla depodaki Necmi'ye gidecek ama kutuyu meraklı Kerem taşıyor. Kutu açıksa listeyi okur, yola çıkan anahtarın kopyasını çıkarır, kilitli kutuyu açamaz. Hikmet Bey'in de Necmi'nin de kendi kilidi ve anahtarı var; kutunun kapağında iki kilit halkası var. Liste okunmadan nasıl gider?\n\nİnternette şifreli mesajlaşmanın arkasındaki fikirlerden biri de buna benziyor. Cevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Zam listesi depoya gidecek ama postacımız meraklı Kerem!"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Açık kutudaki listeyi okur, kilitli kutuyu açamaz. Giden anahtarın kopyasını çıkarır."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Benim de Necmi'nin de kendi kilidi var. Liste nasıl gider?",
+    "tts": "Benim de Necminin de kendi kilidi var. Liste nasıl gider?"
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.5,
+    "text": "Anahtarı ayrı bir zarfla gönderin!"
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Zarfı da Kerem götürür. Bakın, kopyasını çıkardı bile!"
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Dolaba iki kilit taktım. Biri benim, biri bekçinin."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.32,
+    "text": "Buldum! Kutu üç kez yol alacak!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Siz kilitleyin. Necmi kendi kilidini de takıp geri yollasın."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Siz kilidinizi sökün, kutu yine gitsin. Necmi de kendi kilidini açar."
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 0.9,
+    "text": "Kerem üç kez taşıdı, bir kez bile okuyamadı."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.6,
+    "text": "Bunu meraklı arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h2b>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "knock",
+   "@0.58"
+  ],
+  [
+   "knock",
+   "h2a:4-0.12"
+  ],
+  [
+   "stamp",
+   "h2a:5"
+  ],
+  [
+   "knock",
+   "h2a:6+0.02"
+  ],
+  [
+   "pop",
+   "h2a:9"
+  ],
+  [
+   "pop",
+   "h2b:0+0.22"
+  ],
+  [
+   "swish",
+   "d2+0.3"
+  ],
+  [
+   "pop",
+   "d2:3+0.16"
+  ],
+  [
+   "knock",
+   "hd+1.05"
+  ],
+  [
+   "stamp",
+   "hd:5+0.18"
+  ],
+  [
+   "buzz",
+   "hd:5+0.36"
+  ],
+  [
+   "stamp",
+   "n1:3"
+  ],
+  [
+   "pop",
+   "n1:5"
+  ],
+  [
+   "pop",
+   "n1:7"
+  ],
+  [
+   "stamp",
+   "d4:1+0.16"
+  ],
+  [
+   "knock",
+   "d4:3+0.64"
+  ],
+  [
+   "stamp",
+   "d4:6+0.05"
+  ],
+  [
+   "knock",
+   "d5+0.54"
+  ],
+  [
+   "pop",
+   "d5:2+0.05"
+  ],
+  [
+   "knock",
+   "d5:6+0.34"
+  ],
+  [
+   "pop",
+   "d5:9+0.06"
+  ],
+  [
+   "swish",
+   "d5:10+0.12"
+  ],
+  [
+   "ding",
+   "d5:10+0.58"
+  ],
+  [
+   "womp",
+   "h4:7"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true
+}
