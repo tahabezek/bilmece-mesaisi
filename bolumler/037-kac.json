@@ -1,0 +1,219 @@
+{
+ "id": "037-kac",
+ "num": 37,
+ "sira": 25,
+ "bpm": 120,
+ "slug": "kac",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#türkçe",
+  "#kelimeoyunu",
+  "#akıloyunları"
+ ],
+ "card": [
+  "Necmi tek kelime sordu.",
+  "Hikmet kaçtı. Soru neydi?"
+ ],
+ "caption": "Zeka sorusu: Necmi, Hikmet Bey'e tek kelimelik, gerçek bir soru sordu. Hikmet Bey cevap vermek yerine dediğini yaptı ve odadan fırladı. Necmi ne sordu?\n\nSadece Türkçede olur. Cevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Dün Necmi bana tek kelime sordu, ben odadan kaçtım!"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Gerçek bir soruydu. Ama ben cevap vermedim, dediğini yaptım."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Necmi bana ne sordu?"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Bilirsen bu baklava senin."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.5,
+    "text": "Zam mı diye sordu, siz de kaçtınız!"
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Ona cevap verilir. Ben söyleneni yaptım!"
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Ben çay verirken herkese hep tek kelimeyle sorarım."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.32,
+    "text": "Buldum! \"Kaç?\" diye sordu!",
+    "tts": "Buldum! Kaç diye sordu!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Necmi şekeri sordu: \"Kaç?\" Ama \"kaç\" aynı zamanda bir emir.",
+    "tts": "Necmi şekeri sordu. Kaç? Ama kaç, aynı zamanda bir emir."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Siz de dediğini yaptınız, kaçtınız!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1,
+    "text": "Ne yapayım, baklavayı ben yemiştim."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu her sözü emir sanan arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "knock",
+   "@0.32"
+  ],
+  [
+   "swish",
+   "h2a+0.45"
+  ],
+  [
+   "knock",
+   "h2a:8-0.02"
+  ],
+  [
+   "zip",
+   [
+    "h3+0.25",
+    "h3+1.15"
+   ]
+  ],
+  [
+   "knock",
+   "h3:3"
+  ],
+  [
+   "pop",
+   "d2"
+  ],
+  [
+   "swish",
+   "hd:2"
+  ],
+  [
+   "buzz",
+   "hd:2+0.32"
+  ],
+  [
+   "knock",
+   "hd:5"
+  ],
+  [
+   "zip",
+   [
+    "n1-4.75",
+    "n1-4.45"
+   ]
+  ],
+  [
+   "pop",
+   "n1-3.9"
+  ],
+  [
+   "knock",
+   "n1-2.23"
+  ],
+  [
+   "knock",
+   "n1+0.34"
+  ],
+  [
+   "pop",
+   "n1:5+0.05"
+  ],
+  [
+   "swish",
+   "d4-0.4"
+  ],
+  [
+   "pop",
+   "d4:3-0.04"
+  ],
+  [
+   "swish",
+   "d4:9-0.02"
+  ],
+  [
+   "stamp",
+   "d4:9+0.26"
+  ],
+  [
+   "zip",
+   [
+    "d5+0.35",
+    "d5+1.05"
+   ]
+  ],
+  [
+   "knock",
+   "d5:4+0.73"
+  ],
+  [
+   "swish",
+   "h4:3+0.15"
+  ],
+  [
+   "womp",
+   "h4:4+0.25"
+  ],
+  [
+   "pop",
+   "d6"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true
+}
