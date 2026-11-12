@@ -272,15 +272,18 @@
     "2026-11-12T18:00Z": {
       "episode": "029-iki-lira",
       "media": "v/029-iki-lira-08983091.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-11T19:46:40.103Z",
       "postId": "6af4c664cf36c484ae9368cd",
       "dueAt": "2026-11-12T18:00:00.000Z",
       "yt": {
         "postId": "6af4c6652f8776bfa37a0d63",
-        "status": "scheduled",
-        "dueAt": "2026-11-12T18:00:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-12T18:00:00.000Z",
+        "link": "https://www.youtube.com/shorts/dQtX-DV9_cs"
+      },
+      "sentAt": "2026-11-12T18:05:27.264Z",
+      "link": "https://www.instagram.com/reel/Dfpp-xvnH8i/"
     },
     "2026-11-12T09:30Z#eski": {
       "episode": "028f-cita-fable",
@@ -349,6 +352,19 @@
         "postId": "6af5d6ee99bda5b01435891f",
         "status": "scheduled",
         "dueAt": "2026-11-14T09:30:00.000Z"
+      }
+    },
+    "2026-11-14T18:00Z": {
+      "episode": "034-cay-sut",
+      "media": "v/034-cay-sut-5412f18e.mp4",
+      "status": "scheduled",
+      "at": "2026-11-12T19:08:11.652Z",
+      "postId": "6af60edc11a42cfbe89111af",
+      "dueAt": "2026-11-14T18:00:00.000Z",
+      "yt": {
+        "postId": "6af60eddd647bbafc5ac61bf",
+        "status": "scheduled",
+        "dueAt": "2026-11-14T18:00:00.000Z"
       }
     }
   }
