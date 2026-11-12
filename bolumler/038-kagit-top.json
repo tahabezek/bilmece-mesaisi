@@ -1,0 +1,366 @@
+{
+ "id": "038-kagit-top",
+ "num": 38,
+ "sira": 26,
+ "bpm": 120,
+ "slug": "kagit-top",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#mantık",
+  "#matematik"
+ ],
+ "card": [
+  "İki gün de Defne daha isabetli.",
+  "Toplamda Necmi önde. Nasıl?"
+ ],
+ "caption": "Zeka sorusu: Defne ile Necmi iki gün çöp kutusuna kâğıt top attı. Pazartesi de Salı da Defne'nin isabet oranı Necmi'ninkinden yüksekti. İkisi de toplam 10 atış yaptı ama toplamda Necmi 6, Defne 4 kez soktu. Bu nasıl olur?\n\nKimse hile yapmadı, hesap da doğru. Cevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Defne iki gün de Necmi'yi yendi, ama toplamda kaybetti!",
+    "tts": "Defne iki gün de Necmiyi yendi, ama toplamda kaybetti!"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Kutu Pazartesi kapının yanındaydı, Salı masanın dibindeydi."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "İkisi de on atış yaptı. Necmi altı, Defne dört soktu. Bu nasıl olur?"
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.5,
+    "text": "Necmi yanlış saymıştır, hesapta hata var!"
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Hesap doğru. Senin dört topun girdi, Necmi'nin altı.",
+    "tts": "Hesap doğru. Senin dört topun girdi, Necminin altı."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Ben toplarımın çoğunu kutu masama gelince attım."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.32,
+    "text": "Buldum! Atışlar günlere eşit dağılmadı!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Ben sekiz topu uzak kutuya attım, Necmi sekizini yakın kutuya attı."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Her gün ben daha iyiyim, ama toplamda zor gün ağır bastı."
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1,
+    "text": "Bundan sonra kutu kapının dışında duracak!"
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu ortalamaya güvenen arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h2b>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "knock",
+   "@0.30"
+  ],
+  [
+   "knock",
+   "@5.02"
+  ],
+  [
+   "knock",
+   "@5.23"
+  ],
+  [
+   "pop",
+   "@5.44"
+  ],
+  [
+   "knock",
+   "@5.65"
+  ],
+  [
+   "knock",
+   "@5.86"
+  ],
+  [
+   "knock",
+   "@6.07"
+  ],
+  [
+   "pop",
+   "@6.28"
+  ],
+  [
+   "knock",
+   "@6.49"
+  ],
+  [
+   "knock",
+   "@5.19"
+  ],
+  [
+   "knock",
+   "@5.91"
+  ],
+  [
+   "pop",
+   "@8.03"
+  ],
+  [
+   "pop",
+   "@8.24"
+  ],
+  [
+   "knock",
+   "@8.45"
+  ],
+  [
+   "pop",
+   "@8.66"
+  ],
+  [
+   "pop",
+   "@8.87"
+  ],
+  [
+   "knock",
+   "@9.08"
+  ],
+  [
+   "pop",
+   "@9.29"
+  ],
+  [
+   "pop",
+   "@9.50"
+  ],
+  [
+   "pop",
+   "@8.30"
+  ],
+  [
+   "pop",
+   "@9.00"
+  ],
+  [
+   "zip",
+   [
+    "@6.35",
+    "@7.55"
+   ]
+  ],
+  [
+   "pop",
+   "h2b:6-0.04"
+  ],
+  [
+   "pop",
+   "h2b:8-0.04"
+  ],
+  [
+   "knock",
+   "@17.45"
+  ],
+  [
+   "knock",
+   "@17.71"
+  ],
+  [
+   "knock",
+   "@18.09"
+  ],
+  [
+   "knock",
+   "@18.41"
+  ],
+  [
+   "knock",
+   "@19.21"
+  ],
+  [
+   "knock",
+   "@19.41"
+  ],
+  [
+   "knock",
+   "@19.62"
+  ],
+  [
+   "knock",
+   "@19.83"
+  ],
+  [
+   "knock",
+   "@20.04"
+  ],
+  [
+   "knock",
+   "@20.25"
+  ],
+  [
+   "swish",
+   "@22.52"
+  ],
+  [
+   "buzz",
+   "@23.14"
+  ],
+  [
+   "knock",
+   "@25.21"
+  ],
+  [
+   "ding",
+   "@29.05"
+  ],
+  [
+   "zip",
+   [
+    "@30.92",
+    "@32.27"
+   ]
+  ],
+  [
+   "pop",
+   "@32.69"
+  ],
+  [
+   "pop",
+   "@32.89"
+  ],
+  [
+   "pop",
+   "@33.08"
+  ],
+  [
+   "pop",
+   "@33.27"
+  ],
+  [
+   "pop",
+   "@33.47"
+  ],
+  [
+   "pop",
+   "@33.66"
+  ],
+  [
+   "pop",
+   "@33.86"
+  ],
+  [
+   "pop",
+   "@34.05"
+  ],
+  [
+   "pop",
+   "@34.57"
+  ],
+  [
+   "pop",
+   "@34.77"
+  ],
+  [
+   "pop",
+   "@34.96"
+  ],
+  [
+   "pop",
+   "@35.15"
+  ],
+  [
+   "pop",
+   "@35.35"
+  ],
+  [
+   "pop",
+   "@35.54"
+  ],
+  [
+   "pop",
+   "@35.74"
+  ],
+  [
+   "pop",
+   "@35.93"
+  ],
+  [
+   "pop",
+   "d5-0.04"
+  ],
+  [
+   "pop",
+   "d5:1-0.04"
+  ],
+  [
+   "stamp",
+   "d5:9-0.02"
+  ],
+  [
+   "swish",
+   "@40.92"
+  ],
+  [
+   "knock",
+   "@42.72"
+  ],
+  [
+   "knock",
+   "@43.34"
+  ],
+  [
+   "pop",
+   "d6"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true
+}
