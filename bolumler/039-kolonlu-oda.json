@@ -1,0 +1,244 @@
+{
+ "id": "039-kolonlu-oda",
+ "num": 39,
+ "sira": 27,
+ "bpm": 120,
+ "slug": "kolonlu-oda",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#mantık",
+  "#matematik"
+ ],
+ "card": [
+  "8×8 karo, karşı köşelerde kolon.",
+  "31 halı (2 karoluk) sığar mı?"
+ ],
+ "caption": "Zeka sorusu: Bir oda 8x8 karodan oluşuyor. Karşılıklı iki köşe karoda kolon var, geriye 62 karo kalıyor. Her biri yan yana iki karoyu kaplayan 31 halıyla bu zemini kesmeden kaplayabilir misin?\n\n62 bölü 2, 31 eder. Ama... Cevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Necmi, bu zemini otuz bir halıyla kaplayacaksın!"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Oda sekize sekiz karo, karşı köşelerde kolon var."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Her halı yan yana iki karo kaplar, kesmek yok. Sığar mı?"
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.5,
+    "text": "Altmış iki karo, otuz bir halı. Hepsi yerleşir!"
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Necmi denedi, sonunda iki ayrı karo kaldı."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Lekeler belli olmasın diye zemini dama gibi boyuyorum."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.32,
+    "text": "Buldum! Asla sığmaz!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Her bir halı bir koyu, bir açık karo kaplar. İki kolon da koyu karoda."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Otuz koyu, otuz iki açık kaldı. İki açık karo hep boşta kalır!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1,
+    "text": "Necmi, kolonlardan birini taşıyalım."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu her şeyi sığdıran arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h2b>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "knock",
+   "@0.30"
+  ],
+  [
+   "knock",
+   "h1:6+0.06"
+  ],
+  [
+   "knock",
+   "h2a:4-0.02"
+  ],
+  [
+   "knock",
+   "h2a:5-0.02"
+  ],
+  [
+   "pop",
+   "h2a:3-0.04"
+  ],
+  [
+   "pop",
+   "h2a:6-0.04"
+  ],
+  [
+   "swish",
+   "h2b:1-0.08"
+  ],
+  [
+   "pop",
+   "h2b:4-0.04"
+  ],
+  [
+   "buzz",
+   "h2b:7+0.28"
+  ],
+  [
+   "pop",
+   "d2:3-0.04"
+  ],
+  [
+   "swish",
+   "d2:3+0.1"
+  ],
+  [
+   "zip",
+   [
+    "hd+0.06",
+    "hd:3-0.16"
+   ]
+  ],
+  [
+   "buzz",
+   "hd:4+0.41"
+  ],
+  [
+   "swish",
+   "n1-4.23"
+  ],
+  [
+   "swish",
+   "n1-3.03"
+  ],
+  [
+   "knock",
+   "n1-2.27"
+  ],
+  [
+   "knock",
+   "n1-1.82"
+  ],
+  [
+   "swish",
+   "n1+0.02"
+  ],
+  [
+   "swish",
+   "n1:4-0.03"
+  ],
+  [
+   "zip",
+   [
+    "n1:4+0.31",
+    "d3-0.62"
+   ]
+  ],
+  [
+   "swish",
+   "d3:2-0.01"
+  ],
+  [
+   "knock",
+   "d4:2-0.07"
+  ],
+  [
+   "pop",
+   "d4:4-0.04"
+  ],
+  [
+   "pop",
+   "d4:6-0.04"
+  ],
+  [
+   "swish",
+   "d4:8+0.1"
+  ],
+  [
+   "ding",
+   "d4:10-0.04"
+  ],
+  [
+   "pop",
+   "d5-0.04"
+  ],
+  [
+   "pop",
+   "d5:4-0.04"
+  ],
+  [
+   "knock",
+   "d5:6-0.1"
+  ],
+  [
+   "buzz",
+   "d5:10-0.04"
+  ],
+  [
+   "womp",
+   "h4:3-0.1"
+  ],
+  [
+   "pop",
+   "d6"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true
+}
