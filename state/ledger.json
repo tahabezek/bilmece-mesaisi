@@ -299,15 +299,18 @@
     "2026-11-12T09:30Z": {
       "episode": "028f-cita-fable",
       "media": "v/028f-cita-fable-34170cb7.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-11T19:21:33.073Z",
       "postId": "6af4c0770e1aab0352b2a853",
       "dueAt": "2026-11-12T09:30:00.000Z",
       "yt": {
         "postId": "6af4c0770113073f857202a9",
-        "status": "scheduled",
-        "dueAt": "2026-11-12T09:30:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-12T09:30:00.000Z",
+        "link": "https://www.youtube.com/shorts/tMNZ7Ypcfp4"
+      },
+      "sentAt": "2026-11-12T09:31:01.149Z",
+      "link": "https://www.instagram.com/reel/DfovPCsAdLu/"
     },
     "2026-11-13T09:30Z": {
       "episode": "031-kitap-kurdu",
@@ -333,6 +336,19 @@
         "postId": "6af4df492b84624b7152f0fc",
         "status": "scheduled",
         "dueAt": "2026-11-13T18:00:00.000Z"
+      }
+    },
+    "2026-11-14T09:30Z": {
+      "episode": "033-altlik-oyunu",
+      "media": "v/033-altlik-oyunu-22abc641.mp4",
+      "status": "scheduled",
+      "at": "2026-11-12T15:07:47.723Z",
+      "postId": "6af5d6ed31d8b91b5459b761",
+      "dueAt": "2026-11-14T09:30:00.000Z",
+      "yt": {
+        "postId": "6af5d6ee99bda5b01435891f",
+        "status": "scheduled",
+        "dueAt": "2026-11-14T09:30:00.000Z"
       }
     }
   }
