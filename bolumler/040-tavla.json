@@ -1,0 +1,336 @@
+{
+ "id": "040-tavla",
+ "num": 40,
+ "sira": 28,
+ "bpm": 120,
+ "slug": "tavla-turnuvasi",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#tavla",
+  "#mantık",
+  "#matematik"
+ ],
+ "card": [
+  "37 kişi, eleme usulü tavla.",
+  "Şampiyona kadar kaç maç oynanır?"
+ ],
+ "caption": "Zeka sorusu: Ofiste 37 kişilik, eleme usulü bir tavla turnuvası var. Yenilen elenir, beraberlik yok. Bir turda kişi sayısı tek kalırsa biri maç yapmadan tur atlıyor. Şampiyon çıkana kadar toplam kaç maç oynanır?\n\nTurları tek tek hesaplamaya kalkan kayboluyor. Cevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Ofiste otuz yedi kişilik tavla turnuvası başlıyor!"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Yenilen elenir, beraberlik yok. Bir turda kişi sayısı tek kalırsa biri maç yapmadan tur atlar."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Şampiyona kadar kaç maç oynanır?"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Bilirsen ilk zarları sen atarsın."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.5,
+    "text": "On sekiz, dokuz, beş... Durun, tur atlayanlar da var!"
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Kalemin tur atlayanlarda durdu!"
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Her maçtan sonra elenen birine teselli çayı götürüyorum."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.32,
+    "text": "Buldum! Otuz altı maç!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Her maçta tam bir kişi elenir. Şampiyon dışında herkes bir kez elenecek."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Otuz altı kişi elenecekse otuz altı maç oynanır!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1,
+    "text": "Ben ilk maçta elenmiştim, çayım soğudu bile."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu turnuva düzenleyen arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "knock",
+   "@0.30"
+  ],
+  [
+   "pop",
+   "@1.60"
+  ],
+  [
+   "pop",
+   "@3.00"
+  ],
+  [
+   "swish",
+   "@3.67"
+  ],
+  [
+   "pop",
+   "h2a:13-0.04"
+  ],
+  [
+   "swish",
+   "h2b-0.05"
+  ],
+  [
+   "zip",
+   [
+    "@12.84",
+    "@13.02"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "@13.18",
+    "@13.36"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "@13.53",
+    "@13.71"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "@13.87",
+    "@14.05"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "@14.22",
+    "@14.40"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "@14.56",
+    "@14.74"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "@14.90",
+    "@15.08"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "@15.87",
+    "@16.02"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "@16.48",
+    "@16.63"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "@17.07",
+    "@17.22"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "@17.47",
+    "@17.62"
+   ]
+  ],
+  [
+   "buzz",
+   "@17.93"
+  ],
+  [
+   "pop",
+   "@19.59"
+  ],
+  [
+   "pop",
+   "@19.95"
+  ],
+  [
+   "pop",
+   "@20.35"
+  ],
+  [
+   "pop",
+   "@20.73"
+  ],
+  [
+   "zip",
+   [
+    "@22.69",
+    "@23.99"
+   ]
+  ],
+  [
+   "knock",
+   "@23.14"
+  ],
+  [
+   "knock",
+   "@29.34"
+  ],
+  [
+   "knock",
+   "@34.89"
+  ],
+  [
+   "pop",
+   "@35.17"
+  ],
+  [
+   "pop",
+   "@35.18"
+  ],
+  [
+   "pop",
+   "@35.22"
+  ],
+  [
+   "pop",
+   "@35.28"
+  ],
+  [
+   "pop",
+   "@35.38"
+  ],
+  [
+   "pop",
+   "@35.53"
+  ],
+  [
+   "pop",
+   "@35.76"
+  ],
+  [
+   "pop",
+   "@36.09"
+  ],
+  [
+   "pop",
+   "@36.51"
+  ],
+  [
+   "pop",
+   "@36.89"
+  ],
+  [
+   "pop",
+   "@37.17"
+  ],
+  [
+   "pop",
+   "@37.36"
+  ],
+  [
+   "pop",
+   "@37.48"
+  ],
+  [
+   "pop",
+   "@37.56"
+  ],
+  [
+   "pop",
+   "@37.61"
+  ],
+  [
+   "pop",
+   "@37.63"
+  ],
+  [
+   "stamp",
+   "@37.64"
+  ],
+  [
+   "ding",
+   "@39.94"
+  ],
+  [
+   "pop",
+   "@39.65"
+  ],
+  [
+   "pop",
+   "d6"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true
+}
