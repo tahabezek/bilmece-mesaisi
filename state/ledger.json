@@ -318,15 +318,18 @@
     "2026-11-13T09:30Z": {
       "episode": "031-kitap-kurdu",
       "media": "v/031-kitap-kurdu-b9bb1425.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-11T20:02:11.560Z",
       "postId": "6af4ca08b459c6001d4b6f53",
       "dueAt": "2026-11-13T09:30:00.000Z",
       "yt": {
         "postId": "6af4ca09b459c6001d4b6fa4",
-        "status": "scheduled",
-        "dueAt": "2026-11-13T09:30:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-13T09:30:00.000Z",
+        "link": "https://www.youtube.com/shorts/HvwPamKVops"
+      },
+      "sentAt": "2026-11-13T09:31:38.179Z",
+      "link": "https://www.instagram.com/reel/DfrUF7cGXSV/"
     },
     "2026-11-13T18:00Z": {
       "episode": "030-kilitli-kutu",
@@ -365,6 +368,19 @@
         "postId": "6af60eddd647bbafc5ac61bf",
         "status": "scheduled",
         "dueAt": "2026-11-14T18:00:00.000Z"
+      }
+    },
+    "2026-11-15T09:30Z": {
+      "episode": "032-iki-gun",
+      "media": "v/032-iki-gun-5153f803.mp4",
+      "status": "scheduled",
+      "at": "2026-11-13T14:31:03.922Z",
+      "postId": "6af71f684f78da1d8baa67de",
+      "dueAt": "2026-11-15T09:30:00.000Z",
+      "yt": {
+        "postId": "6af71f6949bae9df2d100e96",
+        "status": "scheduled",
+        "dueAt": "2026-11-15T09:30:00.000Z"
       }
     }
   }
