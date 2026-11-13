@@ -334,15 +334,18 @@
     "2026-11-13T18:00Z": {
       "episode": "030-kilitli-kutu",
       "media": "v/030-kilitli-kutu-56273006.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-11T21:32:45.866Z",
       "postId": "6af4df482b84624b7152f098",
       "dueAt": "2026-11-13T18:00:00.000Z",
       "yt": {
         "postId": "6af4df492b84624b7152f0fc",
-        "status": "scheduled",
-        "dueAt": "2026-11-13T18:00:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-13T18:00:00.000Z",
+        "link": "https://www.youtube.com/shorts/Jtl7-0uxgl0"
+      },
+      "sentAt": "2026-11-13T18:05:37.612Z",
+      "link": "https://www.instagram.com/reel/DfsO1Z_gDvQ/"
     },
     "2026-11-14T09:30Z": {
       "episode": "033-altlik-oyunu",
@@ -381,6 +384,19 @@
         "postId": "6af71f6949bae9df2d100e96",
         "status": "scheduled",
         "dueAt": "2026-11-15T09:30:00.000Z"
+      }
+    },
+    "2026-11-15T18:00Z": {
+      "episode": "035-kasar",
+      "media": "v/035-kasar-bf589917.mp4",
+      "status": "scheduled",
+      "at": "2026-11-13T18:46:06.004Z",
+      "postId": "6af75b2feea5d89b92e09921",
+      "dueAt": "2026-11-15T18:00:00.000Z",
+      "yt": {
+        "postId": "6af75b304b28296eb10a6b0e",
+        "status": "scheduled",
+        "dueAt": "2026-11-15T18:00:00.000Z"
       }
     }
   }
