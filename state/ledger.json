@@ -350,15 +350,18 @@
     "2026-11-14T09:30Z": {
       "episode": "033-altlik-oyunu",
       "media": "v/033-altlik-oyunu-22abc641.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-12T15:07:47.723Z",
       "postId": "6af5d6ed31d8b91b5459b761",
       "dueAt": "2026-11-14T09:30:00.000Z",
       "yt": {
         "postId": "6af5d6ee99bda5b01435891f",
-        "status": "scheduled",
-        "dueAt": "2026-11-14T09:30:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-14T09:30:00.000Z",
+        "link": "https://www.youtube.com/shorts/9smRbMARpD8"
+      },
+      "sentAt": "2026-11-14T09:31:05.342Z",
+      "link": "https://www.instagram.com/reel/Dft40OCCQ3-/"
     },
     "2026-11-14T18:00Z": {
       "episode": "034-cay-sut",
@@ -397,6 +400,19 @@
         "postId": "6af75b304b28296eb10a6b0e",
         "status": "scheduled",
         "dueAt": "2026-11-15T18:00:00.000Z"
+      }
+    },
+    "2026-11-16T09:30Z": {
+      "episode": "036-yalancilar",
+      "media": "v/036-yalancilar-47ace859.mp4",
+      "status": "scheduled",
+      "at": "2026-11-14T13:27:58.626Z",
+      "postId": "6af86211b9a106584c489cd1",
+      "dueAt": "2026-11-16T09:30:00.000Z",
+      "yt": {
+        "postId": "6af86211e86a5789a6ac1b21",
+        "status": "scheduled",
+        "dueAt": "2026-11-16T09:30:00.000Z"
       }
     }
   }
