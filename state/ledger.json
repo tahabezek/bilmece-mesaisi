@@ -366,15 +366,18 @@
     "2026-11-14T18:00Z": {
       "episode": "034-cay-sut",
       "media": "v/034-cay-sut-5412f18e.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-12T19:08:11.652Z",
       "postId": "6af60edc11a42cfbe89111af",
       "dueAt": "2026-11-14T18:00:00.000Z",
       "yt": {
         "postId": "6af60eddd647bbafc5ac61bf",
-        "status": "scheduled",
-        "dueAt": "2026-11-14T18:00:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-14T18:00:00.000Z",
+        "link": "https://www.youtube.com/shorts/C0lwiRHFo5Y"
+      },
+      "sentAt": "2026-11-14T18:04:18.360Z",
+      "link": "https://www.instagram.com/reel/DfuzbN4kYAO/"
     },
     "2026-11-15T09:30Z": {
       "episode": "032-iki-gun",
@@ -413,6 +416,19 @@
         "postId": "6af86211e86a5789a6ac1b21",
         "status": "scheduled",
         "dueAt": "2026-11-16T09:30:00.000Z"
+      }
+    },
+    "2026-11-16T18:00Z": {
+      "episode": "037-kac",
+      "media": "v/037-kac-bc6aaaf4.mp4",
+      "status": "scheduled",
+      "at": "2026-11-14T21:26:32.476Z",
+      "postId": "6af8d23be86a5789a6d1fe74",
+      "dueAt": "2026-11-16T18:00:00.000Z",
+      "yt": {
+        "postId": "6af8d23bb9a106584c6e5057",
+        "status": "scheduled",
+        "dueAt": "2026-11-16T18:00:00.000Z"
       }
     }
   }
