@@ -382,15 +382,18 @@
     "2026-11-15T09:30Z": {
       "episode": "032-iki-gun",
       "media": "v/032-iki-gun-5153f803.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-13T14:31:03.922Z",
       "postId": "6af71f684f78da1d8baa67de",
       "dueAt": "2026-11-15T09:30:00.000Z",
       "yt": {
         "postId": "6af71f6949bae9df2d100e96",
-        "status": "scheduled",
-        "dueAt": "2026-11-15T09:30:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-15T09:30:00.000Z",
+        "link": "https://www.youtube.com/shorts/09u-bS6GDyg"
+      },
+      "sentAt": "2026-11-15T09:31:22.499Z",
+      "link": "https://www.instagram.com/reel/DfwdntRArP-/"
     },
     "2026-11-15T18:00Z": {
       "episode": "035-kasar",
@@ -429,6 +432,19 @@
         "postId": "6af8d23bb9a106584c6e5057",
         "status": "scheduled",
         "dueAt": "2026-11-16T18:00:00.000Z"
+      }
+    },
+    "2026-11-17T09:30Z": {
+      "episode": "038-kagit-top",
+      "media": "v/038-kagit-top-d40c03cf.mp4",
+      "status": "scheduled",
+      "at": "2026-11-15T13:54:10.552Z",
+      "postId": "6af9b9b5e5a113497aeeb96b",
+      "dueAt": "2026-11-17T09:30:00.000Z",
+      "yt": {
+        "postId": "6af9b9b5b9a106584cb07224",
+        "status": "scheduled",
+        "dueAt": "2026-11-17T09:30:00.000Z"
       }
     }
   }
