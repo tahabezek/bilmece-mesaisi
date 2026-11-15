@@ -398,15 +398,18 @@
     "2026-11-15T18:00Z": {
       "episode": "035-kasar",
       "media": "v/035-kasar-bf589917.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-13T18:46:06.004Z",
       "postId": "6af75b2feea5d89b92e09921",
       "dueAt": "2026-11-15T18:00:00.000Z",
       "yt": {
         "postId": "6af75b304b28296eb10a6b0e",
-        "status": "scheduled",
-        "dueAt": "2026-11-15T18:00:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-15T18:00:00.000Z",
+        "link": "https://www.youtube.com/shorts/tq55oy_KOwk"
+      },
+      "sentAt": "2026-11-15T18:04:37.374Z",
+      "link": "https://www.instagram.com/reel/DfxYW_yAWKh/"
     },
     "2026-11-16T09:30Z": {
       "episode": "036-yalancilar",
@@ -445,6 +448,19 @@
         "postId": "6af9b9b5b9a106584cb07224",
         "status": "scheduled",
         "dueAt": "2026-11-17T09:30:00.000Z"
+      }
+    },
+    "2026-11-17T18:00Z": {
+      "episode": "039-kolonlu-oda",
+      "media": "v/039-kolonlu-oda-888b2254.mp4",
+      "status": "scheduled",
+      "at": "2026-11-15T21:44:15.007Z",
+      "postId": "6afa27ef06e1675856a941a7",
+      "dueAt": "2026-11-17T18:00:00.000Z",
+      "yt": {
+        "postId": "6afa27ef60a910801c4d0068",
+        "status": "scheduled",
+        "dueAt": "2026-11-17T18:00:00.000Z"
       }
     }
   }
