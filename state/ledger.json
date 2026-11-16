@@ -481,6 +481,19 @@
         "status": "scheduled",
         "dueAt": "2026-11-18T09:30:00.000Z"
       }
+    },
+    "2026-11-18T18:00Z": {
+      "episode": "044-serbet",
+      "media": "v/044-serbet-1a6d725c.mp4",
+      "status": "scheduled",
+      "at": "2026-11-16T21:15:23.607Z",
+      "postId": "6afb729c7ce1e67c469ea216",
+      "dueAt": "2026-11-18T18:00:00.000Z",
+      "yt": {
+        "postId": "6afb729d7ce1e67c469ea24d",
+        "status": "scheduled",
+        "dueAt": "2026-11-18T18:00:00.000Z"
+      }
     }
   }
 }
