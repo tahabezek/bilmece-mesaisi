@@ -107,3 +107,49 @@ Necmi'nin sayısı kaç?
 **Soru:** Ayna yok, konuşmak yasak, ikisinin de yüzünde şerbet var. İlk "üç"te kimse kıpırdamıyor, ikincide ikisi aynı anda elini kaldırıyor. Nasıl anladılar?
 
 **Cevap:** Kimsenin kıpırdamaması bilgidir. Ayrıntı `hikayeler/bolum_044_serbet.md` dosyasında.
+
+---
+
+# Bize özel set (16 Kas 2026)
+
+Kullanıcının itirazı: "Bunları başkası sorsa da bulurdun, ilk aklına gelenler bunlar. Kimseye üretmeyeceğin, bana özel bilmeceler olmalı."
+
+Bu set yalnızca bu kanalın içinden doğabilirdi. Her bilmece kanalın kendi malzemesinden çıkıyor:
+- karakter kuralları: Kerem hiç konuşmaz, Necmi çay ocağında;
+- yayınlanmış bölümler: 017 balık, 044 şerbet;
+- kullanıcının kendi kuralları: bilinen bilmece yasak, fizik yok, görüntü cevabı vermez.
+
+Üçünün de bütün durumları programla denendi.
+
+## Ö1. Kerem'in bardakları
+**Soru:** Kerem hiç konuşmaz. Yazmaz, işaret de etmez. Anahtar, arşivdeki 2×2 dolabın dört çekmecesinden birinde ve bunu yalnız Kerem biliyor. Çay ocağındaki 2×2 tepside dört bardak var; Hikmet bazılarını ters, bazılarını düz dizmiş. Kerem tam olarak bir bardağı çevirip çıkacak. Sonra Necmi gelecek, tepsiye bakıp anahtarın hangi çekmecede olduğunu söyleyecek. Kerem ile Necmi önceden anlaşabilir. Nasıl yaparlar?
+
+**Cevap:** Tepsi, dolabın haritasıdır.
+- **Sütun:** Sağ sütundaki ters bardak sayısı tekse anahtar sağ sütundaki çekmecelerdedir, çiftse soldadır.
+- **Sıra:** Alt sıradaki ters bardak sayısı tekse anahtar alt sıradadır, çiftse üsttedir.
+- **Kerem'in hamlesi:** Sağ-alt bardak iki sayıyı birden değiştirir, sağ-üst yalnız sütunu, sol-alt yalnız sırayı, sol-üst hiçbirini. Hikmet bardakları nasıl dizmiş olursa olsun, Kerem tek bir bardakla istediği çekmeceyi gösterebilir.
+
+**Kanıt:** 16 başlangıç × 4 çekmece = 64 durumun 64'ünde çalışıyor.
+
+**Neden bize özel:** Kerem'in sessizliği kanalın sabit kuralıdır. Bu bilmece o kuralı bilgi aktarma sorusuna çeviriyor. Tepsinin dolabın küçük haritası olması da sahnede anlatılır.
+
+## Ö2. Bildiğini sanan balıkçı
+**Soru:** Hikmet Bey yine balığa çıktı, bu sefer yalnızca lüfer ve istavrit tuttu. "İkisi hariç hepsi lüfer, ikisi hariç hepsi istavrit" diyor. Kaç balık tuttu?
+
+**Tuzak:** 017'yi izleyen ya da klasiği bilen biri hemen "3" der. Yanlış.
+
+**Cevap:** 4: iki lüfer, iki istavrit. Kural şu: her türden (toplam − 2) balık var. İki türde 2(n − 2) = n, yani n = 4. Üç türde n = 3 olur. Dört ya da daha fazla türle bu cümle hiç kurulamaz.
+
+**Neden bize özel:** Kullanıcının "çok bilinen" diye eleştirdiği 017'ye cevap veriyor ve ezber cevabı bilenleri tuzağa düşürüyor. Bonus soru: "Dört türle söyleseydi?" Cevap: "İmkânsız."
+
+## Ö3. Şerbetli yüzler 2: Kerem de masada
+**Soru:** Bu sefer masada üç kişi var: Defne, Necmi ve Kerem. Şerbet yalnız ikisinin yüzünde. Hikmet "En az birinizin yüzünde şerbet var" deyip üçe kadar saymaya başlıyor. Yüzünde şerbet olduğundan emin olan elini kaldırıyor, temiz olduğundan emin olan da başını sallıyor. Kim, kaçıncı sayışta?
+
+**Cevap:**
+- **1. sayış:** Kimse bir şey yapmaz.
+- **2. sayış:** Şerbetli ikisi (Defne ve Necmi) elini kaldırır.
+- **3. sayış:** Kerem başını sallar. İkisinin ikinci sayışta el kaldırdığını görünce onların yalnızca birer şerbetli yüz gördüğünü anlar. Demek ki kendi yüzü temizdir.
+
+**Kanıt:** Simülasyonda bütün olası dünyalar tur tur elendi; sonuç yukarıdaki sırayla aynı çıktı.
+
+**Neden bize özel:** 044'ün devamı, yani bir seri bilmece. Kerem konuşmadan, yalnızca başını sallayarak cevap verir. 044'ü izleyenin çözebileceği ama onu zorlayacak bir sonraki seviye.
