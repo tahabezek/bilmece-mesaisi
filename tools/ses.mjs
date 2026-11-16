@@ -185,7 +185,7 @@ for (const [k, e] of ep.sfx || []) {
 }
 if (ep.countdown) {
   const c1 = T(ep.countdown);
-  for (let k = 5; k >= 1; k--) {
+  for (let k = ep.cdSure || 5; k >= 1; k--) {   // cdSure: sayaç süresi (16 Kas: yeni bölümlerde 10)
     const t0 = c1 - k, f = k <= 3 ? 2700 : 2000, amp = k <= 3 ? 0.3 : 0.24;
     for (let n = 0; n < 0.07 * SR; n++) { const t = n / SR; addF(Math.round(t0 * SR) + n, (Math.sin(2 * Math.PI * f * t) * Math.exp(-t * 70) + noise() * Math.exp(-t * 350) * 0.5) * amp); }
   }

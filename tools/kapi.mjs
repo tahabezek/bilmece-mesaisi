@@ -15,7 +15,8 @@ for (const id of process.argv.slice(2)) {
   const ok = (name, pass, val) => { rows.push(`${pass ? '✅' : '❌'} ${name}: ${val}`); if (!pass) fail++; };
   ok('süre', tl.duration <= 60, tl.duration.toFixed(1) + ' sn');
   const d3 = tl.lines.find(l => l.id === 'd3');
-  ok('Buldum', d3.t0 <= 38, d3.t0.toFixed(1) + ' sn');
+  const bl = 38 + ((ep.cdSure || 5) - 5);   // (16 Kas) uzun sayaçlı bölümde sınır sayaç farkı kadar kayar
+  ok('Buldum', d3.t0 <= bl, d3.t0.toFixed(1) + ' sn (sınır ' + bl + ')');
   ok('kart', ep.card.length <= 2 && ep.card.every(s => s.length <= 40), ep.card.map(s => s.length).join('+') + ' harf');
   if (fs.existsSync(mp4)) {
     const lo = spawnSync(ff, ['-hide_banner', '-nostats', '-i', mp4, '-af', 'ebur128=peak=true', '-f', 'null', '-'], { encoding: 'utf8', maxBuffer: 1 << 27 }).stderr;

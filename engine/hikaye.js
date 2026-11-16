@@ -326,7 +326,7 @@ export function cerceve(K, t, ep, tl, S, h) {
   ctx.restore();
   if (B.kart) B.top = 300 + riddleCard(K, 70, 300, 940, ep.card, ep.num, { size: h.kartBoy ?? 54 });
   h.ekran?.(K, t, B);
-  if (B.kart) countdown(K, t, tm.cd, { top: B.top + 20, share: ep.cdShare });
+  if (B.kart) countdown(K, t, tm.cd, { top: B.top + 20, share: ep.cdShare, dur: ep.cdSure || 5 });
   altyazi(K, tl, t, cam, heads, { split: h.split, kuyruksuz: h.kuyruksuz ? h.kuyruksuz(t, B) : false });
   if (h.kilavuz) guvenliAlan(K);
 }
