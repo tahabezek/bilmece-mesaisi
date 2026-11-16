@@ -1,0 +1,311 @@
+{
+ "id": "041-seker-cuvali",
+ "num": 41,
+ "sira": 30,
+ "bpm": 120,
+ "slug": "sahte-seker-cuvali",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#akıloyunları",
+  "#mantık",
+  "#matematik"
+ ],
+ "card": [
+  "10 çuvalın birinde küpler 1 gr eksik.",
+  "Terazi tek tartılık. Hangi çuval?"
+ ],
+ "caption": "Zeka sorusu: Numaralı 10 çuval küp şekerin birinde bütün küpler 1 gram hafif. Normal küp 10 gram, sahte küp 9 gram. Dijital terazi yalnızca bir kez kullanılabilir. Tek tartıda sahte çuvalı nasıl bulursun?\n\nHer çuvaldan birer küp tartmak işe yaramıyor. Cevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Bu on çuvaldan biri sahte, bütün küpleri hafif!"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Normal küp on gram, sahtesi dokuz. Bu terazinin pili tek tartılık."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Küplerden istediğin kadar alabilirsin. Sahte çuvalı tek tartıda nasıl bulursun?"
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.5,
+    "text": "Her çuvaldan birer küp tartarım!"
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Doksan dokuz gram çıkar. Biri sahte ama hangisi?"
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 5.6,
+    "text": "Birinci odaya bir şeker, ikinciye iki, üçüncüye üç koyarım."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.32,
+    "text": "Buldum! Her çuvaldan numarası kadar alırım!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Birinciden bir, ikinciden iki küp."
+   },
+   {
+    "id": "d4b",
+    "who": "defne",
+    "gap": 2.1,
+    "text": "Onuncudan on. Hepsi normalse beş yüz elli gram."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.5,
+    "text": "Eksik gram, sahte çuvalın numarasını verir!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 0.85,
+    "text": "Emin olmak için bir kez daha tartalım."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.6,
+    "text": "Bunu terazisine güvenen arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h2b>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "knock",
+   "@0.30"
+  ],
+  [
+   "swish",
+   "h1:2-0.02"
+  ],
+  [
+   "pop",
+   "h2a:2-0.04"
+  ],
+  [
+   "pop",
+   "h2a:5-0.04"
+  ],
+  [
+   "knock",
+   "h2a:8-0.02"
+  ],
+  [
+   "knock",
+   "h2a:9-0.02"
+  ],
+  [
+   "pop",
+   "h2a:9-0.04"
+  ],
+  [
+   "pop",
+   "h2b:1+0.3"
+  ],
+  [
+   "pop",
+   "h2b:2+0.36"
+  ],
+  [
+   "pop",
+   "h2b:3+0.6"
+  ],
+  [
+   "swish",
+   "h2b:4-0.1"
+  ],
+  [
+   "swish",
+   "d2:4+0.05"
+  ],
+  [
+   "knock",
+   "hd-0.24"
+  ],
+  [
+   "pop",
+   "hd-0.04"
+  ],
+  [
+   "swish",
+   "hd:4-0.4"
+  ],
+  [
+   "buzz",
+   "hd:7-0.04"
+  ],
+  [
+   "knock",
+   "@20.75"
+  ],
+  [
+   "swish",
+   "@21.3"
+  ],
+  [
+   "swish",
+   "@23.65"
+  ],
+  [
+   "pop",
+   "n1:2"
+  ],
+  [
+   "pop",
+   "n1:5"
+  ],
+  [
+   "pop",
+   "n1:5+0.11"
+  ],
+  [
+   "pop",
+   "n1:7"
+  ],
+  [
+   "pop",
+   "n1:7+0.11"
+  ],
+  [
+   "pop",
+   "n1:7+0.22"
+  ],
+  [
+   "swish",
+   "@33.09"
+  ],
+  [
+   "swish",
+   "@33.93"
+  ],
+  [
+   "swish",
+   "@37.01"
+  ],
+  [
+   "knock",
+   "@33.62"
+  ],
+  [
+   "knock",
+   "@34.44"
+  ],
+  [
+   "knock",
+   "@35.11"
+  ],
+  [
+   "knock",
+   "@35.37"
+  ],
+  [
+   "knock",
+   "@35.64"
+  ],
+  [
+   "knock",
+   "@35.90"
+  ],
+  [
+   "knock",
+   "@36.17"
+  ],
+  [
+   "knock",
+   "@36.43"
+  ],
+  [
+   "knock",
+   "@36.70"
+  ],
+  [
+   "knock",
+   "@37.63"
+  ],
+  [
+   "zip",
+   [
+    "@37.83",
+    "@38.75"
+   ]
+  ],
+  [
+   "pop",
+   "d4b:4-0.04"
+  ],
+  [
+   "zip",
+   [
+    "@38.68",
+    "@39.42"
+   ]
+  ],
+  [
+   "pop",
+   "@39.43"
+  ],
+  [
+   "ding",
+   "d5:4-0.04"
+  ],
+  [
+   "swish",
+   "d5:5+0.05"
+  ],
+  [
+   "knock",
+   "h4:6-0.02"
+  ],
+  [
+   "womp",
+   "h4:6+0.4"
+  ],
+  [
+   "pop",
+   "d6+0.5"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true,
+ "cdSure": 5
+}

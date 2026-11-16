@@ -1,0 +1,317 @@
+{
+ "id": "042-hileli-para",
+ "num": 42,
+ "sira": 32,
+ "bpm": 120,
+ "slug": "hileli-para",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#yazıtura",
+  "#mantık",
+  "#olasılık"
+ ],
+ "card": [
+  "Para hileli, Defne yönünü bilmiyor.",
+  "Bununla adil kura nasıl çekilir?"
+ ],
+ "caption": "Zeka sorusu: Elindeki tek para hileli: bir yüzü daha sık geliyor ama hangisi olduğunu bilmiyorsun. Karşındaki biliyor. Başka hiçbir şey kullanmadan bu parayla tam adil bir kura nasıl çekersin?\n\nBilgisayarların bile kullandığı bir yöntem. Cevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Çayı kim demleyecek? Uğurlu paramla kura çekelim!"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Bu para hileli, bir yüzü daha sık gelir. Hangisini yalnız ben bilirim."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Başka para yok. Bu parayla adil kura çekebilir misin?"
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.5,
+    "text": "Ben tura diyorum, bir atış yeter!"
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Olur. İşte, yazı geldi! Bu para beni sever."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 6.2,
+    "text": "Dört-iki gelmesiyle iki-dört gelmesi tavlada aynı şanstır.",
+    "tts": "Dört iki gelmesiyle iki dört gelmesi tavlada aynı şanstır."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.32,
+    "text": "Buldum! Parayı iki kez atarız!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Önce yazı sonra tura gelirse ben, önce tura sonra yazı gelirse siz."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "İkisi aynı gelirse yeniden atarız. Hile, iki sırayı da aynı etkiler!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1.6,
+    "text": "Kazandım ama paranın uğuru kaçtı."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu kurada hep kazanan arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "music": {
+  "think": [
+   "h2b>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "swish",
+   "@0.30"
+  ],
+  [
+   "pop",
+   "@1.60"
+  ],
+  [
+   "swish",
+   "@4.66"
+  ],
+  [
+   "swish",
+   "@5.61"
+  ],
+  [
+   "knock",
+   "@10.21"
+  ],
+  [
+   "swish",
+   "@15.35"
+  ],
+  [
+   "pop",
+   "@15.76"
+  ],
+  [
+   "buzz",
+   "@16.18"
+  ],
+  [
+   "pop",
+   "@17.56"
+  ],
+  [
+   "pop",
+   "@17.81"
+  ],
+  [
+   "pop",
+   "@18.05"
+  ],
+  [
+   "pop",
+   "@18.30"
+  ],
+  [
+   "pop",
+   "@18.54"
+  ],
+  [
+   "pop",
+   "@18.79"
+  ],
+  [
+   "pop",
+   "@19.03"
+  ],
+  [
+   "pop",
+   "@19.28"
+  ],
+  [
+   "pop",
+   "@19.52"
+  ],
+  [
+   "knock",
+   "@24.78"
+  ],
+  [
+   "knock",
+   "@24.96"
+  ],
+  [
+   "knock",
+   "@26.10"
+  ],
+  [
+   "knock",
+   "@26.54"
+  ],
+  [
+   "pop",
+   "@33.06"
+  ],
+  [
+   "pop",
+   "@34.98"
+  ],
+  [
+   "swish",
+   "@34.89"
+  ],
+  [
+   "knock",
+   "@35.27"
+  ],
+  [
+   "pop",
+   "@35.57"
+  ],
+  [
+   "swish",
+   "@35.65"
+  ],
+  [
+   "knock",
+   "@36.03"
+  ],
+  [
+   "pop",
+   "@36.33"
+  ],
+  [
+   "swish",
+   "@36.80"
+  ],
+  [
+   "knock",
+   "@37.18"
+  ],
+  [
+   "pop",
+   "@37.48"
+  ],
+  [
+   "swish",
+   "@37.56"
+  ],
+  [
+   "knock",
+   "@37.94"
+  ],
+  [
+   "pop",
+   "@38.24"
+  ],
+  [
+   "swish",
+   "@38.46"
+  ],
+  [
+   "knock",
+   "@38.84"
+  ],
+  [
+   "pop",
+   "@39.14"
+  ],
+  [
+   "swish",
+   "@39.16"
+  ],
+  [
+   "knock",
+   "@39.54"
+  ],
+  [
+   "pop",
+   "@39.84"
+  ],
+  [
+   "zip",
+   [
+    "@36.82",
+    "@37.12"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "@38.49",
+    "@38.79"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "@40.07",
+    "@40.55"
+   ]
+  ],
+  [
+   "ding",
+   "@40.52"
+  ],
+  [
+   "pop",
+   "@38.96"
+  ],
+  [
+   "pop",
+   "@39.03"
+  ],
+  [
+   "womp",
+   "@42.83"
+  ],
+  [
+   "pop",
+   "d6"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true,
+ "cdSure": 5
+}
