@@ -414,15 +414,18 @@
     "2026-11-16T09:30Z": {
       "episode": "036-yalancilar",
       "media": "v/036-yalancilar-47ace859.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-14T13:27:58.626Z",
       "postId": "6af86211b9a106584c489cd1",
       "dueAt": "2026-11-16T09:30:00.000Z",
       "yt": {
         "postId": "6af86211e86a5789a6ac1b21",
-        "status": "scheduled",
-        "dueAt": "2026-11-16T09:30:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-16T09:30:00.000Z",
+        "link": "https://www.youtube.com/shorts/S9wMjUV0kls"
+      },
+      "sentAt": "2026-11-16T09:31:28.573Z",
+      "link": "https://www.instagram.com/reel/DfzCb8AAITa/"
     },
     "2026-11-16T18:00Z": {
       "episode": "037-kac",
@@ -461,6 +464,19 @@
         "postId": "6afa27ef60a910801c4d0068",
         "status": "scheduled",
         "dueAt": "2026-11-17T18:00:00.000Z"
+      }
+    },
+    "2026-11-18T09:30Z": {
+      "episode": "040-tavla",
+      "media": "v/040-tavla-405fcb8a.mp4",
+      "status": "scheduled",
+      "at": "2026-11-16T15:38:47.323Z",
+      "postId": "6afb23b848b687b0327bca4e",
+      "dueAt": "2026-11-18T09:30:00.000Z",
+      "yt": {
+        "postId": "6afb23b967619c57d50cd2b6",
+        "status": "scheduled",
+        "dueAt": "2026-11-18T09:30:00.000Z"
       }
     }
   }
