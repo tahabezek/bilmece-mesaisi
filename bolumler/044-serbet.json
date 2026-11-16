@@ -1,0 +1,271 @@
+{
+ "id": "044-serbet",
+ "num": 44,
+ "sira": 29,
+ "bpm": 120,
+ "slug": "serbetli-yuzler",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#mantık",
+  "#akıloyunları",
+  "#bulmaca"
+ ],
+ "card": [
+  "Ayna yok, konuşmak yok.",
+  "İkisi aynı anda nasıl anladı?"
+ ],
+ "caption": "Zeka sorusu: Doğum gününde Defne'nin de Necmi'nin de yüzüne baklava şerbeti bulaştı. Ayna yok, konuşmak ve dokunmak yasak; ikisi birbirinin yüzünü görüyor ama kendi yüzünü göremiyor. Hikmet Bey \"En az birinizin yüzünde şerbet var. Emin olan, ben üç deyince elini kaldırsın\" dedi. İlk sayışta kimse kıpırdamadı. İkinci sayışta ikisi aynı anda elini kaldırdı. Nasıl anladılar? Cevap videonun sonunda.\n\nBir sorumuz daha var: Herkes zaten bir şerbetli yüz görüyordu. Hikmet Bey'in \"en az biriniz\" demesi neden gerekliydi? Bu ikinci sorunun cevabı videoda yok; bir arkadaşına sor.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h0",
+    "who": "hikmet",
+    "gap": 0.05,
+    "text": "Üç!",
+    "tts": "Üüç!"
+   },
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 3.3,
+    "text": "İkisinin de yüzüne şerbet bulaştı, ama kendileri bilmiyor.",
+    "ic": true
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Ayna yok, konuşmak yasak."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "En az birinizin yüzünde şerbet var."
+   },
+   {
+    "id": "h2c",
+    "who": "hikmet",
+    "gap": 0.5,
+    "text": "Emin olan, ben üç deyince elini kaldırsın."
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.5,
+    "text": "Bir, iki, üç!",
+    "tts": "Bir. İki. Üüç!"
+   },
+   {
+    "id": "h3b",
+    "who": "hikmet",
+    "gap": 1,
+    "text": "Bir daha sayıyorum."
+   },
+   {
+    "id": "hq",
+    "who": "hikmet",
+    "gap": 1.2,
+    "text": "İkisi aynı anda anladı. Nasıl?"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 10.6,
+    "text": "Buldum! Necmi kıpırdamadı!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Yüzüm temiz olsaydı Necmi bunu görür, ilk sayışta elini kaldırırdı."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Kaldırmadı. Demek ki benim yüzümde de şerbet var!"
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 0.45,
+    "text": "Ben de aynısını düşündüm."
+   },
+   {
+    "id": "h5",
+    "who": "hikmet",
+    "gap": 0.95,
+    "text": "Kerem! Sen elini neden kaldırmadın?"
+   },
+   {
+    "id": "d7",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu her şeyi anladığını sanan arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "d3-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "hq>",
+   "d3"
+  ],
+  "riser": [
+   "hq>",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d7>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "swish",
+   "@0.18"
+  ],
+  [
+   "stamp",
+   "@0.96"
+  ],
+  [
+   "zip",
+   [
+    "@1.62",
+    "@2.56"
+   ]
+  ],
+  [
+   "pop",
+   "@1.74"
+  ],
+  [
+   "swish",
+   "h1+0.3"
+  ],
+  [
+   "pop",
+   "h1:4-0.07"
+  ],
+  [
+   "pop",
+   "h1:4-0.01"
+  ],
+  [
+   "swish",
+   "h2a-0.12"
+  ],
+  [
+   "knock",
+   "h2a:1+0.21"
+  ],
+  [
+   "pop",
+   "h2a:2-0.08"
+  ],
+  [
+   "knock",
+   "h2b+0.14"
+  ],
+  [
+   "knock",
+   "h2b+0.56"
+  ],
+  [
+   "knock",
+   "h2b:3+0.2"
+  ],
+  [
+   "knock",
+   "h2b:3+0.62"
+  ],
+  [
+   "knock",
+   "h2b:3+1.04"
+  ],
+  [
+   "pop",
+   "h2c:3-0.08"
+  ],
+  [
+   "knock",
+   "h3:0+0.3"
+  ],
+  [
+   "knock",
+   "h3:1+0.33"
+  ],
+  [
+   "knock",
+   "h3:2+0.55"
+  ],
+  [
+   "knock",
+   "h3:2+0.95"
+  ],
+  [
+   "swish",
+   "h3b>+0.27"
+  ],
+  [
+   "pop",
+   "hq-0.02"
+  ],
+  [
+   "pop",
+   "d3:1"
+  ],
+  [
+   "swish",
+   "d4-0.08"
+  ],
+  [
+   "pop",
+   "d4:7+0.06"
+  ],
+  [
+   "stamp",
+   "d6+0.04"
+  ],
+  [
+   "swish",
+   "d6+0.66"
+  ],
+  [
+   "swish",
+   "d6:6"
+  ],
+  [
+   "pop",
+   "n1+0.04"
+  ],
+  [
+   "pop",
+   "n1+0.88"
+  ],
+  [
+   "swish",
+   "n1:3-0.04"
+  ],
+  [
+   "swish",
+   "h5-0.15"
+  ],
+  [
+   "horn",
+   "h5:3+0.08"
+  ],
+  [
+   "pop",
+   "d7"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true
+}
