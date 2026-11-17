@@ -1,0 +1,285 @@
+{
+ "id": "043-lokum",
+ "num": 43,
+ "sira": 34,
+ "bpm": 120,
+ "slug": "lokum-kutusu",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#mantık",
+  "#akıloyunları",
+  "#lokum"
+ ],
+ "card": [
+  "Son parça hep çikolata çıkıyor.",
+  "Necmi bunu nereden biliyor?"
+ ],
+ "caption": "Zeka sorusu: Bir kutuda 9 çikolata ve 10 lokum var. Gözü kapalı iki parça çekiliyor. İkisi aynıysa ikisi de yeniyor ve kutuya bir lokum ekleniyor. Farklıysa lokum yeniyor, çikolata geri konuyor. Kutuda tek parça kalınca o parça hep çikolata çıkıyor. Neden?\n\nŞansa bağlı değil. Cevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Necmi başlamadan son parçayı bildi!"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Bu kutuda dokuz çikolata, on lokum var. Gözü kapalı iki parça çekiliyor."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Aynıysa ikisi yenir, bir lokum eklenir. Farklıysa lokum yenir, çikolata geri konur."
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Necmi çikolata dedi, yine haklı çıktı."
+   },
+   {
+    "id": "h2c",
+    "who": "hikmet",
+    "gap": 0.35,
+    "text": "Necmi bunu nereden biliyor?"
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.5,
+    "text": "Şans! Necmi hep şanslı!"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Her seferinde şans olur mu?"
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 10.6,
+    "text": "Çikolataları hep ikişer ikişer yerim, Müdür Bey."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.32,
+    "text": "Buldum! Son parça çikolata!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Çikolata ya hiç azalmıyor ya da ikişer azalıyor. Dokuz tek sayı."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "İkişer ikişer azalan tek sayı asla sıfır olmaz!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1,
+    "text": "Hep benim lokumlarım yeniyor."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu hep lokum çeken arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "knock",
+   "@0.23"
+  ],
+  [
+   "pop",
+   "h2a:2-0.04"
+  ],
+  [
+   "pop",
+   "h2a:4-0.04"
+  ],
+  [
+   "swish",
+   "@6.68"
+  ],
+  [
+   "pop",
+   "@8.63"
+  ],
+  [
+   "knock",
+   "@10.55"
+  ],
+  [
+   "swish",
+   "@11.08"
+  ],
+  [
+   "pop",
+   "@11.55"
+  ],
+  [
+   "knock",
+   "@13.33"
+  ],
+  [
+   "swish",
+   "d2+0.1"
+  ],
+  [
+   "zip",
+   [
+    "@14.16",
+    "@16.60"
+   ]
+  ],
+  [
+   "ding",
+   "@16.58"
+  ],
+  [
+   "zip",
+   [
+    "@24.32",
+    "@29.21"
+   ]
+  ],
+  [
+   "knock",
+   "@35.07"
+  ],
+  [
+   "pop",
+   "@35.35"
+  ],
+  [
+   "knock",
+   "@35.65"
+  ],
+  [
+   "pop",
+   "@35.93"
+  ],
+  [
+   "pop",
+   "@38.86"
+  ],
+  [
+   "pop",
+   "@39.32"
+  ],
+  [
+   "pop",
+   "@39.78"
+  ],
+  [
+   "pop",
+   "@40.23"
+  ],
+  [
+   "pop",
+   "@40.69"
+  ],
+  [
+   "pop",
+   "@41.15"
+  ],
+  [
+   "knock",
+   "@41.63"
+  ],
+  [
+   "pop",
+   "@42.13"
+  ],
+  [
+   "pop",
+   "@42.63"
+  ],
+  [
+   "pop",
+   "@43.13"
+  ],
+  [
+   "pop",
+   "@43.63"
+  ],
+  [
+   "knock",
+   "@44.08"
+  ],
+  [
+   "knock",
+   "@44.51"
+  ],
+  [
+   "pop",
+   "@44.94"
+  ],
+  [
+   "pop",
+   "@45.38"
+  ],
+  [
+   "knock",
+   "@45.71"
+  ],
+  [
+   "pop",
+   "@45.97"
+  ],
+  [
+   "pop",
+   "@46.23"
+  ],
+  [
+   "ding",
+   "@46.33"
+  ],
+  [
+   "womp",
+   "h4:2"
+  ],
+  [
+   "pop",
+   "d6+0.25"
+  ],
+  [
+   "knock",
+   "h3:2-0.04"
+  ]
+ ],
+ "v4": true
+}
