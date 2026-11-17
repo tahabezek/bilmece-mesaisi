@@ -1,0 +1,237 @@
+{
+ "id": "056-iki-anne",
+ "num": 56,
+ "sira": 39,
+ "bpm": 120,
+ "slug": "necminin-iki-annesi",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#mantık",
+  "#akıloyunları",
+  "#istanbul"
+ ],
+ "card": [
+  "İki otobüs de 10 dakikada bir geçer.",
+  "Necmi neden hep Kadıköy'e gidiyor?"
+ ],
+ "caption": "Zeka sorusu: Necmi pazar günleri durağa rastgele bir saatte gelip ilk gelen otobüse biniyor. Kadıköy otobüsü de Üsküdar otobüsü de tam 10 dakikada bir geçiyor. Ama Necmi on pazarın dokuzunda Kadıköy'e gidiyor. Otobüsler dakikası dakikasına geliyor. Neden?\n\nCevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Necmi'nin kaynanası ona küsmüş, sebebi bir otobüs!",
+    "tts": "Necminin kaynanası ona küsmüş, sebebi bir otobüs!"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Necmi durağa hep rastgele gelir, ilk gelen otobüse biner."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Kadıköy de Üsküdar da tam on dakikada bir geçiyor."
+   },
+   {
+    "id": "h2c",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Ama on pazarın dokuzunda annesine, Kadıköy'e gidiyor. Neden?",
+    "tts": "Ama on pazarın dokuzunda annesine, Kadıköye gidiyor. Neden?"
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Necmi bilerek Kadıköy otobüsünü bekliyor!"
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Yemin ediyor, ilk gelene biniyor."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 10.6,
+    "text": "Durakta tabela var ama ben hiç bakmam."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.32,
+    "text": "Buldum! Otobüsler arka arkaya geliyor!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Üsküdar otobüsü, Kadıköy otobüsünden hep bir dakika sonra geçiyor."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Üsküdar'a bir dakikalık şans kalıyor, Kadıköy'e dokuz dakikalık!",
+    "tts": "Üsküdara bir dakikalık şans kalıyor, Kadıköye dokuz dakikalık!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 1.5,
+    "text": "Necmi, kayınvalidene giderken saatine bak."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu hep aynı yere giden arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "music": {
+  "think": [
+   "h2c>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "swish",
+   "@0.12"
+  ],
+  [
+   "knock",
+   "h1:3"
+  ],
+  [
+   "zip",
+   [
+    "h1:6-0.15",
+    "h1:6+1.3"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "h2a:3",
+    "h2a:3+0.7"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "h2a:8+0.1",
+    "h2a:8+1.2"
+   ]
+  ],
+  [
+   "ding",
+   "h2b:5+0.1"
+  ],
+  [
+   "pop",
+   "h2c:1"
+  ],
+  [
+   "pop",
+   "h2c:1+0.33"
+  ],
+  [
+   "pop",
+   "h2c:1+0.5"
+  ],
+  [
+   "buzz",
+   "hd"
+  ],
+  [
+   "swish",
+   "n1:1-0.2"
+  ],
+  [
+   "zip",
+   [
+    "d4:2-0.5",
+    "d4:2+0.5"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "d4:6-0.5",
+    "d4:6+0.5"
+   ]
+  ],
+  [
+   "ding",
+   "d4:6"
+  ],
+  [
+   "swish",
+   "d5-0.2"
+  ],
+  [
+   "zip",
+   [
+    "d5:1",
+    "d5:1+0.5"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "d5:5",
+    "d5>+0.15"
+   ]
+  ],
+  [
+   "ding",
+   "d5:6"
+  ],
+  [
+   "pop",
+   "d5>+0.05"
+  ],
+  [
+   "pop",
+   "d5>+0.3"
+  ],
+  [
+   "pop",
+   "d5>+0.55"
+  ],
+  [
+   "knock",
+   "h4:3"
+  ],
+  [
+   "knock",
+   "h4:3+0.3"
+  ],
+  [
+   "pop",
+   "d6+0.6"
+  ]
+ ],
+ "v4": true
+}

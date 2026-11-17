@@ -1,0 +1,530 @@
+{
+ "h1": {
+  "key": "9bef0308675a",
+  "trimmed": "9bef0308675a",
+  "wkey": "9bef0308675a",
+  "heard": "Necminin kaynanası ona küsmüş, sebebi bir otobüs.",
+  "words": [
+   {
+    "w": "Necminin",
+    "t0": 0.0,
+    "t1": 0.62
+   },
+   {
+    "w": "kaynanası",
+    "t0": 0.62,
+    "t1": 1.26
+   },
+   {
+    "w": "ona",
+    "t0": 1.26,
+    "t1": 1.5
+   },
+   {
+    "w": "küsmüş,",
+    "t0": 1.5,
+    "t1": 2.06
+   },
+   {
+    "w": "sebebi",
+    "t0": 2.18,
+    "t1": 2.7
+   },
+   {
+    "w": "bir",
+    "t0": 2.7,
+    "t1": 2.82
+   },
+   {
+    "w": "otobüs!",
+    "t0": 2.82,
+    "t1": 3.26
+   }
+  ],
+  "dur": 3.4
+ },
+ "h2a": {
+  "key": "3072d1ea0b81",
+  "trimmed": "3072d1ea0b81",
+  "wkey": "3072d1ea0b81",
+  "heard": "Necmi durağı hep rastgele gelir, ilk gelen otobüse biner.",
+  "words": [
+   {
+    "w": "Necmi",
+    "t0": 0.0,
+    "t1": 0.44
+   },
+   {
+    "w": "durağa",
+    "t0": 0.44,
+    "t1": 0.86
+   },
+   {
+    "w": "hep",
+    "t0": 0.86,
+    "t1": 0.98
+   },
+   {
+    "w": "rastgele",
+    "t0": 0.98,
+    "t1": 1.52
+   },
+   {
+    "w": "gelir,",
+    "t0": 1.52,
+    "t1": 1.82
+   },
+   {
+    "w": "ilk",
+    "t0": 1.82,
+    "t1": 2.26
+   },
+   {
+    "w": "gelen",
+    "t0": 2.26,
+    "t1": 2.54
+   },
+   {
+    "w": "otobüse",
+    "t0": 2.54,
+    "t1": 3.12
+   },
+   {
+    "w": "biner.",
+    "t0": 3.12,
+    "t1": 3.38
+   }
+  ],
+  "dur": 3.55
+ },
+ "h2b": {
+  "key": "94158f0a787d",
+  "trimmed": "94158f0a787d",
+  "wkey": "94158f0a787d",
+  "heard": "Kadıköy'de Üsküdar da tam 10 dakikada bir geçiyor.",
+  "words": [
+   {
+    "w": "Kadıköy",
+    "t0": 0.0,
+    "t1": 0.7
+   },
+   {
+    "w": "de",
+    "t0": 0.7,
+    "t1": 0.7
+   },
+   {
+    "w": "Üsküdar",
+    "t0": 0.7,
+    "t1": 1.2
+   },
+   {
+    "w": "da",
+    "t0": 1.2,
+    "t1": 1.42
+   },
+   {
+    "w": "tam",
+    "t0": 1.42,
+    "t1": 1.64
+   },
+   {
+    "w": "on",
+    "t0": 1.64,
+    "t1": 1.86
+   },
+   {
+    "w": "dakikada",
+    "t0": 1.86,
+    "t1": 2.36
+   },
+   {
+    "w": "bir",
+    "t0": 2.36,
+    "t1": 2.5
+   },
+   {
+    "w": "geçiyor.",
+    "t0": 2.5,
+    "t1": 2.98
+   }
+  ],
+  "dur": 3.15
+ },
+ "h2c": {
+  "key": "361e912f791c",
+  "trimmed": "361e912f791c",
+  "wkey": "361e912f791c",
+  "heard": "Ama 10 pazarın 9 'unda annesine Kadıköy 'e gidiyor. Neden?",
+  "words": [
+   {
+    "w": "Ama",
+    "t0": 0.0,
+    "t1": 0.373
+   },
+   {
+    "w": "on",
+    "t0": 0.373,
+    "t1": 0.56
+   },
+   {
+    "w": "pazarın",
+    "t0": 0.56,
+    "t1": 1.06
+   },
+   {
+    "w": "dokuzunda",
+    "t0": 1.06,
+    "t1": 1.56
+   },
+   {
+    "w": "annesine,",
+    "t0": 1.56,
+    "t1": 2.2
+   },
+   {
+    "w": "Kadıköye",
+    "t0": 2.2,
+    "t1": 2.82
+   },
+   {
+    "w": "gidiyor.",
+    "t0": 2.9,
+    "t1": 3.3
+   },
+   {
+    "w": "Neden?",
+    "t0": 3.62,
+    "t1": 3.86
+   }
+  ],
+  "dur": 4.288
+ },
+ "d2": {
+  "key": "1a63c94dcaaf",
+  "trimmed": "1a63c94dcaaf",
+  "wkey": "1a63c94dcaaf",
+  "heard": "Necmi bilerek Kadıköy otobüsünü bekliyor.",
+  "words": [
+   {
+    "w": "Necmi",
+    "t0": 0.0,
+    "t1": 0.34
+   },
+   {
+    "w": "bilerek",
+    "t0": 0.34,
+    "t1": 0.68
+   },
+   {
+    "w": "Kadıköy",
+    "t0": 0.68,
+    "t1": 1.1
+   },
+   {
+    "w": "otobüsünü",
+    "t0": 1.1,
+    "t1": 1.52
+   },
+   {
+    "w": "bekliyor!",
+    "t0": 1.52,
+    "t1": 1.88
+   }
+  ],
+  "dur": 2.05
+ },
+ "hd": {
+  "key": "7b8172a7d6b7",
+  "trimmed": "7b8172a7d6b7",
+  "wkey": "7b8172a7d6b7",
+  "heard": "Yemin ediyor, ilk gelene biniyor.",
+  "words": [
+   {
+    "w": "Yemin",
+    "t0": 0.0,
+    "t1": 0.36
+   },
+   {
+    "w": "ediyor,",
+    "t0": 0.36,
+    "t1": 0.7
+   },
+   {
+    "w": "ilk",
+    "t0": 0.7,
+    "t1": 1.18
+   },
+   {
+    "w": "gelene",
+    "t0": 1.18,
+    "t1": 1.58
+   },
+   {
+    "w": "biniyor.",
+    "t0": 1.58,
+    "t1": 2.02
+   }
+  ],
+  "dur": 2.14
+ },
+ "n1": {
+  "key": "5bd5b52feffe",
+  "trimmed": "5bd5b52feffe",
+  "wkey": "5bd5b52feffe",
+  "heard": "Durakta tabela var ama ben hiç bakmam.",
+  "words": [
+   {
+    "w": "Durakta",
+    "t0": 0.0,
+    "t1": 0.58
+   },
+   {
+    "w": "tabela",
+    "t0": 0.58,
+    "t1": 1.0
+   },
+   {
+    "w": "var",
+    "t0": 1.0,
+    "t1": 1.18
+   },
+   {
+    "w": "ama",
+    "t0": 1.18,
+    "t1": 1.54
+   },
+   {
+    "w": "ben",
+    "t0": 1.54,
+    "t1": 1.72
+   },
+   {
+    "w": "hiç",
+    "t0": 1.72,
+    "t1": 1.9
+   },
+   {
+    "w": "bakmam.",
+    "t0": 1.9,
+    "t1": 2.36
+   }
+  ],
+  "dur": 2.55
+ },
+ "d3": {
+  "key": "d23657dc5388",
+  "trimmed": "d23657dc5388",
+  "wkey": "d23657dc5388",
+  "heard": "Buldum. Otobüsler arka arkaya geliyor.",
+  "words": [
+   {
+    "w": "Buldum!",
+    "t0": 0.0,
+    "t1": 0.54
+   },
+   {
+    "w": "Otobüsler",
+    "t0": 0.62,
+    "t1": 1.24
+   },
+   {
+    "w": "arka",
+    "t0": 1.24,
+    "t1": 1.56
+   },
+   {
+    "w": "arkaya",
+    "t0": 1.56,
+    "t1": 1.98
+   },
+   {
+    "w": "geliyor!",
+    "t0": 1.98,
+    "t1": 2.14
+   }
+  ],
+  "dur": 2.428
+ },
+ "d4": {
+  "key": "b8b7846482c4",
+  "trimmed": "b8b7846482c4",
+  "wkey": "b8b7846482c4",
+  "heard": "Üsküdar otobüsü Kadıköy otobüsünden hep bir dakika sonra geçiyor.",
+  "words": [
+   {
+    "w": "Üsküdar",
+    "t0": 0.0,
+    "t1": 0.4
+   },
+   {
+    "w": "otobüsü,",
+    "t0": 0.4,
+    "t1": 0.92
+   },
+   {
+    "w": "Kadıköy",
+    "t0": 0.92,
+    "t1": 1.36
+   },
+   {
+    "w": "otobüsünden",
+    "t0": 1.36,
+    "t1": 1.88
+   },
+   {
+    "w": "hep",
+    "t0": 1.88,
+    "t1": 2.09
+   },
+   {
+    "w": "bir",
+    "t0": 2.09,
+    "t1": 2.3
+   },
+   {
+    "w": "dakika",
+    "t0": 2.3,
+    "t1": 2.48
+   },
+   {
+    "w": "sonra",
+    "t0": 2.48,
+    "t1": 2.84
+   },
+   {
+    "w": "geçiyor.",
+    "t0": 2.84,
+    "t1": 3.3
+   }
+  ],
+  "dur": 3.44
+ },
+ "d5": {
+  "key": "98b49590b569",
+  "trimmed": "98b49590b569",
+  "wkey": "98b49590b569",
+  "heard": "Üsküdere bir dakikalık şans kalıyor, Kadıköy 'e dokuz dakikalık.",
+  "words": [
+   {
+    "w": "Üsküdara",
+    "t0": 0.0,
+    "t1": 0.42
+   },
+   {
+    "w": "bir",
+    "t0": 0.42,
+    "t1": 0.58
+   },
+   {
+    "w": "dakikalık",
+    "t0": 0.58,
+    "t1": 1.08
+   },
+   {
+    "w": "şans",
+    "t0": 1.08,
+    "t1": 1.36
+   },
+   {
+    "w": "kalıyor,",
+    "t0": 1.36,
+    "t1": 1.7
+   },
+   {
+    "w": "Kadıköye",
+    "t0": 1.9,
+    "t1": 2.28
+   },
+   {
+    "w": "dokuz",
+    "t0": 2.32,
+    "t1": 2.56
+   },
+   {
+    "w": "dakikalık!",
+    "t0": 2.56,
+    "t1": 3.1
+   }
+  ],
+  "dur": 3.13
+ },
+ "h4": {
+  "key": "2325ca4e9ec9",
+  "trimmed": "2325ca4e9ec9",
+  "wkey": "2325ca4e9ec9",
+  "heard": "Necmi Kayınvalide 'ne giderken saatine bak.",
+  "words": [
+   {
+    "w": "Necmi,",
+    "t0": 0.0,
+    "t1": 0.5
+   },
+   {
+    "w": "kayınvalidene",
+    "t0": 0.5,
+    "t1": 1.34
+   },
+   {
+    "w": "giderken",
+    "t0": 1.46,
+    "t1": 1.96
+   },
+   {
+    "w": "saatine",
+    "t0": 1.96,
+    "t1": 2.48
+   },
+   {
+    "w": "bak.",
+    "t0": 2.48,
+    "t1": 2.66
+   }
+  ],
+  "dur": 2.84
+ },
+ "d6": {
+  "key": "3725c125a6ec",
+  "trimmed": "3725c125a6ec",
+  "wkey": "3725c125a6ec",
+  "heard": "Bunu hep aynı yere giden arkadaşına gönder.",
+  "words": [
+   {
+    "w": "Bunu",
+    "t0": 0.0,
+    "t1": 0.2
+   },
+   {
+    "w": "hep",
+    "t0": 0.2,
+    "t1": 0.44
+   },
+   {
+    "w": "aynı",
+    "t0": 0.44,
+    "t1": 0.76
+   },
+   {
+    "w": "yere",
+    "t0": 0.76,
+    "t1": 0.94
+   },
+   {
+    "w": "giden",
+    "t0": 0.94,
+    "t1": 1.24
+   },
+   {
+    "w": "arkadaşına",
+    "t0": 1.24,
+    "t1": 1.8
+   },
+   {
+    "w": "gönder.",
+    "t0": 1.8,
+    "t1": 2.16
+   }
+  ],
+  "dur": 2.32
+ }
+}
