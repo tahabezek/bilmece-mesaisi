@@ -1,0 +1,237 @@
+{
+ "id": "050-bayramlasma",
+ "num": 50,
+ "sira": 40,
+ "bpm": 120,
+ "slug": "bayramlasma",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#mantık",
+  "#bayram",
+  "#bulmaca"
+ ],
+ "card": [
+  "Tek sayıda kişiyle bayramlaşan: 5 kişi.",
+  "Defne saymadan \"Olamaz\" dedi. Neden?"
+ ],
+ "caption": "Zeka sorusu: Bayram sabahı ofiste herkes bazı arkadaşlarıyla bayramlaştı; iki kişi en fazla bir kez bayramlaşabiliyor. Hikmet Bey \"Tek sayıda kişiyle bayramlaşan tam 5 kişi var\" diyor. Defne hiçbir şey saymadan \"Olamaz\" diyor. Neden?\n\nCevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Bayramlaşma defterini tuttum: kim kiminle bayramlaşmış!",
+    "tts": "Bayramlaşma defterini tuttum, kim kiminle bayramlaşmış!"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "İki kişi en fazla bir kez bayramlaşır."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Defterde tek sayıda kişiyle bayramlaşan tam beş kişi var. Doğru mu?"
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Defteri baştan sayalım; kim kiminle bayramlaşmış?",
+    "tts": "Defteri baştan sayalım, kim kiminle bayramlaşmış?"
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Saymadan bil, defterde yüzlerce satır var!"
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 10.6,
+    "text": "Ben kimin elini sıktıysam, o da benim elimi sıktı."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.32,
+    "text": "Buldum! Beş olamaz!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Her bayramlaşma iki kişinin sayısına birer ekler. Herkesin sayısını toplarsan hep çift çıkar."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Bu toplam çiftse, tek sayıların adedi de çift olmalı. Beş ise tek!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 0.9,
+    "text": "Defterde bir kişiyi eksik yazmışım."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu bayramda herkesle bayramlaşan arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "h2b>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "pop",
+   "@0.28"
+  ],
+  [
+   "pop",
+   "@0.73"
+  ],
+  [
+   "knock",
+   "h1:1+0.1"
+  ],
+  [
+   "swish",
+   "h2a-0.05"
+  ],
+  [
+   "zip",
+   [
+    "h2a:3-0.1",
+    "h2a:3+0.25"
+   ]
+  ],
+  [
+   "swish",
+   "h2b-0.05"
+  ],
+  [
+   "knock",
+   "h2b:6-0.08"
+  ],
+  [
+   "knock",
+   "d2:1-0.05"
+  ],
+  [
+   "knock",
+   "d2:2-0.05"
+  ],
+  [
+   "knock",
+   "d2:3-0.05"
+  ],
+  [
+   "zip",
+   [
+    "hd:3-0.3",
+    "hd:3+0.35"
+   ]
+  ],
+  [
+   "womp",
+   "hd:3+0.4"
+  ],
+  [
+   "zip",
+   [
+    "n1-9.95",
+    "n1-9.05"
+   ]
+  ],
+  [
+   "pop",
+   "n1-7.07"
+  ],
+  [
+   "swish",
+   "n1-4.95"
+  ],
+  [
+   "knock",
+   "n1:2-0.1"
+  ],
+  [
+   "pop",
+   "n1:8"
+  ],
+  [
+   "swish",
+   "d3+0.82"
+  ],
+  [
+   "ding",
+   "d3:2+0.1"
+  ],
+  [
+   "zip",
+   [
+    "d4:1-0.05",
+    "d4:5-0.08"
+   ]
+  ],
+  [
+   "pop",
+   "d4:5-0.05"
+  ],
+  [
+   "pop",
+   "d4:9-0.06"
+  ],
+  [
+   "pop",
+   "d5:4+0.03"
+  ],
+  [
+   "pop",
+   "d5:7-0.04"
+  ],
+  [
+   "buzz",
+   "d5:11-0.05"
+  ],
+  [
+   "swish",
+   "h4-0.1"
+  ],
+  [
+   "swish",
+   "h4:3-0.02"
+  ],
+  [
+   "pop",
+   "d6+0.5"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true
+}
