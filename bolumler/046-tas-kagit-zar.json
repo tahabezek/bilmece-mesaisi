@@ -1,0 +1,242 @@
+{
+ "id": "046-tas-kagit-zar",
+ "num": 46,
+ "sira": 33,
+ "bpm": 120,
+ "slug": "tas-kagit-zar",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#mantık",
+  "#olasılık",
+  "#zar"
+ ],
+ "card": [
+  "Önce sen seç, sonra Hikmet seçer.",
+  "Neden hep Hikmet kazanıyor?"
+ ],
+ "caption": "Zeka sorusu: Hikmet Bey'in üç zarı var: 2-2-4-4-9-9, 1-1-6-6-8-8 ve 3-3-5-5-7-7. \"Önce sen seç, ben sonra seçerim, büyük atan kazanır\" diyor. Hangi zarı seçersen seç, çoğu atışta Hikmet Bey kazanıyor. Zarlar hileli değil. Nasıl?\n\nCevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Bu üç zarla beni kimse yenemiyor!"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Önce sen seç, ben sonra seçerim. Kim büyük atarsa kazanır."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Bu zarlar hileli değil. Neden hep ben kazanıyorum?"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.35,
+    "text": "Yenersen tavla takımı senin."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Dokuzlu zarı alırım, en büyük sayı onda!"
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Dokuz var ama ikilerin de var. İşte yine kazandım."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 10.6,
+    "text": "Makas kâğıdı, kâğıt taşı, taş da makası yener."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.32,
+    "text": "Buldum! En iyi zar yok!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Her zarı yenen bir zar var. Dokuzlu sekizliyi, sekizli yediliyi, yedili de dokuzluyu yener."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Sonra seçen yenen zarı alır!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 0.9,
+    "text": "Sırrım çözüldü, tavla takımı senin."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu önce seçmeyi seven arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "h2b>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "knock",
+   "@0.24"
+  ],
+  [
+   "pop",
+   "h2a:6+0.27"
+  ],
+  [
+   "pop",
+   "h2a:9-0.28"
+  ],
+  [
+   "swish",
+   "h2b+0.1"
+  ],
+  [
+   "knock",
+   "h3:1+0.03"
+  ],
+  [
+   "swish",
+   "d2+0.15"
+  ],
+  [
+   "swish",
+   "d2:3"
+  ],
+  [
+   "knock",
+   "@14.98"
+  ],
+  [
+   "knock",
+   "@15.41"
+  ],
+  [
+   "knock",
+   "@15.85"
+  ],
+  [
+   "knock",
+   "@16.28"
+  ],
+  [
+   "knock",
+   "@16.71"
+  ],
+  [
+   "knock",
+   "@17.15"
+  ],
+  [
+   "knock",
+   "@17.58"
+  ],
+  [
+   "knock",
+   "@18.02"
+  ],
+  [
+   "knock",
+   "@18.45"
+  ],
+  [
+   "womp",
+   "@18.75"
+  ],
+  [
+   "swish",
+   "n1-0.01"
+  ],
+  [
+   "swish",
+   "n1:2-0.01"
+  ],
+  [
+   "knock",
+   "n1:4+0.06"
+  ],
+  [
+   "knock",
+   "d4+0.62"
+  ],
+  [
+   "zip",
+   [
+    "d4:6",
+    "d4:7+0.3"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "d4:8",
+    "d4:9+0.3"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "d4:10",
+    "d4:12+0.3"
+   ]
+  ],
+  [
+   "swish",
+   "d5-0.05"
+  ],
+  [
+   "swish",
+   "d5:2+0.15"
+  ],
+  [
+   "ding",
+   "d5:4-0.03"
+  ],
+  [
+   "swish",
+   "h4:2"
+  ],
+  [
+   "pop",
+   "d6"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true
+}
