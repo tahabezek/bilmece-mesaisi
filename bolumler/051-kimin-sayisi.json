@@ -1,0 +1,213 @@
+{
+ "id": "051-kimin-sayisi",
+ "num": 51,
+ "sira": 38,
+ "bpm": 120,
+ "slug": "kimin-sayisi-buyuk",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#mantık",
+  "#akıloyunları",
+  "#bulmaca"
+ ],
+ "card": [
+  "Sayılar 1–5 arası ve ardışık.",
+  "Necmi'nin sayısı kaç?"
+ ],
+ "caption": "Zeka sorusu: Hikmet Bey, Defne ile Necmi'ye 1'den 5'e kadar birer sayı fısıldadı ve \"Sayılarınız ardışık\" dedi. Defne: \"Kimin sayısı büyük, bilmiyorum.\" Necmi: \"Ben de bilmiyorum.\" Defne: \"Şimdi biliyorum!\" Necmi'nin sayısı kaç?\n\nCevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "İkinize birden beşe kadar birer sayı fısıldadım. Sayılarınız ardışık."
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Kimin sayısı büyük, bilmiyorum."
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.4,
+    "text": "Ben de bilmiyorum, Müdür Bey."
+   },
+   {
+    "id": "d1b",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Şimdi biliyorum işte!"
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Söyleyin bakalım, Necmi'nin sayısı kaç?",
+    "tts": "Söyleyin bakalım, Necminin sayısı kaç?"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 10.6,
+    "text": "Buldum! Necmi'nin sayısı üç!",
+    "tts": "Buldum! Necminin sayısı üç!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Benim sayım bir ya da beş olsaydı hemen bilirdim."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Necmi'nin sayısı bir, iki, dört ya da beş olsaydı o da bilirdi. Bilmediğine göre sayısı üç!",
+    "tts": "Necminin sayısı bir, iki, dört ya da beş olsaydı o da bilirdi. Bilmediğine göre sayısı üç!",
+    "rate": "+4%"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 0.95,
+    "text": "Defne'nin sayısı kaçtı peki? Ben de unuttum.",
+    "tts": "Defnenin sayısı kaçtı peki? Ben de unuttum."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu her şeyi bildiğini sanan arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "d3-0.3",
+ "cdSure": 10,
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "music": {
+  "think": [
+   "h2b>",
+   "d3"
+  ],
+  "riser": [
+   "h2b>",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "swish",
+   "@0.12"
+  ],
+  [
+   "pop",
+   "@0.3"
+  ],
+  [
+   "zip",
+   [
+    "h1:1-0.04",
+    "h1:2+0.3"
+   ]
+  ],
+  [
+   "pop",
+   "h1:8"
+  ],
+  [
+   "swish",
+   "d1-0.02"
+  ],
+  [
+   "swish",
+   "n0-0.02"
+  ],
+  [
+   "ding",
+   "d1b:1"
+  ],
+  [
+   "swish",
+   "h2b:2-0.1"
+  ],
+  [
+   "knock",
+   "d3-7.75"
+  ],
+  [
+   "knock",
+   "d3-7.35"
+  ],
+  [
+   "knock",
+   "d3-6.95"
+  ],
+  [
+   "knock",
+   "d3-4.7"
+  ],
+  [
+   "knock",
+   "d3-2.35"
+  ],
+  [
+   "knock",
+   "d4:2+0.15"
+  ],
+  [
+   "knock",
+   "d4:5+0.15"
+  ],
+  [
+   "knock",
+   "d5:2+0.15"
+  ],
+  [
+   "knock",
+   "d5:3+0.15"
+  ],
+  [
+   "knock",
+   "d5:4+0.15"
+  ],
+  [
+   "knock",
+   "d5:7+0.15"
+  ],
+  [
+   "swish",
+   "d5:15-0.24"
+  ],
+  [
+   "ding",
+   "d5:15"
+  ],
+  [
+   "knock",
+   "d5:15+0.77"
+  ],
+  [
+   "swish",
+   "h4:3-0.2"
+  ],
+  [
+   "womp",
+   "h4:6"
+  ],
+  [
+   "pop",
+   "d6+0.3"
+  ]
+ ],
+ "v4": true
+}
