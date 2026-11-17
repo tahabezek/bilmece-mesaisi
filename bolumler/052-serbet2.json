@@ -1,0 +1,321 @@
+{
+ "id": "052-serbet2",
+ "num": 52,
+ "sira": 42,
+ "bpm": 120,
+ "slug": "serbetli-yuzler-2",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#mantık",
+  "#akıloyunları",
+  "#bulmaca"
+ ],
+ "card": [
+  "Üç kişi, iki şerbetli yüz.",
+  "Kim, kaçıncı sayışta anlar?"
+ ],
+ "caption": "Zeka sorusu: Şerbetli yüzler geri döndü! Bu sefer masada üç kişi var: Defne, Necmi ve Kerem. Baklava şerbeti yalnız ikisinin yüzüne bulaştı. Ayna yok, konuşmak yasak; herkes ötekilerin yüzünü görüyor ama kendi yüzünü göremiyor. Hikmet Bey \"En az birinizin yüzünde şerbet var\" dedi ve üçe kadar saymaya başladı. Şerbetli olduğundan emin olan elini kaldıracak, temiz olduğundan emin olan başını sallayacak. Kim, kaçıncı sayışta anlar? Cevap videonun sonunda.\n\nİlk bölümü izlemediysen önce \"Şerbetli yüzler\"i izle, sonra bunu dene.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h0",
+    "who": "hikmet",
+    "gap": 0.05,
+    "text": "Üç!",
+    "tts": "Üüç!"
+   },
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 2.3,
+    "text": "Bu sefer Kerem de masada. Şerbet yine iki kişide!",
+    "ic": true
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.38,
+    "text": "Ayna yok, konuşmak yasak."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.38,
+    "text": "En az birinizin yüzünde şerbet var."
+   },
+   {
+    "id": "h2c",
+    "who": "hikmet",
+    "gap": 0.38,
+    "text": "Emin olan, şerbetliyse elini kaldırsın, temizse başını sallasın."
+   },
+   {
+    "id": "hq",
+    "who": "hikmet",
+    "gap": 0.42,
+    "text": "Ben üçe kadar sayacağım. Kim, kaçıncı sayışta anlar?"
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "Geçen seferki gibi, ikinci sayışta hepimiz!",
+    "ic": true
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.36,
+    "text": "Hepiniz mi? Kerem'in yüzü tertemiz.",
+    "tts": "Hepiniz mi? Keremin yüzü tertemiz.",
+    "ic": true
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 11.1,
+    "text": "Buldum! Biz ikinci, Kerem üçüncü sayışta!",
+    "ic": true
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "İkimiz de birer şerbetli yüz görüyoruz, ikinci sayışta anlarız.",
+    "ic": true
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Kerem iki şerbetli yüz görür.",
+    "ic": true
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.85,
+    "text": "Ellerimiz kalkınca, Kerem yüzünün temiz olduğunu anlar.",
+    "ic": true
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 0.9,
+    "text": "Kerem bu sefer şerbeti yememiş."
+   },
+   {
+    "id": "d7",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu şerbetli yüzleri çözen arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "d3-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "hq>",
+   "d3"
+  ],
+  "riser": [
+   "hq>",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d7>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "knock",
+   "@0.06"
+  ],
+  [
+   "stamp",
+   "@0.96"
+  ],
+  [
+   "zip",
+   [
+    "@1.62",
+    "@2.56"
+   ]
+  ],
+  [
+   "pop",
+   "@1.74"
+  ],
+  [
+   "swish",
+   "h1-0.12"
+  ],
+  [
+   "pop",
+   "h1:2+0.25"
+  ],
+  [
+   "pop",
+   "h1:8-0.07"
+  ],
+  [
+   "pop",
+   "h1:8-0.01"
+  ],
+  [
+   "swish",
+   "h2a-0.12"
+  ],
+  [
+   "knock",
+   "h2a:1+0.21"
+  ],
+  [
+   "pop",
+   "h2a:2-0.08"
+  ],
+  [
+   "knock",
+   "h2b+0.19"
+  ],
+  [
+   "knock",
+   "h2b+0.54"
+  ],
+  [
+   "knock",
+   "h2b+0.89"
+  ],
+  [
+   "knock",
+   "h2b+1.24"
+  ],
+  [
+   "swish",
+   "h2c:3-0.15"
+  ],
+  [
+   "pop",
+   "h2c:7"
+  ],
+  [
+   "pop",
+   "hq:1-0.08"
+  ],
+  [
+   "swish",
+   "hq:4-0.05"
+  ],
+  [
+   "pop",
+   "d2+0.18"
+  ],
+  [
+   "swish",
+   "d2:5-0.02"
+  ],
+  [
+   "stamp",
+   "hd:1"
+  ],
+  [
+   "pop",
+   "d3:1"
+  ],
+  [
+   "swish",
+   "d3:3-0.08"
+  ],
+  [
+   "knock",
+   "d4+0.2"
+  ],
+  [
+   "knock",
+   "d4+0.74"
+  ],
+  [
+   "knock",
+   "d4+1.28"
+  ],
+  [
+   "knock",
+   "d4+1.72"
+  ],
+  [
+   "knock",
+   "d4+2.26"
+  ],
+  [
+   "knock",
+   "d4:8"
+  ],
+  [
+   "swish",
+   "d4:8+0.02"
+  ],
+  [
+   "pop",
+   "d5:1"
+  ],
+  [
+   "pop",
+   "d5:2"
+  ],
+  [
+   "swish",
+   "d6-0.08"
+  ],
+  [
+   "stamp",
+   "d6:3"
+  ],
+  [
+   "knock",
+   "d6:3+0.3"
+  ],
+  [
+   "knock",
+   "d6:3+0.66"
+  ],
+  [
+   "swish",
+   "d6:3+0.5"
+  ],
+  [
+   "knock",
+   "d6:6"
+  ],
+  [
+   "pop",
+   "d6:6+0.17"
+  ],
+  [
+   "swish",
+   "h4-0.15"
+  ],
+  [
+   "pop",
+   "h4:4"
+  ],
+  [
+   "pop",
+   "h4:4+0.2"
+  ],
+  [
+   "horn",
+   "h4:4+0.45"
+  ],
+  [
+   "pop",
+   "d7"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true
+}

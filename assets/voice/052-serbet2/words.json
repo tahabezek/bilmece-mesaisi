@@ -1,0 +1,553 @@
+{
+ "h0": {
+  "key": "4dd41c50d068",
+  "trimmed": "4dd41c50d068",
+  "wkey": "4dd41c50d068",
+  "heard": "Üç.",
+  "words": [
+   {
+    "w": "Üüç!",
+    "t0": 0.0,
+    "t1": 0.3
+   }
+  ],
+  "dur": 0.43
+ },
+ "h1": {
+  "key": "ba23ac079f9b",
+  "trimmed": "ba23ac079f9b",
+  "wkey": "ba23ac079f9b",
+  "heard": "Bu sefer Kerem de masada. Şerbet yine iki kişi de.",
+  "words": [
+   {
+    "w": "Bu",
+    "t0": 0.0,
+    "t1": 0.2
+   },
+   {
+    "w": "sefer",
+    "t0": 0.2,
+    "t1": 0.6
+   },
+   {
+    "w": "Kerem",
+    "t0": 0.6,
+    "t1": 0.96
+   },
+   {
+    "w": "de",
+    "t0": 0.96,
+    "t1": 1.1
+   },
+   {
+    "w": "masada.",
+    "t0": 1.1,
+    "t1": 1.56
+   },
+   {
+    "w": "Şerbet",
+    "t0": 1.92,
+    "t1": 2.48
+   },
+   {
+    "w": "yine",
+    "t0": 2.48,
+    "t1": 2.74
+   },
+   {
+    "w": "iki",
+    "t0": 2.74,
+    "t1": 3.04
+   },
+   {
+    "w": "kişide!",
+    "t0": 3.04,
+    "t1": 3.3
+   }
+  ],
+  "dur": 3.668
+ },
+ "h2a": {
+  "key": "6db9d479b576",
+  "trimmed": "6db9d479b576",
+  "wkey": "6db9d479b576",
+  "heard": "Aynı yok, konuşmak yasak.",
+  "words": [
+   {
+    "w": "Ayna",
+    "t0": 0.0,
+    "t1": 0.3
+   },
+   {
+    "w": "yok,",
+    "t0": 0.3,
+    "t1": 0.8
+   },
+   {
+    "w": "konuşmak",
+    "t0": 0.8,
+    "t1": 1.36
+   },
+   {
+    "w": "yasak.",
+    "t0": 1.36,
+    "t1": 1.82
+   }
+  ],
+  "dur": 1.91
+ },
+ "h2b": {
+  "key": "c53a5c6a5846",
+  "trimmed": "c53a5c6a5846",
+  "wkey": "c53a5c6a5846",
+  "heard": "En az birimizin yüzünde şerbet var.",
+  "words": [
+   {
+    "w": "En",
+    "t0": 0.0,
+    "t1": 0.2
+   },
+   {
+    "w": "az",
+    "t0": 0.2,
+    "t1": 0.4
+   },
+   {
+    "w": "birinizin",
+    "t0": 0.4,
+    "t1": 0.94
+   },
+   {
+    "w": "yüzünde",
+    "t0": 0.94,
+    "t1": 1.34
+   },
+   {
+    "w": "şerbet",
+    "t0": 1.34,
+    "t1": 1.76
+   },
+   {
+    "w": "var.",
+    "t0": 1.76,
+    "t1": 1.98
+   }
+  ],
+  "dur": 2.13
+ },
+ "h2c": {
+  "key": "072e8eac61b0",
+  "trimmed": "072e8eac61b0",
+  "wkey": "072e8eac61b0",
+  "heard": "Emin olan, şerbetliyse elini kaldırsın, temizse başını sallasın.",
+  "words": [
+   {
+    "w": "Emin",
+    "t0": 0.0,
+    "t1": 0.22
+   },
+   {
+    "w": "olan,",
+    "t0": 0.22,
+    "t1": 0.56
+   },
+   {
+    "w": "şerbetliyse",
+    "t0": 0.92,
+    "t1": 1.62
+   },
+   {
+    "w": "elini",
+    "t0": 1.62,
+    "t1": 1.88
+   },
+   {
+    "w": "kaldırsın,",
+    "t0": 1.88,
+    "t1": 2.52
+   },
+   {
+    "w": "temizse",
+    "t0": 2.8,
+    "t1": 3.24
+   },
+   {
+    "w": "başını",
+    "t0": 3.24,
+    "t1": 3.6
+   },
+   {
+    "w": "sallasın.",
+    "t0": 3.6,
+    "t1": 4.22
+   }
+  ],
+  "dur": 4.35
+ },
+ "hq": {
+  "key": "c3f2ca05c20a",
+  "trimmed": "c3f2ca05c20a",
+  "wkey": "c3f2ca05c20a",
+  "heard": "Ben 3 'e kadar sayacağım. Kim kaçıncı sayışta anlar.",
+  "words": [
+   {
+    "w": "Ben",
+    "t0": 0.0,
+    "t1": 0.18
+   },
+   {
+    "w": "üçe",
+    "t0": 0.18,
+    "t1": 0.54
+   },
+   {
+    "w": "kadar",
+    "t0": 0.54,
+    "t1": 0.74
+   },
+   {
+    "w": "sayacağım.",
+    "t0": 0.74,
+    "t1": 1.38
+   },
+   {
+    "w": "Kim,",
+    "t0": 1.38,
+    "t1": 1.98
+   },
+   {
+    "w": "kaçıncı",
+    "t0": 1.98,
+    "t1": 2.6
+   },
+   {
+    "w": "sayışta",
+    "t0": 2.6,
+    "t1": 3.12
+   },
+   {
+    "w": "anlar?",
+    "t0": 3.12,
+    "t1": 3.46
+   }
+  ],
+  "dur": 3.598
+ },
+ "d2": {
+  "key": "3965b2bbb182",
+  "trimmed": "3965b2bbb182",
+  "wkey": "3965b2bbb182",
+  "heard": "Geçen seferki gibi, ikinci sayışta hepimiz.",
+  "words": [
+   {
+    "w": "Geçen",
+    "t0": 0.0,
+    "t1": 0.32
+   },
+   {
+    "w": "seferki",
+    "t0": 0.32,
+    "t1": 0.76
+   },
+   {
+    "w": "gibi,",
+    "t0": 0.76,
+    "t1": 0.96
+   },
+   {
+    "w": "ikinci",
+    "t0": 1.18,
+    "t1": 1.54
+   },
+   {
+    "w": "sayışta",
+    "t0": 1.54,
+    "t1": 1.96
+   },
+   {
+    "w": "hepimiz!",
+    "t0": 1.96,
+    "t1": 2.28
+   }
+  ],
+  "dur": 2.46
+ },
+ "hd": {
+  "key": "cc5769771be9",
+  "trimmed": "cc5769771be9",
+  "wkey": "cc5769771be9",
+  "heard": "Hepiniz mi? Kerem 'in yüzü tertemiz.",
+  "words": [
+   {
+    "w": "Hepiniz",
+    "t0": 0.0,
+    "t1": 0.48
+   },
+   {
+    "w": "mi?",
+    "t0": 0.48,
+    "t1": 1.0
+   },
+   {
+    "w": "Keremin",
+    "t0": 1.0,
+    "t1": 1.34
+   },
+   {
+    "w": "yüzü",
+    "t0": 1.5,
+    "t1": 1.8
+   },
+   {
+    "w": "tertemiz.",
+    "t0": 1.8,
+    "t1": 2.42
+   }
+  ],
+  "dur": 2.528
+ },
+ "d3": {
+  "key": "e9f504d286cb",
+  "trimmed": "e9f504d286cb",
+  "wkey": "e9f504d286cb",
+  "heard": "Buldum. Biz ikinci, Kerem üçüncü sayışta.",
+  "words": [
+   {
+    "w": "Buldum!",
+    "t0": 0.0,
+    "t1": 0.54
+   },
+   {
+    "w": "Biz",
+    "t0": 0.54,
+    "t1": 0.96
+   },
+   {
+    "w": "ikinci,",
+    "t0": 0.96,
+    "t1": 1.42
+   },
+   {
+    "w": "Kerem",
+    "t0": 1.54,
+    "t1": 1.82
+   },
+   {
+    "w": "üçüncü",
+    "t0": 1.82,
+    "t1": 2.16
+   },
+   {
+    "w": "sayışta!",
+    "t0": 2.16,
+    "t1": 2.64
+   }
+  ],
+  "dur": 2.748
+ },
+ "d4": {
+  "key": "6ac0cec3fbc3",
+  "trimmed": "6ac0cec3fbc3",
+  "wkey": "6ac0cec3fbc3",
+  "heard": "İkimiz de birer şerbetli yüz görüyoruz. İkinci sayıştağınlarız.",
+  "words": [
+   {
+    "w": "İkimiz",
+    "t0": 0.0,
+    "t1": 0.34
+   },
+   {
+    "w": "de",
+    "t0": 0.34,
+    "t1": 0.48
+   },
+   {
+    "w": "birer",
+    "t0": 0.48,
+    "t1": 0.76
+   },
+   {
+    "w": "şerbetli",
+    "t0": 0.76,
+    "t1": 1.24
+   },
+   {
+    "w": "yüz",
+    "t0": 1.24,
+    "t1": 1.4
+   },
+   {
+    "w": "görüyoruz,",
+    "t0": 1.4,
+    "t1": 1.96
+   },
+   {
+    "w": "ikinci",
+    "t0": 2.04,
+    "t1": 2.48
+   },
+   {
+    "w": "sayışta",
+    "t0": 2.48,
+    "t1": 2.9
+   },
+   {
+    "w": "anlarız.",
+    "t0": 2.9,
+    "t1": 3.32
+   }
+  ],
+  "dur": 3.44
+ },
+ "d5": {
+  "key": "e5a2057da396",
+  "trimmed": "e5a2057da396",
+  "wkey": "e5a2057da396",
+  "heard": "Kerem iki şerbetli yüz görür.",
+  "words": [
+   {
+    "w": "Kerem",
+    "t0": 0.0,
+    "t1": 0.28
+   },
+   {
+    "w": "iki",
+    "t0": 0.28,
+    "t1": 0.5
+   },
+   {
+    "w": "şerbetli",
+    "t0": 0.5,
+    "t1": 1.06
+   },
+   {
+    "w": "yüz",
+    "t0": 1.06,
+    "t1": 1.24
+   },
+   {
+    "w": "görür.",
+    "t0": 1.24,
+    "t1": 1.56
+   }
+  ],
+  "dur": 1.65
+ },
+ "d6": {
+  "key": "7f931b790cfb",
+  "trimmed": "7f931b790cfb",
+  "wkey": "7f931b790cfb",
+  "heard": "Ellerimiz kalkınca Kerem yüzünün temiz olduğunu anlar.",
+  "words": [
+   {
+    "w": "Ellerimiz",
+    "t0": 0.0,
+    "t1": 0.42
+   },
+   {
+    "w": "kalkınca,",
+    "t0": 0.42,
+    "t1": 0.98
+   },
+   {
+    "w": "Kerem",
+    "t0": 0.98,
+    "t1": 1.42
+   },
+   {
+    "w": "yüzünün",
+    "t0": 1.42,
+    "t1": 1.74
+   },
+   {
+    "w": "temiz",
+    "t0": 1.74,
+    "t1": 2.06
+   },
+   {
+    "w": "olduğunu",
+    "t0": 2.06,
+    "t1": 2.32
+   },
+   {
+    "w": "anlar.",
+    "t0": 2.32,
+    "t1": 2.68
+   }
+  ],
+  "dur": 2.83
+ },
+ "h4": {
+  "key": "424a730850ad",
+  "trimmed": "424a730850ad",
+  "wkey": "424a730850ad",
+  "heard": "Kerem bu sefer şerbeti yememiş.",
+  "words": [
+   {
+    "w": "Kerem",
+    "t0": 0.0,
+    "t1": 0.36
+   },
+   {
+    "w": "bu",
+    "t0": 0.36,
+    "t1": 0.56
+   },
+   {
+    "w": "sefer",
+    "t0": 0.56,
+    "t1": 0.98
+   },
+   {
+    "w": "şerbeti",
+    "t0": 0.98,
+    "t1": 1.54
+   },
+   {
+    "w": "yememiş.",
+    "t0": 1.54,
+    "t1": 2.02
+   }
+  ],
+  "dur": 2.13
+ },
+ "d7": {
+  "key": "097b0d01578c",
+  "trimmed": "097b0d01578c",
+  "wkey": "097b0d01578c",
+  "heard": "Bunu şerbetli yüzleri çözen arkadaşına gönder.",
+  "words": [
+   {
+    "w": "Bunu",
+    "t0": 0.0,
+    "t1": 0.18
+   },
+   {
+    "w": "şerbetli",
+    "t0": 0.18,
+    "t1": 0.72
+   },
+   {
+    "w": "yüzleri",
+    "t0": 0.72,
+    "t1": 1.1
+   },
+   {
+    "w": "çözen",
+    "t0": 1.1,
+    "t1": 1.44
+   },
+   {
+    "w": "arkadaşına",
+    "t0": 1.44,
+    "t1": 1.98
+   },
+   {
+    "w": "gönder.",
+    "t0": 1.98,
+    "t1": 2.32
+   }
+  ],
+  "dur": 2.47
+ }
+}
