@@ -446,15 +446,17 @@
     "2026-11-17T09:30Z": {
       "episode": "038-kagit-top",
       "media": "v/038-kagit-top-d40c03cf.mp4",
-      "status": "scheduled",
+      "status": "failed",
       "at": "2026-11-15T13:54:10.552Z",
       "postId": "6af9b9b5e5a113497aeeb96b",
       "dueAt": "2026-11-17T09:30:00.000Z",
       "yt": {
         "postId": "6af9b9b5b9a106584cb07224",
-        "status": "scheduled",
-        "dueAt": "2026-11-17T09:30:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-17T09:30:00.000Z",
+        "link": "https://www.youtube.com/shorts/7QDJKoDjcAE"
+      },
+      "error": "It looks like there was an issue with the media attached to this post. Please check to ensure the media meets all specifications."
     },
     "2026-11-17T18:00Z": {
       "episode": "039-kolonlu-oda",
@@ -493,6 +495,28 @@
         "postId": "6afb729d7ce1e67c469ea24d",
         "status": "scheduled",
         "dueAt": "2026-11-18T18:00:00.000Z"
+      }
+    },
+    "2026-11-17T16:08Z": {
+      "episode": "038-kagit-top",
+      "media": "v/038-kagit-top-d40c03cf.mp4",
+      "status": "scheduled",
+      "at": "2026-11-17T15:57:45.840Z",
+      "postId": "6afc797d104bf3e6248ca3ac",
+      "dueAt": "2026-11-17T16:08:00.000Z",
+      "note": "elle (--simdi)"
+    },
+    "2026-11-19T09:30Z": {
+      "episode": "041-seker-cuvali",
+      "media": "v/041-seker-cuvali-4596ae77.mp4",
+      "status": "scheduled",
+      "at": "2026-11-17T15:57:45.292Z",
+      "postId": "6afc79be0ec7d2b0822c53a4",
+      "dueAt": "2026-11-19T09:30:00.000Z",
+      "yt": {
+        "postId": "6afc79bff78506c8dd32a7b4",
+        "status": "scheduled",
+        "dueAt": "2026-11-19T09:30:00.000Z"
       }
     }
   }
