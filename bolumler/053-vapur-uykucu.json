@@ -1,0 +1,249 @@
+{
+ "id": "053-vapur-uykucu",
+ "num": 53,
+ "sira": 43,
+ "bpm": 120,
+ "slug": "son-vapur-uykucu-yolcu",
+ "coverAt": 0,
+ "seri": "SON VAPUR",
+ "kapak": "ÜÇ KEZ",
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#vapur",
+  "#istanbul",
+  "#akıloyunları"
+ ],
+ "card": [
+  "Geçiş 20 dk. Saatler 08.21 ve 08.19.",
+  "Vapur kaç kez karşıya geçti?"
+ ],
+ "caption": "Zeka sorusu: Bir yolcu 07.20'de Karaköy'de vapura bindi ve iki kol saatini ayarladı. Saatlerden biri saatte 1 dakika ileri gider, öbürü saatte 1 dakika geri kalır. Kadıköy'de inerken biri 08.21'i, öbürü 08.19'u gösteriyordu. Bir geçiş 20 dakika sürüyor. Vapur kaç kez karşıya geçti?\n\nCevap kapakta: üç kez. Nedeni videoda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "rate": "-6%",
+    "pitch": "-12Hz",
+    "gap": 0.3,
+    "text": "Bu yolcu yedi yirmide Karaköy'de bindi, iki saatini ayarladı.",
+    "tts": "Bu yolcu yedi yirmide Karaköyde bindi, iki saatini ayarladı."
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "rate": "-6%",
+    "pitch": "-12Hz",
+    "gap": 0.35,
+    "text": "Biri saatte bir dakika ileri gider, öbürü bir dakika geri kalır."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "rate": "-6%",
+    "pitch": "-12Hz",
+    "gap": 0.35,
+    "text": "Kadıköy'de biri sekiz yirmi biri, öbürü sekiz on dokuzu gösterdi.",
+    "tts": "Kadıköyde biri sekiz yirmi biri, öbürü sekiz on dokuzu gösterdi."
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "rate": "-6%",
+    "pitch": "-12Hz",
+    "gap": 0.35,
+    "text": "Geçiş yirmi dakika sürer. Bahse girelim: vapur kaç kez karşıya geçti?"
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "rate": "+16%",
+    "pitch": "+3Hz",
+    "gap": 0.4,
+    "text": "Bir kez, Karaköy'den Kadıköy'e!",
+    "tts": "Bir kez, Karaköyden Kadıköye!"
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "rate": "-6%",
+    "pitch": "-12Hz",
+    "gap": 0.35,
+    "text": "Bir kez geçseydi saatler yedi kırkı gösterirdi."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "rate": "+16%",
+    "pitch": "+3Hz",
+    "gap": 10.6,
+    "text": "Buldum! Yolcu uyuyakalmış!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "rate": "+16%",
+    "pitch": "+3Hz",
+    "gap": 0.35,
+    "text": "İki saatin ortası sekiz yirmi: yani tam bir saat geçmiş."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "rate": "+12%",
+    "pitch": "+3Hz",
+    "gap": 0.35,
+    "text": "Vapur gitti, döndü, sonra yine gitti. Üç geçiş!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "rate": "-6%",
+    "pitch": "-12Hz",
+    "gap": 0.95,
+    "text": "Eyvah, yine uyudu! Dördüncü sefer başlıyor."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "rate": "+16%",
+    "pitch": "+3Hz",
+    "gap": 0.7,
+    "text": "Bunu vapurda uyuyakalan arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "d3-0.3",
+ "cdSure": 10,
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "music": {
+  "think": [
+   "hd>",
+   "d3"
+  ],
+  "riser": [
+   "hd>",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "pop",
+   "@0.3"
+  ],
+  [
+   "pop",
+   "h1:2-0.04"
+  ],
+  [
+   "swish",
+   "h2a-0.12"
+  ],
+  [
+   "pop",
+   "h2a:4-0.04"
+  ],
+  [
+   "pop",
+   "h2a:9-0.04"
+  ],
+  [
+   "swish",
+   "h2b-0.12"
+  ],
+  [
+   "pop",
+   "h2b:3-0.04"
+  ],
+  [
+   "pop",
+   "h2b:7-0.04"
+  ],
+  [
+   "swish",
+   "h3-0.12"
+  ],
+  [
+   "swish",
+   "h3:6-0.2"
+  ],
+  [
+   "zip",
+   [
+    "d2:2-0.05",
+    "d2:3+0.3"
+   ]
+  ],
+  [
+   "buzz",
+   "hd:4"
+  ],
+  [
+   "swish",
+   "d3-10.32"
+  ],
+  [
+   "knock",
+   "d3-2.87"
+  ],
+  [
+   "ding",
+   "d4:3"
+  ],
+  [
+   "swish",
+   "d4:6-0.05"
+  ],
+  [
+   "swish",
+   "d5:1-0.45"
+  ],
+  [
+   "knock",
+   "d5:1"
+  ],
+  [
+   "swish",
+   "d5:2-0.3"
+  ],
+  [
+   "knock",
+   "d5:2"
+  ],
+  [
+   "swish",
+   "d5:5-0.4"
+  ],
+  [
+   "knock",
+   "d5:5"
+  ],
+  [
+   "ding",
+   "d5:6"
+  ],
+  [
+   "swish",
+   "h4-0.12"
+  ],
+  [
+   "womp",
+   "h4:2"
+  ],
+  [
+   "pop",
+   "h4:3"
+  ],
+  [
+   "pop",
+   "d6+0.3"
+  ]
+ ],
+ "v4": true
+}
