@@ -1,0 +1,236 @@
+{
+ "id": "055-vapur-lambalar",
+ "num": 55,
+ "sira": 45,
+ "bpm": 120,
+ "slug": "son-vapur-iskele-lambalari",
+ "coverAt": 0,
+ "seri": "SON VAPUR",
+ "kapak": "ASLA",
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#vapur",
+  "#istanbul",
+  "#akıloyunları"
+ ],
+ "card": [
+  "5 sönük lamba. Vapur başına 2 düğme.",
+  "Beşi birden kaç vapurda yanar?"
+ ],
+ "caption": "Zeka sorusu: Eski iskelede 5 lamba var, hepsi sönük. Her gelen vapurun kaptanı tam iki lambanın düğmesine basar: yanan lamba söner, sönük lamba yanar. Lâl yılbaşı gecesi beş lambanın hepsinin yanmasını istiyor. Kaç vapur gelmesi gerekir?\n\nCevap kapakta: asla. Nedeni videoda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "rate": "-4%",
+    "pitch": "-12Hz",
+    "gap": 0.3,
+    "text": "Bu eski iskelede beş lamba var, beşi de sönük."
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "rate": "-6%",
+    "pitch": "-12Hz",
+    "gap": 0.35,
+    "text": "Her vapurun kaptanı gelince tam iki düğmeye basar."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "rate": "-6%",
+    "pitch": "-12Hz",
+    "gap": 0.35,
+    "text": "Yanan lamba söner, sönük lamba yanar."
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "rate": "-6%",
+    "pitch": "-12Hz",
+    "gap": 0.35,
+    "text": "Lâl yılbaşında beşinin de yanmasını istiyor. Bahse girelim: kaç vapur gerekir?",
+    "tts": "Lal yılbaşında beşinin de yanmasını istiyor. Bahse girelim: kaç vapur gerekir?"
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "rate": "+16%",
+    "pitch": "+3Hz",
+    "gap": 0.4,
+    "text": "Üç vapur yeter, ikişerden altı düğme!"
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "rate": "-6%",
+    "pitch": "-12Hz",
+    "gap": 0.35,
+    "text": "Üçüncü vapur beşinciyi yakar ama birinciyi söndürür."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "rate": "+16%",
+    "pitch": "+3Hz",
+    "gap": 10.6,
+    "text": "Buldum! Beşi asla yanmaz!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "rate": "+16%",
+    "pitch": "+3Hz",
+    "gap": 0.35,
+    "text": "Her vapur yanan sayıyı iki artırır, iki azaltır ya da değiştirmez."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "rate": "+12%",
+    "pitch": "+3Hz",
+    "gap": 0.35,
+    "text": "Sıfırdan başlayan sayı daima çift kalır. Beş ise tek!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "rate": "-6%",
+    "pitch": "-12Hz",
+    "gap": 0.95,
+    "text": "El feneri sayılmaz! Kural üç lamba olsa, üç vapurda yanardı."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "rate": "+16%",
+    "pitch": "+3Hz",
+    "gap": 0.7,
+    "text": "Bunu yılbaşı dileği tutan arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "d3-0.3",
+ "cdSure": 10,
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "music": {
+  "think": [
+   "hd>",
+   "d3"
+  ],
+  "riser": [
+   "hd>",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "pop",
+   "@0.3"
+  ],
+  [
+   "pop",
+   "h1:3-0.04"
+  ],
+  [
+   "swish",
+   "h2a-0.12"
+  ],
+  [
+   "knock",
+   "h2a:7"
+  ],
+  [
+   "swish",
+   "h3-0.12"
+  ],
+  [
+   "pop",
+   "h3:2-0.04"
+  ],
+  [
+   "swish",
+   "h3:6-0.2"
+  ],
+  [
+   "knock",
+   "d2:3"
+  ],
+  [
+   "knock",
+   "hd:3"
+  ],
+  [
+   "buzz",
+   "hd:6"
+  ],
+  [
+   "swish",
+   "d3-10.32"
+  ],
+  [
+   "knock",
+   "d3-8.7"
+  ],
+  [
+   "knock",
+   "d3-6.2"
+  ],
+  [
+   "pop",
+   "d3-3.75"
+  ],
+  [
+   "pop",
+   "d3-2.35"
+  ],
+  [
+   "pop",
+   "d3-0.95"
+  ],
+  [
+   "knock",
+   "d4:5"
+  ],
+  [
+   "knock",
+   "d4:7"
+  ],
+  [
+   "knock",
+   "d4:10"
+  ],
+  [
+   "knock",
+   "d5:3"
+  ],
+  [
+   "ding",
+   "d5:4"
+  ],
+  [
+   "pop",
+   "d5>+0.55"
+  ],
+  [
+   "womp",
+   "h4:2"
+  ],
+  [
+   "pop",
+   "h4:4"
+  ],
+  [
+   "pop",
+   "d6+0.3"
+  ]
+ ],
+ "v4": true
+}
