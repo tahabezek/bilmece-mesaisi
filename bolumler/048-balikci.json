@@ -1,0 +1,213 @@
+{
+ "id": "048-balikci",
+ "num": 48,
+ "sira": 35,
+ "bpm": 120,
+ "slug": "bildigini-sanan-balikci",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#mantık",
+  "#balık",
+  "#bulmaca"
+ ],
+ "card": [
+  "İkisi hariç hepsi lüfer,",
+  "ikisi hariç hepsi istavrit. Kaç balık?"
+ ],
+ "caption": "Zeka sorusu: Hikmet Bey yalnızca lüfer ve istavrit tuttu. \"İkisi hariç hepsi lüfer, ikisi hariç hepsi istavrit\" diyor. Kaç balık tuttu?\n\nBu soruyu daha önce gördüğünü sanıyorsan bir daha düşün.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Yine balığa çıktım! Bu sefer yalnız lüfer ve istavrit tuttum."
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "İkisi hariç hepsi lüfer, ikisi hariç hepsi istavrit."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Sence kaç balık tuttum?"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.35,
+    "text": "Bilen akşam yemeğine gelsin."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Üç balık! Geçen seferki gibi!"
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Say bakalım: üç balıkta ikisi hariç kaç lüfer kalır?",
+    "tts": "Say bakalım, üç balıkta ikisi hariç kaç lüfer kalır?"
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 10.6,
+    "text": "Bizim evde iki kedi, iki köpek var. Yani ikisi hariç hepsi kedi."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.32,
+    "text": "Buldum! Dört balık!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "İki lüfer, iki istavrit. Lüferler hariç hepsi istavrit, istavritler hariç hepsi lüfer."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Üç türde cevap üç, iki türde dört!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 0.9,
+    "text": "Bildiğini sananları yakaladım!"
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu cevapları ezberleyen arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "knock",
+   "@0.27"
+  ],
+  [
+   "pop",
+   "h1:6-0.04"
+  ],
+  [
+   "pop",
+   "h1:8-0.04"
+  ],
+  [
+   "knock",
+   "h2b:1+0.23"
+  ],
+  [
+   "knock",
+   "h2b:1+0.48"
+  ],
+  [
+   "swish",
+   "h3-0.1"
+  ],
+  [
+   "pop",
+   "d2-0.08"
+  ],
+  [
+   "knock",
+   "hd:4-0.04"
+  ],
+  [
+   "knock",
+   "hd:4+0.21"
+  ],
+  [
+   "pop",
+   "hd:7"
+  ],
+  [
+   "buzz",
+   "hd:8+0.1"
+  ],
+  [
+   "knock",
+   "@21.29"
+  ],
+  [
+   "swish",
+   "n1:8-0.3"
+  ],
+  [
+   "swish",
+   "d3+0.82"
+  ],
+  [
+   "zip",
+   [
+    "d3+1.38",
+    "d3+1.75"
+   ]
+  ],
+  [
+   "knock",
+   "d3+1.72"
+  ],
+  [
+   "swish",
+   "d4:4-0.15"
+  ],
+  [
+   "knock",
+   "d4:5+0.03"
+  ],
+  [
+   "swish",
+   "d4:8-0.15"
+  ],
+  [
+   "knock",
+   "d4:9+0.03"
+  ],
+  [
+   "ding",
+   "d5:6"
+  ],
+  [
+   "swish",
+   "h4-0.1"
+  ],
+  [
+   "pop",
+   "d6"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true
+}
