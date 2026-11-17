@@ -1,0 +1,262 @@
+{
+ "id": "054-vapur-tanidik",
+ "num": 54,
+ "sira": 44,
+ "bpm": 120,
+ "slug": "son-vapur-tanidik-sayisi",
+ "coverAt": 0,
+ "seri": "SON VAPUR",
+ "kapak": "KESİN VAR",
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#vapur",
+  "#mantık",
+  "#akıloyunları"
+ ],
+ "card": [
+  "Vapurda 30 yolcu var.",
+  "Tanıdık sayısı aynı iki kişi var mı?"
+ ],
+ "caption": "Zeka sorusu: Son vapurda 30 yolcu var. Tanışıklık karşılıklıdır: sen onu tanıyorsan o da seni tanır. Kaptan bahse giriyor: \"Bu vapurda, vapurdaki tanıdığının sayısı aynı olan iki yolcu yoktur.\" Simitçi Lâl kimseye sormadan bahsi kazanıyor. Nasıl?\n\nCevap kapakta: kesin var. Nedeni videoda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "rate": "-6%",
+    "pitch": "-12Hz",
+    "gap": 0.3,
+    "text": "Bu vapurda otuz yolcu var, herkes birkaç kişiyi tanıyor."
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "rate": "-6%",
+    "pitch": "-12Hz",
+    "gap": 0.35,
+    "text": "Bahse girerim, vapurdaki tanıdığı sayısı aynı olan iki yolcu yoktur."
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "rate": "-6%",
+    "pitch": "-12Hz",
+    "gap": 0.35,
+    "text": "Bilirsen bütün simitlerini ben alırım."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "rate": "+16%",
+    "pitch": "+3Hz",
+    "gap": 0.4,
+    "text": "Herkese tek tek sorayım!"
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "rate": "-6%",
+    "pitch": "-12Hz",
+    "gap": 0.35,
+    "text": "Vapur yanaşmadan bitmez. Saymadan bileceksin!"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "rate": "+16%",
+    "pitch": "+3Hz",
+    "gap": 10.6,
+    "text": "Buldum! Saymaya gerek yok!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "rate": "+16%",
+    "pitch": "+3Hz",
+    "gap": 0.35,
+    "text": "Herkesin tanıdığı sıfırdan yirmi dokuza kadar olabilir: otuz göz."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "rate": "+16%",
+    "pitch": "+3Hz",
+    "gap": 0.35,
+    "text": "Ama yirmi dokuz tanıyan herkesi tanır, sıfır tanıyan kalmaz."
+   },
+   {
+    "id": "d5b",
+    "who": "defne",
+    "rate": "+12%",
+    "pitch": "+3Hz",
+    "gap": 0.35,
+    "text": "Otuz yolcuya yirmi dokuz göz kalır, iki bilet aynı göze düşer!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "rate": "-6%",
+    "pitch": "-12Hz",
+    "gap": 0.95,
+    "text": "Bu uykucu kimseyi tanımıyor ki, sıfır!"
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "rate": "+16%",
+    "pitch": "+3Hz",
+    "gap": 1.8,
+    "text": "Bunu herkesi tanıdığını sanan arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "d3-0.3",
+ "cdSure": 10,
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "music": {
+  "think": [
+   "hd>",
+   "d3"
+  ],
+  "riser": [
+   "hd>",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "pop",
+   "@0.3"
+  ],
+  [
+   "pop",
+   "h1:2-0.04"
+  ],
+  [
+   "swish",
+   "h2a-0.12"
+  ],
+  [
+   "pop",
+   "h2a:7-0.04"
+  ],
+  [
+   "swish",
+   "h3:2-0.25"
+  ],
+  [
+   "swish",
+   "d2-0.12"
+  ],
+  [
+   "pop",
+   "d2:0-0.04"
+  ],
+  [
+   "pop",
+   "d2:1-0.04"
+  ],
+  [
+   "pop",
+   "d2:2-0.04"
+  ],
+  [
+   "buzz",
+   "hd:2"
+  ],
+  [
+   "swish",
+   "hd:3-0.25"
+  ],
+  [
+   "swish",
+   "d3-10.32"
+  ],
+  [
+   "knock",
+   "d3-4.43"
+  ],
+  [
+   "knock",
+   "d3-3.57"
+  ],
+  [
+   "knock",
+   "d3-2.71"
+  ],
+  [
+   "knock",
+   "d3-1.85"
+  ],
+  [
+   "swish",
+   "d4-0.2"
+  ],
+  [
+   "pop",
+   "d4:2-0.04"
+  ],
+  [
+   "pop",
+   "d4:4-0.04"
+  ],
+  [
+   "ding",
+   "d4:7-0.04"
+  ],
+  [
+   "swish",
+   "d5:1-0.05"
+  ],
+  [
+   "knock",
+   "d5:1+0.43"
+  ],
+  [
+   "buzz",
+   "d5:6"
+  ],
+  [
+   "zip",
+   [
+    "d5b+0.2",
+    "d5b+1.85"
+   ]
+  ],
+  [
+   "swish",
+   "d5b:9-0.62"
+  ],
+  [
+   "knock",
+   "d5b:9-0.02"
+  ],
+  [
+   "ding",
+   "d5b:10"
+  ],
+  [
+   "swish",
+   "h4-0.12"
+  ],
+  [
+   "pop",
+   "h4:2-0.04"
+  ],
+  [
+   "womp",
+   "h4>+0.5"
+  ],
+  [
+   "pop",
+   "d6+0.3"
+  ]
+ ],
+ "v4": true
+}
