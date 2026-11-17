@@ -1,0 +1,226 @@
+{
+ "id": "047-bardaklar",
+ "num": 47,
+ "sira": 37,
+ "bpm": 120,
+ "slug": "kerem-in-bardaklari",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#mantık",
+  "#bulmaca",
+  "#çay"
+ ],
+ "card": [
+  "Kerem tek bardak çevirebilir.",
+  "Necmi anahtarı nasıl bulur?"
+ ],
+ "caption": "Zeka sorusu: Anahtar 2x2 dolabın dört çekmecesinden birinde ve yerini yalnız Kerem biliyor. Tepside dört bardak var, bazıları ters, bazıları düz; bunları Kerem dizmedi. Kerem tam bir bardağı çevirip gidecek, sonra Necmi tepsiye bakıp doğru çekmeceyi söyleyecek. Önceden anlaşabiliyorlar ama Kerem konuşmuyor. Nasıl?\n\nCevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Kerem anahtarın yerini biliyor ama hiç konuşmaz."
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Dört bardağı tepsiye ben dizdim. Kerem tek bardak çevirip çıkacak."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Necmi tepsiye bakıp doğru çekmeceyi bulacak. Nasıl?"
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Kerem anahtarın çekmecesine denk gelen bardağı çevirir!"
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Necmi hangisinin çevrildiğini nereden bilecek? Bardakları ben karıştırdım."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 10.6,
+    "text": "Bu tepsi de dolap gibi: iki üstte, iki altta.",
+    "tts": "Bu tepsi de dolap gibi, iki üstte, iki altta."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.32,
+    "text": "Buldum! Bu tepsi dolabın haritası!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Sağ sütunda ters bardak tekse anahtar sağda. Alt sırada tekse altta."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Kerem tek bardakla iki sayıyı istediği gibi ayarlar!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 0.9,
+    "text": "Kerem, sen bu kadar konuşkan mıydın?"
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu az konuşup çok anlatan arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "h2b>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "pop",
+   "@0.3"
+  ],
+  [
+   "knock",
+   "@0.84"
+  ],
+  [
+   "knock",
+   "h2a:4+0.02"
+  ],
+  [
+   "pop",
+   "h2a:6"
+  ],
+  [
+   "swish",
+   "h2b:3-0.1"
+  ],
+  [
+   "swish",
+   "d2:1+0.2"
+  ],
+  [
+   "knock",
+   "d2:6-0.03"
+  ],
+  [
+   "pop",
+   "hd:2-0.04"
+  ],
+  [
+   "pop",
+   "hd:2+0.04"
+  ],
+  [
+   "knock",
+   "hd:1"
+  ],
+  [
+   "buzz",
+   "hd:7+0.3"
+  ],
+  [
+   "knock",
+   "n1:6-0.12"
+  ],
+  [
+   "knock",
+   "n1:8-0.12"
+  ],
+  [
+   "swish",
+   "d3:4-0.1"
+  ],
+  [
+   "pop",
+   "d4:0-0.04"
+  ],
+  [
+   "pop",
+   "d4:7-0.04"
+  ],
+  [
+   "swish",
+   "d5:7-0.7"
+  ],
+  [
+   "knock",
+   "d5:7-0.03"
+  ],
+  [
+   "swish",
+   "d5:7+0.02"
+  ],
+  [
+   "ding",
+   "d5:7+0.22"
+  ],
+  [
+   "swish",
+   "h4-0.1"
+  ],
+  [
+   "pop",
+   "d6"
+  ],
+  [
+   "zip",
+   [
+    "n1-8.25",
+    "n1-7.2"
+   ]
+  ],
+  [
+   "knock",
+   "n1-6.32"
+  ],
+  [
+   "zip",
+   [
+    "d5:7+0.36",
+    "d5:7+0.62"
+   ]
+  ],
+  [
+   "pop",
+   "d5:7+0.68"
+  ],
+  [
+   "pop",
+   "hd:2+0.12"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true
+}
