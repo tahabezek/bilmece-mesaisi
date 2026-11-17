@@ -1,0 +1,259 @@
+{
+ "id": "049-yuz-cay",
+ "num": 49,
+ "sira": 36,
+ "bpm": 120,
+ "slug": "yuz-cay",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#mantık",
+  "#akıloyunları",
+  "#bulmaca"
+ ],
+ "card": [
+  "100 çay, 14 kişi. Herkes en az bir,",
+  "kimse aynı sayıda değil. Olur mu?"
+ ],
+ "caption": "Zeka sorusu: Necmi bugün tam 100 bardak çay dağıttı. 14 kişilik ofiste herkes en az bir çay içti ve kimse bir başkasıyla aynı sayıda içmedi. Necmi doğru saymış mı?\n\nCevap videonun sonunda.",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Necmi bugün tam yüz bardak çay dağıtmış!"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "On dört kişiyiz. Herkes en az bir çay içti, kimse aynı sayıda içmedi."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Necmi doğru mu saymış?"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Bilirsen bir çay da sana."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Olur! Kimine az, kimine çok verir."
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Hadi bakalım, dağıt da görelim."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 10.6,
+    "text": "Her basamak bir öncekinden bir şeker fazla ister."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.32,
+    "text": "Buldum! Necmi yanlış saymış!"
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Herkes farklıysa biri bir, biri iki, biri de on dört bardak içmiştir."
+   },
+   {
+    "id": "d5",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Birden on dörde kadar toplarsan yüz beş çıkar. Yüz bardak yetmez!"
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 0.95,
+    "text": "Necmi, eksik beş bardak nerede?"
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu hesabı hiç tutmayan arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "pop",
+   "@0.3"
+  ],
+  [
+   "zip",
+   [
+    "h2a-0.04",
+    "h2a:2+0.35"
+   ]
+  ],
+  [
+   "pop",
+   "h2a:6"
+  ],
+  [
+   "ding",
+   "h2a:6+0.56"
+  ],
+  [
+   "swish",
+   "h3:2-0.12"
+  ],
+  [
+   "swish",
+   "d2-0.02"
+  ],
+  [
+   "knock",
+   "d2:2+0.45"
+  ],
+  [
+   "knock",
+   "d2:4+0.35"
+  ],
+  [
+   "knock",
+   "hd+0.35"
+  ],
+  [
+   "knock",
+   "hd:2+0.55"
+  ],
+  [
+   "knock",
+   "n1-9.6"
+  ],
+  [
+   "knock",
+   "n1-8.7"
+  ],
+  [
+   "buzz",
+   "n1-8.6"
+  ],
+  [
+   "knock",
+   "n1-7.5"
+  ],
+  [
+   "knock",
+   "n1-6.5"
+  ],
+  [
+   "buzz",
+   "n1-6.4"
+  ],
+  [
+   "knock",
+   "n1-5.3"
+  ],
+  [
+   "knock",
+   "n1-4.55"
+  ],
+  [
+   "knock",
+   "n1-2.25"
+  ],
+  [
+   "pop",
+   "n1-0.05"
+  ],
+  [
+   "pop",
+   "n1:1+0.1"
+  ],
+  [
+   "pop",
+   "n1:3+0.1"
+  ],
+  [
+   "pop",
+   "n1:5+0.05"
+  ],
+  [
+   "pop",
+   "n1:7"
+  ],
+  [
+   "swish",
+   "d3:1+0.05"
+  ],
+  [
+   "pop",
+   "d4:3"
+  ],
+  [
+   "pop",
+   "d4:5"
+  ],
+  [
+   "zip",
+   [
+    "d4:5+0.2",
+    "d4:9"
+   ]
+  ],
+  [
+   "buzz",
+   "d4:10+0.45"
+  ],
+  [
+   "pop",
+   "d4>+0.05"
+  ],
+  [
+   "ding",
+   "d5:5"
+  ],
+  [
+   "knock",
+   "d5:8"
+  ],
+  [
+   "womp",
+   "h4:3"
+  ],
+  [
+   "pop",
+   "d6+0.3"
+  ]
+ ],
+ "v4": true
+}
