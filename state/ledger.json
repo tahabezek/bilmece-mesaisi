@@ -461,15 +461,18 @@
     "2026-11-17T18:00Z": {
       "episode": "039-kolonlu-oda",
       "media": "v/039-kolonlu-oda-888b2254.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-15T21:44:15.007Z",
       "postId": "6afa27ef06e1675856a941a7",
       "dueAt": "2026-11-17T18:00:00.000Z",
       "yt": {
         "postId": "6afa27ef60a910801c4d0068",
-        "status": "scheduled",
-        "dueAt": "2026-11-17T18:00:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-17T18:00:00.000Z",
+        "link": "https://www.youtube.com/shorts/w_p0iARJ5f0"
+      },
+      "sentAt": "2026-11-17T18:06:49.383Z",
+      "link": "https://www.instagram.com/reel/Df2iFpGkbB7/"
     },
     "2026-11-18T09:30Z": {
       "episode": "040-tavla",
@@ -500,11 +503,13 @@
     "2026-11-17T16:08Z": {
       "episode": "038-kagit-top",
       "media": "v/038-kagit-top-d40c03cf.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-17T15:57:45.840Z",
       "postId": "6afc797d104bf3e6248ca3ac",
       "dueAt": "2026-11-17T16:08:00.000Z",
-      "note": "elle (--simdi)"
+      "note": "elle (--simdi)",
+      "sentAt": "2026-11-17T16:10:56.215Z",
+      "link": "https://www.instagram.com/reel/Df2U9xCAVu-/"
     },
     "2026-11-19T09:30Z": {
       "episode": "041-seker-cuvali",
@@ -517,6 +522,19 @@
         "postId": "6afc79bff78506c8dd32a7b4",
         "status": "scheduled",
         "dueAt": "2026-11-19T09:30:00.000Z"
+      }
+    },
+    "2026-11-19T18:00Z": {
+      "episode": "045-farkli-sayilar",
+      "media": "v/045-farkli-sayilar-8eb727ec.mp4",
+      "status": "scheduled",
+      "at": "2026-11-17T18:47:56.997Z",
+      "postId": "6afca1907ab2c2731e0b9e8c",
+      "dueAt": "2026-11-19T18:00:00.000Z",
+      "yt": {
+        "postId": "6afca1917ab2c2731e0b9f26",
+        "status": "scheduled",
+        "dueAt": "2026-11-19T18:00:00.000Z"
       }
     }
   }
