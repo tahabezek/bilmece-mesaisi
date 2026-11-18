@@ -477,15 +477,18 @@
     "2026-11-18T09:30Z": {
       "episode": "040-tavla",
       "media": "v/040-tavla-405fcb8a.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-16T15:38:47.323Z",
       "postId": "6afb23b848b687b0327bca4e",
       "dueAt": "2026-11-18T09:30:00.000Z",
       "yt": {
         "postId": "6afb23b967619c57d50cd2b6",
-        "status": "scheduled",
-        "dueAt": "2026-11-18T09:30:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-18T09:30:00.000Z",
+        "link": "https://www.youtube.com/shorts/FySsClK8KZ4"
+      },
+      "sentAt": "2026-11-18T09:31:53.653Z",
+      "link": "https://www.instagram.com/reel/Df4MHl3DDcU/"
     },
     "2026-11-18T18:00Z": {
       "episode": "044-serbet",
@@ -535,6 +538,19 @@
         "postId": "6afca1917ab2c2731e0b9f26",
         "status": "scheduled",
         "dueAt": "2026-11-19T18:00:00.000Z"
+      }
+    },
+    "2026-11-20T09:30Z": {
+      "episode": "042-hileli-para",
+      "media": "v/042-hileli-para-90b005ea.mp4",
+      "status": "scheduled",
+      "at": "2026-11-18T15:36:30.762Z",
+      "postId": "6afdc630ff73344f88f67675",
+      "dueAt": "2026-11-20T09:30:00.000Z",
+      "yt": {
+        "postId": "6afdc631b3f8322ac748447f",
+        "status": "scheduled",
+        "dueAt": "2026-11-20T09:30:00.000Z"
       }
     }
   }
