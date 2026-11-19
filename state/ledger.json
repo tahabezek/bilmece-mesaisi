@@ -536,15 +536,18 @@
     "2026-11-19T18:00Z": {
       "episode": "045-farkli-sayilar",
       "media": "v/045-farkli-sayilar-8eb727ec.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-17T18:47:56.997Z",
       "postId": "6afca1907ab2c2731e0b9e8c",
       "dueAt": "2026-11-19T18:00:00.000Z",
       "yt": {
         "postId": "6afca1917ab2c2731e0b9f26",
-        "status": "scheduled",
-        "dueAt": "2026-11-19T18:00:00.000Z"
-      }
+        "status": "failed",
+        "dueAt": "2026-11-19T18:00:00.000Z",
+        "error": "The daily posting limit for this channel has been reached! Please try reducing the amount of times per day in your schedule and try again later."
+      },
+      "sentAt": "2026-11-19T18:06:16.245Z",
+      "link": "https://www.instagram.com/reel/Df7rrHtDcUk/"
     },
     "2026-11-20T09:30Z": {
       "episode": "042-hileli-para",
@@ -583,6 +586,19 @@
         "postId": "6aff18eee03d69424b6cfa6f",
         "status": "scheduled",
         "dueAt": "2026-11-21T09:30:00.000Z"
+      }
+    },
+    "2026-11-21T18:00Z": {
+      "episode": "048-balikci",
+      "media": "v/048-balikci-7717d2e4.mp4",
+      "status": "scheduled",
+      "at": "2026-11-19T18:43:35.668Z",
+      "postId": "6aff438a58a5c010ac5cdf96",
+      "dueAt": "2026-11-21T18:00:00.000Z",
+      "yt": {
+        "postId": "6aff438be3ce990685fd8fdb",
+        "status": "scheduled",
+        "dueAt": "2026-11-21T18:00:00.000Z"
       }
     }
   }
