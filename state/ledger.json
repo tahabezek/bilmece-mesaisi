@@ -520,15 +520,18 @@
     "2026-11-19T09:30Z": {
       "episode": "041-seker-cuvali",
       "media": "v/041-seker-cuvali-4596ae77.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-17T15:57:45.292Z",
       "postId": "6afc79be0ec7d2b0822c53a4",
       "dueAt": "2026-11-19T09:30:00.000Z",
       "yt": {
         "postId": "6afc79bff78506c8dd32a7b4",
-        "status": "scheduled",
-        "dueAt": "2026-11-19T09:30:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-19T09:30:00.000Z",
+        "link": "https://www.youtube.com/shorts/0dBqWuzijl4"
+      },
+      "sentAt": "2026-11-19T09:33:32.253Z",
+      "link": "https://www.instagram.com/reel/Df6xFUvAe1t/"
     },
     "2026-11-19T18:00Z": {
       "episode": "045-farkli-sayilar",
@@ -567,6 +570,19 @@
         "postId": "6afdee6a296db422084dc675",
         "status": "scheduled",
         "dueAt": "2026-11-20T18:00:00.000Z"
+      }
+    },
+    "2026-11-21T09:30Z": {
+      "episode": "043-lokum",
+      "media": "v/043-lokum-2dc0473d.mp4",
+      "status": "scheduled",
+      "at": "2026-11-19T15:41:48.088Z",
+      "postId": "6aff18ede03d69424b6cfa18",
+      "dueAt": "2026-11-21T09:30:00.000Z",
+      "yt": {
+        "postId": "6aff18eee03d69424b6cfa6f",
+        "status": "scheduled",
+        "dueAt": "2026-11-21T09:30:00.000Z"
       }
     }
   }
