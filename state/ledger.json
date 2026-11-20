@@ -552,15 +552,18 @@
     "2026-11-20T09:30Z": {
       "episode": "042-hileli-para",
       "media": "v/042-hileli-para-90b005ea.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-18T15:36:30.762Z",
       "postId": "6afdc630ff73344f88f67675",
       "dueAt": "2026-11-20T09:30:00.000Z",
       "yt": {
         "postId": "6afdc631b3f8322ac748447f",
-        "status": "scheduled",
-        "dueAt": "2026-11-20T09:30:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-20T09:30:00.000Z",
+        "link": "https://www.youtube.com/shorts/O6miXuGkjxk"
+      },
+      "sentAt": "2026-11-20T09:32:24.807Z",
+      "link": "https://www.instagram.com/reel/Df9Vuzijv6a/"
     },
     "2026-11-20T18:00Z": {
       "episode": "046-tas-kagit-zar",
@@ -599,6 +602,19 @@
         "postId": "6aff438be3ce990685fd8fdb",
         "status": "scheduled",
         "dueAt": "2026-11-21T18:00:00.000Z"
+      }
+    },
+    "2026-11-22T09:30Z": {
+      "episode": "049-yuz-cay",
+      "media": "v/049-yuz-cay-482cabf2.mp4",
+      "status": "scheduled",
+      "at": "2026-11-20T15:24:05.961Z",
+      "postId": "6b00664944831c50e4d6c8b3",
+      "dueAt": "2026-11-22T09:30:00.000Z",
+      "yt": {
+        "postId": "6b00664944831c50e4d6c8ef",
+        "status": "scheduled",
+        "dueAt": "2026-11-22T09:30:00.000Z"
       }
     }
   }
