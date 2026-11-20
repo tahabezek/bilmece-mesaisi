@@ -18,7 +18,7 @@
   "5 sönük lamba. Vapur başına 2 düğme.",
   "Beşi birden kaç vapurda yanar?"
  ],
- "caption": "Zeka sorusu: Eski iskelede 5 lamba var, hepsi sönük. Her gelen vapurun kaptanı tam iki lambanın düğmesine basar: yanan lamba söner, sönük lamba yanar. Lâl yılbaşı gecesi beş lambanın hepsinin yanmasını istiyor. Kaç vapur gelmesi gerekir?\n\nCevap kapakta: asla. Nedeni videoda.",
+ "caption": "Zeka sorusu: Eski iskelede 5 lamba var, hepsi sönük. Her gelen vapurun kaptanı tam iki lambanın düğmesine basar: yanan lamba söner, sönük lamba yanar. Lâl yılbaşı gecesi beş lambanın hepsinin yanmasını istiyor. Kaç vapur gelmesi gerekir?\n\nCevap kapakta: asla. Peki neden?",
  "voice": {
   "tight": 0.28,
   "tail": 2.4,
@@ -232,5 +232,10 @@
    "d6+0.3"
   ]
  ],
- "v4": true
+ "v4": true,
+ "cevapsiz": {
+  "kesim": 31.888,
+  "kart": 49.722,
+  "tarih": "2026-11-20"
+ }
 }

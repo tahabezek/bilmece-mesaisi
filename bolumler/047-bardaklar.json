@@ -16,7 +16,7 @@
   "Kerem tek bardak çevirebilir.",
   "Necmi anahtarı nasıl bulur?"
  ],
- "caption": "Zeka sorusu: Anahtar 2x2 dolabın dört çekmecesinden birinde ve yerini yalnız Kerem biliyor. Tepside dört bardak var, bazıları ters, bazıları düz; bunları Kerem dizmedi. Kerem tam bir bardağı çevirip gidecek, sonra Necmi tepsiye bakıp doğru çekmeceyi söyleyecek. Önceden anlaşabiliyorlar ama Kerem konuşmuyor. Nasıl?\n\nCevap videonun sonunda.",
+ "caption": "Zeka sorusu: Anahtar 2x2 dolabın dört çekmecesinden birinde ve yerini yalnız Kerem biliyor. Tepside dört bardak var, bazıları ters, bazıları düz; bunları Kerem dizmedi. Kerem tam bir bardağı çevirip gidecek, sonra Necmi tepsiye bakıp doğru çekmeceyi söyleyecek. Önceden anlaşabiliyorlar ama Kerem konuşmuyor. Nasıl?",
  "voice": {
   "tight": 0.28,
   "tail": 2.4,
@@ -222,5 +222,10 @@
   ]
  ],
  "cdShare": "Bunu bir arkadaşına sor!",
- "v4": true
+ "v4": true,
+ "cevapsiz": {
+  "kesim": 34.104,
+  "kart": 50.59,
+  "tarih": "2026-11-20"
+ }
 }

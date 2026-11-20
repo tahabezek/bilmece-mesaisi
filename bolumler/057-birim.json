@@ -16,7 +16,7 @@
   "Hikmet muhasebeden bilgi işleme geçti.",
   "İki birimin de yaş ortalaması arttı!"
  ],
- "caption": "Zeka sorusu: Hikmet Bey muhasebeden bilgi işleme geçti. Kimse yaş almadı, kimse işe girip çıkmadı. Ama iki birimin de yaş ortalaması yükseldi. Bu nasıl olur?\n\nCevap videonun sonunda.",
+ "caption": "Zeka sorusu: Hikmet Bey muhasebeden bilgi işleme geçti. Kimse yaş almadı, kimse işe girip çıkmadı. Ama iki birimin de yaş ortalaması yükseldi. Bu nasıl olur?",
  "voice": {
   "tight": 0.28,
   "tail": 2.4,
@@ -248,5 +248,10 @@
   ]
  ],
  "cdShare": "Bunu bir arkadaşına sor!",
- "v4": true
+ "v4": true,
+ "cevapsiz": {
+  "kesim": 33.204,
+  "kart": 50.622,
+  "tarih": "2026-11-20"
+ }
 }

@@ -16,7 +16,7 @@
   "Sayılar 1–5 arası ve ardışık.",
   "Necmi'nin sayısı kaç?"
  ],
- "caption": "Zeka sorusu: Hikmet Bey, Defne ile Necmi'ye 1'den 5'e kadar birer sayı fısıldadı ve \"Sayılarınız ardışık\" dedi. Defne: \"Kimin sayısı büyük, bilmiyorum.\" Necmi: \"Ben de bilmiyorum.\" Defne: \"Şimdi biliyorum!\" Necmi'nin sayısı kaç?\n\nCevap videonun sonunda.",
+ "caption": "Zeka sorusu: Hikmet Bey, Defne ile Necmi'ye 1'den 5'e kadar birer sayı fısıldadı ve \"Sayılarınız ardışık\" dedi. Defne: \"Kimin sayısı büyük, bilmiyorum.\" Necmi: \"Ben de bilmiyorum.\" Defne: \"Şimdi biliyorum!\" Necmi'nin sayısı kaç?",
  "voice": {
   "tight": 0.28,
   "tail": 2.4,
@@ -209,5 +209,10 @@
    "d6+0.3"
   ]
  ],
- "v4": true
+ "v4": true,
+ "cevapsiz": {
+  "kesim": 24.758,
+  "kart": 42.962,
+  "tarih": "2026-11-20"
+ }
 }

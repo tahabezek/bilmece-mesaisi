@@ -16,7 +16,7 @@
   "Üç kişi, iki şerbetli yüz.",
   "Kim, kaçıncı sayışta anlar?"
  ],
- "caption": "Zeka sorusu: Şerbetli yüzler geri döndü! Bu sefer masada üç kişi var: Defne, Necmi ve Kerem. Baklava şerbeti yalnız ikisinin yüzüne bulaştı. Ayna yok, konuşmak yasak; herkes ötekilerin yüzünü görüyor ama kendi yüzünü göremiyor. Hikmet Bey \"En az birinizin yüzünde şerbet var\" dedi ve üçe kadar saymaya başladı. Şerbetli olduğundan emin olan elini kaldıracak, temiz olduğundan emin olan başını sallayacak. Kim, kaçıncı sayışta anlar? Cevap videonun sonunda.\n\nİlk bölümü izlemediysen önce \"Şerbetli yüzler\"i izle, sonra bunu dene.",
+ "caption": "Zeka sorusu: Şerbetli yüzler geri döndü! Bu sefer masada üç kişi var: Defne, Necmi ve Kerem. Baklava şerbeti yalnız ikisinin yüzüne bulaştı. Ayna yok, konuşmak yasak; herkes ötekilerin yüzünü görüyor ama kendi yüzünü göremiyor. Hikmet Bey \"En az birinizin yüzünde şerbet var\" dedi ve üçe kadar saymaya başladı. Şerbetli olduğundan emin olan elini kaldıracak, temiz olduğundan emin olan başını sallayacak. Kim, kaçıncı sayışta anlar?\n\nİlk bölümü izlemediysen önce \"Şerbetli yüzler\"i izle, sonra bunu dene.",
  "voice": {
   "tight": 0.28,
   "tail": 2.4,
@@ -317,5 +317,10 @@
   ]
  ],
  "cdShare": "Bunu bir arkadaşına sor!",
- "v4": true
+ "v4": true,
+ "cevapsiz": {
+  "kesim": 36.724,
+  "kart": 55.362,
+  "tarih": "2026-11-20"
+ }
 }

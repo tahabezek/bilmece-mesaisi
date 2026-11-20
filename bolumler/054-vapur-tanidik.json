@@ -18,7 +18,7 @@
   "Vapurda 30 yolcu var.",
   "Tanıdık sayısı aynı iki kişi var mı?"
  ],
- "caption": "Zeka sorusu: Son vapurda 30 yolcu var. Tanışıklık karşılıklıdır: sen onu tanıyorsan o da seni tanır. Kaptan bahse giriyor: \"Bu vapurda, vapurdaki tanıdığının sayısı aynı olan iki yolcu yoktur.\" Simitçi Lâl kimseye sormadan bahsi kazanıyor. Nasıl?\n\nCevap kapakta: kesin var. Nedeni videoda.",
+ "caption": "Zeka sorusu: Son vapurda 30 yolcu var. Tanışıklık karşılıklıdır: sen onu tanıyorsan o da seni tanır. Kaptan bahse giriyor: \"Bu vapurda, vapurdaki tanıdığının sayısı aynı olan iki yolcu yoktur.\" Simitçi Lâl kimseye sormadan bahsi kazanıyor. Nasıl?\n\nCevap kapakta: kesin var. Peki neden?",
  "voice": {
   "tight": 0.28,
   "tail": 2.4,
@@ -258,5 +258,10 @@
    "d6+0.3"
   ]
  ],
- "v4": true
+ "v4": true,
+ "cevapsiz": {
+  "kesim": 27.538,
+  "kart": 48.126,
+  "tarih": "2026-11-20"
+ }
 }

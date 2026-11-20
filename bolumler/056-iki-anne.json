@@ -16,7 +16,7 @@
   "İki otobüs de 10 dakikada bir geçer.",
   "Necmi neden hep Kadıköy'e gidiyor?"
  ],
- "caption": "Zeka sorusu: Necmi pazar günleri durağa rastgele bir saatte gelip ilk gelen otobüse biniyor. Kadıköy otobüsü de Üsküdar otobüsü de tam 10 dakikada bir geçiyor. Ama Necmi on pazarın dokuzunda Kadıköy'e gidiyor. Otobüsler dakikası dakikasına geliyor. Neden?\n\nCevap videonun sonunda.",
+ "caption": "Zeka sorusu: Necmi pazar günleri durağa rastgele bir saatte gelip ilk gelen otobüse biniyor. Kadıköy otobüsü de Üsküdar otobüsü de tam 10 dakikada bir geçiyor. Ama Necmi on pazarın dokuzunda Kadıköy'e gidiyor. Otobüsler dakikası dakikasına geliyor. Neden?",
  "voice": {
   "tight": 0.28,
   "tail": 2.4,
@@ -233,5 +233,10 @@
    "d6+0.6"
   ]
  ],
- "v4": true
+ "v4": true,
+ "cevapsiz": {
+  "kesim": 33.978,
+  "kart": 51.256,
+  "tarih": "2026-11-20"
+ }
 }

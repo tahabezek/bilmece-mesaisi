@@ -18,7 +18,7 @@
   "Geçiş 20 dk. Saatler 08.21 ve 08.19.",
   "Vapur kaç kez karşıya geçti?"
  ],
- "caption": "Zeka sorusu: Bir yolcu 07.20'de Karaköy'de vapura bindi ve iki kol saatini ayarladı. Saatlerden biri saatte 1 dakika ileri gider, öbürü saatte 1 dakika geri kalır. Kadıköy'de inerken biri 08.21'i, öbürü 08.19'u gösteriyordu. Bir geçiş 20 dakika sürüyor. Vapur kaç kez karşıya geçti?\n\nCevap kapakta: üç kez. Nedeni videoda.",
+ "caption": "Zeka sorusu: Bir yolcu 07.20'de Karaköy'de vapura bindi ve iki kol saatini ayarladı. Saatlerden biri saatte 1 dakika ileri gider, öbürü saatte 1 dakika geri kalır. Kadıköy'de inerken biri 08.21'i, öbürü 08.19'u gösteriyordu. Bir geçiş 20 dakika sürüyor. Vapur kaç kez karşıya geçti?\n\nCevap kapakta: üç kez. Peki neden?",
  "voice": {
   "tight": 0.28,
   "tail": 2.4,
@@ -245,5 +245,10 @@
    "d6+0.3"
   ]
  ],
- "v4": true
+ "v4": true,
+ "cevapsiz": {
+  "kesim": 34.098,
+  "kart": 50.452,
+  "tarih": "2026-11-20"
+ }
 }

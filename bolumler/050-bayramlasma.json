@@ -16,7 +16,7 @@
   "Tek sayıda kişiyle bayramlaşan: 5 kişi.",
   "Defne saymadan \"Olamaz\" dedi. Neden?"
  ],
- "caption": "Zeka sorusu: Bayram sabahı ofiste herkes bazı arkadaşlarıyla bayramlaştı; iki kişi en fazla bir kez bayramlaşabiliyor. Hikmet Bey \"Tek sayıda kişiyle bayramlaşan tam 5 kişi var\" diyor. Defne hiçbir şey saymadan \"Olamaz\" diyor. Neden?\n\nCevap videonun sonunda.",
+ "caption": "Zeka sorusu: Bayram sabahı ofiste herkes bazı arkadaşlarıyla bayramlaştı; iki kişi en fazla bir kez bayramlaşabiliyor. Hikmet Bey \"Tek sayıda kişiyle bayramlaşan tam 5 kişi var\" diyor. Defne hiçbir şey saymadan \"Olamaz\" diyor. Neden?",
  "voice": {
   "tight": 0.28,
   "tail": 2.4,
@@ -233,5 +233,10 @@
   ]
  ],
  "cdShare": "Bunu bir arkadaşına sor!",
- "v4": true
+ "v4": true,
+ "cevapsiz": {
+  "kesim": 32.318,
+  "kart": 50.592,
+  "tarih": "2026-11-20"
+ }
 }

@@ -756,7 +756,7 @@ function sayac(K, t, t1, { top = 540, share = null, dur = 10, perde = true } = {
   ctx.fillStyle = hot ? PAL.coral : PAL.mustard; ctx.fill();
   K.circ(0, 0, r * 0.66, PAL.paper, LW * 0.8);
   ctx.save(); ctx.scale(pulse, pulse); K.text(String(Math.max(n, 0)), 0, 52, 150, hot ? PAL.red : INK, 900); ctx.restore();
-  K.text('Cevap geliyor…', 0, r + 72, 52, PAL.paper, 800);
+  K.text('Sen ne dersin?', 0, r + 72, 52, PAL.paper, 800);
   if (share && t >= t0 + 0.9) {
     const v = H.spring(t - (t0 + 0.9), H.UI[0], H.UI[1]); ctx.save(); ctx.translate(0, r + 152); ctx.scale(0.7 + 0.3 * v, 0.7 + 0.3 * v); ctx.globalAlpha = clamp01(v * 1.6);
     ctx.font = '900 46px Rubik'; const sw = ctx.measureText(share).width + 70;
