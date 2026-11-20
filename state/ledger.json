@@ -568,15 +568,18 @@
     "2026-11-20T18:00Z": {
       "episode": "046-tas-kagit-zar",
       "media": "v/046-tas-kagit-zar-8ee8bc06.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-18T18:28:07.406Z",
       "postId": "6afdee69025b095d64738322",
       "dueAt": "2026-11-20T18:00:00.000Z",
       "yt": {
         "postId": "6afdee6a296db422084dc675",
-        "status": "scheduled",
-        "dueAt": "2026-11-20T18:00:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-20T18:00:00.000Z",
+        "link": "https://www.youtube.com/shorts/odiVtH0kZlk"
+      },
+      "sentAt": "2026-11-20T18:05:48.485Z",
+      "link": "https://www.instagram.com/reel/Df-QfJAGl50/"
     },
     "2026-11-21T09:30Z": {
       "episode": "043-lokum",
