@@ -614,18 +614,17 @@
       "link": "https://www.instagram.com/reel/DgA1J_jE7Kp/"
     },
     "2026-11-22T09:30Z": {
-      "episode": "049-yuz-cay",
-      "media": "v/049-yuz-cay-482cabf2.mp4",
-      "status": "skipped",
-      "at": "2026-11-20T15:24:05.961Z",
-      "postId": "6b00664944831c50e4d6c8b3",
+      "episode": "050-bayramlasma",
+      "media": "v/050-bayramlasma-20652db7.mp4",
+      "status": "scheduled",
+      "at": "2026-11-21T19:05:03.963Z",
+      "postId": "6b01eb99d864a011056af9a6",
       "dueAt": "2026-11-22T09:30:00.000Z",
       "yt": {
-        "postId": "6b00664944831c50e4d6c8ef",
-        "status": "skipped",
+        "postId": "6b01eb9ad5eabfb8cc5452ef",
+        "status": "scheduled",
         "dueAt": "2026-11-22T09:30:00.000Z"
-      },
-      "note": "2026-11-21 çekildi: fazla basit (kullanıcı eleştirisi)"
+      }
     },
     "2026-11-22T18:00Z": {
       "episode": "047-bardaklar",
