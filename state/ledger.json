@@ -600,15 +600,18 @@
     "2026-11-21T18:00Z": {
       "episode": "048-balikci",
       "media": "v/048-balikci-7717d2e4.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-19T18:43:35.668Z",
       "postId": "6aff438a58a5c010ac5cdf96",
       "dueAt": "2026-11-21T18:00:00.000Z",
       "yt": {
         "postId": "6aff438be3ce990685fd8fdb",
-        "status": "scheduled",
-        "dueAt": "2026-11-21T18:00:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-21T18:00:00.000Z",
+        "link": "https://www.youtube.com/shorts/JEC2FkrSuSE"
+      },
+      "sentAt": "2026-11-21T18:05:33.835Z",
+      "link": "https://www.instagram.com/reel/DgA1J_jE7Kp/"
     },
     "2026-11-22T09:30Z": {
       "episode": "049-yuz-cay",
@@ -647,6 +650,19 @@
         "postId": "6b01acb40247969092dc2e5c",
         "status": "scheduled",
         "dueAt": "2026-11-23T09:30:00.000Z"
+      }
+    },
+    "2026-11-23T18:00Z": {
+      "episode": "056-iki-anne",
+      "media": "v/056-iki-anne-c84430e2.mp4",
+      "status": "scheduled",
+      "at": "2026-11-21T18:13:12.413Z",
+      "postId": "6b01df798bd84d59660c4859",
+      "dueAt": "2026-11-23T18:00:00.000Z",
+      "yt": {
+        "postId": "6b01df7a142c95751934980d",
+        "status": "scheduled",
+        "dueAt": "2026-11-23T18:00:00.000Z"
       }
     }
   }
