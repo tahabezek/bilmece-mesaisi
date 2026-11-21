@@ -616,15 +616,16 @@
     "2026-11-22T09:30Z": {
       "episode": "049-yuz-cay",
       "media": "v/049-yuz-cay-482cabf2.mp4",
-      "status": "scheduled",
+      "status": "skipped",
       "at": "2026-11-20T15:24:05.961Z",
       "postId": "6b00664944831c50e4d6c8b3",
       "dueAt": "2026-11-22T09:30:00.000Z",
       "yt": {
         "postId": "6b00664944831c50e4d6c8ef",
-        "status": "scheduled",
+        "status": "skipped",
         "dueAt": "2026-11-22T09:30:00.000Z"
-      }
+      },
+      "note": "2026-11-21 çekildi: fazla basit (kullanıcı eleştirisi)"
     },
     "2026-11-22T18:00Z": {
       "episode": "047-bardaklar",
