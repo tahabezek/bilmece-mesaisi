@@ -1,0 +1,269 @@
+<title>Bilmece Seçim Paneli</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Yönetim paneli: üstte özet şeridi, solda filtre, sağda tek satırlık kayıtlar; satır açılınca soru, tuzak, gizli cevap, neden zekice, dikkat. Kanal renkleri: koyu petrol, hardal, kiremit. */
+:root{
+  --bg:#EEF2F1; --panel:#FFFFFF; --ink:#16282A; --muted:#5E7173; --line:#D6DFDE;
+  --brand:#1F4E52; --brand-ink:#F3F7F6; --mustard:#B7841C; --mustard-bg:#FFF6E0; --tile:#C9533A;
+  --ok:#2E8B57; --ok-bg:#E3F3EA; --no:#B8452F; --no-bg:#F8E6E1;
+  --chip:#E6EEED; --row-hover:#F5F8F7; --trap-bg:#F8ECE8; --trap-line:#E5B8AB;
+  --f-ui:"Rubik",system-ui,sans-serif; --f-num:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F1A1B; --panel:#162426; --ink:#E4ECEB; --muted:#93A6A7; --line:#2A3C3E;
+  --brand:#24585C; --brand-ink:#F3F7F6; --mustard:#E6B44A; --mustard-bg:#2E2814; --tile:#E7745A;
+  --ok:#5BC48A; --ok-bg:#16352A; --no:#EE8A73; --no-bg:#3A1F19;
+  --chip:#213335; --row-hover:#1B2B2D; --trap-bg:#33201B; --trap-line:#6B3A2E; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F1A1B; --panel:#162426; --ink:#E4ECEB; --muted:#93A6A7; --line:#2A3C3E;
+  --brand:#24585C; --brand-ink:#F3F7F6; --mustard:#E6B44A; --mustard-bg:#2E2814; --tile:#E7745A;
+  --ok:#5BC48A; --ok-bg:#16352A; --no:#EE8A73; --no-bg:#3A1F19;
+  --chip:#213335; --row-hover:#1B2B2D; --trap-bg:#33201B; --trap-line:#6B3A2E; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-ui);font-size:15px;line-height:1.5}
+.top{background:var(--brand);color:var(--brand-ink)}
+.top .in,.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.top .in{padding-block:20px 22px;display:flex;flex-wrap:wrap;gap:16px 32px;align-items:flex-end;justify-content:space-between}
+.brand small{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:.75;font-weight:600}
+.brand h1{margin:2px 0 4px;font-size:26px;font-weight:800;text-wrap:balance}
+.brand p{margin:0;font-size:13px;opacity:.8;max-width:60ch}
+.stats{display:flex;gap:10px;flex-wrap:wrap}
+.stat{background:rgba(255,255,255,.1);border-radius:10px;padding:8px 14px;min-width:92px}
+.stat b{display:block;font-family:var(--f-num);font-size:22px;font-variant-numeric:tabular-nums;line-height:1.2}
+.stat span{font-size:12px;opacity:.8}
+.stat.s b{color:#8FE0B0}.stat.e b{color:#F5A894}
+.wrap{padding-block:20px 48px;display:grid;grid-template-columns:230px minmax(0,1fr);gap:20px;align-items:start}
+aside{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;position:sticky;top:calc(env(safe-area-inset-top,0px) + 12px);display:flex;flex-direction:column;gap:18px}
+aside h3{margin:0 0 8px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:999px;padding:5px 11px;font:500 13px var(--f-ui);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--brand);border-color:var(--brand);color:var(--brand-ink)}
+.chip:focus-visible,.btn:focus-visible,.rowhead:focus-visible{outline:2px solid var(--mustard);outline-offset:2px}
+.note{font-size:13px;color:var(--muted);margin:0}
+main{min-width:0;display:flex;flex-direction:column;gap:10px}
+.bar{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:space-between}
+.bar p{margin:0;color:var(--muted);font-size:14px}
+.sync{font-size:12px;color:var(--muted)}
+.list{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.head,.rowhead{display:grid;grid-template-columns:40px minmax(0,1fr) 210px 92px 92px 150px;gap:12px;align-items:center;padding:11px 14px}
+.head{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600;border-bottom:1px solid var(--line);background:var(--bg)}
+.item{border-bottom:1px solid var(--line)}
+.item:last-child{border-bottom:0}
+.item.s{box-shadow:inset 4px 0 0 var(--ok)}
+.item.e{box-shadow:inset 4px 0 0 var(--no)}
+.item.e .name,.item.e .mech{opacity:.55}
+.rowhead{cursor:pointer}
+.rowhead:hover{background:var(--row-hover)}
+.no{font-family:var(--f-num);color:var(--muted);font-variant-numeric:tabular-nums}
+.name{font-weight:600;min-width:0}
+.name small{display:block;font-weight:400;color:var(--muted);font-size:12px}
+.mech{font-size:13px;color:var(--muted);min-width:0}
+.meter{display:flex;align-items:center;gap:6px}
+.meter i{width:40px;height:6px;border-radius:3px;background:var(--chip);position:relative;overflow:hidden;flex:none}
+.meter i::after{content:"";position:absolute;inset:0 auto 0 0;width:var(--w);background:var(--c)}
+.meter b{font-family:var(--f-num);font-size:13px;font-variant-numeric:tabular-nums}
+.acts{display:flex;gap:6px;justify-content:flex-end}
+.btn{border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:8px;padding:6px 12px;font:600 13px var(--f-ui);cursor:pointer}
+.btn.sel[aria-pressed="true"]{background:var(--ok);border-color:var(--ok);color:#fff}
+.btn.eli[aria-pressed="true"]{background:var(--no);border-color:var(--no);color:#fff}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.detail{padding:6px 14px 20px 66px;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:14px 20px}
+.detail h4{margin:0 0 6px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.detail p{margin:0;max-width:65ch}
+.q p{font-size:16px}
+.trap{background:var(--trap-bg);border:1px solid var(--trap-line);border-radius:10px;padding:10px 12px}
+.ans{background:var(--mustard-bg);border:1px dashed var(--mustard);border-radius:10px;padding:12px 14px}
+.why,.warn,.src{font-size:14px}
+.warn p{color:var(--muted)}
+.src{grid-column:1/-1;font-size:13px;color:var(--muted)}
+.empty{padding:32px;text-align:center;color:var(--muted)}
+@media (max-width:900px){
+  .wrap{grid-template-columns:minmax(0,1fr)}
+  aside{position:static}
+  .head{display:none}
+  .rowhead{grid-template-columns:32px minmax(0,1fr);grid-template-areas:"no name" "no meta" "no acts";row-gap:8px}
+  .rowhead .no{grid-area:no;align-self:start}
+  .rowhead .name{grid-area:name}
+  .meta-m{grid-area:meta;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center}
+  .rowhead .acts{grid-area:acts;justify-content:flex-start}
+  .detail{padding:4px 14px 18px;grid-template-columns:minmax(0,1fr)}
+}
+@media (min-width:901px){.meta-m{display:contents}}
+@media (prefers-reduced-motion:no-preference){.btn,.chip{transition:background .15s,border-color .15s,color .15s}}
+</style>
+
+<header class="top"><div class="in">
+  <div class="brand"><small>Bilmece Mesaisi · Usta seti · 22 Kasım 2026</small><h1>Seçim paneli</h1>
+    <p>9 bilmece. 51 adaydan iki tur bağımsız denetimle süzüldü: arşivimizle (001–063) ve birbiriyle aynı aileden olan, basit kalan ya da Türkçede dolaşan elendi.</p></div>
+  <div class="stats" aria-live="polite">
+    <div class="stat"><b id="stTotal">9</b><span>aday</span></div>
+    <div class="stat s"><b id="stSel">0</b><span>seçilen</span></div>
+    <div class="stat e"><b id="stEl">0</b><span>elenen</span></div>
+    <div class="stat"><b id="stWait">9</b><span>bekleyen</span></div>
+  </div>
+</div></header>
+
+<div class="wrap">
+  <aside aria-label="Filtreler">
+    <div><h3>Tür</h3><div class="chips" id="fCat"></div></div>
+    <div><h3>Durum</h3><div class="chips" id="fState"></div></div>
+    <div><h3>Sırala</h3><div class="chips" id="fSort"></div></div>
+    <p class="note">Satıra tıkla: soru ve tuzak açılır. Cevap ayrıca açılır; önce kendin dene.</p>
+  </aside>
+
+  <main>
+    <div class="bar"><p id="count"></p><span class="sync" id="sync">Kararlar yükleniyor…</span></div>
+    <div class="list" role="list">
+      <div class="head" aria-hidden="true"><span>#</span><span>Bilmece</span><span>Mekanizma</span><span>Zorluk</span><span>Vay</span><span style="text-align:right">Karar</span></div>
+      <div id="rows"></div>
+    </div>
+  </main>
+</div>
+
+<script>
+// [ad, tür, mekanizma, zorluk, vay, soru, tuzak, cevap, neden zekice, dikkat, kaynak, bağımsız göz]
+const R=[
+["Hangi dizi önce gelir","olasilik","Örtüşme: önünde mutlaka yazı var",8,9,
+"Necmi parayı aralıksız atıyor. Defne'nin dizisi: yazı, tura, tura, tura. Hikmet Bey'in dizisi: tura, tura, tura, tura. Atışlar gruplanmıyor; kesintisiz dizide kimin dizisi önce görünürse o kazanıyor. Kimin şansı daha yüksek, ne kadar?",
+"\"Eşit; her dörtlünün çıkma ihtimali aynı, 1/16.\"",
+"Defne'nin şansı 15/16. Hikmet Bey yalnız ilk dört atışın hepsi tura gelirse kazanır. Bunun dışında Hikmet Bey'in dört turası ne zaman görünürse görünsün, hemen önünde mutlaka bir yazı vardır; yani Defne'nin dizisi bir atış önce tamamlanmıştır.",
+"İki dizi tek başına eşit olasılıklı; ama \"hangisi önce\" yarışı bambaşka. Aha tek cümle: önünde mutlaka yazı vardır.",
+"\"Kesintisiz dizide ilk görünen\" ifadesi şart. 042 (hileli para) ile yüzeyde para ortak; ayrı haftalara konmalı.",
+"Winkler, Coin Game (Penney oyunu)","AL · 8/10"],
+["Üst üste iki galibiyet","oyun","Darboğaz",7,8,
+"Defne üç tavla oyunu oynayacak, rakipler sırayla değişecek. Üst üste iki oyun kazanırsa zam alacak. Hikmet Bey usta, Necmi acemi. Defne hangi sırayı seçmeli: Hikmet–Necmi–Hikmet mi, Necmi–Hikmet–Necmi mi?",
+"\"Necmi–Hikmet–Necmi; acemiyle iki kez oynarım.\"",
+"Hikmet–Necmi–Hikmet. Ortadaki oyunu kazanmadan üst üste iki galibiyet olmaz; kolay rakip ortada olmalı.",
+"Tuzak çok çekici, cevap tek cümlede kendini doğrular.",
+"Üçlü düello ile aynı \"usta ve acemi\" yüzeyi var; aralarına birkaç bölüm konmalı.",
+"Mosteller, Fifty Challenging Problems · Winkler, Wins in a Row","AL · 8/10"],
+["Üçlü düello","oyun","Zayıflığın koruması",7,8,
+"Defne, Necmi ve Hikmet Bey su tabancasıyla düello yapıyor. Defne üç atışta bir vurur, Necmi üç atışta iki, Hikmet Bey hiç ıskalamaz. Sırayla atıyorlar, ilk atış Defne'nin. Herkes atışını istediği yere yapabilir ve kendisi için en akıllıca atışı yapar. Vurulan oyundan çıkar. Defne'nin ilk atışı nereye olmalı?",
+"\"En tehlikeliye, Hikmet Bey'e.\"",
+"Havaya. Hikmet Bey'i vurursa sıradaki Necmi ona nişan alır. Necmi'yi vurursa Hikmet Bey onu kesin vurur. Havaya atarsa Necmi ile Hikmet Bey birbirini hedef alır; sağ kalanla düelloda ilk atış Defne'nin olur.",
+"\"En iyi hamle, hiç hamle yapmamak.\" Paylaşılmaya en elverişli cevap türü.",
+"\"Herkes kendisi için en akıllıca atışı yapar\" cümlesi şart; yoksa \"Necmi de havaya atar\" itirazı gelir.",
+"Kinnaird 1946 · Winkler, Three-Way Duel","DÜZELTEREK AL · 8/10 (düzeltme işlendi)"],
+["Erken gelen yolcu","zaman","Arabanın bakış açısı",7,8,
+"Necmi'yi eşi her akşam iskeleden arabayla alıyor. Bir gün Necmi bir saat erken iniyor ve eve doğru yürümeye başlıyor. Eşi evden her zamanki saatte, her zamanki hızla çıkıyor; yolda Necmi'yi görünce hemen alıp dönüyor. Eve her zamankinden 20 dakika erken varıyorlar. Necmi kaç dakika yürüdü?",
+"\"40 dakika\" ya da \"bilinemez, hızlar verilmemiş\".",
+"50 dakika. Araba 20 dakika kazandı: gidişte ve dönüşte 10'ar dakika. Demek ki Necmi'yle her zamankinden 10 dakika önce karşılaştı. Necmi bir saat erken indiğine göre 60 − 10 = 50 dakika yürüdü.",
+"Hız da mesafe de yok; Necmi'ye değil arabaya bakınca cevap kendiliğinden gelir.",
+"Kurulumdaki üç koşul (aynı saat, aynı hız, hemen dönüş) söylenmeli.",
+"Winkler, Early Commuter","DÜZELTEREK AL · 8/10 (düzeltme işlendi)"],
+["Necmi'nin oyunu","oyun","Gizli eşyapı: kılık değiştirmiş XOX",8,9,
+"Masada 1'den 9'a numaralı dokuz okey taşı karışık duruyor. Defne ile Necmi sırayla birer taş alıyor. Elindeki taşlardan herhangi üçünün toplamı tam 15 eden kazanıyor. Yüz kez oynadılar, hepsi berabere bitti. Necmi gülerek: \"Bunu çocukken hep oynardık, başka adla.\" Bu aslında hangi oyun?",
+"\"Bir hilesi var\" ya da \"Necmi ezberlemiş\".",
+"XOX (üç taş). 1–9'u sihirli kareye dizince (2 7 6 / 9 5 1 / 4 3 8) toplamı 15 eden her üçlü bir satır, sütun ya da çapraz olur. Taş almak kareye X ya da O koymaktır; doğru oynanan XOX hep berabere biter.",
+"Sayı oyunu sandığın şeyin bildiğin bir oyun olduğunu görmek: temsil değişikliğinin en saf hâli.",
+"Taşlar ekranda asla 3×3 dizilmemeli, yoksa cevap görünür. TÜBİTAK Bilim Çocuk'ta kart oyunu olarak tek kaynakta var. Soru \"kim kazanır\" değil \"hangi oyun\", bu yüzden 033'ten ayrışıyor.",
+"Winkler, Sinking 15","DÜZELTEREK AL · 7/10 (soru düzeltildi)"],
+["Kervanlar","zaman","Zaten yolda olanlar",7,7,
+"Her gün öğlen İstanbul'dan Bağdat'a ve Bağdat'tan İstanbul'a birer kervan çıkıyor. Yol tam 7 gün. Bugün İstanbul'dan çıkan kervan yolda karşı yönden gelen kaç kervanla karşılaşır? Kentlerde karşılaşılanlar sayılmaz.",
+"\"7.\"",
+"13. Yola çıkarken zaten yolda olan 6 kervan var; yolculuk boyunca 7 kervan daha çıkıyor. Kentlerdekiler sayılsaydı 15 olurdu.",
+"Herkes yalnız bundan sonra çıkanları sayar, zaten yolda olanları unutur. Rivayete göre bir matematik kongresinde uzmanlar bile yanılmış.",
+"\"Kentlerde karşılaşılanlar sayılmaz\" cümlesi şart. Sayma sorusu olduğu için kanca güçlü kurulmalı.",
+"Édouard Lucas · Kordemsky, Moscow Puzzles 255","AL · 7/10"],
+["Tuzlu çay ruleti","olasilik","Koşullu bilgi",7,7,
+"Döner tepside daire şeklinde 6 çay var. Kerem yan yana iki tanesine tuz attı. Tepsi hep aynı yöne döner, içilen bardağın yeri boş kalır. Necmi önündekini içti: şekerli. Bir bardak daha içecek. Sıradakini mi almalı, yoksa tepsiyi çevirip rastgele dolu bir bardak mı?",
+"\"Fark etmez\" ya da \"çevirsin, şansını tazelesin\".",
+"Sıradakini. Dört şekerli bardaktan yalnız birinin ardından tuzlu gelir: risk 1/4. Çevirirse kalan 5 dolu bardağın 2'si tuzlu: risk 2/5.",
+"Önündekinin şekerli çıkması komşuluk sayesinde bilgi verir; çevirmek bu bilgiyi çöpe atar.",
+"Tuzlu bardaklar görüntüde farklı görünmemeli. Rus ruleti olarak İngilizcede mülakat klasiği; aha orta.",
+"Rus ruleti mülakat sorusunun çay uyarlaması","YEDEK · 7/10 (düzeltme işlendi)"],
+["Yazı-turacılı kurul","olasilik","Eşleme: kazanç ve kayıp birbirini götürür",8,8,
+"Defne izin istiyor, iki seçeneği var: kararı ya Hikmet Bey tek başına verecek ya da üç kişilik kurul çoğunlukla. Kurulda Hikmet Bey, Necmi ve Kerem var. Hikmet Bey ile Necmi birbirinden bağımsız, ikisi de yüzde 65 ihtimalle \"evet\" der. Kerem yazı-tura atar, yazı gelirse \"evet\" der. Defne'nin izin alma şansı hangisinde yüksek?",
+"\"Kurul; iki iyi niyetli kişi var\" ya da \"tek kişi; Kerem işi bozar\".",
+"İkisi de tam yüzde 65. Hikmet Bey ile Necmi aynı fikirdeyse sonuç Hikmet Bey'in tek kararıyla aynı. Ayrı düşerlerse karar Kerem'e kalır; \"Hikmet evet, Necmi hayır\" ile \"Hikmet hayır, Necmi evet\" eşit olasılıklı, kazanç ve kayıp birbirini götürür.",
+"Kurul hem daha güvenli hem daha riskli görünür; gerçekte birebir aynıdır.",
+"Cevap \"fark etmez\" kalıbında; bu kalıptan setin içinde başka soru yok, yine de art arda konmamalı.",
+"Winkler, Random Judge","DÜZELTEREK AL · 6/10 (düzeltme işlendi)"],
+["Necmi'nin zar hesabı","olasilik","Oyunu yöneten hiç kaybetmez",7,8,
+"Pazarda bir tezgâh: 1'den 6'ya bir sayı seçip 1 lira koyuyorsun, üç zar atılıyor. Sayın hiç gelmezse liran gider. Bir kez gelirse 1, iki kez 2, üç kez 3 lira kazanırsın, koyduğun lira da geri döner. Necmi hesaplıyor: \"Üç zar, her birinde 1/6; toplam yarı yarıya, oyun adil.\" Necmi'nin hesabı nerede yanlış ve oyun kimin lehine?",
+"\"Necmi haklı, oyun adil.\"",
+"Oyun tezgâhçının lehine; her oyunda ortalama 8 kuruş kaybettirir. Altı kişinin altı farklı sayıya oynadığını düşün: zarlar farklı gelirse kazanç ve kayıp birbirini götürür. İki zar aynı gelirse tezgâhçı 1 lira, üçü aynıysa 2 lira kâr eder. Tezgâhçı hiç kaybetmiyorsa oyuncular kaybediyor demektir. Necmi'nin hatası, aynı gelen zarları iki kez saymak.",
+"Hesap gerekmiyor; altı oyuncuyu aynı anda düşünmek cevabı verir.",
+"\"Kumar hep kazandırır\" sezgisi cevabı tahmin ettirir; bu yüzden soru \"hesap nerede yanlış\" diye kuruldu. 046 (Hikmet'in zarları) ile yüzeyde zar ortak.",
+"Winkler, An Attractive Game (chuck-a-luck)","DÜZELTEREK AL · 6/10 (soru düzeltildi)"]
+];
+const CAT={olasilik:"Olasılık",oyun:"Oyun ve strateji",zaman:"Zaman ve sayma"};
+const items=R.map((r,i)=>({id:"u"+String(i+1).padStart(2,"0"),no:i+1,name:r[0],cat:r[1],mech:r[2],d:r[3],v:r[4],q:r[5],trap:r[6],a:r[7],why:r[8],warn:r[9],src:r[10],eye:r[11]}));
+const state={};const f={cat:null,st:null,sort:"no"};const open=new Set(),shown=new Set();
+let db=null,canWrite=false;
+const $=s=>document.querySelector(s);
+const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const col=n=>n>=9?"var(--tile)":n>=7?"var(--mustard)":"var(--ok)";
+const meter=(n,t)=>`<span class="meter" title="${t} ${n}/10"><i style="--w:${n*10}%;--c:${col(n)}"></i><b>${n}</b></span>`;
+function chips(el,opts,key,toggle=true){
+  el.innerHTML=opts.map(([v,l])=>`<button class="chip" type="button" data-v="${v}" aria-pressed="${f[key]===v}">${l}</button>`).join("");
+  el.onclick=e=>{const b=e.target.closest(".chip");if(!b)return;f[key]=toggle&&f[key]===b.dataset.v?null:b.dataset.v;chips(el,opts,key,toggle);render();};
+}
+function render(){
+  let vis=items.filter(it=>(!f.cat||it.cat===f.cat)&&(!f.st||(state[it.id]||"w")===f.st));
+  if(f.sort==="vay")vis=[...vis].sort((a,b)=>b.v-a.v||b.d-a.d);
+  if(f.sort==="zor")vis=[...vis].sort((a,b)=>b.d-a.d||b.v-a.v);
+  const sel=items.filter(i=>state[i.id]==="s").length,el=items.filter(i=>state[i.id]==="e").length;
+  $("#stSel").textContent=sel;$("#stEl").textContent=el;$("#stWait").textContent=items.length-sel-el;
+  $("#count").textContent=`${vis.length} bilmece`;
+  $("#rows").innerHTML=vis.length?vis.map(it=>{
+    const s=state[it.id]||"",o=open.has(it.id),sh=shown.has(it.id);
+    return `<div class="item ${s}" role="listitem" data-id="${it.id}">
+      <div class="rowhead" tabindex="0" aria-expanded="${o}">
+        <span class="no">${String(it.no).padStart(2,"0")}</span>
+        <span class="name">${esc(it.name)}<small>${CAT[it.cat]}</small></span>
+        <span class="meta-m">
+          <span class="mech">${esc(it.mech)}</span>
+          ${meter(it.d,"Zorluk")}
+          ${meter(it.v,"Vay")}
+        </span>
+        <span class="acts">
+          <button class="btn sel" type="button" data-act="s" aria-pressed="${s==="s"}" ${canWrite?"":"disabled"}>Seç</button>
+          <button class="btn eli" type="button" data-act="e" aria-pressed="${s==="e"}" ${canWrite?"":"disabled"}>Ele</button>
+        </span>
+      </div>
+      ${o?`<div class="detail">
+        <div class="q"><h4>Soru</h4><p>${esc(it.q)}</p></div>
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <div class="trap"><h4>Tuzak cevap</h4><p>${esc(it.trap)}</p></div>
+          <div class="ans"><h4>Cevap</h4>${sh?`<p>${esc(it.a)}</p>`:`<button class="btn" type="button" data-act="r">Cevabı göster</button>`}</div>
+        </div>
+        <div class="why"><h4>Neden zekice</h4><p>${esc(it.why)}</p></div>
+        <div class="warn"><h4>Dikkat</h4><p>${esc(it.warn)}</p></div>
+        <div class="src">Kaynak: ${esc(it.src)} · Bağımsız göz: <b>${esc(it.eye)}</b></div>
+      </div>`:""}
+    </div>`;}).join(""):`<div class="empty">Bu filtrelerle bilmece yok. Bir filtreyi kaldır.</div>`;
+}
+const toggleOpen=id=>{open.has(id)?open.delete(id):open.add(id);render();const el=document.querySelector(`.item[data-id="${id}"] .rowhead`);el&&el.focus({preventScroll:true});};
+$("#rows").addEventListener("click",e=>{
+  const item=e.target.closest(".item");if(!item)return;const id=item.dataset.id;const b=e.target.closest("button");
+  if(b){if(b.dataset.act==="r"){shown.add(id);render();return;}setState(id,state[id]===b.dataset.act?null:b.dataset.act);return;}
+  if(e.target.closest(".rowhead"))toggleOpen(id);
+});
+$("#rows").addEventListener("keydown",e=>{if((e.key==="Enter"||e.key===" ")&&e.target.classList.contains("rowhead")){e.preventDefault();toggleOpen(e.target.closest(".item").dataset.id);}});
+async function setState(id,v){
+  if(!db)return;const prev=state[id];if(v)state[id]=v;else delete state[id];render();
+  try{await db.collection("secim2").doc(id).set({durum:v||"bekliyor",ad:items.find(i=>i.id===id).name});$("#sync").textContent="Kaydedildi.";}
+  catch(err){if(prev)state[id]=prev;else delete state[id];render();$("#sync").textContent="Kaydedilemedi: yazma iznin yok ya da bağlantı koptu.";}
+}
+chips($("#fCat"),Object.entries(CAT),"cat");
+chips($("#fState"),[["s","Seçilen"],["e","Elenen"],["w","Bekleyen"]],"st");
+chips($("#fSort"),[["no","Sıra"],["vay","Vay"],["zor","Zorluk"]],"sort",false);
+render();
+(async()=>{
+  const timer=setTimeout(()=>{$("#sync").textContent="Karar kaydı şu an yok; liste okunabilir.";},10000);
+  try{
+    db=await window.claude?.use?.("db");
+    if(!db){clearTimeout(timer);$("#sync").textContent="Kararlar yalnızca claude.ai'de açılınca kaydedilir.";return;}
+    canWrite=true;render();
+    db.collection("secim2").onSnapshot(snap=>{
+      clearTimeout(timer);for(const k in state)delete state[k];
+      snap.docs.forEach(d=>{const x=d.data();if(x&&(x.durum==="s"||x.durum==="e"))state[d.id]=x.durum;});
+      $("#sync").textContent=snap.empty?"Henüz karar yok. Seç ya da Ele'ye bas; kararlar kaydedilir.":"Kararlar kayıtlı.";
+      render();
+    },()=>{clearTimeout(timer);$("#sync").textContent="Karar kaydı okunamadı; liste okunabilir.";});
+  }catch(e){clearTimeout(timer);$("#sync").textContent="Karar kaydı kullanılamıyor; liste okunabilir.";}
+})();
+</script>
