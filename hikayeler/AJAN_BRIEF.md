@@ -43,6 +43,9 @@ Bilmece Mesaisi Instagram Reels için yapılan, Türkçe çizgi animasyonlu bir 
    En kötü 3 sorunu düzelt, yeniden render et, yeniden bak.
 8. **Bağımsız göz.** Mümkünse bitmiş filmi yapıma katılmamış bir alt ajana izlet; haklı bulgularını uygula. 1 fps kare verirsen "kare N ≈ (N − 1) + 0,5 sn" bilgisini de ver.
 
+## Cevapsız tasarım (21 Kas 2026'dan itibaren yeni bölümler)
+Videoda cevap gösterilmez. Film yine `d3` ("Buldum!") ve kısa bir cevap bölümüyle üretilir (arşiv), sonra `node tools/cevapsiz.mjs <id>` "Buldum!"dan önce keser ve takip kartını ekler. JSON'a `"cevapsizTasarim": true` koy: kapı Buldum sınırını 50 sn yapar, süre kapısını kesilmiş sürüme uygular. Sıra: tam render → `kapi.mjs` → `cevapsiz.mjs` → kesilmiş `out/bolum_<id>.mp4` üzerinde tekrar `kapi.mjs` ve son 3 sn'ye bak (ipucu okunur mu, kart temiz mi). Kritik ve bağımsız göz kesilmiş film üzerinde yapılır. Cevap bölümüne emek harcama; kurulumu acelesiz ve zengin anlat. "Cevap yorumlarda / yorumlara yaz" hiçbir yerde yok.
+
 ## Sınırlar
 - **Paylaşılan dosyalara yazma:**
   - `engine/hikaye.js, mekan.js, cast.js, office.js, sahne.js, kalip.js, core.js, bolum.html`

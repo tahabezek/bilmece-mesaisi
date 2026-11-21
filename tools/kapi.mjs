@@ -13,9 +13,13 @@ for (const id of process.argv.slice(2)) {
   const tl = JSON.parse(fs.readFileSync(`assets/voice/${id}/timeline.json`, 'utf8'));
   const mp4 = fs.existsSync(`out/bolum_${id}.mp4`) ? `out/bolum_${id}.mp4` : `prebuilt/${id}.mp4`, rows = [];
   const ok = (name, pass, val) => { rows.push(`${pass ? '✅' : '❌'} ${name}: ${val}`); if (!pass) fail++; };
-  ok('süre', tl.duration <= 60, tl.duration.toFixed(1) + ' sn');
   const d3 = tl.lines.find(l => l.id === 'd3');
-  const bl = 38 + ((ep.cdSure || 5) - 5);   // (16 Kas) uzun sayaçlı bölümde sınır sayaç farkı kadar kayar
+  // (21 Kas) cevapsız tasarım: video "Buldum!"dan önce kesilir (tools/cevapsiz.mjs), yayınlanan süre = kesim + takip kartı.
+  // Kurulum acelesiz anlatılsın diye "Buldum" sınırı 50 sn'ye çıkar; süre kapısı kesilmiş sürüme uygulanır.
+  const cvp = !!ep.cevapsizTasarim, son = tl.lines[tl.lines.length - 1];
+  const sure = cvp ? (d3.t0 - 0.12) + (tl.duration - (son.t1 + 0.1)) : tl.duration;
+  ok('süre', sure <= 60, sure.toFixed(1) + ' sn' + (cvp ? ' (cevapsız kesim)' : ''));
+  const bl = cvp ? 50 : 38 + ((ep.cdSure || 5) - 5);   // (16 Kas) uzun sayaçlı bölümde sınır sayaç farkı kadar kayar
   ok('Buldum', d3.t0 <= bl, d3.t0.toFixed(1) + ' sn (sınır ' + bl + ')');
   ok('kart', ep.card.length <= 2 && ep.card.every(s => s.length <= 40), ep.card.map(s => s.length).join('+') + ' harf');
   if (fs.existsSync(mp4)) {
