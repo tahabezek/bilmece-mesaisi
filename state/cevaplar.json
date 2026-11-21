@@ -1,4 +1,12 @@
 {
   "_not": "Cevapsız videoların yorumda cevap durumu. Kontrol saatleri görevi (yorum-kontrol) günceller. durum: bekliyor | taslak | yazildi",
-  "videolar": {}
+  "son_kontrol": "2026-11-21T13:49Z",
+  "videolar": {
+    "047-bardaklar": {
+      "durum": "bekliyor",
+      "yayin": null,
+      "planlanan": "2026-11-22T18:00:00.000Z",
+      "not": "İlk cevapsız video, henüz yayınlanmadı. Cevap yorumu taslağı yayından en az 20 saat sonra yazılacak."
+    }
+  }
 }
