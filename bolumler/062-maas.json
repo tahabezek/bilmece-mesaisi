@@ -1,0 +1,202 @@
+{
+ "id": "062-maas",
+ "num": 62,
+ "sira": 50,
+ "bpm": 120,
+ "slug": "maas-ortalamasi",
+ "coverAt": 0,
+ "cevapsizTasarim": true,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#mantık",
+  "#maaş",
+  "#ofis"
+ ],
+ "card": [
+  "Dört kişi maaş ortalamasını öğrenecek.",
+  "Kimse maaşını kimseye söylemeyecek."
+ ],
+ "caption": "Zeka sorusu: Dört iş arkadaşı maaş ortalamasını öğrenmek istiyor, ama kimse maaşını kimseye söylemeyecek ve kimse başkasının maaşını tahmin edemeyecek. Nasıl yaparlar?",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Bu ofiste maaş ortalaması kaç, merak ediyorum."
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.6,
+    "text": "Ben de merak ediyorum. Ama maaşımı kimseye söylemem."
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.5,
+    "text": "Ben ölsem de söylemem."
+   },
+   {
+    "id": "h2",
+    "who": "hikmet",
+    "gap": 0.6,
+    "text": "Dördümüz de söylemeyeceğiz. Kimse kimsenin maaşını tahmin bile edemeyecek."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.5,
+    "text": "Hesap makinesi yok, uygulama yok. Kâğıt, kalem ve fısıltı serbest."
+   },
+   {
+    "id": "n2",
+    "who": "necmi",
+    "gap": 0.6,
+    "text": "Herkes kâğıda yazsın, kâğıtları karıştıralım."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.5,
+    "text": "Olmaz, el yazısından kimin olduğu bilinir."
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.6,
+    "text": "Öyleyse ortalamayı nasıl buluruz?"
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 10.6,
+    "text": "Bir sayı söylemek, maaşını söylemek değildir."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 1.6,
+    "text": "Buldum! İlk sayıyı Hikmet Bey uyduracak."
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Uydurduğu sayıya maaşını ekleyip fısıldayacak. Herkes ekleyip devredecek. Sonunda uydurduğu sayıyı çıkaracak."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu maaşını saklayan arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "knock",
+   "h1:2-0.06"
+  ],
+  [
+   "swish",
+   "d1:4-0.1"
+  ],
+  [
+   "knock",
+   "n0:3-0.04"
+  ],
+  [
+   "knock",
+   "h2:0-0.02"
+  ],
+  [
+   "knock",
+   "h2:0+0.06"
+  ],
+  [
+   "knock",
+   "h2:0+0.14"
+  ],
+  [
+   "knock",
+   "h2:0+0.22"
+  ],
+  [
+   "pop",
+   "h2b:0+0.04"
+  ],
+  [
+   "swish",
+   "h2b:4-0.1"
+  ],
+  [
+   "knock",
+   "h2b:5+0.4"
+  ],
+  [
+   "pop",
+   "h2b:6+0.3"
+  ],
+  [
+   "swish",
+   "n2:1-0.1"
+  ],
+  [
+   "zip",
+   [
+    "n2:4-0.05",
+    "n2:4+0.8"
+   ]
+  ],
+  [
+   "swish",
+   "d2:1-0.1"
+  ],
+  [
+   "swish",
+   "d2>+0.12"
+  ],
+  [
+   "swish",
+   "n1-6.75"
+  ],
+  [
+   "swish",
+   "n1:0-0.1"
+  ],
+  [
+   "knock",
+   "n1:3-0.04"
+  ],
+  [
+   "pop",
+   "d6+0.5"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true,
+ "cevapsiz": {
+  "kesim": 44.524,
+  "kart": 56.448,
+  "tarih": "2026-11-20"
+ }
+}

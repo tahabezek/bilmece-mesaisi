@@ -1,0 +1,520 @@
+{
+ "h1": {
+  "key": "4201855c52be",
+  "trimmed": "4201855c52be",
+  "wkey": "4201855c52be",
+  "heard": "bu ofiste maaş ortalaması kaç merak ediyorum.",
+  "words": [
+   {
+    "w": "Bu",
+    "t0": 0.0,
+    "t1": 0.18
+   },
+   {
+    "w": "ofiste",
+    "t0": 0.18,
+    "t1": 0.54
+   },
+   {
+    "w": "maaş",
+    "t0": 0.54,
+    "t1": 0.92
+   },
+   {
+    "w": "ortalaması",
+    "t0": 0.92,
+    "t1": 1.54
+   },
+   {
+    "w": "kaç,",
+    "t0": 1.54,
+    "t1": 1.8
+   },
+   {
+    "w": "merak",
+    "t0": 1.8,
+    "t1": 2.26
+   },
+   {
+    "w": "ediyorum.",
+    "t0": 2.26,
+    "t1": 2.72
+   }
+  ],
+  "dur": 2.99
+ },
+ "d1": {
+  "key": "e79168920f31",
+  "trimmed": "e79168920f31",
+  "wkey": "e79168920f31",
+  "heard": "Ben de merak ediyorum ama maaşımı kimseye söylemem.",
+  "words": [
+   {
+    "w": "Ben",
+    "t0": 0.0,
+    "t1": 0.18
+   },
+   {
+    "w": "de",
+    "t0": 0.18,
+    "t1": 0.36
+   },
+   {
+    "w": "merak",
+    "t0": 0.36,
+    "t1": 0.58
+   },
+   {
+    "w": "ediyorum.",
+    "t0": 0.58,
+    "t1": 1.02
+   },
+   {
+    "w": "Ama",
+    "t0": 1.02,
+    "t1": 1.56
+   },
+   {
+    "w": "maaşımı",
+    "t0": 1.56,
+    "t1": 2.02
+   },
+   {
+    "w": "kimseye",
+    "t0": 2.02,
+    "t1": 2.46
+   },
+   {
+    "w": "söylemem.",
+    "t0": 2.46,
+    "t1": 2.86
+   }
+  ],
+  "dur": 3.038
+ },
+ "n0": {
+  "key": "1f22f8cf37a9",
+  "trimmed": "1f22f8cf37a9",
+  "wkey": "1f22f8cf37a9",
+  "heard": "Ben ölsem de söylemem.",
+  "words": [
+   {
+    "w": "Ben",
+    "t0": 0.0,
+    "t1": 0.22
+   },
+   {
+    "w": "ölsem",
+    "t0": 0.22,
+    "t1": 0.66
+   },
+   {
+    "w": "de",
+    "t0": 0.66,
+    "t1": 0.86
+   },
+   {
+    "w": "söylemem.",
+    "t0": 0.86,
+    "t1": 1.38
+   }
+  ],
+  "dur": 1.59
+ },
+ "h2": {
+  "key": "6f80a70df091",
+  "trimmed": "6f80a70df091",
+  "wkey": "6f80a70df091",
+  "heard": "4 'ümüzde söylemeyeceğiz. Kimse kimsenin maaşını tahmin bile edemeyecek.",
+  "words": [
+   {
+    "w": "Dördümüz",
+    "t0": 0.0,
+    "t1": 0.615
+   },
+   {
+    "w": "de",
+    "t0": 0.615,
+    "t1": 0.82
+   },
+   {
+    "w": "söylemeyeceğiz.",
+    "t0": 0.82,
+    "t1": 1.66
+   },
+   {
+    "w": "Kimse",
+    "t0": 2.04,
+    "t1": 2.5
+   },
+   {
+    "w": "kimsenin",
+    "t0": 2.5,
+    "t1": 3.08
+   },
+   {
+    "w": "maaşını",
+    "t0": 3.08,
+    "t1": 3.54
+   },
+   {
+    "w": "tahmin",
+    "t0": 3.54,
+    "t1": 3.98
+   },
+   {
+    "w": "bile",
+    "t0": 3.98,
+    "t1": 4.18
+   },
+   {
+    "w": "edemeyecek.",
+    "t0": 4.18,
+    "t1": 4.84
+   }
+  ],
+  "dur": 4.988
+ },
+ "h2b": {
+  "key": "5ae4e070b0be",
+  "trimmed": "5ae4e070b0be",
+  "wkey": "5ae4e070b0be",
+  "heard": "Hesap makinesi yok, uygulama yok. Kağıt, kalem ve fısıltı serbest.",
+  "words": [
+   {
+    "w": "Hesap",
+    "t0": 0.0,
+    "t1": 0.44
+   },
+   {
+    "w": "makinesi",
+    "t0": 0.44,
+    "t1": 1.04
+   },
+   {
+    "w": "yok,",
+    "t0": 1.04,
+    "t1": 1.46
+   },
+   {
+    "w": "uygulama",
+    "t0": 1.46,
+    "t1": 1.92
+   },
+   {
+    "w": "yok.",
+    "t0": 1.92,
+    "t1": 2.4
+   },
+   {
+    "w": "Kâğıt,",
+    "t0": 2.4,
+    "t1": 2.9
+   },
+   {
+    "w": "kalem",
+    "t0": 3.08,
+    "t1": 3.5
+   },
+   {
+    "w": "ve",
+    "t0": 3.5,
+    "t1": 3.62
+   },
+   {
+    "w": "fısıltı",
+    "t0": 3.62,
+    "t1": 4.08
+   },
+   {
+    "w": "serbest.",
+    "t0": 4.08,
+    "t1": 4.58
+   }
+  ],
+  "dur": 4.738
+ },
+ "n2": {
+  "key": "edb6b7af8708",
+  "trimmed": "edb6b7af8708",
+  "wkey": "edb6b7af8708",
+  "heard": "Herkes kağıda yazsın, kağıtları karıştıralım.",
+  "words": [
+   {
+    "w": "Herkes",
+    "t0": 0.0,
+    "t1": 0.52
+   },
+   {
+    "w": "kâğıda",
+    "t0": 0.52,
+    "t1": 0.92
+   },
+   {
+    "w": "yazsın,",
+    "t0": 0.92,
+    "t1": 1.42
+   },
+   {
+    "w": "kâğıtları",
+    "t0": 1.58,
+    "t1": 2.18
+   },
+   {
+    "w": "karıştıralım.",
+    "t0": 2.18,
+    "t1": 2.92
+   }
+  ],
+  "dur": 3.05
+ },
+ "d2": {
+  "key": "5a7b10154737",
+  "trimmed": "5a7b10154737",
+  "wkey": "5a7b10154737",
+  "heard": "Olmaz, el yazısından kimin olduğu bilinir.",
+  "words": [
+   {
+    "w": "Olmaz,",
+    "t0": 0.0,
+    "t1": 0.36
+   },
+   {
+    "w": "el",
+    "t0": 0.36,
+    "t1": 0.7
+   },
+   {
+    "w": "yazısından",
+    "t0": 0.7,
+    "t1": 1.24
+   },
+   {
+    "w": "kimin",
+    "t0": 1.24,
+    "t1": 1.52
+   },
+   {
+    "w": "olduğu",
+    "t0": 1.52,
+    "t1": 1.76
+   },
+   {
+    "w": "bilinir.",
+    "t0": 1.76,
+    "t1": 2.22
+   }
+  ],
+  "dur": 2.35
+ },
+ "h3": {
+  "key": "12ae2ffb4620",
+  "trimmed": "12ae2ffb4620",
+  "wkey": "12ae2ffb4620",
+  "heard": "Öyleyse ortalamayı nasıl buluruz?",
+  "words": [
+   {
+    "w": "Öyleyse",
+    "t0": 0.0,
+    "t1": 0.58
+   },
+   {
+    "w": "ortalamayı",
+    "t0": 0.58,
+    "t1": 1.26
+   },
+   {
+    "w": "nasıl",
+    "t0": 1.26,
+    "t1": 1.54
+   },
+   {
+    "w": "buluruz?",
+    "t0": 1.54,
+    "t1": 2.1
+   }
+  ],
+  "dur": 2.21
+ },
+ "n1": {
+  "key": "8ce5d761299d",
+  "trimmed": "8ce5d761299d",
+  "wkey": "8ce5d761299d",
+  "heard": "Bir sayı söylemek, maaşını söylemek değildir.",
+  "words": [
+   {
+    "w": "Bir",
+    "t0": 0.0,
+    "t1": 0.24
+   },
+   {
+    "w": "sayı",
+    "t0": 0.24,
+    "t1": 0.66
+   },
+   {
+    "w": "söylemek,",
+    "t0": 0.66,
+    "t1": 1.28
+   },
+   {
+    "w": "maaşını",
+    "t0": 1.58,
+    "t1": 2.02
+   },
+   {
+    "w": "söylemek",
+    "t0": 2.02,
+    "t1": 2.6
+   },
+   {
+    "w": "değildir.",
+    "t0": 2.6,
+    "t1": 3.14
+   }
+  ],
+  "dur": 3.29
+ },
+ "d3": {
+  "key": "213e8881b736",
+  "trimmed": "213e8881b736",
+  "wkey": "213e8881b736",
+  "heard": "Buldum, ilk sayıyı Hikmet Bey uyduracak.",
+  "words": [
+   {
+    "w": "Buldum!",
+    "t0": 0.0,
+    "t1": 0.54
+   },
+   {
+    "w": "İlk",
+    "t0": 0.54,
+    "t1": 0.9
+   },
+   {
+    "w": "sayıyı",
+    "t0": 0.9,
+    "t1": 1.32
+   },
+   {
+    "w": "Hikmet",
+    "t0": 1.32,
+    "t1": 1.64
+   },
+   {
+    "w": "Bey",
+    "t0": 1.64,
+    "t1": 1.8
+   },
+   {
+    "w": "uyduracak.",
+    "t0": 1.8,
+    "t1": 2.28
+   }
+  ],
+  "dur": 2.438
+ },
+ "d4": {
+  "key": "7a77d692b774",
+  "trimmed": "7a77d692b774",
+  "wkey": "7a77d692b774",
+  "heard": "Uydurduğu sayıya maaşını ekleyip fısıldayacak. Herkes ekleyip devredecek. Sonunda uydurduğu sayıyı çıkaracak.",
+  "words": [
+   {
+    "w": "Uydurduğu",
+    "t0": 0.0,
+    "t1": 0.54
+   },
+   {
+    "w": "sayıya",
+    "t0": 0.54,
+    "t1": 0.82
+   },
+   {
+    "w": "maaşını",
+    "t0": 0.82,
+    "t1": 1.2
+   },
+   {
+    "w": "ekleyip",
+    "t0": 1.2,
+    "t1": 1.64
+   },
+   {
+    "w": "fısıldayacak.",
+    "t0": 1.64,
+    "t1": 2.24
+   },
+   {
+    "w": "Herkes",
+    "t0": 2.5,
+    "t1": 2.84
+   },
+   {
+    "w": "ekleyip",
+    "t0": 2.84,
+    "t1": 3.28
+   },
+   {
+    "w": "devredecek.",
+    "t0": 3.28,
+    "t1": 3.9
+   },
+   {
+    "w": "Sonunda",
+    "t0": 4.14,
+    "t1": 4.58
+   },
+   {
+    "w": "uydurduğu",
+    "t0": 4.58,
+    "t1": 5.2
+   },
+   {
+    "w": "sayıyı",
+    "t0": 5.2,
+    "t1": 5.44
+   },
+   {
+    "w": "çıkaracak.",
+    "t0": 5.44,
+    "t1": 5.94
+   }
+  ],
+  "dur": 6.096
+ },
+ "d6": {
+  "key": "8cd7efb6ab6e",
+  "trimmed": "8cd7efb6ab6e",
+  "wkey": "8cd7efb6ab6e",
+  "heard": "Bunun maaşını saklayan arkadaşına gönder.",
+  "words": [
+   {
+    "w": "Bunu",
+    "t0": 0.0,
+    "t1": 0.2
+   },
+   {
+    "w": "maaşını",
+    "t0": 0.2,
+    "t1": 0.58
+   },
+   {
+    "w": "saklayan",
+    "t0": 0.58,
+    "t1": 1.08
+   },
+   {
+    "w": "arkadaşına",
+    "t0": 1.08,
+    "t1": 1.62
+   },
+   {
+    "w": "gönder.",
+    "t0": 1.62,
+    "t1": 1.96
+   }
+  ],
+  "dur": 2.12
+ }
+}

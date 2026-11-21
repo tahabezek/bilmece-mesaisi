@@ -1,0 +1,225 @@
+{
+ "id": "063-vapur-simit",
+ "num": 63,
+ "sira": 51,
+ "bpm": 120,
+ "slug": "son-vapur-simit-vergisi",
+ "coverAt": 0,
+ "seri": "SON VAPUR",
+ "cevapsizTasarim": true,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#mantık",
+  "#vapur",
+  "#simit"
+ ],
+ "card": [
+  "Her iskelede yarısını Rıza alır, 1 geri.",
+  "7 iskele sonra 3 simit. Kaçla başladı?"
+ ],
+ "caption": "Zeka sorusu: Kaptan Rıza her iskelede Lâl'in simitlerinin yarısını alıp birini geri veriyor. Yedi iskele sonra Lâl'in elinde 3 simit kaldı. Lâl vapura kaç simitle bindi?",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "rate": "-6%",
+    "pitch": "-12Hz",
+    "gap": 0.3,
+    "text": "Her iskelede simitlerinin yarısı benim. Vergi."
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "rate": "+14%",
+    "pitch": "+3Hz",
+    "gap": 0.5,
+    "text": "Yarısı mı, kaptan? Bu ne biçim vergi?"
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "rate": "-6%",
+    "pitch": "-12Hz",
+    "gap": 0.5,
+    "text": "Merak etme, birini geri veririm. Ben vicdanlı adamım."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "rate": "-6%",
+    "pitch": "-12Hz",
+    "gap": 0.6,
+    "text": "Sonraki her iskelede aynı hesap: yarısı bana, biri sana."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "rate": "+10%",
+    "pitch": "+3Hz",
+    "gap": 0.6,
+    "text": "Yedi iskele geçti, tepside üç simit kaldı."
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "rate": "-6%",
+    "pitch": "-12Hz",
+    "gap": 0.6,
+    "text": "Söyle bakalım, bu vapura kaç simitle bindin?"
+   },
+   {
+    "id": "dd",
+    "who": "defne",
+    "rate": "+12%",
+    "pitch": "+3Hz",
+    "gap": 0.5,
+    "text": "Hiç saymadım ki, kaptan. Bir tabla doluydu."
+   },
+   {
+    "id": "n1",
+    "who": "hikmet",
+    "rate": "-8%",
+    "pitch": "-12Hz",
+    "gap": 10.6,
+    "text": "Senin iki simidin olsa, ben hiç kâr etmezdim.",
+    "tts": "Senin iki simidin olsa, ben hiç kar etmezdim."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "rate": "+16%",
+    "pitch": "+3Hz",
+    "gap": 1.6,
+    "text": "Buldum! Yüz otuz."
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "rate": "+16%",
+    "pitch": "+3Hz",
+    "gap": 0.35,
+    "text": "İkinin fazlası her iskelede yarıya iniyor. Sonda bir fazla varsa, başta yüz yirmi sekiz fazla vardı."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "rate": "+16%",
+    "pitch": "+3Hz",
+    "gap": 0.7,
+    "text": "Bunu vapurda simit alan arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "swish",
+   "@0.25"
+  ],
+  [
+   "knock",
+   "h1:5-0.02"
+  ],
+  [
+   "knock",
+   "h1:5+0.23"
+  ],
+  [
+   "swish",
+   "h2a:1+0.03"
+  ],
+  [
+   "pop",
+   "h2a:1+0.66"
+  ],
+  [
+   "swish",
+   "h2a:3-0.2"
+  ],
+  [
+   "pop",
+   "h2a:4+0.23"
+  ],
+  [
+   "knock",
+   "h2b+0.38"
+  ],
+  [
+   "knock",
+   "h2b+1.06"
+  ],
+  [
+   "knock",
+   "h2b+1.74"
+  ],
+  [
+   "knock",
+   "h2b+2.42"
+  ],
+  [
+   "knock",
+   "h2b+3.10"
+  ],
+  [
+   "knock",
+   "h2b+3.78"
+  ],
+  [
+   "pop",
+   "d2:4-0.04"
+  ],
+  [
+   "swish",
+   "h3:4-0.2"
+  ],
+  [
+   "pop",
+   "dd:5-0.05"
+  ],
+  [
+   "pop",
+   "n1-0.24"
+  ],
+  [
+   "swish",
+   "n1:6-0.08"
+  ],
+  [
+   "pop",
+   "n1:7+0.12"
+  ],
+  [
+   "swish",
+   "d3-0.12"
+  ],
+  [
+   "pop",
+   "d6+0.4"
+  ]
+ ],
+ "v4": true,
+ "cevapsiz": {
+  "kesim": 40.672,
+  "kart": 51.108,
+  "tarih": "2026-11-20"
+ }
+}

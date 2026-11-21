@@ -1,0 +1,210 @@
+{
+ "id": "059-tanik",
+ "num": 59,
+ "sira": 47,
+ "bpm": 120,
+ "slug": "baklavayi-kim-yedi-tanik",
+ "coverAt": 0,
+ "cevapsizTasarim": true,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#türkçe",
+  "#dedektif",
+  "#ofis"
+ ],
+ "card": [
+  "Biri gördü, öbürü dedikodu taşıyor.",
+  "Baklavayı kim yedi?"
+ ],
+ "caption": "Zeka sorusu: Necmi \"Baklavayı Defne yemiş\" diyor, Defne \"Baklavayı Kerem yedi\" diyor. Biri olayı gözüyle gördü, öbürü dedikoduyu aktarıyor. Baklavayı kim yedi?",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Dolaptaki baklavamı biri yedi."
+   },
+   {
+    "id": "h1b",
+    "who": "hikmet",
+    "gap": 0.5,
+    "text": "Annemin baklavası. Sabah koydum, şimdi tepsi bomboş."
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.6,
+    "text": "Necmi, sen ne diyorsun?"
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.45,
+    "rate": "-14%",
+    "text": "Baklavayı Defne yemiş.",
+    "tts": "Baklavayı, Defne yemiş."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.6,
+    "text": "Defne, ya sen ne diyorsun?"
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Baklavayı Kerem yedi."
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.6,
+    "text": "Biriniz olayı kendi gözüyle gördü. Öbürünüz duyduğu dedikoduyu anlatıyor."
+   },
+   {
+    "id": "h3b",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Dedikodu da yanlış olabilir."
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 0.6,
+    "text": "Birbirinizi suçluyorsunuz. Bu iş çözülmez."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 10.6,
+    "text": "Ne dediğimize değil, nasıl dediğimize bakın."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 1.1,
+    "text": "Buldum! Kerem."
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Gören yedi der, duyan yemiş der. Necmi duymuş, ben gördüm."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu dedikodu seven arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "h4>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "swish",
+   "@0.26"
+  ],
+  [
+   "swish",
+   "h1:3-0.34"
+  ],
+  [
+   "zip",
+   [
+    "h1b+0.3",
+    "h1b+0.75"
+   ]
+  ],
+  [
+   "swish",
+   "h1b:2-0.14"
+  ],
+  [
+   "swish",
+   "h2a-0.14"
+  ],
+  [
+   "swish",
+   "n0-0.14"
+  ],
+  [
+   "pop",
+   "n0:1-0.08"
+  ],
+  [
+   "swish",
+   "h2b-0.14"
+  ],
+  [
+   "swish",
+   "d1-0.14"
+  ],
+  [
+   "pop",
+   "d1:1-0.08"
+  ],
+  [
+   "swish",
+   "h3-0.14"
+  ],
+  [
+   "swish",
+   "h3b-0.14"
+  ],
+  [
+   "swish",
+   "h4-0.14"
+  ],
+  [
+   "womp",
+   "h4:4+0.1"
+  ],
+  [
+   "swish",
+   "n1-10.4"
+  ],
+  [
+   "swish",
+   "n1-6.7"
+  ],
+  [
+   "swish",
+   "n1-0.24"
+  ],
+  [
+   "swish",
+   "d3:1-0.14"
+  ],
+  [
+   "pop",
+   "d6+0.5"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true,
+ "cevapsiz": {
+  "kesim": 41.314,
+  "kart": 49.47,
+  "tarih": "2026-11-20"
+ }
+}

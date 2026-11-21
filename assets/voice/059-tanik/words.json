@@ -1,0 +1,454 @@
+{
+ "h1": {
+  "key": "a3cddba5caca",
+  "trimmed": "a3cddba5caca",
+  "wkey": "a3cddba5caca",
+  "heard": "Dolaptaki baklavamı bir yedi.",
+  "words": [
+   {
+    "w": "Dolaptaki",
+    "t0": 0.0,
+    "t1": 0.66
+   },
+   {
+    "w": "baklavamı",
+    "t0": 0.66,
+    "t1": 1.26
+   },
+   {
+    "w": "biri",
+    "t0": 1.26,
+    "t1": 1.4
+   },
+   {
+    "w": "yedi.",
+    "t0": 1.4,
+    "t1": 1.66
+   }
+  ],
+  "dur": 1.82
+ },
+ "h1b": {
+  "key": "a7530be0401a",
+  "trimmed": "a7530be0401a",
+  "wkey": "a7530be0401a",
+  "heard": "Annemin baklavası. Sabah koydum, şimdi tepsi bomboş.",
+  "words": [
+   {
+    "w": "Annemin",
+    "t0": 0.0,
+    "t1": 0.48
+   },
+   {
+    "w": "baklavası.",
+    "t0": 0.48,
+    "t1": 1.22
+   },
+   {
+    "w": "Sabah",
+    "t0": 1.52,
+    "t1": 2.02
+   },
+   {
+    "w": "koydum,",
+    "t0": 2.02,
+    "t1": 2.52
+   },
+   {
+    "w": "şimdi",
+    "t0": 2.66,
+    "t1": 2.94
+   },
+   {
+    "w": "tepsi",
+    "t0": 2.94,
+    "t1": 3.44
+   },
+   {
+    "w": "bomboş.",
+    "t0": 3.44,
+    "t1": 3.94
+   }
+  ],
+  "dur": 4.048
+ },
+ "h2a": {
+  "key": "507eac7a515e",
+  "trimmed": "507eac7a515e",
+  "wkey": "507eac7a515e",
+  "heard": "Necmi, sen ne diyorsun?",
+  "words": [
+   {
+    "w": "Necmi,",
+    "t0": 0.0,
+    "t1": 0.58
+   },
+   {
+    "w": "sen",
+    "t0": 0.58,
+    "t1": 0.86
+   },
+   {
+    "w": "ne",
+    "t0": 0.86,
+    "t1": 1.14
+   },
+   {
+    "w": "diyorsun?",
+    "t0": 1.14,
+    "t1": 1.4
+   }
+  ],
+  "dur": 1.84
+ },
+ "n0": {
+  "key": "7b4a3e8f414f",
+  "trimmed": "7b4a3e8f414f",
+  "wkey": "7b4a3e8f414f",
+  "heard": "baklavayı desne yemiş.",
+  "words": [
+   {
+    "w": "Baklavayı,",
+    "t0": 0.0,
+    "t1": 0.78
+   },
+   {
+    "w": "Defne",
+    "t0": 0.78,
+    "t1": 1.44
+   },
+   {
+    "w": "yemiş.",
+    "t0": 1.44,
+    "t1": 1.82
+   }
+  ],
+  "dur": 1.94
+ },
+ "h2b": {
+  "key": "f34fccce02a6",
+  "trimmed": "f34fccce02a6",
+  "wkey": "f34fccce02a6",
+  "heard": "Devne ya sen ne diyorsun?",
+  "words": [
+   {
+    "w": "Defne,",
+    "t0": 0.0,
+    "t1": 0.54
+   },
+   {
+    "w": "ya",
+    "t0": 0.54,
+    "t1": 0.793
+   },
+   {
+    "w": "sen",
+    "t0": 0.793,
+    "t1": 1.047
+   },
+   {
+    "w": "ne",
+    "t0": 1.047,
+    "t1": 1.3
+   },
+   {
+    "w": "diyorsun?",
+    "t0": 1.3,
+    "t1": 1.52
+   }
+  ],
+  "dur": 1.98
+ },
+ "d1": {
+  "key": "013787c26898",
+  "trimmed": "013787c26898",
+  "wkey": "013787c26898",
+  "heard": "Baklavayı Kerem yedi.",
+  "words": [
+   {
+    "w": "Baklavayı",
+    "t0": 0.0,
+    "t1": 0.5
+   },
+   {
+    "w": "Kerem",
+    "t0": 0.5,
+    "t1": 0.8
+   },
+   {
+    "w": "yedi.",
+    "t0": 0.8,
+    "t1": 1.04
+   }
+  ],
+  "dur": 1.19
+ },
+ "h3": {
+  "key": "5dae90bfdc36",
+  "trimmed": "5dae90bfdc36",
+  "wkey": "5dae90bfdc36",
+  "heard": "Biriniz olayı kendi gözüyle gördü. Öbürünüz duyduğu dedikoduya anlatıyor.",
+  "words": [
+   {
+    "w": "Biriniz",
+    "t0": 0.0,
+    "t1": 0.42
+   },
+   {
+    "w": "olayı",
+    "t0": 0.42,
+    "t1": 0.8
+   },
+   {
+    "w": "kendi",
+    "t0": 0.8,
+    "t1": 1.04
+   },
+   {
+    "w": "gözüyle",
+    "t0": 1.04,
+    "t1": 1.6
+   },
+   {
+    "w": "gördü.",
+    "t0": 1.6,
+    "t1": 2.3
+   },
+   {
+    "w": "Öbürünüz",
+    "t0": 2.3,
+    "t1": 2.82
+   },
+   {
+    "w": "duyduğu",
+    "t0": 2.82,
+    "t1": 3.32
+   },
+   {
+    "w": "dedikoduyu",
+    "t0": 3.32,
+    "t1": 3.9
+   },
+   {
+    "w": "anlatıyor.",
+    "t0": 3.9,
+    "t1": 4.34
+   }
+  ],
+  "dur": 4.558
+ },
+ "h3b": {
+  "key": "fa5c29790d5a",
+  "trimmed": "fa5c29790d5a",
+  "wkey": "fa5c29790d5a",
+  "heard": "dedikodu da yanlış olabilir.",
+  "words": [
+   {
+    "w": "Dedikodu",
+    "t0": 0.0,
+    "t1": 0.5
+   },
+   {
+    "w": "da",
+    "t0": 0.5,
+    "t1": 0.68
+   },
+   {
+    "w": "yanlış",
+    "t0": 0.68,
+    "t1": 0.94
+   },
+   {
+    "w": "olabilir.",
+    "t0": 0.94,
+    "t1": 1.46
+   }
+  ],
+  "dur": 1.72
+ },
+ "h4": {
+  "key": "08ddf4cbb110",
+  "trimmed": "08ddf4cbb110",
+  "wkey": "08ddf4cbb110",
+  "heard": "Birbirinizi suçluyorsunuz. Bu iş çözülmez.",
+  "words": [
+   {
+    "w": "Birbirinizi",
+    "t0": 0.0,
+    "t1": 0.7
+   },
+   {
+    "w": "suçluyorsunuz.",
+    "t0": 0.7,
+    "t1": 1.76
+   },
+   {
+    "w": "Bu",
+    "t0": 1.76,
+    "t1": 2.06
+   },
+   {
+    "w": "iş",
+    "t0": 2.06,
+    "t1": 2.36
+   },
+   {
+    "w": "çözülmez.",
+    "t0": 2.36,
+    "t1": 2.92
+   }
+  ],
+  "dur": 3.148
+ },
+ "n1": {
+  "key": "d5dc95b5e693",
+  "trimmed": "d5dc95b5e693",
+  "wkey": "d5dc95b5e693",
+  "heard": "Ne dediğimize değil, nasıl dediğimize bakın.",
+  "words": [
+   {
+    "w": "Ne",
+    "t0": 0.0,
+    "t1": 0.2
+   },
+   {
+    "w": "dediğimize",
+    "t0": 0.2,
+    "t1": 0.82
+   },
+   {
+    "w": "değil,",
+    "t0": 0.82,
+    "t1": 1.12
+   },
+   {
+    "w": "nasıl",
+    "t0": 1.4,
+    "t1": 1.7
+   },
+   {
+    "w": "dediğimize",
+    "t0": 1.7,
+    "t1": 2.42
+   },
+   {
+    "w": "bakın.",
+    "t0": 2.42,
+    "t1": 2.66
+   }
+  ],
+  "dur": 2.94
+ },
+ "d3": {
+  "key": "a29ad344a99d",
+  "trimmed": "a29ad344a99d",
+  "wkey": "a29ad344a99d",
+  "heard": "Buldum. Kerem.",
+  "words": [
+   {
+    "w": "Buldum!",
+    "t0": 0.0,
+    "t1": 0.44
+   },
+   {
+    "w": "Kerem.",
+    "t0": 0.72,
+    "t1": 1.02
+   }
+  ],
+  "dur": 1.208
+ },
+ "d4": {
+  "key": "30416c642b35",
+  "trimmed": "30416c642b35",
+  "wkey": "30416c642b35",
+  "heard": "Gören yedi der, duyan yemiş der, Necmi duymuş, ben gördüm.",
+  "words": [
+   {
+    "w": "Gören",
+    "t0": 0.0,
+    "t1": 0.3
+   },
+   {
+    "w": "yedi",
+    "t0": 0.3,
+    "t1": 0.56
+   },
+   {
+    "w": "der,",
+    "t0": 0.56,
+    "t1": 1.02
+   },
+   {
+    "w": "duyan",
+    "t0": 1.02,
+    "t1": 1.28
+   },
+   {
+    "w": "yemiş",
+    "t0": 1.28,
+    "t1": 1.6
+   },
+   {
+    "w": "der.",
+    "t0": 1.6,
+    "t1": 2.1
+   },
+   {
+    "w": "Necmi",
+    "t0": 2.1,
+    "t1": 2.44
+   },
+   {
+    "w": "duymuş,",
+    "t0": 2.44,
+    "t1": 2.82
+   },
+   {
+    "w": "ben",
+    "t0": 2.82,
+    "t1": 3.14
+   },
+   {
+    "w": "gördüm.",
+    "t0": 3.14,
+    "t1": 3.56
+   }
+  ],
+  "dur": 3.678
+ },
+ "d6": {
+  "key": "e7646b6fd5f1",
+  "trimmed": "e7646b6fd5f1",
+  "wkey": "e7646b6fd5f1",
+  "heard": "Bunu dedikodu seven arkadaşına gönder.",
+  "words": [
+   {
+    "w": "Bunu",
+    "t0": 0.0,
+    "t1": 0.18
+   },
+   {
+    "w": "dedikodu",
+    "t0": 0.18,
+    "t1": 0.6
+   },
+   {
+    "w": "seven",
+    "t0": 0.6,
+    "t1": 0.84
+   },
+   {
+    "w": "arkadaşına",
+    "t0": 0.84,
+    "t1": 1.48
+   },
+   {
+    "w": "gönder.",
+    "t0": 1.48,
+    "t1": 1.84
+   }
+  ],
+  "dur": 2.0
+ }
+}

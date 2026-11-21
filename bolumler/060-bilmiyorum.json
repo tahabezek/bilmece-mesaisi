@@ -1,0 +1,244 @@
+{
+ "id": "060-bilmiyorum",
+ "num": 60,
+ "sira": 48,
+ "bpm": 120,
+ "slug": "tek-soru-uc-sayi",
+ "coverAt": 0,
+ "cevapsizTasarim": true,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#mantık",
+  "#tekSoru",
+  "#ofis"
+ ],
+ "card": [
+  "Hikmet 1, 2 ya da 3'ü tuttu. Tek soru:",
+  "Cevap evet, hayır ya da bilmiyorum."
+ ],
+ "caption": "Zeka sorusu: Hikmet 1, 2 ya da 3'ü tuttu. Ona tek bir soru sorabilirsin, cevabı yalnızca \"evet\", \"hayır\" ya da \"bilmiyorum\" olabilir. Sayıyı kesin olarak nasıl bulursun?",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Bir, iki ya da üç. Birini tuttum."
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.6,
+    "text": "Bana tek bir soru soracaksın. Ben hep doğruyu söylerim."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.5,
+    "text": "Cevabım ya evet, ya hayır, ya da bilmiyorum olacak."
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.6,
+    "text": "Sayınız bir mi diye sorsam?"
+   },
+   {
+    "id": "n0a",
+    "who": "necmi",
+    "gap": 0.45,
+    "text": "Hayır derse, iki mi üç mü bilemezsin."
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.5,
+    "text": "Evetle hayır iki sayı ayırır. Üçüncüye yetmez."
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.5,
+    "text": "Zaten kendi sayımı biliyorum. Bilmiyorum demem ki."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.55,
+    "text": "Ben tek soruyla sayıyı kesin bulacağım."
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.45,
+    "text": "Hangi soruyla bulacaksın?"
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 10.6,
+    "text": "Bilmiyorum demek, bazen her şeyi söyler."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 1.6,
+    "text": "Buldum! Aklımdan sıfır ya da bir tutacağım."
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Benim sayımla sizinkinin toplamı ikiden büyük mü? Üçse evet, birse hayır, ikiyse bilmiyorum."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu her şeyi bildiğini sanan arkadaşına sor."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "pop",
+   "h1:0-0.04"
+  ],
+  [
+   "pop",
+   "h1:1-0.04"
+  ],
+  [
+   "pop",
+   "h1:4-0.04"
+  ],
+  [
+   "swish",
+   "h1:5-0.08"
+  ],
+  [
+   "zip",
+   [
+    "h1:5+0.3",
+    "h1:5+0.92"
+   ]
+  ],
+  [
+   "pop",
+   "h1:5+1.58"
+  ],
+  [
+   "pop",
+   "h2a:1-0.04"
+  ],
+  [
+   "knock",
+   "h2b:2-0.06"
+  ],
+  [
+   "knock",
+   "h2b:4-0.06"
+  ],
+  [
+   "knock",
+   "h2b:7-0.06"
+  ],
+  [
+   "swish",
+   "n0a-0.14"
+  ],
+  [
+   "pop",
+   "n0a:2-0.04"
+  ],
+  [
+   "pop",
+   "n0a:4-0.04"
+  ],
+  [
+   "pop",
+   "n0:0-0.04"
+  ],
+  [
+   "pop",
+   "n0:1-0.04"
+  ],
+  [
+   "swish",
+   "hd-0.12"
+  ],
+  [
+   "knock",
+   "hd:2-0.02"
+  ],
+  [
+   "knock",
+   "hd:6+0.28"
+  ],
+  [
+   "swish",
+   "d2-0.12"
+  ],
+  [
+   "knock",
+   "d2:4-0.02"
+  ],
+  [
+   "swish",
+   "n1-10.35"
+  ],
+  [
+   "knock",
+   "n1-9.32"
+  ],
+  [
+   "knock",
+   "n1-8.57"
+  ],
+  [
+   "swish",
+   "n1-0.27"
+  ],
+  [
+   "knock",
+   "n1:0+0.34"
+  ],
+  [
+   "ding",
+   "n1:3-0.02"
+  ],
+  [
+   "swish",
+   "d3:1-0.12"
+  ],
+  [
+   "pop",
+   "d6+0.5"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true,
+ "cevapsiz": {
+  "kesim": 44.083,
+  "kart": 55.379,
+  "tarih": "2026-11-20"
+ }
+}

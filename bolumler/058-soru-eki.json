@@ -1,0 +1,187 @@
+{
+ "id": "058-soru-eki",
+ "num": 58,
+ "sira": 46,
+ "bpm": 120,
+ "slug": "uc-not-soru-eki",
+ "coverAt": 0,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#türkçe",
+  "#dilbilgisi",
+  "#ofis"
+ ],
+ "card": [
+  "Üç not, üç soru. Biri olanı neredeyse",
+  "biliyor; yalnız ne yendiğini bilmiyor."
+ ],
+ "caption": "Zeka sorusu: Üç kişi aynı kelimelerle soru sormuş, ama \"mi\"nin yeri farklı. Biri olanı neredeyse tamamen biliyor; yalnızca ne yendiğini bilmiyor. Hangisi?",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Masama üç not bırakmışlar. Üçü de baklavayı soruyor."
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.7,
+    "text": "Necmi yazmış: Dün baklavayı Hikmet Bey mi yedi?"
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.7,
+    "text": "Defne yazmış: Hikmet Bey baklavayı dün mü yedi?"
+   },
+   {
+    "id": "h2c",
+    "who": "hikmet",
+    "gap": 0.7,
+    "text": "Kerem yazmış: Hikmet Bey dün baklavayı mı yedi?"
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.8,
+    "text": "Bu üç kişiden biri olanı neredeyse biliyor. Bilmediği tek şey, ne yendiği."
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.75,
+    "text": "Hangisi? Bana üçü de aynı soru gibi geliyor."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 11.4,
+    "text": "Aynı kelimeler, ama her not başka bir şeyi soruyor."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.32,
+    "text": "Buldum! Kerem."
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Soru eki, sorulan şeyin yanına gelir. Kerem yalnızca ne yediğinizi soruyor."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu dil bilgisini sevmeyen arkadaşına sor."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "knock",
+   "h1+0.43"
+  ],
+  [
+   "pop",
+   "h1:1-0.04"
+  ],
+  [
+   "pop",
+   "h1:1+0.03"
+  ],
+  [
+   "pop",
+   "h1:1+0.10"
+  ],
+  [
+   "pop",
+   "h1:6-0.04"
+  ],
+  [
+   "swish",
+   "h2a-0.14"
+  ],
+  [
+   "swish",
+   "h2b-0.14"
+  ],
+  [
+   "swish",
+   "h2c-0.14"
+  ],
+  [
+   "swish",
+   "d2-0.17"
+  ],
+  [
+   "knock",
+   "d2+0.33"
+  ],
+  [
+   "swish",
+   "d2:7-0.2"
+  ],
+  [
+   "womp",
+   "d2:10-0.1"
+  ],
+  [
+   "knock",
+   "h3-0.05"
+  ],
+  [
+   "swish",
+   "h3:4-0.1"
+  ],
+  [
+   "pop",
+   "h3>+0.15"
+  ],
+  [
+   "swish",
+   "n1-0.29"
+  ],
+  [
+   "swish",
+   "d3:1-0.14"
+  ],
+  [
+   "pop",
+   "d4:6-0.08"
+  ],
+  [
+   "pop",
+   "d6+0.5"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true,
+ "cevapsizTasarim": true,
+ "cevapsiz": {
+  "kesim": 39.434,
+  "kart": 48.481,
+  "tarih": "2026-11-20"
+ }
+}

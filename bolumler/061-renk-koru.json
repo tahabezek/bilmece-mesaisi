@@ -1,0 +1,233 @@
+{
+ "id": "061-renk-koru",
+ "num": 61,
+ "sira": 49,
+ "bpm": 120,
+ "slug": "renk-koru",
+ "coverAt": 0,
+ "cevapsizTasarim": true,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#mantık",
+  "#renkkörü",
+  "#ofis"
+ ],
+ "card": [
+  "Necmi renk körü: \"Bu iki kalem aynı.\"",
+  "Defne aksini nasıl kanıtlar?"
+ ],
+ "caption": "Zeka sorusu: Necmi renk körü ve iki kalemin aynı olduğunu söylüyor. Defne, hangisinin hangi renk olduğunu söylemeden, kalemlerin farklı olduğunu ona nasıl kanıtlar?",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.3,
+    "text": "Bu iki kalem aynı. Neden ikisini birden kullanıyorsun?"
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.5,
+    "text": "Biri kırmızı, biri yeşil."
+   },
+   {
+    "id": "n2",
+    "who": "necmi",
+    "gap": 0.5,
+    "text": "Bende renk körlüğü var. Bana göre ikisi de tıpatıp aynı."
+   },
+   {
+    "id": "d1b",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Bakın, ikisiyle de bu rapora birer çizgi çekeyim."
+   },
+   {
+    "id": "n3",
+    "who": "necmi",
+    "gap": 0.5,
+    "text": "İki çizgi de bana aynı gri görünüyor."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Hangisinin kırmızı olduğunu söylesem, inanmazsınız."
+   },
+   {
+    "id": "hd",
+    "who": "hikmet",
+    "gap": 0.5,
+    "text": "Ben söyleyeyim, soldaki kırmızı."
+   },
+   {
+    "id": "n4",
+    "who": "necmi",
+    "gap": 0.4,
+    "text": "Hikmet Bey, size de makineye de güvenmiyorum."
+   },
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.5,
+    "text": "Gözü renkleri ayıramıyor, kimseye de güvenmiyor."
+   },
+   {
+    "id": "h2",
+    "who": "hikmet",
+    "gap": 0.5,
+    "text": "Defne, kalemlerin farklı olduğunu ona nasıl kanıtlarsın?"
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 10.6,
+    "text": "Bu sefer oyunu ben kuracağım galiba."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 1.6,
+    "text": "Buldum! Kalemleri arkanıza alın."
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Yerlerini değiştirin ya da değiştirmeyin. On kez üst üste bilirsem, kalemler farklıdır."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu inatçı arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "h2>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "pop",
+   "n0:2-0.04"
+  ],
+  [
+   "swish",
+   "n0:4-0.14"
+  ],
+  [
+   "pop",
+   "d1:0-0.04"
+  ],
+  [
+   "pop",
+   "d1:2-0.04"
+  ],
+  [
+   "swish",
+   "n2-0.14"
+  ],
+  [
+   "womp",
+   "n2:4+0.06"
+  ],
+  [
+   "pop",
+   "n2:8-0.04"
+  ],
+  [
+   "swish",
+   "d1b-0.14"
+  ],
+  [
+   "zip",
+   [
+    "d1b:5-0.02",
+    "d1b:5+0.4"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "d1b:7-0.02",
+    "d1b:7+0.4"
+   ]
+  ],
+  [
+   "womp",
+   "n3+0.02"
+  ],
+  [
+   "swish",
+   "n3:6-0.14"
+  ],
+  [
+   "knock",
+   "d2:3+0.33"
+  ],
+  [
+   "swish",
+   "d2:4-0.05"
+  ],
+  [
+   "pop",
+   "hd:2-0.06"
+  ],
+  [
+   "swish",
+   "n4-0.14"
+  ],
+  [
+   "pop",
+   "n4:6-0.04"
+  ],
+  [
+   "swish",
+   "h1-0.14"
+  ],
+  [
+   "swish",
+   "h2-0.14"
+  ],
+  [
+   "swish",
+   "n1-0.29"
+  ],
+  [
+   "ding",
+   "n1:4-0.02"
+  ],
+  [
+   "swish",
+   "d3:1-0.12"
+  ],
+  [
+   "pop",
+   "d6+0.5"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true,
+ "cevapsiz": {
+  "kesim": 48.877,
+  "kart": 58.733,
+  "tarih": "2026-11-20"
+ }
+}
