@@ -46,6 +46,13 @@ Bilmece Mesaisi Instagram Reels için yapılan, Türkçe çizgi animasyonlu bir 
 ## Cevapsız tasarım (21 Kas 2026'dan itibaren yeni bölümler)
 Videoda cevap gösterilmez. Film yine `d3` ("Buldum!") ve kısa bir cevap bölümüyle üretilir (arşiv), sonra `node tools/cevapsiz.mjs <id>` "Buldum!"dan önce keser ve takip kartını ekler. JSON'a `"cevapsizTasarim": true` koy: kapı Buldum sınırını 50 sn yapar, süre kapısını kesilmiş sürüme uygular. Sıra: tam render → `kapi.mjs` → `cevapsiz.mjs` → kesilmiş `out/bolum_<id>.mp4` üzerinde tekrar `kapi.mjs` ve son 3 sn'ye bak (ipucu okunur mu, kart temiz mi). Kritik ve bağımsız göz kesilmiş film üzerinde yapılır. Cevap bölümüne emek harcama; kurulumu acelesiz ve zengin anlat. "Cevap yorumlarda / yorumlara yaz" hiçbir yerde yok.
 
+## Kadraj kuralları (22 Kas 2026, 058–063'te her ajanda tekrarlanan hatalar)
+- Boş zemin ya da boş masa yüzü en çok %15. Kamerayı masaya ve nesneye göre kur; karakterler ve nesneler kadrajı doldursun.
+- Kart hiçbir yüzün hiçbir parçasını örtmez: başlar kartın alt kenarının ≥ 30 px altından başlar.
+- Altyazı, balon, sayaç ya da el, okunacak bir yazının (not, pul, etiket) üstüne binmez; arada en az 24 px boşluk kalır. Kadrajdaki etiket ya tam görünür ya hiç görünmez.
+- Aşırı düzeltme yapma: grup planı 1,25–1,3x, yakın plan 1,5–1,7x.
+- Her konuşmacıya yakın plan, nesneye en az bir insert, sayaç boyunca doğrusal itme.
+
 ## Sınırlar
 - **Paylaşılan dosyalara yazma:**
   - `engine/hikaye.js, mekan.js, cast.js, office.js, sahne.js, kalip.js, core.js, bolum.html`
