@@ -584,15 +584,18 @@
     "2026-11-21T09:30Z": {
       "episode": "043-lokum",
       "media": "v/043-lokum-2dc0473d.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-19T15:41:48.088Z",
       "postId": "6aff18ede03d69424b6cfa18",
       "dueAt": "2026-11-21T09:30:00.000Z",
       "yt": {
         "postId": "6aff18eee03d69424b6cfa6f",
-        "status": "scheduled",
-        "dueAt": "2026-11-21T09:30:00.000Z"
-      }
+        "status": "failed",
+        "dueAt": "2026-11-21T09:30:00.000Z",
+        "error": "The daily posting limit for this channel has been reached! Please try reducing the amount of times per day in your schedule and try again later."
+      },
+      "sentAt": "2026-11-21T09:31:11.275Z",
+      "link": "https://www.instagram.com/reel/Df_6a3RAWZC/"
     },
     "2026-11-21T18:00Z": {
       "episode": "048-balikci",
@@ -631,6 +634,19 @@
         "postId": "6b008bbdd425f1473a018af1",
         "status": "scheduled",
         "dueAt": "2026-11-22T18:00:00.000Z"
+      }
+    },
+    "2026-11-23T09:30Z": {
+      "episode": "051-kimin-sayisi",
+      "media": "v/051-kimin-sayisi-26c0daa8.mp4",
+      "status": "scheduled",
+      "at": "2026-11-21T14:36:49.656Z",
+      "postId": "6b01acb3142c9575191e9cf1",
+      "dueAt": "2026-11-23T09:30:00.000Z",
+      "yt": {
+        "postId": "6b01acb40247969092dc2e5c",
+        "status": "scheduled",
+        "dueAt": "2026-11-23T09:30:00.000Z"
       }
     }
   }
