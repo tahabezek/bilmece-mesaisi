@@ -1,0 +1,317 @@
+{
+ "id": "064-islak-not",
+ "num": 64,
+ "sira": 52,
+ "bpm": 120,
+ "slug": "islak-not-kasa-sifresi",
+ "coverAt": 0,
+ "cevapsizTasarim": true,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#türkçe",
+  "#şifre",
+  "#ofis"
+ ],
+ "card": [
+  "Çay rakamları sildi, gerisi okunuyor.",
+  "Kasanın üç rakamlı şifresi ne?"
+ ],
+ "caption": "Zeka sorusu: Hikmet Bey kasasının şifresini bir kâğıda yazmıştı. Kâğıda çay döküldü, üç rakam da silindi. Okunabilen şu: \"Önce ●'u bul. Sonra ●'ya çevir. En son ●'ın üstünde bırak.\" Kadranda 0'dan 9'a on rakam var; her leke tek bir rakamı örtüyor.\n\nDefne kasayı ilk denemede açtı. Şifre ne?",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Kasamın şifresi bu kâğıtta yazıyordu. Üstüne çay döktüm."
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.6,
+    "text": "Şifrede üç rakam vardı. Rakamların üçü de lekenin altında kaldı."
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.6,
+    "text": "Bakayım. Geriye yalnızca bu üç cümle kalmış."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 1.2,
+    "text": "Kadranda on rakam var. Her leke yalnızca bir rakamı örtüyor."
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.7,
+    "text": "Bin ihtimal var. Akşama kadar deneriz."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 1,
+    "text": "Gerek yok. Ben bu kasayı ilk denemede açarım."
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 0.6,
+    "text": "Rakamları göremiyorsun ki. Şifreyi nereden bileceksin?"
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 10.6,
+    "text": "Hikmet Bey, şu notu bir de yüksek sesle okuyun."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 2,
+    "text": "Buldum! Dokuz, altı, sıfır."
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Ek, rakamı ele veriyor: dokuzu, altıya, sıfırın. Başka hiçbir rakam bu ekleri almaz."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu Türkçesine güvenen arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "h4>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "pop",
+   "@0.36"
+  ],
+  [
+   "swish",
+   "h1:5-0.19"
+  ],
+  [
+   "knock",
+   "h1:7+0.4"
+  ],
+  [
+   "swish",
+   "h2a-0.14"
+  ],
+  [
+   "pop",
+   "h2a:1-0.02"
+  ],
+  [
+   "pop",
+   "h2a:5-0.02"
+  ],
+  [
+   "pop",
+   "h2a:5+0.24"
+  ],
+  [
+   "pop",
+   "h2a:5+0.5"
+  ],
+  [
+   "swish",
+   "d1-0.05"
+  ],
+  [
+   "swish",
+   "d1:1-0.14"
+  ],
+  [
+   "swish",
+   "h2b-0.14"
+  ],
+  [
+   "swish",
+   "h2b:4-0.14"
+  ],
+  [
+   "swish",
+   "h3-0.14"
+  ],
+  [
+   "zip",
+   [
+    "h3+0.12",
+    "h3+0.42"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "h3+0.55",
+    "h3+0.85"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "h3+1.0",
+    "h3+1.32"
+   ]
+  ],
+  [
+   "knock",
+   "h3:5+0.08"
+  ],
+  [
+   "womp",
+   "h3:5+0.2"
+  ],
+  [
+   "swish",
+   "d2-0.14"
+  ],
+  [
+   "pop",
+   "d2:5-0.04"
+  ],
+  [
+   "swish",
+   "h4-0.14"
+  ],
+  [
+   "swish",
+   "n1-10.39"
+  ],
+  [
+   "zip",
+   [
+    "n1-9.6",
+    "n1-9.3"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "n1-8.95",
+    "n1-8.62"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "n1-8.25",
+    "n1-7.92"
+   ]
+  ],
+  [
+   "knock",
+   "n1-6.97"
+  ],
+  [
+   "zip",
+   [
+    "n1-5.3",
+    "n1-4.96"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "n1-4.65",
+    "n1-4.35"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "n1-4.0",
+    "n1-3.68"
+   ]
+  ],
+  [
+   "knock",
+   "n1-3.27"
+  ],
+  [
+   "zip",
+   [
+    "n1-2.3",
+    "n1-2.0"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "n1-1.65",
+    "n1-1.33"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "n1-1.0",
+    "n1-0.7"
+   ]
+  ],
+  [
+   "swish",
+   "n1-0.14"
+  ],
+  [
+   "pop",
+   "n1:6-0.04"
+  ],
+  [
+   "swish",
+   "d3:1-0.14"
+  ],
+  [
+   "pop",
+   "d4:4"
+  ],
+  [
+   "pop",
+   "d4:5"
+  ],
+  [
+   "pop",
+   "d4:6"
+  ],
+  [
+   "ding",
+   "d4:6+0.6"
+  ],
+  [
+   "pop",
+   "d6+0.5"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true,
+ "cevapsiz": {
+  "kesim": 45.366,
+  "kart": 56.042,
+  "tarih": "2026-11-20"
+ }
+}

@@ -1,0 +1,210 @@
+{
+ "id": "066-duvar",
+ "num": 66,
+ "sira": 54,
+ "bpm": 120,
+ "slug": "duvarin-obur-yani",
+ "coverAt": 0,
+ "cevapsizTasarim": true,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#türkçe",
+  "#dedektif",
+  "#komşu"
+ ],
+ "card": [
+  "Komşu, Necmi'den yalnız dört söz duydu.",
+  "Kim doğru söylüyor: Hikmet mi, Necmi mi?"
+ ],
+ "caption": "Zeka sorusu: Hikmet Bey'in evinde bir vazo kırıldı. Hikmet Bey \"Ben eczaneye indim, Necmi evde yalnız kaldı\" diyor. Necmi \"Hikmet Bey evden hiç çıkmadı, beni kapıdan kendisi uğurladı\" diyor.\n\nDuvar komşusu yalnızca Necmi'nin sesini duymuş, sırayla şu dört sözü: \"Hoş bulduk! Sen de gör! Ellerine sağlık! Güle güle!\" Kim doğru söylüyor?",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.3,
+    "text": "Bir vazo kırıldı. Gerçeği dört nezaket sözü ele verecek."
+   },
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.5,
+    "text": "Dün evde yalnızca Necmi ile ben vardım. Ben eczaneye indim; döndüğümde vazo kırıktı.",
+    "tts": "Dün evde yalnızca Necmi ile ben vardım. Ben eczaneye indim; döndüğümde, vazo kırıktı."
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.5,
+    "text": "Hikmet Bey evden hiç çıkmadı. Kalkarken beni kapıdan kendisi uğurladı."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.5,
+    "text": "Duvar komşusu Hikmet Bey'i hiç duymaz, Necmi'yi duyar. Dün sırayla yalnızca şu dört sözü duymuş.",
+    "tts": "Duvar komşusu Hikmet Beyi hiç duymaz, Necmiyi duyar. Dün sırayla yalnızca şu dört sözü duymuş."
+   },
+   {
+    "id": "n0b",
+    "who": "necmi",
+    "gap": 0.5,
+    "text": "Hoş bulduk! Sen de gör! Ellerine sağlık! Güle güle!",
+    "tts": "Hoş bulduk. Sen de gör. Ellerine sağlık. Güle güle.",
+    "soz": [
+     0.05,
+     1.33,
+     2.72,
+     4.27
+    ]
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.85,
+    "text": "Bunlar nezaket sözü. Kimin doğru söylediğini göstermez ki."
+   },
+   {
+    "id": "n1",
+    "who": "defne",
+    "gap": 10.6,
+    "text": "Dört sözü de Necmi söyledi. Her birini hangi durumda söylemiş olabilir?",
+    "rate": "+6%",
+    "tts": "Dört sözü de, Necmi söyledi. Her birini hangi durumda söylemiş olabilir?"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 1.1,
+    "text": "Buldum! Hikmet Bey doğru söylüyor."
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Güle güleyi kalan söyler. Necmi bunu dediyse giden Hikmet Bey'di, Necmi evde kaldı.",
+    "tts": "Güle güleyi kalan söyler. Necmi bunu dediyse giden Hikmet Beydi, Necmi evde kaldı."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu misafirliği seven arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "knock",
+   "@0.3"
+  ],
+  [
+   "swish",
+   "d1:3-0.16"
+  ],
+  [
+   "swish",
+   "h1-0.14"
+  ],
+  [
+   "swish",
+   "h1:10-0.14"
+  ],
+  [
+   "swish",
+   "n0-0.14"
+  ],
+  [
+   "swish",
+   "d2-0.14"
+  ],
+  [
+   "knock",
+   "d2+0.12"
+  ],
+  [
+   "zip",
+   [
+    "d2:8-0.44",
+    "d2:8-0.04"
+   ]
+  ],
+  [
+   "pop",
+   "n0b+0.03"
+  ],
+  [
+   "pop",
+   "n0b+1.31"
+  ],
+  [
+   "pop",
+   "n0b+2.7"
+  ],
+  [
+   "pop",
+   "n0b+4.25"
+  ],
+  [
+   "swish",
+   "h3-0.4"
+  ],
+  [
+   "knock",
+   "h3+0.14"
+  ],
+  [
+   "knock",
+   "h3:1+0.12"
+  ],
+  [
+   "knock",
+   "n1-8.6"
+  ],
+  [
+   "knock",
+   "n1-8.1"
+  ],
+  [
+   "swish",
+   "n1-6.4"
+  ],
+  [
+   "swish",
+   "n1-1.5"
+  ],
+  [
+   "swish",
+   "d3:1-0.14"
+  ],
+  [
+   "pop",
+   "d6+0.5"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true,
+ "cevapsiz": {
+  "kesim": 47.522,
+  "kart": 57.898,
+  "tarih": "2026-11-20"
+ }
+}

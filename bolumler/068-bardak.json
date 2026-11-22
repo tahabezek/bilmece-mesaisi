@@ -1,0 +1,232 @@
+{
+ "id": "068-bardak",
+ "num": 68,
+ "sira": 56,
+ "bpm": 120,
+ "slug": "hikmet-beyin-bardagi",
+ "coverAt": 0,
+ "cevapsizTasarim": true,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#mantık",
+  "#çay",
+  "#ofis"
+ ],
+ "card": [
+  "Yalnız bir özelliği uyanı içer.",
+  "Hangi bardağı kesin içer?"
+ ],
+ "caption": "Zeka sorusu: Tezgâhta dört bardak çay var: demli şekerli, demli şekersiz, açık şekerli, açık şekersiz. Hikmet Bey bir kâğıda gizlice bir dem ve bir şeker durumu yazdı. Yazdığı iki özellikten yalnızca birine uyan çayı içiyor; ikisine de uyanı da hiçbirine uymayanı da içmiyor.\n\nDemli şekerli bardağı içti. Öbür üç bardaktan hangisini kesinlikle içer?",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Bu kâğıda gizlice iki şey yazdım: çayın demini ve şekerini."
+   },
+   {
+    "id": "d1a",
+    "who": "defne",
+    "gap": 0.5,
+    "text": "Açık şekersiz, açık şekerli."
+   },
+   {
+    "id": "d1b",
+    "who": "defne",
+    "gap": 1.3,
+    "text": "Demli şekersiz, demli şekerli."
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.75,
+    "text": "Yazdığım iki özellikten yalnızca birine uyan çayı içerim."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.5,
+    "text": "İkisine de uyanı içmem. Hiçbirine uymayanı da içmem."
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.7,
+    "text": "Şansımı deniyorum. Demli ve şekerli."
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.5,
+    "text": "Evet, bu bardağı içerim."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.5,
+    "text": "Kâğıtta ne yazdığını hâlâ bilmiyoruz."
+   },
+   {
+    "id": "h4",
+    "who": "hikmet",
+    "gap": 0.5,
+    "text": "Geriye üç bardak kaldı. Hangisini kesinlikle içerim?"
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 10.6,
+    "text": "Kâğıtta yazanlar için yalnızca iki ihtimal var. İkisini de deneyin."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 2.2,
+    "text": "Buldum! Açık ve şekersiz olanı."
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Kâğıtta ya demli şekersiz ya da açık şekerli yazıyor. İkisinde de açık şekersiz yalnızca birine uyar."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu çayına karışılmasını sevmeyen arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "h4>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "swish",
+   "@0.42"
+  ],
+  [
+   "pop",
+   "h1:7-0.02"
+  ],
+  [
+   "pop",
+   "h1:9-0.02"
+  ],
+  [
+   "swish",
+   "d1a-0.26"
+  ],
+  [
+   "pop",
+   "d1a-0.02"
+  ],
+  [
+   "pop",
+   "d1a:2-0.02"
+  ],
+  [
+   "swish",
+   "d1b-0.42"
+  ],
+  [
+   "pop",
+   "d1b-0.02"
+  ],
+  [
+   "pop",
+   "d1b:2-0.02"
+  ],
+  [
+   "swish",
+   "h2a-0.06"
+  ],
+  [
+   "pop",
+   "h2a:3-0.02"
+  ],
+  [
+   "swish",
+   "h2b:4-0.04"
+  ],
+  [
+   "pop",
+   "h2b:6+0.73"
+  ],
+  [
+   "zip",
+   [
+    "n0:2+0.03",
+    "n0:2+0.8"
+   ]
+  ],
+  [
+   "pop",
+   "n0:2+1.0"
+  ],
+  [
+   "pop",
+   "h3:1+0.4"
+  ],
+  [
+   "swish",
+   "h3:3-0.02"
+  ],
+  [
+   "swish",
+   "d2-0.06"
+  ],
+  [
+   "swish",
+   "h4-0.06"
+  ],
+  [
+   "pop",
+   "h4:1-0.04"
+  ],
+  [
+   "swish",
+   "n1-10.31"
+  ],
+  [
+   "pop",
+   "n1:4-0.04"
+  ],
+  [
+   "swish",
+   "d3:1-0.14"
+  ],
+  [
+   "ding",
+   "d4:11"
+  ],
+  [
+   "pop",
+   "d6+0.5"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true,
+ "cevapsiz": {
+  "kesim": 47.712,
+  "kart": 59.238,
+  "tarih": "2026-11-20"
+ }
+}

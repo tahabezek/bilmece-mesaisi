@@ -1,0 +1,277 @@
+{
+ "id": "069-adim",
+ "num": 69,
+ "sira": 57,
+ "bpm": 120,
+ "slug": "adim-yarismasi",
+ "coverAt": 0,
+ "cevapsizTasarim": true,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#mantık",
+  "#adımsayar",
+  "#ofis"
+ ],
+ "card": [
+  "Defne en azların en çoğu, Necmi en",
+  "çokların en azı. Kim çok yürüdü?"
+ ],
+ "caption": "Zeka sorusu: 12 kişi 3 sıra ve 4 sütun hâlinde oturuyor. Herkesin bugünkü adım sayısı farklı. Her sıranın en az adım atanı ayağa kalktı; bu üç kişinin en çok adım atanı Defne. Sonra her sütunun en çok adım atanı kalktı; bu dört kişinin en az adım atanı Necmi.\n\nKimsenin sayısını bilmiyoruz. Defne mi daha çok yürüdü, Necmi mi? Yoksa bilinemez mi?",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.5,
+    "text": "Adım yarışmasında kimsenin sayısını görmeden, kimin çok yürüdüğünü bulacağız."
+   },
+   {
+    "id": "h1b",
+    "who": "hikmet",
+    "gap": 0.5,
+    "text": "On iki kişi oturuyor: üç sıra ve dört sütun. Herkesin adım sayısı farklı."
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.6,
+    "text": "Her sıranın en az adım atanı ayağa kalksın."
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 1,
+    "text": "Ayaktaki üç kişinin en çok adım atanı benim."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.7,
+    "text": "Oturun. Şimdi her sütunun en çok adım atanı ayağa kalksın.",
+    "tts": "Oturun. Şimdi, her sütunun en çok adım atanı ayağa kalksın."
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 1.6,
+    "text": "Ayaktaki dört kişinin en az adım atanı benim."
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.6,
+    "text": "Defne mi daha çok yürüdü, Necmi mi?"
+   },
+   {
+    "id": "n0b",
+    "who": "necmi",
+    "gap": 0.5,
+    "text": "Bence bu kadarla bilinemez."
+   },
+   {
+    "id": "n1",
+    "who": "defne",
+    "gap": 10.6,
+    "text": "Bilinir. İkimizi birden ilgilendiren tek bir koltuk var."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 2.2,
+    "text": "Buldum! Necmi daha çok yürüdü."
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Benim sıramla Necmi'nin sütununun kesiştiği koltuğa bakın. O kişi benden çok, Necmi'den az yürüdü.",
+    "tts": "Benim sıramla Necminin sütununun kesiştiği koltuğa bakın. O kişi benden çok, Necmiden az yürüdü."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu adımlarını sayan arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "n0b>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "pop",
+   "@0.10"
+  ],
+  [
+   "pop",
+   "@0.24"
+  ],
+  [
+   "swish",
+   "h1:5-0.14"
+  ],
+  [
+   "pop",
+   "h1:8-0.04"
+  ],
+  [
+   "swish",
+   "h1b-0.14"
+  ],
+  [
+   "swish",
+   "h1b:4+0.1"
+  ],
+  [
+   "swish",
+   "h1b:7+0.1"
+  ],
+  [
+   "swish",
+   "h1b:9-0.14"
+  ],
+  [
+   "swish",
+   "h2a-0.14"
+  ],
+  [
+   "swish",
+   "h2a:1+0.1"
+  ],
+  [
+   "pop",
+   "h2a:7+0.3"
+  ],
+  [
+   "pop",
+   "h2a:7+0.37"
+  ],
+  [
+   "pop",
+   "h2a:7+0.44"
+  ],
+  [
+   "swish",
+   "d1:3-0.14"
+  ],
+  [
+   "pop",
+   "d1:7-0.04"
+  ],
+  [
+   "swish",
+   "h2b-0.14"
+  ],
+  [
+   "knock",
+   "h2b+0.5"
+  ],
+  [
+   "swish",
+   "h2b:3+0.1"
+  ],
+  [
+   "pop",
+   "h2b:9+0.3"
+  ],
+  [
+   "pop",
+   "h2b:9+0.37"
+  ],
+  [
+   "pop",
+   "h2b:9+0.44"
+  ],
+  [
+   "pop",
+   "h2b:9+0.51"
+  ],
+  [
+   "swish",
+   "n0-0.14"
+  ],
+  [
+   "pop",
+   "n0:7-0.04"
+  ],
+  [
+   "swish",
+   "h3-0.14"
+  ],
+  [
+   "swish",
+   "n0b-0.14"
+  ],
+  [
+   "swish",
+   "n1-10.39"
+  ],
+  [
+   "pop",
+   "n1-9.6"
+  ],
+  [
+   "pop",
+   "n1-9.53"
+  ],
+  [
+   "knock",
+   "n1-7.0"
+  ],
+  [
+   "swish",
+   "n1-0.14"
+  ],
+  [
+   "pop",
+   "n1:4-0.04"
+  ],
+  [
+   "swish",
+   "n1>+0.16"
+  ],
+  [
+   "swish",
+   "d3>+0.1"
+  ],
+  [
+   "swish",
+   "d4:1+0.1"
+  ],
+  [
+   "swish",
+   "d4:3+0.1"
+  ],
+  [
+   "ding",
+   "d4:4+0.1"
+  ],
+  [
+   "pop",
+   "d6+0.5"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true,
+ "cevapsiz": {
+  "kesim": 47.434,
+  "kart": 58.01,
+  "tarih": "2026-11-20"
+ }
+}

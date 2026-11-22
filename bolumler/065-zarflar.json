@@ -1,0 +1,287 @@
+{
+ "id": "065-zarflar",
+ "num": 65,
+ "sira": 53,
+ "bpm": 120,
+ "slug": "necminin-zarflari",
+ "coverAt": 0,
+ "cevapsizTasarim": true,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#mantık",
+  "#akılokuma",
+  "#ofis"
+ ],
+ "card": [
+  "Necmi kapalı zarftaki soruları bildi.",
+  "Bunu nasıl yaptı?"
+ ],
+ "caption": "Zeka sorusu: Üç kişi birer soru yazıp zarfı kendi eliyle kapattı. Necmi zarfları topladı, masaya koydu. En üstteki zarfı alnına dayayıp soruyu söyledi, sonra açıp \"Aynen böyle yazıyor\" dedi. Üç soruyu da bildi.\n\nTek yardımcısı Kerem'di; Kerem yalnızca el kaldırdı, başkalarının ne yazdığını bilmiyordu. Necmi bunu nasıl yaptı?",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "n0a",
+    "who": "necmi",
+    "gap": 0.3,
+    "rate": "-5%",
+    "text": "Kapalı zarftaki soruyu, zarfı açmadan okurum."
+   },
+   {
+    "id": "n0b",
+    "who": "necmi",
+    "gap": 1.5,
+    "rate": "-5%",
+    "text": "Kimse kimsenin sorusunu bilmiyor."
+   },
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.5,
+    "text": "Sorumu gizlice yazdım, zarfı da kendim kapattım."
+   },
+   {
+    "id": "n0c",
+    "who": "necmi",
+    "gap": 1.25,
+    "rate": "-5%",
+    "text": "Biri soruyor: Kayıp yüzüğümü bulacak mıyım?"
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.4,
+    "text": "En arkada Kerem elini kaldırdı."
+   },
+   {
+    "id": "n0d",
+    "who": "necmi",
+    "gap": 0.4,
+    "rate": "-5%",
+    "text": "Açıp bakalım. Evet, aynen böyle yazıyor."
+   },
+   {
+    "id": "n0e",
+    "who": "necmi",
+    "gap": 0.7,
+    "rate": "-5%",
+    "text": "Sıradaki soru: Zam ne zaman gelecek?"
+   },
+   {
+    "id": "h2",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Bu benim sorum!"
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.55,
+    "text": "Benim sorumu da bildi. Tek yardımcısı Kerem'di; o da yalnızca elini kaldırdı.",
+    "tts": "Benim sorumu da bildi. Tek yardımcısı Keremdi; o da yalnızca elini kaldırdı."
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.5,
+    "text": "Necmi sorularımızı nasıl okudu?"
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 10.6,
+    "rate": "-5%",
+    "text": "Bu zarfları hangi sırayla topladığımı hatırlayın."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 1.1,
+    "text": "Buldum! İlk soru uydurmaydı."
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Necmi her açtığı zarfta bir sonraki soruyu okudu. Hep bir zarf geriden geldi."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu fala inanan arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "swish",
+   "@0.26"
+  ],
+  [
+   "swish",
+   "n0a:3-0.14"
+  ],
+  [
+   "swish",
+   "n0a>+0.26"
+  ],
+  [
+   "knock",
+   "n0a>+0.6"
+  ],
+  [
+   "knock",
+   "n0a>+0.9"
+  ],
+  [
+   "swish",
+   "n0b-0.09"
+  ],
+  [
+   "swish",
+   "n0b+0.6"
+  ],
+  [
+   "knock",
+   "n0b+1.17"
+  ],
+  [
+   "swish",
+   "n0b+2.19"
+  ],
+  [
+   "knock",
+   "n0b+2.76"
+  ],
+  [
+   "swish",
+   "h1:3+0.22"
+  ],
+  [
+   "knock",
+   "h1:3+0.79"
+  ],
+  [
+   "knock",
+   "h1:3+2.23"
+  ],
+  [
+   "swish",
+   "n0c-0.2"
+  ],
+  [
+   "swish",
+   "n0c:2-0.14"
+  ],
+  [
+   "pop",
+   "n0c>+0.22"
+  ],
+  [
+   "swish",
+   "d1-0.14"
+  ],
+  [
+   "swish",
+   "n0d-0.14"
+  ],
+  [
+   "zip",
+   [
+    "n0d+0.2",
+    "n0d+0.48"
+   ]
+  ],
+  [
+   "knock",
+   "n0d>+0.4"
+  ],
+  [
+   "swish",
+   "n0e+0.02"
+  ],
+  [
+   "zip",
+   [
+    "h2+0.02",
+    "h2+0.3"
+   ]
+  ],
+  [
+   "knock",
+   "d2-0.18"
+  ],
+  [
+   "swish",
+   "d2-0.14"
+  ],
+  [
+   "pop",
+   "d2:10-0.06"
+  ],
+  [
+   "swish",
+   "h3-0.14"
+  ],
+  [
+   "zip",
+   [
+    "h3+0.08",
+    "h3+0.36"
+   ]
+  ],
+  [
+   "knock",
+   "h3>-0.14"
+  ],
+  [
+   "swish",
+   "n1-10.39"
+  ],
+  [
+   "swish",
+   "n1-8.3"
+  ],
+  [
+   "knock",
+   "n1-4.5"
+  ],
+  [
+   "swish",
+   "n1-0.24"
+  ],
+  [
+   "swish",
+   "d3:1-0.14"
+  ],
+  [
+   "pop",
+   "d6+0.5"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true,
+ "cevapsiz": {
+  "kesim": 47.736,
+  "kart": 57.252,
+  "tarih": "2026-11-20"
+ }
+}

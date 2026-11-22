@@ -1,0 +1,259 @@
+{
+ "id": "067-besi-birden",
+ "num": 67,
+ "sira": 55,
+ "bpm": 120,
+ "slug": "besi-birden-dogum-gunu-misafirleri",
+ "coverAt": 0,
+ "cevapsizTasarim": true,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#mantık",
+  "#doğumgünü",
+  "#ofis"
+ ],
+ "card": [
+  "Beş misafir ikişer ikişer karşılaştı.",
+  "Beşi aynı anda odada bulundu mu?"
+ ],
+ "caption": "Zeka sorusu: Hikmet Bey'in odasına gün boyunca beş arkadaşı uğradı. Her biri bir kez geldi, bir süre oturdu, gitti; giden bir daha dönmedi. Hangi ikisini seçersen seç, o iki kişi bu odada karşılaşmış.\n\nBeşinin birden odada bulunduğu bir an oldu mu? Olduysa hangi an?",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Bugün beş eski arkadaşım odama uğradı. Beşini bir arada göremedim."
+   },
+   {
+    "id": "h2a",
+    "who": "hikmet",
+    "gap": 0.7,
+    "text": "Her biri bir kez geldi, biraz oturdu, gitti."
+   },
+   {
+    "id": "h2c",
+    "who": "hikmet",
+    "gap": 0.55,
+    "text": "Giden bir daha dönmedi."
+   },
+   {
+    "id": "h2b",
+    "who": "hikmet",
+    "gap": 0.6,
+    "text": "Ben de gün boyu odaya girip çıktım."
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.6,
+    "text": "Beşini de aradım. Hangi ikisini seçerseniz seçin, o ikisi bu odada karşılaşmış."
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.6,
+    "text": "İkişer ikişer karşılaşmışlar. Ama bu, beşinin birden burada olduğunu göstermez ki."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.6,
+    "text": "Gösterir. Beşi aynı anda buradaydı. O anı da söyleyebilirim."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 10.6,
+    "text": "On çifti tek tek düşünmeyin. Tek bir kişiye bakmak yeter."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 2.2,
+    "text": "Buldum! Beşi birden buradaydı."
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Odadan ilk çıkanı düşünün. Öbür dördü onu burada gördüyse, o çıkarken hepsi içerideydi."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu kalabalık arkadaş grubuna gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "d2>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "knock",
+   "@0.5"
+  ],
+  [
+   "swish",
+   "h1:6-0.19"
+  ],
+  [
+   "zip",
+   [
+    "h2a-0.8",
+    "h2a-0.4"
+   ]
+  ],
+  [
+   "knock",
+   "h2c:3+0.53"
+  ],
+  [
+   "swish",
+   "d1-0.19"
+  ],
+  [
+   "swish",
+   "d1:3-0.19"
+  ],
+  [
+   "zip",
+   [
+    "d1:3+0.31",
+    "d1:3+0.75"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "d1:3+0.99",
+    "d1:3+1.43"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "d1:3+1.67",
+    "d1:3+2.11"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "d1:3+2.35",
+    "d1:3+2.79"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "d1:3+3.03",
+    "d1:3+3.47"
+   ]
+  ],
+  [
+   "pop",
+   "d1:3+3.47"
+  ],
+  [
+   "swish",
+   "h3-0.24"
+  ],
+  [
+   "pop",
+   "h3:1-0.08"
+  ],
+  [
+   "pop",
+   "h3:3-0.1"
+  ],
+  [
+   "pop",
+   "h3:6"
+  ],
+  [
+   "swish",
+   "d2-0.24"
+  ],
+  [
+   "pop",
+   "d2:5-0.04"
+  ],
+  [
+   "swish",
+   "n1-10.39"
+  ],
+  [
+   "swish",
+   "n1-6.19"
+  ],
+  [
+   "pop",
+   "n1-5.85"
+  ],
+  [
+   "pop",
+   "n1-5.43"
+  ],
+  [
+   "pop",
+   "n1-5.01"
+  ],
+  [
+   "pop",
+   "n1-4.59"
+  ],
+  [
+   "pop",
+   "n1-4.17"
+  ],
+  [
+   "swish",
+   "n1-3.79"
+  ],
+  [
+   "swish",
+   "n1-0.24"
+  ],
+  [
+   "swish",
+   "n1:5-0.22"
+  ],
+  [
+   "pop",
+   "d4+0.2"
+  ],
+  [
+   "ding",
+   "d4:9"
+  ],
+  [
+   "pop",
+   "d6+0.5"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true,
+ "cevapsiz": {
+  "kesim": 45.239,
+  "kart": 55.575,
+  "tarih": "2026-11-20"
+ }
+}

@@ -1,0 +1,563 @@
+{
+ "n0a": {
+  "key": "379fd83a04b3",
+  "trimmed": "379fd83a04b3",
+  "wkey": "379fd83a04b3",
+  "heard": "Kapalı zarftaki soruyu, zarfı açmadan okurum.",
+  "words": [
+   {
+    "w": "Kapalı",
+    "t0": 0.0,
+    "t1": 0.42
+   },
+   {
+    "w": "zarftaki",
+    "t0": 0.42,
+    "t1": 0.92
+   },
+   {
+    "w": "soruyu,",
+    "t0": 0.92,
+    "t1": 1.44
+   },
+   {
+    "w": "zarfı",
+    "t0": 1.66,
+    "t1": 2.14
+   },
+   {
+    "w": "açmadan",
+    "t0": 2.14,
+    "t1": 2.58
+   },
+   {
+    "w": "okurum.",
+    "t0": 2.58,
+    "t1": 2.98
+   }
+  ],
+  "dur": 3.12
+ },
+ "n0b": {
+  "key": "ecdfc7ffc771",
+  "trimmed": "ecdfc7ffc771",
+  "wkey": "ecdfc7ffc771",
+  "heard": "Kimse kimsenin sorusunu bilmiyor.",
+  "words": [
+   {
+    "w": "Kimse",
+    "t0": 0.0,
+    "t1": 0.44
+   },
+   {
+    "w": "kimsenin",
+    "t0": 0.44,
+    "t1": 1.02
+   },
+   {
+    "w": "sorusunu",
+    "t0": 1.02,
+    "t1": 1.52
+   },
+   {
+    "w": "bilmiyor.",
+    "t0": 1.52,
+    "t1": 1.96
+   }
+  ],
+  "dur": 2.21
+ },
+ "h1": {
+  "key": "0d461c544406",
+  "trimmed": "0d461c544406",
+  "wkey": "0d461c544406",
+  "heard": "Sorumu gizlice yazdım, zarfı da kendim kapattım.",
+  "words": [
+   {
+    "w": "Sorumu",
+    "t0": 0.0,
+    "t1": 0.5
+   },
+   {
+    "w": "gizlice",
+    "t0": 0.5,
+    "t1": 0.98
+   },
+   {
+    "w": "yazdım,",
+    "t0": 0.98,
+    "t1": 1.46
+   },
+   {
+    "w": "zarfı",
+    "t0": 1.72,
+    "t1": 2.12
+   },
+   {
+    "w": "da",
+    "t0": 2.12,
+    "t1": 2.24
+   },
+   {
+    "w": "kendim",
+    "t0": 2.24,
+    "t1": 2.6
+   },
+   {
+    "w": "kapattım.",
+    "t0": 2.6,
+    "t1": 3.18
+   }
+  ],
+  "dur": 3.34
+ },
+ "n0c": {
+  "key": "fed407ddb333",
+  "trimmed": "fed407ddb333",
+  "wkey": "fed407ddb333",
+  "heard": "Biri soruyor, kayıp yüzüğümü bulacak mıyım?",
+  "words": [
+   {
+    "w": "Biri",
+    "t0": 0.0,
+    "t1": 0.36
+   },
+   {
+    "w": "soruyor:",
+    "t0": 0.36,
+    "t1": 0.78
+   },
+   {
+    "w": "Kayıp",
+    "t0": 1.04,
+    "t1": 1.42
+   },
+   {
+    "w": "yüzüğümü",
+    "t0": 1.42,
+    "t1": 1.86
+   },
+   {
+    "w": "bulacak",
+    "t0": 1.86,
+    "t1": 2.26
+   },
+   {
+    "w": "mıyım?",
+    "t0": 2.26,
+    "t1": 2.66
+   }
+  ],
+  "dur": 2.82
+ },
+ "d1": {
+  "key": "721771f4e318",
+  "trimmed": "721771f4e318",
+  "wkey": "721771f4e318",
+  "heard": "En arkada Kerem elini kaldırdı.",
+  "words": [
+   {
+    "w": "En",
+    "t0": 0.0,
+    "t1": 0.16
+   },
+   {
+    "w": "arkada",
+    "t0": 0.16,
+    "t1": 0.54
+   },
+   {
+    "w": "Kerem",
+    "t0": 0.54,
+    "t1": 0.86
+   },
+   {
+    "w": "elini",
+    "t0": 0.86,
+    "t1": 1.12
+   },
+   {
+    "w": "kaldırdı.",
+    "t0": 1.12,
+    "t1": 1.66
+   }
+  ],
+  "dur": 1.78
+ },
+ "n0d": {
+  "key": "6ab5c121f5fa",
+  "trimmed": "6ab5c121f5fa",
+  "wkey": "6ab5c121f5fa",
+  "heard": "Açıp bakalım. Evet, aynen böyle yazıyor.",
+  "words": [
+   {
+    "w": "Açıp",
+    "t0": 0.0,
+    "t1": 0.38
+   },
+   {
+    "w": "bakalım.",
+    "t0": 0.38,
+    "t1": 0.76
+   },
+   {
+    "w": "Evet,",
+    "t0": 1.2,
+    "t1": 1.38
+   },
+   {
+    "w": "aynen",
+    "t0": 1.74,
+    "t1": 2.06
+   },
+   {
+    "w": "böyle",
+    "t0": 2.06,
+    "t1": 2.3
+   },
+   {
+    "w": "yazıyor.",
+    "t0": 2.3,
+    "t1": 2.86
+   }
+  ],
+  "dur": 3.038
+ },
+ "n0e": {
+  "key": "88f218527f4c",
+  "trimmed": "88f218527f4c",
+  "wkey": "88f218527f4c",
+  "heard": "Sıradaki soru, zam ne zaman gelecek?",
+  "words": [
+   {
+    "w": "Sıradaki",
+    "t0": 0.0,
+    "t1": 0.54
+   },
+   {
+    "w": "soru:",
+    "t0": 0.54,
+    "t1": 1.06
+   },
+   {
+    "w": "Zam",
+    "t0": 1.06,
+    "t1": 1.38
+   },
+   {
+    "w": "ne",
+    "t0": 1.38,
+    "t1": 1.7
+   },
+   {
+    "w": "zaman",
+    "t0": 1.7,
+    "t1": 1.98
+   },
+   {
+    "w": "gelecek?",
+    "t0": 1.98,
+    "t1": 2.42
+   }
+  ],
+  "dur": 2.72
+ },
+ "h2": {
+  "key": "f6f7ac5222ca",
+  "trimmed": "f6f7ac5222ca",
+  "wkey": "f6f7ac5222ca",
+  "heard": "Bu benim sorum.",
+  "words": [
+   {
+    "w": "Bu",
+    "t0": 0.0,
+    "t1": 0.26
+   },
+   {
+    "w": "benim",
+    "t0": 0.26,
+    "t1": 0.52
+   },
+   {
+    "w": "sorum!",
+    "t0": 0.52,
+    "t1": 0.98
+   }
+  ],
+  "dur": 1.1
+ },
+ "d2": {
+  "key": "2b6da357edab",
+  "trimmed": "2b6da357edab",
+  "wkey": "2b6da357edab",
+  "heard": "Benim sorumu da bildi, tek yardımcısı keremdi, o da yalnızca elini kaldırdı.",
+  "words": [
+   {
+    "w": "Benim",
+    "t0": 0.0,
+    "t1": 0.24
+   },
+   {
+    "w": "sorumu",
+    "t0": 0.24,
+    "t1": 0.62
+   },
+   {
+    "w": "da",
+    "t0": 0.62,
+    "t1": 0.76
+   },
+   {
+    "w": "bildi.",
+    "t0": 0.76,
+    "t1": 1.2
+   },
+   {
+    "w": "Tek",
+    "t0": 1.2,
+    "t1": 1.54
+   },
+   {
+    "w": "yardımcısı",
+    "t0": 1.54,
+    "t1": 2.1
+   },
+   {
+    "w": "Keremdi;",
+    "t0": 2.1,
+    "t1": 2.56
+   },
+   {
+    "w": "o",
+    "t0": 2.56,
+    "t1": 2.83
+   },
+   {
+    "w": "da",
+    "t0": 2.83,
+    "t1": 3.1
+   },
+   {
+    "w": "yalnızca",
+    "t0": 3.1,
+    "t1": 3.58
+   },
+   {
+    "w": "elini",
+    "t0": 3.58,
+    "t1": 3.82
+   },
+   {
+    "w": "kaldırdı.",
+    "t0": 3.82,
+    "t1": 4.32
+   }
+  ],
+  "dur": 4.438
+ },
+ "h3": {
+  "key": "02470fa170c3",
+  "trimmed": "02470fa170c3",
+  "wkey": "02470fa170c3",
+  "heard": "Necmi sorularımızı nasıl okudu?",
+  "words": [
+   {
+    "w": "Necmi",
+    "t0": 0.0,
+    "t1": 0.48
+   },
+   {
+    "w": "sorularımızı",
+    "t0": 0.48,
+    "t1": 1.2
+   },
+   {
+    "w": "nasıl",
+    "t0": 1.2,
+    "t1": 1.48
+   },
+   {
+    "w": "okudu?",
+    "t0": 1.48,
+    "t1": 2.0
+   }
+  ],
+  "dur": 2.12
+ },
+ "n1": {
+  "key": "80537980a5d3",
+  "trimmed": "80537980a5d3",
+  "wkey": "80537980a5d3",
+  "heard": "Bu zarfları hangi sırayla topladığımı hatırlayın.",
+  "words": [
+   {
+    "w": "Bu",
+    "t0": 0.0,
+    "t1": 0.22
+   },
+   {
+    "w": "zarfları",
+    "t0": 0.22,
+    "t1": 0.82
+   },
+   {
+    "w": "hangi",
+    "t0": 0.82,
+    "t1": 1.28
+   },
+   {
+    "w": "sırayla",
+    "t0": 1.28,
+    "t1": 1.66
+   },
+   {
+    "w": "topladığımı",
+    "t0": 1.66,
+    "t1": 2.3
+   },
+   {
+    "w": "hatırlayın.",
+    "t0": 2.3,
+    "t1": 2.84
+   }
+  ],
+  "dur": 2.97
+ },
+ "d3": {
+  "key": "b586fd805652",
+  "trimmed": "b586fd805652",
+  "wkey": "b586fd805652",
+  "heard": "Buldum. İlk soru uydurmaydı.",
+  "words": [
+   {
+    "w": "Buldum!",
+    "t0": 0.0,
+    "t1": 0.5
+   },
+   {
+    "w": "İlk",
+    "t0": 0.5,
+    "t1": 0.94
+   },
+   {
+    "w": "soru",
+    "t0": 0.94,
+    "t1": 1.24
+   },
+   {
+    "w": "uydurmaydı.",
+    "t0": 1.24,
+    "t1": 1.84
+   }
+  ],
+  "dur": 1.998
+ },
+ "d4": {
+  "key": "35c1df5c88e8",
+  "trimmed": "35c1df5c88e8",
+  "wkey": "35c1df5c88e8",
+  "heard": "Necmi her açtığı zarfta bir sonraki soruyu okudu. Hep bir zarf geriden geldi.",
+  "words": [
+   {
+    "w": "Necmi",
+    "t0": 0.0,
+    "t1": 0.36
+   },
+   {
+    "w": "her",
+    "t0": 0.36,
+    "t1": 0.54
+   },
+   {
+    "w": "açtığı",
+    "t0": 0.54,
+    "t1": 0.94
+   },
+   {
+    "w": "zarfta",
+    "t0": 0.94,
+    "t1": 1.26
+   },
+   {
+    "w": "bir",
+    "t0": 1.26,
+    "t1": 1.44
+   },
+   {
+    "w": "sonraki",
+    "t0": 1.44,
+    "t1": 1.84
+   },
+   {
+    "w": "soruyu",
+    "t0": 1.84,
+    "t1": 2.12
+   },
+   {
+    "w": "okudu.",
+    "t0": 2.12,
+    "t1": 2.56
+   },
+   {
+    "w": "Hep",
+    "t0": 2.56,
+    "t1": 2.83
+   },
+   {
+    "w": "bir",
+    "t0": 2.83,
+    "t1": 3.1
+   },
+   {
+    "w": "zarf",
+    "t0": 3.1,
+    "t1": 3.44
+   },
+   {
+    "w": "geriden",
+    "t0": 3.44,
+    "t1": 3.8
+   },
+   {
+    "w": "geldi.",
+    "t0": 3.8,
+    "t1": 4.04
+   }
+  ],
+  "dur": 4.298
+ },
+ "d6": {
+  "key": "4ca356192ffa",
+  "trimmed": "4ca356192ffa",
+  "wkey": "4ca356192ffa",
+  "heard": "Bunun falan inanan arkadaşına gönder.",
+  "words": [
+   {
+    "w": "Bunu",
+    "t0": 0.0,
+    "t1": 0.22
+   },
+   {
+    "w": "fala",
+    "t0": 0.22,
+    "t1": 0.44
+   },
+   {
+    "w": "inanan",
+    "t0": 0.44,
+    "t1": 0.84
+   },
+   {
+    "w": "arkadaşına",
+    "t0": 0.84,
+    "t1": 1.46
+   },
+   {
+    "w": "gönder.",
+    "t0": 1.46,
+    "t1": 1.78
+   }
+  ],
+  "dur": 1.95
+ }
+}
