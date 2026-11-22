@@ -616,15 +616,18 @@
     "2026-11-22T09:30Z": {
       "episode": "050-bayramlasma",
       "media": "v/050-bayramlasma-20652db7.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-21T19:05:03.963Z",
       "postId": "6b01eb99d864a011056af9a6",
       "dueAt": "2026-11-22T09:30:00.000Z",
       "yt": {
         "postId": "6b01eb9ad5eabfb8cc5452ef",
-        "status": "scheduled",
-        "dueAt": "2026-11-22T09:30:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-22T09:30:00.000Z",
+        "link": "https://www.youtube.com/shorts/rcZkqxB6eqk"
+      },
+      "sentAt": "2026-11-22T09:31:06.068Z",
+      "link": "https://www.instagram.com/reel/DgCfN_2DhLm/"
     },
     "2026-11-22T18:00Z": {
       "episode": "047-bardaklar",
@@ -663,6 +666,19 @@
         "postId": "6b01df7a142c95751934980d",
         "status": "scheduled",
         "dueAt": "2026-11-23T18:00:00.000Z"
+      }
+    },
+    "2026-11-24T09:30Z": {
+      "episode": "057-birim",
+      "media": "v/057-birim-985129b2.mp4",
+      "status": "scheduled",
+      "at": "2026-11-22T14:31:09.715Z",
+      "postId": "6b02fcded864a01105cdf499",
+      "dueAt": "2026-11-24T09:30:00.000Z",
+      "yt": {
+        "postId": "6b02fcdecc364169c15e8058",
+        "status": "scheduled",
+        "dueAt": "2026-11-24T09:30:00.000Z"
       }
     }
   }
