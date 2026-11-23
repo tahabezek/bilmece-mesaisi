@@ -664,15 +664,18 @@
     "2026-11-23T18:00Z": {
       "episode": "056-iki-anne",
       "media": "v/056-iki-anne-c84430e2.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-21T18:13:12.413Z",
       "postId": "6b01df798bd84d59660c4859",
       "dueAt": "2026-11-23T18:00:00.000Z",
       "yt": {
         "postId": "6b01df7a142c95751934980d",
-        "status": "scheduled",
-        "dueAt": "2026-11-23T18:00:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-23T18:00:00.000Z",
+        "link": "https://www.youtube.com/shorts/bfsl45CFsfg"
+      },
+      "sentAt": "2026-11-23T18:07:01.936Z",
+      "link": "https://www.instagram.com/reel/DgF-8TrnFGU/"
     },
     "2026-11-24T09:30Z": {
       "episode": "057-birim",
