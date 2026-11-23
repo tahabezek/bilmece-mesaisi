@@ -648,15 +648,18 @@
     "2026-11-23T09:30Z": {
       "episode": "051-kimin-sayisi",
       "media": "v/051-kimin-sayisi-26c0daa8.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-21T14:36:49.656Z",
       "postId": "6b01acb3142c9575191e9cf1",
       "dueAt": "2026-11-23T09:30:00.000Z",
       "yt": {
         "postId": "6b01acb40247969092dc2e5c",
-        "status": "scheduled",
-        "dueAt": "2026-11-23T09:30:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-23T09:30:00.000Z",
+        "link": "https://www.youtube.com/shorts/zaHYMwDTblo"
+      },
+      "sentAt": "2026-11-23T09:32:32.467Z",
+      "link": "https://www.instagram.com/reel/DgFEIhBko7T/"
     },
     "2026-11-23T18:00Z": {
       "episode": "056-iki-anne",
@@ -695,6 +698,32 @@
         "postId": "6b033732d5eabfb8ccce7914",
         "status": "scheduled",
         "dueAt": "2026-11-24T18:00:00.000Z"
+      }
+    },
+    "2026-11-25T09:30Z": {
+      "episode": "054-vapur-tanidik",
+      "media": "v/054-vapur-tanidik-340d460c.mp4",
+      "status": "scheduled",
+      "at": "2026-11-23T18:00:16.529Z",
+      "postId": "6b047f640720ccb673fd0d58",
+      "dueAt": "2026-11-25T09:30:00.000Z",
+      "yt": {
+        "postId": "6b047f660720ccb673fd0ede",
+        "status": "scheduled",
+        "dueAt": "2026-11-25T09:30:00.000Z"
+      }
+    },
+    "2026-11-25T18:00Z": {
+      "episode": "055-vapur-lambalar",
+      "media": "v/055-vapur-lambalar-444c7c8b.mp4",
+      "status": "scheduled",
+      "at": "2026-11-23T18:00:16.529Z",
+      "postId": "6b047f656dffe25404d1ab08",
+      "dueAt": "2026-11-25T18:00:00.000Z",
+      "yt": {
+        "postId": "6b047f670720ccb673fd0f6c",
+        "status": "scheduled",
+        "dueAt": "2026-11-25T18:00:00.000Z"
       }
     }
   }
