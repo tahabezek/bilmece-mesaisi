@@ -1,26 +1,26 @@
 {
   "_not": "Cevapsız videoların yorumda cevap durumu. Kontrol saatleri görevi (yorum-kontrol) günceller. durum: bekliyor | taslak | yazildi",
-  "son_kontrol": "2026-11-23T15:35Z",
+  "son_kontrol": "2026-11-23T16:10Z",
   "videolar": {
     "050-bayramlasma": {
       "durum": "taslak",
       "yayin": "2026-11-22T09:31:06Z",
       "link": "https://www.instagram.com/reel/DgCfN_2DhLm/",
       "taslak": "Cevap: Olamaz! Her bayramlaşma iki kişinin sayısına birer ekler, yani herkesin sayısını toplarsan sonuç hep çift çıkar. Toplam çiftse tek sayıların adedi de çift olmak zorunda; 5 ise tek. Defne bu yüzden defteri hiç saymadan bildi 🤝",
-      "not": "23 Kas 15:30Z: 0 yorum. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi."
+      "not": "23 Kas 16:10Z: hâlâ 0 yorum. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi."
     },
     "047-bardaklar": {
       "durum": "taslak",
       "yayin": "2026-11-22T18:03:15Z",
       "link": "https://www.instagram.com/reel/DgDZz8wjLJS/",
       "taslak": "Cevap: Tepsi dolabın haritası! Sağ sütunda ters bardak sayısı tekse anahtar sağda, alt sırada tekse altta; çiftse solda ve üstte. Kerem tek bardakla bu iki sayıyı istediği gibi ayarlar: sağ-alt ikisini birden, sağ-üst yalnız sütunu, sol-alt yalnız sırayı değiştirir, sol-üst hiçbirini. Bardaklar nasıl dizilmiş olursa olsun tek hamle yetiyor ☕",
-      "not": "23 Kas 15:30Z: 0 yorum. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi."
+      "not": "23 Kas 16:10Z: hâlâ 0 yorum, 3 beğeni. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi."
     },
     "051-kimin-sayisi": {
       "durum": "bekliyor",
       "yayin": "2026-11-23T09:30Z (yaklaşık; ledger'da hâlâ scheduled, IG'de 5 saat önce görünüyordu)",
       "link": "https://www.instagram.com/reel/DgFEIhBko7T/",
-      "not": "23 Kas 15:30Z: 3 yorum, üçü de Necmi=3 dedi, biri tam çözümü yazdı. Hesap bir yoruma 'Defne'nin sayısından emin misin?' diye yanıt vermiş. Cevap taslağı en erken 24 Kas 05:30Z."
+      "not": "23 Kas 16:10Z: 4 yorum (3 izleyici + hesabın yanıtı), 10 beğeni; üç izleyici de Necmi=3 dedi, biri tam çözümü yazdı. Ledger hâlâ scheduled. Cevap taslağı en erken 24 Kas 05:30Z."
     },
     "056-iki-anne": {
       "durum": "bekliyor",
