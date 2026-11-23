@@ -1,30 +1,44 @@
 {
   "_not": "Cevapsız videoların yorumda cevap durumu. Kontrol saatleri görevi (yorum-kontrol) günceller. durum: bekliyor | taslak | yazildi",
-  "son_kontrol": "2026-11-22T08:12Z",
+  "son_kontrol": "2026-11-23T15:35Z",
   "videolar": {
     "050-bayramlasma": {
-      "durum": "bekliyor",
-      "yayin": null,
-      "planlanan": "2026-11-22T09:30:00.000Z",
-      "not": "İlk cevapsız video (047'nin önüne planlandı), henüz yayınlanmadı. Cevap yorumu taslağı en erken 23 Kasım 05:30Z'den sonra yazılacak."
+      "durum": "taslak",
+      "yayin": "2026-11-22T09:31:06Z",
+      "link": "https://www.instagram.com/reel/DgCfN_2DhLm/",
+      "taslak": "Cevap: Olamaz! Her bayramlaşma iki kişinin sayısına birer ekler, yani herkesin sayısını toplarsan sonuç hep çift çıkar. Toplam çiftse tek sayıların adedi de çift olmak zorunda; 5 ise tek. Defne bu yüzden defteri hiç saymadan bildi 🤝",
+      "not": "23 Kas 15:30Z: 0 yorum. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi."
     },
     "047-bardaklar": {
-      "durum": "bekliyor",
-      "yayin": null,
-      "planlanan": "2026-11-22T18:00:00.000Z",
-      "not": "Cevapsız, henüz yayınlanmadı. Cevap yorumu taslağı yayından en az 20 saat sonra yazılacak."
+      "durum": "taslak",
+      "yayin": "2026-11-22T18:03:15Z",
+      "link": "https://www.instagram.com/reel/DgDZz8wjLJS/",
+      "taslak": "Cevap: Tepsi dolabın haritası! Sağ sütunda ters bardak sayısı tekse anahtar sağda, alt sırada tekse altta; çiftse solda ve üstte. Kerem tek bardakla bu iki sayıyı istediği gibi ayarlar: sağ-alt ikisini birden, sağ-üst yalnız sütunu, sol-alt yalnız sırayı değiştirir, sol-üst hiçbirini. Bardaklar nasıl dizilmiş olursa olsun tek hamle yetiyor ☕",
+      "not": "23 Kas 15:30Z: 0 yorum. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi."
     },
     "051-kimin-sayisi": {
       "durum": "bekliyor",
-      "yayin": null,
-      "planlanan": "2026-11-23T09:30:00.000Z",
-      "not": "Cevapsız, henüz yayınlanmadı. Cevap yorumu taslağı yayından en az 20 saat sonra yazılacak."
+      "yayin": "2026-11-23T09:30Z (yaklaşık; ledger'da hâlâ scheduled, IG'de 5 saat önce görünüyordu)",
+      "link": "https://www.instagram.com/reel/DgFEIhBko7T/",
+      "not": "23 Kas 15:30Z: 3 yorum, üçü de Necmi=3 dedi, biri tam çözümü yazdı. Hesap bir yoruma 'Defne'nin sayısından emin misin?' diye yanıt vermiş. Cevap taslağı en erken 24 Kas 05:30Z."
     },
     "056-iki-anne": {
       "durum": "bekliyor",
       "yayin": null,
       "planlanan": "2026-11-23T18:00:00.000Z",
       "not": "Cevapsız, henüz yayınlanmadı. Cevap yorumu taslağı yayından en az 20 saat sonra yazılacak."
+    },
+    "057-birim": {
+      "durum": "bekliyor",
+      "yayin": null,
+      "planlanan": "2026-11-24T09:30:00.000Z",
+      "not": "Cevapsız, henüz yayınlanmadı."
+    },
+    "053-vapur-uykucu": {
+      "durum": "bekliyor",
+      "yayin": null,
+      "planlanan": "2026-11-24T18:00:00.000Z",
+      "not": "Cevapsız (Son Vapur kapağında CEVAP var; yorumda 'neden'i açıklanacak), henüz yayınlanmadı."
     }
   }
 }
