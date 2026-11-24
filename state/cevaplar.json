@@ -1,44 +1,60 @@
 {
   "_not": "Cevapsız videoların yorumda cevap durumu. Kontrol saatleri görevi (yorum-kontrol) günceller. durum: bekliyor | taslak | yazildi",
-  "son_kontrol": "2026-11-23T16:10Z",
+  "son_kontrol": "2026-11-24T17:37Z",
   "videolar": {
     "050-bayramlasma": {
       "durum": "taslak",
       "yayin": "2026-11-22T09:31:06Z",
       "link": "https://www.instagram.com/reel/DgCfN_2DhLm/",
       "taslak": "Cevap: Olamaz! Her bayramlaşma iki kişinin sayısına birer ekler, yani herkesin sayısını toplarsan sonuç hep çift çıkar. Toplam çiftse tek sayıların adedi de çift olmak zorunda; 5 ise tek. Defne bu yüzden defteri hiç saymadan bildi 🤝",
-      "not": "23 Kas 16:10Z: hâlâ 0 yorum. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi."
+      "not": "24 Kas 17:37Z: hâlâ 0 yorum, 1 beğeni. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi."
     },
     "047-bardaklar": {
       "durum": "taslak",
       "yayin": "2026-11-22T18:03:15Z",
       "link": "https://www.instagram.com/reel/DgDZz8wjLJS/",
       "taslak": "Cevap: Tepsi dolabın haritası! Sağ sütunda ters bardak sayısı tekse anahtar sağda, alt sırada tekse altta; çiftse solda ve üstte. Kerem tek bardakla bu iki sayıyı istediği gibi ayarlar: sağ-alt ikisini birden, sağ-üst yalnız sütunu, sol-alt yalnız sırayı değiştirir, sol-üst hiçbirini. Bardaklar nasıl dizilmiş olursa olsun tek hamle yetiyor ☕",
-      "not": "23 Kas 16:10Z: hâlâ 0 yorum, 3 beğeni. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi."
+      "not": "24 Kas 17:37Z: hâlâ 0 yorum, 4 beğeni. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi."
     },
     "051-kimin-sayisi": {
-      "durum": "bekliyor",
-      "yayin": "2026-11-23T09:30Z (yaklaşık; ledger'da hâlâ scheduled, IG'de 5 saat önce görünüyordu)",
+      "durum": "taslak",
+      "yayin": "2026-11-23T09:32:32Z",
       "link": "https://www.instagram.com/reel/DgFEIhBko7T/",
-      "not": "23 Kas 16:10Z: 4 yorum (3 izleyici + hesabın yanıtı), 10 beğeni; üç izleyici de Necmi=3 dedi, biri tam çözümü yazdı. Ledger hâlâ scheduled. Cevap taslağı en erken 24 Kas 05:30Z."
+      "not": "24 Kas 17:37Z: 9 yorum (8 izleyici + hesabın 1 yanıtı), 31 beğeni. 8 izleyicinin 8'i de Necmi=3 dedi; Defne için 3 kişi 4, 1 kişi 2, 2 kişi '2 ya da 4' dedi. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi.",
+      "taslak": "Cevap: Necmi'nin sayısı 3! Defne bilmiyorsa onun sayısı 1 ya da 5 değil; Necmi'nin sayısı 2 ya da 4 olsaydı bunu duyunca Defne'nin 3 olduğunu anlardı, 1 ya da 5 olsaydı zaten baştan bilirdi. Defne'ninki ise 2 de olabilir 4 de; Hikmet Bey'in unutmasına şaşmamalı 😄 3 diyen herkese tebrikler, tam çözümü yazanlara ayrıca teşekkürler 👏",
+      "yanitlar": [
+        {
+          "hedef": "10 beğenili tam çözüm yorumu",
+          "metin": "Adım adım tam çözüm bu! Defne'nin 2 de 4 de olabileceğini yakalaman ayrıca güzel 👏"
+        },
+        {
+          "hedef": "'Kız 2 Necmi 3' yorumu (hesap daha önce 'defnenin sayısından emin misin?' diye yanıtlamıştı)",
+          "metin": "Küçük düzeltme: Defne 2 de olabilir 4 de, ikisi de bu konuşmaya uyuyor. Necmi'yi 3 bulman tam isabet 🎯"
+        },
+        {
+          "hedef": "'Necmi 3 Defne 4' yorumlarından biri",
+          "metin": "Necmi 3, tamam ✅ Peki Defne neden 2 olamasın? 😉"
+        }
+      ]
     },
     "056-iki-anne": {
-      "durum": "bekliyor",
-      "yayin": null,
-      "planlanan": "2026-11-23T18:00:00.000Z",
-      "not": "Cevapsız, henüz yayınlanmadı. Cevap yorumu taslağı yayından en az 20 saat sonra yazılacak."
+      "durum": "taslak",
+      "yayin": "2026-11-23T18:07:01Z",
+      "not": "24 Kas 17:37Z: 0 yorum, 12 beğeni. Teşekkür edilecek doğru bilen yok. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi.",
+      "link": "https://www.instagram.com/reel/DgF-8TrnFGU/",
+      "taslak": "Cevap: Otobüsler arka arkaya geliyor! Üsküdar otobüsü, Kadıköy otobüsünden hep 1 dakika sonra geçiyor; Necmi hangi dakikada gelirse gelsin, 10 dakikanın 9'unda önce Kadıköy otobüsü geliyor, Üsküdar'a 1 dakikalık şans kalıyor. İki hat da 'on dakikada bir' ama şans eşit değil 🚌 Kaynana haklı, ama suç Necmi'de değil, tarifede 😄"
     },
     "057-birim": {
       "durum": "bekliyor",
-      "yayin": null,
-      "planlanan": "2026-11-24T09:30:00.000Z",
-      "not": "Cevapsız, henüz yayınlanmadı."
+      "yayin": "2026-11-24T09:31:47Z",
+      "not": "24 Kas 17:37Z (8 saatlik): 1 yorum, doğru cevap (muhasebeden genç, bilgi işlemden yaşlı); 10 beğeni. Cevap taslağı en erken 25 Kas 05:32Z.",
+      "link": "https://www.instagram.com/reel/DgHo1hTiuU-/"
     },
     "053-vapur-uykucu": {
       "durum": "bekliyor",
       "yayin": null,
       "planlanan": "2026-11-24T18:00:00.000Z",
-      "not": "Cevapsız (Son Vapur kapağında CEVAP var; yorumda 'neden'i açıklanacak), henüz yayınlanmadı."
+      "not": "Cevapsız (Son Vapur kapağında CEVAP var; yorumda 'neden'i açıklanacak). 24 Kas 18:00Z'de yayınlanacak; kontrol anında ledger'da scheduled."
     }
   }
 }
