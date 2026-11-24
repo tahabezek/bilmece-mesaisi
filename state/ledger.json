@@ -680,15 +680,18 @@
     "2026-11-24T09:30Z": {
       "episode": "057-birim",
       "media": "v/057-birim-985129b2.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-22T14:31:09.715Z",
       "postId": "6b02fcded864a01105cdf499",
       "dueAt": "2026-11-24T09:30:00.000Z",
       "yt": {
         "postId": "6b02fcdecc364169c15e8058",
-        "status": "scheduled",
-        "dueAt": "2026-11-24T09:30:00.000Z"
-      }
+        "status": "failed",
+        "dueAt": "2026-11-24T09:30:00.000Z",
+        "error": "The daily posting limit for this channel has been reached! Please try reducing the amount of times per day in your schedule and try again later."
+      },
+      "sentAt": "2026-11-24T09:31:47.644Z",
+      "link": "https://www.instagram.com/reel/DgHo1hTiuU-/"
     },
     "2026-11-24T18:00Z": {
       "episode": "053-vapur-uykucu",
@@ -727,6 +730,19 @@
         "postId": "6b047f670720ccb673fd0f6c",
         "status": "scheduled",
         "dueAt": "2026-11-25T18:00:00.000Z"
+      }
+    },
+    "2026-11-26T09:30Z": {
+      "episode": "058-soru-eki",
+      "media": "v/058-soru-eki-deea42e3.mp4",
+      "status": "scheduled",
+      "at": "2026-11-24T09:54:10.677Z",
+      "postId": "6b055ef4d289cd5f34774fec",
+      "dueAt": "2026-11-26T09:30:00.000Z",
+      "yt": {
+        "postId": "6b055ef5127d3666e7d99dd0",
+        "status": "scheduled",
+        "dueAt": "2026-11-26T09:30:00.000Z"
       }
     }
   }
