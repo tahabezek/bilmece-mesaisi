@@ -696,15 +696,18 @@
     "2026-11-24T18:00Z": {
       "episode": "053-vapur-uykucu",
       "media": "v/053-vapur-uykucu-912c327a.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-22T18:40:00.122Z",
       "postId": "6b033731c72676f5e94fff3f",
       "dueAt": "2026-11-24T18:00:00.000Z",
       "yt": {
         "postId": "6b033732d5eabfb8ccce7914",
-        "status": "scheduled",
-        "dueAt": "2026-11-24T18:00:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-24T18:00:00.000Z",
+        "link": "https://www.youtube.com/shorts/FZw2IjhjdvQ"
+      },
+      "sentAt": "2026-11-24T18:09:18.403Z",
+      "link": "https://www.instagram.com/reel/DgIj50wCXvd/"
     },
     "2026-11-25T09:30Z": {
       "episode": "054-vapur-tanidik",
@@ -743,6 +746,19 @@
         "postId": "6b055ef5127d3666e7d99dd0",
         "status": "scheduled",
         "dueAt": "2026-11-26T09:30:00.000Z"
+      }
+    },
+    "2026-11-26T18:00Z": {
+      "episode": "059-tanik",
+      "media": "v/059-tanik-0a9f4bd0.mp4",
+      "status": "scheduled",
+      "at": "2026-11-24T20:25:49.597Z",
+      "postId": "6b05f2ffad5aa59f729b9022",
+      "dueAt": "2026-11-26T18:00:00.000Z",
+      "yt": {
+        "postId": "6b05f300c966bca3fadba815",
+        "status": "scheduled",
+        "dueAt": "2026-11-26T18:00:00.000Z"
       }
     }
   }
