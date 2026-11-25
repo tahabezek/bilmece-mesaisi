@@ -712,15 +712,18 @@
     "2026-11-25T09:30Z": {
       "episode": "054-vapur-tanidik",
       "media": "v/054-vapur-tanidik-340d460c.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-23T18:00:16.529Z",
       "postId": "6b047f640720ccb673fd0d58",
       "dueAt": "2026-11-25T09:30:00.000Z",
       "yt": {
         "postId": "6b047f660720ccb673fd0ede",
-        "status": "scheduled",
-        "dueAt": "2026-11-25T09:30:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-25T09:30:00.000Z",
+        "link": "https://www.youtube.com/shorts/kxB_9AvPRIQ"
+      },
+      "sentAt": "2026-11-25T09:31:55.264Z",
+      "link": "https://www.instagram.com/reel/DgKNro6NNIq/"
     },
     "2026-11-25T18:00Z": {
       "episode": "055-vapur-lambalar",
@@ -759,6 +762,19 @@
         "postId": "6b05f300c966bca3fadba815",
         "status": "scheduled",
         "dueAt": "2026-11-26T18:00:00.000Z"
+      }
+    },
+    "2026-11-27T09:30Z": {
+      "episode": "060-bilmiyorum",
+      "media": "v/060-bilmiyorum-77cdde11.mp4",
+      "status": "scheduled",
+      "at": "2026-11-25T17:10:01.606Z",
+      "postId": "6b07169ddb153417ca120940",
+      "dueAt": "2026-11-27T09:30:00.000Z",
+      "yt": {
+        "postId": "6b07169ea9ddd28789fcd8bd",
+        "status": "scheduled",
+        "dueAt": "2026-11-27T09:30:00.000Z"
       }
     }
   }
