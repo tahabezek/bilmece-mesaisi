@@ -1,60 +1,92 @@
 {
   "_not": "Cevapsız videoların yorumda cevap durumu. Kontrol saatleri görevi (yorum-kontrol) günceller. durum: bekliyor | taslak | yazildi",
-  "son_kontrol": "2026-11-24T17:37Z",
+  "son_kontrol": "2026-11-25T18:15Z",
   "videolar": {
     "050-bayramlasma": {
       "durum": "taslak",
       "yayin": "2026-11-22T09:31:06Z",
       "link": "https://www.instagram.com/reel/DgCfN_2DhLm/",
       "taslak": "Cevap: Olamaz! Her bayramlaşma iki kişinin sayısına birer ekler, yani herkesin sayısını toplarsan sonuç hep çift çıkar. Toplam çiftse tek sayıların adedi de çift olmak zorunda; 5 ise tek. Defne bu yüzden defteri hiç saymadan bildi 🤝",
-      "not": "24 Kas 17:37Z: hâlâ 0 yorum, 1 beğeni. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi."
+      "not": "25 Kas 18:15Z: hâlâ 0 yorum, 1 beğeni. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi."
     },
     "047-bardaklar": {
       "durum": "taslak",
       "yayin": "2026-11-22T18:03:15Z",
       "link": "https://www.instagram.com/reel/DgDZz8wjLJS/",
       "taslak": "Cevap: Tepsi dolabın haritası! Sağ sütunda ters bardak sayısı tekse anahtar sağda, alt sırada tekse altta; çiftse solda ve üstte. Kerem tek bardakla bu iki sayıyı istediği gibi ayarlar: sağ-alt ikisini birden, sağ-üst yalnız sütunu, sol-alt yalnız sırayı değiştirir, sol-üst hiçbirini. Bardaklar nasıl dizilmiş olursa olsun tek hamle yetiyor ☕",
-      "not": "24 Kas 17:37Z: hâlâ 0 yorum, 4 beğeni. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi."
+      "not": "25 Kas 18:15Z: 1 yorum (yanlış ama esprili: 'bardak hâlâ sıcak, çevrildiği belli olur'), 4 beğeni. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi.",
+      "yanitlar": [
+        {
+          "hedef": "'Bardak hâlâ sıcak olduğundan çevrildiği belli olur' yorumu",
+          "metin": "Ampul bilmecesinin çay versiyonu, bayıldık 😄 Ama Necmi tepsiye yalnızca bakıyor; hangi sütunda ve hangi sırada tek sayıda ters bardak olduğu çekmeceyi söylüyor."
+        }
+      ]
     },
     "051-kimin-sayisi": {
       "durum": "taslak",
       "yayin": "2026-11-23T09:32:32Z",
       "link": "https://www.instagram.com/reel/DgFEIhBko7T/",
-      "not": "24 Kas 17:37Z: 9 yorum (8 izleyici + hesabın 1 yanıtı), 31 beğeni. 8 izleyicinin 8'i de Necmi=3 dedi; Defne için 3 kişi 4, 1 kişi 2, 2 kişi '2 ya da 4' dedi. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi.",
+      "not": "25 Kas 18:15Z: 14 yorum (11 izleyici + 2 alt yanıt + hesabın 1 yanıtı), 40 beğeni, 13 paylaşım. 11 izleyicinin 11'i de Necmi=3 (biri 3 parmak GIF'i). Defne için 4 kişi 4, 1 kişi 2, 2 kişi '2 ya da 4'. Yeni zincir: biri 'kadın için de tek ihtimal kalıyor' dedi (yanlış), '2 ya da 4' diyen kişi 'nasıl oluyor, çözemedim' diye sordu. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi.",
       "taslak": "Cevap: Necmi'nin sayısı 3! Defne bilmiyorsa onun sayısı 1 ya da 5 değil; Necmi'nin sayısı 2 ya da 4 olsaydı bunu duyunca Defne'nin 3 olduğunu anlardı, 1 ya da 5 olsaydı zaten baştan bilirdi. Defne'ninki ise 2 de olabilir 4 de; Hikmet Bey'in unutmasına şaşmamalı 😄 3 diyen herkese tebrikler, tam çözümü yazanlara ayrıca teşekkürler 👏",
       "yanitlar": [
         {
-          "hedef": "10 beğenili tam çözüm yorumu",
+          "hedef": "13 beğenili tam çözüm yorumu",
           "metin": "Adım adım tam çözüm bu! Defne'nin 2 de 4 de olabileceğini yakalaman ayrıca güzel 👏"
+        },
+        {
+          "hedef": "'İki ihtimal var kadın için' yorumu (altında 'nasıl oluyor, çözemedim' sorusu var)",
+          "metin": "Aslında ilk yazdığın doğruydu: Defne 2 de olabilir 4 de, ikisi de bu konuşmaya uyuyor. Kesin olan tek şey Necmi'nin 3 olması 🎯"
         },
         {
           "hedef": "'Kız 2 Necmi 3' yorumu (hesap daha önce 'defnenin sayısından emin misin?' diye yanıtlamıştı)",
           "metin": "Küçük düzeltme: Defne 2 de olabilir 4 de, ikisi de bu konuşmaya uyuyor. Necmi'yi 3 bulman tam isabet 🎯"
-        },
-        {
-          "hedef": "'Necmi 3 Defne 4' yorumlarından biri",
-          "metin": "Necmi 3, tamam ✅ Peki Defne neden 2 olamasın? 😉"
         }
       ]
     },
     "056-iki-anne": {
       "durum": "taslak",
       "yayin": "2026-11-23T18:07:01Z",
-      "not": "24 Kas 17:37Z: 0 yorum, 12 beğeni. Teşekkür edilecek doğru bilen yok. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi.",
+      "not": "25 Kas 18:15Z: hâlâ 0 yorum, 12 beğeni, 1 paylaşım. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi.",
       "link": "https://www.instagram.com/reel/DgF-8TrnFGU/",
       "taslak": "Cevap: Otobüsler arka arkaya geliyor! Üsküdar otobüsü, Kadıköy otobüsünden hep 1 dakika sonra geçiyor; Necmi hangi dakikada gelirse gelsin, 10 dakikanın 9'unda önce Kadıköy otobüsü geliyor, Üsküdar'a 1 dakikalık şans kalıyor. İki hat da 'on dakikada bir' ama şans eşit değil 🚌 Kaynana haklı, ama suç Necmi'de değil, tarifede 😄"
     },
     "057-birim": {
-      "durum": "bekliyor",
+      "durum": "taslak",
       "yayin": "2026-11-24T09:31:47Z",
-      "not": "24 Kas 17:37Z (8 saatlik): 1 yorum, doğru cevap (muhasebeden genç, bilgi işlemden yaşlı); 10 beğeni. Cevap taslağı en erken 25 Kas 05:32Z.",
-      "link": "https://www.instagram.com/reel/DgHo1hTiuU-/"
+      "not": "25 Kas 18:15Z (33 saatlik): hâlâ 1 yorum, doğru cevap; 11 beğeni. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi.",
+      "link": "https://www.instagram.com/reel/DgHo1hTiuU-/",
+      "taslak": "Cevap: Hikmet Bey muhasebenin yaş ortalamasından genç, bilgi işleminkinden yaşlı! 46 yaşında; o gidince muhasebenin ortalaması 49'dan 50'ye, o gelince bilgi işleminki 22'den 28'e çıkıyor. Kimse bir gün yaşlanmadan iki birim birden yaşlanmış oldu 😄 İlk yorumda tam isabet yapan arkadaşımıza tebrikler 👏",
+      "yanitlar": [
+        {
+          "hedef": "Tek yorum (doğru cevap)",
+          "metin": "Tam isabet 🎯 Hikmet Bey 46 yaşında: muhasebenin 49'luk ortalamasının altında, bilgi işlemin 22'lik ortalamasının üstünde."
+        }
+      ]
     },
     "053-vapur-uykucu": {
+      "durum": "taslak",
+      "yayin": "2026-11-24T18:09:18Z",
+      "not": "25 Kas 18:15Z (24 saatlik): 3 yorum (2 izleyici + hesabın 1 'why?' GIF yanıtı), 9 beğeni. Biri saatleri doğru kurup (7.40 karşı, 8.00 geri, 8.20 karşı) 2 dedi; dönüşü geçiş saymamış. Öbürü '6 ya da 3, ben 3 diyeceğim' dedi, nedenini yazmadı. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi.",
+      "link": "https://www.instagram.com/reel/DgIj50wCXvd/",
+      "taslak": "Neden üç kez? İki saatin ortası gerçek saati verir: 08.21 ile 08.19'un ortası 08.20, yani binişten bu yana tam 1 saat geçmiş. 20 dakikalık geçişle Karaköy → Kadıköy → Karaköy → Kadıköy, dönüş de sayılınca üç geçiş; yolcu uyuyakalmış 😄 Saatleri 7.40, 8.00, 8.20 diye kuran arkadaşımız işin en zor kısmını çözmüştü 👏",
+      "yanitlar": [
+        {
+          "hedef": "'2, 7.40 da karşıya geçti…' yorumu",
+          "metin": "Saatleri tam doğru kurmuşsun 👏 7.40 karşı, 8.00 geri, 8.20 yine karşı; geri dönüş de bir geçiş sayılınca üç oluyor 😉"
+        }
+      ]
+    },
+    "054-vapur-tanidik": {
+      "durum": "bekliyor",
+      "yayin": "2026-11-25T09:31:55Z",
+      "link": "https://www.instagram.com/reel/DgKNro6NNIq/",
+      "not": "25 Kas 18:15Z (9 saatlik): 0 yorum, 4 beğeni. Kapakta cevap var (KESİN VAR), yorumda neden açıklanacak. Cevap taslağı en erken 26 Kas 05:32Z."
+    },
+    "055-vapur-lambalar": {
       "durum": "bekliyor",
       "yayin": null,
-      "planlanan": "2026-11-24T18:00:00.000Z",
-      "not": "Cevapsız (Son Vapur kapağında CEVAP var; yorumda 'neden'i açıklanacak). 24 Kas 18:00Z'de yayınlanacak; kontrol anında ledger'da scheduled."
+      "planlanan": "2026-11-25T18:00:00.000Z",
+      "not": "25 Kas 18:15Z: cevapsız; 25 Kas 18:00Z'de yayınlanacaktı, kontrol anında ledger'da hâlâ scheduled."
     }
   }
 }
