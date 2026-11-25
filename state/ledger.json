@@ -728,15 +728,18 @@
     "2026-11-25T18:00Z": {
       "episode": "055-vapur-lambalar",
       "media": "v/055-vapur-lambalar-444c7c8b.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-23T18:00:16.529Z",
       "postId": "6b047f656dffe25404d1ab08",
       "dueAt": "2026-11-25T18:00:00.000Z",
       "yt": {
         "postId": "6b047f670720ccb673fd0f6c",
-        "status": "scheduled",
-        "dueAt": "2026-11-25T18:00:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-25T18:00:00.000Z",
+        "link": "https://www.youtube.com/shorts/zoJlYMHfXIA"
+      },
+      "sentAt": "2026-11-25T18:06:49.109Z",
+      "link": "https://www.instagram.com/reel/DgLIfMRI2Ad/"
     },
     "2026-11-26T09:30Z": {
       "episode": "058-soru-eki",
@@ -775,6 +778,19 @@
         "postId": "6b07169ea9ddd28789fcd8bd",
         "status": "scheduled",
         "dueAt": "2026-11-27T09:30:00.000Z"
+      }
+    },
+    "2026-11-27T18:00Z": {
+      "episode": "061-renk-koru",
+      "media": "v/061-renk-koru-d19f4c99.mp4",
+      "status": "scheduled",
+      "at": "2026-11-25T19:39:44.966Z",
+      "postId": "6b0739b3ebbe940776ad6d50",
+      "dueAt": "2026-11-27T18:00:00.000Z",
+      "yt": {
+        "postId": "6b0739b4e6fe52f29f96291e",
+        "status": "scheduled",
+        "dueAt": "2026-11-27T18:00:00.000Z"
       }
     }
   }
