@@ -1,0 +1,132 @@
+{
+ "id": "079-kus-yeminler",
+ "num": 79,
+ "sira": 64,
+ "bpm": 120,
+ "slug": "kus-yeminler",
+ "coverAt": 0,
+ "cevapsizTasarim": true,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#mantık",
+  "#küs",
+  "#ofis"
+ ],
+ "card": [
+  "İkisi de küs ve sözünün eri.",
+  "Şimdi kim ötekiyle konuşabilir?"
+ ],
+ "caption": "Zeka sorusu: Necmi, Hikmet Bey'e dönüp \"Siz bana tek kelime etmedikçe ben de size tek kelime etmem!\" dedi. Hikmet Bey de hemen ona dönüp \"Ben de sen bana tek kelime etmedikçe sana tek kelime etmem!\" dedi. İkisi de sözünü harfiyen tutar.\n\nİçlerinden biri şu an ötekiyle konuşabilir. Hangisi?",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Necmi yine benim kupamı kullanıyor!",
+    "rate": "+2%"
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.4,
+    "text": "Siz bana tek kelime etmedikçe ben de size tek kelime etmem!",
+    "rate": "-4%",
+    "tts": "Siz bana tek kelime etmedikçe, ben de size tek kelime etmem!"
+   },
+   {
+    "id": "h2",
+    "who": "hikmet",
+    "gap": 0.4,
+    "text": "Ben de sen bana tek kelime etmedikçe sana tek kelime etmem!",
+    "rate": "+4%"
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.85,
+    "text": "İkiniz de sözünüzü harfiyen tutarsınız."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.3,
+    "text": "Yine de içinizden biri şu an ötekiyle konuşabilir. Hangisi?"
+   },
+   {
+    "id": "n1",
+    "who": "defne",
+    "gap": 10.45,
+    "text": "Kim, kime, ne zaman konuştu?"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Buldum! Necmi konuşabilir."
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Hikmet Bey, Necmi'nin sözünden sonra ona bir cümle kurdu. Necmi'nin şartı gerçekleşti.",
+    "tts": "Hikmet Bey, Necminin sözünden sonra ona bir cümle kurdu. Necminin şartı gerçekleşti."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu küs olduğun arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "d2>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "swish",
+   "n0-0.3"
+  ],
+  [
+   "swish",
+   "h2-0.3"
+  ],
+  [
+   "swish",
+   "d1-0.2"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true,
+ "sizinti": [
+  "NECMİ KONUŞABİLİR",
+  "ŞARTI GERÇEKLEŞTİ"
+ ],
+ "cevapsiz": {
+  "kesim": 29.668,
+  "kart": 39.424,
+  "tarih": "2026-11-20"
+ },
+ "denetim": {
+  "surum": 1,
+  "sha": "95ca6038",
+  "tarih": "2026-11-27",
+  "not": "üretim ajanı + iki tur bağımsız göz; koordinatör şeride baktı 27 Kas"
+ }
+}
