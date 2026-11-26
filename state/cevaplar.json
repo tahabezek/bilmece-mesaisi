@@ -1,20 +1,20 @@
 {
   "_not": "Cevapsız videoların yorumda cevap durumu. Kontrol saatleri görevi (yorum-kontrol) günceller. durum: bekliyor | taslak | yazildi",
-  "son_kontrol": "2026-11-25T18:15Z",
+  "son_kontrol": "2026-11-26T18:25Z",
   "videolar": {
     "050-bayramlasma": {
       "durum": "taslak",
       "yayin": "2026-11-22T09:31:06Z",
       "link": "https://www.instagram.com/reel/DgCfN_2DhLm/",
       "taslak": "Cevap: Olamaz! Her bayramlaşma iki kişinin sayısına birer ekler, yani herkesin sayısını toplarsan sonuç hep çift çıkar. Toplam çiftse tek sayıların adedi de çift olmak zorunda; 5 ise tek. Defne bu yüzden defteri hiç saymadan bildi 🤝",
-      "not": "25 Kas 18:15Z: hâlâ 0 yorum, 1 beğeni. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi."
+      "not": "26 Kas 18:25Z: hâlâ 0 yorum, 1 beğeni. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi."
     },
     "047-bardaklar": {
       "durum": "taslak",
       "yayin": "2026-11-22T18:03:15Z",
       "link": "https://www.instagram.com/reel/DgDZz8wjLJS/",
       "taslak": "Cevap: Tepsi dolabın haritası! Sağ sütunda ters bardak sayısı tekse anahtar sağda, alt sırada tekse altta; çiftse solda ve üstte. Kerem tek bardakla bu iki sayıyı istediği gibi ayarlar: sağ-alt ikisini birden, sağ-üst yalnız sütunu, sol-alt yalnız sırayı değiştirir, sol-üst hiçbirini. Bardaklar nasıl dizilmiş olursa olsun tek hamle yetiyor ☕",
-      "not": "25 Kas 18:15Z: 1 yorum (yanlış ama esprili: 'bardak hâlâ sıcak, çevrildiği belli olur'), 4 beğeni. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi.",
+      "not": "26 Kas 18:25Z: değişiklik yok, 1 yorum (esprili, yanlış), 4 beğeni. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi.",
       "yanitlar": [
         {
           "hedef": "'Bardak hâlâ sıcak olduğundan çevrildiği belli olur' yorumu",
@@ -26,7 +26,7 @@
       "durum": "taslak",
       "yayin": "2026-11-23T09:32:32Z",
       "link": "https://www.instagram.com/reel/DgFEIhBko7T/",
-      "not": "25 Kas 18:15Z: 14 yorum (11 izleyici + 2 alt yanıt + hesabın 1 yanıtı), 40 beğeni, 13 paylaşım. 11 izleyicinin 11'i de Necmi=3 (biri 3 parmak GIF'i). Defne için 4 kişi 4, 1 kişi 2, 2 kişi '2 ya da 4'. Yeni zincir: biri 'kadın için de tek ihtimal kalıyor' dedi (yanlış), '2 ya da 4' diyen kişi 'nasıl oluyor, çözemedim' diye sordu. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi.",
+      "not": "26 Kas 18:25Z: 17 yorum (13 izleyici + 2 izleyici alt yanıtı + hesabın 2 yanıtı), 42 beğeni, 13 paylaşım. 13 izleyicinin 13'ü de Necmi=3. Defne için 5 kişi 4, 1 kişi 2, 3 kişi 2 ya da 4. Yeni: biri 'Kadın 4 adam 3' dedi; bir takipçi uzun tam çözüm yazıp Defne'nin 2 de olabileceğini gösterdi, hesap buna ~18:10Z civarı yanıt (GIF/emoji) vermiş, yani kullanıcı telefondan aktif olabilir. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi.",
       "taslak": "Cevap: Necmi'nin sayısı 3! Defne bilmiyorsa onun sayısı 1 ya da 5 değil; Necmi'nin sayısı 2 ya da 4 olsaydı bunu duyunca Defne'nin 3 olduğunu anlardı, 1 ya da 5 olsaydı zaten baştan bilirdi. Defne'ninki ise 2 de olabilir 4 de; Hikmet Bey'in unutmasına şaşmamalı 😄 3 diyen herkese tebrikler, tam çözümü yazanlara ayrıca teşekkürler 👏",
       "yanitlar": [
         {
@@ -46,27 +46,31 @@
     "056-iki-anne": {
       "durum": "taslak",
       "yayin": "2026-11-23T18:07:01Z",
-      "not": "25 Kas 18:15Z: hâlâ 0 yorum, 12 beğeni, 1 paylaşım. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi.",
+      "not": "26 Kas 18:25Z: hâlâ 0 yorum, 12 beğeni, 1 paylaşım. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi.",
       "link": "https://www.instagram.com/reel/DgF-8TrnFGU/",
       "taslak": "Cevap: Otobüsler arka arkaya geliyor! Üsküdar otobüsü, Kadıköy otobüsünden hep 1 dakika sonra geçiyor; Necmi hangi dakikada gelirse gelsin, 10 dakikanın 9'unda önce Kadıköy otobüsü geliyor, Üsküdar'a 1 dakikalık şans kalıyor. İki hat da 'on dakikada bir' ama şans eşit değil 🚌 Kaynana haklı, ama suç Necmi'de değil, tarifede 😄"
     },
     "057-birim": {
       "durum": "taslak",
       "yayin": "2026-11-24T09:31:47Z",
-      "not": "25 Kas 18:15Z (33 saatlik): hâlâ 1 yorum, doğru cevap; 11 beğeni. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi.",
+      "not": "26 Kas 18:25Z: 2 yorum, ikisi de doğru (biri genel ortalama kuralını yazdı), 11 beğeni. Taslak ikinci doğru yoruma göre güncellendi; kullanıcı onayı bekliyor, hiçbir şey gönderilmedi.",
       "link": "https://www.instagram.com/reel/DgHo1hTiuU-/",
-      "taslak": "Cevap: Hikmet Bey muhasebenin yaş ortalamasından genç, bilgi işleminkinden yaşlı! 46 yaşında; o gidince muhasebenin ortalaması 49'dan 50'ye, o gelince bilgi işleminki 22'den 28'e çıkıyor. Kimse bir gün yaşlanmadan iki birim birden yaşlanmış oldu 😄 İlk yorumda tam isabet yapan arkadaşımıza tebrikler 👏",
+      "taslak": "Cevap: Hikmet Bey muhasebenin yaş ortalamasından genç, bilgi işleminkinden yaşlı! 46 yaşında; o gidince muhasebenin ortalaması 49'dan 50'ye, o gelince bilgi işleminki 22'den 28'e çıkıyor. Kimse bir gün yaşlanmadan iki birim birden yaşlanmış oldu 😄 Doğru bulan iki arkadaşımıza, genel kuralı adım adım yazana da ayrıca teşekkürler 👏",
       "yanitlar": [
         {
-          "hedef": "Tek yorum (doğru cevap)",
+          "hedef": "İlk yorum: Muhasebedekilerden genç, bilgi işlemdekilerden ise yaşlı",
           "metin": "Tam isabet 🎯 Hikmet Bey 46 yaşında: muhasebenin 49'luk ortalamasının altında, bilgi işlemin 22'lik ortalamasının üstünde."
+        },
+        {
+          "hedef": "A1/A2 ile genel kuralı yazan uzun yorum",
+          "metin": "Genel kural tam bu 👏 x < A1 ve x > A2 olduğu sürece bir kişinin yer değiştirmesi iki ortalamayı birden yükseltiyor."
         }
       ]
     },
     "053-vapur-uykucu": {
       "durum": "taslak",
       "yayin": "2026-11-24T18:09:18Z",
-      "not": "25 Kas 18:15Z (24 saatlik): 3 yorum (2 izleyici + hesabın 1 'why?' GIF yanıtı), 9 beğeni. Biri saatleri doğru kurup (7.40 karşı, 8.00 geri, 8.20 karşı) 2 dedi; dönüşü geçiş saymamış. Öbürü '6 ya da 3, ben 3 diyeceğim' dedi, nedenini yazmadı. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi.",
+      "not": "26 Kas 18:25Z: değişiklik yok, 2 izleyici yorumu + hesabın 1 GIF yanıtı, 10 beğeni. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi.",
       "link": "https://www.instagram.com/reel/DgIj50wCXvd/",
       "taslak": "Neden üç kez? İki saatin ortası gerçek saati verir: 08.21 ile 08.19'un ortası 08.20, yani binişten bu yana tam 1 saat geçmiş. 20 dakikalık geçişle Karaköy → Kadıköy → Karaköy → Kadıköy, dönüş de sayılınca üç geçiş; yolcu uyuyakalmış 😄 Saatleri 7.40, 8.00, 8.20 diye kuran arkadaşımız işin en zor kısmını çözmüştü 👏",
       "yanitlar": [
@@ -77,16 +81,30 @@
       ]
     },
     "054-vapur-tanidik": {
-      "durum": "bekliyor",
+      "durum": "taslak",
       "yayin": "2026-11-25T09:31:55Z",
       "link": "https://www.instagram.com/reel/DgKNro6NNIq/",
-      "not": "25 Kas 18:15Z (9 saatlik): 0 yorum, 4 beğeni. Kapakta cevap var (KESİN VAR), yorumda neden açıklanacak. Cevap taslağı en erken 26 Kas 05:32Z."
+      "not": "26 Kas 18:25Z (33 saatlik): 1 izleyici yorumu + kendi alt yanıtı, ikisi de tam çözüm (güvercin yuvası: herkes birini tanıyorsa 1–29; genel hâlde 0–28 ya da 1–29, her türlü 29 göz). 5 beğeni. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi.",
+      "taslak": "Cevap: Kesin var! Herkesin tanıdık sayısı 0 ile 29 arasında, yani 30 göz var. Ama 29 kişiyi tanıyan biri herkesi tanır; o varken kimseyi tanımayan olamaz, 0 ile 29 aynı vapura binemez. 30 yolcuya 29 göz kalıyor, iki kişi aynı göze düşmek zorunda 🎫 Güvercin yuvası ilkesini adım adım yazan arkadaşımıza tebrikler 👏",
+      "yanitlar": [
+        {
+          "hedef": "30 kişiyi 29 kutuya yorumu ve altındaki 0–28 / 1–29 alt yanıtı",
+          "metin": "İki yoldan da tam çözüm 👏 Herkes birini tanıyorsa 1–29, kimseyi tanımayan varsa 0–28; her türlü 30 yolcuya 29 göz kalıyor."
+        }
+      ]
     },
     "055-vapur-lambalar": {
+      "durum": "taslak",
+      "yayin": "2026-11-25T18:06:49Z",
+      "not": "26 Kas 18:25Z (24 saatlik): 0 yorum, 10 beğeni, 1 paylaşım. Kapakta cevap var (ASLA), yorumda neden açıklanacak. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi.",
+      "link": "https://www.instagram.com/reel/DgLIfMRI2Ad/",
+      "taslak": "Cevap: Asla! Her vapur ya iki lamba yakar, ya iki lamba söndürür, ya da birini yakıp birini söndürür; yanan lamba sayısı hep ikişer oynar. Sıfırdan başlayan sayı hep çift kalıyor, beş ise tek 💡 Kaptanlar üçer düğmeye bassaydı Lâl'in dileği üç vapurda gerçekleşirdi 😄"
+    },
+    "058-soru-eki": {
       "durum": "bekliyor",
-      "yayin": null,
-      "planlanan": "2026-11-25T18:00:00.000Z",
-      "not": "25 Kas 18:15Z: cevapsız; 25 Kas 18:00Z'de yayınlanacaktı, kontrol anında ledger'da hâlâ scheduled."
+      "yayin": "2026-11-26T09:31:24Z",
+      "link": "https://www.instagram.com/reel/DgMyZIPqK--/",
+      "not": "26 Kas 18:25Z (9 saatlik): 3 yorum; 2 kişi Kerem (doğru, biri gerekçesiyle: vurgu soru ekinden önceki öğede), 1 kişi Defne. 4 beğeni. Cevap taslağı en erken 27 Kas 05:31Z."
     }
   }
 }
