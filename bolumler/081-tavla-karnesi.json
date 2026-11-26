@@ -1,0 +1,176 @@
+{
+ "id": "081-tavla-karnesi",
+ "num": 81,
+ "sira": 66,
+ "bpm": 120,
+ "slug": "tavla-karnesi",
+ "coverAt": 0,
+ "cevapsizTasarim": true,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#mantık",
+  "#tavla",
+  "#kahvehane"
+ ],
+ "card": [
+  "%75'in altından üstüne çıktı.",
+  "Arada tam %75 oldu mu?"
+ ],
+ "caption": "Zeka sorusu: Kahvede Kerem, her tavla maçından sonra Hikmet Bey'in ilk maçından beri bütün maçlarındaki galibiyet oranını tahtaya yazıyor; tavlada beraberlik yok. Ocakta oran %75'in altındaydı, aralıkta üstünde.\n\nNecmi: \"Arada bir maçtan sonra oran tam %75 olmuş olmalı.\" Defne: \"Atlamış olabilir.\" Kim haklı?",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Her maçımdan sonra Kerem, ilk maçımdan beri toplam galibiyet oranımı tahtaya yazar.",
+    "rate": "+14%"
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.28,
+    "text": "Beraberlik yok. Ocakta oranınız yüzde yetmiş beşin altındaydı.",
+    "rate": "+16%"
+   },
+   {
+    "id": "h2",
+    "who": "hikmet",
+    "gap": 1.9,
+    "text": "Aralıkta yüzde yetmiş beşin üstüne çıktım.",
+    "rate": "+14%"
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.28,
+    "text": "Demek ki oran bir ara tam yüzde yetmiş beş olmuş.",
+    "rate": "+2%"
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.28,
+    "text": "Atlamış olabilir. Bu oran tek maçta sıçrayabilir.",
+    "rate": "+16%"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.28,
+    "text": "Peki, hanginiz haklı?",
+    "rate": "+8%"
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 10.45,
+    "text": "Yüzde yetmiş beş, kaça kaç demek? Önce onu düşünün.",
+    "rate": "+2%"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Buldum! Necmi haklı."
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Yüzde yetmiş beş, galibiyetin yenilginin üç katı olması. Üç katın altından üstüne bir galibiyetle atlanmaz; tam üç katına basılır."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu kahvede tavla oynayan arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "swish",
+   "d1-0.1"
+  ],
+  [
+   "swish",
+   "d1>+0.1"
+  ],
+  [
+   "zip",
+   [
+    "d1>+0.32",
+    "h2-0.6"
+   ]
+  ],
+  [
+   "zip",
+   [
+    "h2-0.45",
+    "h2-0.17"
+   ]
+  ],
+  [
+   "swish",
+   "h2-0.05"
+  ],
+  [
+   "swish",
+   "n1-10.35"
+  ],
+  [
+   "knock",
+   "n1-8.76"
+  ],
+  [
+   "knock",
+   "n1-4.96"
+  ],
+  [
+   "knock",
+   "n1-0.36"
+  ],
+  [
+   "swish",
+   "n1-0.12"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true,
+ "sizinti": [
+  "NECMİ HAKLI",
+  "ÜÇ KATI",
+  "3 KATI",
+  "%75,0"
+ ],
+ "cevapsiz": {
+  "kesim": 34.604,
+  "kart": 47.09,
+  "tarih": "2026-11-20"
+ },
+ "denetim": {
+  "surum": 1,
+  "sha": "97cd722c",
+  "tarih": "2026-11-27",
+  "not": "kart eksiltisiz; iki tur bağımsız göz 27 Kas"
+ }
+}
