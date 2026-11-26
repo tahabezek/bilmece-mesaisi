@@ -47,3 +47,19 @@ Son 10 bölümün kısıt sınıfları (tekrar yasağı için): 074 bilek, 075 k
 | R19 | İki merdiven | aynı § 4.8 | sözün lafzı / eksen |
 
 Eleme sonuçları bu dosyanın sonuna eklenir.
+
+## Eleme sonucu (27 Kas 2026)
+
+Avukat raporu `aday_havuzu_2026-11-27_avukat.md`, bilinirlik raporu `aday_havuzu_2026-11-27_bilinirlik.md`.
+
+| Aday | Avukat | Bilinirlik | Karar |
+|---|---|---|---|
+| R7 Çay ocağı | 41/45, hemen | elenir dedi: kaynaklar bir çocuk etkinlik sitesi ve bir ders sitesi; Türk izleyici için düşük–orta | **Üretim: 084.** Kural ders kaynağını tek başına eleme sebebi saymaz. |
+| R8 Eğri terazi | 38/45, hemen | sınırda: bir popüler köşe (Spektrum), bir Rus matematik kulübü föyü | **Üretim: 085.** |
+| R9 Dolmuş → servis | 32/45, düzeltilirse | geçer | **Üretim: 086** (duraksız servis, her yolcu bir kez). |
+| R10 Masa masa oylama | 35/45, düzeltilirse | elenir (Riddler, Guardian) | Elendi. |
+| R4 Gözlüklüler | 29/45, düzeltilirse | geçer | Listede bekler (soru "kaç kişi gözlüksüz?" olarak). |
+| Y2 "[zil] mü geldi?" | mantık sağlam, 058 ve 064 ile aynı kısıt | geçer | Listede bekler, 064'ten en az 20 bölüm sonra. |
+| Y1, R1–R3, R5, R6, R11–R19 | elendi | — | Gerekçeler avukat raporunda. |
+
+Sözün lafzı ailesi (079, R13, R14, R19) bu tur kapalı.
