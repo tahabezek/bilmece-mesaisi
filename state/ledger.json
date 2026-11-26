@@ -760,16 +760,19 @@
     "2026-11-26T18:00Z": {
       "episode": "059-tanik",
       "media": "v/059-tanik-fc261f15.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-25T23:56:03.648Z",
       "postId": "6b0775e207071a60673ad410",
       "dueAt": "2026-11-26T18:00:00.000Z",
       "note": "elle (--simdi)",
       "yt": {
         "postId": "6b0784b0b8e2338b85798d38",
-        "status": "scheduled",
-        "dueAt": "2026-11-26T18:00:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-26T18:00:00.000Z",
+        "link": "https://www.youtube.com/shorts/QmYkXWh5Dcw"
+      },
+      "sentAt": "2026-11-26T18:06:10.426Z",
+      "link": "https://www.instagram.com/reel/DgNtKeKzImM/"
     },
     "2026-11-27T09:30Z": {
       "episode": "060-bilmiyorum",
@@ -809,6 +812,19 @@
         "postId": "6b08639444b7a2afa8af3143",
         "status": "scheduled",
         "dueAt": "2026-11-28T09:30:00.000Z"
+      }
+    },
+    "2026-11-28T18:00Z": {
+      "episode": "064-islak-not",
+      "media": "v/064-islak-not-21094e24.mp4",
+      "status": "scheduled",
+      "at": "2026-11-26T19:20:32.968Z",
+      "postId": "6b0886b2ce64081689e7bd7e",
+      "dueAt": "2026-11-28T18:00:00.000Z",
+      "yt": {
+        "postId": "6b0886b31fa40915828fdfad",
+        "status": "scheduled",
+        "dueAt": "2026-11-28T18:00:00.000Z"
       }
     }
   }
