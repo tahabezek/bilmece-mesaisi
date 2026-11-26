@@ -273,5 +273,15 @@
   "kesim": 47.434,
   "kart": 58.01,
   "tarih": "2026-11-20"
+ },
+ "sizinti": [
+  "NECMİ DAHA ÇOK",
+  "KESİŞ"
+ ],
+ "denetim": {
+  "surum": 1,
+  "sha": "0cd60555",
+  "tarih": "2026-11-25",
+  "not": "bağımsız göz 26 Kas: yayına uygun"
  }
 }

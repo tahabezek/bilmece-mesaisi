@@ -8,6 +8,10 @@
 //   node tools/yayin.mjs --kanallar   → Buffer'daki kurum ve kanal kimlikleri (config.json'u doldurmak için)
 //   node tools/yayin.mjs --hazirla    → out/bolum_<id>.mp4 → prebuilt/<id>.mp4 (yalnız eksik ya da yeni olanlar)
 //
+// Denetim kilidi (26 Kas 2026, YAYIN_KURALLARI.md): bir bölüm ancak `node tools/denetim.mjs <id> --onayla` ile
+// mühürlendiyse kuyruğa girer. Mühür güncel kural sürümüne (tools/kurallar.mjs) ve prebuilt dosyasının özetine
+// bağlıdır; video değişirse ya da kural sürümü artarsa bölüm yeniden denetlenene kadar bekler.
+//
 // Önceki kanalın dersleri: gerçeğin kaynağı Buffer kuyruğu (yuva doluysa atla), yayın çağrısı tek deneme,
 // geçmişe ya da çok yakına planlama yok, firstComment yok, medya yönlendirmesiz statik URL.
 import fs from 'node:fs';
@@ -16,6 +20,7 @@ import { spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { gql, channelHealth, postsBetween, createReel, createShort } from './buffer.mjs';
+import { KURAL_SURUM } from './kurallar.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const cfg = JSON.parse(fs.readFileSync(path.join(root, 'config.json'), 'utf8'));
@@ -60,12 +65,15 @@ function episodes() {
 function usedEpisodes(ledger) { return new Set(Object.values(ledger.slots).filter(s => !NOT_USED.has(s.status)).map(s => s.episode)); }
 function nextEpisode(ledger, taken) {
   const used = usedEpisodes(ledger);
-  return episodes().find(e => !used.has(e.id) && !taken.has(e.id) && fs.existsSync(video(e)));
+  return episodes().find(e => !used.has(e.id) && !taken.has(e.id) && muhurlu(e));
 }
 // her video sürümünün kendi adı olur (içerik özeti): planlanmış bir gönderinin dosyası asla değişmez.
 // (2026-11-04: aynı adla yeniden yükleme, Buffer'da 'media' hatasıyla gönderiyi düşürdü.)
 const _h = new Map();
 const mediaName = ep => { const f = video(ep); if (!_h.has(f)) _h.set(f, createHash('sha1').update(fs.readFileSync(f)).digest('hex').slice(0, 8)); return `v/${ep.id}-${_h.get(f)}.mp4`; };
+const shaOf = ep => { mediaName(ep); return _h.get(video(ep)); };
+// denetim mührü: güncel kural sürümü + aynı video dosyası
+const muhurlu = e => fs.existsSync(video(e)) && e.denetim?.surum === KURAL_SURUM && e.denetim.sha === shaOf(e);
 const postText = ep => [ep.caption, (ep.hashtags || []).join(' ')].filter(Boolean).join('\n\n');
 
 // ——— medya: 'media' dalına yetim commit, eski dosyalar budanır (git plumbing; çalışma ağacına dokunmaz) ———
@@ -139,10 +147,11 @@ async function status() {
   const now = new Date();
   const posts = await postsBetween(cfg.organizationId, cfg.channelId, new Date(now - 5 * 86400e3).toISOString(), new Date(now.getTime() + 7 * 86400e3).toISOString());
   const used = usedEpisodes(loadLedger());
-  const left = episodes().filter(e => !used.has(e.id) && fs.existsSync(video(e))).length;
+  const left = episodes().filter(e => !used.has(e.id) && muhurlu(e)).length;
+  const bekleyen = episodes().filter(e => !used.has(e.id) && fs.existsSync(video(e)) && !muhurlu(e)).map(e => e.id);
   console.log(JSON.stringify({
     channel: ch,
-    stock: { readyEpisodes: left, days: +(left / cfg.slotsTR.length).toFixed(1) },
+    stock: { readyEpisodes: left, days: +(left / cfg.slotsTR.length).toFixed(1), denetimBekleyen: bekleyen },
     posts: posts.sort((a, b) => (a.dueAt < b.dueAt ? -1 : 1)).map(p => ({ dueAt: p.dueAt, status: p.status, error: p.error?.message, text: p.text.slice(0, 50) })),
   }, null, 2));
 }
@@ -150,6 +159,7 @@ async function status() {
 // --simdi <id> <ISO>: tek bölümü verilen anda (ya da 10 dk sonra) planla; medya yayına alınır, ledger'a işlenir.
 async function simdi(id, iso, ledgerIn) {
   const ep = episodes().find(e => e.id === id) || JSON.parse(fs.readFileSync(path.join(root, 'bolumler', id + '.json'), 'utf8'));
+  if (!muhurlu(ep)) throw new Error(`${id}: denetim mührü yok ya da eskimiş (node tools/denetim.mjs ${id} --onayla)`);
   const due = iso ? new Date(iso) : new Date(Math.ceil((Date.now() + 10 * 60e3) / 60e3) * 60e3);
   const ledger = ledgerIn || loadLedger(), rel = mediaName(ep), mp4 = video(ep), url = cfg.mediaBaseUrl + rel, k = slotKey(due);
   ledger.slots[k] = { episode: ep.id, media: rel, status: 'media', at: new Date().toISOString() }; saveLedger(ledger);
@@ -221,7 +231,8 @@ async function main() {
   for (const t of slots) {
     if (filled(t)) { log(`dolu  ${slotKey(t)}`); continue; }
     const prev = ledger.slots[slotKey(t)];
-    const ep = prev && prev.status === 'failed' ? episodes().find(e => e.id === prev.episode) : nextEpisode(ledger, taken);
+    const tekrar = prev && prev.status === 'failed' ? episodes().find(e => e.id === prev.episode && muhurlu(e)) : null;
+    const ep = tekrar || nextEpisode(ledger, taken);
     if (!ep) { empty.push(slotKey(t)); continue; }
     taken.add(ep.id);
     plan.push({ t, ep, mp4: video(ep), rel: mediaName(ep), url: cfg.mediaBaseUrl + mediaName(ep) });
@@ -283,7 +294,9 @@ async function youtube(ledger, now) {
 function finish(ledger, save = true) {
   if (save) saveLedger(ledger);
   const used = usedEpisodes(ledger);
-  const left = episodes().filter(e => !used.has(e.id) && fs.existsSync(video(e))).length;
+  const left = episodes().filter(e => !used.has(e.id) && muhurlu(e)).length;
+  const bekleyen = episodes().filter(e => !used.has(e.id) && fs.existsSync(video(e)) && !muhurlu(e)).map(e => e.id);
+  if (bekleyen.length) summary.push(`ℹ️ Denetim mührü olmadığı için kuyruğa alınmayan ${bekleyen.length} bölüm: ${bekleyen.join(', ')}.`);
   const days = left / cfg.slotsTR.length;
   if (days < cfg.lowBacklogWarnDays) summary.push(`⚠️ Hazır bölüm stoğu azaldı: ${left} bölüm (${days.toFixed(1)} gün).`);
   const text = summary.join('\n') || 'değişiklik yok';

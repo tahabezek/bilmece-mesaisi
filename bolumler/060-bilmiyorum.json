@@ -240,5 +240,16 @@
   "kesim": 44.083,
   "kart": 55.379,
   "tarih": "2026-11-20"
+ },
+ "sizinti": [
+  "TOPLAM",
+  "GİZLİ SAYI",
+  "SIFIR YA DA BİR"
+ ],
+ "denetim": {
+  "surum": 1,
+  "sha": "77cdde11",
+  "tarih": "2026-11-25",
+  "not": "bağımsız göz 26 Kas: yayına uygun"
  }
 }

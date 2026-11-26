@@ -9,7 +9,7 @@
 // Her kare t'nin saf fonksiyonudur; Math.random yok; anlar ses çizelgesindeki kelime çapalarından okunur.
 import * as H from './hikaye.js';
 import * as M from './mekan.js';
-const { ease, seg, clamp01, lerp, PAL, INK, LW, oyna, POZ, IFADE } = H;
+const { ease, seg, clamp01, lerp, PAL, INK, LW, oyna, POZ, IFADE, EXPR } = H;
 const TAU = Math.PI * 2, D2R = Math.PI / 180;
 
 // ═══════════════════════════ Ölçüler ═══════════════════════════
@@ -154,7 +154,7 @@ export function build(ep, tl) {
     { id: 'hikmet2', t0: tm.h1 - 0.1, cam: [[0, 1.65, 650, 1055], [tm.h2 - 0.15, 1.68, 645, 1055]] },
     { id: 'grup', t0: tm.h2 - 0.1, cam: [[0, ...G], [cd0 - 0.1, 1.53, 545, 1083]] },
     { id: 'sayac', t0: cd0 - 0.05, dogrusal: [1.36, 1.42], cam: [[0, 1.36, 545, 1100], [cd0 + 5, 1.39, 545, 1105]] },   // doğrusal itme: h.kamera
-    { id: 'ipucu', t0: tm.n1 - 0.25, cam: [[0, 1.45, 690, 1222], [tm.n1s, 1.47, 691, 1222], [tm.buldum - 0.1, 1.48, 692, 1222]] },   // iki kalem de balonun üstünde görünür
+    { id: 'ipucu', t0: tm.n1 - 0.25, cam: [[0, 1.45, 800, 1190], [tm.n1s, 1.47, 801, 1190], [tm.buldum - 0.1, 1.48, 802, 1190]] },   // iki kalem de balonun üstünde görünür; Defne kadraj dışında (kenarda yarım yüz yok), Hikmet'in gözleri kartın altında
     { id: 'buldum', t0: tm.buldum - 0.05, kisa: true, cam: [[0, 1.8, 310, 1080]] },
     { id: 'cevap', t0: tm.cevap, cam: [[0, ...G], [tm.cta, 1.6, 380, 1083]] },
     { id: 'son', t0: tm.end, cam: [[0, 1, 540, 960]] },
@@ -323,6 +323,22 @@ function sayac(K, t, t1, { share = null, dur = 10 } = {}) {
   ctx.restore();
 }
 
+// ═══════════════════════════ Ağız: konuşan kim ═══════════════════════════
+// key'in replik ağırlığı (0..1): satır başlamadan 0,12 sn önce açılır, bittikten 0,02 sn sonra 0,12 sn'de kapanır.
+function konusma(tl, key, t) {
+  let k = 0;
+  for (const l of tl.lines) if (l.who === key) k = Math.max(k, W(t, l.t0 - 0.12, 0.12) * (1 - W(t, l.t1 + 0.02, 0.12)));
+  return k;
+}
+// Dinleyen (k = 0): ağız kapalı çizgi. Konuşan: düz ya da asık ağızlı ifadede (kızgın, yorgun, nötr) çizgi ağız konuşmayı
+// göstermez (açıklık çizgi kalınlığının altında kalır); konuşurken ağız oval açılır ve hecelerle açılıp kapanır.
+function agiz(p, k) {
+  const ex = typeof p.expr === 'string' ? EXPR[p.expr] : p.expr;
+  const duz = ex.curve < 0.3 && k > 0.5;
+  p.expr = { ...ex, open: Math.min(ex.open, 0.12) * k, curve: lerp(ex.curve, Math.max(ex.curve, -0.15), k),
+    round: duz || (k > 0.5 && ex.round), w: duz ? Math.min(ex.w, 0.8) : ex.w };
+}
+
 // ═══════════════════════════ Ofis: bütün sahneler ═══════════════════════════
 function ofis(K, t, tl, S, B) {
   const { tm } = S, { heads, sc } = B, id = sc.id, { ctx } = K;
@@ -334,6 +350,10 @@ function ofis(K, t, tl, S, B) {
   H.omuzSilk(np, t, tm.tipatip - 0.1, 0.3);
   if (t > tm.gorunuyor && t < tm.gorunuyor + 0.8) { const u = seg(t, tm.gorunuyor, 0.8); np.head = { ...np.head, look: [(np.head.look?.[0] || 0) + 0.45 * Math.sin(TAU * 2 * u) * Math.sin(Math.PI * u), np.head.look?.[1] || 0] }; }   // baş sallar: "hayır"
   if (t > tm.kimseye && t < tm.kimseye + 0.9) { const u = seg(t, tm.kimseye, 0.9); hp.head = { ...hp.head, look: [(hp.head.look?.[0] || 0) + 0.35 * Math.sin(TAU * 2 * u) * Math.sin(Math.PI * u), hp.head.look?.[1] || 0] }; }
+
+  // Konuşan belli: yalnız replik süren karakterin ağzı oynar; dinleyenin ağzı kapalı (şaşkınlıkta, gülüşte bile).
+  // Konuşanda kaş çatık kalır ama ağız eğrisi -0,15'e yumuşar: kızgın ağız (-0,5) dudak hareketini yutuyordu.
+  for (const [key, p] of [['defne', dp], ['hikmet', hp], ['necmi', np]]) agiz(p, konusma(tl, key, t));
 
   const K0 = kalemAt(S, 0, t), K1 = kalemAt(S, 1, t);
   // ——— Defne: iki eli kalemlerde; masaya bırakınca sağ el ikisini iter ———
@@ -355,7 +375,8 @@ function ofis(K, t, tl, S, B) {
   // ——— Necmi: n0'da avuç açar (kalemlere uzanmaz); n4'te parmak sallar; sayaçta ve ipucunda ellerini ovuşturur ———
   const nO = { heads };
   const wA = pIn(t, tm.neden - 0.25, tm.n0s + 0.1, 0.3);
-  if (wA > 0.01) nO.R = [[NEC_X + 150, 1185 - 30 * H.nabiz(t, tm.birden - 0.05, 0.4) - 24 * H.nabiz(t, tm.n0s - 0.75, 0.4)], wA, 'B'];   // "birden"de ve sonda avuç kalkar
+  let nIs = null;   // n0: sol el göğsünün önünden kalemlere (ekranın solu, Defne'nin elleri) doğru işaret eder; kalemlere uzanmaz
+  if (wA > 0.01) { nO.L = [[NEC_X - 66, 1135 - 22 * H.nabiz(t, tm.birden - 0.05, 0.4) - 18 * H.nabiz(t, tm.n0s - 0.75, 0.4)], wA, 'oto']; if (wA > 0.55) nIs = ['L', [(TUT[0][0] + TUT[1][0]) / 2, 1060]]; }
   const wO = Math.max(pIn(t, tm.s.nOvus, tm.cd - 0.2, 0.32), pIn(t, tm.n1 - 0.1, tm.buldum - 0.06, 0.3));
   if (wO > 0.01) {
     const o = 9 * Math.sin(TAU * 3.2 * t);
@@ -376,6 +397,7 @@ function ofis(K, t, tl, S, B) {
   if ((K1.el && K1.w > 0.5) || dItiyor) dc.tut('R');
   if (wO > 0.5) { nc.tut('L'); nc.tut('R'); }
   if (hIs) hc.isaret(hIs[0], hIs[1]);
+  if (nIs) nc.isaret(nIs[0], nIs[1]);
   if (nParmak) nc.parmak('R', nParmak, { toplam: 1 });
   if (id === 'buldum') H.buldumIsin(K, t, tm.buldum, H.eklem('defne', dp, 'head'), { son: tm.proof });
 

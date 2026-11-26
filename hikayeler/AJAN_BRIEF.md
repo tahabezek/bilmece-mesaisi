@@ -53,6 +53,22 @@ Videoda cevap gösterilmez. Film yine `d3` ("Buldum!") ve kısa bir cevap bölü
 - Aşırı düzeltme yapma: grup planı 1,25–1,3x, yakın plan 1,5–1,7x.
 - Her konuşmacıya yakın plan, nesneye en az bir insert, sayaç boyunca doğrusal itme.
 
+## Kısa format (26 Kas 2026, `research/analiz_2026-11-26.md`)
+Kanalın en çok izlenen cevapsız videosu 27 sn; 35–50 sn'lik videolar ortalama 12–17 sn izleniyor. 070'ten itibaren:
+- Kesilmiş film 30–38 sn; "Buldum!" öncesi en çok 55 kelime; `d3` en geç 32. saniyede (cevapsız kapıda sınır 50 sn kalıyor, hedef bu).
+- Kart satırı en çok **33 harf** (boşluk ve noktalama dahil). 34 ve üstü yazıyı 44 px'in altına küçültür.
+- Kanca ilk 2 saniyede soruyu kurar; nefes araları 0,3–0,5 sn.
+
+## Yayın denetimi (26 Kas 2026, `YAYIN_KURALLARI.md`)
+Bölüm dosyasına `"sizinti": [...]` yazılır (cevabı ele veren sözler; belgede verilir). Teslimden önce: `node tools/yayin.mjs --hazirla` → `node tools/denetim.mjs <id>`; bütün kapılar ✅ olmalı. Rapor `out/denetim/<id>.md` ekranda yazan her şeyi listeler; ona bak. Mührü (`--onayla`) ajan yazmaz, koordinatör göz denetiminden sonra yazar.
+
+Bu sette bağımsız gözün en sık bulduğu hatalar, baştan önle:
+- **Konuşan belli değil:** dudak konuşmayan karakterde oynuyor ya da konuşmayanın ağzı açık (şaşkınlık ifadesi dahil). Her replikte yalnız konuşanın ağzı oynar.
+- **Cevap olan kişi ya da nesne tek başına plan alıyor**, sayaçta kamera ya da parmak cevabın üstünde bekliyor, altyazı kuyruğu cevabı ok gibi gösteriyor.
+- **Okunacak balon ya da etiket kenarda kırpılıyor**, kenarda yarım yüz kalıyor.
+- **İşaret eden el nesneyi değil boşluğu gösteriyor.**
+- **Kart eksiltili ya da iki anlamlı** ("Yalnız…" = "ama"); kart kapaktır, tek başına anlaşılmalı.
+
 ## Sınırlar
 - **Paylaşılan dosyalara yazma:**
   - `engine/hikaye.js, mekan.js, cast.js, office.js, sahne.js, kalip.js, core.js, bolum.html`

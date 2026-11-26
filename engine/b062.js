@@ -172,16 +172,17 @@ export function build(ep, tl) {
   const G = [1.3, 545, 1203];
   const film = H.sahneler([
     { id: 'kanca', t0: 0, cam: [[0, ...G], [tm.merak, 1.32, 548, 1199]] },
-    { id: 'defne', t0: tm.d1 - 0.1, cam: [[0, 1.5, 290, 1178], [tm.dAma, 1.52, 292, 1175], [tm.d1s, 1.53, 294, 1173]] },
+    // Kenarda yarım yüz yok (denetim 26 Kas): her yakın planın kenarı iki baş arasından geçer (dünya x ≈ 550 ya da 330).
+    { id: 'defne', t0: tm.d1 - 0.1, cam: [[0, 1.5, 190, 1178], [tm.dAma, 1.52, 195, 1175], [tm.d1s, 1.53, 197, 1173]] },
     { id: 'necmi', t0: tm.n0 - 0.1, cam: [[0, 1.52, 700, 1188], [tm.nSoyle, 1.55, 702, 1184]] },
     { id: 'zarflar', t0: tm.h2 - 0.08, cam: [[0, 1.15, 540, 960], [tm.kimse - 0.15, 1.19, 546, 962]] },     // insert: masa üstten, dört el ve zarflar (yüz yok)
     { id: 'genis', t0: tm.kimse - 0.1, cam: [[0, 1.3, 548, 1203], [tm.h2s, 1.33, 550, 1196]] },
-    { id: 'hikmet', t0: tm.h2b - 0.1, cam: [[0, 1.55, 480, 1149], [tm.kagit, 1.57, 490, 1146], [tm.serbest, 1.58, 494, 1144]] },
-    { id: 'necmi2', t0: tm.n2 - 0.1, cam: [[0, 1.5, 640, 1158], [tm.n2s, 1.52, 648, 1155]] },
-    { id: 'uclu', t0: tm.d2 - 0.1, cam: [[0, 1.4, 430, 1179], [tm.d2s, 1.42, 436, 1175]] },
+    { id: 'hikmet', t0: tm.h2b - 0.1, cam: [[0, 1.55, 382, 1149], [tm.kagit, 1.57, 385, 1146], [tm.serbest, 1.58, 388, 1144]] },   // sağ kenar x ≈ 730: Kerem dışarıda
+    { id: 'necmi2', t0: tm.n2 - 0.1, cam: [[0, 1.5, 690, 1158], [tm.n2s, 1.52, 693, 1155]] },   // sol kenar x ≈ 330: Defne dışarıda
+    { id: 'uclu', t0: tm.d2 - 0.1, cam: [[0, 1.4, 340, 1179], [tm.d2s, 1.42, 345, 1175]] },     // sağ kenar x ≈ 725: Kerem dışarıda
     { id: 'kalkan', t0: tm.kalkan - 0.05, cam: [[0, 1.72, 440, 1155], [tm.h3s, 1.76, 440, 1149]] },         // komik yakın: kolunu siper eder
     { id: 'sayac', t0: cd0 - 0.05, dogrusal: [1.26, 1.32], cam: [[0, 1.26, 548, 1214]] },
-    { id: 'ipucu', t0: tm.n1 - 0.25, cam: [[0, 1.5, 625, 1158], [tm.n1s, 1.53, 628, 1153], [tm.buldum - 0.1, 1.54, 628, 1151]] },
+    { id: 'ipucu', t0: tm.n1 - 0.25, cam: [[0, 1.5, 690, 1158], [tm.n1s, 1.53, 688, 1153], [tm.buldum - 0.1, 1.54, 686, 1151]] },   // sol kenar x ≈ 330
     { id: 'buldum', t0: tm.buldum - 0.05, kisa: true, cam: [[0, 1.5, 290, 1178]] },
     { id: 'cevap', t0: tm.cevap, cam: [[0, 1.3, 548, 1203], [tm.cta, 1.45, 300, 1188]] },
     { id: 'son', t0: tm.end, cam: [[0, 1, 540, 960]] },
@@ -197,7 +198,7 @@ export function build(ep, tl) {
     [tm.dSoyle, { expr: SUPHE, head: { tilt: -6, look: [-0.85, 0.3] } }, 0.3],
     [tm.n0 - 0.1, { expr: 'notr', head: { tilt: 4, look: [0.85, 0.3] } }, 0.01],
     [tm.h2 - 0.08, { expr: 'kizgin', head: { tilt: 3, look: [0.1, 0.8] } }, 0.01],
-    [tm.kimse - 0.1, { expr: 'kizgin', ...POZ.ikaz, head: { tilt: -3, look: [-0.2, 0.05] } }, 0.01],
+    [tm.kimse - 0.1, { expr: 'kizgin', head: { tilt: -3, look: [-0.2, 0.05] } }, 0.01],
     [tm.tahmin, { expr: SUPHE, armR: POZ.rahat.armR, head: { tilt: 5, look: [0.85, 0.4] } }, 0.35],
     [tm.h2b - 0.1, { expr: 'notr', head: { tilt: -3, look: [0.4, 0.75] } }, 0.01],
     [tm.kagit, { expr: 'mutlu', head: { tilt: 4, look: [0.1, 0.1] } }, 0.3],
@@ -223,7 +224,7 @@ export function build(ep, tl) {
     [tm.kimse - 0.1, { expr: 'notr', head: { tilt: 3, look: [0.85, 0.15] } }, 0.01],
     [tm.tahmin, { expr: SUPHE, head: { tilt: -5, look: [0.85, 0.55] } }, 0.3],
     [tm.h2b - 0.1, { expr: 'notr', head: { tilt: 3, look: [0.85, 0.3] } }, 0.01],
-    [tm.d2 - 0.1, { expr: 'kizgin', ...POZ.ikaz, head: { tilt: -4, look: [0.8, 0.1] } }, 0.01],
+    [tm.d2 - 0.1, { expr: 'kizgin', head: { tilt: -4, look: [0.8, 0.1] } }, 0.01],
     [tm.elYazi - 0.1, { expr: 'notr', armR: POZ.rahat.armR, head: { tilt: 3, look: [0.9, 0.35] } }, 0.25],
     [tm.kalkan - 0.05, { expr: 'notr', head: { tilt: -4, look: [0.85, 0.5] } }, 0.01],
     [cd0, { expr: 'notr', head: { tilt: 4, look: [0.3, 0.6] } }, 0.3],
@@ -375,6 +376,13 @@ function mutfak(K, t, tl, S, B) {
   const np = H.poseAt(H.CARDS.necmi, S.necBase, S.nec, t);
   const kp = H.poseAt(H.CARDS.genc, S.kerBase, S.ker, t);
   if (id === 'sayac') { H.glance(kp, t, tm.cd - 0.5, 9.5); }
+  // Ağız (denetim 26 Kas): yalnız konuşanın dudağı oynar. İfadenin kendi ağız açıklığı sıfırlanır (şaşkınlıkta bile
+  // ağız kapalı); konuşanın dudağı hece fazından 1,5 kat belirgin açılır, kelime aralarında kapanır. Kerem konuşmaz.
+  for (const [k, p] of [['defne', dp], ['hikmet', hp], ['necmi', np], ['genc', kp]]) {
+    const ex = typeof p.expr === 'string' ? H.EXPR[p.expr] : p.expr;
+    p.expr = { ...ex, open: 0 };
+    p.talk = k === 'genc' ? 0 : Math.min(1, 1.5 * H.talkAt(tl, k, t));
+  }
   // Defne "söylemem"de başını iki yana sallar
   if (t > tm.dSoyle - 0.05 && t < tm.dSoyle + 0.7) { const u = seg(t, tm.dSoyle - 0.05, 0.7); dp.head = { ...dp.head, look: [(dp.head.look?.[0] || 0) + 0.4 * Math.sin(TAU * 2 * u) * Math.sin(Math.PI * u), dp.head.look?.[1] || 0] }; }
   // Kerem "tahmin bile"de onaylar (nötr)
@@ -419,15 +427,17 @@ function mutfak(K, t, tl, S, B) {
   if (t > tm.serbest - 0.2 && t < tm.n2 - 0.2) { const w = pIn(t, tm.serbest - 0.2, tm.n2 - 0.4, 0.25); kol.hikmet.L[1] = 1 - w; kol.hikmet.R[1] = 1 - w; H.omuzSilk(hp, t, tm.serbest - 0.2, 0.4); }
   // siper: iki kol zarfın çevresinde, dirsekler dışarıda
   if (wK > 0.01) { kol.hikmet.L = [zt('hikmet', 52, 30), wK, 'B']; kol.hikmet.R = [zt('hikmet', 70, -10), wK, 'B']; }
-  // ikaz ("Kimse kimsenin"): poz izi sağ kolu kaldırır; reach'i kapat
-  const ikazH = t >= tm.kimse - 0.1 && t < tm.tahmin + 0.05;
-  if (ikazH) kol.hikmet.R = null;
+  // ikaz ("Kimse kimsenin"): sağ el göğüs hizasında, çenenin altında parmak sallar. El hiçbir yüzün üstüne çıkmaz
+  // (denetim 26 Kas: kaldırılan el Necmi'nin alnına düşüyordu). Sallama 3 Hz, ±0,22 rad.
+  const sal = (a) => Math.sin(TAU * 3 * Math.max(0, t - a));
+  const wIkH = pIn(t, tm.kimse - 0.1, tm.tahmin, 0.25), ikazH = wIkH > 0.05;
+  if (wIkH > 0.001) { const b = kol.hikmet.R[0]; kol.hikmet.R = [kar(b, [KIM.hikmet.x + 62 + 5 * sal(tm.kimse), 1206], wIkH), 1, 'B']; }
 
   // ——— Defne ———
   kol.defne.R = [zt('defne', 34, -16), 1, 'B'];
   if (t >= tm.dAma - 0.3 && t < tm.n0) { kol.defne.L = [zt('defne', -40, -10), 1, 'B']; kol.defne.R = [zt('defne', 40, -10), 1, 'B']; }
-  const ikazD = t >= tm.d2 - 0.1 && t < tm.elYazi - 0.1;
-  if (ikazD) kol.defne.R = null;
+  const wIkD = pIn(t, tm.d2 - 0.1, tm.elYazi - 0.15, 0.2), ikazD = wIkD > 0.05;   // "Olmaz": aynı ikaz, göğüs hizasında
+  if (wIkD > 0.001) { const b = kol.defne.R[0]; kol.defne.R = [kar(b, [KIM.defne.x + 58 + 5 * sal(tm.d2), 1208], wIkD), 1, 'B']; }
   // "el yazısından": Necmi'nin elindeki kâğıdı gösterir
   const wGos = pIn(t, tm.elYazi - 0.3, tm.d2s + 0.1, 0.28);
   // Defne sayaçta zarfına parmakla tıklar; düşünürken sağ el çenede (poz izi)
@@ -468,7 +478,7 @@ function mutfak(K, t, tl, S, B) {
   if (id === 'sayac' && t >= tm.s.kOrt - 0.3) { kol.genc.L = [zt('genc', -30, -10), 1, 'B']; kol.genc.R = [zt('genc', 30, -10), 1, 'B']; }
 
   // ——— çizim: kişiler → masa → zarflar ve nesneler → masa üstündeki önkollar → işaretler ———
-  const opt = (k, heads) => { const o = { heads }; if (kol[k].L) o.L = kol[k].L; if (kol[k].R) o.R = kol[k].R; return o; };
+  const opt = (k, heads) => { const o = { heads, sessiz: true }; if (kol[k].L) o.L = kol[k].L; if (kol[k].R) o.R = kol[k].R; return o; };
   const dc = oyna(K, t, tl, 'defne', dp, opt('defne', heads));
   const hc = oyna(K, t, tl, 'hikmet', hp, opt('hikmet', heads));
   const nc = oyna(K, t, tl, 'necmi', np, opt('necmi', heads));
@@ -487,8 +497,8 @@ function mutfak(K, t, tl, S, B) {
   if (notP) { notYaprak(K, notP[0], notP[1], -6, 1.25); nc.tut('L'); }
   if (bar.tutulu) nc.tut('R');
   for (const [k, sd, hd] of isr) ({ hikmet: hc, defne: dc, necmi: nc, genc: kc })[k].isaret(sd, hd);
-  if (ikazH) hc.parmak('R', 1, { toplam: 1 });
-  if (ikazD) dc.parmak('R', 1, { toplam: 1 });
+  if (ikazH) hc.parmak('R', wIkH, { toplam: 1, yon: -Math.PI / 2 + 0.22 * sal(tm.kimse) });
+  if (ikazD && !(wGos > 0.5 && notP)) dc.parmak('R', wIkD, { toplam: 1, yon: -Math.PI / 2 + 0.22 * sal(tm.d2) });
   if (wGos > 0.5 && notP) dc.isaret('R', notP);
   if (id === 'buldum') H.buldumIsin(K, t, tm.buldum, H.eklem('defne', dp, 'head'), { son: tm.proof });
 }

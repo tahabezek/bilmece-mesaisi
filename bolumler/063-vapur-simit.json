@@ -15,8 +15,8 @@
   "#simit"
  ],
  "card": [
-  "Her iskelede yarısını Rıza alır, 1 geri.",
-  "7 iskele sonra 3 simit. Kaçla başladı?"
+  "7 iskele sonra 3 simit kaldı.",
+  "Lâl vapura kaç simitle bindi?"
  ],
  "caption": "Zeka sorusu: Kaptan Rıza her iskelede Lâl'in simitlerinin yarısını alıp birini geri veriyor. Yedi iskele sonra Lâl'in elinde 3 simit kaldı. Lâl vapura kaç simitle bindi?",
  "voice": {
@@ -221,5 +221,16 @@
   "kesim": 40.672,
   "kart": 51.108,
   "tarih": "2026-11-20"
+ },
+ "sizinti": [
+  "130",
+  "YÜZ OTUZ",
+  "128"
+ ],
+ "denetim": {
+  "surum": 1,
+  "sha": "13490149",
+  "tarih": "2026-11-26",
+  "not": "düzeltildi; göz denetimi 26 Kas"
  }
 }

@@ -756,16 +756,12 @@
     },
     "2026-11-26T18:00Z": {
       "episode": "059-tanik",
-      "media": "v/059-tanik-0a9f4bd0.mp4",
+      "media": "v/059-tanik-fc261f15.mp4",
       "status": "scheduled",
-      "at": "2026-11-24T20:25:49.597Z",
-      "postId": "6b05f2ffad5aa59f729b9022",
+      "at": "2026-11-25T23:56:03.648Z",
+      "postId": "6b0775e207071a60673ad410",
       "dueAt": "2026-11-26T18:00:00.000Z",
-      "yt": {
-        "postId": "6b05f300c966bca3fadba815",
-        "status": "scheduled",
-        "dueAt": "2026-11-26T18:00:00.000Z"
-      }
+      "note": "elle (--simdi)"
     },
     "2026-11-27T09:30Z": {
       "episode": "060-bilmiyorum",
@@ -782,16 +778,12 @@
     },
     "2026-11-27T18:00Z": {
       "episode": "061-renk-koru",
-      "media": "v/061-renk-koru-d19f4c99.mp4",
+      "media": "v/061-renk-koru-645536be.mp4",
       "status": "scheduled",
-      "at": "2026-11-25T19:39:44.966Z",
-      "postId": "6b0739b3ebbe940776ad6d50",
+      "at": "2026-11-25T23:58:43.824Z",
+      "postId": "6b077670b96dd8d351719a23",
       "dueAt": "2026-11-27T18:00:00.000Z",
-      "yt": {
-        "postId": "6b0739b4e6fe52f29f96291e",
-        "status": "scheduled",
-        "dueAt": "2026-11-27T18:00:00.000Z"
-      }
+      "note": "elle (--simdi)"
     }
   }
 }

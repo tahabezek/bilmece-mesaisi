@@ -255,5 +255,16 @@
   "kesim": 45.239,
   "kart": 55.575,
   "tarih": "2026-11-20"
+ },
+ "sizinti": [
+  "İLK ÇIKAN",
+  "İLK GİDEN",
+  "BEŞİ BİRDEN BURADAYDI"
+ ],
+ "denetim": {
+  "surum": 1,
+  "sha": "e2978018",
+  "tarih": "2026-11-25",
+  "not": "bağımsız göz 26 Kas: yayına uygun"
  }
 }

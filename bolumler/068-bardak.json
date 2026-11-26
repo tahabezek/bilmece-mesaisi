@@ -14,8 +14,8 @@
   "#ofis"
  ],
  "card": [
-  "Yalnız bir özelliği uyanı içer.",
-  "Hangi bardağı kesin içer?"
+  "Hikmet yazdıklarından tek birine",
+  "uyanı içer. Hangisini kesin içer?"
  ],
  "caption": "Zeka sorusu: Tezgâhta dört bardak çay var: demli şekerli, demli şekersiz, açık şekerli, açık şekersiz. Hikmet Bey bir kâğıda gizlice bir dem ve bir şeker durumu yazdı. Yazdığı iki özellikten yalnızca birine uyan çayı içiyor; ikisine de uyanı da hiçbirine uymayanı da içmiyor.\n\nDemli şekerli bardağı içti. Öbür üç bardaktan hangisini kesinlikle içer?",
  "voice": {
@@ -228,5 +228,15 @@
   "kesim": 47.712,
   "kart": 59.238,
   "tarih": "2026-11-20"
+ },
+ "sizinti": [
+  "AÇIK VE ŞEKERSİZ",
+  "YALNIZCA BİRİNE UYAR"
+ ],
+ "denetim": {
+  "surum": 1,
+  "sha": "80298262",
+  "tarih": "2026-11-26",
+  "not": "kart düzeltildi; göz denetimi 26 Kas"
  }
 }

@@ -191,19 +191,26 @@ export function build(ep, tl) {
     { id: 'kanca2', t0: tm.h1b + 0.1, cam: [[0, 1.22, 450, 948]] },
     { id: 'yakin', t0: tm.sabah - 0.1, cam: [[0, 1.4, 300, 1030], [tm.bombos + 0.4, 1.44, 296, 1036]] },
     { id: 'iki', t0: tm.h2a - 0.1, cam: [[0, 1.38, 415, 960]] },
-    { id: 'necmi', t0: tm.n0 - 0.1, cam: [[0, 1.5, 500, 950], [tm.h2b - 0.3, 1.53, 502, 948]] },
-    { id: 'grup1', t0: tm.h2b - 0.1, cam: [[0, ...GENIS]] },
-    { id: 'defne', t0: tm.d1 - 0.1, cam: [[0, 1.5, DEF_X, 950], [tm.h3 - 0.3, 1.53, DEF_X + 2, 948]] },
-    { id: 'grup2', t0: tm.h3 - 0.1, cam: [[0, ...GENIS], [tm.h3b - 0.2, 1.36, 531, 985]] },
-    { id: 'kerem', t0: tm.h3b - 0.1, cam: [[0, 1.4, 1150, 960], [tm.h4 - 0.3, 1.43, 1150, 958]] },   // Kerem cam arkasında, nötr
-    { id: 'grup3', t0: tm.h4 - 0.1, cam: [[0, ...GENIS]] },
-    { id: 'sayac', t0: cd0 - 0.05, cam: [[0, 1.45, 420, 905]] },                                       // gezinme draw'daki kamera() ile
-    { id: 'ipucu', t0: tm.n1 - 0.1, cam: [[0, ...GENIS], [tm.bakin + 0.5, 1.34, 531, 989]] },
+    { id: 'necmi', t0: tm.n0 - 0.1, cam: [[0, 1.5, 495, 950], [tm.h2b - 0.3, 1.53, 495, 948]] },   // cx ≤ 496: balonun sol kenarı x ≥ 90
+    // (26 Kas, bağımsız göz) Necmi'nin balonu açıldıktan sonra yakın plan yok: iki balon (dünya x 202–818) tam ve güvenli
+    // alanda (ekran x 90–920) kalsın diye her kadraj zoom ≤ 1,34'tür ve cx dar bir aralıktadır. Defne'nin
+    // yakın planı ("emiş." diye kesiyordu) ve cam arkasındaki Kerem planı (cevabı öne çıkarıyordu) kaldırıldı. 12 sn'den
+    // kesime kadar tek grup planı: kesme yok, anahtarlar arası yay (170/26) ve 0,9 %/sn kayma; Kerem hiç kadraja girmez.
+    { id: 'grup1', t0: tm.h2b - 0.1, cam: [[0, 1.26, 528, 990]] },
+    { id: 'defne', t0: tm.d1 - 0.1, kesme: false, cam: [[0, 1.29, 536, 986]] },                         // Defne konuşur: hafif sağa
+    { id: 'grup2', t0: tm.h3 - 0.1, kesme: false, cam: [[0, 1.24, 530, 995], [tm.h3b - 0.2, 1.30, 536, 984]] },   // h3 geri çekil, h3b it
+    { id: 'grup3', t0: tm.h4 - 0.1, kesme: false, cam: [[0, 1.20, 516, 1005]] },                        // h4: geri çekil (sayaç buradan iter)
+    { id: 'sayac', t0: cd0 - 0.05, kesme: false, cam: [[0, 1.26, 522, 1000], [cd0 + 5, 1.29, 530, 995]] },   // kamera draw'daki kamera() ile
+    { id: 'ipucu', t0: tm.n1 - 0.1, kesme: false, cam: [[0, 1.31, 534, 990]] },                         // kamera draw'daki kamera() ile
     { id: 'buldum', t0: tm.buldum - 0.05, kisa: true, cam: [[0, 1.35, DEF_X, 950]] },
     { id: 'cevap', t0: tm.cevap, cam: [[0, 1.0, 560, 960]] },
     { id: 'cta', t0: tm.cta, cam: [[0, 1.34, DEF_X - 20, 1000], [tm.cta + 1.6, 1.38, DEF_X - 20, 996]] },
     { id: 'son', t0: tm.end, cam: [[0, 1, 540, 960]] },
   ]); film.uyar();
+  // sayaç + ipucu: grup3'ün bittiği kadrajdan (kesmesiz) "Buldum!"a kadar tek doğrusal itme; Necmi'nin balonu tarafından
+  // Defne'nin balonu tarafına kayar, iki balon da baştan sona tam ve güvenli alanda kalır.
+  const itA = cd0 - 0.05, itB = tm.buldum - 0.05, c0 = film.cam(itA - 1e-4);
+  const itme = { a: itA, b: itB, p: [c0.zoom, c0.cx, c0.cy], q: [1.33, 537, 986] };
 
   // n1 son repliktir (cevapsız kesim): altyazısı "Buldum!"a kadar ekranda kalsın
   const tlA = { ...tl, lines: tl.lines.map(l => l.id === 'n1' ? { ...l, t1: T('d3') - 0.3 } : l) };
@@ -273,7 +280,7 @@ export function build(ep, tl) {
     [tm.cta, { expr: 'mutlu', head: { tilt: 4, look: [0.3, 0.3] } }, 0.01],
     [tm.cta + 0.6, { head: { tilt: -6, look: [0.05, 0.05] } }, 0.35],
   ];
-  return { tm, film, tlA, hikBase, hik, necBase, nec, defBase, def };
+  return { tm, film, itme, tlA, hikBase, hik, necBase, nec, defBase, def };
 }
 
 // ═══════════════════════════ Durumlar (bütün sahneler aynı fonksiyonları okur) ═══════════════════════════
@@ -299,12 +306,11 @@ export const draw = (K, t, ep, tl, S) => H.cerceve(K, t, ep, S.tlA || tl, S, {
   split: { h3: 5 },
   kartSon: -1,
   kuyruksuz: (t, B) => B.sc.id === 'sayac',
-  // sayaç: Necmi'nin balonunda durur (okunur), doğrusal kayışla Defne'nin balonuna geçer, durur, grup planına açılır
+  // sayaç ve ipucu: doğrusal itme (zoom log uzayında), iki balon arasında soldan sağa kayar; Kerem'in camına gitmez
   kamera(cam, t, B) {
-    if (B.sc.id !== 'sayac') return;
-    const u = t - S.tm.cd0, A = [1.45, 420, 905], D = [1.45, 680, 925], G = GENIS;
-    const mix = (p, q, v) => ({ zoom: Math.exp(lerp(Math.log(p[0]), Math.log(q[0]), v)), cx: lerp(p[1], q[1], v), cy: lerp(p[2], q[2], v) });
-    Object.assign(cam, u < 3.6 ? mix(A, A, 0) : u < 5.4 ? mix(A, D, (u - 3.6) / 1.8) : u < 8.6 ? mix(D, D, 0) : mix(D, G, clamp01((u - 8.6) / 1.2)));
+    if (B.sc.id !== 'sayac' && B.sc.id !== 'ipucu') return;
+    const { a, b, p, q } = S.itme, v = clamp01((t - a) / (b - a));
+    Object.assign(cam, { zoom: Math.exp(lerp(Math.log(p[0]), Math.log(q[0]), v)), cx: lerp(p[1], q[1], v), cy: lerp(p[2], q[2], v) });
   },
   dunya(K, t, B) { sahne(K, t, tl, S, B); },
   ekran(K, t, B) {

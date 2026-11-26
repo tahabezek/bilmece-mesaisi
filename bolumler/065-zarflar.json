@@ -283,5 +283,15 @@
   "kesim": 47.736,
   "kart": 57.252,
   "tarih": "2026-11-20"
+ },
+ "sizinti": [
+  "UYDURMA",
+  "GERİDEN"
+ ],
+ "denetim": {
+  "surum": 1,
+  "sha": "d0530cf2",
+  "tarih": "2026-11-26",
+  "not": "bağımsız göz 26 Kas: yayına uygun"
  }
 }

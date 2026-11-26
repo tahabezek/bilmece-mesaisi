@@ -206,5 +206,15 @@
   "kesim": 47.522,
   "kart": 57.898,
   "tarih": "2026-11-20"
+ },
+ "sizinti": [
+  "KALAN SÖYLER",
+  "HİKMET BEY DOĞRU"
+ ],
+ "denetim": {
+  "surum": 1,
+  "sha": "305a9be5",
+  "tarih": "2026-11-25",
+  "not": "bağımsız göz 26 Kas: yayına uygun"
  }
 }

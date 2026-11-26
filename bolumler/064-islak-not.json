@@ -313,5 +313,18 @@
   "kesim": 45.366,
   "kart": 56.042,
   "tarih": "2026-11-20"
+ },
+ "sizinti": [
+  "960",
+  "9 6 0",
+  "DOKUZU",
+  "ALTIYA",
+  "SIFIRIN"
+ ],
+ "denetim": {
+  "surum": 1,
+  "sha": "21094e24",
+  "tarih": "2026-11-26",
+  "not": "bağımsız göz 26 Kas: yayına uygun"
  }
 }

@@ -78,8 +78,8 @@ export function build(ep, tl) {
 
   const film = H.sahneler([
     { id: 'kanca', t0: 0, cam: [[0, 1.36, 520, 1015], [tm.h1s - 0.2, 1.38, 528, 1018], [tm.d1, 1.4, 575, 1025]] },
-    { id: 'vergi', t0: tm.kesVergi, cam: [[0, 1.44, 590, 1100], [tm.h2as, 1.46, 594, 1102]] },
-    { id: 'montaj', t0: tm.kesMontaj, cam: [[0, 1.3, 560, 1020], [tm.h2bs, 1.32, 565, 1018]] },
+    { id: 'vergi', t0: tm.kesVergi, cam: [[0, 1.4, 530, 985], [tm.h2as, 1.42, 532, 987]] },
+    { id: 'montaj', t0: tm.kesMontaj, cam: [[0, 1.3, 570, 1020], [tm.h2bs, 1.32, 575, 1018]] },
     { id: 'yorgun', t0: tm.kesYorgun, cam: [[0, 1.44, LAL_X, 1100], [tm.d2s, 1.46, LAL_X, 1102]] },
     { id: 'soru', t0: tm.kesSoru, cam: [[0, 1.38, 410, 1015], [tm.h3s - 0.1, 1.4, 405, 1015], [tm.dd - 0.15, 1.34, 560, 1020]] },
     { id: 'sayac', t0: tm.kesSayac, cam: [[0, 1.3, 600, 1030]] },
@@ -238,12 +238,14 @@ function iskeleCiz(K, t, x, i) {
   }
   K.poly([[x - w / 2 - 24, B - 200], [x - w / 2 + 40, B - 236], [x + w / 2 - 40, B - 236], [x + w / 2 + 24, B - 200]], SV.cati, LW);
   // levha: numara rozeti + ad (tr-TR büyük harf)
-  const ly = B - 278, yazi = K.up(ISKELE[i]); x += 70;
-  ctx.font = '900 56px Rubik'; const tw = ctx.measureText(yazi).width, lw = tw + 56 + 96;
+  // levha sol kenardan hizalı: rozet Rıza'nın kasketinin sağında kalır, uzun ad (ARNAVUTKÖY) sağ kenara taşmaz
+  const ly = B - 262, yazi = K.up(ISKELE[i]), fpx = 52;
+  ctx.font = `900 ${fpx}px Rubik`; const tw = ctx.measureText(yazi).width, lw = tw + 56 + 96;
+  x = x - 150 + lw / 2;
     K.rect(x - lw / 2, ly - 48, lw, 80, SV.levha, LW, 10);
   K.circ(x - lw / 2 + 52, ly - 8, 30, PAL.mustard, LW * 0.7);
   K.text(String(i + 1), x - lw / 2 + 52, ly + 12, 46, INK, 900);
-  K.text(yazi, x + 44, ly + 12, 56, SV.levhaYazi, 900);
+  K.text(yazi, x + 44, ly + 12, fpx, SV.levhaYazi, 900);
 }
 
 // ═══════════════════════════ draw ═══════════════════════════

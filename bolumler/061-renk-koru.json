@@ -229,5 +229,16 @@
   "kesim": 48.877,
   "kart": 58.733,
   "tarih": "2026-11-20"
+ },
+ "sizinti": [
+  "ARKANIZA",
+  "ARKANA AL",
+  "DEĞİŞTİRİN"
+ ],
+ "denetim": {
+  "surum": 1,
+  "sha": "645536be",
+  "tarih": "2026-11-26",
+  "not": "düzeltildi; göz denetimi 26 Kas"
  }
 }

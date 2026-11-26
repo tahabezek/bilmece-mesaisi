@@ -198,5 +198,15 @@
   "kesim": 44.524,
   "kart": 56.448,
   "tarih": "2026-11-20"
+ },
+ "sizinti": [
+  "UYDUR",
+  "FISILDA"
+ ],
+ "denetim": {
+  "surum": 1,
+  "sha": "a2946ca3",
+  "tarih": "2026-11-26",
+  "not": "el ve dudak düzeltildi; göz denetimi 26 Kas"
  }
 }
