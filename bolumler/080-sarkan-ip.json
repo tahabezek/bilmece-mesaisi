@@ -1,0 +1,158 @@
+{
+ "id": "080-sarkan-ip",
+ "num": 80,
+ "sira": 65,
+ "bpm": 120,
+ "slug": "sarkan-ip",
+ "coverAt": 0,
+ "cevapsizTasarim": true,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#mantık",
+  "#direk",
+  "#ofis"
+ ],
+ "card": [
+  "Direkler 10 m, ip 15 m boyunda.",
+  "Direklerin arası kaç metre?"
+ ],
+ "caption": "Zeka sorusu: Eski elektrik direğinin yerine yenisi dikildi; eskisi yarın sökülecek. İkisi de dümdüz arsada, ikisi de 10 metre. Tepelerine 15 metrelik, esnemeyen bir ip bağlandı. İpin en alçak noktası yerden 2,5 metre yukarıda.\n\nİki direğin arası kaç metre?",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Eski direğin yerine yenisini diktiler, eskisi yarın sökülecek.",
+    "rate": "+8%"
+   },
+   {
+    "id": "h1b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "İkisi de dümdüz arsada, ikisi de on metre.",
+    "rate": "+8%"
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.3,
+    "text": "Direklerin tepesine on beş metrelik, esnemeyen bir ip bağladık.",
+    "rate": "+2%"
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.3,
+    "text": "İpin en alçak yeri yerden iki buçuk metre yukarıda."
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Kerem bütün ölçüleri yazmış, yalnız direklerin arasını yazmamış. Arası kaç metre?",
+    "rate": "+8%"
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 10.65,
+    "text": "Hesaba girişmeden önce ipin iki yanını toplayın.",
+    "rate": "+2%"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Buldum! Sıfır metre. Direkler yan yana."
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Her tepeden iki buçuk metreye yedi buçuk metre iner. İki taraf on beş eder, ip dümdüz sarkıyor."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu hesap makinesine uzanan arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "swish",
+   "h1b-0.12"
+  ],
+  [
+   "swish",
+   "n0-0.12"
+  ],
+  [
+   "swish",
+   "n0:5"
+  ],
+  [
+   "zip",
+   [
+    "d1:1-0.05",
+    "d1:1+0.75"
+   ]
+  ],
+  [
+   "pop",
+   "d1:5-0.06"
+  ],
+  [
+   "swish",
+   "h3-0.12"
+  ],
+  [
+   "zip",
+   [
+    "n1-6.9",
+    "n1-6.45"
+   ]
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true,
+ "sizinti": [
+  "SIFIR",
+  "SIFIR METRE",
+  "YAN YANA",
+  "BİTİŞİK",
+  "YEDİ BUÇUK",
+  "7,5"
+ ],
+ "cevapsiz": {
+  "kesim": 32.948,
+  "kart": 44.952,
+  "tarih": "2026-11-20"
+ },
+ "denetim": {
+  "surum": 1,
+  "sha": "83191702",
+  "tarih": "2026-11-26",
+  "not": "kroki kaldırıldı; bağımsız göz + koordinatör 26 Kas"
+ }
+}
