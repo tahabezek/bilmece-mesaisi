@@ -21,7 +21,7 @@ Bilmece Mesaisi Instagram Reels için yapılan, Türkçe çizgi animasyonlu bir 
    - `caption`: belgedeki açıklama metni (`\n\n` ile).
    - 5 hashtag.
    - `cdSure: 10`. İpucu repliği varsa `countdown: "n1-0.3"`, yoksa `"d3-0.3"`.
-   - `cdShare: "Bunu bir arkadaşına sor!"`, `v4: true`, `coverAt: 0`, `music.style: "yumusak"`.
+   - `cdShare` 084 ve sonrasında yazılmaz (`research/uzmanlik/USTALIK_DEFTERI.md` § 5, deney); `v4: true`, `coverAt: 0`, `music.style: "yumusak"`.
    - **`disabled` alanı koyma.** "Zengin Kız Fakir Oğlan" hiçbir yerde geçmez.
    - Kesme işaretli ve tırnaklı repliklerde `tts` alanını işaretsiz yaz.
 3. **Ses** (rehber § 9; argümanları betiklerden oku): `py -3.14 tools/voice_tts.py` → `py -3.13 tools/voice_trim.py` → `py -3.13 tools/voice_words.py` → `node tools/ses.mjs bolumler/<id>.json`.

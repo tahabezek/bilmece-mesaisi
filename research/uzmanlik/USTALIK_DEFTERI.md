@@ -86,7 +86,7 @@ Saat kalıbındaki hâl eki ("dördü … geçe", "dörde … kala"), soru ekini
 - **Dağıtımı izleme süresi ve gönderim açar** (Instagram'ın ilk üç sinyali: izleme süresi, beğeni, gönderim). Yorum takipçiye dönüşümü besler ama seçimde üçüncü ölçüdür.
 - **Kamp, sezgi ile kanıt arasında kurulur, iki savunulabilir cevap arasında değil.** Model Monty Hall'dur (tek doğru, kendinden emin bir yanlış), 8÷2(2+2) değil.
 - **Gönderim "bu tam sana göre" duygusundan gelir:** bilmece bir insan durumunda (oyun, iddia, sofra, vapur, bayram) geçer.
-- **Kapanış cümlesi sorunun kendisidir, emir değil.** Instagram, belirli bir kelime ya da sayıyla yorum istemeyi ve paylaşım emrini etkileşim yemi sayıp öneriden çıkarıyor. Sayaçtaki "Bunu bir arkadaşına sor!" bu sınıra yakın. **Karar:** sonraki üretim turunda çağrı sahneye gömülür (son sahnede bir karakter soruyu telefonda birine sorar) ve sayaçta yalnız "SEN DE DÜŞÜN!" kalır; eski ve yeni bölümlerin gönderim/1.000 oranı karşılaştırılır.
+- **Kapanış cümlesi sorunun kendisidir, emir değil.** Instagram, belirli bir kelime ya da sayıyla yorum istemeyi ve paylaşım emrini etkileşim yemi sayıp öneriden çıkarıyor. Sayaçtaki "Bunu bir arkadaşına sor!" bu sınıra yakın. **Karar (uygulandı, 084–086):** Yeni bölümlerde `cdShare` yazılmaz ve sayaçta yalnız "SEN DE DÜŞÜN!" kalır. Eski ve yeni bölümlerin gönderim/1.000 oranı haftalık analizde karşılaştırılır; fark yoksa ya da yeni bölümler daha iyiyse eski kalıba dönülmez.
 - **Süre:** itilen videoların ortalama izlemesi 26 saniyenin üstünde. Hedef kesilmiş film 27–34 sn, tavan 38.
 
 ## 6. Cevapsız format: bilinen bedel
