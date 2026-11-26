@@ -54,19 +54,19 @@
   "dur": 3.748
  },
  "n0": {
-  "key": "17b2cc0bc2ba",
-  "trimmed": "17b2cc0bc2ba",
-  "wkey": "17b2cc0bc2ba",
-  "heard": "Sırayla birer taş alıyoruz, elindeki herhangi üç taşı on beş eden kazanır.",
+  "key": "e1a1b88d1581",
+  "trimmed": "e1a1b88d1581",
+  "wkey": "e1a1b88d1581",
+  "heard": "Sırayla birer taş alıyoruz, elindeki herhangi üç taşın toplamı on beş olan kazanır.",
   "words": [
    {
     "w": "Sırayla",
     "t0": 0.0,
-    "t1": 0.6
+    "t1": 0.58
    },
    {
     "w": "birer",
-    "t0": 0.6,
+    "t0": 0.58,
     "t1": 0.9
    },
    {
@@ -77,11 +77,11 @@
    {
     "w": "alıyoruz.",
     "t0": 1.08,
-    "t1": 1.6
+    "t1": 1.62
    },
    {
     "w": "Elindeki",
-    "t0": 1.92,
+    "t0": 1.88,
     "t1": 2.5
    },
    {
@@ -95,32 +95,37 @@
     "t1": 3.2
    },
    {
-    "w": "taşı",
+    "w": "taşın",
     "t0": 3.2,
-    "t1": 3.58
+    "t1": 3.56
+   },
+   {
+    "w": "toplamı",
+    "t0": 3.56,
+    "t1": 4.06
    },
    {
     "w": "on",
-    "t0": 3.58,
-    "t1": 3.77
+    "t0": 4.06,
+    "t1": 4.26
    },
    {
     "w": "beş",
-    "t0": 3.77,
-    "t1": 3.96
+    "t0": 4.26,
+    "t1": 4.46
    },
    {
-    "w": "eden",
-    "t0": 3.96,
-    "t1": 4.18
+    "w": "olan",
+    "t0": 4.46,
+    "t1": 4.7
    },
    {
     "w": "kazanır.",
-    "t0": 4.18,
-    "t1": 4.72
+    "t0": 4.7,
+    "t1": 5.24
    }
   ],
-  "dur": 4.818
+  "dur": 5.328
  },
  "d1": {
   "key": "973a0da98c43",

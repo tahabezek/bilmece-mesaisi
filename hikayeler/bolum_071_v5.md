@@ -7,6 +7,7 @@ Kaynak: `hikayeler/bolum_070-074.md` § 071. Sahne: `engine/b071.js`. Bölüm do
 - **Kart:** `Necmi 1 saat erken indi, yürüdü.` (32) / `20 dk erken vardı. Kaç dk yürüdü?` (33). Belgedeki önerinin ikinci satırı ("Kaç dk?") iki anlamlı okunabiliyordu ("kaç dakika erken?"); soru "Kaç dk yürüdü?" olarak tamamlandı, özne birinci satıra alındı. Anlam ve sayılar aynı.
 - **Şartlar (kesilmiş filmde nerede):**
   - Eşi her akşam iskeleden arabayla alır: n0b; iskelede Necmi lambanın dibindeki boş kaldırım kenarına bakar.
+  - Nermin Hanım iskeleye her akşam vapurun yanaştığı anda varır, ne erken ne geç: n0b ("Vapur yanaşırken o da varır"), açıklama metni; Necmi "vapur"da vapura, "o da varır"da boş kaldırım kenarına bakar. İskelede Nermin Hanım hiçbir karede beklemez. (26 Kas, usta editör: bu şart yokken "5 dakika erken gelip bekliyorsa cevap 45" itirazı tutuyordu.)
   - Bir saat erken indi, beklemedi, eve doğru yürüdü: n0, n0b, kart; iskelede vapurdan iner, omuz silker, sağa yürür.
   - Evden her zamanki saatte çıktı: n0c; Nermin Hanım evin kapısından çıkar, arabasına biner.
   - Her zamanki hızla sürdü: n0c; araba her plânda aynı hızla gider (kodda tek `V`).
@@ -41,7 +42,7 @@ Kaynak: `hikayeler/bolum_070-074.md` § 071. Sahne: `engine/b071.js`. Bölüm do
 | id | Konuşan | Replik | Kelime | sn (ölçülen) |
 |---|---|---|---|---|
 | n0 | Necmi | Dün vapurdan bir saat erken indim. | 6 | 0,30–2,45 |
-| n0b | Necmi | Eşim Nermin beni her akşam iskeleden alır. Beklemedim, eve doğru yürüdüm. | 11 | 2,80–7,63 |
+| n0b | Necmi | Eşim Nermin beni her akşam iskeleden alır. Vapur yanaşırken o da varır. Dün beklemedim, eve doğru yürüdüm. | 17 | 2,80–9,55 |
 | n0c | Necmi | Nermin evden her zamanki saatte çıktı, her zamanki hızla sürdü. Beni görünce hemen döndü. | 14 | 7,98–14,02 |
 | n0d | Necmi | Eve her zamankinden yirmi dakika erken vardık. | 7 | 14,37–17,19 |
 | h3 | Hikmet | Defne, Necmi kaç dakika yürüdü? | 5 | 17,54–19,83 |
@@ -50,7 +51,7 @@ Kaynak: `hikayeler/bolum_070-074.md` § 071. Sahne: `engine/b071.js`. Bölüm do
 | d4 | Defne | Araba yirmi dakika kazandı: gidişte on, dönüşte on. Necmi'yle on dakika erken karşılaştı. (arşiv) | 13 | 35,24–40,86 |
 | d6 | Defne | Bunu her akşam servis bekleyen arkadaşına gönder. (arşiv) | 7 | 41,56–44,20 |
 
-**Süre:** "Buldum!" öncesi 47 kelime. "Buldum!" 33,34 sn; cevaplı arşiv 46,6 sn; kesilmiş film ≈ 35,5 sn.
+**Süre:** "Buldum!" öncesi 53 kelime. "Buldum!" 35,26 sn; cevaplı arşiv 48,5 sn; kesilmiş film ≈ 37,4 sn.
 
 **Taslağa göre değişenler (şartlar, sayılar, cevap aynı)**
 - n0 ile n0b birleşmedi; h1 ("Eşin seni yolda mı buldu?") ve n0e ("Saatime hiç bakmadım ki.") kısa format bütçesi için çıkarıldı.

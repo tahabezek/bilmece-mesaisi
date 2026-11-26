@@ -14,7 +14,7 @@
   "#ofis"
  ],
  "card": [
-  "Üç taşı 15 eden kazanır.",
+  "Üç taşın toplamı 15 olan kazanır.",
   "Bu aslında hangi oyun?"
  ],
  "caption": "Zeka sorusu: Masada 1'den 9'a dokuz taş var. İki kişi sırayla birer taş alıyor; elindeki herhangi üç taşın toplamı 15 olan kazanıyor. Yüz kez oynadılar, hepsi berabere bitti.\n\nNecmi: \"Bunu çocukken hep oynardınız, yalnız adı başkaydı.\" Bu aslında hangi oyun?",
@@ -32,7 +32,7 @@
     "id": "n0",
     "who": "necmi",
     "gap": 0.25,
-    "text": "Sırayla birer taş alıyoruz. Elindeki herhangi üç taşı on beş eden kazanır.",
+    "text": "Sırayla birer taş alıyoruz. Elindeki herhangi üç taşın toplamı on beş olan kazanır.",
     "rate": "-4%"
    },
    {
@@ -64,7 +64,7 @@
    {
     "id": "d3",
     "who": "defne",
-    "gap": 0.6,
+    "gap": 0.45,
     "text": "Buldum! XOX.",
     "tts": "Buldum! İks o iks."
    },
@@ -180,7 +180,7 @@
   ],
   [
    "knock",
-   "n0:10+0.83"
+   "n0:11+0.83"
   ]
  ],
  "cdShare": "Bunu bir arkadaşına sor!",
@@ -193,8 +193,14 @@
   "TİK TAK"
  ],
  "cevapsiz": {
-  "kesim": 31.85,
-  "kart": 41.266,
+  "kesim": 32.21,
+  "kart": 41.626,
   "tarih": "2026-11-20"
+ },
+ "denetim": {
+  "surum": 1,
+  "sha": "a3961673",
+  "tarih": "2026-11-26",
+  "not": "n0 ve kart düzeltildi (usta incelemesi) 26 Kas"
  }
 }

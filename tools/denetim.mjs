@@ -111,7 +111,7 @@ for (const id of ids) {
   ok('hareket', !dur.length, dur.length ? 'durgun: ' + dur.map(([s, m]) => `${s}(${m.toFixed(2)})`).join(' ') : 'her saniye ≥ 0,1');
 
   // 4. ekranda yazan her şey (izleyicinin gördüğü iki parça: 0 → kesim, takip kartı)
-  const { harita, hatalar } = await metinDokumu(id, [[0, ep.cevapsiz.kesim, 0], [ep.cevapsiz.kart, tl.duration - 0.05, ep.cevapsiz.kesim - ep.cevapsiz.kart]]);
+  const { harita, hatalar } = await metinDokumu(id, [[0, ep.cevapsiz.kesim, 0], [ep.cevapsiz.kart + 0.02, tl.duration - 0.05, ep.cevapsiz.kesim - ep.cevapsiz.kart]]);
   ok('sahne hatasız', !hatalar.length, hatalar.length ? hatalar.join(' | ') : 'konsol hatası yok');
   const ekranSiz = [];
   for (const [s, v] of harita) {

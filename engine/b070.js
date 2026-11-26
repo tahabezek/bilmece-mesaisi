@@ -175,14 +175,15 @@ M.mekanEkle(MOLA, {
 export function build(ep, tl) {
   const T = e => H.at(tl, e), cd = T(ep.countdown), cd0 = cd - (ep.cdSure || 10);
   const tm = {
-    cd, cd0, end: T('d6>') + 0.1, buldum: T('d3'), proof: T('d3>') + 0.05,
-    ins: T('h1:6') - 0.08, dokuz: T('h1:8'), nKes: T('n0') - 0.1, birer: T('n0:2'), uc: T('n0:6'), on: T('n0:8'),
+    cd, cd0, end: T('d6>') + 0.095,   // (26 Kas) cevapsiz.mjs kartı d6>+0,1'e yuvarlar; son sahne ondan önce başlasın (aradaki 5 ms'de kare yok)
+    buldum: T('d3'), proof: T('d3>') + 0.05,
+    ins: T('h1:6') - 0.08, dokuz: T('h1:8'), nKes: T('n0') - 0.1, birer: T('n0:2'), uc: T('n0:6'), on: T('n0:9'),
     skip: T('d1') - 0.1, ber: T('d1:4') - 0.09, n0b: T('n0b') - 0.1, cocuk: T('n0b:2'), yalniz: T('n0b:5'),
     h3: T('h3') - 0.1, hangi: T('h3:3'), sayac: cd0 - 0.05, n1: T('n1'), sekiz: T('n1:5'), sayin: T('n1:4'), n1s: T('n1>'),
     cevap: T('d3>') + 0.15, cta: T('d6') - 0.15,
   };
   tm.atla0 = tm.skip + 0.08; tm.atla1 = tm.ber - 0.08;           // zaman atlaması (kadraj sabit, 1,2–2,2 sn)
-  tm.say0 = T('n0:4') + 0.05; tm.yok = tm.say0 + 0.75; tm.blok = T('n0:10') + 0.02;           // Hikmet "Elindeki"de parmakla sayar (üç); "14", olmadı
+  tm.say0 = T('n0:4') + 0.05; tm.yok = tm.say0 + 0.75; tm.blok = T('n0:11') + 0.02;           // Hikmet "Elindeki"de parmakla sayar (üç); "14", olmadı; "olan"da Defne 4'ü alır
   // ——— hamleler: [tutuş anı, kim, değer, hedef ('D0'.. ıstaka yeri | 'P' havuz), taşıma süresi] ———
   const H6 = [];
   H6.push([0.3, 'D', 7, 'D1', 0.62]);                            // kare 0: Defne'nin eli 7'ye uzanmış (Necmi'nin 3-5-7 tehdidini keser)
@@ -229,7 +230,7 @@ export function build(ep, tl) {
     [tm.n1, { expr: 'notr', head: { tilt: -2, look: [0.7, -0.1] } }, 0.35],
     [tm.sayin, { expr: DIKKAT, head: { tilt: 6, look: [0.6, 0.45] } }, 0.3],                 // "sayın": taşlara bakar
     [tm.sekiz, { expr: DIKKAT, head: { tilt: 2, look: [0.7, -0.1] } }, 0.25],
-    [tm.n1s + 0.3, { expr: H.IFADE.dusun2, head: { tilt: 6, look: [0.6, 0.5] } }, 0.4],
+    [tm.n1s - 0.35, { expr: H.IFADE.dusun2, head: { tilt: 6, look: [0.6, 0.5] } }, 0.4],
     [tm.buldum - 0.05, { expr: 'mutlu', head: { tilt: -6, look: [0.6, -0.3] } }, 0.2],
   ];
   const nec = [
@@ -368,7 +369,7 @@ function sahne(K, t, tl, S, B) {
   const dO = { heads, R: [elD, 1, 'A'] };
   // sayacın sonu: eli çenesinde düşünür (hamle yokken)
   const sonD = S.H6.filter(h => h[1] === 'D').pop();
-  const wC = id === 'sayac' ? Math.max(pIn(t, sonD[0] + sonD[4] + 0.45, tm.n1 + 0.2, 0.35), W(t, tm.n1s + 0.15, 0.4)) : 0;   // ipucunda eli çenesinden iner, ipucundan sonra yine çenesinde
+  const wC = id === 'sayac' ? Math.max(pIn(t, sonD[0] + sonD[4] + 0.45, tm.n1 + 0.2, 0.35), W(t, tm.n1s - 0.45, 0.4)) : 0;   // ipucunda eli çenesinden iner, "çıkacak"ta yine çenesinde (kesimden önce oturur)
   if (wC > 0.01) { const bas = H.eklem('defne', dp0, 'head'); dO.R = [[lerp(elD[0], bas[0] + 62, wC), lerp(elD[1], bas[1] + 126, wC)], 1, 'B']; }
   if (id === 'buldum') dO.R = [H.elYeri('defne', dp0, 'R', 'yukari'), W(t, tm.buldum - 0.05, 0.25), 'B'];
   // Necmi (sağda, yüzü sola)

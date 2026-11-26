@@ -17,7 +17,7 @@
   "Necmi 1 saat erken indi, yürüdü.",
   "20 dk erken vardı. Kaç dk yürüdü?"
  ],
- "caption": "Zeka sorusu: Necmi'yi eşi her akşam iskeleden arabayla alıyor. Dün Necmi bir saat erken indi ve eve doğru yürüdü. Eşi evden her zamanki saatte çıktı, her zamanki hızla sürdü; yolda Necmi'yi görünce hemen alıp döndü. Eve her zamankinden 20 dakika erken vardılar.\n\nNecmi kaç dakika yürüdü?",
+ "caption": "Zeka sorusu: Necmi'yi eşi her akşam iskeleden arabayla alıyor; vapur yanaştığı anda o da iskeleye varıyor, ne erken ne geç. Dün Necmi bir saat erken indi ve eve doğru yürüdü. Eşi evden her zamanki saatte çıktı, her zamanki hızla sürdü; yolda Necmi'yi görünce hemen alıp döndü. Eve her zamankinden 20 dakika erken vardılar.\n\nNecmi kaç dakika yürüdü?",
  "voice": {
   "tight": 0.28,
   "tail": 2.4,
@@ -33,7 +33,8 @@
     "id": "n0b",
     "who": "necmi",
     "gap": 0.35,
-    "text": "Eşim Nermin beni her akşam iskeleden alır. Beklemedim, eve doğru yürüdüm.",
+    "text": "Eşim Nermin beni her akşam iskeleden alır. Vapur yanaşırken o da varır. Dün beklemedim, eve doğru yürüdüm.",
+    "tts": "Eşim Nermin beni her akşam iskeleden alır; vapur yanaşırken o da varır. Dün beklemedim, eve doğru yürüdüm.",
     "rate": "-1%"
    },
    {
@@ -157,8 +158,14 @@
   "ON DAKİKA ERKEN KARŞILAŞ"
  ],
  "cevapsiz": {
-  "kesim": 33.216,
-  "kart": 44.302,
+  "kesim": 35.136,
+  "kart": 46.222,
   "tarih": "2026-11-20"
+ },
+ "denetim": {
+  "surum": 1,
+  "sha": "e5f2cf87",
+  "tarih": "2026-11-26",
+  "not": "usta incelemesi: vapurla aynı anda varma şartı eklendi 26 Kas"
  }
 }

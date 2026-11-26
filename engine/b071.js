@@ -402,7 +402,7 @@ export function build(ep, tl) {
   const tm = {
     cd, cd0, end: T('d6>') + 0.1, buldum: T('d3'), proof: T('d3>') + 0.05,
     vapurGos: T('n0:1'), indim: T('n0:5'),
-    geri: T('n0b') - 0.05, alir: T('n0b:3'), bekle: T('n0b:7'), yuru: T('n0b:8') - 0.25,
+    geri: T('n0b') - 0.05, alir: T('n0b:3'), vapurBak: T('n0b:7') - 0.15, varir: T('n0b:9') - 0.1, bekle: T('n0b:13'), yuru: T('n0b:14') - 0.25,
     ev: T('n0c') - 0.05, cikti: T('n0c:5'),
     yol: T('n0c:8') - 0.3, gor: T('n0c:10') - 0.06, hemen: T('n0c:12'),
     vardik: T('n0d:6'), ofis: T('h3') - 0.15, kac: T('h3:2'),
@@ -631,7 +631,8 @@ function iskeleSahne(K, t, S, B) {
   let p;
   if (t < tm.nVar) p = H.yuru(key, t, { t0: tm.geri - 0.4, t1: tm.nVar, x0: X0 - 90, x1: X1, s, poz });
   else if (t < tm.nGit) {   // önden: her akşam beklediği yere (lambanın dibine) bakar; bakınır; omuz silker
-    const look = H.iz([[0, 0.8], [tm.nDon + 0.5, -0.6, 0.35], [tm.nDon + 0.95, 0.85, 0.35], [tm.bekle + 0.4, 0.3, 0.3]], t);
+    // "vapur yanaşırken"de vapura, "o da varır"da Nermin'in her akşam geldiği boş yere bakar (Nermin vapurla aynı anda varır)
+    const look = H.iz([[0, 0.8], [tm.vapurBak, -0.6, 0.35], [tm.varir, 0.85, 0.35], [tm.bekle + 0.4, 0.3, 0.3]], t);
     p = H.kisi(key, { x: X1, s, expr: t < tm.bekle ? MERAK : NGULUS, head: { tilt: look * 4, look: [look, -0.05] }, ...POZ.dur });
     H.omuzSilk(p, t, tm.bekle - 0.05, 0.4);
   } else p = H.yuru(key, t, { t0: tm.nGit, t1: tm.ev + 0.15, x0: X1, x1: X2, s, poz: { expr: NGULUS, head: { tilt: 0, look: [0.6, 0] } } });
