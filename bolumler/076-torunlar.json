@@ -1,0 +1,150 @@
+{
+ "id": "076-torunlar",
+ "num": 76,
+ "sira": 54,
+ "bpm": 120,
+ "slug": "necminin-torunlari",
+ "coverAt": 0,
+ "cevapsizTasarim": true,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#mantık",
+  "#torun",
+  "#ofis"
+ ],
+ "card": [
+  "Üç cümleden yalnızca biri doğru.",
+  "Necmi'nin kaç torunu var?"
+ ],
+ "caption": "Zeka sorusu: Necmi kaç torunu olduğunu üç cümleyle söylüyor ve bunlardan yalnızca birinin doğru olduğunu ekliyor: \"En az on torunum var. Torun sayım ondan az. En az bir torunum var.\"\n\nNecmi'nin kaç torunu var?",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.3,
+    "text": "Necmi Bey, bu şekerleri torunlarınıza götürün. Kaç torununuz var?"
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.35,
+    "text": "Üç cümle söyleyeceğim. Yalnızca biri doğru.",
+    "rate": "-6%"
+   },
+   {
+    "id": "n0b",
+    "who": "necmi",
+    "gap": 0.35,
+    "text": "En az on torunum var. Torun sayım ondan az. En az bir torunum var.",
+    "rate": "-6%"
+   },
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.35,
+    "text": "Bu ne biçim cevap? Necmi'nin kaç torunu var şimdi?",
+    "tts": "Bu ne biçim cevap? Necminin kaç torunu var şimdi?"
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 10.45,
+    "text": "Hiçbir sayıyı aklınızdan atmayın.",
+    "rate": "-6%"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.45,
+    "text": "Buldum! Hiç torunu yok."
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "On ya da fazlası olsa iki cümle doğru olurdu, bir ile dokuz arası olsa yine iki. Yalnız sıfırda tek cümle doğru."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu çok soru soran arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "h1>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "swish",
+   "d1:3-0.12"
+  ],
+  [
+   "pop",
+   "d1:3+0.1"
+  ],
+  [
+   "swish",
+   "n0-0.14"
+  ],
+  [
+   "swish",
+   "n0b-0.14"
+  ],
+  [
+   "knock",
+   "n0b+0.13"
+  ],
+  [
+   "knock",
+   "n0b:5+0.13"
+  ],
+  [
+   "knock",
+   "n0b:9+0.13"
+  ],
+  [
+   "swish",
+   "h1-0.14"
+  ],
+  [
+   "swish",
+   "n1-10.39"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true,
+ "sizinti": [
+  "SIFIR",
+  "HİÇ TORUNU",
+  "TORUNU YOK"
+ ],
+ "cevapsiz": {
+  "kesim": 28.851,
+  "kart": 39.967,
+  "tarih": "2026-11-20"
+ },
+ "denetim": {
+  "surum": 1,
+  "sha": "cfc331cf",
+  "tarih": "2026-11-26",
+  "not": "ikinci cümle 'Torun sayım ondan az' (ama testi); göz denetimi 26 Kas"
+ }
+}
