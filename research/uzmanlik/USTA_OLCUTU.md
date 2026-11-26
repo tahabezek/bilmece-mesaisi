@@ -34,4 +34,15 @@ Her aday için yazılır, yazılamıyorsa aday elenir:
 2. **En güçlü "ama" itirazı** ve neden tutmadığı. Makul bir itiraz bulunuyorsa aday elenir.
 3. **Ustanın tek cümlelik yorumu:** Bu bilmecenin güzelliği nerede?
 
+## Güncelleme (27 Kas 2026, `USTALIK_DEFTERI.md`)
+
+Derin çalışma bu ölçütün üç maddesini düzeltti:
+- **Madde 7 ("sürpriz ve tanınma"):** Ağırlık ters çevrildi. Doğru ahanın işareti rahatlamadır (her ayrıntı yerine oturur); sürpriz yanlış çözümlerin imzasıdır. Sürpriz kancaya aittir, cevaba değil. Cevap şaşırtmaktan çok yerine oturtmalı.
+- **Madde 2 ("kaçınılmazlık"):** Kesinlik hissi gerekli ama yeterli değil; yanlış cevaplar da güçlü kesinlik hissi verir. Ek iki test zorunlu: sahte aha testi ve bilgi iddiası yasağı.
+- **"Zeki yetişkinin ilk cevabı yanlış olmalı":** İkinci bir aha motoru da geçerli: çıkmaz ("akla hiçbir şey gelmiyor"). Dağınık yanlış cevaplar ise tuzağın kurulmadığını gösterir.
+
+Seçimde zorunlu yazılara iki yenisi eklendi:
+4. **Gevşeyen kısıt** (S1–S11) ve son 10 bölümde aynı sınıfın olup olmadığı.
+5. **Protokol tablosu:** her karakter ne biliyor, nasıl öğrendi, her zaman mı böyle davranır.
+
 Yalnızca Türkçe bir kurala dayanan bilmece için ek test: "Gerçek bir konuşmacı öbür biçimi de kullanır mı?" Kullanırsa aday elenir (ek uyumu gibi zorunlu biçimler kalır).
