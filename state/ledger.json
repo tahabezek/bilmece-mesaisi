@@ -761,7 +761,12 @@
       "at": "2026-11-25T23:56:03.648Z",
       "postId": "6b0775e207071a60673ad410",
       "dueAt": "2026-11-26T18:00:00.000Z",
-      "note": "elle (--simdi)"
+      "note": "elle (--simdi)",
+      "yt": {
+        "postId": "6b0784b0b8e2338b85798d38",
+        "status": "scheduled",
+        "dueAt": "2026-11-26T18:00:00.000Z"
+      }
     },
     "2026-11-27T09:30Z": {
       "episode": "060-bilmiyorum",
@@ -783,7 +788,12 @@
       "at": "2026-11-25T23:58:43.824Z",
       "postId": "6b077670b96dd8d351719a23",
       "dueAt": "2026-11-27T18:00:00.000Z",
-      "note": "elle (--simdi)"
+      "note": "elle (--simdi)",
+      "yt": {
+        "postId": "6b0784b1a791bea1b23f4fcf",
+        "status": "scheduled",
+        "dueAt": "2026-11-27T18:00:00.000Z"
+      }
     }
   }
 }
