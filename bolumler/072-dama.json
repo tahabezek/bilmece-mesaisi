@@ -1,7 +1,7 @@
 {
  "id": "072-dama",
  "num": 72,
- "sira": 60,
+ "sira": 61,
  "bpm": 120,
  "slug": "dama",
  "coverAt": 0,
@@ -166,8 +166,8 @@
  },
  "denetim": {
   "surum": 1,
-  "sha": "7e62adbf",
+  "sha": "ae3ee74b",
   "tarih": "2026-11-26",
-  "not": "üretim ajanı + iki tur bağımsız göz; koordinatör şeride baktı 26 Kas"
+  "not": "rozet #61 için yeniden render (26 Kas)"
  }
 }

@@ -1,7 +1,7 @@
 {
  "id": "070-on-bes",
  "num": 70,
- "sira": 58,
+ "sira": 59,
  "bpm": 120,
  "slug": "necminin-oyunu",
  "coverAt": 0,
@@ -199,8 +199,8 @@
  },
  "denetim": {
   "surum": 1,
-  "sha": "a3961673",
+  "sha": "d8e1c0f8",
   "tarih": "2026-11-26",
-  "not": "n0 ve kart düzeltildi (usta incelemesi) 26 Kas"
+  "not": "rozet #59 için yeniden render (26 Kas)"
  }
 }

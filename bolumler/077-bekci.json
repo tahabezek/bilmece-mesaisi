@@ -1,0 +1,207 @@
+{
+ "id": "077-bekci",
+ "num": 77,
+ "sira": 55,
+ "bpm": 120,
+ "slug": "asma-kopru-bekcisi",
+ "coverAt": 0,
+ "cevapsizTasarim": true,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#mantık",
+  "#köprü",
+  "#köy"
+ ],
+ "card": [
+  "Bekçi 3 dk'da bir köprüye bakar.",
+  "Necmi 5 dk'lık yolu nasıl geçti?"
+ ],
+ "caption": "Zeka sorusu: Akşam yediden sonra derin vadinin üstündeki asma köprüden geçmek yasak. Köy tarafındaki yeni bekçi kimseyi tanımıyor; her üç dakikada bir kulübeden çıkıp köprüye bakıyor, hemen içeri giriyor. Köprüde birini görürse soru sormadan geldiği tarafa geri gönderiyor. Köprüyü yürüyerek geçmek beş dakika sürüyor, koşulamıyor.\n\nNecmi mesire tarafında kaldı. O akşam köye nasıl geçti?",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.3,
+    "text": "Dün mesirede saati kaçırdım. Akşam yediden sonra asma köprüden geçmek yasak.",
+    "rate": "+5%"
+   },
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Köy tarafındaki bekçi yeni. Kimseyi tanımıyor, soru sormuyor.",
+    "rate": "+3%",
+    "tts": "Köy tarafındaki bekçi yeni; kimseyi tanımıyor, soru sormuyor."
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.3,
+    "text": "Üç dakikada bir çıkıp bakıyor, hemen giriyor. Köprüde birini görürse geldiği tarafa geri yolluyor.",
+    "tts": "Üç dakikada bir çıkıp bakıyor, hemen giriyor; köprüde birini görürse geldiği tarafa geri yolluyor."
+   },
+   {
+    "id": "n0b",
+    "who": "necmi",
+    "gap": 0.3,
+    "text": "Köprü sallanıyor, koşulmuyor. Karşıya ancak beş dakikada yürünüyor.",
+    "rate": "+5%"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Necmi o akşam köye nasıl geçti?",
+    "rate": "+3%"
+   },
+   {
+    "id": "n1",
+    "who": "defne",
+    "gap": 10.5,
+    "text": "Bekçi nereden geldiğini sormuyor, yalnızca bakıyor."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 1,
+    "text": "Buldum! Bekçi çıkmadan hemen önce geri döndü."
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Bekçi çıktığında Necmi mesireye doğru yürüyordu. Bekçi onu köyden geliyor sandı, köye yolladı."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu her kuralda boşluk bulan arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "pop",
+   "n0-0.04"
+  ],
+  [
+   "knock",
+   "n0:4+0.78"
+  ],
+  [
+   "swish",
+   "h1-0.1"
+  ],
+  [
+   "swish",
+   "d1:3-0.3"
+  ],
+  [
+   "swish",
+   "d1:5+0.1"
+  ],
+  [
+   "knock",
+   "d1:6+0.64"
+  ],
+  [
+   "swish",
+   "d1:7-0.1"
+  ],
+  [
+   "knock",
+   "d1:7+0.45"
+  ],
+  [
+   "swish",
+   "d1:7+0.5"
+  ],
+  [
+   "knock",
+   "d1:12+0.15"
+  ],
+  [
+   "knock",
+   "n0b-0.2"
+  ],
+  [
+   "swish",
+   "n0b:1-0.05"
+  ],
+  [
+   "pop",
+   "n0b:5-0.06"
+  ],
+  [
+   "swish",
+   "h3-0.12"
+  ],
+  [
+   "swish",
+   "n1-10.42"
+  ],
+  [
+   "knock",
+   "n1-9.6"
+  ],
+  [
+   "swish",
+   "n1-9.38"
+  ],
+  [
+   "knock",
+   "n1-8.2"
+  ],
+  [
+   "swish",
+   "n1-7.0"
+  ],
+  [
+   "swish",
+   "n1-3.6"
+  ],
+  [
+   "swish",
+   "n1:3-0.2"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true,
+ "sizinti": [
+  "GERİ DÖN",
+  "DÖNÜP",
+  "ORTASINDA",
+  "YÖNÜNÜ"
+ ],
+ "cevapsiz": {
+  "kesim": 35.676,
+  "kart": 47.502,
+  "tarih": "2026-11-20"
+ },
+ "denetim": {
+  "surum": 1,
+  "sha": "c60e0d5d",
+  "tarih": "2026-11-26",
+  "not": "üretim ajanı + bağımsız göz; koordinatör şeride baktı 26 Kas"
+ }
+}

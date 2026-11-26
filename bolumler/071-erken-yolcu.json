@@ -1,7 +1,7 @@
 {
  "id": "071-erken-yolcu",
  "num": 71,
- "sira": 59,
+ "sira": 60,
  "bpm": 120,
  "slug": "erken-gelen-yolcu",
  "coverAt": 0,
@@ -164,8 +164,8 @@
  },
  "denetim": {
   "surum": 1,
-  "sha": "e5f2cf87",
+  "sha": "8624b13c",
   "tarih": "2026-11-26",
-  "not": "usta incelemesi: vapurla aynı anda varma şartı eklendi 26 Kas"
+  "not": "rozet #60 için yeniden render (26 Kas)"
  }
 }

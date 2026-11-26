@@ -1,7 +1,7 @@
 {
  "id": "067-besi-birden",
  "num": 67,
- "sira": 55,
+ "sira": 57,
  "bpm": 120,
  "slug": "besi-birden-dogum-gunu-misafirleri",
  "coverAt": 0,
@@ -263,8 +263,8 @@
  ],
  "denetim": {
   "surum": 1,
-  "sha": "e2978018",
-  "tarih": "2026-11-25",
-  "not": "bağımsız göz 26 Kas: yayına uygun"
+  "sha": "5ad4520e",
+  "tarih": "2026-11-26",
+  "not": "rozet #57 için yeniden render (26 Kas)"
  }
 }

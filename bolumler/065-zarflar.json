@@ -1,7 +1,7 @@
 {
  "id": "065-zarflar",
  "num": 65,
- "sira": 53,
+ "sira": 56,
  "bpm": 120,
  "slug": "necminin-zarflari",
  "coverAt": 0,
@@ -290,8 +290,8 @@
  ],
  "denetim": {
   "surum": 1,
-  "sha": "d0530cf2",
+  "sha": "01f610a7",
   "tarih": "2026-11-26",
-  "not": "bağımsız göz 26 Kas: yayına uygun"
+  "not": "rozet #56 için yeniden render (26 Kas)"
  }
 }

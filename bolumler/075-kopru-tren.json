@@ -1,0 +1,140 @@
+{
+ "id": "075-kopru-tren",
+ "num": 75,
+ "sira": 53,
+ "bpm": 120,
+ "slug": "koprudeki-tren",
+ "coverAt": 0,
+ "cevapsizTasarim": true,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#mantık",
+  "#tren",
+  "#ofis"
+ ],
+ "card": [
+  "Necmi köprünün 3/8'ünde.",
+  "Tren saatte kaç km gidiyor?"
+ ],
+ "caption": "Zeka sorusu: Necmi demiryolu köprüsünün 3/8'ündeyken arkasından tren geliyor; tren henüz köprüye girmemiş. Geri koşsa köprünün girişine, ileri koşsa çıkışına trenle aynı anda varacak. Necmi saatte 10 km koşuyor.\n\nTren saatte kaç km gidiyor?",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.3,
+    "text": "Dün demiryolu köprüsünden geçiyordum. Köprünün sekizde üçündeyken arkamdan tren sesi geldi.",
+    "rate": "+4%"
+   },
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "O an tren köprüye girmiş miydi?",
+    "rate": "+2%"
+   },
+   {
+    "id": "n0b",
+    "who": "necmi",
+    "gap": 0.3,
+    "text": "Henüz girmemişti, sabit hızla geliyordu. Hemen geri koşsam girişe, hemen ileri koşsam çıkışa trenle aynı anda varırdım.",
+    "rate": "+4%"
+   },
+   {
+    "id": "n0c",
+    "who": "necmi",
+    "gap": 0.3,
+    "text": "Ben saatte on kilometre koşarım.",
+    "rate": "+4%"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Sence tren saatte kaç kilometre gidiyordu?",
+    "rate": "+2%"
+   },
+   {
+    "id": "n1",
+    "who": "defne",
+    "gap": 10.65,
+    "text": "Necmi ileri koşsaydı, tren köprüye girerken nerede olurdu?",
+    "tts": "Necmi ileri koşsaydı, tren köprüye girerken, nerede olurdu?"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Buldum! Saatte kırk kilometre."
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Tren girişe varınca Necmi sekizde altıda olurdu. Kalan sekizde ikiyi koşarken tren bütün köprüyü geçer."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu hesabına güvenen arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "buzz",
+   "n0:9-0.1"
+  ],
+  [
+   "swish",
+   "n0b:6-0.1"
+  ],
+  [
+   "swish",
+   "n0b:10-0.1"
+  ],
+  [
+   "swish",
+   "h3-0.12"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true,
+ "sizinti": [
+  "40",
+  "KIRK",
+  "DÖRT KAT",
+  "SEKİZDE ALTI",
+  "6/8"
+ ],
+ "cevapsiz": {
+  "kesim": 35.506,
+  "kart": 46.882,
+  "tarih": "2026-11-20"
+ },
+ "denetim": {
+  "surum": 1,
+  "sha": "bd89e88b",
+  "tarih": "2026-11-26",
+  "not": "üretim ajanı + iki tur bağımsız göz; koordinatör şeride baktı 26 Kas"
+ }
+}
