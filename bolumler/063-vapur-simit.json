@@ -232,5 +232,7 @@
   "sha": "13490149",
   "tarih": "2026-11-26",
   "not": "düzeltildi; göz denetimi 26 Kas"
- }
+ },
+ "disabled": true,
+ "disabledNote": "ELENDİ 26 Kas (usta ölçütü): yapay kural (vergi + bir geri) ve 2^7 hesabı; hikâye kostüm."
 }

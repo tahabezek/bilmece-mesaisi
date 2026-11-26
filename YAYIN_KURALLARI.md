@@ -26,6 +26,7 @@ Bu dosya, bir bölümün yayına çıkabilmesi için geçmesi gereken her kural�
 - **[G]** Bütün şartlar kesilmiş filmde söz ya da görüntü olarak var; izleyici yalnız videodan çözebilir.
 - **[G]** Söylenen ile görünen çelişmez (kullanıcının en sevmediği hata). Kart, altyazı, açıklama metni ve sahne aynı şeyi anlatır.
 - **[G]** Tek cevaplıdır ya da açık uçluysa bilerek öyledir; ikinci makul cevap yoktur.
+- **[G]** Türkçe dil bilgisi bilmecesi yalnız zorunlu biçime dayanır (ek uyumu gibi, başka seçenek olmayan); konuşanın tercihine (kip, zaman, vurgu, kibarlık sözü) dayanmaz. Test: "Gerçek bir konuşmacı öbür biçimi de kullanır mı?" Evetse bilmece çöker. (26 Kas: 059'da "yemiş/yedi" bu yüzden saçma bulundu.)
 - Seçim aşamasında (`research/uzmanlik/BILMECE_USTALIK.md`): bilinen klasik yok, harf sayma yok, okul ya da fizik bilgisi yok, basit aritmetik yok, arşivle aynı mekanizma yok, zekâ kokar.
 
 ## 3. Ekran ve okunabilirlik

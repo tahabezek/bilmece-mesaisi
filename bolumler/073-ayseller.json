@@ -128,5 +128,7 @@
   "sha": "8f422fbe",
   "tarih": "2026-11-26",
   "not": "üretim ajanı + bağımsız göz; koordinatör şeride baktı 26 Kas"
- }
+ },
+ "disabled": true,
+ "disabledNote": "ELENDİ 26 Kas (usta ölçütü): -ler haneyi bildirir, kişi sayısını değil (\"teyzemler aradı\" tek kişi için de); 059 ile aynı hata."
 }

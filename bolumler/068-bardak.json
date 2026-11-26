@@ -238,5 +238,7 @@
   "sha": "80298262",
   "tarih": "2026-11-26",
   "not": "kart düzeltildi; göz denetimi 26 Kas"
- }
+ },
+ "disabled": true,
+ "disabledNote": "ELENDİ 26 Kas (usta ölçütü): yapay kural (yalnız birine uyan), çözüm doğruluk tablosu; aha yok."
 }
