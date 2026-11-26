@@ -1,0 +1,148 @@
+{
+ "id": "078-karanlik",
+ "num": 78,
+ "sira": 63,
+ "bpm": 120,
+ "slug": "karanlikta-okuyan",
+ "coverAt": 0,
+ "cevapsizTasarim": true,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#yanaldüşünme",
+  "#karanlık",
+  "#aile"
+ ],
+ "card": [
+  "Oda zifiri karanlıktı.",
+  "Annesi okumaya nasıl devam etti?"
+ ],
+ "caption": "Zeka sorusu: Hikmet Bey'in annesi, ilk kez okuduğu yeni bir kitabı ona yüksek sesle okuyordu. Elektrik kesildi; bütün mahalle karardı, gökte ay yoktu, perdeler kapalıydı. Telefonların şarjı bitmişti, evde mum yoktu. Oda zifiri karanlıktı.\n\nAnnesi sayfaları çevirerek, kitapta yazanı kelimesi kelimesine okumaya devam etti. Bunu nasıl yaptı?",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Dün akşam annem, ilk kez okuduğu bir kitabı bana okuyordu.",
+    "rate": "+10%"
+   },
+   {
+    "id": "h1b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Birden elektrik kesildi. Bütün mahalle karardı. Ay yoktu, perdeler kapalıydı.",
+    "rate": "+10%"
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.3,
+    "text": "Mum yok muydu?"
+   },
+   {
+    "id": "h2",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Mum yoktu, telefonların şarjı bitmişti. Odanın içi zifiri karanlıktı.",
+    "rate": "+10%"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Annem ise sayfaları çevirerek, kitapta yazanı kelimesi kelimesine okumaya devam etti.",
+    "rate": "+10%"
+   },
+   {
+    "id": "s1",
+    "who": "defne",
+    "gap": 0.32,
+    "text": "“Gemi yavaşça limandan ayrıldı.”",
+    "tts": "Gemi yavaşça limandan ayrıldı.",
+    "rate": "-8%",
+    "pitch": "-16Hz"
+   },
+   {
+    "id": "n1",
+    "who": "defne",
+    "gap": 10.45,
+    "text": "Hikmet Bey, o kitabı bir de elinize alın.",
+    "rate": "+2%"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.9,
+    "text": "Buldum! Anneniz görme engelli, kitap kabartma yazıyla basılmış."
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Parmaklarıyla okuyor. Onun için ışık hiç gerekmiyor."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu her şeyi gözüyle çözen arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "s1>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "knock",
+   "h1b:2-0.08"
+  ],
+  [
+   "swish",
+   "h3:3-0.1"
+  ],
+  [
+   "swish",
+   "h3:9-0.12"
+  ],
+  [
+   "swish",
+   "s1>+0.38"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true,
+ "sizinti": [
+  "GÖRME ENGEL",
+  "KABARTMA",
+  "BRAILLE",
+  "KÖR",
+  "PARMAKLARIYLA"
+ ],
+ "cevapsiz": {
+  "kesim": 35.334,
+  "kart": 45.68,
+  "tarih": "2026-11-20"
+ },
+ "denetim": {
+  "surum": 1,
+  "sha": "567d770b",
+  "tarih": "2026-11-26",
+  "not": "üretim ajanı + bağımsız göz 26 Kas"
+ }
+}

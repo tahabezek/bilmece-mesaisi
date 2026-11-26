@@ -1,0 +1,477 @@
+{
+ "h1": {
+  "key": "f8a05997c32c",
+  "trimmed": "f8a05997c32c",
+  "wkey": "f8a05997c32c",
+  "heard": "Dün akşam annem ilk kez okuduğu bir kitabı bana okuyordu.",
+  "words": [
+   {
+    "w": "Dün",
+    "t0": 0.0,
+    "t1": 0.22
+   },
+   {
+    "w": "akşam",
+    "t0": 0.22,
+    "t1": 0.6
+   },
+   {
+    "w": "annem,",
+    "t0": 0.6,
+    "t1": 1.04
+   },
+   {
+    "w": "ilk",
+    "t0": 1.04,
+    "t1": 1.29
+   },
+   {
+    "w": "kez",
+    "t0": 1.29,
+    "t1": 1.54
+   },
+   {
+    "w": "okuduğu",
+    "t0": 1.54,
+    "t1": 1.92
+   },
+   {
+    "w": "bir",
+    "t0": 1.92,
+    "t1": 1.98
+   },
+   {
+    "w": "kitabı",
+    "t0": 1.98,
+    "t1": 2.42
+   },
+   {
+    "w": "bana",
+    "t0": 2.42,
+    "t1": 2.56
+   },
+   {
+    "w": "okuyordu.",
+    "t0": 2.56,
+    "t1": 3.04
+   }
+  ],
+  "dur": 3.21
+ },
+ "h1b": {
+  "key": "c4cb5bac869f",
+  "trimmed": "c4cb5bac869f",
+  "wkey": "c4cb5bac869f",
+  "heard": "Birden elektrik kesildi. Bütün mahalle karardı. Ay yoktu, perdeler kapalıydı.",
+  "words": [
+   {
+    "w": "Birden",
+    "t0": 0.0,
+    "t1": 0.44
+   },
+   {
+    "w": "elektrik",
+    "t0": 0.44,
+    "t1": 0.82
+   },
+   {
+    "w": "kesildi.",
+    "t0": 0.82,
+    "t1": 1.42
+   },
+   {
+    "w": "Bütün",
+    "t0": 1.66,
+    "t1": 1.94
+   },
+   {
+    "w": "mahalle",
+    "t0": 1.94,
+    "t1": 2.28
+   },
+   {
+    "w": "karardı.",
+    "t0": 2.28,
+    "t1": 2.74
+   },
+   {
+    "w": "Ay",
+    "t0": 2.74,
+    "t1": 3.3
+   },
+   {
+    "w": "yoktu,",
+    "t0": 3.3,
+    "t1": 3.64
+   },
+   {
+    "w": "perdeler",
+    "t0": 3.86,
+    "t1": 4.28
+   },
+   {
+    "w": "kapalıydı.",
+    "t0": 4.28,
+    "t1": 4.88
+   }
+  ],
+  "dur": 4.946
+ },
+ "d1": {
+  "key": "732563d2186e",
+  "trimmed": "732563d2186e",
+  "wkey": "732563d2186e",
+  "heard": "Mum yok muydu?",
+  "words": [
+   {
+    "w": "Mum",
+    "t0": 0.0,
+    "t1": 0.2
+   },
+   {
+    "w": "yok",
+    "t0": 0.2,
+    "t1": 0.4
+   },
+   {
+    "w": "muydu?",
+    "t0": 0.4,
+    "t1": 0.78
+   }
+  ],
+  "dur": 0.91
+ },
+ "h2": {
+  "key": "360d97019e70",
+  "trimmed": "360d97019e70",
+  "wkey": "360d97019e70",
+  "heard": "Mun yoktu, telefonların şarjı bitmişti. Odanın içi zifiri karanlıktı.",
+  "words": [
+   {
+    "w": "Mum",
+    "t0": 0.0,
+    "t1": 0.22
+   },
+   {
+    "w": "yoktu,",
+    "t0": 0.22,
+    "t1": 0.62
+   },
+   {
+    "w": "telefonların",
+    "t0": 0.88,
+    "t1": 1.4
+   },
+   {
+    "w": "şarjı",
+    "t0": 1.4,
+    "t1": 1.84
+   },
+   {
+    "w": "bitmişti.",
+    "t0": 1.84,
+    "t1": 2.32
+   },
+   {
+    "w": "Odanın",
+    "t0": 2.6,
+    "t1": 3.0
+   },
+   {
+    "w": "içi",
+    "t0": 3.0,
+    "t1": 3.24
+   },
+   {
+    "w": "zifiri",
+    "t0": 3.24,
+    "t1": 3.52
+   },
+   {
+    "w": "karanlıktı.",
+    "t0": 3.52,
+    "t1": 4.12
+   }
+  ],
+  "dur": 4.228
+ },
+ "h3": {
+  "key": "e261b634b700",
+  "trimmed": "e261b634b700",
+  "wkey": "e261b634b700",
+  "heard": "Annem ise sayfaları çevirerek kitapta yazanı kelimesi kelimesine okumaya devam etti.",
+  "words": [
+   {
+    "w": "Annem",
+    "t0": 0.0,
+    "t1": 0.4
+   },
+   {
+    "w": "ise",
+    "t0": 0.4,
+    "t1": 0.56
+   },
+   {
+    "w": "sayfaları",
+    "t0": 0.56,
+    "t1": 1.12
+   },
+   {
+    "w": "çevirerek,",
+    "t0": 1.12,
+    "t1": 1.7
+   },
+   {
+    "w": "kitapta",
+    "t0": 1.7,
+    "t1": 2.28
+   },
+   {
+    "w": "yazanı",
+    "t0": 2.28,
+    "t1": 2.58
+   },
+   {
+    "w": "kelimesi",
+    "t0": 2.58,
+    "t1": 3.06
+   },
+   {
+    "w": "kelimesine",
+    "t0": 3.06,
+    "t1": 3.56
+   },
+   {
+    "w": "okumaya",
+    "t0": 3.56,
+    "t1": 3.96
+   },
+   {
+    "w": "devam",
+    "t0": 3.96,
+    "t1": 4.16
+   },
+   {
+    "w": "etti.",
+    "t0": 4.16,
+    "t1": 4.46
+   }
+  ],
+  "dur": 4.67
+ },
+ "s1": {
+  "key": "175181fb9359",
+  "trimmed": "175181fb9359",
+  "wkey": "175181fb9359",
+  "heard": "Gemi yavaşça limandan ayrıldı.",
+  "words": [
+   {
+    "w": "Gemi",
+    "t0": 0.0,
+    "t1": 0.3
+   },
+   {
+    "w": "yavaşça",
+    "t0": 0.3,
+    "t1": 0.84
+   },
+   {
+    "w": "limandan",
+    "t0": 0.84,
+    "t1": 1.3
+   },
+   {
+    "w": "ayrıldı.",
+    "t0": 1.3,
+    "t1": 1.86
+   }
+  ],
+  "dur": 2.06
+ },
+ "n1": {
+  "key": "5b29c6bc7fd7",
+  "trimmed": "5b29c6bc7fd7",
+  "wkey": "5b29c6bc7fd7",
+  "heard": "Hikmet bey o kitabı bir de elinize alın.",
+  "words": [
+   {
+    "w": "Hikmet",
+    "t0": 0.0,
+    "t1": 0.36
+   },
+   {
+    "w": "Bey,",
+    "t0": 0.36,
+    "t1": 0.58
+   },
+   {
+    "w": "o",
+    "t0": 0.58,
+    "t1": 0.8
+   },
+   {
+    "w": "kitabı",
+    "t0": 0.8,
+    "t1": 1.18
+   },
+   {
+    "w": "bir",
+    "t0": 1.18,
+    "t1": 1.31
+   },
+   {
+    "w": "de",
+    "t0": 1.31,
+    "t1": 1.44
+   },
+   {
+    "w": "elinize",
+    "t0": 1.44,
+    "t1": 1.86
+   },
+   {
+    "w": "alın.",
+    "t0": 1.86,
+    "t1": 2.12
+   }
+  ],
+  "dur": 2.26
+ },
+ "d3": {
+  "key": "56a20f06301f",
+  "trimmed": "56a20f06301f",
+  "wkey": "56a20f06301f",
+  "heard": "Buldum. Anneniz görmeyen geldi. Kitap kabartma yazıyla basılmış.",
+  "words": [
+   {
+    "w": "Buldum!",
+    "t0": 0.0,
+    "t1": 0.54
+   },
+   {
+    "w": "Anneniz",
+    "t0": 0.68,
+    "t1": 1.12
+   },
+   {
+    "w": "görme",
+    "t0": 1.12,
+    "t1": 1.52
+   },
+   {
+    "w": "engelli,",
+    "t0": 1.52,
+    "t1": 2.04
+   },
+   {
+    "w": "kitap",
+    "t0": 2.04,
+    "t1": 2.3
+   },
+   {
+    "w": "kabartma",
+    "t0": 2.3,
+    "t1": 2.74
+   },
+   {
+    "w": "yazıyla",
+    "t0": 2.74,
+    "t1": 3.04
+   },
+   {
+    "w": "basılmış.",
+    "t0": 3.04,
+    "t1": 3.38
+   }
+  ],
+  "dur": 3.638
+ },
+ "d4": {
+  "key": "419a72090465",
+  "trimmed": "419a72090465",
+  "wkey": "419a72090465",
+  "heard": "Harmaklarıyla okuyor. Onun için ışık hiç gerekmiyor.",
+  "words": [
+   {
+    "w": "Parmaklarıyla",
+    "t0": 0.0,
+    "t1": 0.64
+   },
+   {
+    "w": "okuyor.",
+    "t0": 0.64,
+    "t1": 1.08
+   },
+   {
+    "w": "Onun",
+    "t0": 1.2,
+    "t1": 1.52
+   },
+   {
+    "w": "için",
+    "t0": 1.52,
+    "t1": 1.78
+   },
+   {
+    "w": "ışık",
+    "t0": 1.78,
+    "t1": 2.16
+   },
+   {
+    "w": "hiç",
+    "t0": 2.16,
+    "t1": 2.3
+   },
+   {
+    "w": "gerekmiyor.",
+    "t0": 2.3,
+    "t1": 2.74
+   }
+  ],
+  "dur": 2.948
+ },
+ "d6": {
+  "key": "9e5ffc55e6b9",
+  "trimmed": "9e5ffc55e6b9",
+  "wkey": "9e5ffc55e6b9",
+  "heard": "Bunu her şeyi gözüyle çözen arkadaşına gönder.",
+  "words": [
+   {
+    "w": "Bunu",
+    "t0": 0.0,
+    "t1": 0.2
+   },
+   {
+    "w": "her",
+    "t0": 0.2,
+    "t1": 0.44
+   },
+   {
+    "w": "şeyi",
+    "t0": 0.44,
+    "t1": 0.66
+   },
+   {
+    "w": "gözüyle",
+    "t0": 0.66,
+    "t1": 1.1
+   },
+   {
+    "w": "çözen",
+    "t0": 1.1,
+    "t1": 1.44
+   },
+   {
+    "w": "arkadaşına",
+    "t0": 1.44,
+    "t1": 1.98
+   },
+   {
+    "w": "gönder.",
+    "t0": 1.98,
+    "t1": 2.32
+   }
+  ],
+  "dur": 2.49
+ }
+}
