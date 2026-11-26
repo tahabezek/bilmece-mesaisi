@@ -1,0 +1,140 @@
+{
+ "id": "082-uc-hoca",
+ "num": 82,
+ "sira": 67,
+ "bpm": 120,
+ "slug": "ak-kara-sari-hoca",
+ "coverAt": 0,
+ "cevapsizTasarim": true,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#mantık",
+  "#öğretmen",
+  "#lokanta"
+ ],
+ "card": [
+  "Kimsenin saçı soyadına uymuyor.",
+  "Sarı Hoca'nın saçı ne renk?"
+ ],
+ "caption": "Zeka sorusu: Ak Hoca, Kara Hoca ve Sarı Hoca adlı üç öğretmen lokantada yemek yiyor. Birinin saçı ak, birinin kara, birinin sarı. Kara saçlı olan, Ak Hoca'ya dönüp \"Ne tuhaf, hiçbirimizin saçı soyadına uymuyor\" dedi. Ak Hoca da \"Doğru\" dedi.\n\nSarı Hoca'nın saçı ne renk?",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Dün öğlen üç eski hocamla yemek yedim. Soyadları Ak, Kara ve Sarı.",
+    "rate": "+8%"
+   },
+   {
+    "id": "h1b",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Birinin saçı ak, birinin kara, birinin sarı.",
+    "rate": "+8%"
+   },
+   {
+    "id": "h2",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Kara saçlı olan, Ak Hoca'ya döndü.",
+    "tts": "Kara saçlı olan, Ak Hocaya döndü.",
+    "rate": "+8%"
+   },
+   {
+    "id": "k1",
+    "who": "genc",
+    "gap": 0.3,
+    "text": "Ne tuhaf, hiçbirimizin saçı soyadına uymuyor.",
+    "rate": "+0%",
+    "pitch": "-4Hz"
+   },
+   {
+    "id": "a1",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Doğru.",
+    "rate": "-8%",
+    "pitch": "-16Hz"
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.7,
+    "text": "Öyleyse Sarı Hoca'nın saçı ne renk?",
+    "tts": "Öyleyse Sarı Hocanın saçı ne renk?"
+   },
+   {
+    "id": "n1",
+    "who": "defne",
+    "gap": 10.45,
+    "text": "Kara saçlı olan kiminle konuşuyordu? Önce onu düşünün.",
+    "rate": "+4%"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.9,
+    "text": "Buldum! Kara."
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Kara saçlı olan Ak Hoca'yla konuşuyor, demek ki Ak Hoca değil. Saçı soyadına uymuyor, demek ki Kara Hoca da değil.",
+    "tts": "Kara saçlı olan Ak Hocayla konuşuyor, demek ki Ak Hoca değil. Saçı soyadına uymuyor, demek ki Kara Hoca da değil."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu öğretmen arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "n0>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "swish",
+   "h2:3-0.12"
+  ],
+  [
+   "swish",
+   "a1-0.18"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true,
+ "sizinti": [
+  "SARI HOCA'NIN SAÇI KARA",
+  "KARA SAÇLI SARI"
+ ],
+ "cevapsiz": {
+  "kesim": 31.726,
+  "kart": 42.052,
+  "tarih": "2026-11-20"
+ },
+ "denetim": {
+  "surum": 1,
+  "sha": "987ebf57",
+  "tarih": "2026-11-27",
+  "not": "üretim ajanı + bağımsız göz; koordinatör şeride baktı 27 Kas"
+ }
+}
