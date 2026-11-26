@@ -14,6 +14,16 @@ Kullanıcı: "Biraz da sen araştır, dünyanın en zor ve en güzel bilmeceleri
 | 082 Ak, Kara, Sarı Hoca | 36 | Yok; kısa format. Görüntüde saçlar ve adlar gizli | aynı |
 | 083 Taş-kâğıt-makas çetelesi | 37 | "Hiç berabere kalmadılar" → "Hiçbir elde aynı şeyi atmadılar" | aynı |
 
+## Üretimde (084–086, ustalık defterinin ilk turu)
+
+| Bölüm | Avukat puanı | Senaryo |
+|---|---|---|
+| 084 Çay ocağı nereye? | 41 | `hikayeler/bolum_084-086.md` |
+| 086 Boş servis | 32 (düzeltilmiş) | aynı |
+| 085 Eğri terazi | 38 | aynı |
+
+Havuz ve eleme: `aday_havuzu_2026-11-27.md`.
+
 ## Listede bekleyenler
 
 | Aday | Puan | Neden bekliyor | Düzeltilirse |
@@ -26,6 +36,8 @@ Kullanıcı: "Biraz da sen araştır, dünyanın en zor ve en güzel bilmeceleri
 | Çevre yolunda benzin | 28 | Cevap "evet", yorumlar tahminle dolar; programcılar "Gas Station" sorusu olarak tanır | Ada yolu, çekici şartı |
 | Kasenin son durağı / Uğur böceği | — | Derin ama "eşit" kalıbı; kanıt videoda zor; 3Blue1Brown'da 2026'da viral | Biri seçilir, uzak bir haftaya |
 | Kerem'in parası (jüri) | — | "Eşit" kalıbı; Türkçede tek akademik kaynakta var | — |
+| Gözlüklüler (R4) | 29 | Soru "kaç kişi gözlüksüz?" olmalı; sesler kapı arkasından, adsız | `aday_havuzu_2026-11-27_avukat.md` |
+| "[zil] mü geldi?" (Y2) | — | 058 ve 064 ile aynı kısıt; zorluk görüntüsü düşük | 064 ten en az 20 bölüm sonra |
 | Dedenin tespihi, Gece otobüsü, Altı para beş para, On ikiyi aşan zar, Boş defter, Hediye merdiveni | — | Kol raporlarında geçti; usta denetimine henüz girmedi | Sıradaki turda denetlenir |
 
 ## Çıkarılanlar
