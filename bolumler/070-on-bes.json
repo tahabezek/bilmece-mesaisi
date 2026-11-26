@@ -1,0 +1,206 @@
+{
+ "id": "070-on-bes",
+ "num": 70,
+ "sira": 58,
+ "bpm": 120,
+ "slug": "necminin-oyunu",
+ "coverAt": 0,
+ "cevapsizTasarim": true,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#oyun",
+  "#mantık",
+  "#ofis"
+ ],
+ "card": [
+  "Üç taşı 15 eden kazanır.",
+  "Bu aslında hangi oyun?"
+ ],
+ "caption": "Zeka sorusu: Masada 1'den 9'a dokuz taş var. İki kişi sırayla birer taş alıyor; elindeki herhangi üç taşın toplamı 15 olan kazanıyor. Yüz kez oynadılar, hepsi berabere bitti.\n\nNecmi: \"Bunu çocukken hep oynardınız, yalnız adı başkaydı.\" Bu aslında hangi oyun?",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Necmi yeni bir oyun getirdi. Birden dokuza, dokuz taş."
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.25,
+    "text": "Sırayla birer taş alıyoruz. Elindeki herhangi üç taşı on beş eden kazanır.",
+    "rate": "-4%"
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.25,
+    "text": "Yüz kez oynadık. Hepsi berabere kaldı."
+   },
+   {
+    "id": "n0b",
+    "who": "necmi",
+    "gap": 0.25,
+    "text": "Bunu çocukken hep oynardınız. Yalnız adı başkaydı.",
+    "rate": "-4%"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.25,
+    "text": "Bu aslında hangi oyun?"
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 10.45,
+    "text": "On beş eden üçlüleri sayın. Sekiz tane çıkacak.",
+    "rate": "-4%"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.6,
+    "text": "Buldum! XOX.",
+    "tts": "Buldum! İks o iks."
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Dokuz taşı sihirli kareye dizin. On beş eden her üçlü bir sıra olur."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu XOX'ta hiç yenilmeyen arkadaşına gönder.",
+    "tts": "Bunu iks o ikste hiç yenilmeyen arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "swish",
+   "h1:6-0.12"
+  ],
+  [
+   "knock",
+   "@0.85"
+  ],
+  [
+   "pop",
+   "h1:8-0.02"
+  ],
+  [
+   "swish",
+   "n0-0.14"
+  ],
+  [
+   "knock",
+   "n0:2+0.80"
+  ],
+  [
+   "pop",
+   "n0:4+0.78"
+  ],
+  [
+   "zip",
+   [
+    "d1-0.02",
+    "d1:4-0.2"
+   ]
+  ],
+  [
+   "swish",
+   "d1:4-0.1"
+  ],
+  [
+   "swish",
+   "n0b-0.14"
+  ],
+  [
+   "swish",
+   "h3-0.14"
+  ],
+  [
+   "swish",
+   "n1-10.45"
+  ],
+  [
+   "knock",
+   "n1-9.0"
+  ],
+  [
+   "knock",
+   "n1-7.68"
+  ],
+  [
+   "knock",
+   "n1-6.36"
+  ],
+  [
+   "knock",
+   "n1-5.04"
+  ],
+  [
+   "knock",
+   "n1-3.72"
+  ],
+  [
+   "knock",
+   "n1-2.40"
+  ],
+  [
+   "swish",
+   "d3:1-0.14"
+  ],
+  [
+   "pop",
+   "d6+0.5"
+  ],
+  [
+   "knock",
+   "n0:10+0.83"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true,
+ "sizinti": [
+  "XOX",
+  "X O X",
+  "İKS O İKS",
+  "SİHİRLİ KARE",
+  "TİK TAK"
+ ],
+ "cevapsiz": {
+  "kesim": 31.85,
+  "kart": 41.266,
+  "tarih": "2026-11-20"
+ },
+ "denetim": {
+  "surum": 1,
+  "sha": "b119c9dc",
+  "tarih": "2026-11-26",
+  "not": "üretim ajanı + bağımsız göz; koordinatör şeride baktı 26 Kas"
+ }
+}

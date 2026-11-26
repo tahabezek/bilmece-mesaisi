@@ -1,0 +1,211 @@
+{
+ "id": "074-bilek",
+ "num": 74,
+ "sira": 62,
+ "bpm": 120,
+ "slug": "bilek-guresi",
+ "coverAt": 0,
+ "cevapsizTasarim": true,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#mantık",
+  "#bilekgüreşi",
+  "#ofis"
+ ],
+ "card": [
+  "Necmi, şampiyon Hikmet'i yendi.",
+  "Hikmet blöf mü yapıyor?"
+ ],
+ "caption": "Zeka sorusu: Bilek güreşi turnuvasında sekiz kişi herkesle bir kez güreşti, berabere yok. En çok maçı Hikmet Bey kazandı. Necmi \"Sizi yendim, bu kupa bana yakışır\" diye kupayı istiyor.\n\nHikmet Bey cetvele bakmadan cevap veriyor: \"Benim yendiğim öyle biri var ki o da seni yenmiş.\" Blöf mü yapıyor, yoksa bunu kesin bilebilir mi?",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.3,
+    "text": "Sizi yendim! Bu kupa bana yakışır.",
+    "rate": "-4%"
+   },
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.25,
+    "text": "Sekiz kişiydik. Herkes birbiriyle bir kez güreşti. Berabere yok. En çok maçı ben kazandım.",
+    "rate": "+2%"
+   },
+   {
+    "id": "h2",
+    "who": "hikmet",
+    "gap": 0.25,
+    "text": "Necmi, benim yendiğim öyle biri var ki o da seni yenmiş.",
+    "rate": "+2%"
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.25,
+    "text": "Cetvele bakmadınız bile. Bu bir blöf mü?"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.25,
+    "text": "Kim olduğunu bilmiyorum ama var.",
+    "rate": "+0%",
+    "tts": "Kim olduğunu bilmiyorum, ama var."
+   },
+   {
+    "id": "n1",
+    "who": "defne",
+    "gap": 10.45,
+    "text": "Necmi'nin kazandığı maçları bir sayalım.",
+    "tts": "Necminin kazandığı maçları bir sayalım."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 1.75,
+    "text": "Buldum! Hikmet Bey emin olabilir."
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Necmi, Hikmet Bey'in yendiği herkesi yenseydi, ondan daha çok maç kazanırdı.",
+    "tts": "Necmi, Hikmet Beyin yendiği herkesi yenseydi, ondan daha çok maç kazanırdı."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu kupayı hak ettiğini düşünen arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "knock",
+   "n0:1-0.15"
+  ],
+  [
+   "pop",
+   "n0:3-0.06"
+  ],
+  [
+   "swish",
+   "n0:3+0.6"
+  ],
+  [
+   "swish",
+   "h1-0.14"
+  ],
+  [
+   "swish",
+   "h1:13-0.2"
+  ],
+  [
+   "knock",
+   "h2+0.15"
+  ],
+  [
+   "swish",
+   "d1-0.14"
+  ],
+  [
+   "pop",
+   "d1-0.02"
+  ],
+  [
+   "swish",
+   "h3-0.14"
+  ],
+  [
+   "swish",
+   "n1-10.45"
+  ],
+  [
+   "pop",
+   "n1-9.45"
+  ],
+  [
+   "swish",
+   "n1-8.95"
+  ],
+  [
+   "swish",
+   "n1-7.75"
+  ],
+  [
+   "swish",
+   "n1-6.15"
+  ],
+  [
+   "swish",
+   "n1-4.55"
+  ],
+  [
+   "swish",
+   "n1-2.95"
+  ],
+  [
+   "swish",
+   "n1-1.45"
+  ],
+  [
+   "swish",
+   "n1-0.14"
+  ],
+  [
+   "knock",
+   "n1:4-0.06"
+  ],
+  [
+   "knock",
+   "n1:4+0.18"
+  ],
+  [
+   "swish",
+   "d3:1-0.14"
+  ],
+  [
+   "pop",
+   "d6+0.5"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true,
+ "sizinti": [
+  "EMİN OLABİLİR",
+  "BLÖF DEĞİL",
+  "DAHA ÇOK MAÇ KAZANIRDI"
+ ],
+ "cevapsiz": {
+  "kesim": 31.58,
+  "kart": 41.538,
+  "tarih": "2026-11-20"
+ },
+ "denetim": {
+  "surum": 1,
+  "sha": "3ae8c9ed",
+  "tarih": "2026-11-26",
+  "not": "üretim ajanı + iki tur bağımsız göz; koordinatör şeride baktı 26 Kas"
+ }
+}

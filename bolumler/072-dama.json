@@ -1,0 +1,173 @@
+{
+ "id": "072-dama",
+ "num": 72,
+ "sira": 60,
+ "bpm": 120,
+ "slug": "dama",
+ "coverAt": 0,
+ "cevapsizTasarim": true,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#dama",
+  "#mantık",
+  "#ofis"
+ ],
+ "card": [
+  "Üst üste 2 galibiyet şart.",
+  "Rakip 2 kez usta mı, acemi mi?"
+ ],
+ "caption": "Zeka sorusu: Defne üç oyun dama oynayacak, rakibi her oyunda değişecek. Hikmet Bey usta, Necmi acemi. Üst üste iki oyun kazanırsa bir hafta çay bedava.\n\nDefne hangi sırayı seçmeli: Hikmet–Necmi–Hikmet mi, Necmi–Hikmet–Necmi mi?",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Defne, üç oyunluk bir dama maçı yapacaksın. Üst üste iki oyun kazanırsan bir hafta çay benden.",
+    "rate": "+2%"
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.3,
+    "text": "Rakiplerin sırayla Hikmet Bey ve ben olacağız.",
+    "rate": "+0%"
+   },
+   {
+    "id": "h2",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Ben ustayım, Necmi acemi. Sırayı sen seç: ben, Necmi, ben mi; yoksa Necmi, ben, Necmi mi?",
+    "rate": "+2%"
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.3,
+    "text": "Acemiyle iki kez oynamak daha kolay gibi."
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 10.4,
+    "text": "Mutlaka kazanman gereken oyun hangisi?",
+    "rate": "-2%"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.3,
+    "text": "Buldum! Hikmet Bey, Necmi, Hikmet Bey."
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Ortadaki oyunu kazanmadan üst üste iki galibiyet olmaz. Kolay rakip ortada olmalı."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu her oyunda hesap yapan arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "d2>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "swish",
+   "h1:7-0.14"
+  ],
+  [
+   "knock",
+   "h1:9+0.2"
+  ],
+  [
+   "knock",
+   "h1:14+0.02"
+  ],
+  [
+   "swish",
+   "n0-0.14"
+  ],
+  [
+   "pop",
+   "h2:1-0.06"
+  ],
+  [
+   "pop",
+   "h2:3-0.06"
+  ],
+  [
+   "swish",
+   "h2:7-0.14"
+  ],
+  [
+   "swish",
+   "h2:7-0.02"
+  ],
+  [
+   "knock",
+   "h2:7+1.66"
+  ],
+  [
+   "swish",
+   "h2:11-0.01"
+  ],
+  [
+   "knock",
+   "h2:11+1.67"
+  ],
+  [
+   "swish",
+   "d2-0.14"
+  ],
+  [
+   "swish",
+   "n1-10.35"
+  ],
+  [
+   "swish",
+   "d3:1-0.14"
+  ],
+  [
+   "pop",
+   "d6+0.5"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true,
+ "sizinti": [
+  "ORTADAKİ",
+  "KOLAY RAKİP ORTADA"
+ ],
+ "cevapsiz": {
+  "kesim": 31.846,
+  "kart": 42.952,
+  "tarih": "2026-11-20"
+ },
+ "denetim": {
+  "surum": 1,
+  "sha": "7e62adbf",
+  "tarih": "2026-11-26",
+  "not": "üretim ajanı + iki tur bağımsız göz; koordinatör şeride baktı 26 Kas"
+ }
+}

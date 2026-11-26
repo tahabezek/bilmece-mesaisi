@@ -1,0 +1,170 @@
+{
+ "id": "071-erken-yolcu",
+ "num": 71,
+ "sira": 59,
+ "bpm": 120,
+ "slug": "erken-gelen-yolcu",
+ "coverAt": 0,
+ "cevapsizTasarim": true,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#mantık",
+  "#vapur",
+  "#ofis"
+ ],
+ "card": [
+  "Necmi 1 saat erken indi, yürüdü.",
+  "20 dk erken vardı. Kaç dk yürüdü?"
+ ],
+ "caption": "Zeka sorusu: Necmi'yi eşi her akşam iskeleden arabayla alıyor. Dün Necmi bir saat erken indi ve eve doğru yürüdü. Eşi evden her zamanki saatte çıktı, her zamanki hızla sürdü; yolda Necmi'yi görünce hemen alıp döndü. Eve her zamankinden 20 dakika erken vardılar.\n\nNecmi kaç dakika yürüdü?",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.3,
+    "text": "Dün vapurdan bir saat erken indim.",
+    "rate": "-1%"
+   },
+   {
+    "id": "n0b",
+    "who": "necmi",
+    "gap": 0.35,
+    "text": "Eşim Nermin beni her akşam iskeleden alır. Beklemedim, eve doğru yürüdüm.",
+    "rate": "-1%"
+   },
+   {
+    "id": "n0c",
+    "who": "necmi",
+    "gap": 0.35,
+    "text": "Nermin evden her zamanki saatte çıktı, her zamanki hızla sürdü. Beni görünce hemen döndü.",
+    "rate": "-1%"
+   },
+   {
+    "id": "n0d",
+    "who": "necmi",
+    "gap": 0.35,
+    "text": "Eve her zamankinden yirmi dakika erken vardık.",
+    "rate": "-1%"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.35,
+    "text": "Defne, Necmi kaç dakika yürüdü?"
+   },
+   {
+    "id": "n1",
+    "who": "defne",
+    "gap": 10.6,
+    "text": "Necmi'ye değil, arabaya bakın.",
+    "tts": "Necmiye değil, arabaya bakın."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 1.3,
+    "text": "Buldum! Elli dakika."
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Araba yirmi dakika kazandı: gidişte on, dönüşte on. Necmi'yle on dakika erken karşılaştı.",
+    "tts": "Araba yirmi dakika kazandı: gidişte on, dönüşte on. Necmiyle on dakika erken karşılaştı."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu her akşam servis bekleyen arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "swish",
+   "n0b-0.2"
+  ],
+  [
+   "pop",
+   "n0b+0.17"
+  ],
+  [
+   "knock",
+   "n0c+0.78"
+  ],
+  [
+   "knock",
+   "n0c+1.72"
+  ],
+  [
+   "swish",
+   "n0c:8-0.32"
+  ],
+  [
+   "knock",
+   "n0c:10+1.43"
+  ],
+  [
+   "swish",
+   "n0c:10+1.75"
+  ],
+  [
+   "pop",
+   "n0d:6+0.15"
+  ],
+  [
+   "swish",
+   "h3-0.12"
+  ],
+  [
+   "swish",
+   "n1-10.13"
+  ],
+  [
+   "swish",
+   "n1-6.9"
+  ],
+  [
+   "swish",
+   "n1:2-0.2"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true,
+ "sizinti": [
+  "50",
+  "ELLİ",
+  "ON DAKİKA ERKEN KARŞILAŞ"
+ ],
+ "cevapsiz": {
+  "kesim": 33.216,
+  "kart": 44.302,
+  "tarih": "2026-11-20"
+ },
+ "denetim": {
+  "surum": 1,
+  "sha": "55258f40",
+  "tarih": "2026-11-26",
+  "not": "üretim ajanı + bağımsız göz; koordinatör şeride baktı 26 Kas"
+ }
+}

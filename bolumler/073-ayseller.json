@@ -1,0 +1,132 @@
+{
+ "id": "073-ayseller",
+ "num": 73,
+ "sira": 61,
+ "bpm": 120,
+ "slug": "ayseller",
+ "coverAt": 0,
+ "cevapsizTasarim": true,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#türkçe",
+  "#misafir",
+  "#sofra"
+ ],
+ "card": [
+  "Ayseller, Necmiler, Kerem geldi.",
+  "Masaya en az kaç tabak lazım?"
+ ],
+ "caption": "Zeka sorusu: Hikmet Bey'in üç misafiri var: Aysel, Necmi ve Kerem. Hikmet Bey ve Defne de sofraya oturacak; Defne beş tabak koydu. Kapıcı diyafondan haber veriyor: \"Önce Ayseller geldi. Arkalarından Necmiler. En son Kerem Bey, tek başına.\"\n\nMasaya en az kaç tabak lazım?",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Akşam yemeğine üç misafirim var: Aysel, Necmi ve Kerem."
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Sizinle ve benimle beş kişi. Beş tabak koydum."
+   },
+   {
+    "id": "k1",
+    "who": "hikmet",
+    "rate": "+2%",
+    "pitch": "-20Hz",
+    "gap": 0.6,
+    "text": "Hikmet Bey, önce Ayseller geldi. Arkalarından Necmiler. En son Kerem Bey, tek başına.",
+    "tts": "Hikmet Bey! Önce Ay seller geldi. Arkalarından Necmiler. En son Kerem Bey, tek başına."
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.35,
+    "text": "Misafirler tamam. Beş tabak yeter mi?"
+   },
+   {
+    "id": "n1",
+    "who": "defne",
+    "gap": 10.6,
+    "text": "Kapıcı adları nasıl söyledi, bir daha düşünün."
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 1,
+    "text": "Buldum! En az yedi tabak."
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Ayseller, Aysel ve yanındakiler demek. Necmiler de öyle. İki tabak daha lazım."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu sofrayı hep eksik kuran arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "h3>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "knock",
+   "h1+0.17"
+  ],
+  [
+   "buzz",
+   "d1>+0.03"
+  ],
+  [
+   "knock",
+   "h3+0.5"
+  ],
+  [
+   "swish",
+   "n1+0.05"
+  ]
+ ],
+ "cdShare": "Bunu bir arkadaşına sor!",
+ "v4": true,
+ "sizinti": [
+  "YEDİ",
+  "7 TABAK",
+  "YANINDAKİ",
+  "EŞİ",
+  "EŞİYLE",
+  "ÇOCUĞU"
+ ],
+ "cevapsiz": {
+  "kesim": 31.58,
+  "kart": 42.224,
+  "tarih": "2026-11-20"
+ },
+ "denetim": {
+  "surum": 1,
+  "sha": "8f422fbe",
+  "tarih": "2026-11-26",
+  "not": "üretim ajanı + bağımsız göz; koordinatör şeride baktı 26 Kas"
+ }
+}
