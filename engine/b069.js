@@ -240,22 +240,26 @@ export function build(ep, tl) {
   const T = e => H.at(tl, e), cd = T(ep.countdown), cd0 = cd - (ep.cdSure || 10);
   const tm = {
     cd, cd0, end: T('d6>') + 0.1, buldum: T('d3'), proof: T('d3>') + 0.05,
-    duduk: 0.1, indir: 0.4, sayisini: T('h1:3'), kimin: T('h1:5') - 0.1, bulacagiz: T('h1:8'),
-    duzen: T('h1b') - 0.1, oniki: T('h1b') + 0.05, uc: T('h1b:4') - 0.04, dort: T('h1b:7') - 0.04, herkesin: T('h1b:9') - 0.1,
-    tur1: T('h2a') - 0.1, siranin: T('h2a:1') - 0.04, kalk1: T('h2a:7') + 0.15,
-    d1: T('d1'), defne1: T('d1:3') - 0.1, benim1: T('d1:7') - 0.04,
-    tur2: T('h2b') - 0.1, otur1: T('h2b') + 0.25, sutunun: T('h2b:3') - 0.04, kalk2: T('h2b:9') + 0.15,
-    n0: T('n0'), necmi1: T('n0') - 0.1, benim2: T('n0:7') - 0.04,
-    soru: T('h3') - 0.1, otur2: T('h3') + 0.1, defneMi: T('h3'), necmiMi: T('h3:5') - 0.05,
+    duduk: 0.1, indir: 0.4, sayisini: T('h1'), kimin: T('h1:2') - 0.1, bulacagiz: T('h1:5'),
+    // (26 Kas, kısa kurgu) h1b artık yalnız "Herkesin sayısı farklı.": düzen plânı ve tanım bantları çıktı; Hikmet'ten doğrudan telefon insertine kesilir.
+    herkesin: T('h1b') - 0.1,
+    tur1: T('h2a') - 0.1, siranin: T('h2a:1') - 0.04, kalk1: T('h2a:5') + 0.15,
+    d1: T('d1'), defne1: T('d1:2') - 0.1, benim1: T('d1:5') - 0.04,
+    // "Oturun" sözü çıktı: üç tembel, salon plânı açılır açılmaz (Hikmet'in avuç aşağı işaretiyle) sütun bantlarından önce oturur
+    tur2: T('h2b') - 0.4, otur1: T('h2b') - 0.32, sutunun: T('h2b:1') - 0.04, kalk2: T('h2b:5') + 0.15,
+    n0: T('n0'), necmi1: T('n0:1') - 0.1, benim2: T('n0:5') - 0.04,
+    soru: T('h3') - 0.1, otur2: T('h3') + 0.1, defneMi: T('h3'), necmiMi: T('h3:6') - 0.05,
     necmi2: T('n0b') - 0.1, bilinemez: T('n0b:3'),
-    sayac: cd0 - 0.05, ipucu: T('n1') - 0.1, ikimizi: T('n1:1'), tek: T('n1:4') - 0.04, final: T('n1>') + 0.2,
+    sayac: cd0 - 0.05, ipucu: T('n1') - 0.1, ikimizi: T('n1:1'), tek: T('n1:4') - 0.04,
+    // (26 Kas, bağımsız göz) "İkimizi birden" Defne'nin yakın plânında, yanındaki figüranla söylenince "ikimiz" o ikisi sanılıyordu:
+    // "birden"de salona kesilir, Defne ile Necmi birbirine bakar (koltuk vurgusu yok).
+    final: T('n1:2') - 0.1,
     cevap: T('d3>') + 0.15, siramla: T('d4:1') - 0.04, sutununun: T('d4:3') - 0.04, kesisti: T('d4:4') - 0.04, cta: T('d6') - 0.15,
   };
 
   const film = H.sahneler([
     { id: 'kanca', plan: 'salon', t0: 0, cam: [[0, ...K_SALON]] },
     { id: 'hikmet1', plan: 'hikmet', t0: tm.kimin, cam: [[0, ...KH], [tm.bulacagiz, 1.38, KH[1] + 4, KH[2] - 3]] },
-    { id: 'duzen', plan: 'salon', t0: tm.duzen, cam: [[0, ...K_SALON]] },
     { id: 'telefon', plan: 'necmi', t0: tm.herkesin, cam: [[0, ...KN_OTUR]] },
     { id: 'tur1', plan: 'salon', t0: tm.tur1, cam: [[0, ...K_SALON]] },
     { id: 'defne1', plan: 'defne', t0: tm.defne1, cam: [[0, ...KD_AYAK]] },
@@ -275,8 +279,8 @@ export function build(ep, tl) {
   // Sıra ve sütun bantları: [giriş, çıkış, hangileri]. "Buldum!"dan önce hep hepsi birden (eşit vurgu).
   const HEPS = [...Array(NS).keys()], HEPC = [...Array(NC).keys()];
   const bant = {
-    sira: [[tm.uc, tm.dort - 0.08, HEPS], [tm.siranin, tm.kalk1 - 0.2, HEPS], [tm.siramla, tm.cta - 0.3, [DEF[0]]]],
-    sutun: [[tm.dort, tm.herkesin - 0.06, HEPC], [tm.sutunun, tm.kalk2 - 0.2, HEPC], [tm.sutununun, tm.cta - 0.3, [NEC[1]]]],
+    sira: [[tm.siranin, tm.kalk1 - 0.2, HEPS], [tm.siramla, tm.cta - 0.3, [DEF[0]]]],
+    sutun: [[tm.sutunun, tm.kalk2 - 0.2, HEPC], [tm.sutununun, tm.cta - 0.3, [NEC[1]]]],
   };
   for (const [ad, n] of [['sira', NS], ['sutun', NC]]) for (const [a, , kim] of bant[ad]) if (a < tm.buldum && kim.length !== n) throw new Error('b069: "Buldum!"dan önce bantlar eşit vurguda olmalı');
 
@@ -285,7 +289,7 @@ export function build(ep, tl) {
   const ekle = (P, ...e) => olay[P.i].push(...e), yuz = (P, ...e) => ifade[P.i].push(...e);
   const dongu = (P, a, b, faz) => { const L = [['tel', 2.3], ['hik', 1.5], ['kam', 1.3]]; let tt = a + faz, j = (P.i + P.r) % 3; while (tt < b) { ekle(P, [tt, L[j % 3][0]]); tt += L[j % 3][1]; j++; } };
   for (const P of KISI) {
-    ekle(P, [tm.duduk, 'hik'], [tm.sayisini + 0.1, 'tel'], [tm.sayisini + 0.85, 'hik'], [tm.duzen + 0.1, 'kam'], [tm.herkesin, 'tel'],
+    ekle(P, [tm.duduk, 'hik'], [tm.sayisini + 0.1, 'tel'], [tm.sayisini + 0.85, 'hik'], [tm.herkesin, 'tel'],
       [tm.tur1, 'hik'], [tm.kalk1 + 0.35, 'tur', 1], [tm.d1 - 0.1, 'kisi', 'defne'],
       [tm.otur1 - 0.2, 'hik'], [tm.kalk2 + 0.35, 'tur', 2], [tm.n0 - 0.1, 'kisi', 'necmi'],
       [tm.soru, 'hik'], [tm.necmi2, 'kisi', 'necmi'], [tm.ipucu, 'kisi', 'defne'], [tm.buldum, 'kisi', 'defne'], [tm.kesisti + 0.2, 'yer', KESISIM]);
@@ -295,7 +299,7 @@ export function build(ep, tl) {
   const D = KK.defne, N = KK.necmi, KE = KK[H.KEREM];
   ekle(D, [tm.d1 + 0.02, 'hik'], [tm.benim1, 'kam'], [tm.n0, 'kisi', 'necmi'],
     [cd0 + 0.4, 'kisi', 'necmi'], [cd0 + 3.5, 'tel'], [cd0 + 5.4, 'kisi', 'necmi'], [cd0 + 7.2, 'ham', [-0.35, -0.7]], [cd0 + 9.2, 'kisi', 'necmi'],
-    [tm.ipucu + 0.02, 'kisi', 'necmi'], [tm.tek, 'kam'], [tm.final, 'kisi', 'necmi'], [tm.buldum + 0.02, 'kam'], [tm.cevap, 'kisi', 'necmi'], [tm.cta, 'kam']);
+    [tm.ipucu + 0.02, 'kisi', 'necmi'], [tm.final, 'kisi', 'necmi'], [tm.buldum + 0.02, 'kam'], [tm.cevap, 'kisi', 'necmi'], [tm.cta, 'kam']);
   ekle(N, [tm.herkesin + 0.75, 'kisi', H.KEREM], [tm.herkesin + 1.75, 'tel'], [tm.n0 + 0.02, 'hik'], [tm.benim2, 'kam'], [tm.necmi2 + 0.02, 'hik'], [tm.bilinemez, 'kam'],
     [cd0 + 0.7, 'kisi', 'defne'], [cd0 + 3.6, 'tel'], [cd0 + 5.6, 'kisi', 'defne'], [cd0 + 7.6, 'tel'], [cd0 + 9.3, 'kisi', 'defne'], [tm.final, 'kisi', 'defne']);
   ekle(KE, [tm.herkesin + 0.3, 'telKim', 'necmi'], [tm.herkesin + 1.45, 'ham', [-0.55, -0.5]],
@@ -319,7 +323,7 @@ export function build(ep, tl) {
     [tm.sayisini, { head: { tilt: 4, look: [0.75, 0.2] } }, 0.3],
     [tm.kimin, { expr: IF.gulus, head: { tilt: -3, look: [0.1, 0.05] } }, 0.01],
     [tm.bulacagiz, { head: { tilt: 4, look: [0.05, 0.0] } }, 0.3],
-    [tm.duzen, { expr: IF.notr, head: { tilt: 3, look: [0.7, 0.15] } }, 0.01],
+    [tm.herkesin - 0.01, { expr: IF.notr, head: { tilt: 3, look: [0.7, 0.15] } }, 0.01],
     [tm.herkesin, { head: { tilt: -3, look: [0.6, 0.3] } }, 0.3],
     [tm.tur1, { head: { tilt: 3, look: [0.75, 0.1] } }, 0.01],
     [tm.kalk1, { expr: IF.gulus, head: { tilt: -3, look: [0.7, -0.1] } }, 0.3],
@@ -403,8 +407,8 @@ function kisiCiz(K, t, tl, S, B, P, yer) {
   if (key === 'necmi') H.omuzSilk(p, t, tm.bilinemez - 0.1, 0.6);                         // "bilinemez"
   if (key === H.KEREM) H.onayla(p, t, tm.benim2 + 0.25, 2, 0.32);
   // telefon eli: otururken göğüs hizasında; kalkınca başın yanında havada; sonra kalkanların ortasına doğru uzanır
-  const sarma = pIn(t, tm.sayisini + 0.1 + P.g, tm.sayisini + 0.95 + P.g, 0.22), dalga = H.nabiz(t, tm.oniki + P.i * 0.035, 0.32);
-  let oturan = [x + m * (0.23 - 0.1 * sarma) * s, yBas + (0.8 + 0.05 * sarma) * s - 0.11 * s * dalga];
+  const sarma = pIn(t, tm.sayisini + 0.1 + P.g, tm.sayisini + 0.95 + P.g, 0.22);
+  let oturan = [x + m * (0.23 - 0.1 * sarma) * s, yBas + (0.8 + 0.05 * sarma) * s];
   if (sakla) oturan = kar(oturan, [x + 0.17 * s, yBas + 0.86 * s], sakla);
   let hedef = oturan, rot = -m * 6, goster = 0;
   if (kalk > 0.001) {
@@ -420,7 +424,7 @@ function kisiCiz(K, t, tl, S, B, P, yer) {
   if (KONUSAN.has(key)) o.heads = B.heads;
   let ek = null;
   if (benim > 0.001) { const sh = H.shoulder(key, p, diger), L = (H.CARDS[key].arm.upper + H.CARDS[key].arm.lower) * s; o[diger] = [[sh[0] - m * 0.72 * L, sh[1] - 0.8 * L], benim, 'B']; if (benim > 0.5) ek = { avuc: diger, n: 4 * seg(benim, 0.5, 0.5) }; }
-  if (key === 'defne') { const w1 = pIn(t, tm.tek - 0.25, tm.final + 2.5, 0.28); if (w1 > 0.001 && benim <= 0.001) { o[diger] = [[x - m * 0.62 * s, yBas + 0.42 * s], w1, 'B']; ek = { parmak: [diger, seg(t, tm.tek - 0.05, 0.2), { toplam: 1 }], w: w1 }; } }
+  if (key === 'defne') { const w1 = pIn(t, tm.tek - 0.25, tm.buldum + 0.5, 0.28); if (w1 > 0.001 && benim <= 0.001) { o[diger] = [[x - m * 0.62 * s, yBas + 0.42 * s], w1, 'B']; ek = { parmak: [diger, seg(t, tm.tek - 0.05, 0.2), { toplam: 1 }], w: w1 }; } }
   if (key === 'b069_f1') { const w = pIn(t, cd0 + 4.6, cd0 + 6.5, 0.3); if (w > 0.001) { const A = diger === 'L' ? 'armL' : 'armR'; p[A] = { sh: lerp(p[A].sh, 18, w), el: lerp(p[A].el, -168, w) }; ek = { sise: diger, w }; } }
   if (key === 'b069_f4') { const w = pIn(t, cd0 + 6.3, cd0 + 8.1, 0.3); if (w > 0.001) o[diger] = [[x - m * 0.3 * s, yBas + 0.86 * s], w, 'B']; }
   const { ctx } = K; ctx.save(); ctx.beginPath(); ctx.rect(-1e5, -1e5, 2e5, 1e5 + yer.kes); ctx.clip();   // masanın altında kalan gövde çizilmez
@@ -443,16 +447,14 @@ function hikmetCiz(K, t, tl, S, B, yer) {
   let hedef = null, w = 0, parmak = null, isaret = null;
   const kur = (ww, h) => { if (ww > w) { w = ww; hedef = h; } };
   const yatay = a => g(lerp(-0.1, 0.4, ease.state(seg(t, a, 0.6))), 0.1), dikey = a => g(0.34, lerp(-0.7, 0.5, ease.state(seg(t, a, 0.6))));   // el koridorda kalır (x ≤ sıra masasının ucu)
-  kur(pIn(t, tm.uc - 0.2, tm.dort - 0.12, 0.22), yatay(tm.uc - 0.02));                    // "üç sıra": yatay süpürür
-  kur(pIn(t, tm.dort - 0.12, tm.herkesin - 0.1, 0.22), dikey(tm.dort));                   // "dört sütun": yukarıdan aşağı keser
   kur(pIn(t, tm.siranin - 0.2, tm.kalk1 - 0.35, 0.25), yatay(tm.siranin));
   kur(pIn(t, tm.kalk1 - 0.3, tm.kalk1 + 0.9, 0.25), g(0.34, lerp(0.45, -0.55, ease.enter(seg(t, tm.kalk1 - 0.1, 0.4)))));   // "kalksın": avuç yukarı
-  kur(pIn(t, tm.otur1 - 0.4, tm.otur1 + 0.6, 0.22), g(0.34, lerp(-0.35, 0.5, ease.state(seg(t, tm.otur1 - 0.2, 0.4)))));    // "Oturun": avuç aşağı
+  kur(pIn(t, tm.otur1 - 0.4, tm.sutunun - 0.1, 0.22), g(0.34, lerp(-0.35, 0.5, ease.state(seg(t, tm.otur1 - 0.2, 0.4)))));    // sözsüz "oturun": avuç aşağı
   kur(pIn(t, tm.sutunun - 0.2, tm.kalk2 - 0.35, 0.25), dikey(tm.sutunun));
   kur(pIn(t, tm.kalk2 - 0.3, tm.kalk2 + 0.9, 0.25), g(0.34, lerp(0.45, -0.55, ease.enter(seg(t, tm.kalk2 - 0.1, 0.4)))));
   const hd = H.eklem('hikmet', p, 'head'), agiz = 1 - ease.state(seg(t, tm.indir, 0.3));                       // düdük: kare 0'da ağzında, sonra boynunda asılı
   kur(agiz, [hd[0] + 0.36 * s, hd[1] + 0.52 * s]);
-  const wP = pIn(t, tm.bulacagiz - 0.3, tm.duzen, 0.28); if (wP > w) { kur(wP, g(0.55, -0.5)); if (wP > 0.5) parmak = seg(t, tm.bulacagiz - 0.05, 0.2); }
+  const wP = pIn(t, tm.bulacagiz - 0.3, tm.herkesin, 0.28); if (wP > w) { kur(wP, g(0.55, -0.5)); if (wP > 0.5) parmak = seg(t, tm.bulacagiz - 0.05, 0.2); }
   const wD = pIn(t, tm.defneMi - 0.05, tm.necmiMi - 0.05, 0.25), wN = pIn(t, tm.necmiMi - 0.05, tm.necmi2, 0.25);          // "Defne mi … Necmi mi": iki ayrı yön
   if (wD > w) { kur(wD, g(0.7, 0.3)); if (wD > 0.5) isaret = g(1.6, 0.75); }
   if (wN > w) { kur(wN, g(0.72, -0.3)); if (wN > 0.5) isaret = g(1.7, -0.75); }
@@ -497,7 +499,7 @@ function kalkanIsigi(K, kalk, P) {
 export const draw = (K, t, ep, tl, S) => H.cerceve(K, t, ep, S.tlA, S, {
   kartSon: -1,                 // kart ve sayaç ekran katmanında (perdesiz sayaç)
   drift: 0.012,
-  split: { h1: 5 },            // ikinci yarı Hikmet'in kendi plânıyla gelir
+  split: { h1: 2, h3: 6 },     // h3: "… çok yürüdü," | "en tembel şampiyon mu?" (tek balonda üç satıra taşıyordu)            // ikinci yarı Hikmet'in kendi plânıyla gelir
   // salon plânında Necmi'nin balon kuyruğu önündeki koltuğun (kesişim) yüzünden geçerdi: kuyruk çizilmez; son plânda da yok
   kuyruksuz: (t, B) => B.sc.id === 'final' || (B.sc.plan === 'salon' && H.captionAt(S.tlA, t)?.line.who === 'necmi'),
   // Salon plânı: kapalı formüllü doğrusal itme. Çapa noktası ekranda sabit kalır (üstte kart, altta altyazı payı korunur).

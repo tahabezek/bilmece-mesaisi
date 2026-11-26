@@ -1,10 +1,20 @@
 # 069 · Adım yarışması (v5 storyboard, cevapsız tasarım, 2026-11-22)
 
-Kaynak: `hikayeler/bolum_064-069.md` § 069. Sahne: `engine/b069.js`. Bölüm dosyası: `bolumler/069-adim.json` (`cevapsizTasarim: true`). Yayın sırası 57 (rozet "BİLMECE #57"). Sayaç 10 sn, `countdown: "n1-0.3"`. Mekanizma: bir sıra ile bir sütun tek bir koltukta kesişir; o koltuktaki kişi iki karşılaştırmayı birbirine bağlar.
+Kaynak: `hikayeler/bolum_064-069.md` § 069. Sahne: `engine/b069.js`. Bölüm dosyası: `bolumler/069-adim.json` (`cevapsizTasarim: true`). Yayın sırası 58 (rozet "BİLMECE #58"). Sayaç 10 sn, `countdown: "n1-0.3"`. Mekanizma: bir sıra ile bir sütun tek bir koltukta kesişir; o koltuktaki kişi iki karşılaştırmayı birbirine bağlar.
 
 - **Logline:** Eğitim salonunda on iki kişi üç sıra, dört sütun oturur. Herkesin bugünkü adım sayısı farklıdır; sayıları kimse görmez. Her sıranın en az adım atanı kalkar, aralarında en çok atan Defne'dir. Her sütunun en çok adım atanı kalkar, aralarında en az atan Necmi'dir. Hikmet sorar: Defne mi daha çok yürüdü, Necmi mi?
 - **Akılda kalacak tek şey:** Bir sıra ile bir sütun tek bir koltukta buluşur.
-- **Kart:** `Defne en azların en çoğu, Necmi en` (34) / `çokların en azı. Kim çok yürüdü?` (32). Ortak `riddleCard` bu iki satırı 44 px ile basar (en geniş satır 951 px → 54 × 780 ÷ 951 = 44). Belgedeki 37 + 38 harflik kart 39 px'e iniyordu; şartlar ve soru aynı, kelime sırası değişti.
+- **Kart (26 Kas kısa kurgu):** `En çalışkan tembel mi çok yürüdü,` (33) / `en tembel şampiyon mu?` (22). h3 ile aynı cümle. (Eski kart: "Defne en azların en çoğu, Necmi en çokların en azı. Kim çok yürüdü?")
+
+## 26 Kas 2026 kısa kurgu (usta ölçütü)
+Usta editör: kurgu klasiğe bir şey katmıyor, "en azların en çoğu" bir nefeste söylenmiyor. Mantık, oturma düzeni ve sahneler aynı; değişen kelimeler. Sezgi çatışması dilde: her sıranın en az yürüyeni **tembel**, her sütunun en çok yürüyeni **şampiyon**; soru "en çalışkan tembel mi, en tembel şampiyon mu?". Kısa format: "Buldum!" öncesi 55 kelime, "Buldum!" 35,70 sn, kesilmiş film ≈ 37,9 sn.
+- Kelime bütçesi için çıkanlar: "Adım yarışmasında", "On iki kişi oturuyor: üç sıra ve dört sütun" (düzen görüntüde; "üç tembel / dört şampiyon" sayıyı sözle de verir), "Oturun" (üçü sütun bantlarından önce Hikmet'in sözsüz avuç işaretiyle oturur), "ayağa".
+- Düzen plânı ve h1b'deki tanım bantları çıktı: Hikmet'in plânından doğrudan telefon insertine kesilir. Sıra ve sütun bantları turlarda (h2a, h2b) aynen var.
+- "Tembellerin…" satır başı T'si whisper'da "Zembellerin/Sembelerin" çıktı → "Üç tembelin…". h2b'de "kalksın" "kaksın" duyuldu → `tts` ünlemli.
+- Hız: Hikmet satırları `+2%`, Necmi satırları `-4%` (070 ve 072'deki gibi), aralar 0,3–0,6 sn; sayaç 10 sn aynı, n1 aralığı 10,45; d3 öncesi okuma payı 1,1 sn.
+- h3 altyazısı iki parçalı (`split h3: 6`): tek balonda "mu?" üçüncü satıra düşüyordu.
+- Bağımsız göz: "İkimizi birden" Defne'nin yakın plânında, yanındaki figüranla söylenince "ikimiz" o ikisi sanılıyordu. Yakın plân "Bilinir. İkimizi" ile biter, "birden"de salona kesilir; Defne ile Necmi birbirine bakar, koltuk vurgusu yok. Tembeller sütun bantlarından önce oturur (otur1 = h2b − 0,32); dört şampiyon salonda 0,2 sn daha görünür (Necmi'nin yakın plânı "şampiyonun"da).
+- Yayın sırası 58 (rozet "BİLMECE #58").
 - **Oturma düzeni (değişmez; kodda tek sabit `ADIM`, kalkanlar ondan hesaplanır, belgeyle uyuşmazsa bölüm açılmaz):**
 
   | | sütun 1 | sütun 2 | sütun 3 | sütun 4 |
@@ -56,20 +66,20 @@ Kaynak: `hikayeler/bolum_064-069.md` § 069. Sahne: `engine/b069.js`. Bölüm do
 
 | id | Konuşan | Replik | Kelime | sn (ölçülen) |
 |---|---|---|---|---|
-| h1 | Hikmet | Adım yarışmasında kimsenin sayısını görmeden, kimin çok yürüdüğünü bulacağız. | 9 | 0,50–5,17 |
-| h1b | Hikmet | On iki kişi oturuyor: üç sıra ve dört sütun. Herkesin adım sayısı farklı. | 13 | 5,67–10,48 |
-| h2a | Hikmet | Her sıranın en az adım atanı ayağa kalksın. | 8 | 11,08–13,69 |
-| d1 | Defne | Ayaktaki üç kişinin en çok adım atanı benim. | 8 | 14,69–16,98 |
-| h2b | Hikmet | Oturun. Şimdi her sütunun en çok adım atanı ayağa kalksın. | 10 | 17,68–21,72 |
-| n0 | Necmi | Ayaktaki dört kişinin en az adım atanı benim. | 8 | 23,32–26,26 |
-| h3 | Hikmet | Defne mi daha çok yürüdü, Necmi mi? | 7 | 26,86–29,31 |
-| n0b | Necmi | Bence bu kadarla bilinemez. | 4 | 29,81–31,65 |
-| n1 | Defne | Bilinir. İkimizi birden ilgilendiren tek bir koltuk var. | 8 | 42,25–45,35 |
-| d3 | Defne | Buldum! Necmi daha çok yürüdü. (arşiv) | 5 | 47,55–49,57 |
-| d4 | Defne | Benim sıramla Necmi'nin sütununun kesiştiği koltuğa bakın. O kişi benden çok, Necmi'den az yürüdü. (arşiv) | 14 | 49,92–55,16 |
-| d6 | Defne | Bunu adımlarını sayan arkadaşına gönder. (arşiv) | 5 | 55,86–57,91 |
+| h1 | Hikmet | Sayılara bakmadan kimin çok yürüdüğünü bulacağız. | 6 | 0,50–3,28 |
+| h1b | Hikmet | Herkesin sayısı farklı. | 3 | 3,58–5,10 |
+| h2a | Hikmet | Her sıranın en az yürüyeni kalksın. | 6 | 5,50–7,58 |
+| d1 | Defne | Üç tembelin en çok yürüyeni benim. | 6 | 7,93–9,75 |
+| h2b | Hikmet | Her sütunun en çok yürüyeni kalksın. | 6 | 10,15–12,35 |
+| n0 | Necmi | Dört şampiyonun en az yürüyeni benim. | 6 | 12,95–15,19 |
+| h3 | Hikmet | En çalışkan tembel mi çok yürüdü, en tembel şampiyon mu? | 10 | 15,49–19,02 |
+| n0b | Necmi | Bence bu kadarla bilinemez. | 4 | 19,32–21,04 |
+| n1 | Defne | Bilinir. İkimizi birden ilgilendiren tek bir koltuk var. | 8 | 31,49–34,60 |
+| d3 | Defne | Buldum! Necmi daha çok yürüdü. (arşiv) | 5 | 35,70–37,72 |
+| d4 | Defne | Benim sıramla Necmi'nin sütununun kesiştiği koltuğa bakın. O kişi benden çok, Necmi'den az yürüdü. (arşiv) | 14 | 38,07–43,30 |
+| d6 | Defne | Bunu adımlarını sayan arkadaşına gönder. (arşiv) | 5 | 44,00–46,05 |
 
-**Süre:** "Buldum!" öncesi 75 kelime. "Buldum!" 47,55 sn; cevaplı arşiv 60,31 sn; kesilmiş film ≈ 49,7 sn.
+**Süre (26 Kas kısa kurgu):** "Buldum!" öncesi 55 kelime. "Buldum!" 35,70 sn; cevaplı arşiv 48,45 sn; kesilmiş film ≈ 37,9 sn. (Önceki kurgu: 75 kelime, "Buldum!" 47,55, kesilmiş ≈ 49,7 sn.)
 
 **Şartların filmdeki yeri**
 - 12 kişi, 3 sıra, 4 sütun: h1b + bantlar. Herkesin sayısı farklı: h1b. Sayıları kimse görmüyor: h1 + telefon inserti.

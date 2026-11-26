@@ -1,7 +1,7 @@
 {
  "id": "069-adim",
  "num": 69,
- "sira": 57,
+ "sira": 58,
  "bpm": 120,
  "slug": "adim-yarismasi",
  "coverAt": 0,
@@ -14,10 +14,10 @@
   "#ofis"
  ],
  "card": [
-  "Defne en azların en çoğu, Necmi en",
-  "çokların en azı. Kim çok yürüdü?"
+  "En çalışkan tembel mi çok yürüdü,",
+  "en tembel şampiyon mu?"
  ],
- "caption": "Zeka sorusu: 12 kişi 3 sıra ve 4 sütun hâlinde oturuyor. Herkesin bugünkü adım sayısı farklı. Her sıranın en az adım atanı ayağa kalktı; bu üç kişinin en çok adım atanı Defne. Sonra her sütunun en çok adım atanı kalktı; bu dört kişinin en az adım atanı Necmi.\n\nKimsenin sayısını bilmiyoruz. Defne mi daha çok yürüdü, Necmi mi? Yoksa bilinemez mi?",
+ "caption": "Zeka sorusu: 12 kişi 3 sıra ve 4 sütun hâlinde oturuyor. Herkesin bugünkü adım sayısı farklı. Önce her sıranın en az yürüyeni ayağa kalkıyor; bu üç tembelin en çok yürüyeni Defne. Herkes oturuyor, sonra her sütunun en çok yürüyeni kalkıyor; bu dört şampiyonun en az yürüyeni Necmi.\n\nKimsenin sayısını bilmiyoruz. En çalışkan tembel mi çok yürüdü, en tembel şampiyon mu? Yoksa bilinemez mi?",
  "voice": {
   "tight": 0.28,
   "tail": 2.4,
@@ -26,61 +26,68 @@
     "id": "h1",
     "who": "hikmet",
     "gap": 0.5,
-    "text": "Adım yarışmasında kimsenin sayısını görmeden, kimin çok yürüdüğünü bulacağız."
+    "rate": "+2%",
+    "text": "Sayılara bakmadan kimin çok yürüdüğünü bulacağız."
    },
    {
     "id": "h1b",
     "who": "hikmet",
-    "gap": 0.5,
-    "text": "On iki kişi oturuyor: üç sıra ve dört sütun. Herkesin adım sayısı farklı."
+    "gap": 0.3,
+    "rate": "+2%",
+    "text": "Herkesin sayısı farklı."
    },
    {
     "id": "h2a",
     "who": "hikmet",
-    "gap": 0.6,
-    "text": "Her sıranın en az adım atanı ayağa kalksın."
+    "gap": 0.4,
+    "rate": "+2%",
+    "text": "Her sıranın en az yürüyeni kalksın."
    },
    {
     "id": "d1",
     "who": "defne",
-    "gap": 1,
-    "text": "Ayaktaki üç kişinin en çok adım atanı benim."
+    "gap": 0.35,
+    "text": "Üç tembelin en çok yürüyeni benim."
    },
    {
     "id": "h2b",
     "who": "hikmet",
-    "gap": 0.7,
-    "text": "Oturun. Şimdi her sütunun en çok adım atanı ayağa kalksın.",
-    "tts": "Oturun. Şimdi, her sütunun en çok adım atanı ayağa kalksın."
+    "gap": 0.4,
+    "rate": "+2%",
+    "text": "Her sütunun en çok yürüyeni kalksın.",
+    "tts": "Her sütunun en çok yürüyeni kalksın!"
    },
    {
     "id": "n0",
     "who": "necmi",
-    "gap": 1.6,
-    "text": "Ayaktaki dört kişinin en az adım atanı benim."
+    "gap": 0.6,
+    "rate": "-4%",
+    "text": "Dört şampiyonun en az yürüyeni benim."
    },
    {
     "id": "h3",
     "who": "hikmet",
-    "gap": 0.6,
-    "text": "Defne mi daha çok yürüdü, Necmi mi?"
+    "gap": 0.3,
+    "rate": "+2%",
+    "text": "En çalışkan tembel mi çok yürüdü, en tembel şampiyon mu?"
    },
    {
     "id": "n0b",
     "who": "necmi",
-    "gap": 0.5,
+    "gap": 0.3,
+    "rate": "-4%",
     "text": "Bence bu kadarla bilinemez."
    },
    {
     "id": "n1",
     "who": "defne",
-    "gap": 10.6,
+    "gap": 10.45,
     "text": "Bilinir. İkimizi birden ilgilendiren tek bir koltuk var."
    },
    {
     "id": "d3",
     "who": "defne",
-    "gap": 2.2,
+    "gap": 1.1,
     "text": "Buldum! Necmi daha çok yürüdü."
    },
    {
@@ -124,27 +131,15 @@
   ],
   [
    "swish",
-   "h1:5-0.14"
+   "h1:2-0.14"
   ],
   [
    "pop",
-   "h1:8-0.04"
+   "h1:5-0.04"
   ],
   [
    "swish",
    "h1b-0.14"
-  ],
-  [
-   "swish",
-   "h1b:4+0.1"
-  ],
-  [
-   "swish",
-   "h1b:7+0.1"
-  ],
-  [
-   "swish",
-   "h1b:9-0.14"
   ],
   [
    "swish",
@@ -156,59 +151,59 @@
   ],
   [
    "pop",
-   "h2a:7+0.3"
+   "h2a:5+0.3"
   ],
   [
    "pop",
-   "h2a:7+0.37"
+   "h2a:5+0.37"
   ],
   [
    "pop",
-   "h2a:7+0.44"
+   "h2a:5+0.44"
   ],
   [
    "swish",
-   "d1:3-0.14"
+   "d1:2-0.14"
   ],
   [
    "pop",
-   "d1:7-0.04"
+   "d1:5-0.04"
   ],
   [
    "swish",
-   "h2b-0.14"
+   "h2b-0.44"
   ],
   [
    "knock",
-   "h2b+0.5"
+   "h2b-0.1"
   ],
   [
    "swish",
-   "h2b:3+0.1"
+   "h2b:1+0.1"
   ],
   [
    "pop",
-   "h2b:9+0.3"
+   "h2b:5+0.3"
   ],
   [
    "pop",
-   "h2b:9+0.37"
+   "h2b:5+0.37"
   ],
   [
    "pop",
-   "h2b:9+0.44"
+   "h2b:5+0.44"
   ],
   [
    "pop",
-   "h2b:9+0.51"
+   "h2b:5+0.51"
   ],
   [
    "swish",
-   "n0-0.14"
+   "n0:1-0.14"
   ],
   [
    "pop",
-   "n0:7-0.04"
+   "n0:5-0.04"
   ],
   [
    "swish",
@@ -244,7 +239,7 @@
   ],
   [
    "swish",
-   "n1>+0.16"
+   "n1:2-0.14"
   ],
   [
    "swish",
@@ -270,12 +265,18 @@
  "cdShare": "Bunu bir arkadaşına sor!",
  "v4": true,
  "cevapsiz": {
-  "kesim": 47.434,
-  "kart": 58.01,
+  "kesim": 35.578,
+  "kart": 46.154,
   "tarih": "2026-11-20"
  },
  "sizinti": [
   "NECMİ DAHA ÇOK",
   "KESİŞ"
- ]
+ ],
+ "denetim": {
+  "surum": 1,
+  "sha": "f1aab4a1",
+  "tarih": "2026-11-26",
+  "not": "yeni dil (tembel/şampiyon), sira 58; göz denetimi 26 Kas"
+ }
 }
