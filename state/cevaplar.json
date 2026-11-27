@@ -1,6 +1,6 @@
 {
   "_not": "Cevapsız videoların yorumda cevap durumu. Kontrol saatleri görevi (yorum-kontrol) günceller. durum: bekliyor | taslak | yazildi",
-  "son_kontrol": "2026-11-26T18:25Z",
+  "son_kontrol": "2026-11-27T17:30Z",
   "videolar": {
     "050-bayramlasma": {
       "durum": "taslak",
@@ -101,10 +101,35 @@
       "taslak": "Cevap: Asla! Her vapur ya iki lamba yakar, ya iki lamba söndürür, ya da birini yakıp birini söndürür; yanan lamba sayısı hep ikişer oynar. Sıfırdan başlayan sayı hep çift kalıyor, beş ise tek 💡 Kaptanlar üçer düğmeye bassaydı Lâl'in dileği üç vapurda gerçekleşirdi 😄"
     },
     "058-soru-eki": {
-      "durum": "bekliyor",
+      "durum": "taslak",
       "yayin": "2026-11-26T09:31:24Z",
       "link": "https://www.instagram.com/reel/DgMyZIPqK--/",
-      "not": "26 Kas 18:25Z (9 saatlik): 3 yorum; 2 kişi Kerem (doğru, biri gerekçesiyle: vurgu soru ekinden önceki öğede), 1 kişi Defne. 4 beğeni. Cevap taslağı en erken 27 Kas 05:31Z."
+      "not": "27 Kas 17:30Z (32 saatlik): oturum kapalı, yorumlar yeniden okunamadı. Son bilinen (26 Kas 18:25Z): 3 yorum; 2 Kerem (biri gerekçeli), 1 Defne; 4 beğeni. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi.",
+      "taslak": "Cevap: Kerem! Türkçede soru eki, sorulan şeyin hemen yanına gelir. Necmi kimin yediğini, Defne ne zaman yendiğini soruyor; Kerem ise Hikmet Bey'in dün bir şey yediğini biliyor, bir tek baklava mı onu merak ediyor 😄 Kerem diyen herkese tebrikler 👏",
+      "yanitlar": [
+        {
+          "hedef": "Kerem diyen, gerekçesini yazan yorum (vurgu soru ekinden önceki öğede)",
+          "metin": "Tam isabet 🎯 Vurgu da soru eki de aynı yere düşüyor: \"baklavayı mı\" deyince sorulan tek şey ne yendiği."
+        },
+        {
+          "hedef": "Defne diyen yorum",
+          "metin": "Defne'nin notunda \"mü\" dünün yanında, yani o ne zaman yendiğini soruyor. Yalnızca ne yendiğini soran Kerem: \"dün baklavayı mı yedi?\" 😉"
+        }
+      ]
+    },
+    "059-tanik": {
+      "durum": "taslak",
+      "yayin": "2026-11-26T18:06:10Z",
+      "link": "https://www.instagram.com/reel/DgNtKeKzImM/",
+      "not": "27 Kas 17:30Z (23 saatlik): oturum kapalı, yorumlar hiç okunamadı; yanıt taslağı yok. Cevap taslağı hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi.",
+      "taslak": "Cevap: Kerem! Türkçede gözüyle gören \"yedi\" der, başkasından duyan \"yemiş\" der. Defne \"Kerem yedi\" diyor, yani olayı kendisi gördü; Necmi \"Defne yemiş\" diyor, yani dedikodu taşıyor 👀 Cam bölmenin ardında sakin sakin yazı yazan Kerem'miş 😄"
+    },
+    "060-bilmiyorum": {
+      "durum": "bekliyor",
+      "yayin": "2026-11-27T09:31:27Z",
+      "link": "https://www.instagram.com/reel/DgPXND9gluh/",
+      "not": "27 Kas 17:30Z (8 saatlik): oturum kapalı, yorumlar okunamadı. Cevap taslağı en erken 28 Kas 05:31Z."
     }
-  }
+  },
+  "son_kontrol_not": "27 Kas 17:30Z: yerleşik tarayıcıda Instagram oturumu kapalı (profil seçme ekranı); giriş yapılmadı, yorumlar okunamadı. 058 ve 059 taslakları bölüm dosyalarından yazıldı; yanıt taslakları 26 Kas verisine dayanıyor."
 }
