@@ -1,0 +1,140 @@
+{
+ "id": "086-servis-defteri",
+ "num": 86,
+ "sira": 70,
+ "bpm": 120,
+ "slug": "servis-defteri",
+ "coverAt": 0,
+ "cevapsizTasarim": true,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#mantık",
+  "#servis",
+  "#ofis"
+ ],
+ "card": [
+  "4 sefer, ortalama 7. Herkes: 14.",
+  "Dört seferde kaçar yolcu vardı?"
+ ],
+ "caption": "Zeka sorusu: Şirket servisi bugün 4 sefer yaptı; duraksız, herkes bir kez bindi. Şoför \"Sefer başına ortalama tam 7 yolcu taşıdım\" diyor. Binen her yolcu tek tek aynı şeyi söylüyor: \"Benim seferimde, ben dahil, 14 yolcu vardı.\" Herkes doğru söylüyor.\n\nDört seferde kaçar yolcu vardı?",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "r1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Dört seferde, sefer başına ortalama yedi yolcu taşıdım.",
+    "rate": "+10%",
+    "pitch": "-14Hz",
+    "not": "Rıza Usta (yan karakter): sahnede who = b086_riza; ses Ahmet, sonra formant 0,94 elle uygulandı (voice_tts satır formantını okumuyor)"
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.25,
+    "text": "Binen herkese tek tek sordum. Hepsi aynı sayıyı söyledi: \"Benim seferimde, ben dahil, on dört yolcu vardı.\"",
+    "tts": "Binen herkese tek tek sordum. Hepsi aynı sayıyı söyledi: Benim seferimde, ben dahil, on dört yolcu vardı.",
+    "rate": "+22%"
+   },
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.2,
+    "text": "Servis duraksız; herkes bir kez bindi.",
+    "rate": "+12%"
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.2,
+    "text": "Biri yalan söylüyor! Ortalama yediyse herkes on dört diyemez.",
+    "rate": "+12%"
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.2,
+    "text": "Kimse yalan söylemiyor. Dört seferde kaçar yolcu vardı?",
+    "rate": "+22%"
+   },
+   {
+    "id": "n1",
+    "who": "defne",
+    "gap": 10.4,
+    "text": "Şoför her seferi sayar. Yolcu hangisini anlatır?",
+    "rate": "+16%"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 1.65,
+    "text": "Buldum! On dört, on dört, sıfır, sıfır."
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Dört seferde toplam yirmi sekiz yolcu var; on dörtlük iki sefer eder. Boş seferi anlatacak kimse yok."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu servis arkadaşına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "d2>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "swish",
+   "d1:1-0.08"
+  ],
+  [
+   "swish",
+   "d1:4+0.02"
+  ],
+  [
+   "knock",
+   "n0:3-0.05"
+  ]
+ ],
+ "v4": true,
+ "sizinti": [
+  "İKİ SEFER BOŞ",
+  "2 SEFER BOŞ",
+  "BOŞ GİTTİ",
+  "BOŞ SEFER",
+  "28 YOLCU",
+  "YİRMİ SEKİZ",
+  "14, 14, 0, 0"
+ ],
+ "cevapsiz": {
+  "kesim": 34.382,
+  "kart": 46.148,
+  "tarih": "2026-11-20"
+ },
+ "denetim": {
+  "surum": 1,
+  "sha": "f19fa2f6",
+  "tarih": "2026-11-27",
+  "not": "bağımsız göz 2 tur (28 Kas): sızıntı temiz, el/altyazı düzeltildi, yayına uygun; Rıza sesi kulakla kontrol bekliyor"
+ }
+}
