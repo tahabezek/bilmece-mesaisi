@@ -26,8 +26,7 @@
     "id": "h1",
     "who": "hikmet",
     "gap": 0.3,
-    "text": "Bulaşığı kim yıkayacak? On el taş, kâğıt, makas oynayın.",
-    "rate": "+8%"
+    "text": "Bulaşığı kim yıkayacak? On el taş, kâğıt, makas oynayın."
    },
    {
     "id": "d1",
@@ -53,9 +52,8 @@
    {
     "id": "h2",
     "who": "hikmet",
-    "gap": 0.35,
-    "text": "Hiçbir elde ikiniz aynı şeyi atmadınız. Kim kaç el kazandı?",
-    "rate": "+8%"
+    "gap": 0.25,
+    "text": "Hiçbir elde ikiniz aynı şeyi atmadınız. Kim kaç el kazandı?"
    },
    {
     "id": "n1",
@@ -124,14 +122,14 @@
   "7 EL"
  ],
  "cevapsiz": {
-  "kesim": 32.016,
-  "kart": 44.152,
+  "kesim": 32.756,
+  "kart": 44.892,
   "tarih": "2026-11-20"
  },
  "denetim": {
   "surum": 1,
-  "sha": "0e3321b7",
+  "sha": "f8e7210f",
   "tarih": "2026-11-27",
-  "not": "üretim ajanı + iki tur bağımsız göz 27 Kas"
+  "not": "Hikmet temel hıza döndü (robotik bulundu, 28 Kas); görüntü değişmedi; yayına uygun (ses kulakla kontrol bekliyor)"
  }
 }

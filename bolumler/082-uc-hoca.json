@@ -26,31 +26,29 @@
     "id": "h1",
     "who": "hikmet",
     "gap": 0.3,
-    "text": "Dün öğlen üç eski hocamla yemek yedim. Soyadları Ak, Kara ve Sarı.",
-    "rate": "+8%"
+    "text": "Dün öğlen üç eski hocamla yemek yedim. Soyadları Ak, Kara ve Sarı."
    },
    {
     "id": "h1b",
     "who": "hikmet",
-    "gap": 0.3,
-    "text": "Birinin saçı ak, birinin kara, birinin sarı.",
-    "rate": "+8%"
+    "gap": 0.25,
+    "text": "Birinin saçı ak, birinin kara, birinin sarı."
    },
    {
     "id": "h2",
     "who": "hikmet",
-    "gap": 0.3,
+    "gap": 0.25,
     "text": "Kara saçlı olan, Ak Hoca'ya döndü.",
-    "tts": "Kara saçlı olan, Ak Hocaya döndü.",
-    "rate": "+8%"
+    "tts": "Kara saçlı olan, Ak Hocaya döndü."
    },
    {
     "id": "k1",
     "who": "genc",
-    "gap": 0.3,
+    "gap": 0.25,
     "text": "Ne tuhaf, hiçbirimizin saçı soyadına uymuyor.",
     "rate": "+0%",
-    "pitch": "-4Hz"
+    "pitch": "+6Hz",
+    "not": "28 Kas: formantsız. voice_tts.py satırda formantı kapatamıyor (genc formant 1.12 voices.json'da); bu satır edge-tts ile elle üretildi (tr-TR-AhmetNeural, rate +0%, pitch +6Hz, son işlem yok), words.json key'i voice_tts özetine eşitlendi ki yeniden üretilmesin. rate/pitch/metin değişirse elle yeniden üret."
    },
    {
     "id": "a1",
@@ -127,14 +125,14 @@
   "KARA SAÇLI SARI"
  ],
  "cevapsiz": {
-  "kesim": 31.726,
-  "kart": 42.052,
+  "kesim": 32.536,
+  "kart": 42.862,
   "tarih": "2026-11-20"
  },
  "denetim": {
   "surum": 1,
-  "sha": "987ebf57",
+  "sha": "5f100bb5",
   "tarih": "2026-11-27",
-  "not": "üretim ajanı + bağımsız göz; koordinatör şeride baktı 27 Kas"
+  "not": "Hikmet temel hıza döndü (robotik bulundu, 28 Kas); görüntü değişmedi; yayına uygun (ses kulakla kontrol bekliyor)"
  }
 }
