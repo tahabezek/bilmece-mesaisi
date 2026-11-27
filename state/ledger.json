@@ -793,16 +793,19 @@
     "2026-11-27T18:00Z": {
       "episode": "061-renk-koru",
       "media": "v/061-renk-koru-645536be.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-25T23:58:43.824Z",
       "postId": "6b077670b96dd8d351719a23",
       "dueAt": "2026-11-27T18:00:00.000Z",
       "note": "elle (--simdi)",
       "yt": {
         "postId": "6b0784b1a791bea1b23f4fcf",
-        "status": "scheduled",
-        "dueAt": "2026-11-27T18:00:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-27T18:00:00.000Z",
+        "link": "https://www.youtube.com/shorts/eec4NpGvro8"
+      },
+      "sentAt": "2026-11-27T18:06:12.366Z",
+      "link": "https://www.instagram.com/reel/DgQSAciBVhD/"
     },
     "2026-11-28T09:30Z": {
       "episode": "062-maas",
@@ -841,6 +844,19 @@
         "postId": "6b09b1b4b83ec61257e38cf1",
         "status": "scheduled",
         "dueAt": "2026-11-29T09:30:00.000Z"
+      }
+    },
+    "2026-11-29T18:00Z": {
+      "episode": "076-torunlar",
+      "media": "v/076-torunlar-cfc331cf.mp4",
+      "status": "scheduled",
+      "at": "2026-11-27T19:14:46.201Z",
+      "postId": "6b09d6d602e606c3af7867fe",
+      "dueAt": "2026-11-29T18:00:00.000Z",
+      "yt": {
+        "postId": "6b09d6d7e19dcd08fbf3ea88",
+        "status": "scheduled",
+        "dueAt": "2026-11-29T18:00:00.000Z"
       }
     }
   }
