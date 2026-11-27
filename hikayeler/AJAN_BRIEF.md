@@ -27,6 +27,7 @@ Bilmece Mesaisi Instagram Reels için yapılan, Türkçe çizgi animasyonlu bir 
 3. **Ses** (rehber § 9; argümanları betiklerden oku): `py -3.14 tools/voice_tts.py` → `py -3.13 tools/voice_trim.py` → `py -3.13 tools/voice_words.py` → `node tools/ses.mjs bolumler/<id>.json`.
    - Her satırın whisper çıktısını kontrol et. Bozuk satırı yeniden yaz ve üret.
    - Süre ≤ 60 sn olmalı (hedef 45–55).
+   - **Formant kaydırma, asetrate/pitch-shift ya da benzeri hiçbir ses son işlemi yapılmaz.** Kullanıcı formantlı sesi iki kez "robotik" diye reddetti (4 Kas, 28 Kas: 086 Rıza Usta). Yan karakter sesi yalnız edge-tts `pitch` ve `rate` ile ayrıştırılır.
 4. **Sahne.** `engine/b0NN.js`. Her kare t'nin saf fonksiyonudur; `Math.random` yok, rastgelelik gerekiyorsa tohumlu üreteç ya da sabit liste kullan.
 5. **Stil kareleri.** `node tools/render.mjs <id> --sheet --at …` ile al, Read ile açıp kendin bak. 360 px genişlikte okunabilirliği kontrol et.
    - Yarım çözünürlük taslak: `--s 0.5 --j 3`.
