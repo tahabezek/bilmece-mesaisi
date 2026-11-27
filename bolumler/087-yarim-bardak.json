@@ -1,0 +1,125 @@
+{
+ "id": "087-yarim-bardak",
+ "num": 87,
+ "sira": 72,
+ "bpm": 120,
+ "slug": "yarim-bardak",
+ "coverAt": 0,
+ "cevapsizTasarim": true,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#mantık",
+  "#çay",
+  "#ofis"
+ ],
+ "card": [
+  "İnce belli bardak, ölçü kabı yok.",
+  "Tam yarım bardak nasıl koyarsın?"
+ ],
+ "caption": "Zeka sorusu: Doktor, Hikmet Bey'e günde yalnız yarım bardak çay izin verdi: ağzına kadar dolu bir çay bardağının tam yarısı, bir damla eksik olmasın. Çay ocağında bir demlik ve tepside altı ince belli bardaklık bir takım var; ölçü kabı, terazi, cetvel, kaşık yok.\n\nHikmet Bey'e tam yarım bardak çayı nasıl koyarsın?",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Doktor, günde yalnız yarım bardak çay dedi."
+   },
+   {
+    "id": "h2",
+    "who": "hikmet",
+    "gap": 0.28,
+    "text": "Ağzına kadar dolu bardağın tam yarısı. Bir damla eksik olmasın!"
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.28,
+    "text": "Kolay! Bardağın yarı boyuna kadar doldururum.",
+    "rate": "+2%"
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.28,
+    "text": "Olmaz, bardağın beli ince; üstü daha geniş."
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.28,
+    "text": "Bardağı eğip bakalım; dibi görününce yarımdır."
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.28,
+    "text": "Eğmek düz bardakta tutar. Peki tam yarımı nasıl koyarız?"
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 10.4,
+    "text": "Altı bardak; hepsi aynı takımdan.",
+    "rate": "+2%"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 1,
+    "text": "Buldum! İkinci bardak ölçü olacak."
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Bir bardağı ağzına kadar doldururum. Boş bardağa, iki seviye aynı hizaya gelene kadar dökerim."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu çayını ölçerek içen birine gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "d2>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "swish",
+   "h1-0.02"
+  ]
+ ],
+ "v4": true,
+ "sizinti": [
+  "İKİ BARDAK",
+  "İKİNCİ BARDAK",
+  "BOŞ BARDAĞA",
+  "AYNI HİZA",
+  "AYNI SEVİYE",
+  "YAN YANA",
+  "ÖBÜR BARDAĞA"
+ ],
+ "cevapsiz": {
+  "kesim": 33.854,
+  "kart": 44.56,
+  "tarih": "2026-11-20"
+ }
+}
