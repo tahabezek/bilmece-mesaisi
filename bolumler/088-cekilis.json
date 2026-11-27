@@ -1,0 +1,133 @@
+{
+ "id": "088-cekilis",
+ "num": 88,
+ "sira": 55.5,
+ "bpm": 120,
+ "slug": "cekilis",
+ "coverAt": 0,
+ "cevapsizTasarim": true,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#mantık",
+  "#yılbaşı",
+  "#çekiliş"
+ ],
+ "card": [
+  "Yılbaşı çekilişi: kimse kendini",
+  "çekmesin, kimse kimseyi bilmesin."
+ ],
+ "caption": "Zeka sorusu: Ofiste dört kişi yılbaşı hediyeleşmesi yapacak; herkes bir kişiye hediye alacak. Geçen yıl biri kendini çekti, dört kez yeniden çektiler. Hikmet Bey bu yıl tek çekiliş istiyor: kimse kendini çekmeyecek, kimse kimin kimi çektiğini bilmeyecek, Hikmet Bey dahil. Masada bir torba, kâğıtlar, bir kalem ve üstünde 1, 2, 3 ve 4 yazan dört zarf var.\n\nÇekilişi nasıl yaparlar?",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Geçen yıl biri kendini çekti; dört kez yeniden çektik."
+   },
+   {
+    "id": "h2",
+    "who": "hikmet",
+    "gap": 0.25,
+    "text": "Bu yıl tek çekiliş. Kimse kendini çekmeyecek, kimse kimin kimi çektiğini bilmeyecek; ben dahil."
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.25,
+    "text": "Kendini çeken geri atar, yeniden çeker.",
+    "rate": "+2%"
+   },
+   {
+    "id": "d2",
+    "who": "defne",
+    "gap": 0.25,
+    "text": "Olmaz, tek çekiliş dedi. Son çeken kendini çekerse torbada başka isim kalmaz. Nasıl yapacağız?"
+   },
+   {
+    "id": "n1",
+    "who": "necmi",
+    "gap": 10.4,
+    "text": "İsim değil de başka bir şey çeksek?",
+    "rate": "+2%"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 1.1,
+    "text": "Buldum! İsim değil, numara çekeceğiz."
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Herkes gizlice bir numara çeker; adını bir sonraki numaranın zarfına koyar, dördü çeken birinciye. Sonra herkes kendi zarfını açar, okur, geri koyar."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu ofiste çekilişi yapan birine gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "d2>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "swish",
+   "h1-0.02"
+  ],
+  [
+   "knock",
+   "h2:2+0.07"
+  ],
+  [
+   "pop",
+   "n0:1-0.12"
+  ],
+  [
+   "pop",
+   "n0:4-0.07"
+  ],
+  [
+   "pop",
+   "d2:5-0.14"
+  ]
+ ],
+ "v4": true,
+ "sizinti": [
+  "NUMARA",
+  "BİR FAZLA",
+  "BİR SONRAKİ",
+  "KENDİ ZARFINI",
+  "KENDİ NUMARASI"
+ ],
+ "cevapsiz": {
+  "kesim": 32.534,
+  "kart": 46.68,
+  "tarih": "2026-11-20"
+ },
+ "denetim": {
+  "surum": 1,
+  "sha": "640bbd4d",
+  "tarih": "2026-11-28",
+  "not": "Açık yöntem sorusu (A11). Avukat düzeltmesi uygulandı: zarflar masadan alınmaz. Kapılar geçti, bağımsız göz bulguları uygulandı. Alt masa bandı 085 düzeninde (IG açıklama alanı). Kulak kontrolü: h1 'çekti', n1 tonlaması."
+ }
+}
