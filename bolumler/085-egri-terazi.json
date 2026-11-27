@@ -26,43 +26,38 @@
     "id": "h1",
     "who": "hikmet",
     "gap": 0.3,
-    "text": "Annemin helvası: tam bir kilo şeker. Ne bir gram fazla ne eksik.",
-    "rate": "+12%"
+    "text": "Annemin helvası: tam bir kilo şeker. Ne bir gram fazla ne eksik."
    },
    {
     "id": "h2",
     "who": "hikmet",
     "gap": 0.3,
-    "text": "Kolları eşit değil ama sağlam; her dengede aynı yerde durur.",
-    "rate": "+12%"
+    "text": "Kolları eşit değil ama sağlam; her dengede aynı yerde durur."
    },
    {
     "id": "d1",
     "who": "defne",
     "gap": 0.3,
-    "text": "Elimde bir kiloluk tek ağırlıkla şeker var; başka hiçbir şey yok.",
-    "rate": "+16%"
+    "text": "Elimde bir kiloluk tek ağırlıkla şeker var; başka hiçbir şey yok."
    },
    {
     "id": "n0",
     "who": "necmi",
     "gap": 0.3,
     "text": "Bir sol kefede tart, bir sağ kefede; ortasını al!",
-    "rate": "+12%"
+    "rate": "+2%"
    },
    {
     "id": "d2",
     "who": "defne",
     "gap": 0.3,
-    "text": "Olmaz, ortası da kayar. Tam bir kiloyu nasıl tartarım?",
-    "rate": "+22%"
+    "text": "Olmaz, ortası da kayar. Tam bir kiloyu nasıl tartarım?"
    },
    {
     "id": "n1",
     "who": "defne",
     "gap": 10.4,
-    "text": "Şeker de bir ağırlıktır.",
-    "rate": "+16%"
+    "text": "Şeker de bir ağırlıktır."
    },
    {
     "id": "d3",
@@ -121,14 +116,14 @@
   "AĞIRLIĞI KALDIR"
  ],
  "cevapsiz": {
-  "kesim": 30.956,
-  "kart": 42.883,
+  "kesim": 32.776,
+  "kart": 44.703,
   "tarih": "2026-11-20"
  },
  "denetim": {
   "surum": 1,
-  "sha": "31a7a157",
+  "sha": "39258b06",
   "tarih": "2026-11-27",
-  "not": "bağımsız göz + düzeltme kontrolü: sızıntı yok, el/kart boşluğu/terazi fiziği düzeltildi; alt %35 dolap bandı 083 kalıbıyla aynı (IG açıklama alanı), kabul; yayına uygun"
+  "not": "Hikmet hızı temel ayara (−4%) döndü, Necmi +2%; görüntü değişmedi, göz düzeltmeleri korunuyor; yayına uygun (ses kulakla kontrol bekliyor)"
  }
 }

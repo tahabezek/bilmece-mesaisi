@@ -73,3 +73,8 @@ Kaynak: `hikayeler/bolum_084-086.md` § 085. Sahne: `engine/b085.js`. Bölüm do
 - Kanca ayrı geniş plân değil: film Hikmet ve Necmi plânıyla (1,40x) açılır; kare 0 kâğıt, terazi ve iki yüz.
 - Saç tepeleri kartın ≥ 50 px altında; Hikmet 55 px alçakta durur (tezgâhın arkasında). Grup ve tuzak tek plân 1,42→1,46x; tezgâh hattı ≈ 1210 px, altında yalnız altyazı/sayaç bandı ve Instagram arayüzü.
 - Defne'nin eli baştan ağırlığın topuzunda; Necmi'nin eli ağırlığa yukarıdan gelir. Ağırlık uzun koldaysa kol −12°, kısa koldaysa +9° eğilir (dayanakta durur).
+
+**Ses turu (kullanıcı: Hikmet robotik, 27 Kas)**
+- Satır hızları kaldırıldı: Hikmet ve Defne voices.json temelinde (Hikmet −4% / −6 Hz, Defne +12%), Necmi +2%. Son işlem yok.
+- Ölçülen: h1 0,30–4,80 · h2 5,10–8,97 · d1 9,27–12,56 · n0 12,86–16,16 · d2 16,46–19,71 · n1 30,11–31,40 · d3 32,90. Kesim 32,78, kesilmiş film 35,1 sn. Kelime kırpılmadı (55).
+- Bu bölümdeki eski ölçülen saniyeler (tablolar) bu turdan önceki sese aittir; görüntü kelime çapalarından okunduğu için yeni sese uydu.
