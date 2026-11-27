@@ -26,34 +26,31 @@
     "id": "h1",
     "who": "hikmet",
     "gap": 0.3,
-    "text": "Çay ocağını koridora kuracağım; toplam yürüyüş en az olsun.",
-    "rate": "+14%"
+    "text": "Çay ocağını koridora kuracağım; toplam yürüyüş en az olsun."
    },
    {
     "id": "h2",
     "who": "hikmet",
-    "gap": 0.25,
-    "text": "Muhasebede dört, insan kaynaklarında iki, bilgi işlemde üç kişi.",
-    "rate": "+14%"
+    "gap": 0.2,
+    "text": "Muhasebede dört, insan kaynaklarında iki, bilgi işlemde üç kişi."
    },
    {
     "id": "h3",
     "who": "hikmet",
-    "gap": 0.25,
-    "text": "Herkes aynı sayıda çay içiyor, çayını kendisi alıyor. Ocağı yalnız bu dokuz kişi kullanacak.",
-    "rate": "+14%"
+    "gap": 0.2,
+    "text": "Herkes aynı sayıda çay içiyor, çayını kendisi alıyor. Ocağı yalnız bu dokuz kişi kullanacak."
    },
    {
     "id": "n0",
     "who": "necmi",
-    "gap": 0.3,
+    "gap": 0.25,
     "text": "En kalabalık oda muhasebe. Ocağı muhasebenin önüne koyalım!",
-    "rate": "+12%"
+    "rate": "+4%"
    },
    {
     "id": "d1",
     "who": "defne",
-    "gap": 0.25,
+    "gap": 0.2,
     "text": "Kalabalık yetmez. Ocak tam nereye kurulmalı?",
     "rate": "+18%"
    },
@@ -67,7 +64,7 @@
    {
     "id": "d3",
     "who": "defne",
-    "gap": 0.85,
+    "gap": 0.6,
     "text": "Buldum! İnsan kaynaklarının kapısına."
    },
    {
@@ -115,15 +112,15 @@
   "İK'NIN ÖNÜ",
   "ORTANCA"
  ],
- "cevapsiz": {
-  "kesim": 31.944,
-  "kart": 41.082,
-  "tarih": "2026-11-20"
- },
  "denetim": {
   "surum": 1,
-  "sha": "392a7bf0",
+  "sha": "e5d82090",
   "tarih": "2026-11-27",
-  "not": "bağımsız göz + düzeltme kontrolü: sızıntı yok, Kerem yüzü açık, araba her planda ortada; yayına uygun"
+  "not": "Hikmet hızı temel ayara (−4%) döndü, Necmi +4%; görüntü değişmedi, göz düzeltmeleri korunuyor; yayına uygun (ses kulakla kontrol bekliyor)"
+ },
+ "cevapsiz": {
+  "kesim": 33.934,
+  "kart": 43.072,
+  "tarih": "2026-11-20"
  }
 }

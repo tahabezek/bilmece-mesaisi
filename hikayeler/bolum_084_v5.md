@@ -68,3 +68,7 @@ Kaynak: `hikayeler/bolum_084-086.md` § 084 (ustalık defteri ilk turu, S7 çeki
 - d1 balonu sayaçla üst üste biniyordu → sayaç kesmesinde söner.
 - İpucu: itiş n1'in başında (29,46–31,56 sn); n1 ile d3 arası 0,85 sn, balon 2,5 sn okunur. Kelime: h2 "var", d1 "tek başına" düştü ("Kalabalık yetmez."), aralar 0,25; Necmi +12%. "Buldum!" öncesi 52 kelime.
 - Yeni süreler: h1 0,30–3,52 · h2 3,77–7,54 · h3 7,79–12,83 · n0 13,13–16,46 · d1 16,71–19,16 · sayaç 19,21–29,21 · n1 29,51–31,21 · kesim 31,94 · d3 32,06 · kesilmiş film 34,2 sn.
+
+**Ses düzeltmesi (27 Kas, kullanıcı: Hikmet "robotik")**
+- Hikmet satırlarında `rate` kaldırıldı (voices.json temeli −4%, −6 Hz); Necmi +12% → +4%. Kelime kırpılmadı; aralar 0,2–0,25 sn, d3 öncesi 0,6 sn.
+- Yeni süreler: h1 0,30–4,11 · h2 4,31–8,78 · h3 8,98–14,92 · n0 15,17–18,75 · d1 18,95–21,40 · sayaç 21,45–31,45 · n1 31,75–33,45 · kesim 33,93 · d3 34,05 · kesilmiş film 36,2 sn.
