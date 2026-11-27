@@ -65,3 +65,8 @@ Kaynak: `hikayeler/bolum_078.md`. Sahne: `engine/b078.js`. Bölüm dosyası: `bo
 - h3 altyazısı iki parça (`split: { h3: 6 }`): tek parça üç satıra çıkıp güvenli alanın altına taşıyordu.
 - s1 altyazıda Saadet Hanım'a bağlıdır (`tlA` içinde `who: b078_saadet`); kuyruğu onu gösterir, geri dönüşün öbür balonları kuyruksuz.
 - Ofis plânlarında yalnız plândaki kişiler çizilir (`KADRO`).
+
+**Ses düzeltmesi (27 Kas, kullanıcı: Hikmet "robotik")**
+- Hikmet satırlarında `rate` kaldırıldı (voices.json temeli −4%, −6 Hz). Şartlar aynı; kırpılan kelimeler: h1 "Dün akşam" ("DÜN AKŞAM" hapı ekranda kalıyor), h1b "Birden" ("Elektrik kesildi, bütün mahalle karardı."). "Oda zifiri karanlıktı" denendi, TTS "Oda"yı yine yuttu; "Odanın içi" kaldı.
+- Aralar 0,2 (h1 0,25, s1 0,2), d3 öncesi 0,5; n1 arası 10,4 (sayaç s1'den 0,1 sn sonra başlar). Motor: yalnız kelime çapası indisleri kaydırıldı (h1:5→3, h1:7→5, h1b −1); sfx knock `h1b:1`.
+- Yeni süreler: h1 0,25–3,36 · h1b 3,56–8,66 · d1 8,86–9,77 · h2 9,97–14,77 · h3 14,97–20,31 · s1 20,51–22,57 · sayaç 22,67–32,67 · n1 32,97–35,23 · kesim 35,61 · d3 35,73 · kesilmiş film 37,9 sn.

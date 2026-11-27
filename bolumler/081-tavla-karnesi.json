@@ -26,13 +26,12 @@
     "id": "h1",
     "who": "hikmet",
     "gap": 0.3,
-    "text": "Her maçımdan sonra Kerem, ilk maçımdan beri toplam galibiyet oranımı tahtaya yazar.",
-    "rate": "+14%"
+    "text": "Her maçımdan sonra Kerem, ilk maçımdan beri toplam galibiyet oranımı tahtaya yazar."
    },
    {
     "id": "d1",
     "who": "defne",
-    "gap": 0.28,
+    "gap": 0.2,
     "text": "Beraberlik yok. Ocakta oranınız yüzde yetmiş beşin altındaydı.",
     "rate": "+16%"
    },
@@ -40,29 +39,27 @@
     "id": "h2",
     "who": "hikmet",
     "gap": 1.9,
-    "text": "Aralıkta yüzde yetmiş beşin üstüne çıktım.",
-    "rate": "+14%"
+    "text": "Aralıkta yüzde yetmiş beşin üstüne çıktım."
    },
    {
     "id": "n0",
     "who": "necmi",
-    "gap": 0.28,
+    "gap": 0.2,
     "text": "Demek ki oran bir ara tam yüzde yetmiş beş olmuş.",
     "rate": "+2%"
    },
    {
     "id": "d2",
     "who": "defne",
-    "gap": 0.28,
+    "gap": 0.2,
     "text": "Atlamış olabilir. Bu oran tek maçta sıçrayabilir.",
     "rate": "+16%"
    },
    {
     "id": "h3",
     "who": "hikmet",
-    "gap": 0.28,
-    "text": "Peki, hanginiz haklı?",
-    "rate": "+8%"
+    "gap": 0.2,
+    "text": "Hanginiz haklı?"
    },
    {
     "id": "n1",
@@ -163,14 +160,14 @@
   "%75,0"
  ],
  "cevapsiz": {
-  "kesim": 34.604,
-  "kart": 47.09,
+  "kesim": 35.184,
+  "kart": 47.67,
   "tarih": "2026-11-20"
  },
  "denetim": {
   "surum": 1,
-  "sha": "97cd722c",
+  "sha": "be3445e9",
   "tarih": "2026-11-27",
-  "not": "kart eksiltisiz; iki tur bağımsız göz 27 Kas"
+  "not": "Hikmet temel hıza döndü (robotik bulundu, 28 Kas); şart taşımayan kelime kırpıldı, görüntü yalnız çapa/itme düzeltmesi; yayına uygun (ses kulakla kontrol bekliyor)"
  }
 }

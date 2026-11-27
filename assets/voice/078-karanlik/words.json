@@ -1,121 +1,106 @@
 {
  "h1": {
-  "key": "f8a05997c32c",
-  "trimmed": "f8a05997c32c",
-  "wkey": "f8a05997c32c",
-  "heard": "Dün akşam annem ilk kez okuduğu bir kitabı bana okuyordu.",
+  "key": "2da2ad7f29f0",
+  "trimmed": "2da2ad7f29f0",
+  "wkey": "2da2ad7f29f0",
+  "heard": "Annem ilk kez okuduğu bir kitabı bana okuyordu.",
   "words": [
    {
-    "w": "Dün",
+    "w": "Annem,",
     "t0": 0.0,
-    "t1": 0.22
-   },
-   {
-    "w": "akşam",
-    "t0": 0.22,
-    "t1": 0.6
-   },
-   {
-    "w": "annem,",
-    "t0": 0.6,
-    "t1": 1.04
+    "t1": 0.58
    },
    {
     "w": "ilk",
-    "t0": 1.04,
-    "t1": 1.29
+    "t0": 0.58,
+    "t1": 0.89
    },
    {
     "w": "kez",
-    "t0": 1.29,
-    "t1": 1.54
+    "t0": 0.89,
+    "t1": 1.2
    },
    {
     "w": "okuduğu",
-    "t0": 1.54,
-    "t1": 1.92
+    "t0": 1.2,
+    "t1": 1.62
    },
    {
     "w": "bir",
-    "t0": 1.92,
-    "t1": 1.98
+    "t0": 1.62,
+    "t1": 1.7
    },
    {
     "w": "kitabı",
-    "t0": 1.98,
-    "t1": 2.42
+    "t0": 1.7,
+    "t1": 2.22
    },
    {
     "w": "bana",
-    "t0": 2.42,
-    "t1": 2.56
+    "t0": 2.22,
+    "t1": 2.38
    },
    {
     "w": "okuyordu.",
-    "t0": 2.56,
-    "t1": 3.04
+    "t0": 2.38,
+    "t1": 2.92
    }
   ],
-  "dur": 3.21
+  "dur": 3.11
  },
  "h1b": {
-  "key": "c4cb5bac869f",
-  "trimmed": "c4cb5bac869f",
-  "wkey": "c4cb5bac869f",
-  "heard": "Birden elektrik kesildi. Bütün mahalle karardı. Ay yoktu, perdeler kapalıydı.",
+  "key": "4d90fa604ea0",
+  "trimmed": "4d90fa604ea0",
+  "wkey": "4d90fa604ea0",
+  "heard": "Elektrik kesildi, bütün mahalle karardı. Ay yoktu, perdeler kapalıydı.",
   "words": [
    {
-    "w": "Birden",
+    "w": "Elektrik",
     "t0": 0.0,
-    "t1": 0.44
+    "t1": 0.52
    },
    {
-    "w": "elektrik",
-    "t0": 0.44,
-    "t1": 0.82
+    "w": "kesildi,",
+    "t0": 0.52,
+    "t1": 1.28
    },
    {
-    "w": "kesildi.",
-    "t0": 0.82,
-    "t1": 1.42
-   },
-   {
-    "w": "Bütün",
-    "t0": 1.66,
-    "t1": 1.94
+    "w": "bütün",
+    "t0": 1.4,
+    "t1": 1.64
    },
    {
     "w": "mahalle",
-    "t0": 1.94,
-    "t1": 2.28
+    "t0": 1.64,
+    "t1": 2.08
    },
    {
     "w": "karardı.",
-    "t0": 2.28,
-    "t1": 2.74
+    "t0": 2.08,
+    "t1": 2.62
    },
    {
     "w": "Ay",
-    "t0": 2.74,
-    "t1": 3.3
+    "t0": 2.62,
+    "t1": 3.2
    },
    {
     "w": "yoktu,",
-    "t0": 3.3,
-    "t1": 3.64
+    "t0": 3.2,
+    "t1": 3.6
    },
    {
     "w": "perdeler",
     "t0": 3.86,
-    "t1": 4.28
+    "t1": 4.32
    },
    {
     "w": "kapalıydı.",
-    "t0": 4.28,
-    "t1": 4.88
+    "t0": 4.32,
+    "t1": 5.0
    }
   ],
-  "dur": 4.946
+  "dur": 5.098
  },
  "d1": {
   "key": "732563d2186e",
@@ -142,122 +127,122 @@
   "dur": 0.91
  },
  "h2": {
-  "key": "360d97019e70",
-  "trimmed": "360d97019e70",
-  "wkey": "360d97019e70",
+  "key": "9e675713d912",
+  "trimmed": "9e675713d912",
+  "wkey": "9e675713d912",
   "heard": "Mun yoktu, telefonların şarjı bitmişti. Odanın içi zifiri karanlıktı.",
   "words": [
    {
     "w": "Mum",
     "t0": 0.0,
-    "t1": 0.22
+    "t1": 0.24
    },
    {
     "w": "yoktu,",
-    "t0": 0.22,
-    "t1": 0.62
+    "t0": 0.24,
+    "t1": 0.7
    },
    {
     "w": "telefonların",
-    "t0": 0.88,
-    "t1": 1.4
+    "t0": 1.0,
+    "t1": 1.62
    },
    {
     "w": "şarjı",
-    "t0": 1.4,
-    "t1": 1.84
+    "t0": 1.62,
+    "t1": 2.1
    },
    {
     "w": "bitmişti.",
-    "t0": 1.84,
-    "t1": 2.32
+    "t0": 2.1,
+    "t1": 2.66
    },
    {
     "w": "Odanın",
-    "t0": 2.6,
-    "t1": 3.0
+    "t0": 2.92,
+    "t1": 3.4
    },
    {
     "w": "içi",
-    "t0": 3.0,
-    "t1": 3.24
+    "t0": 3.4,
+    "t1": 3.66
    },
    {
     "w": "zifiri",
-    "t0": 3.24,
-    "t1": 3.52
+    "t0": 3.66,
+    "t1": 4.0
    },
    {
     "w": "karanlıktı.",
-    "t0": 3.52,
-    "t1": 4.12
+    "t0": 4.0,
+    "t1": 4.66
    }
   ],
-  "dur": 4.228
+  "dur": 4.798
  },
  "h3": {
-  "key": "e261b634b700",
-  "trimmed": "e261b634b700",
-  "wkey": "e261b634b700",
-  "heard": "Annem ise sayfaları çevirerek kitapta yazanı kelimesi kelimesine okumaya devam etti.",
+  "key": "d81c162fb029",
+  "trimmed": "d81c162fb029",
+  "wkey": "d81c162fb029",
+  "heard": "Annem ise sayfaları çevirerek, kitapta yazanı kelimesi kelimesine okumaya devam etti.",
   "words": [
    {
     "w": "Annem",
     "t0": 0.0,
-    "t1": 0.4
+    "t1": 0.44
    },
    {
     "w": "ise",
-    "t0": 0.4,
-    "t1": 0.56
+    "t0": 0.44,
+    "t1": 0.66
    },
    {
     "w": "sayfaları",
-    "t0": 0.56,
-    "t1": 1.12
+    "t0": 0.66,
+    "t1": 1.28
    },
    {
     "w": "çevirerek,",
-    "t0": 1.12,
-    "t1": 1.7
+    "t0": 1.28,
+    "t1": 1.94
    },
    {
     "w": "kitapta",
-    "t0": 1.7,
-    "t1": 2.28
+    "t0": 2.16,
+    "t1": 2.6
    },
    {
     "w": "yazanı",
-    "t0": 2.28,
-    "t1": 2.58
+    "t0": 2.6,
+    "t1": 2.94
    },
    {
     "w": "kelimesi",
-    "t0": 2.58,
-    "t1": 3.06
+    "t0": 2.94,
+    "t1": 3.5
    },
    {
     "w": "kelimesine",
-    "t0": 3.06,
-    "t1": 3.56
+    "t0": 3.5,
+    "t1": 4.08
    },
    {
     "w": "okumaya",
-    "t0": 3.56,
-    "t1": 3.96
+    "t0": 4.08,
+    "t1": 4.54
    },
    {
     "w": "devam",
-    "t0": 3.96,
-    "t1": 4.16
+    "t0": 4.54,
+    "t1": 4.76
    },
    {
     "w": "etti.",
-    "t0": 4.16,
-    "t1": 4.46
+    "t0": 4.76,
+    "t1": 5.12
    }
   ],
-  "dur": 4.67
+  "dur": 5.34
  },
  "s1": {
   "key": "175181fb9359",

@@ -25,41 +25,37 @@
    {
     "id": "h1",
     "who": "hikmet",
-    "gap": 0.3,
-    "text": "Dün akşam annem, ilk kez okuduğu bir kitabı bana okuyordu.",
-    "rate": "+10%"
+    "gap": 0.25,
+    "text": "Annem, ilk kez okuduğu bir kitabı bana okuyordu."
    },
    {
     "id": "h1b",
     "who": "hikmet",
-    "gap": 0.3,
-    "text": "Birden elektrik kesildi. Bütün mahalle karardı. Ay yoktu, perdeler kapalıydı.",
-    "rate": "+10%"
+    "gap": 0.2,
+    "text": "Elektrik kesildi, bütün mahalle karardı. Ay yoktu, perdeler kapalıydı."
    },
    {
     "id": "d1",
     "who": "defne",
-    "gap": 0.3,
+    "gap": 0.2,
     "text": "Mum yok muydu?"
    },
    {
     "id": "h2",
     "who": "hikmet",
-    "gap": 0.3,
-    "text": "Mum yoktu, telefonların şarjı bitmişti. Odanın içi zifiri karanlıktı.",
-    "rate": "+10%"
+    "gap": 0.2,
+    "text": "Mum yoktu, telefonların şarjı bitmişti. Odanın içi zifiri karanlıktı."
    },
    {
     "id": "h3",
     "who": "hikmet",
-    "gap": 0.3,
-    "text": "Annem ise sayfaları çevirerek, kitapta yazanı kelimesi kelimesine okumaya devam etti.",
-    "rate": "+10%"
+    "gap": 0.2,
+    "text": "Annem ise sayfaları çevirerek, kitapta yazanı kelimesi kelimesine okumaya devam etti."
    },
    {
     "id": "s1",
     "who": "defne",
-    "gap": 0.32,
+    "gap": 0.2,
     "text": "“Gemi yavaşça limandan ayrıldı.”",
     "tts": "Gemi yavaşça limandan ayrıldı.",
     "rate": "-8%",
@@ -68,14 +64,14 @@
    {
     "id": "n1",
     "who": "defne",
-    "gap": 10.45,
+    "gap": 10.4,
     "text": "Hikmet Bey, o kitabı bir de elinize alın.",
     "rate": "+2%"
    },
    {
     "id": "d3",
     "who": "defne",
-    "gap": 0.9,
+    "gap": 0.5,
     "text": "Buldum! Anneniz görme engelli, kitap kabartma yazıyla basılmış."
    },
    {
@@ -110,7 +106,7 @@
  "sfx": [
   [
    "knock",
-   "h1b:2-0.08"
+   "h1b:1-0.08"
   ],
   [
    "swish",
@@ -135,14 +131,14 @@
   "PARMAKLARIYLA"
  ],
  "cevapsiz": {
-  "kesim": 35.334,
-  "kart": 45.68,
+  "kesim": 35.606,
+  "kart": 45.952,
   "tarih": "2026-11-20"
  },
  "denetim": {
   "surum": 1,
-  "sha": "567d770b",
-  "tarih": "2026-11-26",
-  "not": "üretim ajanı + bağımsız göz 26 Kas"
+  "sha": "5cb20231",
+  "tarih": "2026-11-27",
+  "not": "Hikmet temel hıza döndü (robotik bulundu, 28 Kas); şart taşımayan kelime kırpıldı, görüntü yalnız çapa/itme düzeltmesi; yayına uygun (ses kulakla kontrol bekliyor)"
  }
 }

@@ -80,3 +80,8 @@ Kaynak: `hikayeler/bolum_079-083.md` § 081 (Putnam 2004 A1). Sahne: `engine/b08
 - Hikmet'in yakın planında başı kartın 20 px altındaydı, solda tahta şeridi ve kaynağı görünmeyen demlik buharı vardı → kadraj aşağı ve sağa, bu planda buhar yok.
 - h2'nin ilk 0,7 sn'si ekran dışından geliyordu → h2 öncesi ara 1,6 → 1,9 sn, kesme h2'nin başına alındı.
 - h1 balonu "ilk maçımdan… / …beri" diye bölünüyordu → "Her maçımdan sonra Kerem," / "ilk maçımdan beri …".
+
+**Ses düzeltmesi (27 Kas, kullanıcı: Hikmet "robotik")**
+- Hikmet satırlarında `rate` kaldırıldı (h1, h2 +14%, h3 +8% → voices.json temeli −4%, −6 Hz); Necmi +2% kaldı. Aralar 0,2 (h2 öncesi 1,9 sn zaman atlaması korundu), d3 öncesi 0,45.
+- Kırpılan kelime: h3 "Peki," ("Hanginiz haklı?"). Motor: omuz silkme çapası `h3:1` → `h3:0`.
+- Yeni süreler: h1 0,30–5,53 · d1 5,73–9,25 · h2 11,15–13,66 · n0 13,86–16,69 · d2 16,89–19,66 · h3 19,86–21,01 · sayaç 21,16–31,16 · n1 31,46–34,85 · kesim 35,18 · d3 35,30 · kesilmiş film 37,5 sn.

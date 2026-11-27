@@ -222,7 +222,7 @@ export const draw = (K, t, ep, tl, S) => H.cerceve(K, t, ep, S.tlA, S, {
   drift: 0.006,
   kamera(cam, t, B) {
     const { tm } = S, id = B.sc.id;
-    if (id === 'sayac') Object.assign(cam, insertKam);                                            // tutanak okunurken kamera sabit
+    if (id === 'sayac') Object.assign(cam, insertKam, { zoom: lg(insertKam.zoom, insertKam.zoom * 1.04, clamp01((t - tm.sayac) / (tm.say2 - tm.sayac))) });   // tutanakta yavaş doğrusal itme (sesin kısalmasıyla 22. sn durgun kalıyordu)
     else if (id === 'say2') Object.assign(cam, { zoom: lg(1.34, 1.41, clamp01((t - tm.say2) / 3.35)), cx: 525, cy: 1105 });
     else if (id === 'say3') Object.assign(cam, { zoom: lg(1.45, 1.53, clamp01((t - tm.say3) / (tm.buldum - tm.say3))), cx: NEC_X + 30, cy: 1150 });
     else if (id === 'tutanak') Object.assign(cam, insertKam);

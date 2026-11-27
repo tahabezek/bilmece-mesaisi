@@ -65,3 +65,8 @@ Kaynak: `hikayeler/bolum_079-083.md` § 080 (Fixx, *More Games for the Superinte
 - Kangal etiketi sarımın arasına sıkıştırılmış karton, kangalın üstünde dik durur (altyazı balonundan uzak); kangal hep masada kalır (kaldırılınca etiket yüzü örtüyordu).
 - Plânda kimler çizilir: `KADRO` (kenarda yarım yüz kalmasın). Tutanak yakın plânında kangal ve şerit metre çizilmez (etiketi kenarda yarım kalıyordu).
 - Kart ve sayaç ekran katmanında (`kartSon: -1`); sayaç 075'teki gibi alt bantta, perdesiz.
+
+**Ses düzeltmesi (27 Kas, kullanıcı: Hikmet "robotik")**
+- Hikmet satırlarında `rate` kaldırıldı (voices.json temeli −4%, −6 Hz); Necmi +2% kaldı. Kelime kırpılmadı; aralar 0,2, d3 öncesi 0,6.
+- Motor: sayaçta tutanak plânı sabit kaldığı için 22. sn durgun çıktı (YDIF 0,09); tutanağa sayaç plânı boyunca %4 doğrusal itme eklendi.
+- Yeni süreler: h1 0,30–4,23 · h1b 4,43–7,23 · n0 7,43–11,19 · d1 11,39–14,13 · h3 14,33–19,83 · sayaç 20,18–30,18 · n1 30,48–33,23 · kesim 33,71 · d3 33,83 · kesilmiş film 36,0 sn.

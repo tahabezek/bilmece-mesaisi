@@ -26,35 +26,32 @@
     "id": "h1",
     "who": "hikmet",
     "gap": 0.3,
-    "text": "Eski direğin yerine yenisini diktiler, eskisi yarın sökülecek.",
-    "rate": "+8%"
+    "text": "Eski direğin yerine yenisini diktiler, eskisi yarın sökülecek."
    },
    {
     "id": "h1b",
     "who": "hikmet",
-    "gap": 0.3,
-    "text": "İkisi de dümdüz arsada, ikisi de on metre.",
-    "rate": "+8%"
+    "gap": 0.2,
+    "text": "İkisi de dümdüz arsada, ikisi de on metre."
    },
    {
     "id": "n0",
     "who": "necmi",
-    "gap": 0.3,
+    "gap": 0.2,
     "text": "Direklerin tepesine on beş metrelik, esnemeyen bir ip bağladık.",
     "rate": "+2%"
    },
    {
     "id": "d1",
     "who": "defne",
-    "gap": 0.3,
+    "gap": 0.2,
     "text": "İpin en alçak yeri yerden iki buçuk metre yukarıda."
    },
    {
     "id": "h3",
     "who": "hikmet",
-    "gap": 0.3,
-    "text": "Kerem bütün ölçüleri yazmış, yalnız direklerin arasını yazmamış. Arası kaç metre?",
-    "rate": "+8%"
+    "gap": 0.2,
+    "text": "Kerem bütün ölçüleri yazmış, yalnız direklerin arasını yazmamış. Arası kaç metre?"
    },
    {
     "id": "n1",
@@ -66,7 +63,7 @@
    {
     "id": "d3",
     "who": "defne",
-    "gap": 0.7,
+    "gap": 0.6,
     "text": "Buldum! Sıfır metre. Direkler yan yana."
    },
    {
@@ -145,14 +142,14 @@
   "7,5"
  ],
  "cevapsiz": {
-  "kesim": 32.948,
-  "kart": 44.952,
+  "kesim": 33.708,
+  "kart": 45.712,
   "tarih": "2026-11-20"
  },
  "denetim": {
   "surum": 1,
-  "sha": "83191702",
-  "tarih": "2026-11-26",
-  "not": "kroki kaldırıldı; bağımsız göz + koordinatör 26 Kas"
+  "sha": "60838037",
+  "tarih": "2026-11-27",
+  "not": "Hikmet temel hıza döndü (robotik bulundu, 28 Kas); şart taşımayan kelime kırpıldı, görüntü yalnız çapa/itme düzeltmesi; yayına uygun (ses kulakla kontrol bekliyor)"
  }
 }

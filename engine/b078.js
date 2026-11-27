@@ -310,8 +310,8 @@ export function build(ep, tl) {
   const T = e => H.at(tl, e), cd = T(ep.countdown), cd0 = cd - (ep.cdSure || 10);
   const tm = {
     cd, cd0, end: T('d6>') + 0.1, buldum: T('d3'), proof: T('d3>') + 0.05,
-    salon: T('h1:5') - 0.05, kitabi: T('h1:7'), kesildi: T('h1b:2'),
-    disari: T('h1b:3') - 0.1, mahalle: T('h1b:4'), karardi: T('h1b:5'), ay: T('h1b:6'), perde: T('h1b:8'),
+    salon: T('h1:3') - 0.05, kitabi: T('h1:5'), kesildi: T('h1b:1'),
+    disari: T('h1b:2') - 0.1, mahalle: T('h1b:3'), karardi: T('h1b:4'), ay: T('h1b:5'), perde: T('h1b:7'),
     defne: T('d1') - 0.1,
     hikmet: T('h2') - 0.1, tel: T('h2:2'), bitti: T('h2:4'),
     karanlik: T('h2:5') - 0.1, h3: T('h3'), cevirerek: T('h3:3'), kelime: T('h3:6'),

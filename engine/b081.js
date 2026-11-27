@@ -248,7 +248,7 @@ export function build(ep, tl) {
     h2: T('h2'), h2yuz: T('h2:1'), ustune: T('h2:4'), h2s: T('h2>'),
     n0: T('n0'), tam: T('n0:5'), n0s: T('n0>'),
     d2: T('d2'), sicra: T('d2:6'), d2s: T('d2>'),
-    h3: T('h3'), hangi: T('h3:1'), h3s: T('h3>'),
+    h3: T('h3'), hangi: T('h3:0'), h3s: T('h3>'),
     n1: T('n1'), kaca: T('n1:3'), once: T('n1:6'), n1s: T('n1>'),
   };
   tm.ikiliKes = tm.d1 - 0.1; tm.atlaKes = tm.d1s + 0.1; tm.necKes = tm.n0 - 0.1; tm.defKes = tm.d2 - 0.1; tm.hikKes = tm.h3 - 0.1;
