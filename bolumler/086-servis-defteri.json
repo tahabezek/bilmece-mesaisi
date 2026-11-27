@@ -27,63 +27,65 @@
     "who": "hikmet",
     "gap": 0.3,
     "text": "Dört seferde, sefer başına ortalama yedi yolcu taşıdım.",
-    "rate": "+10%",
-    "pitch": "-14Hz",
-    "not": "Rıza Usta (yan karakter): sahnede who = b086_riza; ses Ahmet, sonra formant 0,94 elle uygulandı (voice_tts satır formantını okumuyor)"
+    "rate": "-4%",
+    "pitch": "-8Hz",
+    "not": "Rıza Usta (yan karakter): sahnede who = b086_riza; ses yalnız edge-tts Ahmet, −8 Hz, −4% (son işlem yok; kullanıcı formantlı sesi robotik buldu)"
    },
    {
     "id": "d1",
     "who": "defne",
-    "gap": 0.25,
-    "text": "Binen herkese tek tek sordum. Hepsi aynı sayıyı söyledi: \"Benim seferimde, ben dahil, on dört yolcu vardı.\"",
-    "tts": "Binen herkese tek tek sordum. Hepsi aynı sayıyı söyledi: Benim seferimde, ben dahil, on dört yolcu vardı.",
-    "rate": "+22%"
+    "gap": 0.2,
+    "text": "Herkese tek tek sordum. Hepsi aynı sayıyı söyledi: \"Benim seferimde, ben dahil, on dört yolcu vardı.\"",
+    "tts": "Herkese tek tek sordum. Hepsi aynı sayıyı söyledi: Benim seferimde, ben dahil, on dört yolcu vardı.",
+    "rate": "+4%"
    },
    {
     "id": "h1",
     "who": "hikmet",
     "gap": 0.2,
-    "text": "Servis duraksız; herkes bir kez bindi.",
-    "rate": "+12%"
+    "text": "Servis duraksız; herkes bir kez bindi."
    },
    {
     "id": "n0",
     "who": "necmi",
     "gap": 0.2,
-    "text": "Biri yalan söylüyor! Ortalama yediyse herkes on dört diyemez.",
-    "rate": "+12%"
+    "text": "Yalan var! Ortalama yediyse herkes on dört diyemez.",
+    "rate": "+4%"
    },
    {
     "id": "d2",
     "who": "defne",
     "gap": 0.2,
     "text": "Kimse yalan söylemiyor. Dört seferde kaçar yolcu vardı?",
-    "rate": "+22%"
+    "rate": "+4%"
    },
    {
     "id": "n1",
     "who": "defne",
     "gap": 10.4,
     "text": "Şoför her seferi sayar. Yolcu hangisini anlatır?",
-    "rate": "+16%"
+    "rate": "+4%"
    },
    {
     "id": "d3",
     "who": "defne",
-    "gap": 1.65,
-    "text": "Buldum! On dört, on dört, sıfır, sıfır."
+    "gap": 0.95,
+    "text": "Buldum! On dört, on dört, sıfır, sıfır.",
+    "rate": "+4%"
    },
    {
     "id": "d4",
     "who": "defne",
     "gap": 0.35,
-    "text": "Dört seferde toplam yirmi sekiz yolcu var; on dörtlük iki sefer eder. Boş seferi anlatacak kimse yok."
+    "text": "Dört seferde toplam yirmi sekiz yolcu var; on dörtlük iki sefer eder. Boş seferi anlatacak kimse yok.",
+    "rate": "+4%"
    },
    {
     "id": "d6",
     "who": "defne",
     "gap": 0.7,
-    "text": "Bunu servis arkadaşına gönder."
+    "text": "Bunu servis arkadaşına gönder.",
+    "rate": "+4%"
    }
   ]
  },
@@ -126,15 +128,15 @@
   "YİRMİ SEKİZ",
   "14, 14, 0, 0"
  ],
- "cevapsiz": {
-  "kesim": 34.382,
-  "kart": 46.148,
-  "tarih": "2026-11-20"
- },
  "denetim": {
   "surum": 1,
-  "sha": "f19fa2f6",
+  "sha": "b2786f39",
   "tarih": "2026-11-27",
-  "not": "bağımsız göz 2 tur (28 Kas): sızıntı temiz, el/altyazı düzeltildi, yayına uygun; Rıza sesi kulakla kontrol bekliyor"
+  "not": "Sesler son işlemsiz (Rıza formantsız Ahmet −8Hz −4%, Hikmet temel −4%), hiçbir satır +4% üstünde değil; şartlar korunuyor; görüntüde tek değişiklik sayaçta Rıza'nın eğilmesi; yayına uygun (ses kulakla kontrol bekliyor)"
+ },
+ "cevapsiz": {
+  "kesim": 35.692,
+  "kart": 48.188,
+  "tarih": "2026-11-20"
  }
 }

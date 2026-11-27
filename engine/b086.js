@@ -242,17 +242,17 @@ export function build(ep, tl) {
   const tm = {
     cd, cd0, end: T('d6>') + 0.095, buldum: T('d3'), proof: T('d3>') + 0.05, cevap: T('d3>') + 0.15,
     r1: T('r1'), dort: T('r1:0'), sefer: T('r1:2'), basina: T('r1:3'), ortalama: T('r1:4'), yedi: T('r1:5'), tasidim: T('r1:7'), r1s: T('r1>'),
-    d1: T('d1'), herkese: T('d1:1'), tek: T('d1:2'), sordum: T('d1:4'), hepsi: T('d1:5'), ayni: T('d1:6'), sayiyi: T('d1:7'),
-    benim: T('d1:9'), ondort: T('d1:13'), d1s: T('d1>'),
+    d1: T('d1'), herkese: T('d1:0'), tek: T('d1:1'), sordum: T('d1:3'), hepsi: T('d1:4'), ayni: T('d1:5'), sayiyi: T('d1:6'),
+    benim: T('d1:8'), ondort: T('d1:12'), d1s: T('d1>'),
     h1: T('h1'), duraksiz: T('h1:1'), herkesH: T('h1:2'), bir: T('h1:3'), h1s: T('h1>'),
-    n0: T('n0'), yalan: T('n0:1'), ortN: T('n0:3'), herkesN: T('n0:5'), diyemez: T('n0:8'), n0s: T('n0>'),
+    n0: T('n0'), yalan: T('n0:1'), ortN: T('n0:2'), herkesN: T('n0:4'), diyemez: T('n0:7'), n0s: T('n0>'),
     d2: T('d2'), kimse: T('d2'), dortD: T('d2:3'), kacar: T('d2:5'), d2s: T('d2>'),
     n1: T('n1'), sofor: T('n1'), sayar: T('n1:3'), yolcu: T('n1:4'), n1s: T('n1>'),
   };
   tm.rizaKes = tm.basina - 0.1; tm.defKes = tm.d1 - 0.12; tm.hikKes = tm.h1 - 0.1; tm.necKes = tm.n0 - 0.1; tm.grupKes = tm.d2 - 0.1;
   tm.sayac = cd0 - 0.05;
   // sayfa çevirme: "Binen herkese tek tek sordum" boyunca üç sayfa
-  tm.tek2 = H.at(tl, 'd1:3');
+  tm.tek2 = H.at(tl, 'd1:2');
   // Rıza'nın parmağı satırların üstünden aşağı kayar ("sefer başına ortalama"); satır sayılmaz
   tm.dokun = [tm.basina + 0.05, tm.basina + 0.35, tm.ortalama + 0.1];
   const G = KAM.grup;
@@ -277,7 +277,7 @@ export function build(ep, tl) {
   const satirlar = [];
   for (const l of tlR.lines) {
     if (l.id === 'n1') continue;
-    if (l.id === 'd1') { const c = parca(l, 'd1c', 9, l.words.length), w = c.text.split(' '); c.text = w.slice(0, 2).join(' ') + ' ' + w.slice(2).join(' '); satirlar.push(parca(l, 'd1a', 0, 5), parca(l, 'd1b', 5, 9), c); }
+    if (l.id === 'd1') { const c = parca(l, 'd1c', 8, l.words.length), w = c.text.split(' '); c.text = w.slice(0, 2).join(' ') + ' ' + w.slice(2).join(' '); satirlar.push(parca(l, 'd1a', 0, 4), parca(l, 'd1b', 4, 8), c); }
     else if (l.id === 'd2') { const [a, b] = l.text.split('. '); satirlar.push({ ...l, text: a.replace(/ /g, ' ') + '. ' + b.replace(/ /g, ' ') }); }
     else satirlar.push(l);
   }
@@ -372,10 +372,11 @@ function sahne(K, t, S, B) {
   if (t < tm.rizaKes - 0.4) rL = [0.2, 0.45];                            // deftere bakar
   if (t >= tm.ortalama - 0.15 && t < tm.defKes) rL = [0.1, 0.0];         // "ortalama yedi": başını kaldırır
   if (!defterRiza) rL = konusan ? yuzeBak(X.riza, kimX[konusan]) : [0.35, 0.1];
-  let rWatch = 0;
-  if (sayacta) { const c0 = tm.cd0; rWatch = pIn(t, c0 + 4.2, c0 + 6.6, 0.32); rL = rWatch > 0.4 ? [0.15, 0.6] : [0.45, 0.2]; if (t >= tm.n1 - 0.2) rL = yuzeBak(X.riza, X.def); }
+  let rWatch = 0, rKas = 0;
+  if (sayacta) { const c0 = tm.cd0; rWatch = pIn(t, c0 + 4.2, c0 + 6.6, 0.32); rKas = pIn(t, c0 + 1.0, c0 + 2.7, 0.3); rL = rWatch > 0.4 ? [0.15, 0.6] : [0.45, 0.2]; if (t >= tm.n1 - 0.2) rL = yuzeBak(X.riza, X.def); }
   const rp = H.kisi(RZ, { x: X.riza, s: RZ_S, expr: rE, ...(defterRiza ? POZ.dur : POZ.belde), head: { tilt: 0, look: rL } });
   if (t >= tm.yedi - 0.05 && t < tm.defKes) H.onayla(rp, t, tm.tasidim - 0.1, 1, 0.36);
+  if (rKas > 0.01) { rp.lean = 9 * rKas; rp.head.look = [0.6, 0.45]; }   // sayaç başı: Necmi'nin defterlerine eğilip bakar
   if (sayacta && t >= tm.sayar - 0.2) H.onayla(rp, t, tm.sayar - 0.1, 2, 0.32);   // "Şoför her seferi sayar": Rıza onaylar
   const rO = { heads };
   let dokunEl = null;
