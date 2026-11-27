@@ -1,0 +1,129 @@
+{
+ "id": "084-cay-ocagi",
+ "num": 84,
+ "sira": 69,
+ "bpm": 120,
+ "slug": "cay-ocagi",
+ "coverAt": 0,
+ "cevapsizTasarim": true,
+ "hashtags": [
+  "#bilmece",
+  "#zekasorusu",
+  "#mantık",
+  "#çay",
+  "#ofis"
+ ],
+ "card": [
+  "4 kişi, 2 kişi, 3 kişi. Tek ocak.",
+  "Toplam yürüyüş en az: nereye?"
+ ],
+ "caption": "Zeka sorusu: Uzun bir koridorun sol ucunda muhasebe (4 kişi), sağ ucunda bilgi işlem (3 kişi), bilgi işleme yakın bir yerde insan kaynakları (2 kişi) var. Herkes günde aynı sayıda çay içiyor ve çayını ocaktan kendisi alıyor. Hikmet Bey ocağı koridora kuracak; toplam yürüyüş en az olsun.\n\nNecmi \"en kalabalık oda muhasebe, onun önüne\" diyor. Ocak nereye kurulmalı?",
+ "voice": {
+  "tight": 0.28,
+  "tail": 2.4,
+  "lines": [
+   {
+    "id": "h1",
+    "who": "hikmet",
+    "gap": 0.3,
+    "text": "Çay ocağını koridora kuracağım; toplam yürüyüş en az olsun.",
+    "rate": "+14%"
+   },
+   {
+    "id": "h2",
+    "who": "hikmet",
+    "gap": 0.25,
+    "text": "Muhasebede dört, insan kaynaklarında iki, bilgi işlemde üç kişi.",
+    "rate": "+14%"
+   },
+   {
+    "id": "h3",
+    "who": "hikmet",
+    "gap": 0.25,
+    "text": "Herkes aynı sayıda çay içiyor, çayını kendisi alıyor. Ocağı yalnız bu dokuz kişi kullanacak.",
+    "rate": "+14%"
+   },
+   {
+    "id": "n0",
+    "who": "necmi",
+    "gap": 0.3,
+    "text": "En kalabalık oda muhasebe. Ocağı muhasebenin önüne koyalım!",
+    "rate": "+12%"
+   },
+   {
+    "id": "d1",
+    "who": "defne",
+    "gap": 0.25,
+    "text": "Kalabalık yetmez. Ocak tam nereye kurulmalı?",
+    "rate": "+18%"
+   },
+   {
+    "id": "n1",
+    "who": "defne",
+    "gap": 10.35,
+    "text": "Ocak bir adım kayarsa ne olur?",
+    "rate": "+4%"
+   },
+   {
+    "id": "d3",
+    "who": "defne",
+    "gap": 0.85,
+    "text": "Buldum! İnsan kaynaklarının kapısına."
+   },
+   {
+    "id": "d4",
+    "who": "defne",
+    "gap": 0.35,
+    "text": "Oradan hangi yöne kayarsa kaysın, yolu uzayan kişi kısalandan fazla."
+   },
+   {
+    "id": "d6",
+    "who": "defne",
+    "gap": 0.7,
+    "text": "Bunu ofisin çaycısına gönder."
+   }
+  ]
+ },
+ "countdown": "n1-0.3",
+ "cdSure": 10,
+ "music": {
+  "think": [
+   "d1>",
+   "d3"
+  ],
+  "riser": [
+   "n1",
+   "d3"
+  ],
+  "hit": "d3",
+  "end": "d6>",
+  "style": "yumusak"
+ },
+ "sfx": [
+  [
+   "zip",
+   [
+    "@0.25",
+    "h1:3"
+   ]
+  ]
+ ],
+ "v4": true,
+ "sizinti": [
+  "İNSAN KAYNAKLARININ KAPISI",
+  "İK KAPISI",
+  "İK'NIN ÖNÜ",
+  "ORTANCA"
+ ],
+ "cevapsiz": {
+  "kesim": 31.944,
+  "kart": 41.082,
+  "tarih": "2026-11-20"
+ },
+ "denetim": {
+  "surum": 1,
+  "sha": "392a7bf0",
+  "tarih": "2026-11-27",
+  "not": "bağımsız göz + düzeltme kontrolü: sızıntı yok, Kerem yüzü açık, araba her planda ortada; yayına uygun"
+ }
+}
