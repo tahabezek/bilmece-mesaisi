@@ -777,15 +777,18 @@
     "2026-11-27T09:30Z": {
       "episode": "060-bilmiyorum",
       "media": "v/060-bilmiyorum-77cdde11.mp4",
-      "status": "scheduled",
+      "status": "sent",
       "at": "2026-11-25T17:10:01.606Z",
       "postId": "6b07169ddb153417ca120940",
       "dueAt": "2026-11-27T09:30:00.000Z",
       "yt": {
         "postId": "6b07169ea9ddd28789fcd8bd",
-        "status": "scheduled",
-        "dueAt": "2026-11-27T09:30:00.000Z"
-      }
+        "status": "sent",
+        "dueAt": "2026-11-27T09:30:00.000Z",
+        "link": "https://www.youtube.com/shorts/wWbs1iogK8Q"
+      },
+      "sentAt": "2026-11-27T09:31:27.412Z",
+      "link": "https://www.instagram.com/reel/DgPXND9gluh/"
     },
     "2026-11-27T18:00Z": {
       "episode": "061-renk-koru",
@@ -825,6 +828,19 @@
         "postId": "6b0886b31fa40915828fdfad",
         "status": "scheduled",
         "dueAt": "2026-11-28T18:00:00.000Z"
+      }
+    },
+    "2026-11-29T09:30Z": {
+      "episode": "075-kopru-tren",
+      "media": "v/075-kopru-tren-bd89e88b.mp4",
+      "status": "scheduled",
+      "at": "2026-11-27T16:36:18.936Z",
+      "postId": "6b09b1b32137ad18e1dbca52",
+      "dueAt": "2026-11-29T09:30:00.000Z",
+      "yt": {
+        "postId": "6b09b1b4b83ec61257e38cf1",
+        "status": "scheduled",
+        "dueAt": "2026-11-29T09:30:00.000Z"
       }
     }
   }
