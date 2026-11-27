@@ -28,6 +28,7 @@ Bilmece Mesaisi Instagram Reels için yapılan, Türkçe çizgi animasyonlu bir 
    - Her satırın whisper çıktısını kontrol et. Bozuk satırı yeniden yaz ve üret.
    - Süre ≤ 60 sn olmalı (hedef 45–55).
    - **Formant kaydırma, asetrate/pitch-shift ya da benzeri hiçbir ses son işlemi yapılmaz.** Kullanıcı formantlı sesi iki kez "robotik" diye reddetti (4 Kas, 28 Kas: 086 Rıza Usta). Yan karakter sesi yalnız edge-tts `pitch` ve `rate` ile ayrıştırılır.
+   - **Satır hızı tavanı:** Ahmet sesli satırlarda (Hikmet, Necmi, yan karakter) `rate` en fazla +4%. Kullanıcı +12–14% hızlı Hikmet'i "robotik ve kötü" buldu (28 Kas, 084–086). Kısa formata sığmak için hız değil kelime kırpılır.
 4. **Sahne.** `engine/b0NN.js`. Her kare t'nin saf fonksiyonudur; `Math.random` yok, rastgelelik gerekiyorsa tohumlu üreteç ya da sabit liste kullan.
 5. **Stil kareleri.** `node tools/render.mjs <id> --sheet --at …` ile al, Read ile açıp kendin bak. 360 px genişlikte okunabilirliği kontrol et.
    - Yarım çözünürlük taslak: `--s 0.5 --j 3`.
