@@ -1,0 +1,138 @@
+{
+  "id": "092-tavla",
+  "num": 92,
+  "sira": 71,
+  "bpm": 120,
+  "slug": "tavla",
+  "coverAt": 0,
+  "cevapsizTasarim": true,
+  "hashtags": [
+    "#bilmece",
+    "#zekasorusu",
+    "#olasılık",
+    "#tavla",
+    "#mantık"
+  ],
+  "card": [
+    "Necmi: düşeş ya da hepyek.",
+    "Hikmet: şeşbeş. Kim önde?"
+  ],
+  "caption": "Zeka sorusu: Öğle arası, ofisin terasında tavla masası. Necmi iki zar atacak. Düşeş (6-6) ya da hepyek (1-1) gelirse Necmi kazanıyor, şeşbeş (6-5) gelirse Hikmet Bey kazanıyor. Başka bir şey gelirse zarlar yeniden atılıyor. Kaybeden çayları ısmarlıyor. Hikmet Bey: \"Senin iki şansın var, benim bir. Kabul etmem.\" Defne ise acele etmemesini söylüyor.\n\nKimin kazanma şansı daha yüksek: Necmi'nin mi, Hikmet Bey'in mi?",
+  "voice": {
+    "tight": 0.28,
+    "tail": 2.4,
+    "lines": [
+      {
+        "id": "n0",
+        "who": "necmi",
+        "gap": 0.3,
+        "text": "Şimdi iki zar atacağım. Düşeş gelirse ben kazanırım.",
+        "rate": "+2%"
+      },
+      {
+        "id": "n0b",
+        "who": "necmi",
+        "gap": 0.3,
+        "text": "Bir de hepyek gelirse ben kazanırım.",
+        "rate": "+2%"
+      },
+      {
+        "id": "n2",
+        "who": "necmi",
+        "gap": 0.3,
+        "text": "Şeşbeş gelirse siz kazanırsınız. Başka bir şey gelirse yeniden atarım.",
+        "rate": "+2%"
+      },
+      {
+        "id": "n3",
+        "who": "necmi",
+        "gap": 0.25,
+        "text": "Çayları da kaybeden ısmarlar.",
+        "rate": "+2%"
+      },
+      {
+        "id": "h2",
+        "who": "hikmet",
+        "gap": 0.35,
+        "text": "Senin iki şansın var, benim bir. Kabul etmem."
+      },
+      {
+        "id": "d2",
+        "who": "defne",
+        "gap": 0.35,
+        "text": "Bence acele etmeyin, Hikmet Bey. Kimin şansı daha yüksek?"
+      },
+      {
+        "id": "d3",
+        "who": "defne",
+        "gap": 10.45,
+        "text": "Buldum! İkisinin şansı da aynı."
+      },
+      {
+        "id": "d4",
+        "who": "defne",
+        "gap": 0.35,
+        "text": "Düşeş de hepyek de tek yoldan gelir. Şeşbeş iki yoldan gelir: kırmızı altı beyaz beş, ya da kırmızı beş beyaz altı."
+      },
+      {
+        "id": "d6",
+        "who": "defne",
+        "gap": 0.7,
+        "text": "Bunu tavla oynadığın birine gönder."
+      }
+    ]
+  },
+  "countdown": "d3-0.3",
+  "cdSure": 10,
+  "music": {
+    "think": [
+      "d2>",
+      "d3"
+    ],
+    "riser": [
+      "d3-5.0",
+      "d3"
+    ],
+    "hit": "d3",
+    "end": "d6>",
+    "style": "yumusak"
+  },
+  "sfx": [
+    [
+      "knock",
+      "n0:3+0.5"
+    ],
+    [
+      "knock",
+      "n2:7+0.45"
+    ],
+    [
+      "swish",
+      "h2:6+0.05"
+    ]
+  ],
+  "v4": true,
+  "sizinti": [
+    "EŞİT",
+    "İKİ YOLDAN",
+    "İKİ YOL",
+    "6-5 VE 5-6",
+    "5-6",
+    "BEŞŞEŞ",
+    "BEŞ ALTI",
+    "TERSİ",
+    "AYNI ŞANS",
+    "ŞANSI DA AYNI"
+  ],
+  "cevapsiz": {
+    "kesim": 30.812,
+    "kart": 42.778,
+    "tarih": "2026-11-20"
+  },
+  "denetim": {
+    "surum": 1,
+    "sha": "8f4ca389",
+    "tarih": "2026-11-28",
+    "not": ""
+  }
+}
