@@ -1,0 +1,123 @@
+{
+  "id": "091-makine",
+  "num": 91,
+  "sira": 76,
+  "bpm": 120,
+  "slug": "makine",
+  "coverAt": 0,
+  "cevapsizTasarim": true,
+  "hashtags": [
+    "#bilmece",
+    "#zekasorusu",
+    "#mantık",
+    "#türkkahvesi",
+    "#ortaklık"
+  ],
+  "card": [
+    "Ortak makineyi ikisi de istiyor.",
+    "Kimse kazıklanmadan kim alır?"
+  ],
+  "caption": "Zeka sorusu: Defne ile Necmi, çay ocağına bir Türk kahvesi makinesini yarı yarıya almıştı. Şimdi Defne başka şubeye geçiyor ve makineyi ikisi de istiyor; satmak da sırayla kullanmak da olmaz. Biri makineyi alacak, öbürüne para verecek; ikisinin de ödeyecek parası var. Makinenin değeri ikisinin gözünde farklı: Defne 5.000 lira der, Necmi 1.000. İnternet fiyatı geçmiyor, aracı yok, kimse kimsenin söylediği fiyata güvenmiyor. Necmi yazı tura önerdi; Defne şansa bırakmak istemiyor. Her biri, kendi gözünde makinenin en az yarısı kadarını aldığından emin olmalı.\n\nKimse kazıklanmadan nasıl anlaşırlar?",
+  "voice": {
+    "tight": 0.28,
+    "tail": 2.4,
+    "lines": [
+      {
+        "id": "h1",
+        "who": "hikmet",
+        "gap": 0.3,
+        "text": "Defne başka şubeye gidiyor. Makineyi ikiniz de istiyorsunuz.",
+        "tts": "Defne başka şubeye gidiyor; makineyi ikiniz de istiyorsunuz."
+      },
+      {
+        "id": "h2",
+        "who": "hikmet",
+        "gap": 0.25,
+        "text": "Biri alır, öbürüne para öder. Kimse kendi gözünde kazıklanmaz. İnternet fiyatı geçmez.",
+        "tts": "Biri alır, öbürüne para öder; kimse kendi gözünde kazıklanmaz, internet fiyatı geçmez.",
+        "rate": "-1%"
+      },
+      {
+        "id": "n0",
+        "who": "necmi",
+        "gap": 0.2,
+        "text": "Yazı tura atalım. Kazanan alır, değerinin yarısını öder.",
+        "rate": "+2%",
+        "tts": "Yazı tura atalım; kazanan alır, değerinin yarısını öder."
+      },
+      {
+        "id": "d2",
+        "who": "defne",
+        "gap": 0.2,
+        "text": "Olmaz, şansa bırakmam. Ben beş bin derim, sen bin dersin; nasıl anlaşacağız?",
+        "tts": "Olmaz, şansa bırakmam. Ben beş bin derim, sen bin dersin. Nasıl anlaşacağız?",
+        "rate": "+16%"
+      },
+      {
+        "id": "n1",
+        "who": "necmi",
+        "gap": 10.3,
+        "text": "Pasta olsa biri keser, öbürü seçerdi.",
+        "rate": "+4%"
+      },
+      {
+        "id": "d3",
+        "who": "defne",
+        "gap": 0.55,
+        "text": "Buldum! Necmi fiyatı söylesin, ben seçeyim."
+      },
+      {
+        "id": "d4",
+        "who": "defne",
+        "gap": 0.35,
+        "text": "Ya makineyi o fiyattan alıp yarısını öderim, ya bırakıp yarısını alırım. Necmi dürüst fiyat söylemek zorunda kalır."
+      },
+      {
+        "id": "d6",
+        "who": "defne",
+        "gap": 0.7,
+        "text": "Bunu ortak bir şey aldığın birine gönder."
+      }
+    ]
+  },
+  "countdown": "n1-0.3",
+  "cdSure": 10,
+  "music": {
+    "think": [
+      "d2>",
+      "d3"
+    ],
+    "riser": [
+      "n1",
+      "d3"
+    ],
+    "hit": "d3",
+    "end": "d6>",
+    "style": "yumusak"
+  },
+  "sfx": [],
+  "v4": true,
+  "sizinti": [
+    "FİYATI SÖYLE",
+    "FİYAT SÖYLE",
+    "BEN SEÇEYİM",
+    "AL YA DA SAT",
+    "ALIR YA DA SATAR",
+    "SATAR YA DA ALIR",
+    "ALIP YARISINI",
+    "BIRAKIP YARISINI",
+    "KENDİ FİYATINA",
+    "DÜRÜST FİYAT"
+  ],
+  "cevapsiz": {
+    "kesim": 31.856,
+    "kart": 43.722,
+    "tarih": "2026-11-20"
+  },
+  "denetim": {
+    "surum": 1,
+    "sha": "7e4113b7",
+    "tarih": "2026-11-28",
+    "not": "Açık yöntem sorusu (C1). İpucu 'Pasta olsa biri keser, öbürü seçerdi.' Kanca makine çekişi 0,02 sn. 090'dan ≥10 bölüm sonra (sira 76). Kulak: n1 tonu, d2 'beş bin' (+16%), h2."
+  }
+}
