@@ -1,6 +1,6 @@
 {
   "_not": "Cevapsız videoların yorumda cevap durumu. Kontrol saatleri görevi (yorum-kontrol) günceller. durum: bekliyor | taslak | yazildi",
-  "son_kontrol": "2026-11-27T17:30Z",
+  "son_kontrol": "2026-11-28T08:25Z",
   "videolar": {
     "050-bayramlasma": {
       "durum": "taslak",
@@ -84,7 +84,7 @@
       "durum": "taslak",
       "yayin": "2026-11-25T09:31:55Z",
       "link": "https://www.instagram.com/reel/DgKNro6NNIq/",
-      "not": "26 Kas 18:25Z (33 saatlik): 1 izleyici yorumu + kendi alt yanıtı, ikisi de tam çözüm (güvercin yuvası: herkes birini tanıyorsa 1–29; genel hâlde 0–28 ya da 1–29, her türlü 29 göz). 5 beğeni. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi.",
+      "not": "28 Kas 08:25Z (71 saatlik): değişiklik yok, 1 yorum + kendi alt yanıtı (doğru gerekçe; cevap kapakta zaten var), 5 beğeni. Yeni yanıt önerilmedi. Eski yanıt taslağı 28 Kas kuralından önce yazıldı, cevabı onaylıyor; kullanılmaz.",
       "taslak": "Cevap: Kesin var! Herkesin tanıdık sayısı 0 ile 29 arasında, yani 30 göz var. Ama 29 kişiyi tanıyan biri herkesi tanır; o varken kimseyi tanımayan olamaz, 0 ile 29 aynı vapura binemez. 30 yolcuya 29 göz kalıyor, iki kişi aynı göze düşmek zorunda 🎫 Güvercin yuvası ilkesini adım adım yazan arkadaşımıza tebrikler 👏",
       "yanitlar": [
         {
@@ -96,7 +96,7 @@
     "055-vapur-lambalar": {
       "durum": "taslak",
       "yayin": "2026-11-25T18:06:49Z",
-      "not": "26 Kas 18:25Z (24 saatlik): 0 yorum, 10 beğeni, 1 paylaşım. Kapakta cevap var (ASLA), yorumda neden açıklanacak. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi.",
+      "not": "28 Kas 08:25Z (62 saatlik): hâlâ 0 yorum, 10 beğeni. Yanıt yok.",
       "link": "https://www.instagram.com/reel/DgLIfMRI2Ad/",
       "taslak": "Cevap: Asla! Her vapur ya iki lamba yakar, ya iki lamba söndürür, ya da birini yakıp birini söndürür; yanan lamba sayısı hep ikişer oynar. Sıfırdan başlayan sayı hep çift kalıyor, beş ise tek 💡 Kaptanlar üçer düğmeye bassaydı Lâl'in dileği üç vapurda gerçekleşirdi 😄"
     },
@@ -104,16 +104,20 @@
       "durum": "taslak",
       "yayin": "2026-11-26T09:31:24Z",
       "link": "https://www.instagram.com/reel/DgMyZIPqK--/",
-      "not": "27 Kas 17:30Z (32 saatlik): oturum kapalı, yorumlar yeniden okunamadı. Son bilinen (26 Kas 18:25Z): 3 yorum; 2 Kerem (biri gerekçeli), 1 Defne; 4 beğeni. Taslak hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi.",
+      "not": "28 Kas 08:25Z (47 saatlik): 5 izleyici yorumu + hesabın 1 yanıtı, 4 beğeni. Kerem 3 kişi (biri vurgu kuralıyla, biri üç notu tek tek ayırıp 'büyük ihtimalle Kerem'), Defne 1. Tartışma yanıtı taslakları yeni kurala göre yenilendi; onay bekliyor, hiçbir şey gönderilmedi.",
       "taslak": "Cevap: Kerem! Türkçede soru eki, sorulan şeyin hemen yanına gelir. Necmi kimin yediğini, Defne ne zaman yendiğini soruyor; Kerem ise Hikmet Bey'in dün bir şey yediğini biliyor, bir tek baklava mı onu merak ediyor 😄 Kerem diyen herkese tebrikler 👏",
       "yanitlar": [
         {
-          "hedef": "Kerem diyen, gerekçesini yazan yorum (vurgu soru ekinden önceki öğede)",
-          "metin": "Tam isabet 🎯 Vurgu da soru eki de aynı yere düşüyor: \"baklavayı mı\" deyince sorulan tek şey ne yendiği."
+          "hedef": "'Defne' diyen yorum",
+          "metin": "defne'nin notunda 'mü' 'dün'ün yanında duruyor. sence o neyi merak ediyor?"
         },
         {
-          "hedef": "Defne diyen yorum",
-          "metin": "Defne'nin notunda \"mü\" dünün yanında, yani o ne zaman yendiğini soruyor. Yalnızca ne yendiğini soran Kerem: \"dün baklavayı mı yedi?\" 😉"
+          "hedef": "Vurgu kuralıyla 'Cevap Kerem' yazan yorum",
+          "metin": "vurgu üzerinden gitmen ilginç. hikmet bey hâlâ üçünü aynı soru sanıyor ama"
+        },
+        {
+          "hedef": "Üç notu ayırıp 'büyük ihtimalle Kerem' diyen alt yanıt",
+          "metin": "'büyük ihtimalle' dedin, seni tam ikna etmeyen kısım ne?"
         }
       ]
     },
@@ -121,15 +125,72 @@
       "durum": "taslak",
       "yayin": "2026-11-26T18:06:10Z",
       "link": "https://www.instagram.com/reel/DgNtKeKzImM/",
-      "not": "27 Kas 17:30Z (23 saatlik): oturum kapalı, yorumlar hiç okunamadı; yanıt taslağı yok. Cevap taslağı hazır, kullanıcı onayı bekliyor; hiçbir şey gönderilmedi.",
-      "taslak": "Cevap: Kerem! Türkçede gözüyle gören \"yedi\" der, başkasından duyan \"yemiş\" der. Defne \"Kerem yedi\" diyor, yani olayı kendisi gördü; Necmi \"Defne yemiş\" diyor, yani dedikodu taşıyor 👀 Cam bölmenin ardında sakin sakin yazı yazan Kerem'miş 😄"
+      "not": "28 Kas 08:25Z (38 saatlik): 1 yorum ('Annesi yemiş', şaka), 4 beğeni, 1 paylaşım. Tartışma yanıtı taslağı hazır; onay bekliyor, hiçbir şey gönderilmedi.",
+      "taslak": "Cevap: Kerem! Türkçede gözüyle gören \"yedi\" der, başkasından duyan \"yemiş\" der. Defne \"Kerem yedi\" diyor, yani olayı kendisi gördü; Necmi \"Defne yemiş\" diyor, yani dedikodu taşıyor 👀 Cam bölmenin ardında sakin sakin yazı yazan Kerem'miş 😄",
+      "yanitlar": [
+        {
+          "hedef": "'Annesi yemiş' yorumu",
+          "metin": "hikmet bey'in annesi de şüpheliler listesine girdi, bu ofiste kimse temiz değil 😄"
+        }
+      ]
     },
     "060-bilmiyorum": {
-      "durum": "bekliyor",
+      "durum": "taslak",
       "yayin": "2026-11-27T09:31:27Z",
       "link": "https://www.instagram.com/reel/DgPXND9gluh/",
-      "not": "27 Kas 17:30Z (8 saatlik): oturum kapalı, yorumlar okunamadı. Cevap taslağı en erken 28 Kas 05:31Z."
+      "not": "28 Kas 08:25Z (23 saatlik): 55 yorum, 61 beğeni, 7 paylaşım; hesap ~17 yoruma yanıt vermiş. Doğru soruyu 7 kişi net kurdu (en beğenilen 28 beğeniyle doğru), 2 kişinin sorusu doğru ama evet/hayır eşlemesi kaymış, 1 kişi 'büyük' yerine 'büyük ya da eşit' demeliydi. Yaygın yanlış: tek eşikli sorular (2'den büyük mü, çift mi, asal), 'tanımsız = bilmiyorum', evet/hayır olmayan sorular, talimat hilesi. Hesap '_ren.09_' yorumunu yanlış okuyup itiraz etmiş; düzeltme taslağı var. Onay bekliyor, hiçbir şey gönderilmedi.",
+      "yanitlar": [
+        {
+          "hedef": "'Tuttuğun sayıdan farklı bir sayı tutacak olursam…' (28 beğeni)",
+          "metin": "ilginç yol, hikmet bey'in bilmediği bir şeyi soruya katmışsın. sence burada 'bilmiyorum' demesi dürüst bir cevap mı?"
+        },
+        {
+          "hedef": "'Aklımdan 1 ya da 2 tuttum, benim sayım seninkinden büyük mü' (eşleme tutmuyor)",
+          "metin": "bir yerde takıldım: hikmet bey 1'i tuttuysa senin sayın da 1 olabilir, 1 1'den büyük mü? 🤔"
+        },
+        {
+          "hedef": "'1 ise evet 2 ise hayır 3 ise bilmiyorum de' yorumu",
+          "metin": "hikmet bey 'kendi sayımı biliyorum, bilmiyorum demem ki' dedi ama. sayısı 3'ken 'bilmiyorum' derse yalan söylemiş olur"
+        },
+        {
+          "hedef": "'_ren.09_' açıklaması (hesap önce yanlış okumuştu)",
+          "metin": "haklısın, 'çeksem' kısmını atlamışım, sen gerçekten çektin diye okudum 🙈"
+        },
+        {
+          "hedef": "'Bilmiyorum ne anlama geliyor' sorusu",
+          "metin": "hikmet bey sorunun cevabını gerçekten bilemiyorsa 'bilmiyorum' diyor, yalan yok. necmi'nin dediği gibi, bazen o bile her şeyi söylüyor"
+        }
+      ]
+    },
+    "061-renk-koru": {
+      "durum": "taslak",
+      "yayin": "2026-11-27T18:06:12Z",
+      "link": "https://www.instagram.com/reel/DgQSAciBVhD/",
+      "not": "28 Kas 08:25Z (14 saatlik): 57 yorum, 180 beğeni, 47 paylaşım; hesap 14 yoruma yanıt vermiş (ihsannuriyasar zincirindeki düzeltme dahil). Defne'nin yöntemini 2 kişi buldu (biri 20 turla olasılığı da yazdı, öbürü 'hangisi kırmızı' diyerek). Çoğunluk ek araçlı fiziksel yollar (renkli kâğıt 75 beğeni, karıştırma/üst üste çizme, kırmızı cam, camgöbeği ışık, çiçek, ısı) ya da güvene dayalı yollar (anket, etiket, yapay zekâ, spektrofotometre, yemin). Şakalar önde: 'Yediririm' 51, 'tadı farklı' 27. Onay bekliyor, hiçbir şey gönderilmedi.",
+      "yanitlar": [
+        {
+          "hedef": "mutidmr: göz kapat, Necmi değiştirsin ya da değiştirmesin, 20 tur 1/2^20",
+          "metin": "1/2^20'ye kadar götürmen hoş olmuş. sence necmi kaçıncı turda 'tamam, farklılar' der?"
+        },
+        {
+          "hedef": "oguzlpt: Defne arkasını döner, Necmi karıştırır, Defne kırmızıyı söyler, tekrar",
+          "metin": "defne'nin her seferinde 'kırmızı bu' demesi şart mı sence? necmi hangisini nereye koyduğunu zaten biliyor"
+        },
+        {
+          "hedef": "mekemins: 'İkisini üst üste çiz'",
+          "metin": "kesiştikleri yer koyulaşırsa necmi onu görebilir. ama 'aynı kalemle üst üste çizince de koyulaşıyor' derse ne dersin?"
+        },
+        {
+          "hedef": "kucukdinazor0: 'tatları farklı, kırmızı daha acı' (27 beğeni)",
+          "metin": "necmi kimseye güvenmiyor ama kalemi yalayacak kadar da gözü kara değil 😄"
+        },
+        {
+          "hedef": "okidokiyusuf: 'Yapay zekaya fotoğrafını çeker atarım'",
+          "metin": "necmi videoda 'makineye de güvenmiyorum' dedi ama, yapay zekâ da sonuçta makine"
+        }
+      ]
     }
   },
-  "son_kontrol_not": "27 Kas 17:30Z: yerleşik tarayıcıda Instagram oturumu kapalı (profil seçme ekranı); giriş yapılmadı, yorumlar okunamadı. 058 ve 059 taslakları bölüm dosyalarından yazıldı; yanıt taslakları 26 Kas verisine dayanıyor."
+  "son_kontrol_not": "28 Kas 08:25Z: yerleşik tarayıcıda oturum açık; 054, 055, 058, 059, 060, 061 yorumları (alt yanıtlar dahil) okundu. Cevap taslağı yazılmadı (28 Kas kuralı); yalnız tartışma yanıtı taslakları. Hiçbir şey gönderilmedi.",
+  "_kural_28kas": "28 Kas kuralı: taslaklarda cevap yok. Eski 'taslak' alanlarındaki cevap metinleri kural öncesinden kalma; kullanıcı bir video için açıkça 'cevabı yaz' demedikçe kullanılmaz. 'yanitlar' yalnız tartışma yanıtı taslaklarıdır."
 }
