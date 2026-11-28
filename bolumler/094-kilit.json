@@ -1,0 +1,138 @@
+{
+  "id": "094-kilit",
+  "num": 94,
+  "sira": 73,
+  "bpm": 120,
+  "slug": "kilit",
+  "coverAt": 0,
+  "cevapsizTasarim": true,
+  "hashtags": [
+    "#bilmece",
+    "#zekasorusu",
+    "#mantık",
+    "#şifre",
+    "#bulmaca"
+  ],
+  "card": [
+    "Kilit son iki tuşa bakıyor.",
+    "Dokuz şifre: en az kaç tuş?"
+  ],
+  "caption": "Zeka sorusu: Çay ocağındaki dolabın eski tuşlu kilidinde yalnız üç tuş var: 1, 2 ve 3. Şifre iki haneli ve aynı rakam iki kez de olabilir (11, 22, 33 gibi), yani dokuz olası şifre var. Kilidin onay tuşu yok. Ekranı başta boş; her tuşa basıldığında son basılan iki tuşa bakar, tutarsa açılır. Yanlışta kilitlenmez, tuşlar tek tek basılır. Hikmet Bey şifreyi unuttu, misafir geliyor. Necmi: \"Dokuz şifre, her biri iki tuş: 18 basış.\" Defne: \"Olmaz, daha azıyla açarız.\"\n\nKilidi kesin açmak için en az kaç tuşa basmak gerekir, hangi sırayla?",
+  "voice": {
+    "tight": 0.28,
+    "tail": 2.4,
+    "lines": [
+      {
+        "id": "h1",
+        "who": "hikmet",
+        "gap": 0.3,
+        "text": "Misafir geliyor, dolap kilitli ve şifreyi unuttum."
+      },
+      {
+        "id": "h2",
+        "who": "hikmet",
+        "gap": 0.2,
+        "text": "Kilidin üç tuşu var: bir, iki, üç. Şifre iki haneli, aynı rakam iki kez olabilir."
+      },
+      {
+        "id": "h3",
+        "who": "hikmet",
+        "gap": 0.2,
+        "text": "Onay tuşu yok. Kilit son iki tuşa bakar, yanlışta kilitlenmez."
+      },
+      {
+        "id": "n0",
+        "who": "necmi",
+        "gap": 0.2,
+        "text": "Dokuz şifre, her biri iki tuş: on sekiz basış.",
+        "rate": "-6%"
+      },
+      {
+        "id": "d2",
+        "who": "defne",
+        "gap": 0.2,
+        "text": "Olmaz, daha azıyla açarız. En az kaç tuşa basmalıyız?"
+      },
+      {
+        "id": "d3",
+        "who": "defne",
+        "gap": 10.3,
+        "text": "Buldum! Her yeni tuş yeni bir şifre dener."
+      },
+      {
+        "id": "d4",
+        "who": "defne",
+        "gap": 0.35,
+        "text": "İlk tuş hiçbir şeyi denemez; sonraki dokuz tuşun her biri bir şifre dener."
+      },
+      {
+        "id": "d6",
+        "who": "defne",
+        "gap": 0.7,
+        "text": "Bunu şifresini unutan birine gönder."
+      }
+    ]
+  },
+  "countdown": "d3-0.3",
+  "cdSure": 10,
+  "music": {
+    "think": [
+      "d2>",
+      "d3"
+    ],
+    "riser": [
+      "d3-3.5",
+      "d3"
+    ],
+    "hit": "d3",
+    "end": "d6>",
+    "style": "yumusak"
+  },
+  "sfx": [
+    [
+      "knock",
+      "h1-0.05"
+    ],
+    [
+      "knock",
+      "h1:3-0.1"
+    ],
+    [
+      "pop",
+      "d3-8.87"
+    ],
+    [
+      "pop",
+      "d3-6.17"
+    ],
+    [
+      "pop",
+      "d3-3.77"
+    ]
+  ],
+  "v4": true,
+  "sizinti": [
+    "ON TUŞ",
+    "ON BASIŞ",
+    "ON KEZ",
+    "10",
+    "DE BRUIJN",
+    "DE BRUİJN",
+    "ÜST ÜSTE",
+    "ORTAK TUŞ",
+    "1122331321",
+    "1121322331",
+    "1122133231"
+  ],
+  "cevapsiz": {
+    "kesim": 31.786,
+    "kart": 41.384,
+    "tarih": "2026-11-20"
+  },
+  "denetim": {
+    "surum": 1,
+    "sha": "e6ed28eb",
+    "tarih": "2026-11-28",
+    "not": "Açık yöntem + sayı (D2). Üç tuşlu kilit, ipucu sözsüz (ekran 12 → 23 kayar). Zayıf: tuş rakamları telefonda ~20 px, kadraj boy plan. Kulak: h3 'Onay tuşu yok' ('on ay' gibi mi), n0 'on sekiz', d2 'basmalıyız'."
+  }
+}
