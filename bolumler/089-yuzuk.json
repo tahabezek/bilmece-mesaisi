@@ -1,0 +1,132 @@
+{
+  "id": "089-yuzuk",
+  "num": 89,
+  "sira": 60.5,
+  "bpm": 120,
+  "slug": "yuzuk",
+  "coverAt": 0,
+  "cevapsizTasarim": true,
+  "hashtags": [
+    "#bilmece",
+    "#zekasorusu",
+    "#mantık",
+    "#yüzükoyunu",
+    "#bulmaca"
+  ],
+  "card": [
+    "Yüzük kimdeyse yalan söylüyor.",
+    "Tek soruyla yüzük kimde?"
+  ],
+  "caption": "Zeka sorusu: Mesai sonu çay molasında ofiste yüzük oyunu oynanıyor. Yüzük Hikmet Bey, Necmi ya da Kerem'den birinin kapalı avucunda ve üçü de yüzüğün kimde olduğunu biliyor. Yüzük kimdeyse her soruya yalan söylüyor; öbür ikisi her soruya doğruyu söylüyor. Defne yalnızca bir tane evet-hayır sorusu sorabilir. Üçü aynı anda, konuşmadan, başlarıyla cevap veriyor: evet için baş aşağı yukarı, hayır için iki yana. \"Yüzük sende mi?\" diye sorarsa üçü de hayır der.\n\nDefne hangi tek soruyla yüzüğün kimde olduğunu bulur?",
+  "voice": {
+    "tight": 0.28,
+    "tail": 2.4,
+    "lines": [
+      {
+        "id": "h1",
+        "who": "hikmet",
+        "gap": 0.3,
+        "text": "Yüzük birimizde. Kimdeyse hep yalan söyler, öbür ikisi hep doğruyu."
+      },
+      {
+        "id": "h2",
+        "who": "hikmet",
+        "gap": 0.25,
+        "text": "Kimde olduğunu üçümüz de biliyoruz. Bir tek evet-hayır sorusu sor; aynı anda başımızla cevap veririz.",
+        "tts": "Kimde olduğunu üçümüz de biliyoruz. Bir tek evet hayır sorusu sor; aynı anda başımızla cevap veririz."
+      },
+      {
+        "id": "n0",
+        "who": "necmi",
+        "gap": 0.25,
+        "text": "Sor bakalım: yüzük sende mi?",
+        "rate": "+2%"
+      },
+      {
+        "id": "d2",
+        "who": "defne",
+        "gap": 0.25,
+        "text": "Olmaz, öyle sorarsam üçünüz de hayır dersiniz. Hangi soruyu sorayım?"
+      },
+      {
+        "id": "n1",
+        "who": "necmi",
+        "gap": 10.4,
+        "text": "Dürüst ikisi hep aynı cevabı mı verir?",
+        "rate": "+2%"
+      },
+      {
+        "id": "d3",
+        "who": "defne",
+        "gap": 1.1,
+        "text": "Buldum! Cevabı herkes için aynı olan bir soru."
+      },
+      {
+        "id": "d4",
+        "who": "defne",
+        "gap": 0.35,
+        "text": "Yüzük Hikmet Bey'de mi? İki dürüst aynı başı sallar, yalancı tersini. Ayrılan baş yüzüğü tutar.",
+        "tts": "Yüzük Hikmet Beyde mi? İki dürüst aynı başı sallar, yalancı tersini. Ayrılan baş yüzüğü tutar."
+      },
+      {
+        "id": "d6",
+        "who": "defne",
+        "gap": 0.7,
+        "text": "Bunu yüzük oyunu oynayan birine gönder."
+      }
+    ]
+  },
+  "countdown": "n1-0.3",
+  "cdSure": 10,
+  "music": {
+    "think": [
+      "d2>",
+      "d3"
+    ],
+    "riser": [
+      "n1",
+      "d3"
+    ],
+    "hit": "d3",
+    "end": "d6>",
+    "style": "yumusak"
+  },
+  "sfx": [
+    [
+      "knock",
+      "h1-0.02"
+    ],
+    [
+      "knock",
+      "h1+0.3"
+    ]
+  ],
+  "v4": true,
+  "sizinti": [
+    "HERKES İÇİN AYNI",
+    "HERKES İÇİN DOĞRU",
+    "HERKESİN BİLDİĞİ",
+    "BUGÜN",
+    "PAZARTESİ",
+    "HİKMET BEY'DE Mİ",
+    "HİKMET BEYDE Mİ",
+    "HİKMET'TE Mİ",
+    "NECMİ'DE Mİ",
+    "KEREM'DE Mİ",
+    "SOLUNDAKİ",
+    "SAĞINDAKİ",
+    "AYRILAN",
+    "TERSİNİ"
+  ],
+  "cevapsiz": {
+    "kesim": 31.844,
+    "kart": 43.678,
+    "tarih": "2026-11-20"
+  },
+  "denetim": {
+    "surum": 1,
+    "sha": "6d452310",
+    "tarih": "2026-11-28",
+    "not": "Açık yöntem sorusu (C2). Kadraj düzeltildi (örtü bandı, 1,3x grup). İpucu: 'Dürüst ikisi hep aynı cevabı mı verir?'. Kulak: h2 'başımızla', n1 'Dürüst' ve soru tonu, h1 'Kimdeyse'."
+  }
+}
