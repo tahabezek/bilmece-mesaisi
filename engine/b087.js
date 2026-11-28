@@ -17,26 +17,30 @@ const kar = (a, b, u) => [lerp(a[0], b[0], u), lerp(a[1], b[1], u)];
 
 // ═══════════════════════════ Ölçüler (dünya) ═══════════════════════════
 const OCAK = 'b087_ocak';
-const X = { hik: 200, nec: 500, necSag: 575, def: 780 };
+const X = { hik: 200, nec: 500, necSag: 610, necDok: 548, def: 780 };
 const HIK_Y = 1590;                                // Hikmet bir basamak alçakta: başı kartın altında kalsın
 const NEC_Y = 1465;                                // Necmi bir basamak yüksekte (tezgâhın arkasında)
-const TEZ = { ust: 1238, on: 1300 };               // tezgâhın üst yüzü ve ön kenarı
+// (28 Kas düzeltme) Tezgâh derin: ön kenar grup plânında altyazı bandının altına (ekran ≈ 1440) iner; dolap önü yalnız
+// Instagram arayüzünün kapladığı bantta kalır. Nesneler tezgâhın arka yarısında (karakterlerin kolu yetişir).
+const TEZ = { ust: 1205, on: 1539 };               // tezgâhın üst yüzü (arka kenar) ve ön kenarı
 const SY = 1284;                                   // tezgâhta nesnelerin oturduğu çizgi (demlik)
-const BK = 2.6;                                    // bardak ölçeği (yerel 34 × 38 → 78 × 87)
-const TEPSI = { x: 474, y: 1279, rx: 204, ry: 30 };
-// takım: altı bardak; önce arka sıra (soldan sağa), sonra ön sıra. Ön sıranın sağındaki (f2) doldurulan bardak
-const BARDAKLAR = [[384, 1258], [480, 1258], [618, 1258], [330, 1293], [430, 1293], [526, 1293]];
+const BK = 3.2;                                    // bardak ölçeği (yerel 34 × 38 → 109 × 122)
+const DS = 1.0;                                    // demlik ölçeği (dökerken çene hizasının altında kalsın)
+const TEPSI = { x: 460, y: 1282, rx: 228, ry: 48 };
+// takım: altı bardak; önce arka sıra (soldan sağa), sonra ön sıra. Arka sağdaki (f2) doldurulan bardak
+const BARDAKLAR = [[372, 1250], [488, 1250], [604, 1250], [316, 1305], [432, 1305], [548, 1305]];
 const F2 = 2, F0 = 3;
-const SAYI_SIRA = [3, 0, 4, 1, 5, 2];              // Necmi soldan sağa sayar: ön, arka, ön, arka … (ilk üçü sol el, son üçü sağ el)
-const DEM = { x: 712, y: SY };                     // demlik (pirinç altlıkta)
+const IPUCU = [0, 1];                              // ipucu: Necmi arka sıradaki iki boş bardağı kaldırıp yan yana tutar
+const DEM = { x: 735, y: SY };                     // demlik (pirinç altlıkta)
 const REC = { w: 164, h: 190 };                    // reçete
 const CAY = '#B4532F', CAY_A = '#D88A5A';
 const KAM = {
-  hikmet: [1.48, 272, 1100],
-  hikmet2: [1.6, 290, 1105],
-  necmi: [1.6, 652, 1110],
-  defne: [1.72, 712, 1105],
-  grup: [1.3, 500, 1100],
+  hikmet: [1.48, 300, 1100],
+  hikmet2: [1.6, 290, 1100],
+  necmi: [1.7, 650, 1128],
+  defne: [1.72, 712, 1040],
+  grup: [1.3, 492, 1168],
+  sayacSon: [1.42, 490, 1176],
   buldum: [1.5, 780, 1090],
 };
 
@@ -95,10 +99,10 @@ function tepsi(K) {
 }
 // Demlik: poz = { p: gövde tabanının ortası, a: açı (derece, eksi = ağız sola eğilir) }. Ağız solda, kulp sağda.
 const DEM_ICI = { agiz: [-62, -66], kulp: [52, -50] };
-const demNok = (poz, [lx, ly]) => { const a = poz.a * D2R; return [poz.p[0] + lx * Math.cos(a) - ly * Math.sin(a), poz.p[1] + lx * Math.sin(a) + ly * Math.cos(a)]; };
+const demNok = (poz, [lx, ly]) => { const a = poz.a * D2R; lx *= DS; ly *= DS; return [poz.p[0] + lx * Math.cos(a) - ly * Math.sin(a), poz.p[1] + lx * Math.sin(a) + ly * Math.cos(a)]; };
 function demlik(K, poz) {
   const { ctx } = K;
-  ctx.save(); ctx.translate(poz.p[0], poz.p[1]); ctx.rotate(poz.a * D2R);
+  ctx.save(); ctx.translate(poz.p[0], poz.p[1]); ctx.rotate(poz.a * D2R); ctx.scale(DS, DS);
   // ağız (emzik)
   ctx.beginPath(); ctx.moveTo(-30, -34); ctx.quadraticCurveTo(-52, -40, -64, -70); ctx.lineTo(-56, -72); ctx.quadraticCurveTo(-46, -50, -28, -50); ctx.closePath(); K.fs('#F1ECE0', LW * 0.7);
   // kulp
@@ -110,7 +114,19 @@ function demlik(K, poz) {
   K.ell(0, -68, 30, 8, '#E4DCCB', LW * 0.6); K.circ(0, -80, 8, PAL.coral, LW * 0.6);
   ctx.restore();
 }
-function altlik(K) { K.ell(DEM.x, SY + 2, 46, 8, PAL.mustard, LW * 0.6); }
+function altlik(K) { K.ell(DEM.x, SY + 2, 46 * DS, 9, PAL.mustard, LW * 0.6); }
+// Katlanmış çizgili kurulama bezi (sağ önde)
+function bez(K) {
+  const { ctx } = K;
+  ctx.save(); ctx.translate(800, 1478);
+  K.poly([[-96, -26], [84, -34], [100, 22], [-84, 30]], '#F2E6CF', LW * 0.8);
+  for (const u of [0.22, 0.5, 0.78]) {
+    const x0 = lerp(-96, 84, u), x1 = lerp(-84, 100, u);
+    H.strokeLine(ctx, [x0, lerp(-26, -34, u) + 2], [x1, lerp(30, 22, u) - 2], 9, PAL.coral);
+  }
+  H.strokeLine(ctx, [-90, 4], [92, -4], 3, 'rgba(20,30,28,0.35)');
+  ctx.restore();
+}
 // Reçete: c merkez, rot derece. Üstte doktor yazısı çizgisi, ortada büyük "½", altta "BARDAK"
 function recete(K, c, rot = 0) {
   const { ctx } = K, w = REC.w, h = REC.h;
@@ -130,11 +146,13 @@ function recete(K, c, rot = 0) {
 // ═══════════════════════════ Mekân: çay ocağı ═══════════════════════════
 function tezgah(K) {
   const x0 = -600, x1 = 1900;
-  K.rect(x0, TEZ.ust, x1 - x0, TEZ.on - TEZ.ust, '#E6DCC6', LW * 0.8, 0);       // açık renk tezgâh üstü
-  K.rect(x0, TEZ.on, x1 - x0, 1300, '#3F7F79', LW, 0);                           // yeşil dolap önü
+  K.rect(x0, TEZ.ust, x1 - x0, TEZ.on - TEZ.ust, '#E6DCC6', LW * 0.8, 0);       // açık renk tezgâh üstü (derin)
+  K.rect(x0, TEZ.ust + 6, x1 - x0, 10, '#D6CAB0', 0, 0);                         // arka kenarın gölgesi
+  K.rect(x0, TEZ.on, x1 - x0, 24, '#CDBF9F', LW * 0.8, 0);                       // ön kenar dudağı
+  K.rect(x0, TEZ.on + 24, x1 - x0, 1300, '#3F7F79', LW, 0);                      // yeşil dolap önü
   for (let x = -560; x < x1; x += 300) {
-    K.rect(x, TEZ.on + 36, 270, 600, '#4C8F88', LW * 0.6, 8);
-    K.rect(x + 115, TEZ.on + 70, 40, 12, '#E9DCC2', 3, 6);
+    K.rect(x, TEZ.on + 60, 270, 600, '#4C8F88', LW * 0.6, 8);
+    K.rect(x + 115, TEZ.on + 94, 40, 12, '#E9DCC2', 3, 6);
   }
 }
 M.mekanEkle(OCAK, {
@@ -160,39 +178,41 @@ export function build(ep, tl) {
     d1: T('d1'), beli: T('d1:2'), ince: T('d1:3'), ustu: T('d1:4'), genis: T('d1:6'), d1s: T('d1>'),
     h3: T('h3'), egip: T('h3:1'), dibi: T('h3:3'), yarimdir: T('h3:5'), h3s: T('h3>'),
     d2: T('d2'), duz: T('d2:1'), tutar: T('d2:3'), peki: T('d2:4'), nasil: T('d2:7'), d2s: T('d2>'),
-    n1: T('n1'), n1s: T('n1>'),
   };
   // Necmi: sağa bir adım, demliği alır, f2'ye yarı boyuna kadar döker, geri koyar
   tm.adim = tm.n0 - 0.2;
   tm.demAl = tm.n0 + 0.2; tm.demKalk = tm.n0 + 0.42; tm.dokBas = tm.yari - 0.25; tm.dokBit = tm.doldur + 0.35; tm.demDon = tm.dokBit + 0.15; tm.demBirak = tm.demDon + 0.55;
   // Defne: f2'yi alır (d1 "Olmaz"), gösterir; h3'te eğer; d2 sonunda dikleştirir; sayaçta tepsiye geri koyar
   tm.bAl = tm.d1 - 0.05; tm.bKalk = tm.d1 + 0.25; tm.egKes = tm.h3s + 0.05; tm.egBas = tm.egKes + 0.1; tm.egDon = tm.peki - 0.1; tm.bKoy = tm.cd0 + 0.25; tm.bBirak = tm.bKoy + 0.7;
-  // n1: Necmi altı bardağı sayar
-  tm.say = SAYI_SIRA.map((_, i) => tm.n1 - 0.25 + i * 0.42);
+  // İpucu (sözsüz, sayacın son yarısı): Necmi arka sıradaki iki boş bardağı iki eliyle alır, göğüs hizasında yan yana tutar,
+  // birine, öbürüne, sonra bize bakar. Çay yok, seviye yok; bardaklar kesime kadar elinde kalır.
+  tm.ipUzan = tm.cd0 + 5.0; tm.ipKalk = tm.ipUzan + 0.32; tm.ipBak1 = tm.ipKalk + 0.7; tm.ipBak2 = tm.ipBak1 + 0.8; tm.ipBize = tm.ipBak2 + 0.85;
+  tm.ustKes = tm.cd0 + 1.25; tm.ustBit = tm.cd0 + 4.45;
   tm.hikKes = 0; tm.necKes = tm.n0 - 0.12; tm.defKes = tm.d1 - 0.12; tm.grupKes = tm.h3 - 0.12; tm.def2Kes = tm.d2 - 0.12; tm.cdKes = tm.cd0 - 0.05;
   const film = H.sahneler([
-    { id: 'hikmet', t0: 0, cam: [[0, ...KAM.hikmet], [tm.h2 - 0.15, ...KAM.hikmet2], [tm.necKes - 0.1, 1.7, 292, 1110]] },
-    { id: 'necmi', t0: tm.necKes, cam: [[0, ...KAM.necmi], [tm.defKes - 0.1, 1.63, 650, 1108]] },
-    { id: 'defne', t0: tm.defKes, cam: [[0, ...KAM.defne], [tm.grupKes - 0.1, 1.75, 714, 1104]] },
-    { id: 'grup', t0: tm.grupKes, kisa: true, cam: [[0, ...KAM.grup], [tm.egKes - 0.1, 1.31, 500, 1100]] },
-    { id: 'defne2', t0: tm.egKes, cam: [[0, 1.86, 706, 1042], [tm.cdKes - 0.1, 1.9, 706, 1040]] },   // eğme yakın plânı: bardak büyük
+    { id: 'hikmet', t0: 0, cam: [[0, ...KAM.hikmet], [tm.h2 - 0.15, ...KAM.hikmet2], [tm.necKes - 0.1, 1.66, 294, 1100]] },
+    { id: 'necmi', t0: tm.necKes, cam: [[0, ...KAM.necmi], [tm.defKes - 0.1, 1.74, 652, 1128]] },     // Necmi, demlik ve bardak
+    { id: 'defne', t0: tm.defKes, cam: [[0, ...KAM.defne], [tm.grupKes - 0.1, 1.75, 712, 1036]] },
+    { id: 'grup', t0: tm.grupKes, kisa: true, cam: [[0, ...KAM.grup], [tm.egKes - 0.1, 1.31, 492, 1168]] },
+    { id: 'defne2', t0: tm.egKes, cam: [[0, 1.76, 680, 1032], [tm.cdKes - 0.1, 1.8, 680, 1030]] },   // eğme yakın plânı: bardak ekranın büyük parçası
     { id: 'sayac', t0: tm.cdKes, cam: [[0, ...KAM.grup]] },   // sayaç ve ipucu: doğrusal itme kamera() ile
+    { id: 'ust', t0: tm.ustKes, kisa: true, cam: [[0, 2.0, 515, 1232]] },   // insert: tepsi yakın (altı bardak, çaylı bardak, demlik); karakterler kadraj dışında
+    { id: 'sayac2', t0: tm.ustBit, cam: [[0, ...KAM.grup]] },
     { id: 'buldum', t0: tm.buldum - 0.05, kisa: true, cam: [[0, ...KAM.buldum]] },
     { id: 'cevap', t0: tm.cevap, cam: [[0, ...KAM.grup], [tm.end - 0.2, 1.5, 520, 1100]] },
     { id: 'son', t0: tm.end, cam: [[0, 1, 540, 960]] },
   ]);
   for (const w of film.kontrol()) if (!/zoom|aynı hedef/.test(w)) console.error('sahne uyarısı: ' + w);
-  const tlS = { ...tl, lines: tl.lines.filter(l => l.id !== 'n1') };
-  const tlN = { ...tl, lines: tl.lines.filter(l => l.id === 'n1').map(l => ({ ...l, t1: T('d3') - 0.05 })) };
+  const tlS = tl;
   const tlA = { ...tl, lines: [] };
-  return { tm, film, tlS, tlN, tlA };
+  return { tm, film, tlS, tlA };
 }
 
 // ═══════════════════════════ Zaman durumları ═══════════════════════════
 // Demlik pozu ve dökme
 function demAt(tm, t) {
   const yer = { p: [DEM.x, DEM.y], a: 0 };
-  const dok = { p: [707, 1150], a: -38 };           // ağız f2'nin üstünde
+  const dok = { p: [702, 1130], a: -38 };           // ağız f2'nin ağzının hemen üstünde; demlik iki yüzün de çenesinin altında
   if (t < tm.demKalk) return { poz: yer, tut: t >= tm.demAl - 0.05 };
   const u1 = ease.enter(seg(t, tm.demKalk, 0.45)), u2 = ease.state(seg(t, tm.demDon, 0.5));
   const yol = (a, b, u, lift) => H.yay(a, b, u, lift);
@@ -207,16 +227,25 @@ function dolu(tm, t) { return 0.5 * clamp01((t - tm.dokBas - 0.08) / (tm.dokBit 
 // f2'nin pozu: tepside → Defne'nin elinde (göster) → eğik → dik → tepsiye
 function f2At(tm, t) {
   const yer = yerden(BARDAKLAR[F2]);
-  const goster = { p: [646, 1166], a: 0 };
+  const goster = { p: [632, 1196], a: 0 };
   if (t < tm.bKalk) return { poz: yer, kim: t >= tm.bAl ? 'defne' : 'yer' };
   if (t < tm.bKoy) {
     const p = H.yay(yer.p, goster.p, ease.enter(seg(t, tm.bKalk, 0.42)), 30);
     const eg = ease.state(seg(t, tm.egBas, 0.6)) * (1 - ease.state(seg(t, tm.egDon, 0.45)));
     const kalk = t >= tm.egKes && t < tm.cdKes ? 1 : 0;   // eğme yakın plânında bardak göğüs hizasında (altyazıdan uzak)
-    return { poz: { p: [p[0] + 8 * kalk, p[1] - 46 * kalk], a: EGIK * eg }, eg, kim: 'defne' };
+    void kalk; return { poz: { p, a: EGIK * eg }, eg, kim: 'defne' };
   }
   const p = H.yay(goster.p, yer.p, ease.state(seg(t, tm.bKoy, tm.bBirak - tm.bKoy)), 40);
   return { poz: { p, a: 0 }, kim: t < tm.bBirak + 0.3 ? 'defne' : 'yer' };
+}
+// İpucu bardakları (IPUCU[0] sol el, IPUCU[1] sağ el): tepside → göğüs hizasında yan yana
+const IP_HEDEF = [[452, 1202], [574, 1202]];
+function ipAt(tm, t, j) {
+  const yer = yerden(BARDAKLAR[IPUCU[j]]);
+  if (t < tm.ipKalk) return { poz: yer, kim: t >= tm.ipUzan ? 'necmi' : 'yer' };
+  const p = H.yay(yer.p, IP_HEDEF[j], ease.enter(seg(t, tm.ipKalk + 0.06 * j, 0.45)), 24);
+  const yak = 6 * ease.state(seg(t, tm.ipBak1, 1.4));   // iki bardak yavaşça birbirine yaklaşır (ağızlar yan yana)
+  return { poz: { p: [p[0] + (j ? -yak : yak), p[1]], a: 0 }, kim: 'necmi' };
 }
 function f2Yuzey(tm, t, b) {
   const f = dolu(tm, t); if (f <= 0.01) return null;
@@ -232,24 +261,23 @@ export const draw = (K, t, ep, tl, S) => H.cerceve(K, t, ep, S.tlA, S, {
   drift: 0.008,
   kamera(cam, t, B) {
     const { tm } = S;
-    if (B.sc.id === 'sayac') {   // sayaç ve ipucu: doğrusal itme
+    if (B.sc.id === 'ust') {   // insert: yavaş doğrusal itme (tepsinin ortasına)
+      const u = clamp01((t - tm.ustKes) / (tm.ustBit - tm.ustKes));
+      Object.assign(cam, { zoom: Math.exp(lerp(Math.log(2.0), Math.log(2.12), u)), cx: lerp(515, 512, u), cy: lerp(1232, 1236, u) });
+    }
+    if (B.sc.id === 'sayac' || B.sc.id === 'sayac2') {   // sayaç ve ipucu: doğrusal itme
       const u = clamp01((t - tm.cdKes) / (tm.buldum - tm.cdKes));
-      Object.assign(cam, { zoom: Math.exp(lerp(Math.log(KAM.grup[0]), Math.log(1.34), u)), cx: lerp(KAM.grup[1], 500, u), cy: lerp(KAM.grup[2], 1102, u) });
+      Object.assign(cam, { zoom: Math.exp(lerp(Math.log(KAM.grup[0]), Math.log(KAM.sayacSon[0]), u)), cx: lerp(KAM.grup[1], KAM.sayacSon[1], u), cy: lerp(KAM.grup[2], KAM.sayacSon[2], u) });
     }
   },
   dunya(K, t, B) { sahne(K, t, S, B); },
   ekran(K, t, B) {
     const { tm } = S;
     if (t < tm.proof) H.riddleCard(K, 70, 300, 940, ep.card, ep.num, { size: 54 });
-    // n1: Necmi'nin parmağı her bardağa değdikçe sayı (1 … 6) bardağın üstünde
-    if (t >= tm.say[0] - 0.1 && t < tm.buldum) {
-      const dur = tm.say.map((tt, i) => { const g = BARDAKLAR[SAYI_SIRA[i]], q = B.ekr([g[0], g[1] - BOY * BK - 84]); return [tt, q, String(i + 1)]; });
-      H.sayiAtla(K, t, dur, { son: tm.buldum - 0.2, size: 52, fill: PAL.mustard, col: INK });
-    }
     if (t >= tm.tutar - 0.3 && t < tm.peki + 0.6) H.mark(K, t, tm.tutar - 0.04, tm.peki + 0.4, B.ekr(dunyaya(f2At(tm, t).poz, [0, -19])), false);   // eğme bu bardakta tutmaz
     sayac(K, t, tm.cd, { dur: ep.cdSure || 10 });
-    if (t < tm.end) H.altyazi(K, S.tlS, t, B.cam, B.heads, { y: 1255, split: { h2: 6 } });
-    if (t >= tm.n1 - 0.1 && t < tm.buldum) H.altyazi(K, S.tlN, t, B.cam, B.heads, { y: 1255 });
+    // eğme yakın plânında balon tezgâha iner ve d2 iki tek satıra bölünür: eğik bardağın dibi (çay üçgeni) açık kalsın
+    if (t < tm.end) H.altyazi(K, S.tlS, t, B.cam, B.heads, { y: B.sc.id === 'defne2' ? 1312 : 1255, split: { h2: 6, d2: 4 } });
     if (globalThis.__dbg) H.guvenliAlan(K);
   },
 });
@@ -281,11 +309,21 @@ const bak = (from, to, dy = 0.1) => [clamp01(Math.abs(to[0] - from[0]) / 420) * 
 
 function sahne(K, t, S, B) {
   const { tm } = S, { heads } = B, id = B.sc.id;
-  const tlTum = { ...S.tlS, lines: [...S.tlS.lines, ...S.tlN.lines] };   // dudak: n1 dahil
+  const tlTum = S.tlS;
   M.mekanCiz(K, OCAK, 'arka', t, { isik: M.ISIK.gunduz });
+  if (id === 'ust') {   // insert: yalnız tezgâh ve takım (kamera tepsiye yakın; karakterler kadrajın dışında)
+    tezgah(K); bez(K); tepsi(K);
+    for (let i = 0; i < BARDAKLAR.length; i++) bardak(K, yerden(BARDAKLAR[i]), i === F2 ? { yuzey: dikSeviye(yerden(BARDAKLAR[i]), 0.5) } : {});
+    altlik(K); demlik(K, { p: [DEM.x, DEM.y], a: 0 });
+    H.buhar(K, DEM.x - 66 * DS, SY - 82 * DS, t, { k: 0.55, n: 2 });
+    H.buhar(K, BARDAKLAR[F2][0], BARDAKLAR[F2][1] - BOY * BK - 6, t + 0.6, { k: 0.4, n: 2 });
+    return;
+  }
   const sayacta = t >= tm.cd0 - 0.05 && t < tm.buldum;
-  const ipucu = t >= tm.say[0] - 0.45 && t < tm.buldum;
+  const ipucu = t >= tm.ipUzan - 0.3 && t < tm.buldum;
   const dm = demAt(tm, t), b2 = f2At(tm, t), yz = f2Yuzey(tm, t, b2);
+  const ip = [ipAt(tm, t, 0), ipAt(tm, t, 1)];
+  const ipOrta = [(ip[0].poz.p[0] + ip[1].poz.p[0]) / 2, ip[0].poz.p[1] - 60];
   const camGrip = dunyaya(b2.poz, [0, GY]);   // tutuş (bel)
   const bF0 = BARDAKLAR[F0];
 
@@ -312,10 +350,11 @@ function sahne(K, t, S, B) {
   if (wEg > 0.01) { const a = -0.9 * ease.state(seg(t, tm.egip - 0.1, 0.5)); hO.R = [[X.hik + 150 + 30 * Math.sin(a), 1110 + 20 * (1 - Math.cos(a))], wEg, 'B']; }
   if (t >= tm.n0 - 0.2 && t < tm.h3) hL = bak([X.hik], [X.def], 0.3);
   if (t >= tm.h3 - 0.2 && t < tm.cd0) { hL = bak([X.hik], [680], 0.35); hp.expr = IF.notr; }
-  if (sayacta) { hp.expr = IF.dusun; hL = sayacRec > 0.3 ? [-0.5, 0.35] : bak([X.hik], [560], 0.4); if (ipucu) hL = bak([X.hik], [500], 0.45); }
-  // sayaç: sağ eli çenesinde düşünür (iki kez)
-  const hCene = sayacta ? pIn(t, tm.cd0 + 1.2, tm.cd0 + 4.4, 0.3, 0.3) + pIn(t, tm.cd0 + 6.0, tm.cd0 + 8.8, 0.3, 0.3) : 0;
+  if (sayacta) { hp.expr = IF.dusun; hL = sayacRec > 0.3 ? [-0.5, 0.35] : bak([X.hik], [560], 0.4); }
+  // sayaç: sağ eli çenesinde düşünür (iki kez; ikincisinde Necmi'nin bardaklarına bakar)
+  const hCene = sayacta ? pIn(t, tm.cd0 + 1.2, tm.cd0 + 4.4, 0.3, 0.3) + pIn(t, tm.ipKalk + 0.9, tm.cd0 + 9.6, 0.3, 0.3) : 0;
   if (hCene > 0.01) { const h = H.eklem('hikmet', hp, 'head'); hO.R = [[h[0] + 0.3 * hp.s, h[1] + 0.52 * hp.s], hCene, 'B']; hL = [0.4, -0.15]; }
+  if (ipucu && t >= tm.ipKalk) { hL = bak([X.hik], ipOrta, 0.3); hp.expr = IF.merak; }
   if (wGos > 0.01) hL = [0.6, 0.55];
   hp.head.look = hL;
   const hc = oyna(K, t, tlTum, 'hikmet', hp, hO);
@@ -323,6 +362,9 @@ function sahne(K, t, S, B) {
   // ——— Necmi (tepsinin arkasında) ———
   const np = H.kisi('necmi', { x: X.nec, y: NEC_Y, expr: IF.merak, ...POZ.dur, head: { tilt: 0, look: [-0.5, 0.15] } });
   if (t >= tm.adim) H.yanAdim(np, t, { t0: tm.adim, x0: X.nec, x1: X.necSag, adim: 1 });
+  // demliği kaldırınca bir adım sola: döktüğü demlik yüzünün önüne gelmesin; geri koyarken yine sağa
+  if (t >= tm.demKalk) H.yanAdim(np, t, { t0: tm.demKalk, x0: X.necSag, x1: X.necDok, adim: 1 });
+  if (t >= tm.demDon - 0.1) H.yanAdim(np, t, { t0: tm.demDon - 0.1, x0: X.necDok, x1: X.necSag, adim: 1 });
   if (t >= tm.cd0 + 0.3) H.yanAdim(np, t, { t0: tm.cd0 + 0.3, x0: X.necSag, x1: 520, adim: 1 });   // sayaçta tepsinin ortasına döner
   const nx = np.x;
   let nL = t < tm.tam - 0.1 ? bak([nx], [X.hik], 0.15) : t < tm.h2s ? [-0.5, 0.5] : [0.3, 0.5];
@@ -333,26 +375,22 @@ function sahne(K, t, S, B) {
   if (wDem > 0.01) { nO.R = [[kulp[0] - 6, kulp[1] + 22], wDem, 'B']; nL = [0.35, 0.55]; np.expr = IF.emin; }
   if (t >= tm.n0 && t < tm.d1) np.expr = IF.emin;
   if (t >= tm.d1 - 0.1 && t < tm.cd0) { np.expr = IF.merak; nL = t < tm.h3 ? bak([nx], [X.def], 0.25) : [0.5, 0.45]; }
-  // sayaç: çenesini tutar, tepsiye bakar; ipucu: sol işaret parmağı bardaklara sırayla değer
-  let nCene = 0, nSay = 0, nSayHedef = null, nSaySag = false, nKas = 0;
+  // sayaç: çenesini tutar, başını kaşır, tepsiye bakar; ipucu (sözsüz): iki boş bardağı kaldırıp yan yana tutar
+  let nCene = 0, nKas = 0, nIp = 0;
   if (sayacta) {
     const c0 = tm.cd0; np.expr = IF.dusun;
-    nCene = pIn(t, c0 + 1.0, c0 + 4.2, 0.3, 0.3);
+    nCene = pIn(t, c0 + 1.0, c0 + 3.4, 0.3, 0.3);
     if (nCene > 0.01) { const h = H.eklem('necmi', np, 'head'); nO.L = [[h[0] - 0.42 * np.s, h[1] + 0.5 * np.s], nCene, 'B']; nL = [-0.3, -0.2]; }
-    if (t >= c0 + 4.5) nL = Math.floor((t - c0 - 4.5) / 1.4) % 2 ? [-0.4, 0.55] : [0.2, 0.55];
-    nKas = pIn(t, c0 + 5.0, c0 + 7.8, 0.3, 0.3);   // başını kaşır
+    if (t >= c0 + 3.4) nL = Math.floor((t - c0 - 3.4) / 0.8) % 2 ? [-0.4, 0.55] : [0.2, 0.55];
+    nKas = pIn(t, c0 + 3.5, c0 + 4.7, 0.3, 0.25);   // başını kaşır
     if (nKas > 0.01) { const h = H.eklem('necmi', np, 'head'); nO.R = [[h[0] + 0.3 * np.s + 6 * Math.sin(TAU * (t - c0) / 0.4), h[1] - 0.55 * np.s], nKas, 'B']; nL = [0.3, 0.4]; }
     if (ipucu) {
-      np.expr = IF.merak;
-      const dur = tm.say.map((tt, i) => { const g = BARDAKLAR[SAYI_SIRA[i]]; return [tt, [g[0], g[1] - BOY * BK - 4]]; });
-      dur.unshift([tm.say[0] - 0.45, [dur[0][1][0] + 50, dur[0][1][1] - 70]]);
-      nSayHedef = H.dokunYolu(t, dur, { yuksel: 34, sure: 0.18 });
-      nSay = W(t, tm.say[0] - 0.45, 0.28);
-      const sagEl = t >= (tm.say[2] + tm.say[3]) / 2;   // ilk üç bardak sol elle, son üçü sağ elle
-      nSaySag = sagEl;
-      if (sagEl) { nO.R = [[nSayHedef[0] + 22, nSayHedef[1] - 38], nSay, 'A']; nO.L = [[nx - 60, 1250], 0.0, 'A']; }
-      else nO.L = [[nSayHedef[0] - 22, nSayHedef[1] - 38], nSay, 'A'];
-      nL = [clamp01((nSayHedef[0] - nx + 200) / 400) * 1.2 - 0.6, 0.6];
+      nIp = W(t, tm.ipUzan, 0.28);
+      const g0 = dunyaya(ip[0].poz, [0, -16]), g1 = dunyaya(ip[1].poz, [0, -16]);   // tutuş: gövdenin alt yarısı
+      nO.L = [[g0[0] - 10, g0[1] + 14], nIp, 'A']; nO.R = [[g1[0] + 10, g1[1] + 14], nIp, 'A'];
+      nL = t < tm.ipKalk ? [-0.1, 0.6] : t < tm.ipBak1 ? [0, 0.45] : t < tm.ipBak2 ? [-0.35, 0.35] : t < tm.ipBize ? [0.35, 0.35] : [0, 0.02];
+      np.expr = t >= tm.ipBize ? IF.emin : IF.merak;
+      if (t >= tm.ipBize) H.onayla(np, t, tm.ipBize + 0.15, 1, 0.42);   // bize bakıp bir kez başını sallar
     }
   }
   if (id === 'cevap') { nL = bak([nx], [X.def], 0.3); np.expr = IF.merak; }
@@ -385,10 +423,10 @@ function sahne(K, t, S, B) {
   if (sayacta) {
     const c0 = tm.cd0;
     dE = IF.dusun;
-    const dThink = pIn(t, c0 + 2.5, c0 + 5.4, 0.35) + pIn(t, c0 + 6.4, tm.say[0] - 0.6, 0.35);
+    const dThink = pIn(t, c0 + 1.9, c0 + 4.9, 0.35, 0.35) + (t >= tm.ipBize + 0.3 ? W(t, tm.ipBize + 0.3, 0.35) : 0);   // ipucundan sonra yeniden yumruk çenede
     dL = t < tm.bBirak ? [-0.4, 0.55] : dThink > 0.4 ? [0.25, -0.25] : [-0.5, 0.5];
     if (dThink > 0.01) { const h = H.eklem('defne', dp, 'head'); dO.R = [[h[0] + 0.1 * dp.s, h[1] + 0.62 * dp.s], dThink, 'B']; }   // yumruk çenede
-    if (ipucu) { dE = IF.merak; dL = nSayHedef ? bak([X.def], nSayHedef, 0.5) : [-0.5, 0.5]; }
+    if (ipucu && t >= tm.ipKalk) { dE = IF.merak; dL = bak([X.def], ipOrta, 0.35); }
   }
   if (id === 'buldum') { dE = IF.gulus; dL = [0, -0.1]; }
   if (id === 'cevap') { dE = IF.sakin; dL = [-0.2, 0.2]; }
@@ -400,9 +438,12 @@ function sahne(K, t, S, B) {
 
   // ——— Tezgâh ve nesneler (karakterlerin önünde) ———
   tezgah(K);
+  bez(K);
   tepsi(K);
   for (let i = 0; i < BARDAKLAR.length; i++) {
     if (i === F2 && b2.kim !== 'yer') continue;
+    const j = IPUCU.indexOf(i);
+    if (j >= 0 && ip[j].kim !== 'yer') continue;
     if (i === F2) bardak(K, b2.poz, { yuzey: yz });
     else bardak(K, yerden(BARDAKLAR[i]));
   }
@@ -413,12 +454,13 @@ function sahne(K, t, S, B) {
     H.akis(K, ag, [BARDAKLAR[F2][0] - 4, yz ?? (BARDAKLAR[F2][1] - 8)], 8, CAY, u0, u1);
   }
   demlik(K, dm.poz);
-  if (t < tm.demKalk || t >= tm.demBirak) H.buhar(K, DEM.x - 66, SY - 82, t, { k: 0.5, n: 2 });
+  if (t < tm.demKalk || t >= tm.demBirak) H.buhar(K, DEM.x - 66 * DS, SY - 82 * DS, t, { k: 0.55, n: 2 });
   else { const ag = demNok(dm.poz, DEM_ICI.agiz); H.buhar(K, ag[0], ag[1] - 6, t, { k: 0.45, n: 2 }); }
   if (b2.kim !== 'yer') {   // elde tutulan f2 (karakterlerin elinin altında)
     const merc = Math.max(pIn(t, tm.ustu - 0.05, tm.h3 - 0.2, 0.3, 0.3), 0);   // eğik bardakta mercan yok: çay çizgisi görünsün
     bardak(K, b2.poz, { yuzey: yz, mercan: merc });
   }
+  for (const b of ip) if (b.kim !== 'yer') bardak(K, b.poz);   // ipucu: Necmi'nin elindeki iki boş bardak
   const recVar = id === 'hikmet';
   if (recVar) recete(K, RC, RR);
   // tutan eller (nesnenin üstünde)
@@ -428,7 +470,7 @@ function sahne(K, t, S, B) {
   if (hCene > 0.6) hc.tut('R');
   if (wDem > 0.6) nc.tut('R');
   if (nCene > 0.6) nc.tut('L');
-  if (nSay > 0.6 && nSayHedef) nc.isaret(nSaySag ? 'R' : 'L', nSayHedef);
+  if (nIp > 0.6) { nc.tut('L'); nc.tut('R'); }
   if (nKas > 0.6) nc.tut('R');
   if (dTut && W(t, tm.bAl - 0.28, 0.28) > 0.6) dc.tut('L');
   if (dIs > 0.6 && dIsHedef) dc.isaret('R', dIsHedef);

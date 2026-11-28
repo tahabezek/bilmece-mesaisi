@@ -1,6 +1,6 @@
 # 087 · Yarım bardak (v5 storyboard, cevapsız tasarım, kısa format, 2026-11-28)
 
-Kaynak: `research/aday_havuzu_acik_2026-11-28.md` § A2, avukat düzeltmeleri `research/aday_havuzu_acik_2026-11-28_avukat.md` § A2, eleme tablosu (karar: üretim 087). Sahne: `engine/b087.js`. Bölüm dosyası: `bolumler/087-yarim-bardak.json` (`cevapsizTasarim: true`, `cdShare` yok). Yayın sırası 72 (rozet "BİLMECE #72"). Sayaç 10 sn, `countdown: "n1-0.3"`. Kısıt sınıfı S3 (işlevsel sabitlik: ikinci bardak ölçü aleti olur), cevap türü yöntem.
+Kaynak: `research/aday_havuzu_acik_2026-11-28.md` § A2, avukat düzeltmeleri `research/aday_havuzu_acik_2026-11-28_avukat.md` § A2, eleme tablosu (karar: üretim 087). Sahne: `engine/b087.js`. Bölüm dosyası: `bolumler/087-yarim-bardak.json` (`cevapsizTasarim: true`, `cdShare` yok). Yayın sırası 72 (rozet "BİLMECE #72"). Sayaç 10 sn, `countdown: "d3-0.3"` (28 Kas düzeltmesi: ipucu sözsüz). Kısıt sınıfı S3 (işlevsel sabitlik: ikinci bardak ölçü aleti olur), cevap türü yöntem.
 
 ## Senaryo
 
@@ -12,7 +12,7 @@ Kaynak: `research/aday_havuzu_acik_2026-11-28.md` § A2, avukat düzeltmeleri `r
 - **Kadro:** Hikmet (solda, reçete), Necmi (tepsinin arkasında, demliğin yanında), Defne (sağda). Kerem yok.
 - **Mekân:** `b087_ocak`. Çizgili duvar, Hikmet ile Necmi'nin başları arasında küçük pencere (İstanbul silueti, martı döngüsü), sağda yazısız pano; önde açık renk tezgâh, yeşil dolap önü. 085'in fayans, saat ve terazisinden ayrı.
 - **Nesneler:** Tepside altı ince belli bardak (arka sıra 3, ön sıra 3, hepsi aynı çizimden), pirinç altlıkta beyaz demlik (buhar döngüsü), Hikmet'in reçetesi (büyük "½" ve "BARDAK").
-- **Sızıntı yasağı:** Hiçbir karede iki bardakta çay olmaz, iki seviye yan yana karşılaştırılmaz, iki bardak tek başına plan almaz. Takım hep altı bardak olarak görünür. Sayaç boyunca çaylı bardak tepsideki yerinde durur. İpucunda yalnız sayma var: Necmi'nin parmağı altı bardağa sırayla değer (ilk üçü sol, son üçü sağ el), üstlerinde tek bir sayı 1 … 6 atlar.
+- **Sızıntı yasağı:** Hiçbir karede iki bardakta çay olmaz, iki seviye yan yana karşılaştırılmaz, iki bardak tek başına plan almaz. Takım hep altı bardak olarak görünür. Sayaç boyunca çaylı bardak tepsideki yerinde durur. İpucu sözsüzdür: Necmi arka sıradaki iki boş bardağı iki eliyle kaldırıp göğüs hizasında yan yana tutar; çay yok, seviye yok, söz yok.
 - **Kare 0:** Üstte kart. Hikmet (reçete elinde, "½ BARDAK" okunur) ve Necmi, önlerinde altı bardaklı tepsi. 0,3 sn'de Hikmet reçeteyi yüzünün yanına kaldırır; ses 0,30 sn'de başlar.
 
 ## Vuruş tablosu (ölçülen saniyeler)
@@ -25,11 +25,12 @@ Kaynak: `research/aday_havuzu_acik_2026-11-28.md` § A2, avukat düzeltmeleri `r
 | 4 Çürütme | 11,11–13,91 | Defne yakın | "Olmaz": Defne başını sallar, çaylı bardağı tabanından alıp göğüs hizasına kaldırır. "beli ince": sağ işaret parmağı belde; "üstü daha geniş": parmak ağza çıkar, çaysız üst kısım mercan olur. | buhar | 1,72x | sert kesme |
 | 5 Eğme önerisi | 13,91–16,94 | Grup | h3: Hikmet "eğip bakalım" der, avucuyla eğme hareketi yapar; herkes Defne'nin bardağına bakar. | martı, buhar | 1,3x | sert kesme |
 | 6 Eğme ve soru | 16,94–20,39 | Defne yakın (bardak göğüs hizasında) | Defne bardağı ~52° eğer: çay yüzü alçalan dudaktan dibin karşı köşesine uzanır. "düz bardakta": parmak belde; "tutar": bardağın üstünde mercan ✗ rozeti; "Peki": bardak dikleşir, Defne bize bakar. | buhar | 1,86 → 1,9x | sert kesme |
-| 7 Sayaç (10 sn) | 20,44–30,49 | Grup | Defne bardağı tepsideki yerine koyar, yumruğu çenesinde iki kez düşünür. Necmi tepsinin ortasına döner, çenesini tutar, başını kaşır. Hikmet iki kez elini çenesine götürür. "SEN DE DÜŞÜN!" alt bantta, perde yok. | martı, buhar, doğrusal itme | 1,32 → 1,5x | sert kesme |
-| 8 İpucu | 30,1–33,85 | Aynı plân | n1: Necmi'nin sol işaret parmağı altı bardağa soldan sağa sırayla değer; her değişte bardağın üstünde 1 … 6 atlar. Hikmet ve Defne parmağa bakar. Balon kesime kadar kalır. | aynı | itme sürer | (yok) |
-| — Kesim | 33,85 | | `cevapsiz.mjs`: "Buldum!"dan önce keser, takip kartını ekler. | | | |
-| 9 Buldum (arşiv) | 33,97 | Defne | sıçrama, ışınlar | | 1,5x | |
-| 10 Cevap (arşiv) | 36,7–44,5 | Grup | Defne anlatır; çağrı. (Cevap görüntüde oynanmaz; arşiv sürümü.) | | 1,32x | |
+| 7a Sayaç | 20,49–21,79 | Grup | Defne bardağı tepsideki yerine koyar; Necmi tepsinin ortasına döner, çenesini tutar. "SEN DE DÜŞÜN!" alt bantta (tezgâhın üstünde), perde yok. | martı, buhar, doğrusal itme | 1,3 → | sert kesme |
+| 7b Insert | 21,79–24,99 | Tepsi yakın (karakterler kadraj dışında) | Altı bardak ve demlik ekranın üçte birini kaplar; çaylı bardak arka sağda yerinde. | çay ve demlik buharı, doğrusal itme | 2,0 → 2,12x | sert kesme |
+| 7c Sayaç ve ipucu | 24,99–30,72 | Grup | Necmi başını kaşır; 25,54'te arka sıradaki iki boş bardağı iki eliyle alır, göğüs hizasında yan yana tutar; birine, öbürüne, sonra bize bakar. Hikmet eli çenede ve Defne bardaklara bakar. Bardaklar kesime kadar elinde. | martı, buhar, doğrusal itme | → 1,42x | sert kesme |
+| — Kesim | 30,72 | | `cevapsiz.mjs`: "Buldum!"dan önce keser, takip kartını ekler. | | | |
+| 9 Buldum (arşiv) | 30,84 | Defne | sıçrama, ışınlar | | 1,5x | |
+| 10 Cevap (arşiv) | 33,47–41,33 | Grup | Defne anlatır; çağrı. (Cevap görüntüde oynanmaz; arşiv sürümü.) | | 1,32x | |
 
 ## Replikler
 
@@ -41,17 +42,17 @@ Kaynak: `research/aday_havuzu_acik_2026-11-28.md` § A2, avukat düzeltmeleri `r
 | d1 | Defne | Olmaz, bardağın beli ince; üstü daha geniş. | 7 | 11,23–13,75 |
 | h3 | Hikmet | Bardağı eğip bakalım; dibi görününce yarımdır. | 6 | 14,03–16,89 |
 | d2 | Defne | Eğmek düz bardakta tutar. Peki tam yarımı nasıl koyarız? | 9 | 17,17–20,39 |
-| n1 | Necmi | Altı bardak; hepsi aynı takımdan. | 5 | 30,79–32,97 |
-| d3 | Defne | Buldum! İkinci bardak ölçü olacak. (arşiv) | 5 | 33,97 |
-| d4 | Defne | Bir bardağı ağzına kadar doldururum. Boş bardağa, iki seviye aynı hizaya gelene kadar dökerim. (arşiv) | 14 | 36,67 |
-| d6 | Defne | Bunu çayını ölçerek içen birine gönder. (arşiv) | 6 | 42,47 |
+| (ipucu) | Necmi | Sözsüz: iki boş bardağı kaldırıp yan yana tutar. | 0 | 25,5–30,7 |
+| d3 | Defne | Buldum! İkinci bardak ölçü olacak. (arşiv) | 5 | 30,84 |
+| d4 | Defne | Bir bardağı ağzına kadar doldururum. Boş bardağa, iki seviye aynı hizaya gelene kadar dökerim. (arşiv) | 14 | 33,47 |
+| d6 | Defne | Bunu çayını ölçerek içen birine gönder. (arşiv) | 6 | 39,27 |
 
-**Süre:** "Buldum!" öncesi 50 kelime (sınır 55). "Buldum!" 33,97 sn (hedef ≤ 32: iki saniye geç; aşağıda neden). Kesilmiş film 36,18 sn (hedef 30–38 ✓).
+**Süre:** "Buldum!" öncesi 45 kelime (sınır 55). "Buldum!" 30,84 sn (hedef ≤ 32 ✓). Kesilmiş film ≈ 33,0 sn (hedef 30–38 ✓).
 
 ## Şartların filmdeki yeri (kesilmiş sürüm)
 - Doktor, günde yalnız yarım bardak: h1, reçete ("½ BARDAK").
 - Tam yarım, bir damla eksik olmasın; yarım = ağzına kadar dolu bardağın yarısı: h2, Hikmet'in parmağı (ağız → orta).
-- Altı ince belli bardaklık takım tepside, demlik: kare 0'dan itibaren her plânda; n1'de sayılır.
+- Altı ince belli bardaklık takım tepside, demlik: kare 0'dan itibaren her plânda; sayaçtaki insertte tepsi ekranın üçte biri.
 - Ölçü kabı yok: kart; kadrajda başka kap, kaşık, terazi, cetvel yok.
 - Tuzak (yarı boy) ve çürütme (bel ince): n0 dökme eylemiyle, d1 mercan üst kısımla.
 - Eğme yöntemi ve çürütmesi: h3, d2; eğik bardakta mercan boşluk.
@@ -89,3 +90,20 @@ Kullanıcı bilgisayarı kullandığı için render yapılmadı; aşağıdakiler
 2. **Ana nesne küçük.** Grup planlarında bardaklar ≈ 115 px, arka sıra önden örtülüyor, altı bardak bir bakışta sayılmıyor. Bardak tepsisine yakın plan ve sayaçta bardakları büyük gösteren kadraj.
 3. **Alt dolap bandı** kadrajın ≈ %35–40'ı (kadraj kuralı ≤ %15). 085/088'de kabul edildi ama burada nesne küçük kaldığı için kamerayı tezgâha indirmek daha iyi.
 4. "Buldum!" 33,97 sn (hedef 32): h3 eğme vuruşu kalır (yorumda ilk gelecek yanlış), ipucu kısalınca kendiliğinden yaklaşır.
+
+### Uygulandı (28 Kas, ikinci tur)
+1. **İpucu hafifledi ve sözsüz oldu.** n1 ("Altı bardak; hepsi aynı takımdan.") çıktı. Necmi sayacın son yarısında arka sıradaki iki boş bardağı iki eliyle kaldırıp göğüs hizasında yan yana tutar, birine, öbürüne, sonra bize bakar; söz yok, çay yok, seviye yok. `countdown: "d3-0.3"`, yükselen ses `d3-5.0 → d3` (bardaklar kalkarken başlar). `sizinti` listesine "AYNI TAKIM" ve "HEPSİ AYNI" eklendi (eski ipucunun sözü).
+2. **Bardaklar büyüdü** (ölçek 2,6 → 3,2; grup plânında ≈ 160 px, yakın plânlarda ≈ 210 px), demlik 1,15x. Sayacın ilk yarısında 3,2 sn'lik **insert**: tepsi ve demlik yakın (2,0 → 2,12x), bardak ≈ 245 px, altı bardak bir bakışta sayılır.
+3. **Tezgâh derinleşti, kamera tezgâha kuruldu.** Tezgâh yüzü 1205–1539 (eski 1238–1300); grup plânında ön kenar ekranda ≈ 1440'ta, altyazı ve sayaç tezgâhın üstünde. Dolap önü grup plânında ≈ %24'e (yalnız Instagram arayüzü bandı), yakın plânlarda %0–15'e indi. Ön sağda kurulama bezi.
+4. **"Buldum!" 33,97 → 30,84 sn** (n1 çıktığı için; hız değişmedi, hiçbir replik yeniden üretilmedi).
+
+### Kritik ve bağımsız göz (28 Kas, ikinci tur, kesilmiş film)
+Kendi kritiğimde düzeltilenler:
+1. **Dökerken demlik yüz örtüyordu** (9,2–10,9 sn): önce Necmi'nin ağzını, adım düzeltmesinden sonra Defne'nin çenesini. Demlik 1,0x'e döndü, ağzı bardağın ağzının hemen üstünde döker; Necmi demliği kaldırınca bir adım sola (548) geçer, geri koyarken sağa döner.
+2. **Eğik bardağın dibi altyazının altında kalıyordu** (17,2–20,4 sn; bağımsız göz de buldu): eğme yakın plânında balon tezgâha iner (y 1312) ve d2 iki tek satıra bölünür ("Eğmek düz bardakta tutar." / "Peki tam yarımı nasıl koyarız?"); çay üçgeni ve ✗ açıkta.
+3. **İpucunda 5 sn durgunluk** (göz): bardaklar yavaşça birbirine yaklaşır, Necmi bize bakıp bir kez başını sallar, Defne yeniden yumruğunu çenesine götürür.
+Ayrıca: grup plânı cx 480 → 492 (Defne'nin küpesi kenardan içeri), Hikmet plânı cx 272 → 300 (kancada arka sağ bardak kadrajda).
+
+Göz bulguları, uygulanmayanlar: "ipucu zayıf, dolu bardak hiç gösterilmiyor" (görev: daha hafif ipucu; dolu bardak + ikinci bardak cevabı verir); "kancada iki yazı" (kart + h1 balonu, kanal kalıbı); "kel adamın yüzü kadının arkasında yarım" (d1–d2 Defne yakın plânında Necmi arka plânda, 085'teki gibi).
+
+**Bilinen zayıflıklar:** grup plânlarında dolap önü ≈ %22–24 (yalnız Instagram arayüzü bandında; tezgâh derinleşti ama karakterlerin kolu tepsinin daha önüne yetişmediği için ≤ %15'e inmedi), Hikmet plânında ≈ %16 dolap + boş tezgâh şeridi. Grup plânında bardak ≈ 160 px (telefonda ≈ 55 px); büyük bardak insertte (≈ 245 px) ve yakın plânlarda. İpucu kasıtlı olarak hafif: kör izleyicinin çoğu çözemeyebilir.
