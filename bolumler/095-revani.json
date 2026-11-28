@@ -1,0 +1,138 @@
+{
+  "id": "095-revani",
+  "num": 95,
+  "sira": 74,
+  "bpm": 120,
+  "slug": "revani",
+  "coverAt": 0,
+  "cevapsizTasarim": true,
+  "hashtags": [
+    "#bilmece",
+    "#zekasorusu",
+    "#mantık",
+    "#revani",
+    "#geometri"
+  ],
+  "card": [
+    "Kare tepside revani, beş kişi.",
+    "Eşit revani, eşit kenar: nasıl?"
+  ],
+  "caption": "Zeka sorusu: Hikmet Bey ofise kare tepside revani getirdi. Tepsi 50 cm'ye 50 cm, revani her yerde aynı kalınlıkta. Beş kişiye birer parça kesilecek ve herkes kenarın çıtırını seviyor. Hikmet Bey'in şartı: herkes tek parça alacak; herkesin revanisi de kenar uzunluğu da eşit olacak. Elde bir bıçak ve bir mezura var, ölçmek serbest. Necmi \"Kolay, beş şerit, onar santim\" diyor. Defne kabul etmiyor: ortadaki şeritlere kenar düşmez.\n\nRevaniyi nasıl kesersin?",
+  "voice": {
+    "tight": 0.28,
+    "tail": 2.4,
+    "lines": [
+      {
+        "id": "h1",
+        "who": "hikmet",
+        "gap": 0.3,
+        "text": "Size kare tepside revani getirdim. Beş tabak var, herkese tek parça.",
+        "tts": "Size kare tepside revani getirdim, beş tabak var, herkese tek parça.",
+        "rate": "+0%"
+      },
+      {
+        "id": "d1",
+        "who": "defne",
+        "gap": 0.2,
+        "text": "Kenarlar elli santim. Revani her yerde aynı kalınlıkta.",
+        "tts": "Kenarlar elli santim, revani her yerde aynı kalınlıkta."
+      },
+      {
+        "id": "h2",
+        "who": "hikmet",
+        "gap": 0.2,
+        "text": "Herkes kenarın çıtırını sever. Revani de kenar da eşit olacak.",
+        "tts": "Herkes kenarın çıtırını sever, revani de kenar da eşit olacak.",
+        "rate": "+0%"
+      },
+      {
+        "id": "n0",
+        "who": "necmi",
+        "gap": 0.2,
+        "text": "Kolay, beş şerit, onar santim.",
+        "rate": "+2%"
+      },
+      {
+        "id": "d2",
+        "who": "defne",
+        "gap": 0.2,
+        "text": "Olmaz, ortadaki şeritlere kenar düşmez. Nasıl keseceğiz?",
+        "tts": "Olmaz, ortadaki şeritlere kenar düşmez, nasıl keseceğiz?"
+      },
+      {
+        "id": "n1",
+        "who": "hikmet",
+        "gap": 10.35,
+        "text": "Kenarı paylaştır, gerisi kendiliğinden gelir.",
+        "rate": "+0%"
+      },
+      {
+        "id": "d3",
+        "who": "defne",
+        "gap": 0.3,
+        "text": "Buldum! Kenarı beşe bölelim, herkese kırk santim."
+      },
+      {
+        "id": "d4",
+        "who": "defne",
+        "gap": 0.35,
+        "text": "Tepsinin ortası her kenara yirmi beş santim uzak. Kenarı kırkar santim işaretle, ortadan düz kes; herkesin revanisi eşit olur."
+      },
+      {
+        "id": "d6",
+        "who": "defne",
+        "gap": 0.7,
+        "text": "Bunu revaniyi paylaştığın birine gönder."
+      }
+    ]
+  },
+  "countdown": "n1-0.3",
+  "cdSure": 10,
+  "music": {
+    "think": [
+      "d2>",
+      "d3"
+    ],
+    "riser": [
+      "n1",
+      "d3"
+    ],
+    "hit": "d3",
+    "end": "d6>",
+    "style": "yumusak"
+  },
+  "sfx": [
+    [
+      "knock",
+      "@0.6"
+    ],
+    [
+      "knock",
+      "h1:5+0.18"
+    ],
+    [
+      "swish",
+      "n0:3-0.02"
+    ]
+  ],
+  "v4": true,
+  "sizinti": [
+    "MERKEZ",
+    "ORTADAN",
+    "40",
+    "KIRK",
+    "ÜÇGEN",
+    "ÇEVRE"
+  ],
+  "cevapsiz": {
+    "kesim": 31.54,
+    "kart": 45.236,
+    "tarih": "2026-11-20"
+  },
+  "denetim": {
+    "surum": 1,
+    "sha": "22383f34",
+    "tarih": "2026-11-28",
+    "not": "Açık yöntem sorusu (D1). Üstten insert kareyi kanıtlıyor, merkez/ışınsal kesim hiç görünmüyor. İpucu 'Kenarı paylaştır, gerisi kendiliğinden gelir.' 090'dan 10 bölüm sonra (sira 74). Kulak: h1 'tepside', h2 'kenar da', n1 tonu."
+  }
+}
