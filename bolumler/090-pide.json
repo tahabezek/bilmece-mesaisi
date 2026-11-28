@@ -1,0 +1,116 @@
+{
+  "id": "090-pide",
+  "num": 90,
+  "sira": 64.5,
+  "bpm": 120,
+  "slug": "pide",
+  "coverAt": 0,
+  "cevapsizTasarim": true,
+  "hashtags": [
+    "#bilmece",
+    "#zekasorusu",
+    "#mantık",
+    "#pide",
+    "#paylaşım"
+  ],
+  "card": [
+    "Defne 200, Necmi 100 lira verdi.",
+    "Parası kadar nasıl bölüşürler?"
+  ],
+  "caption": "Zeka sorusu: Pide salonunda kesilmemiş, uzun bir kıymalı pide 300 lira. Defne 200, Necmi 100 lira verdi. Hikmet Bey: \"Herkes parası kadar alsın.\" Ama kimse kimsenin bıçağına güvenmiyor, terazi yok ve ikisinin pideden zevki farklı. Her biri, kendi gözünde parası kadarını aldığından emin olmalı. Necmi \"Biri keser, öbürü seçer: Defne ikiye kessin, ben seçeyim\" diyor. Defne kabul etmiyor: Necmi büyüğünü seçer, Defne'ye yarısı kalır.\n\nPideyi parası kadar nasıl bölüşürler?",
+  "voice": {
+    "tight": 0.28,
+    "tail": 2.4,
+    "lines": [
+      {
+        "id": "h1",
+        "who": "hikmet",
+        "gap": 0.3,
+        "text": "Bu pide üç yüz lira. Defne iki yüz, Necmi yüz lira verdi.",
+        "tts": "Bu pide üç yüz lira; Defne iki yüz, Necmi yüz lira verdi."
+      },
+      {
+        "id": "h2",
+        "who": "hikmet",
+        "gap": 0.25,
+        "text": "Herkes kendi gözünde parası kadar alsın. Terazi yok, kimse kimsenin bıçağına güvenmez.",
+        "tts": "Herkes kendi gözünde parası kadar alsın; terazi yok, kimse kimsenin bıçağına güvenmez."
+      },
+      {
+        "id": "n0",
+        "who": "necmi",
+        "gap": 0.2,
+        "text": "Biri keser, öbürü seçer. Defne ikiye kessin, ben seçeyim.",
+        "rate": "+2%",
+        "tts": "Biri keser, öbürü seçer: Defne ikiye kessin, ben seçeyim."
+      },
+      {
+        "id": "d2",
+        "who": "defne",
+        "gap": 0.2,
+        "text": "Olmaz, sen büyüğünü seçersin; bana yarısı kalır. Nasıl bölüşeceğiz?",
+        "tts": "Olmaz, sen büyüğünü seçersin, bana yarısı kalır. Nasıl bölüşeceğiz?"
+      },
+      {
+        "id": "n1",
+        "who": "hikmet",
+        "gap": 10.35,
+        "text": "Bence kesen, kendi payını bilmeli."
+      },
+      {
+        "id": "d3",
+        "who": "defne",
+        "gap": 0.85,
+        "text": "Buldum! Necmi üçe kessin, ben ikisini seçeyim."
+      },
+      {
+        "id": "d4",
+        "who": "defne",
+        "gap": 0.35,
+        "text": "Necmi kendi gözünde üç eşit parça keser; ben iki parça seçerim, kalan onun. İkimiz de payımızdan emin oluruz."
+      },
+      {
+        "id": "d6",
+        "who": "defne",
+        "gap": 0.7,
+        "text": "Bunu pideyi paylaştığın birine gönder."
+      }
+    ]
+  },
+  "countdown": "n1-0.3",
+  "cdSure": 10,
+  "music": {
+    "think": [
+      "d2>",
+      "d3"
+    ],
+    "riser": [
+      "n1",
+      "d3"
+    ],
+    "hit": "d3",
+    "end": "d6>",
+    "style": "yumusak"
+  },
+  "sfx": [],
+  "v4": true,
+  "sizinti": [
+    "ÜÇE",
+    "ÜÇ PARÇA",
+    "ÜÇ EŞİT",
+    "İKİ PARÇA",
+    "İKİSİNİ SEÇ",
+    "PARÇA SEÇ"
+  ],
+  "cevapsiz": {
+    "kesim": 31.838,
+    "kart": 44.214,
+    "tarih": "2026-11-20"
+  },
+  "denetim": {
+    "surum": 1,
+    "sha": "a263c224",
+    "tarih": "2026-11-28",
+    "not": "Açık yöntem sorusu (C4). Kadraj ve altyazı turu: pide kahraman, balonlar tam cümle 48 px, örtü altyazı zemini. İpucu: 'Bence kesen, kendi payını bilmeli.' Kulak: d2 'bana yarısı kalır', h1 'Necmi yüz lira', n1 tonu."
+  }
+}
