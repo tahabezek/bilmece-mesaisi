@@ -1,0 +1,131 @@
+{
+  "id": "093-amca-dayi",
+  "num": 93,
+  "sira": 72,
+  "bpm": 120,
+  "slug": "amca-dayi",
+  "coverAt": 0,
+  "cevapsizTasarim": true,
+  "hashtags": [
+    "#bilmece",
+    "#zekasorusu",
+    "#mantık",
+    "#akrabalık",
+    "#bayram"
+  ],
+  "card": [
+    "Rıza, Necmi'nin hem amcası",
+    "hem dayısı. Bu nasıl olur?"
+  ],
+  "caption": "Zeka sorusu: Bayram sonrası ofiste Necmi bayram fotoğrafını gösteriyor; yanında kendi yaşında bir adam var, Rıza. Necmi: \"Bu Rıza; benim hem amcam hem dayım. Benden bir yaş da küçük.\" Amca babanın kardeşi, dayı annenin kardeşidir. Rıza'nın Necmi'nin babasıyla da annesiyle de kan bağı var. Necmi'nin annesiyle babası arasında ise kan bağı yok. Süt kardeşlik ya da evlatlık söz konusu değil.\n\nRıza, Necmi'nin hem amcası hem dayısı nasıl olabilir?",
+  "voice": {
+    "tight": 0.28,
+    "tail": 2.4,
+    "lines": [
+      {
+        "id": "n0",
+        "who": "necmi",
+        "gap": 0.3,
+        "rate": "+4%",
+        "text": "Bu Rıza; benim hem amcam hem dayım. Benden bir yaş da küçük.",
+        "tts": "Bu Rıza, benim hem amcam hem dayım. Benden bir yaş da küçük."
+      },
+      {
+        "id": "h2",
+        "who": "hikmet",
+        "gap": 0.3,
+        "text": "Amca babanın kardeşi, dayı annenin kardeşidir."
+      },
+      {
+        "id": "d2",
+        "who": "defne",
+        "gap": 0.3,
+        "text": "Olamaz, o zaman annenle baban kardeş olur."
+      },
+      {
+        "id": "n2",
+        "who": "necmi",
+        "gap": 0.3,
+        "rate": "+4%",
+        "text": "Değil, aralarında kan bağı yok."
+      },
+      {
+        "id": "h3",
+        "who": "hikmet",
+        "gap": 0.3,
+        "text": "O zaman biri eniştendir."
+      },
+      {
+        "id": "n3",
+        "who": "necmi",
+        "gap": 0.3,
+        "rate": "+4%",
+        "text": "Hayır, Rıza'nın annemle de babamla da kan bağı var.",
+        "tts": "Hayır, Rızanın annemle de babamla da kan bağı var."
+      },
+      {
+        "id": "n1",
+        "who": "necmi",
+        "gap": 10.35,
+        "rate": "+4%",
+        "text": "Arkadaki çerçeveye iyi bakın."
+      },
+      {
+        "id": "d3",
+        "who": "defne",
+        "gap": 0.85,
+        "text": "Buldum! Dedesiyle anneannesi evlenmiş."
+      },
+      {
+        "id": "d4",
+        "who": "defne",
+        "gap": 0.35,
+        "text": "Rıza, babasıyla baba bir, annesiyle anne bir kardeş."
+      },
+      {
+        "id": "d6",
+        "who": "defne",
+        "gap": 0.7,
+        "text": "Bunu akrabalığı karışık birine gönder."
+      }
+    ]
+  },
+  "countdown": "n1-0.3",
+  "cdSure": 10,
+  "music": {
+    "think": [
+      "n3>",
+      "d3"
+    ],
+    "riser": [
+      "n1",
+      "d3"
+    ],
+    "hit": "d3",
+    "end": "d6>",
+    "style": "yumusak"
+  },
+  "sfx": [],
+  "v4": true,
+  "sizinti": [
+    "DÜNÜR",
+    "EVLENDİ",
+    "EVLENMİŞ",
+    "ÜVEY",
+    "BABA BİR",
+    "ANNE BİR",
+    "DEDE",
+    "ANNEANNE"
+  ],
+  "cevapsiz": {
+    "kesim": 30.638,
+    "kart": 39.476,
+    "tarih": "2026-11-20"
+  },
+  "denetim": {
+    "surum": 1,
+    "sha": "1baf58e8",
+    "tarih": "2026-11-28",
+    "not": "Somut Türkçe soru (D8, Rıza sürümü; yaş açığı kapalı). İpucu: arkadaki düğün çerçevesi. Alt bant düz masa önü (IG arayüzü altında, kabul). Kulak: n0 'yaş da küçük', n3 'Rıza'nın', h3 tonu."
+  }
+}

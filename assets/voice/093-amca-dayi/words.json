@@ -1,0 +1,412 @@
+{
+ "n0": {
+  "key": "fdf79931758b",
+  "trimmed": "fdf79931758b",
+  "wkey": "fdf79931758b",
+  "heard": "Bu rıza benim hem amcam hem dayım, benden bir yaşta küçük.",
+  "words": [
+   {
+    "w": "Bu",
+    "t0": 0.0,
+    "t1": 0.2
+   },
+   {
+    "w": "Rıza,",
+    "t0": 0.2,
+    "t1": 0.58
+   },
+   {
+    "w": "benim",
+    "t0": 0.58,
+    "t1": 0.96
+   },
+   {
+    "w": "hem",
+    "t0": 0.96,
+    "t1": 1.26
+   },
+   {
+    "w": "amcam",
+    "t0": 1.26,
+    "t1": 1.64
+   },
+   {
+    "w": "hem",
+    "t0": 1.64,
+    "t1": 1.9
+   },
+   {
+    "w": "dayım.",
+    "t0": 1.9,
+    "t1": 2.32
+   },
+   {
+    "w": "Benden",
+    "t0": 2.42,
+    "t1": 2.98
+   },
+   {
+    "w": "bir",
+    "t0": 2.98,
+    "t1": 3.16
+   },
+   {
+    "w": "yaş",
+    "t0": 3.16,
+    "t1": 3.34
+   },
+   {
+    "w": "da",
+    "t0": 3.34,
+    "t1": 3.52
+   },
+   {
+    "w": "küçük.",
+    "t0": 3.52,
+    "t1": 3.7
+   }
+  ],
+  "dur": 3.958
+ },
+ "h2": {
+  "key": "675d19f41cbd",
+  "trimmed": "675d19f41cbd",
+  "wkey": "675d19f41cbd",
+  "heard": "Amca babanın kardeşi, dayı annenin kardeşidir.",
+  "words": [
+   {
+    "w": "Amca",
+    "t0": 0.0,
+    "t1": 0.42
+   },
+   {
+    "w": "babanın",
+    "t0": 0.42,
+    "t1": 0.82
+   },
+   {
+    "w": "kardeşi,",
+    "t0": 0.82,
+    "t1": 1.56
+   },
+   {
+    "w": "dayı",
+    "t0": 1.66,
+    "t1": 2.02
+   },
+   {
+    "w": "annenin",
+    "t0": 2.02,
+    "t1": 2.3
+   },
+   {
+    "w": "kardeşidir.",
+    "t0": 2.3,
+    "t1": 2.96
+   }
+  ],
+  "dur": 3.17
+ },
+ "d2": {
+  "key": "109b166f256d",
+  "trimmed": "109b166f256d",
+  "wkey": "109b166f256d",
+  "heard": "Olamaz. O zaman annenle baban kardeş olur.",
+  "words": [
+   {
+    "w": "Olamaz,",
+    "t0": 0.0,
+    "t1": 0.32
+   },
+   {
+    "w": "o",
+    "t0": 0.32,
+    "t1": 0.74
+   },
+   {
+    "w": "zaman",
+    "t0": 0.74,
+    "t1": 0.96
+   },
+   {
+    "w": "annenle",
+    "t0": 0.96,
+    "t1": 1.42
+   },
+   {
+    "w": "baban",
+    "t0": 1.42,
+    "t1": 1.72
+   },
+   {
+    "w": "kardeş",
+    "t0": 1.72,
+    "t1": 1.98
+   },
+   {
+    "w": "olur.",
+    "t0": 1.98,
+    "t1": 2.24
+   }
+  ],
+  "dur": 2.4
+ },
+ "n2": {
+  "key": "4ad798a8ae68",
+  "trimmed": "4ad798a8ae68",
+  "wkey": "4ad798a8ae68",
+  "heard": "Değil, aralarında kan bağı yok.",
+  "words": [
+   {
+    "w": "Değil,",
+    "t0": 0.0,
+    "t1": 0.44
+   },
+   {
+    "w": "aralarında",
+    "t0": 0.58,
+    "t1": 1.08
+   },
+   {
+    "w": "kan",
+    "t0": 1.08,
+    "t1": 1.32
+   },
+   {
+    "w": "bağı",
+    "t0": 1.32,
+    "t1": 1.64
+   },
+   {
+    "w": "yok.",
+    "t0": 1.64,
+    "t1": 1.74
+   }
+  ],
+  "dur": 1.91
+ },
+ "h3": {
+  "key": "9dffdedddd67",
+  "trimmed": "9dffdedddd67",
+  "wkey": "9dffdedddd67",
+  "heard": "O zaman biri eniştendir.",
+  "words": [
+   {
+    "w": "O",
+    "t0": 0.0,
+    "t1": 0.16
+   },
+   {
+    "w": "zaman",
+    "t0": 0.16,
+    "t1": 0.46
+   },
+   {
+    "w": "biri",
+    "t0": 0.46,
+    "t1": 0.76
+   },
+   {
+    "w": "eniştendir.",
+    "t0": 0.76,
+    "t1": 1.5
+   }
+  ],
+  "dur": 1.61
+ },
+ "n3": {
+  "key": "bee24ca45b11",
+  "trimmed": "bee24ca45b11",
+  "wkey": "bee24ca45b11",
+  "heard": "Hayır, Rıza 'nın annemle de babamla da kan bağı var.",
+  "words": [
+   {
+    "w": "Hayır,",
+    "t0": 0.0,
+    "t1": 0.24
+   },
+   {
+    "w": "Rızanın",
+    "t0": 0.48,
+    "t1": 0.84
+   },
+   {
+    "w": "annemle",
+    "t0": 0.98,
+    "t1": 1.48
+   },
+   {
+    "w": "de",
+    "t0": 1.48,
+    "t1": 1.6
+   },
+   {
+    "w": "babamla",
+    "t0": 1.6,
+    "t1": 2.06
+   },
+   {
+    "w": "da",
+    "t0": 2.06,
+    "t1": 2.22
+   },
+   {
+    "w": "kan",
+    "t0": 2.22,
+    "t1": 2.38
+   },
+   {
+    "w": "bağı",
+    "t0": 2.38,
+    "t1": 2.64
+   },
+   {
+    "w": "var.",
+    "t0": 2.64,
+    "t1": 2.76
+   }
+  ],
+  "dur": 2.92
+ },
+ "n1": {
+  "key": "a2e59935b949",
+  "trimmed": "a2e59935b949",
+  "wkey": "a2e59935b949",
+  "heard": "Arkadaki çerçeveye iyi bakın.",
+  "words": [
+   {
+    "w": "Arkadaki",
+    "t0": 0.0,
+    "t1": 0.48
+   },
+   {
+    "w": "çerçeveye",
+    "t0": 0.48,
+    "t1": 1.18
+   },
+   {
+    "w": "iyi",
+    "t0": 1.18,
+    "t1": 1.3
+   },
+   {
+    "w": "bakın.",
+    "t0": 1.3,
+    "t1": 1.52
+   }
+  ],
+  "dur": 1.79
+ },
+ "d3": {
+  "key": "ec976156d69c",
+  "trimmed": "ec976156d69c",
+  "wkey": "ec976156d69c",
+  "heard": "Buldum, dedesiyle anneannesi evlenmiş.",
+  "words": [
+   {
+    "w": "Buldum!",
+    "t0": 0.0,
+    "t1": 0.46
+   },
+   {
+    "w": "Dedesiyle",
+    "t0": 0.74,
+    "t1": 1.26
+   },
+   {
+    "w": "anneannesi",
+    "t0": 1.26,
+    "t1": 1.9
+   },
+   {
+    "w": "evlenmiş.",
+    "t0": 1.9,
+    "t1": 2.44
+   }
+  ],
+  "dur": 2.588
+ },
+ "d4": {
+  "key": "3c55eb68cc48",
+  "trimmed": "3c55eb68cc48",
+  "wkey": "3c55eb68cc48",
+  "heard": "Rıza, babasıyla baba bir, annesiyle anne bir kardeş.",
+  "words": [
+   {
+    "w": "Rıza,",
+    "t0": 0.0,
+    "t1": 0.36
+   },
+   {
+    "w": "babasıyla",
+    "t0": 0.46,
+    "t1": 0.9
+   },
+   {
+    "w": "baba",
+    "t0": 0.9,
+    "t1": 1.1
+   },
+   {
+    "w": "bir,",
+    "t0": 1.1,
+    "t1": 1.54
+   },
+   {
+    "w": "annesiyle",
+    "t0": 1.54,
+    "t1": 2.02
+   },
+   {
+    "w": "anne",
+    "t0": 2.02,
+    "t1": 2.24
+   },
+   {
+    "w": "bir",
+    "t0": 2.24,
+    "t1": 2.38
+   },
+   {
+    "w": "kardeş.",
+    "t0": 2.38,
+    "t1": 2.68
+   }
+  ],
+  "dur": 2.96
+ },
+ "d6": {
+  "key": "83ec9a843828",
+  "trimmed": "83ec9a843828",
+  "wkey": "83ec9a843828",
+  "heard": "Bunu akrabalığı karışık birine gönder.",
+  "words": [
+   {
+    "w": "Bunu",
+    "t0": 0.0,
+    "t1": 0.22
+   },
+   {
+    "w": "akrabalığı",
+    "t0": 0.22,
+    "t1": 0.84
+   },
+   {
+    "w": "karışık",
+    "t0": 0.84,
+    "t1": 1.24
+   },
+   {
+    "w": "birine",
+    "t0": 1.24,
+    "t1": 1.52
+   },
+   {
+    "w": "gönder.",
+    "t0": 1.52,
+    "t1": 1.86
+   }
+  ],
+  "dur": 2.02
+ }
+}
